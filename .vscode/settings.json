@@ -1,0 +1,25 @@
+{
+    "latex-workshop.latex.toolchain":[
+        {
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf","-f","-output-directory=./output",
+                "%DOC%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.clean.enabled": true,
+    "latex-workshop.chktex.enabled": true,
+    "latex-workshop.view.pdf.hand": true,
+    "latex-workshop.latex.outputDir": "./output/",
+    "cSpell.enabled": true,
+    "cSpell.ignoreRegExpList": [
+        "\\\\\\w*(\\[.*?\\])?(\\{.*?\\})?",
+        "\\$.+?\\$"
+    ],
+    "cSpell.allowCompoundWords": true,
+    "cSpell.words": ["Raman","repump","Muquans","setup","Quans","ifpackageloaded","pdftitle","pdfsubject","pdfkeywords","pdfauthor","linkcolor","Refs","Acousto","Electro","PPLN","Niobate","FPGA","Aoms","Ecdls","Edfas","TTls"]
+}

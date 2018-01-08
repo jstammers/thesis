@@ -1,0 +1,55 @@
+%% For normal draft builds (figs not displayed hence fast compile)
+%\documentclass[hyperpdf,nobind,draft,oneside]{hepthesis}
+%\documentclass[hyperpdf,nobind,draft,twoside]{hepthesis}
+
+%% For short draft builds (breaks citations by necessity)
+%\documentclass[hyperpdf,nobind,draft,hidefrontback]{hepthesis}
+
+%% For Cambridge soft-bound version
+\documentclass[hyperpdf,bindnopdf]{hepthesis}
+%% For Cambridge hard-bound version (must be one-sided)
+%\documentclass[hyperpdf,oneside]{hepthesis}
+
+%% Load special font packages here if you wish
+\usepackage{lmodern}
+\usepackage{mathpazo}
+\input{preamble}
+
+\title{Inertial Navigation using Atom Interferometry}
+\author{Jimmy Stammers}
+
+%% Doc-specific PDF metadata
+\makeatletter%
+\@ifpackageloaded{hyperref}{%
+\hypersetup{%
+pdftitle = {Inertial Navigation using Atom Interferometry},
+pdfsubject = {Jimmy Stammers’ PhD thesis},
+pdfkeywords = {atom interferometry, navigation, physics, Rubidium},
+pdfauthor = {\textcopyright\ Jimmy Stammers},
+colorlinks=false,
+linkcolor=black
+}}{}
+\makeatother
+
+\begin{document}
+
+\begin{frontmatter}
+    \input{frontmatter.tex}
+\end{frontmatter}
+
+\begin{mainmatter}
+    \input{introduction}
+    \input{theory}
+    \input{expsetup}
+    \input{compcontrol}
+\end{mainmatter}
+
+\begin{appendices}
+    \input{appendices}
+\end{appendices}
+
+\begin{backmatter}
+    \input{backmatter}
+\end{backmatter}
+
+\end{document}

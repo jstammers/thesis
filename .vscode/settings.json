@@ -6,7 +6,7 @@
                 "-synctex=1",
                 "-interaction=nonstopmode",
                 "-file-line-error",
-                "-pdf","-f","-output-directory=./output",
+                "-pdf","-f","-output-directory=./output","-aux-directory=./output",
                 "%DOC%"
             ]
         }
@@ -14,7 +14,6 @@
     "latex-workshop.latex.clean.enabled": true,
     "latex-workshop.chktex.enabled": true,
     "latex-workshop.view.pdf.hand": true,
-    "latex-workshop.latex.outputDir": "./output/",
     "cSpell.enabled": true,
     "cSpell.ignoreRegExpList": [
         "\\\\\\w*(\\[.*?\\])?(\\{.*?\\})?",

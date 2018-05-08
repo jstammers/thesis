@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+    \umlstateinitial[name=intial]
+    \begin{umlstate}[name=start,x=3,y=0]{Start}\umlstatetext{Hardware \\Reserved}\end{umlstate};
+    \begin{umlstate}[name=configure,x=6,y=0]{Configure}\begin{umlstate}[name=repeatConf]{Repeat}\end{umlstate}\end{umlstate};
+    \node at (9,1) (build){Build};
+    \node at (12,1) (write){Write};
+    \node at (14,1) (run){Run};
+    \node at (16,1) (finish) {Finish};
+    \node at (18,1) (log){Log};
+    \node at (20,1) (stop){Stop};
+    \umlstatefinal[name=final]
+    \end{tikzpicture}

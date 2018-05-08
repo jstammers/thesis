@@ -12,8 +12,7 @@
 %\documentclass[hyperpdf,oneside]{hepthesis}
 
 %% Load special font packages here if you wish
-\usepackage{lmodern}
-\usepackage{mathpazo}
+
 \input{preamble}
 
 \title{Inertial Navigation using Atom Interferometry}
@@ -31,7 +30,7 @@ colorlinks=false,
 linkcolor=black
 }}{}
 \makeatother
-
+%\tikzexternalize
 \begin{document}
 
 \begin{frontmatter}
@@ -42,8 +41,8 @@ linkcolor=black
     \input{introduction}
     \input{theory}
     \input{compcontrol}
-    %\input{expsetup}
-    \input{mots}
+    \input{expsetup}
+    %\input{mots}
     \input{atompreparation}
     \input{interferometry}
     \input{conclusion}

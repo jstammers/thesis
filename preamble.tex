@@ -1,15 +1,28 @@
-
+\usepackage{lmodern}
+\usepackage{mathpazo}
 \usepackage{braket}
-\usepackage{SIunits}
+\usepackage{siunitx}
 \usepackage{acronym}
 \usepackage{xspace}
 \usepackage{morefloats,subfig,afterpage}
 \usepackage{mathrsfs} % script font
 \usepackage{verbatim}
+\usepackage{tikz}
+\usepackage{multirow}
 \usepackage[backend=bibtex,url=false]{biblatex}
-\addbibresource{Thesis.bib}
-\graphicspath{{Figures/Chapter1/}{Figures/Chapter2/}{Figures/Chapter3/}{Figures/Chapter4}{Figures/}}
+\usetikzlibrary{external}% activate!
+\usepackage{tikz-timing}
 \setmainmatterspacing{double}
+
+%%% Useful Commands %%%
+
+\immediate\write18{perl texcount.pl \jobname.tex -1 -sum=1 -merge -out=\jobname.sum}
+\newcommand\wordcount{\input{\jobname.sum}}
+\addbibresource{Thesis.bib}
+\graphicspath{{Figures/Chapter1/}{Figures/Chapter2/}{Figures/Chapter3/}{Figures/Chapter4}{Figures/}{Figures/Chapter5}}
+
+
 \newcommand{\Muquans}[0]{\(\mu\)Quans\xspace}
+\newcommand{\sivalue}[2]{\SI[mode=text]{#1}{#2}}
 %% Disables warning about Command terminated with a space
-% chktex-file 1
+%chktex-file 1

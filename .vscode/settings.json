@@ -28,5 +28,28 @@
         "\\$.+?\\$"
     ],
     "cSpell.allowCompoundWords": true,
-    "cSpell.words": ["Raman","repump","Muquans","setup","Quans","ifpackageloaded","pdftitle","pdfsubject","pdfkeywords","pdfauthor","linkcolor","Refs","Acousto","Electro","PPLN","Niobate","FPGA","Aoms","Ecdls","Edfas","TTls"]
+    "cSpell.words": [
+        "Acousto",
+        "Aoms",
+        "Ecdls",
+        "Edfas",
+        "Electro",
+        "FPGA",
+        "HSDIO",
+        "Muquans",
+        "Niobate",
+        "PPLN",
+        "Quans",
+        "Raman",
+        "Refs",
+        "TTls",
+        "ifpackageloaded",
+        "linkcolor",
+        "pdfauthor",
+        "pdfkeywords",
+        "pdfsubject",
+        "pdftitle",
+        "repump",
+        "setup"
+    ]
 }

@@ -13,48 +13,34 @@
 
 %% Load special font packages here if you wish
 
-\input{preamble}
-
-\title{Inertial Navigation using Atom Interferometry}
-\author{Jimmy Stammers}
-
-%% Doc-specific PDF metadata
-\makeatletter%
-\@ifpackageloaded{hyperref}{%
-\hypersetup{%
-pdftitle = {Inertial Navigation using Atom Interferometry},
-pdfsubject = {Jimmy Stammers’ PhD thesis},
-pdfkeywords = {atom interferometry, navigation, physics, Rubidium},
-pdfauthor = {\textcopyright\ Jimmy Stammers},
-colorlinks=false,
-linkcolor=black
-}}{}
+\include{preamble}
+%\includeonly{interferometry}
 \makeatother
 %\tikzexternalize
 \begin{document}
 
 \begin{frontmatter}
-    \input{frontmatter.tex}
+    \include{frontmatter}
 \end{frontmatter}
 
 \begin{mainmatter}
-    \input{introduction}
-    \input{theory}
-    \input{compcontrol}
-    %\input{expsetup}
-    \input{mots}
-    \input{atompreparation}
-    \input{interferometry}
-    \input{conclusion}
+    \include{introduction}
+    \include{theory}
+    \include{compcontrol}
+    \include{expsetup}
+    \include{mots}
+    \include{atompreparation}
+    \include{interferometry}
+    \include{conclusion}
     \printbibliography
 \end{mainmatter}
 
 \begin{appendices}
-    \input{appendices}
+    \include{appendices}
 \end{appendices}
 
 \begin{backmatter}
-    \input{backmatter}
+    \include{backmatter}
 \end{backmatter}
 
 \end{document}

@@ -28,8 +28,6 @@ Serial communication is used to control devices which require more complex contr
 \end{figure} 
 \subsection{Voltage Acquisition}\label{subsec:compinterface_mmacquisition}
 Analogue input channels are configured in a similar way to analogue output channels. A block of memory is allocated on the \ac{daq} card for each input channel. Once the card is triggered to start acquiring, an \ac{adc} converts the voltage across the input into a digital value at every rising edge of the clock signal. Once the sequence has finished, or the buffer has been filled, the card streams this data to the computer.
-\section{External Control}
-
 \section{MOTMaster Sequences}
 In addition to interfacing with control hardware, MOTMaster is used to define the structure of experimental sequences. In earlier versions of MOTMaster, sequences were defined using functions within a C\# source file. To run an experiment, MOTMaster compiled this file to build the voltage patterns and wrote them to the hardware. Whilst this had little overhead in resources needed to build and run a sequence, modifying and debugging sequences was much more time consuming. Taking inspiration from Cicero, the user interace of MOTMaster was redesigned so that sequences could be expressed graphically. They are then built using the same functions as before, so that from the point of view of the hardware, the two methods of control are equivalent. 
 

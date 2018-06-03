@@ -51,5 +51,6 @@
         "pdftitle",
         "repump",
         "setup"
-    ]
+    ],
+    "latex-workshop.latex.autoBuild.onSave.enabled": false
 }

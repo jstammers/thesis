@@ -1,5 +1,5 @@
 {
-    "latex-workshop.latex.recipes": [{
+    "latex-workshop.latex.recipes": [{"name":"pdflatex","tools":["pdflatex"]},{
         "name": "latexmk",
         "tools": [
           "latexmk"
@@ -14,6 +14,16 @@
                 "-interaction=nonstopmode",
                 "-file-line-error",
                 "--shell-escape",
+                "-pdf","-f",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-file-line-error",
                 "-pdf","-f",
                 "%DOC%"
             ]

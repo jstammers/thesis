@@ -79,8 +79,7 @@ silicon plate, which is used to partially reflect a beam that propagates along
 the central axis. This creates an unbalanced molasses that cools atoms with a
 large axial velocity and due to the differing radiation pressure, pushes atoms
 out through the pinhole. By slowing a larger proportion of atoms to within the
-capture velocity of the 3D \ac{mot} and not solely relying on diffusion of the
-atoms, this configuration, often referred to as a \(2D\+\) \ac{mot}, loads a 3D
+capture velocity of the 3D \ac{mot}, this configuration, referred to as a 2D\+ \ac{mot}, loads a 3D
 \ac{mot} faster than the 4-beam counterpart. \par\noindent
 \begin{figure}
 	\centering
@@ -96,7 +95,7 @@ fibre, which is collimated using two aspheric lenses to a beam waist of
 into two beams using a \ac{hwp}, one for each cooling axis. Each beam passes
 through a beam-splitter and a prism mirror, to increase the volume covered by
 the 2D \ac{mot} beams and is circularly polarised by a pair of \ac{qwp} before
-entering the \ac{ar} coated glass cell. On the opposing side of the cell, a
+entering the ar-coated glass cell. On the opposing side of the cell, a
 \(\sivalue{25}{\milli\metre} \times \sivalue{35}{\milli\metre}\)
 retro-reflecting mirror is used to provide the counter-propagating \ac{mot}
 beam. This is coated with a layer of quartz to form a \ac{qwp}, so that the
@@ -134,8 +133,7 @@ the field gradient is very uniform across the centre of the cell. In addition to
 this, each \ac{mot} axis has a separately controlled pair of coils in a
 Helmholtz configuration to provide a bias field that cancels nulls the field
 along the 2D \ac{mot} axis. These coils are made of 20 turns of wire that has a
-core diameter of \sivalue{1}{\milli\metre} and produces a field per current of
-	{\textbf{z}}\;\sivalue{}{\gauss\per\ampere}.
+core diameter of \sivalue{1}{\milli\metre} and produces a field per current of \sivalue{1}{\gauss\per\ampere}.
 \begin{figure}
 	\centering
 	\def\svgwidth{\columnwidth}
@@ -160,9 +158,8 @@ core diameter of \sivalue{1}{\milli\metre} and produces a field per current of
 The main chamber contains the apparatus that is used to make a 3D \ac{mot}. A
 diagram of the optical and magnetic fields used to create this \ac{mot} is
 presented in~\FigureRef{fig:3d_mot}. Each \ac{mot} beam is created using a
-collimator as shown in~\FigureRef{fig:mot_collimator}. Light enters through a
-\ac{pm} fibre using an FC/APC connector and is collimated using a
-\sivalue{75}{\milli\metre} focal length lens to give a collimated beam with a
+collimator that collimates a beam of light from a \ac{pm} fibre. These use a
+lens with a nominal focal length of \sivalue{75}{\milli\metre} to produce a collimated beam with a
 waist size of \sivalue{7.5}{\milli\metre}. At the output of each
 collimator is a \ac{qwp}, with its slow axis oriented at a 45\(^\circ\) angle to
 the fast or slow axis of the fibre, depending on the particular collimator, to
@@ -180,9 +177,7 @@ moving away from the centre of the trap is slowed and optically pumped into a
 state which feels a conservative potential.
 \subsubsection{Spherical quadrupole magnetic field}
 The magnetic field for the 3D \ac{mot} is created by a pair of coils in an
-anti-Helmholtz configuration. Along the axis of symmetry, the magnetic field
-from a current-carrying loop is given by the Biot-Savart law. {\textbf{Some
-	description of the spherical quadrupole field}}. Each coil consists of
+anti-Helmholtz configuration. Each coil consists of
 rectangular wire coated in a \sivalue{35}{\micro\metre} thick layer of Pyre-M.L,
 a UHV-compatible polyamide which provides a layer of insulation between each
 loop. The wire has a cross-section of dimensions \(\sivalue{1.1}{\milli\metre}
@@ -197,9 +192,7 @@ them and the chamber, which in turn aims to maximise the rate at which heat is
 dissipated from the coils. Once mounted, the distance between the innermost
 loops is \sivalue{70}{\milli\metre}. \FigureRef{fig:mot_coil_plots} shows the
 magnetic field, measured using a Hall probe, along the axis of symmetry for each
-of the coils with a current of \sivalue{2.53}{\ampere}. In addition to this, the
-field and corresponding axial field gradient when the coils are separated by
-\sivalue{70}{\milli\metre} is shown in \FigureRef{fig:mot_coil_gradient}. This
+of the coils with a current of \sivalue{2.53}{\ampere}. This
 is in close agreement with the value expected from simulating the field produced
 by the coils - the magnetic field in the axial and radial planes of symmetry and
 shown in~\FigureRef{fig:3D_mot_axial} and~\FigureRef{fig:3D_mot_radial},
@@ -207,15 +200,14 @@ respectively.
 \begin{figure}
 	\centering
 	\def\svgwidth{\columnwidth}
-	\subfloat[][]{\scalebox{0.3}{\includegraphics{mot_field_3D.pdf}\label{fig:mot_coil_plots}}}
-	\subfloat[][]{\scalebox{0.3}{\includegraphics{3D_field_xz.pdf}}\label{fig:mot_coil_gradient}}\\
+	\includegraphics[width=0.6\textwidth]{mot_field_3D.pdf}
 	\caption[Measured magnetic field and field gradient for the 3D \ac{mot}
 		coils]{Measured magnetic field and field gradient for the 3D \ac{mot}
 		coils. \textbf{(a)} shows the axial magnetic field for the two coils as
 		measured using a Hall probe. The dashed line is the axial field as
 		calculated from the simulation shown
 		in~\FigureRef{fig:3D_mot_field_sim}.}
-	\label{fig:3D_mot_field_measured}
+	\label{fig:mot_coil_plots}
 \end{figure}
 \begin{figure}
 	\centering
@@ -258,7 +250,7 @@ coil pair is presented in \TableRef{tab:bias_coils}.\begin{table}
 		\hline
 	\end{tabular}
 	\caption[Table of parameters for each 3D \ac{mot} bias coil.]{Table of
-		parameters for each 3D \ac{mot}bias coil. \(a\) denotes the axial
+		parameters for each 3D \ac{mot }bias coil. \(a\) denotes the axial
 		separation between each coil, \(r_i\) and \(r_o\) are the inner and
 		outer radi. Each coil was wound to give 50 loops (5 axial and 10 radial
 		turns).}
@@ -310,7 +302,7 @@ power radiated per atom is constant, the power incident on the CCD
 \begin{equation}
 	P_\textnormal{ccd} = \frac{\Omega}{4\pi} t R_\textnormal{sc}  \hbar \omega N_a
 \end{equation}
-where $\Omega/4\pi = \textbf{x}\sivalue{}{\steradian}$ is the fractional solid
+where $\Omega/4\pi = $\pow{1.8}{-3} is the fractional solid
 angle subtended by the imaging optics, \(t\) is the transmission of the bandpass
 filter, \(R_\textnormal{sc}\) is the scattering rate as previously defined
 in~\EquationRef{eq:scattering_rate} and \(\hbar \omega =
@@ -348,7 +340,7 @@ this laser system is shown in \FigureRef{fig:muquans_schematic}. All of the
 light is fibre-coupled to minimise the number of free-space optical components
 and to make the system more stable in the presence of vibrations and small
 temperature variations. The \Muquans\ laser is comprised of four
-\sivalue{1560}{\nano\metre} \acp{ecdls} which are frequency-doubled to produce
+\sivalue{1560}{\nano\metre} \acp{ecdl} which are frequency-doubled to produce
 light at \sivalue{780}{\nano\metre}. The first of these acts as a master laser
 which is locked to the \(F = 3 \rightarrow F' = 3,4\) crossover point in
 \ac{rb85} and serves as an absolute frequency reference. The other three slave
@@ -464,7 +456,7 @@ to minimise insertion loss and improve the alignment of the slow axes of
 connected fibres. Prior to this, the fibres were connected using mating sleeves,
 which resulted in polarisation drifts that severely impacted on the stability of
 the \acp{mots}. A set of \textit{Gooch and Housego} fibre \acp{aoms} with a
-central modulation frequency are of \sivalue{135}{\mega\hertz} are used to
+central modulation frequency of \sivalue{135}{\mega\hertz} are used to
 individually control the frequency and power of each output. The polarisation of
 the output from this fibre is purified using a polarising beam-splitter before a
 \ac{hwp} aligns the polarisation axis of the light with the slow axis of a
@@ -560,14 +552,14 @@ repump power, as well as the field gradients and bias fields used. The cooling l
 	\caption[Typical optical and magnetic parameters for the \acp{mots}.]{Typical optical and mangetic parameters used for the 2D and 3D \acp{mots}. The optical powers listed are the total used for each \ac{mot}, which is divided into separate beams. The bias field strengths are the values used during the preliminary trapping stage of the experiment. The specified field gradients are given along the radial direction and the symmetry axis of the quadrupole coils for the 2D and 3D \acp{mots}, respectively.}
 	\label{tab:mot_parameters}
 \end{table}
-\begin{figure}[hbtp!]
-	\centering
-	%\def\svgwidth{0.6\textwidth}
-	\resizebox{0.4\textwidth}{!}{\input{mot_loading_timing.pdf_tex}}
-	\caption[Timing diagram for \ac{mot} loading and temperature measurement]{}
-	\label{fig:mot_loading_timing}
-\end{figure}
-\subsection{3D \ac{mot} Loading Rate}\label{subsec:loading_rate}
+% \begin{figure}[hbtp!]
+% 	\centering
+% 	%\def\svgwidth{0.6\textwidth}
+% 	\resizebox{0.4\textwidth}{!}{\input{mot_loading_timing.pdf_tex}}
+% 	\caption[Timing diagram for \ac{mot} loading and temperature measurement]{}
+% 	\label{fig:mot_loading_timing}
+% \end{figure}
+\subsection{3D MOT Loading Rate}\label{subsec:loading_rate}
 
 The loading rate of the 3D \ac{mot} from a beam of atoms originating from the 2D
 \ac{mot} can be understood using the following rate equation

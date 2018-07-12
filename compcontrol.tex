@@ -276,6 +276,12 @@ starts. The output frequency is set between cycles and remains constant
 throughout. Finally, MOTMaster is configured to remotely connect to the M
 Squared laser, so that it can control all the parameters necessary to drive
 Raman transitions during the experiment. This is done by sending structured
-JSON messages that contain commands to implement this control. More detail on
-how this is used in the experiment is given in
+JSON messages that contain commands to implement this control. More detail on how this is used in the experiment is given in
 \SectionRef{subsuc:msquared_comm}.
+\begin{figure}
+    \centering
+    \fontsize{16pt}{14pt}
+    \resizebox{1\textwidth}{!}{\input{control_hardware.pdf_tex}}
+    \caption[Control hardware schematic diagram]{Schematic diagram of the control hardware. The PXIe chassis contains the DAQ cards which generate the analogue and digital waveforms used to control other devices. Signals are routed between the cards to synchronise their operation. Serial communication to the \Muquans laser (\SectionRef{sec:muquans_light}), the M-Squared laser (\SectionRef{sec:msquared_laser})and the CCD camera (\SectionRef{sec:imaging}) are used for their control.}
+    \label{fig:control_hardware}
+\end{figure}

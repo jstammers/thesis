@@ -30,7 +30,7 @@
         }
     ],
     "latex-workshop.latex.clean.enabled": true,
-    "latex-workshop.chktex.enabled": true,
+    "latex-workshop.chktex.enabled": false,
     "latex-workshop.view.pdf.hand": true,
     "cSpell.enabled": true,
     "cSpell.ignoreRegExpList": [

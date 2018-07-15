@@ -1,6 +1,8 @@
 \chapter{Preparing Atoms for Interferometry}\label{chap:atom_prep}
 \section{Chapter Overview}
-This chapter presents the work that went towards the initial stages of the experimental sequence, where the main objective is to prepare a sufficiently cold ensemble of \ac{rb87} in the same quantum state.
+This chapter presents the stages of the experiment which prepare an ensmble of atoms for interferometry, after they are loaded into the 3D \ac{mot}. After being released from the trap, the atoms are cooled and launched using a moving molasses, as described in~\SectionRef{sec:optical_molasses}. Following this, a sequence of optical and microwaves pulses are used to increase the population in the \(\ket{1,0}\) ground state and end with an ensemble which has a narrow velocity spread along the Raman axis. A characterisation of this is given in~\SectionRef{sec:state_prep}.
+\par\noindent
+Some sections of this chapter refer to parts of the experiment which have yet to be introduced. Details on the Raman laser and the velocity-selective Raman pulse can be found in~\SectionRef{sec:msquared_laser} and~\SectionRef{sec:raman_velocity_select}, respectively. A description of the detection scheme, used to measure the population of atoms in \(\ket{F=1}\) and \(\ket{F=2}\) is presented in~\SectionRef{sec:atom_detection}
 
 
 \section{Cooling in Optical Molasses}\label{sec:optical_molasses}
@@ -155,7 +157,7 @@ A plot of the population in each Zeeman sub-level for increasing pumping times i
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{step2_pumping}
-    \caption[\(\ket{1,m_F}\) populations for increasing \trans{1}{0} pumping time.\)]{Population in each Zeeman sub-level as the \trans{1}{0} pumping time is increased. The \(m_F = 0, -1, +1\) populations are shown in blue, orange and green, respectively. After \sivalue{30}{\micro\second}, approximately 5\% of the population remains in the \(m_F = \pm 1\) sub-levels.}
+    \caption[\(\ket{1,m_F}\) populations for increasing \trans{1}{0} pumping time.]{Population in each Zeeman sub-level as the \trans{1}{0} pumping time is increased. The \(m_F = 0, -1, +1\) populations are shown in blue, orange and green, respectively. After \sivalue{30}{\micro\second}, approximately 5\% of the population remains in the \(m_F = \pm 1\) sub-levels.}
     \label{fig:step2_pumping}
 \end{figure}
 \subsection{Including Microwave Transitions}\label{subsec:microwaves}
@@ -190,7 +192,7 @@ A diagram of the setup for this is shown in~\FigureRef{fig:microwave_setup}. The
 
 \subsection{Blow-Away}\label{subsec:blow_away}
 After the atoms populate \(\ket{2,0}\), a velocity-selective Raman \(\pi\)-pulse is applied to transfer a fraction of those back into \(\ket{1,0}\). This step is discussed in detail in~\SectionRef{subsec:raman_velocity_select}. For now, it suffices to say that a Raman pulse transfers 4\% \textbf{Check this!} the atoms back to \(\ket{1,0}\). The remaining need to be removed, otherwise they contribute to a large background signal. \par\noindent
-The final pulse during the state preparation sequence is used to push these non-contributing atoms out of the interferometer region. A single \ac{mot} beam is used so that there is a net momentum transfer to the atoms as they absorb light and fluoresce. The frequency of this blow-away beam is detuned from the \trans{2}{3} transition by \sivalue{-3}{\mega\hertz}, which is the same frequency used for detection (see~\SectionRef{subsec:photodiode_setup}). A pulse of \sivalue{50}{\micro\second} is enough to remove all atoms in \(\ket{F=2}\). 
+The final pulse during the state preparation sequence is used to push these non-contributing atoms out of the interferometer region. A single \ac{mot} beam is used so that there is a net momentum transfer to the atoms as they absorb light and fluoresce. The frequency of this blow-away beam is detuned from the \trans{2}{3} transition by \sivalue{-3}{\mega\hertz}, which is the same frequency used for detection (see~\SectionRef{sec:atom_detection}). A pulse of \sivalue{50}{\micro\second} is enough to remove all atoms in \(\ket{F=2}\). 
 
 % \subsection{Residual \(m_F = \pm 1\) atoms} \label{subsec:residual_atoms}
 % After preparing an ensemble atoms in \(\ket{1,0}\) with a narrow velocity spread and removing those out in \(\ket{F=2}\) which are not resonant with the interferometer pulses, there is still a fraction of atoms in \(\ket{1,\pm 1}\) which will be detected and contribute to a background signal. It is worth highlighting how fluctuations in this background affects the sensitivity of the interferometer to accelerations. Since they are not driven by the Raman transition, they remain in \(\ket{F=1}\). If the number of atoms detected in \(\ket{F=1}\) has a contribution from background atoms, i.e \(N_1 = N_\text{bg}+N_1^{(\phi)}\), then the probability of detecting an atom in \(\ket{F=1}\) is given by
@@ -200,5 +202,5 @@ The final pulse during the state preparation sequence is used to push these non-
 % where \(P_0 = N_\text{bg}/\left(N_1+N_2\right)\) is the proportion of background atoms out of the total number of atoms.
 
 \subsection{Conclusion}
-This chapter has presented the stages of the experiment which are used to prepare an ensemble of atoms for interferometry. This requires cooling the atoms to limit the thermal expansion of the cloud during interferometry. The atoms are also launched using a moving molasses so that only one pair of beams is resonant with the Raman transition. Finally, we then apply a sequence of optical and microwave pulses, to increase the population of atoms in \(\ket{1,0}\). A velocity-selective Raman pulse with a narorow linewidth is used to make the velocity spread along the Raman axis much smaller than the Doppler width. Aside from some residual population in \(\ket{1,\pm 1}\), the remaining atoms are removed using a pulse of light close to resonance with the \trans{2}{3} transition. This results in an ensemble of which around \(40\%\) of the population contrubutes to the interferometer signal.
+This chapter has presented the stages of the experiment which are used to prepare an ensemble of atoms for interferometry. This requires cooling the atoms to limit the thermal expansion of the cloud during interferometry. The atoms are also launched using a moving molasses so that only one pair of beams is resonant with the Raman transition. Finally, we then apply a sequence of optical and microwave pulses, to increase the population of atoms in \(\ket{1,0}\). A velocity-selective Raman pulse with a narorow linewidth is used to make the velocity spread along the Raman axis much smaller than the Doppler width. Aside from some residual population in \(\ket{1,\pm 1}\), the remaining atoms are removed using a pulse of light close to resonance with the \trans{2}{3} transition. This results in an ensemble of which around \(40\%\) of the population contributes to the interferometer signal.
 

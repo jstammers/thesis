@@ -1,28 +1,26 @@
 \chapter{Cooling and Trapping in a MOT}
 \section{Chapter Outline}
 This chapter presents a description of the components of the experiment which
-are used to trap and cool atoms in a \ac{mot}. An outline of the hardware used to create both the 2D and 3D \acp{mots} is presented in~\SectionRef{sec:vacuum_chamber}. Following this is a description of the \Muquans laser system, in~\SectionRef{sec:muquans_light}, which generates the light used to cool and trap atoms. The hardware used to control the frequency and power of each \ac{mot} beam, as well as the required magnetic fields, is given in~\SectionRef{sec:mot_control}. Finally, this chapter concludes with a presentation of a measurement of the 3D \ac{mot} loading rate, which serves as a figure-of-merit for the performance of the \ac{mot} system. 
+are used to trap and cool atoms in a \ac{mot}. An outline of the hardware used
+to create both the 2D and 3D \acp{mots} is presented
+in~\SectionRef{sec:vacuum_chamber}. Following this is a description of the
+\Muquans laser system, in~\SectionRef{sec:muquans_light}, which generates the
+light used to cool and trap atoms. The hardware used to control the frequency
+and power of each \ac{mot} beam, as well as the required magnetic fields, is
+given in~\SectionRef{sec:mot_control}. Finally, this chapter concludes with a
+characterisation of the 3D \ac{mot} loading rate in~\SectionRef{sec:mot_characterisation}
 \section{The Navigator Vacuum Chamber}\label{sec:vacuum_chamber}
 The vacuum chamber, along with the components mounted to it, make up the
 majority of the hardware used in the preliminary trapping and cooling stages of
-the experiment. The chamber is made of 316L stainless steel which helps to
-minimise the influence of stray magnetic fields that could otherwise affect the
-performance of the \ac{mot}. The chamber contains 16 DN40 ConFlat ports arranged
-on the edges of three octagons, one in each cartesian coordinate plane. Six of
-these ports are used to provide optical access for the 3D \ac{mot}, and a
-further four are used to connect to the 2D \ac{mot} system, a gate valve, the
-NexTorr pump and to provide power to the in-vacuum 3D \ac{mot} coils. Two of the
-remaining ports are used to provide optical access for the imaging systems --- a
-CCD camera and a photodiode --- or a microwave horn, depending on the specific
-experiment. The last four ports are not used for additional optical access since
-their line of sight to the atoms is obscured by the \ac{mot} coils. Two DN63
-ports lie along one axis, which is conventionally taken to be the \(x\) axis.
-These ports are used to mount the optics for driving Raman transitions and as
-such, defines the axis along which the atom interferometer is sensitive to
-accelerations\footnote{For more information about the Raman optical system,
-	refer to \SectionRef{sec:setup_ramanoptics}}. \par\noindent A diagram of the
+the experiment. A diagram of the
 vacuum chamber and the main \ac{mot} components is shown in
-\FigureRef{fig:mot_system}. The chamber is pumped down to a pressure of around
+\FigureRef{fig:mot_system}. The chamber is made of 316L stainless steel, which has a low magnetic permeability to reduce stray magnetic fields on the atoms during the experiment.  It contains 16 DN40 ConFlat ports arranged
+on the edges of three octagons, one in each cartesian coordinate plane. Six of
+these ports provide optical access for the 3D \ac{mot}. Another port connects the 2D \ac{mot} system to the main chamber. One port provides optical access for either a CCD camera or photodiode. Opposite this is a microwave horn for driving microwave transitions between the two \ac{rb87} hyperfine ground states, The remaining DN16 ports are not used for optical access since
+they do not have a direct line of sight to the atoms. Instead, these are used to attach a pressure gauge, gate valve, a NexTorr NEG pump and electrical feedthroughs for the \ac{mot} coils. Two DN63
+ports lie along one axis and are used to mount the optics for driving Raman transitions\footnote{For more information about the Raman optical system,
+refer to \SectionRef{sec:setup_ramanoptics}}. This is the axis along which the atom interferometer is sensitive to
+accelerations, and will subsequently be referred to as the Raman axis. \par\noindent  The chamber is pumped down to a pressure of around
 \pow{5}{-10}\sivalue{}{\milli\bar} using a NexTorr D100-5 pump. This is a
 composite system consisting of \ac{neg} and an ion pump. The \ac{neg} is a
 porous sintered zirconium (St 172) element, which reacts with chemicals such as
@@ -32,7 +30,7 @@ the largest contributor to the pressure is hydrogen which the \ac{neg} can pump
 at a speed of \sivalue{100}{\litre\per\second}. Any species that are not
 absorbed by the \ac{neg}, in particular Rubidium, are pumped by the
 \sivalue{5}{\litre\per\second} ion pump.
-\begin{figure}
+\begin{figure}[!htbp]
 	\centering
 	\def\svgwidth{1\textwidth}
 	\input{Figures/Chapter4/Vacuum.pdf_tex}
@@ -47,41 +45,30 @@ absorbed by the \ac{neg}, in particular Rubidium, are pumped by the
 	\label{fig:mot_system}
 \end{figure}
 \subsection{The 2D MOT system}\label{sec:2d_mot}
-Initially, atoms were loaded into the 3D \ac{mot} from a background vapour.
-Whilst this was a relatively simple scheme, a very high partial pressure of
-Rubidium is required to achieve a fast loading rate (see
-\SectionRef{subsec:loading_rate}). However, this was undesirable from the point
-of view of the atom interferometer, as it would result in a poor fringe contrast
-due to collisions with background atoms and a worse signal to noise ratio, i.e.
-the ratio of the number of atoms in the interferometer to the total number of
-detected atoms. Replacing the source of atoms for the 3D
-\ac{mot} with a side-arm to function as a 2D \ac{mot}~\cite{Dieckmann1998}
-satisfied the two requirements of a fast loading rate and low base pressure in
-the main chamber. \par\noindent A diagram of the light and magnetic fields
+At the beginning of the project, atoms were loaded into the 3D \ac{mot} from background vapour.
+At room temperature, a large fraction of atoms have velocities greater than typical \ac{mot} capture velocities, so a very high partial pressure of
+Rubidium is needed to achieve a fast loading rate (see
+\SectionRef{subsec:loading_rate}). This also contributes to a high background atom number, which reduces the interferometer fringe visibility. To increase the loading rate whilst decreasing the Rubidium partial pressure, a 2D \ac{mot}~\cite{Dieckmann1998} system was added to the experiment. This subsequently served as the atom source was for the 3D
+\ac{mot}. \par\noindent A diagram of the light and magnetic fields
 required to produce a 2D \ac{mot} is presented
 in~\FigureRef{fig:2d_mot_diagram}. It is similar to the 3D \ac{mot}, with the
 main exception being that only 4 beams are used to cool the atoms along 2
-orthogonal axes. In addition to this, its design is focused towards the
-production of a large flux of cold atoms which can be subsequently loaded into a
-3D \ac{mot}. For instance, the beams used to cool the atoms are collimated to a
-large waist size and the coils are designed to give a cylindrical quadrupole
+orthogonal axes. It is designed to produce a large flux of cold atoms which can be subsequently loaded into a
+3D \ac{mot}. The cooling beams are collimated to a
+large waist size and the magnetic field coils produce a cylindrical quadrupole
 field with a line of zero magnetic field along the axis of symmetry. Along this
-axis, the atoms are free to move which results in an atomic beam. To improve the
-collimation of this atomic beam, a larger radial field gradient than usually
-used in a 3D \ac{mot} system is used to increase the radial confinement of
+axis, the atoms are free to move, resulting in an atomic beam. This beam is collimated using a larger  radial field gradient than is typically found in 3D \ac{mot} systems. This increases the radial confinement of
 atoms. In addition, a pinhole is placed at the exit of the cell, so that atoms
-with a high radial velocity component will miss the aperture. This pinhole also
+with a high radial velocity will not leave the source cell. This pinhole also
 greatly reduces the conductance between the 2D \ac{mot} cell and the main
-chamber, which means that a comparatively high background pressure (hence,
-loading rate) can be maintained in the 2D \ac{mot} cell, without greatly
+chamber, which means that a high rubidium partial pressure can be maintained in the 2D \ac{mot} cell, without greatly
 increasing the pressure in the main chamber. The pinhole is drilled into a
-silicon plate, which is used to partially reflect a beam that propagates along
+silicon plate, which partially reflects the beam that propagates along
 the central axis. This creates an unbalanced molasses that cools atoms with a
-large axial velocity and due to the differing radiation pressure, pushes atoms
-out through the pinhole. By slowing a larger proportion of atoms to within the
-capture velocity of the 3D \ac{mot}, this configuration, referred to as a 2D\+ \ac{mot}, loads a 3D
-\ac{mot} faster than the 4-beam counterpart. \par\noindent
-\begin{figure}
+large axial velocity. The scattering rate from each beam is not equal, so the net force on the atoms  pushes them through the pinhole. By slowing a larger proportion of atoms to within the
+capture velocity of the 3D \ac{mot}, this configuration, referred to as a 2D\(+\)
+\ac{mot}, loads a 3D \ac{mot} faster than the 4-beam counterpart. \par\noindent
+\begin{figure}[!htbp]
 	\centering
 	\def\svgwidth{0.5\textwidth}
 	\input{Figures/Chapter4/2D_mot.pdf_tex}
@@ -90,32 +77,26 @@ capture velocity of the 3D \ac{mot}, this configuration, referred to as a 2D\+ \
 \end{figure}
 A schematic of the optical components for the 2D \ac{mot} is presented
 in~\FigureRef{fig:2d_mot_optics}. The cooling light originates from a single
-fibre, which is collimated using two aspheric lenses to a beam waist of
-\sivalue{9.5}{\milli\metre} and linearly polarised before being evenly split
-into two beams using a \ac{hwp}, one for each cooling axis. Each beam passes
+fibre, which is collimated to a beam waist of
+\sivalue{9.5}{\milli\metre} using two aspheric lenses. This is then linearly polarised and divided
+into two beams of equal power using a \ac{hwp}, one for each cooling axis. Each beam passes
 through a beam-splitter and a prism mirror, to increase the volume covered by
-the 2D \ac{mot} beams and is circularly polarised by a pair of \ac{qwp} before
-entering the ar-coated glass cell. On the opposing side of the cell, a
-\(\sivalue{25}{\milli\metre} \times \sivalue{35}{\milli\metre}\)
-retro-reflecting mirror is used to provide the counter-propagating \ac{mot}
-beam. This is coated with a layer of quartz to form a \ac{qwp}, so that the
-reflected beam has the required polarisation for cooling atoms along that axis.
-The push beam is created using a second fibre input and a fixed collimator to
-give a beam waist of \sivalue{1.5}{\milli\metre}. This is mounted onto a
-\sivalue{1}{\inch} kinematic mount so that the alignment of the push beam with
-respect to the \sivalue{0.7}{\milli\metre} pinhole at the other end of the cell
-can be optimised. A linear polariser is placed here to reduce the effect of
+the 2D \ac{mot} beams. A \ac{qwp} circularly polarises the beam before
+it enters the ar-coated glass cell. On the opposing side of the cell, a
+\(\sivalue{25}{\milli\metre} \times \sivalue{35}{\milli\metre}\) mirror retro-reflects the beam. This is coated with a layer of quartz to form a \ac{qwp}, so that the
+reflected beam has the same polarisation handedness as the incoming.
+The push beam originates from a second fibre input. A fixed focus collimator collimates
+the beam to a  waist of \sivalue{1.5}{\milli\metre}. This is mounted onto a
+\sivalue{1}{\inch} kinematic mount to align  the push beam to the \sivalue{0.7}{\milli\metre} pinhole at the other end of the cell. The push beam is linearly polarised by a \ac{pbs} to reduce the effect of
 polarisation drift on the axial cooling of the 2D \ac{mot}. The cell,
 manufactured by ColdQuanta, has dimensions of \(\sivalue{30}{\milli\metre}
 \times \sivalue{30}{\milli\metre} \times \sivalue{44}{\milli\metre}\) and is
-specifically designed for creating a 2D\+ \ac{mot} and contains two rubidium
+specifically designed for creating a 2D\(\+\) \ac{mot}. It contains two rubidium
 dispensers composed of rubidium chromate (RbCrO\(_4\)) and a reducing agent.
 These were activated by passing a large current through them to remove a thin
-oxidation layer. To produce rubidium, a current is passed through the dispenser
-to trigger an electro-chemical reduction reaction. The reducing agent also acts
-to sorb the unwanted products, so that they do not contaminate the cell and only
-rubidium evaporates from the dispenser.
-\begin{figure}
+oxidation layer. To produce rubidium, a current of around \sivalue{2.8}{\ampere} is passed through the dispenser
+to trigger an electro-chemical reduction reaction, so that pure rubidium sublimates.
+\begin{figure}[!htbp]
 	\centering
 	\def\svgwidth{0.5\textwidth}
 	\input{Figures/Chapter4/2D_mot_optics.pdf_tex}
@@ -123,18 +104,16 @@ rubidium evaporates from the dispenser.
 	\label{fig:2D_mot_optics}
 \end{figure}
 \par\noindent The cylindrical quadrupole field is generated by a set of coils
-that are manufactured by ColdQuanta. Their geometry is such that the axis of
+that are manufactured by ColdQuanta. They are mounted so that the axis of
 zero magnetic field coincides with the central longitudinal axis of the source
 cell. These produce a radial field gradient per current of
 \sivalue{20}{\gauss\per\centi\metre\per\ampere}. A simulation of the field
 gradient along each axis, along with the magnetic field in each plane of
-symmetry is shown in \FigureRef{fig:2d_mot_field_gradient}, which indicates that
-the field gradient is very uniform across the centre of the cell. In addition to
-this, each \ac{mot} axis has a separately controlled pair of coils in a
-Helmholtz configuration to provide a bias field that cancels nulls the field
-along the 2D \ac{mot} axis. These coils are made of 20 turns of wire that has a
-core diameter of \sivalue{1}{\milli\metre} and produces a field per current of \sivalue{1}{\gauss\per\ampere}.
-\begin{figure}
+symmetry is shown in \FigureRef{fig:2d_mot_field_gradient}.  
+Across the centre of the cell, the field gradient is very uniform. The equlibirum position where the \ac{ mot} forms is adjusted using Helmholtz coil pairs along each \ac{mot} axis. These coils are made of 20 turns of wire that has a
+core diameter of \sivalue{1}{\milli\metre} and produces a field per current of
+\sivalue{1}{\gauss\per\ampere}.
+\begin{figure}[!htbp]
 	\centering
 	\def\svgwidth{\columnwidth}
 	\subfloat[][]{\scalebox{0.3}{\includegraphics{2D_field_xy.pdf}\label{fig:label}}}
@@ -159,32 +138,32 @@ The main chamber contains the apparatus that is used to make a 3D \ac{mot}. A
 diagram of the optical and magnetic fields used to create this \ac{mot} is
 presented in~\FigureRef{fig:3d_mot}. Each \ac{mot} beam is created using a
 collimator that collimates a beam of light from a \ac{pm} fibre. These use a
-lens with a nominal focal length of \sivalue{75}{\milli\metre} to produce a collimated beam with a
-waist size of \sivalue{7.5}{\milli\metre}. At the output of each
-collimator is a \ac{qwp}, with its slow axis oriented at a 45\(^\circ\) angle to
-the fast or slow axis of the fibre, depending on the particular collimator, to
-produce either left- or right-handed circularly polarised light. The \ac{mot}
-beams are oriented so that their intersection is at the centre of origin of a
-cartesian coordinate system. Since the \ac{mot} forms at the position where the
-magnetic field is zero, this system is set up so that beams overlap at the
-centre of the chamber, which is equidistant from each \ac{mot} coil. The
-\ac{mot} beams along the axial direction of the quadrupole field (conventionally
-referred to as the \(\vec{z}\) direction) are orthogonally polarised to the
-others along the \(\vec{x}\) and \(\vec{y}\) directions. This takes into account
-of the different direction of the magnetic field gradient along each axis (see
-below), so that the polarisation of each \ac{mot} beam is such that an atom
-moving away from the centre of the trap is slowed and optically pumped into a
-state which feels a conservative potential.
+lens with a nominal focal length of \sivalue{75}{\milli\metre} to produce a
+collimated beam with a waist size of \sivalue{7.5}{\milli\metre}. At the output
+of each collimator is a \ac{qwp}, with its slow axis oriented at a 45\(^\circ\)
+angle to the fast or slow axis of the fibre, depending on the particular
+collimator, to produce either left- or right-handed circularly polarised light.
+The \ac{mot} beams are oriented so that their intersection is at the centre of
+origin of a cartesian coordinate system. Since the \ac{mot} forms at the
+position where the magnetic field is zero, this system is set up so that beams
+overlap at the centre of the chamber, which is equidistant from each \ac{mot}
+coil. The \ac{mot} beams along the axial direction of the quadrupole field
+(conventionally referred to as the \(\vec{z}\) direction) are orthogonally
+polarised to the others along the \(\vec{x}\) and \(\vec{y}\) directions. This
+takes into account of the different direction of the magnetic field gradient
+along each axis (see below), so that the polarisation of each \ac{mot} beam is
+such that an atom moving away from the centre of the trap is slowed and
+optically pumped into a state which feels a conservative potential.
 \subsubsection{Spherical quadrupole magnetic field}
 The magnetic field for the 3D \ac{mot} is created by a pair of coils in an
-anti-Helmholtz configuration. Each coil consists of
-rectangular wire coated in a \sivalue{35}{\micro\metre} thick layer of Pyre-M.L,
-a UHV-compatible polyamide which provides a layer of insulation between each
-loop. The wire has a cross-section of dimensions \(\sivalue{1.1}{\milli\metre}
-\times \sivalue{1.1}{\milli\metre}\), with 20 axial loops and 12 radial loops.
-The inner diameter of the coil is \sivalue{25.4}{\milli\metre}, to allow for
-optical access of the \(\vec{z}\)-axis \ac{mot} beams, and the maximum diameter
-is \textbf{59.2}\sivalue{}{\milli\metre} -- small enough that the coil could be
+anti-Helmholtz configuration. Each coil consists of rectangular wire coated in a
+\sivalue{35}{\micro\metre} thick layer of Pyre-M.L, a UHV-compatible polyamide
+which provides a layer of insulation between each loop. The wire has a
+cross-section of dimensions \(\sivalue{1.1}{\milli\metre} \times
+\sivalue{1.1}{\milli\metre}\), with 20 axial loops and 12 radial loops. The
+inner diameter of the coil is \sivalue{25.4}{\milli\metre}, to allow for optical
+access of the \(\vec{z}\)-axis \ac{mot} beams, and the maximum diameter is
+\textbf{59.2}\sivalue{}{\milli\metre} -- small enough that the coil could be
 inserted into the chamber through the DN63 CF ports. The coils are mounted to
 the chamber using groove grabbers which clamp into grooves inside the wall of
 the DN40 ports. The formers are designed to maximise the surface area between
@@ -192,12 +171,11 @@ them and the chamber, which in turn aims to maximise the rate at which heat is
 dissipated from the coils. Once mounted, the distance between the innermost
 loops is \sivalue{70}{\milli\metre}. \FigureRef{fig:mot_coil_plots} shows the
 magnetic field, measured using a Hall probe, along the axis of symmetry for each
-of the coils with a current of \sivalue{2.53}{\ampere}. This
-is in close agreement with the value expected from simulating the field produced
-by the coils - the magnetic field in the axial and radial planes of symmetry and
-shown in~\FigureRef{fig:3D_mot_axial} and~\FigureRef{fig:3D_mot_radial},
-respectively.
-\begin{figure}
+of the coils with a current of \sivalue{2.53}{\ampere}. This is in close
+agreement with the value expected from simulating the field produced by the
+coils - the magnetic field in the axial and radial planes of symmetry and shown
+in~\FigureRef{fig:3D_mot_axial} and~\FigureRef{fig:3D_mot_radial}, respectively.
+\begin{figure}[!htbp]
 	\centering
 	\def\svgwidth{\columnwidth}
 	\includegraphics[width=0.6\textwidth]{mot_field_3D.pdf}
@@ -209,7 +187,7 @@ respectively.
 		in~\FigureRef{fig:3D_mot_field_sim}.}
 	\label{fig:mot_coil_plots}
 \end{figure}
-\begin{figure}
+\begin{figure}[!htbp]
 	\centering
 	\def\svgwidth{\columnwidth}
 	\subfloat[][]{\scalebox{0.3}{\includegraphics{3D_field_xz.pdf}}\label{fig:3D_mot_axial}}
@@ -270,7 +248,7 @@ ruler in that plane, giving a calibration factor of
 \sivalue{5.1}{pixel\per\milli\metre}. A bandpass filter is placed between the
 lens and the CCD which transmits \sivalue{780}{\nano\metre} light at an
 efficiency of 60\% and blocks background light at other wavelengths.
-\begin{figure}
+\begin{figure}[!htbp]
 	\centering
 	\def\svgwidth{0.6\textwidth}
 	\input{Figures/Chapter4/ccd_optics.pdf_tex}
@@ -302,9 +280,9 @@ power radiated per atom is constant, the power incident on the CCD
 \begin{equation}
 	P_\textnormal{ccd} = \frac{\Omega}{4\pi} t R_\textnormal{sc}  \hbar \omega N_a
 \end{equation}
-where $\Omega/4\pi = $\pow{1.8}{-3} is the fractional solid
-angle subtended by the imaging optics, \(t\) is the transmission of the bandpass
-filter, \(R_\textnormal{sc}\) is the scattering rate as previously defined
+where $\Omega/4\pi = $\pow{1.8}{-3} is the fractional solid angle subtended by
+the imaging optics, \(t\) is the transmission of the bandpass filter,
+\(R_\textnormal{sc}\) is the scattering rate as previously defined
 in~\EquationRef{eq:scattering_rate} and \(\hbar \omega =
 \sivalue{1.6}{\electronvolt}\) is the emitted photon energy. This incident power
 is then related to the integrated number of pixel counts \(C_\textnormal{int}\)
@@ -320,7 +298,7 @@ exposure time used to image a collimated beam with a total power of
 as a function of exposure time is plotted in~\FigureRef{fig:camera_counts}. This
 gives a count scaling factor of \(\alpha\) =
 \pow{2.2}{5}\,counts\,\sivalue{}{\per\micro\second\per\micro\watt}.
-\begin{figure}
+\begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{cam_per_exposure}
 	\caption[Integrated pixel counts as a function of CCD exposure
@@ -353,7 +331,7 @@ should be noted that this Raman laser was not used in this experiment, so will
 not be discussed in further detail. Each of these slave lasers is amplified in
 an \ac{edfa}before being frequency doubled in a \ac{ppln} and passed through an
 \ac{aom} which is used to control the output power during the experiment.
-\begin{figure}
+\begin{figure}[!htbp]
 	\includegraphics[width=0.8\textwidth]{muquans_schematic}
 	\caption[\Muquans\ Laser System Diagram]{Schematic of the \Muquans\ laser system. Each output laser is derived from a\sivalue{1560}{\nano\metre} \acs{ecdl} (shown in green) which is amplified using an \acs{edfa} and then frequency-doubled to \sivalue{780}{\nano\metre} using a \acs{ppln} crystal. A master laser is locked to the 3,4 crossover in \ac{rb85} and the output lasers are offset-locked to their corresponding frequencies. The dashed region indicates the components used for generating light for the \acp{mots}, which was the only function of this laser for this experiment.}\label{fig:muquans_schematic}
 \end{figure}
@@ -371,11 +349,11 @@ master laser is set to lock to the crossover resonance between the \(F = 3
 (indicated as \(b\)), which is the strongest feature in the spectrum. This
 absorption feature is around \sivalue{1.1}{\giga\hertz} below the cooling
 transition in \ac{rb87} (indicated as \(a)\).
-\begin{figure}
+\begin{figure}[!htbp]
 	\includegraphics[width=0.6\textwidth]{sat_spec}
 	\caption[Saturated absorption spectroscopy of the \\Muquans\ master laser.]{Saturated absorption spectroscopy using the Rubidium vapour cell in the \Muquans\ laser. The absorption features indicated are \(a\): the \(F = 2 \rightarrow F' = 3\) transition in \ac{rb87} and \(b\): the crossover resonance between the \(F = 3 \rightarrow F' = 3\) and \(F = 3 \rightarrow F' = 4 \) transitions in \ac{rb85} which is used to lock the frequency of the master laser.}\label{fig:muquans_satspec}
 \end{figure}
-\begin{figure}
+\begin{figure}[!htbp]
 	\includegraphics[width=0.6\textwidth]{error_signal}
 	\caption[Error Signal for the \Muquans\ master servo.]{Error signal obtained by modulating the laser current. Close to the lock point, the signal is approximately linear. This signal is used in a feed-back loop to correct for frequency changes of the master laser.}\label{fig:muquans_error_signal}
 \end{figure}
@@ -393,7 +371,7 @@ frequency-offset locked to the master by comparing their beat frequency to a
 local oscillator. The reference frequency is generated by a \ac{dds} and is
 scaled up by a factor of 8. A plot of the error signal used to lock this offset
 frequency is shown in \FigureRef{fig:slave_offset}.
-\begin{figure}
+\begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.6\textwidth]{slave0_error}
 	\caption[Error Signal for the \Muquans\ Cooling laser.]{Error signal for the \Muquans cooling laser, plotted as a frequency difference from the start of the scan. This is obtained by comparing the beat frequency between the master and slave lasers to a reference frequency generated by a \ac{dds}. A servo loop feeds-back onto the frequency of the slave laser to keep this difference close to zero.}\label{fig:slave_offset}
@@ -471,7 +449,7 @@ light along the \(\vec{z}\) axis have separate \acp{aoms}. This is done so that
 during the experiment, a single beam along the \(\vec{z}\) axis can used to blow
 away background atoms (see \SectionRef{subsec:blow_away} for more details).
 
-\begin{figure}
+\begin{figure}[!htbp]
 	\centering
 	\def\svgwidth{0.65\textwidth}
 	\small{\input{Figures/Chapter4/fibre_network.pdf_tex}}
@@ -518,13 +496,23 @@ critical than the time taken for the 3D \ac{mot} quadrupole field to switch off.
 This section discusses the performance of the 2D and 3D \acp{mots} for trapping
 and cooling \ac{rb87}. The main goal of this stage of the experiment is to
 quickly produce an ensemble of trapped, cold atoms in the 3D \ac{mot}. For this
-reason, the loading rate of the 3D \ac{mot} is a useful figure-of-merit. As further
-cooling in an optical molasses is necessary to achieve a sufficiently cold ensemble for interferometry
-(see \SectionRef{sec:optical_molasses}), the temperature of atoms in the \ac{mot} will not be discussed in detail. \par\noindent
+reason, the loading rate of the 3D \ac{mot} is a useful figure-of-merit. As
+further cooling in an optical molasses is necessary to achieve a sufficiently
+cold ensemble for interferometry (see \SectionRef{sec:optical_molasses}), the
+temperature of atoms in the \ac{mot} will not be discussed in detail.
+\par\noindent
 
-At the start of the experiment, the light and magnetic fields to produce the 2D and
-3D \acp{mots} are switched on. \TableRef{tab:mot_parameters} shows the typical values for the cooling and
-repump power, as well as the field gradients and bias fields used. The cooling light is detuned by \(-2 \Gamma\) from the \trans{2}{3} transition for the 2D \ac{mot} and \(-2.5 \Gamma\) for the 3D \ac{mot}, whereas the push beam is at resonance. The light and magnetic fields for the 2D \ac{mot} are switched off after \sivalue{100}{\milli\second} and the 3D \ac{mot} is kept on for a further \sivalue{50}{\milli\second} to allow for the transit of the remaining atoms from the 2D \ac{mot} to the 3D \ac{mot}. After a sufficient number of atoms are loaded, the experiment proceeds by switching off the 3D quadrupole field prior to cooling in an optical molasses.
+At the start of the experiment, the light and magnetic fields to produce the 2D
+and 3D \acp{mots} are switched on. \TableRef{tab:mot_parameters} shows the
+typical values for the cooling and repump power, as well as the field gradients
+and bias fields used. The cooling light is detuned by \(-2 \Gamma\) from the
+\trans{2}{3} transition for the 2D \ac{mot} and \(-2.5 \Gamma\) for the 3D
+\ac{mot}, whereas the push beam is at resonance. The light and magnetic fields
+for the 2D \ac{mot} are switched off after \sivalue{100}{\milli\second} and the
+3D \ac{mot} is kept on for a further \sivalue{50}{\milli\second} to allow for
+the transit of the remaining atoms from the 2D \ac{mot} to the 3D \ac{mot}.
+After a sufficient number of atoms are loaded, the experiment proceeds by
+switching off the 3D quadrupole field prior to cooling in an optical molasses.
 \begin{table}[]
 	\centering
 
@@ -534,31 +522,41 @@ repump power, as well as the field gradients and bias fields used. The cooling l
 		\\
 		\midrule
 		\multicolumn{2}{l}{Laser Power}      & \multicolumn{2}{l}{Magnetic
-		Field}                               & \multicolumn{2}{l}{Laser Power}      & \multicolumn{2}{l}{Magnetic Field}                                                                                                                                                        \\
-		Cooling                              & \sivalue{60}{\milli\watt}            &
-		\(\mathrm{d}\vec{B}/\mathrm{d}\rho\) &
+		Field}                               & \multicolumn{2}{l}{Laser Power}
+		& \multicolumn{2}{l}{Magnetic Field}
+		\\
+		Cooling                              & \sivalue{60}{\milli\watt}
+		& \(\mathrm{d}\vec{B}/\mathrm{d}\rho\) &
 		\sivalue{18}{\gauss\per\centi\metre} & Cooling                              & \sivalue{130}{\milli\watt}
 		                                     & \(\mathrm{d}\vec{B}/\mathrm{d}z\)
-		                                     & \sivalue{15}{\gauss\per\centi\metre}                                                                                   \\
-		Repump                               & \sivalue{6}{\milli\watt}             & \(B_x\)
-		                                     & \sivalue{0.48}{\gauss}               & Repump                      & \sivalue{13}{\milli\watt} & \(B_x\) &
-		\sivalue{1}{\gauss}                                                                                                                                           \\
-		Push                                 & \sivalue{500}{\micro\watt}           &
-		\(B_y\)                              & \sivalue{-0.46}{\gauss}              &                             &                           & \(B_y\)
-		                                     & \sivalue{-0.5}{\gauss}                                                                                                 \\
-		                                     &                                      &                             &                           &         &   & \(B_z\)
-		                                     & \sivalue{0.22}{\gauss}
+		                                     &
+		                                     \sivalue{15}{\gauss\per\centi\metre}
+		                                     \\
+		Repump                               & \sivalue{6}{\milli\watt}
+		                                     & \(B_x\) & \sivalue{0.48}{\gauss}
+		                                     & Repump
+		                                     & \sivalue{13}{\milli\watt} &
+		                                     \(B_x\) & \sivalue{1}{\gauss}
+		                                     \\
+		Push                                 & \sivalue{500}{\micro\watt}
+		& \(B_y\)                              & \sivalue{-0.46}{\gauss}
+		&                                    &                           &
+		\(B_y\) & \sivalue{-0.5}{\gauss}
+		\\
+		                                     &
+		                                     &
+		                                     &                           &
+		                                     &   & \(B_z\) &
+		                                     \sivalue{0.22}{\gauss}
 	\end{tabular}
 	\caption[Typical optical and magnetic parameters for the \acp{mots}.]{Typical optical and mangetic parameters used for the 2D and 3D \acp{mots}. The optical powers listed are the total used for each \ac{mot}, which is divided into separate beams. The bias field strengths are the values used during the preliminary trapping stage of the experiment. The specified field gradients are given along the radial direction and the symmetry axis of the quadrupole coils for the 2D and 3D \acp{mots}, respectively.}
 	\label{tab:mot_parameters}
 \end{table}
-% \begin{figure}[hbtp!]
-% 	\centering
-% 	%\def\svgwidth{0.6\textwidth}
-% 	\resizebox{0.4\textwidth}{!}{\input{mot_loading_timing.pdf_tex}}
-% 	\caption[Timing diagram for \ac{mot} loading and temperature measurement]{}
-% 	\label{fig:mot_loading_timing}
-% \end{figure}
+ \begin{figure}[!htbp] \centering %\def\svgwidth{0.6\textwidth}
+   \resizebox{0.6\textwidth}{!}{\input{mot_loading_timing.pdf_tex}}
+   \caption[\ac{mot} loading timing diagram.]{Timing diagram for the loading stage of the experiment. The 2D \ac{mot} is switched on for \sivalue{100}{\milli\second} and is switched off earlier than the 3D \ac{mot}. }
+   \label{fig:mot_loading_timing} 
+\end{figure}
 \subsection{3D MOT Loading Rate}\label{subsec:loading_rate}
 
 The loading rate of the 3D \ac{mot} from a beam of atoms originating from the 2D
@@ -567,58 +565,80 @@ The loading rate of the 3D \ac{mot} from a beam of atoms originating from the 2D
 	\frac{\mathrm{d} N}{\mathrm{d}t} = R  \phi_\textnormal{rb} - \left(\alpha \phi_\textnormal{rb}  + \beta n_\textnormal{bg} \right) N - \gamma N^2
 	\label{eq:loading_rate}
 \end{equation}
-where \(\phi_\textnormal{rb}\) is the flux of rubidium through 3D \ac{mot} capture volume and \(R\) describes the rate at which rubidium is cooled and trapped such that \( R \phi_\text{rb}\) is the loading rate of the 3D \ac{mot}. The second term describes a loss rate due to collisions between trapped atoms and untrapped rubidium and
-background atoms. These loss rates are parameterised by \(\alpha\) and
-\(\beta\), respectively. The final term describes the loss of atoms from the trap due to intra-trap collisions~\cite{Prentiss1988} which depends on the density of atoms in the trap. In the case of a large flux of atoms from the 2D \ac{mot} the first two terms dominate, leading to a simple solution for the number of atoms in the 3D \ac{mot}
+where \(\phi_\textnormal{rb}\) is the flux of rubidium through 3D \ac{mot}
+capture volume and \(R\) describes the rate at which rubidium is cooled and
+trapped such that \( R \phi_\text{rb}\) is the loading rate of the 3D \ac{mot}.
+The second term describes a loss rate due to collisions between trapped atoms
+and untrapped rubidium and background atoms. These loss rates are parameterised
+by \(\alpha\) and \(\beta\), respectively. The final term describes the loss of
+atoms from the trap due to intra-trap collisions~\cite{Prentiss1988} which
+depends on the density of atoms in the trap. In the case of a large flux of
+atoms from the 2D \ac{mot} the first two terms dominate, leading to a simple
+solution for the number of atoms in the 3D \ac{mot}
 \begin{equation}
 	N(t) = \frac{R \phi _{\text{rb}} \left(1-e^{-t \left(\beta  n_{\text{bg}}+\alpha  \phi _{\text{rb}}\right)}\right)}{\beta  n_{\text{bg}}+\alpha  \phi _{\text{rb}}}
 	\label{eq:atom_number}
 \end{equation}
-which has a steady-state atom number given by 
+which has a steady-state atom number given by
 \begin{equation}
 	N_\infty = \frac{R \phi _{\text{rb}}}{\beta  n_{\text{bg}}+\alpha  \phi _{\text{rb}}}
 \end{equation}
-Under a small atomic flux, both the loading rate and steady-state atom number increase as the flux of atoms from the 2D \ac{mot} increases. Once this flux is great enough, the loss due to background atom collisions is small compared to the loss due to rubidium collisions and the final number is independent of \(\phi_\text{rb}\).
-\par\noindent
-To optimise the 3D \ac{mot} loading rate, we varied both the . The flux of atoms from the 2D \ac{mot} depends on the 2D \ac{mot} loading rate, which in turn depends on the capture volume and rubidium number density inside the cell.  Without any longitudinal cooling, a significant fraction of atoms leaving the cell will have a velocity greater than the 3D \ac{mot} capture velocity~\cite{Schoser2002}. 
-\par\noindent
-The effect of varying the partial pressure of rubidium inside the source cell
-are shown in~\FigureRef{fig:loading_plots}. For a range of dispenser currents,
-the number of atoms as a function of loading time was measured. At low partial
-pressures, the loading rate increases due to the increase in the flux from the
-2D \ac{mot}. As the pressure increases, the increasing flux gives a larger
-steady-state number of atoms, up until the background pressure becomes
-negligible. \FigureRef{loading_nopush} and \FigureRef{loading_push} compare the
-loading curves observed with and without the push beam. Below a threshold
-pressure, the push beam greatly improves the loading rate since a greater
-fraction of the atoms can be captured in the 3D \ac{mot}.
-\FigureRef{fig:loading_rate} shows the fitted loading rate for each scenario and
-indicates a clear optimum pressure, where the loading rate is maximised and the
-same steady-state atom number is reached with or without the push beam. Above
-this pressure, the loading rate is sharply reduced as the increased collision
-rate between cold atoms from the 2D \ac{mot} and hot untrapped ones reduces the
-atomic flux. This also increases the mean velocity of atoms in the beam, since
-faster ones are less likely to collide with a background atom before exiting the
-cell. At very high pressures, the mean velocity is so great that only a small
-fraction of atoms can be captured and the push beam has little effect on the loading rate.
-\begin{figure}
+Under a small atomic flux, both the loading rate and steady-state atom number
+increase as the flux of atoms from the 2D \ac{mot} increases. Once this flux is
+great enough, the loss due to background atom collisions is small compared to
+the loss due to rubidium collisions and the final number is independent of
+\(\phi_\text{rb}\). \par\noindent To optimise the 3D \ac{mot} loading rate, we
+varied both the . The flux of atoms from the 2D \ac{mot} depends on the 2D
+\ac{mot} loading rate, which in turn depends on the capture volume and rubidium
+number density inside the cell.  Without any longitudinal cooling, a significant
+fraction of atoms leaving the cell will have a velocity greater than the 3D
+\ac{mot} capture velocity~\cite{Schoser2002}. \par\noindent The effect of
+varying the partial pressure of rubidium inside the source cell are shown
+in~\FigureRef{fig:loading_plots}. For a range of dispenser currents, the number
+of atoms as a function of loading time was measured. At low partial pressures,
+the loading rate increases due to the increase in the flux from the 2D \ac{mot}.
+As the pressure increases, the increasing flux gives a larger steady-state
+number of atoms, up until the background pressure becomes negligible.
+\FigureRef{loading_nopush} and \FigureRef{loading_push} compare the loading
+curves observed with and without the push beam. Below a threshold pressure, the
+push beam greatly improves the loading rate since a greater fraction of the
+atoms can be captured in the 3D \ac{mot}. \FigureRef{fig:loading_rate} shows the
+fitted loading rate for each scenario and indicates a clear optimum pressure,
+where the loading rate is maximised and the same steady-state atom number is
+reached with or without the push beam. Above this pressure, the loading rate is
+sharply reduced as the increased collision rate between cold atoms from the 2D
+\ac{mot} and hot untrapped ones reduces the atomic flux. This also increases the
+mean velocity of atoms in the beam, since faster ones are less likely to collide
+with a background atom before exiting the cell. At very high pressures, the mean
+velocity is so great that only a small fraction of atoms can be captured and the
+push beam has little effect on the loading rate.
+\begin{figure}[!htbp]
 	\centering
 	\def\svgwidth{\columnwidth}
 	\subfloat[][]{\scalebox{0.3}{\includegraphics{Figures/Chapter4/loading_nopush.pdf}}\label{fig:loading_nopush}}
 	\subfloat[][]{\scalebox{0.3}{\includegraphics{Figures/Chapter4/loading_push.pdf}}\label{fig:loading_push}}\\
 	\subfloat[][]{\scalebox{0.3}{\includegraphics{Figures/Chapter4/loading_rate.pdf}}\label{fig:loading_rate}}
-	\caption[3D \ac{mot} atom number vs dispenser current with and without a push beam.]{Number of atoms in the 3D \ac{mot} over time for a range of dispenser
-currents. For clarity, only the loading curves for dispenser currents of
-\sivalue{2}{\ampere} (blue),\sivalue{2.2}{\ampere}
-(orange), \sivalue{2.4}{\ampere} (green), \sivalue{2.6}{\ampere}
-(red), \sivalue{2.8}{\ampere} (purple) and \sivalue{3}{\ampere} (brown) are
-shown in \((a)\) and \((b)\), which present the number of atoms over time
-without and with a push beam, respectively. The loading rate (\(R \phi_\text{rb}\) in~\EquationRef{eq:loading_rate}) in both instances is
-shown in \((c)\). As the partial pressure of rubidium increases, the flux of atoms from the source cell increases. By longitudinally cooling the atoms, the push beam enhances
-the loading rate of the 3D \ac{mot}. Above a dispenser current of
-\sivalue{2.8}{\ampere}, the collision rate with hot untrapped atoms greatly reduces the atom flux, reducing both the loading rate and steady-state atom number.}
-\label{fig:loading_plots} 
-\end{figure} 
+	\caption[3D \ac{mot} atom number vs dispenser current with and without a
+		push beam.]{Number of atoms in the 3D \ac{mot} over time for a range of
+		dispenser currents. For clarity, only the loading curves for dispenser
+		currents of
+		\sivalue{2}{\ampere} (blue),\sivalue{2.2}{\ampere}
+		(orange), \sivalue{2.4}{\ampere} (green), \sivalue{2.6}{\ampere} (red),
+		\sivalue{2.8}{\ampere} (purple) and \sivalue{3}{\ampere} (brown) are
+		shown in \((a)\) and \((b)\), which present the number of atoms over
+		time without and with a push beam, respectively. The loading rate (\(R
+		\phi_\text{rb}\) in~\EquationRef{eq:loading_rate}) in both instances is
+		shown in \((c)\). As the partial pressure of rubidium increases, the
+		flux of atoms from the source cell increases. By longitudinally cooling
+		the atoms, the push beam enhances the loading rate of the 3D \ac{mot}.
+		Above a dispenser current of
+		\sivalue{2.8}{\ampere}, the collision rate with hot untrapped atoms greatly reduces the atom flux, reducing both the loading rate and steady-state atom number.}
+	\label{fig:loading_plots}
+\end{figure}
 
 \section{Conclusion}
-This chapter has introduced the components of the experiment that were used to trap and cool atoms in a \ac{mot}. This is used to prepare an ensemble of cold atoms in a pure quantum state, suitable for interferometry. An optimisation of the loading rate of the 3D \ac{mot} was carried out to reduce the dead time between consecutive measurements of acceleration using the interferometer. 
+This chapter has introduced the components of the experiment that were used to
+trap and cool atoms in a \ac{mot}. This is used to prepare an ensemble of cold
+atoms in a pure quantum state, suitable for interferometry. An optimisation of
+the loading rate of the 3D \ac{mot} was carried out to reduce the dead time
+between consecutive measurements of acceleration using the interferometer.

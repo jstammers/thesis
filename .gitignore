@@ -1,1 +1,10 @@
-Figures/*
+Figures/*/PlotData/*
+*.ipynb
+*.nb
+*.auxlock
+*.sum
+*.dpth
+*.md5
+build/*
+*.svg
+*.gz

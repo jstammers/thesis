@@ -1,0 +1,91 @@
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'state_selection_timing.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{649.04576527bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.78510156)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{state_selection_timing.pdf}}%
+    \put(0.05614709,0.65202316){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Cooling \\Power\end{tabular}}}}%
+    \put(0.06081619,0.55404877){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Cooling\\Freq\end{tabular}}}}%
+    \put(0.06023255,0.46249434){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Repump \\Power\end{tabular}}}}%
+    \put(0.0625671,0.37054659){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Repump\\Freq\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{state_selection_timing.pdf}}%
+    \put(0.07307257,0.08092965){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Bias Field\end{tabular}}}}%
+    \put(0.07132165,0.18666442){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Microwave\\Power\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{state_selection_timing.pdf}}%
+    \put(0.92241249,0.00039329){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}time\end{tabular}}}}%
+    \put(0.42503511,0.77924861){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\trans{2}{2}\end{tabular}}}}%
+    \put(0.51563943,0.7445823){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\trans{1}{0}\end{tabular}}}}%
+    \put(0.6106909,0.70472017){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Microwave\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{state_selection_timing.pdf}}%
+    \put(0.7268431,0.70483866){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Vel. Select\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{state_selection_timing.pdf}}%
+    \put(0.83340869,0.70546685){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Blow-away\end{tabular}}}}%
+    \put(0.06152352,0.25984304){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Raman\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{state_selection_timing.pdf}}%
+    \put(0.43462799,0.0249932){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\sivalue{10}{\micro\second}$\end{tabular}}}}%
+    \put(0.51008201,0.0249932){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\sivalue{40}{\micro\second}$\end{tabular}}}}%
+    \put(0.73035517,0.0249932){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\sivalue{147}{\micro\second}$\end{tabular}}}}%
+    \put(0.61970547,0.0249932){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\sivalue{95}{\micro\second}$\end{tabular}}}}%
+    \put(0.84074117,0.0249932){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\sivalue{300}{\micro\second}$\end{tabular}}}}%
+    \put(0.18436461,0.54845816){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\sivalue{-250}{\mega\hertz}$\end{tabular}}}}%
+    \put(0.18436461,0.52897144){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\sivalue{-267}{\mega\hertz}$\end{tabular}}}}%
+    \put(0.18436461,0.58625635){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\sivalue{-3}{\mega\hertz}$\end{tabular}}}}%
+    \put(0.18436461,0.38897751){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\sivalue{0}{\mega\hertz}$\end{tabular}}}}%
+    \put(0.17889358,0.35679495){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\sivalue{-229}{\mega\hertz}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{state_selection_timing.pdf}}%
+    \put(0.91680849,0.12379354){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\vec{z}$\end{tabular}}}}%
+    \put(0.98117353,0.06586505){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\vec{r}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{state_selection_timing.pdf}}%
+    \put(0.30180054,0.70472017){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}Molasses\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

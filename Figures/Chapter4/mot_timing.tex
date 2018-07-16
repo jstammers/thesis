@@ -1,0 +1,26 @@
+\begin{tikzpicture}
+% horizontal axis
+\draw[->] (0,0) -- (6,0) node[anchor=north] {$time (ms)$};
+\draw[->] (0,1.5) -- (6,1.5) node[anchor=north] {};
+\draw[->] (0,3) -- (6,3) node[anchor=north] {};
+\draw[->] (0,4.5) -- (6,4.5) node[anchor=north] {};
+\draw[->] (0,6) -- (6,6) node[anchor=north] {};
+\draw[->] (0,7.5) -- (6,7.5) node[anchor=north] {};
+% labels
+\draw	(0,0) node[anchor=north] {0}
+		(2,0) node[anchor=north] {1}
+		(4,0) node[anchor=north] {2};
+
+
+% vertical axis
+\draw[-] (0,7.5) -- (0,9) node[anchor=north east] {2D \ac{mot}};
+\draw[-] (0,6) -- (0,7.5) node[anchor=north east] {2D Field};
+\draw[-] (0,4.5) -- (0,6) node[anchor=north east] {Push};
+\draw[-] (0,3) -- (0,4.5) node[anchor=north east] {3D \ac{mot}};
+\draw[-] (0,1.5) -- (0,3) node[anchor=north east] {3D Field};
+\draw[-] (0,0) -- (0,1.5) node[anchor=north east] {Camera};
+
+\draw[-] (0,8.5) -- (1,8.5) [thick];
+\draw[-] (0,7) -- (1,7)[thick];
+\draw[-] (1,7) -- () 
+\end{tikzpicture}

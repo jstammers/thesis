@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{572.66662677bp}%
+    \setlength{\unitlength}{629.43118016bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,37 +50,39 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,1.26795863)%
+  \begin{picture}(1,1.22929085)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{fibre_network.pdf}}%
-    \put(0.66508341,0.96139751){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c} 66:34\end{tabular}}}}%
+    \put(0.6051036,0.87469494){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c} 66:34\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{fibre_network.pdf}}%
-    \put(0.9061456,0.79472015){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}95:5\end{tabular}}}}%
+    \put(0.82442587,0.7230492){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}95:5\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{fibre_network.pdf}}%
-    \put(0.42314137,0.79472015){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}33:33:33\end{tabular}}}}%
+    \put(0.38498084,0.7230492){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}33:33:33\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{fibre_network.pdf}}%
-    \put(0.42298789,0.51309322){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}50:50\end{tabular}}}}%
+    \put(0.3848412,0.46682048){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}50:50\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{fibre_network.pdf}}%
-    \put(0.23412905,0.35216351){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c} 50:50\end{tabular}}}}%
+    \put(0.21301438,0.32040404){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c} 50:50\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{fibre_network.pdf}}%
-    \put(0.61265502,0.35216351){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}50:50\end{tabular}}}}%
+    \put(0.5574034,0.32040404){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}50:50\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{fibre_network.pdf}}%
-    \put(0.67576654,0.24815077){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$y_-$\end{tabular}}}}%
-    \put(0.55039022,0.24815077){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$y_+$\end{tabular}}}}%
-    \put(0.2904516,0.26215531){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$x_-$\end{tabular}}}}%
-    \put(0.17843127,0.26215531){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$x_+$\end{tabular}}}}%
-    \put(0.83649707,0.25725087){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2D\end{tabular}}}}%
-    \put(0.49736541,0.1711875){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$z_-$\end{tabular}}}}%
-    \put(0.34621428,0.1711875){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$z_+$\end{tabular}}}}%
-    \put(0.97638515,0.25974448){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}push\end{tabular}}}}%
-    \put(0.20784643,0.00194403){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}4\%\end{tabular}}}}%
-    \put(0.58718086,0.00194403){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}4\%\end{tabular}}}}%
-    \put(0.86862221,0.07453685){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}13.3\%\end{tabular}}}}%
-    \put(0.46574718,0.00194403){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}7.1\%\end{tabular}}}}%
-    \put(0.38099195,0.00194403){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}6.7\%\end{tabular}}}}%
-    \put(0.25957387,0.00194403){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}4\%\end{tabular}}}}%
-    \put(0.63862178,0.00194403){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}3.3\%\end{tabular}}}}%
-    \put(0.94173445,0.07453685){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1.1\%\end{tabular}}}}%
+    \put(0.61482328,0.22577157){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$y_-$\end{tabular}}}}%
+    \put(0.50075389,0.22577157){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$y_+$\end{tabular}}}}%
+    \put(0.26425754,0.23851312){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$x_-$\end{tabular}}}}%
+    \put(0.16233964,0.23851312){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$x_+$\end{tabular}}}}%
+    \put(0.76105851,0.23405099){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2D\end{tabular}}}}%
+    \put(0.45251106,0.15574915){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$z_-$\end{tabular}}}}%
+    \put(0.31499133,0.15574915){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$z_+$\end{tabular}}}}%
+    \put(0.88833094,0.23631971){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}push\end{tabular}}}}%
+    \put(0.18910203,0.00176871){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}4\%\end{tabular}}}}%
+    \put(0.5342266,0.00176871){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}4\%\end{tabular}}}}%
+    \put(0.79028648,0.06781483){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}13.3\%\end{tabular}}}}%
+    \put(0.42374429,0.00176871){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}7.1\%\end{tabular}}}}%
+    \put(0.34663261,0.00176871){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}6.7\%\end{tabular}}}}%
+    \put(0.23616449,0.00176871){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}4\%\end{tabular}}}}%
+    \put(0.58102838,0.00176871){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}3.3\%\end{tabular}}}}%
+    \put(0.85680518,0.06781483){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1.1\%\end{tabular}}}}%
+    \put(0.48881956,1.19307884){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\frac{\lambda}{2}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{fibre_network.pdf}}%
   \end{picture}%
 \endgroup%

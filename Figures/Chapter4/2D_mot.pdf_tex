@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{562.66498373bp}%
+    \setlength{\unitlength}{452.04901692bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,15 +50,11 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.88060196)%
+  \begin{picture}(1,1.12551852)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{2D_mot.pdf}}%
-    \put(0.02647725,0.01000622){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Push\end{tabular}}}}%
-    \put(0.39372372,0.01257444){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_-$\end{tabular}}}}%
+    \put(0.05212754,0.04188887){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Push\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{2D_mot.pdf}}%
-    \put(0.36675805,0.77916938){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_-$\end{tabular}}}}%
-    \put(-0.00442579,0.51377978){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_-$\end{tabular}}}}%
-    \put(0.71151691,0.2967509){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_-$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

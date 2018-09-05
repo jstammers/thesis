@@ -1,0 +1,74 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Schematic diagram of MOTMaster and hardware interface.}}{7}{figure.caption.10}
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Scripted pattern generation for an NI-HSDIO card}}{10}{figure.caption.17}
+\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Timing diagram for serial communication}}{11}{figure.caption.18}
+\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces MOTMaster user interface}}{14}{figure.caption.20}
+\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Control hardware schematic diagram}}{16}{figure.caption.22}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces \ac {mot} system component diagram}}{21}{figure.caption.26}
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Schematic for the 2D \ac {mot}}}{23}{figure.caption.27}
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Optical components for the 2D \ac {mot}}}{25}{figure.caption.30}
+\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Simulated field and field gradients for the 2D \ac {mot} quadrupole coils}}{26}{figure.caption.32}
+\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces \ac {mot} coil temperature rise}}{27}{figure.caption.35}
+\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces Measured magnetic field and field gradient for the 3D \ac {mot} coils}}{28}{figure.caption.36}
+\contentsline {figure}{\numberline {\relax 4.7}{\ignorespaces Simulated magnetic field for the 3D \ac {mot} quadrupole coils}}{28}{figure.caption.37}
+\contentsline {figure}{\numberline {\relax 4.8}{\ignorespaces Optical setup for CCD imaging}}{30}{figure.caption.41}
+\contentsline {figure}{\numberline {\relax 4.9}{\ignorespaces Integrated pixel counts as a function of CCD exposure time.}}{31}{figure.caption.43}
+\contentsline {figure}{\numberline {\relax 4.10}{\ignorespaces \(\mu \)Quans\xspace \ Laser System Diagram}}{33}{figure.caption.49}
+\contentsline {figure}{\numberline {\relax 4.11}{\ignorespaces Saturated absorption spectroscopy of the Muquans\ master laser.}}{34}{figure.caption.50}
+\contentsline {figure}{\numberline {\relax 4.12}{\ignorespaces Error Signal for the \(\mu \)Quans\xspace \ master servo.}}{34}{figure.caption.51}
+\contentsline {figure}{\numberline {\relax 4.13}{\ignorespaces Error Signal for the \(\mu \)Quans\xspace \ Cooling laser.}}{35}{figure.caption.53}
+\contentsline {figure}{\numberline {\relax 4.14}{\ignorespaces Network of optical fibre splitters and \acp {aoms} for \ac {MOT}light distribution}}{38}{figure.caption.55}
+\contentsline {figure}{\numberline {\relax 4.15}{\ignorespaces \ac {mot} loading timing diagram.}}{41}{figure.caption.57}
+\contentsline {figure}{\numberline {\relax 4.16}{\ignorespaces 3D \ac {mot} atom number vs dispenser current with and without a push beam.}}{43}{figure.caption.58}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Molasses stage timing diagram}}{48}{figure.caption.59}
+\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Beam configuration for a moving molasses}}{49}{figure.caption.60}
+\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Atom cloud position after launching in a moving molasses}}{50}{figure.caption.61}
+\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces Temperature measurement using ballistic expansion}}{52}{figure.caption.63}
+\contentsline {figure}{\numberline {\relax 5.5}{\ignorespaces Atom cloud centre-of-mass over time}}{53}{figure.caption.65}
+\contentsline {figure}{\numberline {\relax 5.6}{\ignorespaces State preparation pulse sequence}}{56}{figure.caption.67}
+\contentsline {figure}{\numberline {\relax 5.7}{\ignorespaces State selection timing schematic}}{57}{figure.caption.68}
+\contentsline {figure}{\numberline {\relax 5.8}{\ignorespaces Ground state distribution during \(\mathinner {|{F=2}\delimiter "5679844 } \rightarrow \mathinner {|{F'=2}\delimiter "5679844 }\) pumping}}{58}{figure.caption.70}
+\contentsline {figure}{\numberline {\relax 5.9}{\ignorespaces \(m_F\) populations before and after \(\mathinner {|{F=1}\delimiter "5679844 } \rightarrow \mathinner {|{F'=0}\delimiter "5679844 }\) pumping}}{59}{figure.caption.72}
+\contentsline {figure}{\numberline {\relax 5.10}{\ignorespaces \(\mathinner {|{1,m_F}\delimiter "5679844 }\) populations for increasing \(\mathinner {|{F=1}\delimiter "5679844 } \rightarrow \mathinner {|{F'=0}\delimiter "5679844 }\) pumping time.}}{60}{figure.caption.73}
+\contentsline {figure}{\numberline {\relax 5.11}{\ignorespaces Setup for Microwaves}}{61}{figure.caption.75}
+\contentsline {figure}{\numberline {\relax 5.12}{\ignorespaces Microwave Rabi oscillation between \(\mathinner {|{1,0}\delimiter "5679844 }\) and \(\mathinner {|{2,0}\delimiter "5679844 }\)}}{62}{figure.caption.77}
+\contentsline {figure}{\numberline {\relax 5.13}{\ignorespaces Microwave transition spectrum}}{62}{figure.caption.78}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Simulated fringe contrast vs beam waist size}}{68}{figure.caption.79}
+\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Expected contrast as a function of random phase contributions. This assumes that the phase imprinted on an atom during each interferometer pulse has an additional random component that is Gaussian distributed around 0 with a standard deviation of \(\sigma _\phi \). This random phase is also uncorrelated between each pulse so that the total can be obtained using Gaussian propagation of error. The dashed lines indicate the contrast for phase noise expected from conventional optics, which are usually engineered to a surface flatness of \(\lambda /20\).\relax }}{69}{figure.caption.80}
+\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces Drawings of the compenets used in the Raman optics assemblies}}{71}{figure.caption.82}
+\contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces Simulated wavefront distortion for longitudinal and transverse fibre misalignment}}{73}{figure.caption.84}
+\contentsline {figure}{\numberline {\relax 6.5}{\ignorespaces Measured Raman beam waist}}{75}{figure.caption.86}
+\contentsline {figure}{\numberline {\relax 6.6}{\ignorespaces Thickness of the first \ac {qwp}, measured by a white light interferometer. The value is given in \SI [mode=text]{}{\nano \metre } as a difference from the mean thickness. The standard deviation of this thickness is \SI [mode=text]{4.62}{\nano \metre } and a peak-to-valley (PV) of {\textbf need number here}. Equivalent surface data for the other \ac {qwp} and mirror were not provided by Light Machinery, but had a PV thickness variation of \SI [mode=text]{19}{\nano \metre } and \SI [mode=text]{9}{\nano \metre } respectively.\relax }}{76}{figure.caption.87}
+\contentsline {figure}{\numberline {\relax 6.7}{\ignorespaces Automatic mirror alignment using the Nelder-Mead simplex algorithm.}}{79}{figure.caption.89}
+\contentsline {figure}{\numberline {\relax 6.8}{\ignorespaces Innalabs accelerometer cross-section}}{81}{figure.caption.91}
+\contentsline {figure}{\numberline {\relax 6.9}{\ignorespaces M-Squared Laser System Schematic}}{82}{figure.caption.93}
+\contentsline {figure}{\numberline {\relax 6.10}{\ignorespaces DCS Module User interface}}{85}{figure.caption.99}
+\contentsline {figure}{\numberline {\relax 6.11}{\ignorespaces Scheme for detection by driving \(\sigma ^+\) transitions. A liquid-crystal waveplate flips the handedness of the \(\mathaccentV {vec}17E{z}_-\) \ac {mot} beam. The atoms then fluoresce on the \(\mathinner {|{2,2}\delimiter "5679844 } \rightarrow \mathinner {|{4,3}\delimiter "5679844 }\) cycling transition\relax }}{87}{figure.caption.101}
+\contentsline {figure}{\numberline {\relax 6.12}{\ignorespaces Optical setup for Photodiode Detection}}{87}{figure.caption.102}
+\contentsline {figure}{\numberline {\relax 6.13}{\ignorespaces State detection sequence timing}}{88}{figure.caption.104}
+\contentsline {figure}{\numberline {\relax 6.14}{\ignorespaces Photodiode output voltage for increasing detection beam intensity. The red dashed line indicates a fit to\nobreakspace {}\EquationRef {eq:voltage_fit} to estimate the scaling factor for the saturation parameter \(s\).\relax }}{90}{figure.caption.107}
+\contentsline {figure}{\numberline {\relax 6.15}{\ignorespaces Photodiode voltage over time during detection for \(s = 0.5, 1, 3, 7, 10\) in order from purple to yellow.\relax }}{90}{figure.caption.108}
+\contentsline {figure}{\numberline {\relax 6.16}{\ignorespaces Interferometer contrast for an increasing resudual atoms ratio}}{93}{figure.caption.110}
+\contentsline {figure}{\numberline {\relax 6.17}{\ignorespaces Photodiode power spectral density}}{96}{figure.caption.114}
+\contentsline {figure}{\numberline {\relax 6.18}{\ignorespaces Allan variance of the Photodiode voltage for increasing integration time \(\tau \). The red and green dashed lines are the atom shot noise rms voltages for the values used in\nobreakspace {}\FigureRef {fig:noise_source_psd}. The black dot-dashed line indicates the integration time of \SI [mode=text]{200}{\micro \second } used in the experiment.\relax }}{97}{figure.caption.115}
+\contentsline {figure}{\numberline {\relax 6.19}{\ignorespaces Raman transition spectrum}}{99}{figure.caption.118}
+\contentsline {figure}{\numberline {\relax 6.20}{\ignorespaces \(\Delta m = 0\) transition spectrum.}}{100}{figure.caption.119}
+\contentsline {figure}{\numberline {\relax 6.21}{\ignorespaces Differential ac Stark shift as a function of two-photon detuning and Raman beam intensities}}{102}{figure.caption.120}
+\contentsline {figure}{\numberline {\relax 6.22}{\ignorespaces Raman transition spectrum after cancelling the differential ac Stark shift.}}{102}{figure.caption.121}
+\contentsline {figure}{\numberline {\relax 6.23}{\ignorespaces Velocity distribution of a \SI [mode=text]{6}{\micro \kelvin } ensemble of atoms after a \SI [mode=text]{40}{\micro \second } Raman \(\pi \) pulse. The mean velocity of the stimulated distribution, shown in orange, is increased due to the recoil during the transition.\relax }}{104}{figure.caption.122}
+\contentsline {figure}{\numberline {\relax 6.24}{\ignorespaces \(\mathinner {|{F=2}\delimiter "5679844 }\) population after a Raman pulse at a frequency \(f_v =\)\SI [mode=text]{6834.51}{\mega \hertz } transfers atoms to \(\mathinner {|{1,0}\delimiter "5679844 }\). This distribution is probed by applying a narrow pulse at a frequency \(f_{R}\). The population measured in \(\mathinner {|{F=2}\delimiter "5679844 }\) is shown in blue. The red dashed line is a fit to a 1D Maxwell-Boltzmann distribution of the Doppler-broadened transition peak. For comparison, the transition spectrum of a single \(\tau = \)\SI [mode=text]{40}{\micro \s } \(\pi \) pulse is shown in orange.\relax }}{105}{figure.caption.124}
+\contentsline {figure}{\numberline {\relax 6.25}{\ignorespaces Interference fringe for \(T = \)\SI [mode=text]{25}{\ms }.}}{107}{figure.caption.125}
+\contentsline {figure}{\numberline {\relax 6.26}{\ignorespaces Comparison of MEMS/Interferometer correlation in a high and low vibration environments.}}{108}{figure.caption.126}
+\contentsline {figure}{\numberline {\relax 6.27}{\ignorespaces Histogram of acceleration noise.}}{109}{figure.caption.127}
+\contentsline {figure}{\numberline {\relax 6.28}{\ignorespaces Comparison of Allan deviation in a high and low vibration environment.}}{110}{figure.caption.128}
+\contentsline {figure}{\numberline {\relax 6.29}{\ignorespaces Transfer function for laser phase noise.}}{115}{figure.caption.130}
+\contentsline {figure}{\numberline {\relax 6.30}{\ignorespaces Allan deviation of the Raman laser phase difference.}}{116}{figure.caption.131}
+\contentsline {figure}{\numberline {\relax 6.31}{\ignorespaces Acceleration noise transfer function.}}{118}{figure.caption.132}
+\contentsline {figure}{\numberline {\relax 6.32}{\ignorespaces Acceleration noise power spectral density.}}{119}{figure.caption.134}
+\addvspace {10\p@ }

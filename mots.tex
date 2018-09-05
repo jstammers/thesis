@@ -15,7 +15,7 @@ majority of the hardware used in the preliminary trapping and cooling stages of
 the experiment. A diagram of the
 vacuum chamber and the main \ac{mot} components is shown in
 \FigureRef{fig:mot_system}. The chamber is made of 316L stainless steel, which has a low magnetic permeability to reduce stray magnetic fields on the atoms during the experiment.  It contains 16 DN40 ConFlat ports arranged
-on the edges of three octagons, one in each cartesian coordinate plane. Six of
+on the edges of three octagons, one in each Cartesian coordinate plane. Six of
 these ports provide optical access for the 3D \ac{mot}. Another port connects the 2D \ac{mot} system to the main chamber. One port provides optical access for either a CCD camera or photodiode. Opposite this is a microwave horn for driving microwave transitions between the two \ac{rb87} hyperfine ground states, The remaining DN16 ports are not used for optical access since
 they do not have a direct line of sight to the atoms. Instead, these are used to attach a pressure gauge, gate valve, a NexTorr NEG pump and electrical feedthroughs for the \ac{mot} coils. Two DN63
 ports lie along one axis and are used to mount the optics for driving Raman transitions\footnote{For more information about the Raman optical system,
@@ -110,7 +110,7 @@ cell. These produce a radial field gradient per current of
 \sivalue{20}{\gauss\per\centi\metre\per\ampere}. A simulation of the field
 gradient along each axis, along with the magnetic field in each plane of
 symmetry is shown in \FigureRef{fig:2d_mot_field_gradient}.  
-Across the centre of the cell, the field gradient is very uniform. The equlibrium position where the \ac{ mot} forms is adjusted using Helmholtz coil pairs along each \ac{mot} axis. These coils produce a field per current of
+Across the centre of the cell, the field gradient is very uniform. The equilibrium position where the \ac{ mot} forms is adjusted using Helmholtz coil pairs along each \ac{mot} axis. These coils produce a field per current of
 \sivalue{1}{\gauss\per\ampere}.
 \begin{figure}[!htbp]
 	\centering
@@ -151,10 +151,10 @@ access of the \(\vec{z}\)-axis \ac{mot} beams, and the maximum diameter is
 \sivalue{59.2}{\milli\metre} -- small enough that the coil could be
 inserted into the chamber through the DN63 CF ports. The coils are mounted to
 the chamber using groove grabbers which clamp into grooves inside the wall of
-the DN40 ports. The coil formers increase the surface area in contact with the chamber, increasing the rate of heat dissipation from the coils. A plot of the measured temperature over time is given in~\FigureRef{fig:mot_coil_temp} both at atmospheric pressure and inside the chamber. At a pressure of around  \sivalue{e-2}{\milli\bar}, the temperature of the coils inside the chamber does not exceed \sivalue{40}{\celsius}. Once mounted, the distance between the innermost
+the DN40 ports. The coil formers increase the surface area in contact with the chamber, increasing the rate of heat dissipation from the coils. A plot of the measured temperature over time is given in~\FigureRef{fig:mot_coil_temp} both at atmospheric pressure and inside the chamber. At a pressure of around  \sivalue{1e-2}{\milli\bar}, the temperature of the coils inside the chamber does not exceed \sivalue{40}{\celsius}. Once mounted, the distance between the innermost
 loops is \sivalue{70}{\milli\metre}. \FigureRef{fig:mot_coil_plots} shows the
 magnetic field, measured using a Hall probe, along the axis of symmetry for each
-of the coils with a current of \sivalue{2.53}{\ampere}. \FigureRef{fig:mot_coil_plots_together} shows the axial field measured when the coils are in anti-helmholtz configuration. These are in close
+of the coils with a current of \sivalue{2.53}{\ampere}. \FigureRef{fig:mot_coil_plots_together} shows the axial field measured when the coils are in anti-Helmholtz configuration. These are in close
 agreement with a simulation of the magnetic field. The simulated field in the axial and radial planes of symmetry are shown
 in~\FigureRef{fig:3D_mot_axial} and~\FigureRef{fig:3D_mot_radial}, respectively.
 \begin{figure}[!htbp]
@@ -162,7 +162,7 @@ in~\FigureRef{fig:3D_mot_axial} and~\FigureRef{fig:3D_mot_radial}, respectively.
 	\def\svgwidth{\columnwidth}
 	\subfloat[][]{\includegraphics[width=0.45\textwidth]{mot_coil_temperature.pdf}}\label{fig:mot_coil_temp}
 	\subfloat[][]{\includegraphics[width=0.45\textwidth]{mot_coil_temperature_chamber.pdf}}\label{fig:mot_coil_temp_tg4}
-	\caption[\ac{mot} coil temperature rise]{Temperature rise due to the \ac{mot} coils over 1 hour of operation. The blue curves were measured when the coils were at atmosphere and the orange were measured under a rough vacuum around \sivalue{e-2}{\milli\bar}. \textbf{(a)} shows the temperature of the coils and \textbf{(b)} is the temperature of the exterior of the chamber.}
+	\caption[\ac{mot} coil temperature rise]{Temperature rise due to the \ac{mot} coils over 1 hour of operation. The blue curves were measured when the coils were at atmosphere and the orange were measured under a rough vacuum around \sivalue{1e-2}{\milli\bar}. \textbf{(a)} shows the temperature of the coils and \textbf{(b)} is the temperature of the exterior of the chamber.}
 	\label{fig:mot_coil_temp_both}
 \end{figure}
 \begin{figure}[!htbp]
@@ -173,7 +173,7 @@ in~\FigureRef{fig:3D_mot_axial} and~\FigureRef{fig:3D_mot_radial}, respectively.
 	\caption[Measured magnetic field and field gradient for the 3D \ac{mot}
 		coils]{Measured magnetic field and field gradient for the 3D \ac{mot}
 		coils. \textbf{(a)} shows the axial magnetic field for the two coils as
-		measured using a Hall probe. \textbf{(b)} shows the field close to the centre when the coils are in an anti-helmholtz configuration. The dashed lines indicate the axial field as
+		measured using a Hall probe. \textbf{(b)} shows the field close to the centre when the coils are in an anti-Helmholtz configuration. The dashed lines indicate the axial field as
 		calculated from the simulation shown
 		in~\FigureRef{fig:3D_mot_field_sim}.}
 	
@@ -246,7 +246,7 @@ Measuring the incident optical power is useful for estimating the number of atom
 assumption of a constant scattering rate per atom is not valid and leads to an
 under-estimate of the atom number. More accurate techniques such as absorption imaging can be used, but for the purposes of this experiment, it was
 sufficient to use fluorescence imaging as a rough estimate of the
-number of atoms in the \ac{mot}. In subsequent stages of the expriment, a sensitive photodiode with a high bandwidth was used to detect the atoms in each hyperfine ground state. Details on this setup can
+number of atoms in the \ac{mot}. In subsequent stages of the experiment, a sensitive photodiode with a high bandwidth was used to detect the atoms in each hyperfine ground state. Details on this setup can
 be found in~\SectionRef{subsec:photodiode_setup}. \par\noindent
 Under the assumption that the
 power radiated per atom is constant, the power incident on the CCD
@@ -302,7 +302,7 @@ The other two make up a pair of lasers for driving Raman transitions. One laser
 is frequency-offset locked to the master and the other is phase-locked to the
 first. This Raman laser was not used in this experiment, so will
 not be discussed in further detail. The power in each of these slave lasers is amplified using
-an \ac{edfa}. The frequency is doubled to around \sivalue{780}{\nano\metre} using a \ac{ppln}. The ouptput power is controlled using an
+an \ac{edfa}. The frequency is doubled to around \sivalue{780}{\nano\metre} using a \ac{ppln}. The output power is controlled using an
 \ac{aom}.
 \begin{figure}[!htbp]
 	\includegraphics[width=0.8\textwidth]{muquans_schematic}
@@ -315,7 +315,7 @@ saturated absorption spectroscopy inside a Rubidium vapour cell. The sub-Doppler
 features in this spectrum are insensitive to temperature changes, and under
 have linewidths closer to the natural linewidth of
 Rubidium (\(\Gamma \sim 2\pi \times 6\) MHz). \FigureRef{fig:muquans_satspec}
-shows the saturated absorption spectrum using the \Muquans\ master laser. The freuqency is varied
+shows the saturated absorption spectrum using the \Muquans\ master laser. The frequency is varied
 by finely adjusting the temperature of the master \ac{ecdl}. The
 master laser is set to lock to the crossover resonance between the \(F = 3
 \rightarrow F' = 3\) and \(F = 3 \rightarrow F' = 4 \) transitions in \ac{rb85}
@@ -346,7 +346,7 @@ frequency is shown in \FigureRef{fig:slave_offset}.
 	\includegraphics[width=0.6\textwidth]{slave0_error}
 	\caption[Error Signal for the \Muquans\ Cooling laser.]{Error signal for the \Muquans cooling laser, plotted as a frequency difference from the start of the scan. This is obtained by comparing the beat frequency between the master and slave lasers to a reference frequency generated by a \ac{dds}. A servo loop feeds-back onto the frequency of the slave laser to keep this difference close to zero.}\label{fig:slave_offset}
 \end{figure}
-\par\noindent An \ac{eom} modulates the phase of the cooling laser to produce light for the \trans{1}{2} repump transtion. This modulation creates frequency sidebands separated by integer multiples of the modulation frequency
+\par\noindent An \ac{eom} modulates the phase of the cooling laser to produce light for the \trans{1}{2} repump transition. This modulation creates frequency sidebands separated by integer multiples of the modulation frequency
 \(f_m\). If the amplitude of the modulation is small, only the first
 positive and negative sidebands are present. A separate \ac{dds} provides the reference for the modulation frequency, so that the frequency of the cooling and repump
 light can be independently ramped during the experiment (see

@@ -1,29 +1,89 @@
-\BOOKMARK [0][-]{chapter.1}{Acceleration-Sensitive Interference}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Chapter Outline}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Wavefront Requirements}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.3}{Raman Optical System}{chapter.1}% 4
-\BOOKMARK [2][-]{subsection.1.3.1}{Fringe Contrast Dependence}{section.1.3}% 5
-\BOOKMARK [2][-]{subsection.1.3.2}{Raman Beam Collimator}{section.1.3}% 6
-\BOOKMARK [2][-]{subsection.1.3.3}{Retro-reflection Assembly}{section.1.3}% 7
-\BOOKMARK [2][-]{subsection.1.3.4}{The Mechanical Accelerometer}{section.1.3}% 8
-\BOOKMARK [1][-]{section.1.4}{The M-Squared Laser System}{chapter.1}% 9
-\BOOKMARK [2][-]{subsection.1.4.1}{Laser System Overview}{section.1.4}% 10
-\BOOKMARK [2][-]{subsection.1.4.2}{Frequency and Phase Control}{section.1.4}% 11
-\BOOKMARK [2][-]{subsection.1.4.3}{The DCS Module}{section.1.4}% 12
-\BOOKMARK [1][-]{section.1.5}{Atom Detection}{chapter.1}% 13
-\BOOKMARK [2][-]{subsection.1.5.1}{Optical Setup}{section.1.5}% 14
-\BOOKMARK [2][-]{subsection.1.5.2}{Detection using + transitions}{section.1.5}% 15
-\BOOKMARK [2][-]{subsection.1.5.3}{Measuring the Occupation Probability}{section.1.5}% 16
-\BOOKMARK [2][-]{subsection.1.5.4}{Sources of Detection Noise}{section.1.5}% 17
-\BOOKMARK [1][-]{section.1.6}{Individual Pulse Characterisation}{chapter.1}% 18
-\BOOKMARK [2][-]{subsection.1.6.1}{Raman Spectrum}{section.1.6}% 19
-\BOOKMARK [2][-]{subsection.1.6.2}{Velocity-Selective Pulse}{section.1.6}% 20
-\BOOKMARK [2][-]{subsection.1.6.3}{Interferometer Pulses}{section.1.6}% 21
-\BOOKMARK [1][-]{section.1.7}{Three-Pulse Atom Interference}{chapter.1}% 22
-\BOOKMARK [2][-]{subsection.1.7.1}{Fringe Contrast vs. Launch Trajectory}{section.1.7}% 23
-\BOOKMARK [1][-]{section.1.8}{Measuring Accelerations}{chapter.1}% 24
-\BOOKMARK [2][-]{subsection.1.8.1}{Vibration Sensitivity}{section.1.8}% 25
-\BOOKMARK [1][-]{section.1.9}{Sensitivity}{chapter.1}% 26
-\BOOKMARK [2][-]{subsection.1.9.1}{Loading Rate}{section.1.9}% 27
-\BOOKMARK [2][-]{subsection.1.9.2}{Detection Noise}{section.1.9}% 28
-\BOOKMARK [2][-]{subsection.1.9.3}{Vibrations}{section.1.9}% 29
+\BOOKMARK [0][-]{chapter*.2}{List of figures}{}% 1
+\BOOKMARK [0][-]{chapter*.7}{List of tables}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 3
+\BOOKMARK [0][-]{chapter.2}{Theory}{}% 4
+\BOOKMARK [1][-]{section.2.1}{Overview}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.2}{Light-Matter Interactions}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.3}{Laser Cooling of Rubidium-87}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.4}{Raman Transitions in Rubidium-87}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.5}{Light Pulse Atom Interferometry}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.5.1}{The Double Interferometer}{section.2.5}% 10
+\BOOKMARK [1][-]{section.2.6}{Note on Units}{chapter.2}% 11
+\BOOKMARK [0][-]{chapter.3}{MOTMaster}{}% 12
+\BOOKMARK [1][-]{section.3.1}{Chapter Overview}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.2}{Motivation}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.3}{Interfacing with Hardware}{chapter.3}% 15
+\BOOKMARK [2][-]{subsection.3.3.1}{Hardware Abstraction}{section.3.3}% 16
+\BOOKMARK [2][-]{subsection.3.3.2}{Voltage Pattern Generation}{section.3.3}% 17
+\BOOKMARK [2][-]{subsection.3.3.3}{Timed Serial Communication}{section.3.3}% 18
+\BOOKMARK [2][-]{subsection.3.3.4}{Voltage Acquisition}{section.3.3}% 19
+\BOOKMARK [1][-]{section.3.4}{MOTMaster Sequences}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.4.1}{Sequence Structure}{section.3.4}% 21
+\BOOKMARK [2][-]{subsection.3.4.2}{Running a Sequence}{section.3.4}% 22
+\BOOKMARK [1][-]{section.3.5}{Experiment Control Hardware}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.6}{Experimental Sequence Overview}{chapter.3}% 24
+\BOOKMARK [0][-]{chapter.4}{Cooling and Trapping in a MOT}{}% 25
+\BOOKMARK [1][-]{section.4.1}{Chapter Outline}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.2}{The Navigator Vacuum Chamber}{chapter.4}% 27
+\BOOKMARK [2][-]{subsection.4.2.1}{The 2D MOT system}{section.4.2}% 28
+\BOOKMARK [2][-]{subsection.4.2.2}{The 3D MOT system}{section.4.2}% 29
+\BOOKMARK [2][-]{subsection.4.2.3}{CCD Imaging}{section.4.2}% 30
+\BOOKMARK [1][-]{section.4.3}{Generating MOT light}{chapter.4}% 31
+\BOOKMARK [2][-]{subsection.4.3.1}{Absolute Frequency Reference}{section.4.3}% 32
+\BOOKMARK [2][-]{subsection.4.3.2}{Cooling and Repump Light}{section.4.3}% 33
+\BOOKMARK [2][-]{subsection.4.3.3}{Real-Time Control}{section.4.3}% 34
+\BOOKMARK [1][-]{section.4.4}{Controlling the MOTs}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.4.1}{Optical Fibre Network}{section.4.4}% 36
+\BOOKMARK [2][-]{subsection.4.4.2}{Magnetic Field Control}{section.4.4}% 37
+\BOOKMARK [1][-]{section.4.5}{Characterising the MOTs}{chapter.4}% 38
+\BOOKMARK [2][-]{subsection.4.5.1}{3D MOT Loading Rate}{section.4.5}% 39
+\BOOKMARK [1][-]{section.4.6}{Conclusion}{chapter.4}% 40
+\BOOKMARK [0][-]{chapter.5}{Preparing Atoms for Interferometry}{}% 41
+\BOOKMARK [1][-]{section.5.1}{Chapter Overview}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.2}{Cooling in Optical Molasses}{chapter.5}% 43
+\BOOKMARK [2][-]{subsection.5.2.1}{Motivation for Launching}{section.5.2}% 44
+\BOOKMARK [2][-]{subsection.5.2.2}{Frequency and Power Control}{section.5.2}% 45
+\BOOKMARK [2][-]{subsection.5.2.3}{Launching in a Moving Molasses}{section.5.2}% 46
+\BOOKMARK [2][-]{subsection.5.2.4}{Imaging the Atom Cloud over Time}{section.5.2}% 47
+\BOOKMARK [1][-]{section.5.3}{State Preparation}{chapter.5}% 48
+\BOOKMARK [2][-]{subsection.5.3.1}{Schemes for Preparation}{section.5.3}% 49
+\BOOKMARK [2][-]{subsection.5.3.2}{Optically Pumping the Atoms}{section.5.3}% 50
+\BOOKMARK [2][-]{subsection.5.3.3}{Including Microwave Transitions}{section.5.3}% 51
+\BOOKMARK [2][-]{subsection.5.3.4}{Blow-Away}{section.5.3}% 52
+\BOOKMARK [2][-]{subsection.5.3.5}{Conclusion}{section.5.3}% 53
+\BOOKMARK [0][-]{chapter.6}{Acceleration-Sensitive Interference}{}% 54
+\BOOKMARK [1][-]{section.6.1}{Chapter Outline}{chapter.6}% 55
+\BOOKMARK [1][-]{section.6.2}{Wavefront Requirements}{chapter.6}% 56
+\BOOKMARK [1][-]{section.6.3}{Raman Optical System}{chapter.6}% 57
+\BOOKMARK [2][-]{subsection.6.3.1}{Fringe Contrast Dependence}{section.6.3}% 58
+\BOOKMARK [2][-]{subsection.6.3.2}{Raman Beam Collimator}{section.6.3}% 59
+\BOOKMARK [2][-]{subsection.6.3.3}{Retro-reflection Assembly}{section.6.3}% 60
+\BOOKMARK [2][-]{subsection.6.3.4}{The Mechanical Accelerometer}{section.6.3}% 61
+\BOOKMARK [1][-]{section.6.4}{The M-Squared Laser System}{chapter.6}% 62
+\BOOKMARK [2][-]{subsection.6.4.1}{Laser System Overview}{section.6.4}% 63
+\BOOKMARK [2][-]{subsection.6.4.2}{Frequency and Phase Control}{section.6.4}% 64
+\BOOKMARK [2][-]{subsection.6.4.3}{The DCS Module}{section.6.4}% 65
+\BOOKMARK [1][-]{section.6.5}{Atom Detection}{chapter.6}% 66
+\BOOKMARK [2][-]{subsection.6.5.1}{Optical Setup}{section.6.5}% 67
+\BOOKMARK [2][-]{subsection.6.5.2}{Detection using + transitions}{section.6.5}% 68
+\BOOKMARK [2][-]{subsection.6.5.3}{Measuring the Occupation Probability}{section.6.5}% 69
+\BOOKMARK [2][-]{subsection.6.5.4}{Estimating the Interferometer Phase}{section.6.5}% 70
+\BOOKMARK [2][-]{subsection.6.5.5}{Sources of Detection Noise}{section.6.5}% 71
+\BOOKMARK [1][-]{section.6.6}{Individual Pulse Characterisation}{chapter.6}% 72
+\BOOKMARK [2][-]{subsection.6.6.1}{Raman Transition Spectrum}{section.6.6}% 73
+\BOOKMARK [2][-]{subsection.6.6.2}{Cancelling the Differential ac Stark Shift}{section.6.6}% 74
+\BOOKMARK [2][-]{subsection.6.6.3}{Velocity-Selective Pulse}{section.6.6}% 75
+\BOOKMARK [2][-]{subsection.6.6.4}{Interferometer Pulses}{section.6.6}% 76
+\BOOKMARK [1][-]{section.6.7}{Measuring Accelerations}{chapter.6}% 77
+\BOOKMARK [2][-]{subsection.6.7.1}{Fringe Calibration}{section.6.7}% 78
+\BOOKMARK [2][-]{subsection.6.7.2}{Correcting for Vibration Noise}{section.6.7}% 79
+\BOOKMARK [2][-]{subsection.6.7.3}{Signal Stability}{section.6.7}% 80
+\BOOKMARK [1][-]{section.6.8}{Sensitivity}{chapter.6}% 81
+\BOOKMARK [2][-]{subsection.6.8.1}{The Allan Variance}{section.6.8}% 82
+\BOOKMARK [2][-]{subsection.6.8.2}{Sources of Noise}{section.6.8}% 83
+\BOOKMARK [2][-]{subsection.6.8.3}{The Sensitivity Function}{section.6.8}% 84
+\BOOKMARK [2][-]{subsection.6.8.4}{Influence of Laser Phase Noise}{section.6.8}% 85
+\BOOKMARK [2][-]{subsection.6.8.5}{Vibrations}{section.6.8}% 86
+\BOOKMARK [0][-]{chapter.7}{Outlook}{}% 87
+\BOOKMARK [1][-]{section.7.1}{Combining with classical accelerometers}{chapter.7}% 88
+\BOOKMARK [1][-]{section.7.2}{Extending to senstivity along three axes}{chapter.7}% 89

@@ -1,0 +1,116 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\contentsline {chapter}{List of figures}{xv}{chapter*.2}
+\contentsline {chapter}{List of tables}{xix}{chapter*.7}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Theory}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Overview}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Light-Matter Interactions}{4}{section.2.2}
+\contentsline {section}{\numberline {2.3}Laser Cooling of Rubidium-87}{4}{section.2.3}
+\contentsline {section}{\numberline {2.4}Raman Transitions in Rubidium-87}{4}{section.2.4}
+\contentsline {section}{\numberline {2.5}Light Pulse Atom Interferometry}{4}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}The Double Interferometer}{4}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.6}Note on Units}{4}{section.2.6}
+\contentsline {chapter}{\numberline {3}MOTMaster}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Chapter Overview}{5}{section.3.1}
+\contentsline {section}{\numberline {3.2}Motivation}{6}{section.3.2}
+\contentsline {section}{\numberline {3.3}Interfacing with Hardware}{7}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Hardware Abstraction}{8}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Voltage Pattern Generation}{8}{subsection.3.3.2}
+\contentsline {subsubsection}{\nonumberline Analogue Outputs}{8}{section*.14}
+\contentsline {subsubsection}{\nonumberline Digital Outputs}{9}{section*.16}
+\contentsline {subsection}{\numberline {3.3.3}Timed Serial Communication}{10}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Voltage Acquisition}{11}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}MOTMaster Sequences}{11}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Sequence Structure}{12}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Running a Sequence}{13}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Experiment Control Hardware}{15}{section.3.5}
+\contentsline {section}{\numberline {3.6}Experimental Sequence Overview}{17}{section.3.6}
+\contentsline {chapter}{\numberline {4}Cooling and Trapping in a MOT}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Chapter Outline}{19}{section.4.1}
+\contentsline {section}{\numberline {4.2}The Navigator Vacuum Chamber}{19}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}The 2D MOT system}{20}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}The 3D MOT system}{25}{subsection.4.2.2}
+\contentsline {subsubsection}{\nonumberline Spherical quadrupole magnetic field}{25}{section*.34}
+\contentsline {subsubsection}{\nonumberline Bias Coils}{29}{section*.38}
+\contentsline {subsection}{\numberline {4.2.3}CCD Imaging}{29}{subsection.4.2.3}
+\contentsline {subsubsection}{\nonumberline Incident Optical Power Calibration}{30}{section*.42}
+\contentsline {section}{\numberline {4.3}Generating MOT light}{32}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Absolute Frequency Reference}{32}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Cooling and Repump Light}{35}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Real-Time Control}{36}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Controlling the MOTs}{37}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Optical Fibre Network}{37}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Magnetic Field Control}{38}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Characterising the MOTs}{39}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}3D MOT Loading Rate}{41}{subsection.4.5.1}
+\contentsline {section}{\numberline {4.6}Conclusion}{44}{section.4.6}
+\contentsline {chapter}{\numberline {5}Preparing Atoms for Interferometry}{45}{chapter.5}
+\contentsline {section}{\numberline {5.1}Chapter Overview}{45}{section.5.1}
+\contentsline {section}{\numberline {5.2}Cooling in Optical Molasses}{46}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Motivation for Launching}{46}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Frequency and Power Control}{47}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Launching in a Moving Molasses}{47}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Imaging the Atom Cloud over Time}{50}{subsection.5.2.4}
+\contentsline {subsubsection}{\nonumberline Measuring the Temperature}{50}{section*.62}
+\contentsline {subsubsection}{\nonumberline Measuring the Launch Trajectory}{52}{section*.64}
+\contentsline {section}{\numberline {5.3}State Preparation}{54}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Schemes for Preparation}{55}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Optically Pumping the Atoms}{57}{subsection.5.3.2}
+\contentsline {subsubsection}{\nonumberline Driving the \(\mathinner {|{F=2}\delimiter "5679844 } \rightarrow \mathinner {|{F'=2}\delimiter "5679844 }\) transition}{57}{section*.69}
+\contentsline {subsubsection}{\nonumberline Driving the \(\mathinner {|{F=1}\delimiter "5679844 } \rightarrow \mathinner {|{F'=0}\delimiter "5679844 }\) transition}{58}{section*.71}
+\contentsline {subsection}{\numberline {5.3.3}Including Microwave Transitions}{59}{subsection.5.3.3}
+\contentsline {subsubsection}{\nonumberline Microwave Generation}{60}{section*.74}
+\contentsline {subsubsection}{\nonumberline Pulse Characterisation}{61}{section*.76}
+\contentsline {subsection}{\numberline {5.3.4}Blow-Away}{63}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {5.3.5}Conclusion}{63}{subsection.5.3.5}
+\contentsline {chapter}{\numberline {6}Acceleration-Sensitive Interference}{65}{chapter.6}
+\contentsline {section}{\numberline {6.1}Chapter Outline}{65}{section.6.1}
+\contentsline {section}{\numberline {6.2}Wavefront Requirements}{65}{section.6.2}
+\contentsline {section}{\numberline {6.3}Raman Optical System}{65}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Fringe Contrast Dependence}{66}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Raman Beam Collimator}{69}{subsection.6.3.2}
+\contentsline {subsubsection}{\nonumberline Alignment and Collimation}{72}{section*.83}
+\contentsline {subsubsection}{\nonumberline Measuring the Beam Width}{73}{section*.85}
+\contentsline {subsection}{\numberline {6.3.3}Retro-reflection Assembly}{74}{subsection.6.3.3}
+\contentsline {subsubsection}{\nonumberline In-Situ Alignment and Optimisation}{77}{section*.88}
+\contentsline {subsection}{\numberline {6.3.4}The Mechanical Accelerometer}{79}{subsection.6.3.4}
+\contentsline {section}{\numberline {6.4}The M-Squared Laser System}{80}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Laser System Overview}{81}{subsection.6.4.1}
+\contentsline {subsubsection}{\nonumberline External ICE-BLOC Control}{82}{section*.94}
+\contentsline {subsection}{\numberline {6.4.2}Frequency and Phase Control}{83}{subsection.6.4.2}
+\contentsline {subsubsection}{\nonumberline Master Lock}{83}{section*.95}
+\contentsline {subsubsection}{\nonumberline Frequency and Phase Lock}{83}{section*.96}
+\contentsline {subsection}{\numberline {6.4.3}The DCS Module}{84}{subsection.6.4.3}
+\contentsline {section}{\numberline {6.5}Atom Detection}{84}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Optical Setup}{85}{subsection.6.5.1}
+\contentsline {subsubsection}{\nonumberline Photodiode Calibration}{86}{section*.100}
+\contentsline {subsection}{\numberline {6.5.2}Detection using \(\sigma ^+\) transitions}{86}{subsection.6.5.2}
+\contentsline {subsubsection}{\nonumberline Detection Sequence}{87}{section*.103}
+\contentsline {subsubsection}{\nonumberline Maximum Detection Time}{88}{section*.105}
+\contentsline {subsubsection}{\nonumberline Optimal Intensity}{89}{section*.106}
+\contentsline {subsection}{\numberline {6.5.3}Measuring the Occupation Probability}{91}{subsection.6.5.3}
+\contentsline {subsubsection}{\nonumberline Atom Number Bias}{91}{section*.109}
+\contentsline {subsection}{\numberline {6.5.4}Estimating the Interferometer Phase}{93}{subsection.6.5.4}
+\contentsline {subsection}{\numberline {6.5.5}Sources of Detection Noise}{94}{subsection.6.5.5}
+\contentsline {subsubsection}{\nonumberline Atom and Photon Shot Noise}{94}{section*.111}
+\contentsline {subsubsection}{\nonumberline Photodiode Technical Noise}{95}{section*.113}
+\contentsline {section}{\numberline {6.6}Individual Pulse Characterisation}{97}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Raman Transition Spectrum}{97}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Cancelling the Differential ac Stark Shift}{100}{subsection.6.6.2}
+\contentsline {subsection}{\numberline {6.6.3}Velocity-Selective Pulse}{103}{subsection.6.6.3}
+\contentsline {subsubsection}{\nonumberline Velocity-Selected Distribution}{104}{section*.123}
+\contentsline {subsection}{\numberline {6.6.4}Interferometer Pulses}{105}{subsection.6.6.4}
+\contentsline {section}{\numberline {6.7}Measuring Accelerations}{106}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Fringe Calibration}{106}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}Correcting for Vibration Noise}{106}{subsection.6.7.2}
+\contentsline {subsection}{\numberline {6.7.3}Signal Stability}{109}{subsection.6.7.3}
+\contentsline {section}{\numberline {6.8}Sensitivity}{110}{section.6.8}
+\contentsline {subsection}{\numberline {6.8.1}The Allan Variance}{110}{subsection.6.8.1}
+\contentsline {subsection}{\numberline {6.8.2}Sources of Noise}{112}{subsection.6.8.2}
+\contentsline {subsection}{\numberline {6.8.3}The Sensitivity Function}{112}{subsection.6.8.3}
+\contentsline {subsection}{\numberline {6.8.4}Influence of Laser Phase Noise}{114}{subsection.6.8.4}
+\contentsline {subsection}{\numberline {6.8.5}Vibrations}{117}{subsection.6.8.5}
+\contentsline {subsubsection}{\nonumberline Measuring the Acceleration Noise Power Spectral Density}{118}{section*.133}
+\contentsline {chapter}{\numberline {7}Outlook}{121}{chapter.7}
+\contentsline {section}{\numberline {7.1}Combining with classical accelerometers}{121}{section.7.1}
+\contentsline {section}{\numberline {7.2}Extending to senstivity along three axes}{121}{section.7.2}

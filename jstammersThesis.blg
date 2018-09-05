@@ -2,52 +2,16 @@ This is BibTeX, Version 0.99d (TeX Live 2017)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: jstammersThesis.aux
 The style file: biblatex.bst
-I couldn't open auxiliary file frontmatter.aux
----line 27 of file jstammersThesis.aux
- : \@input{frontmatter.aux
- :                        }
-I'm skipping whatever remains of this command
-I couldn't open auxiliary file introduction.aux
----line 28 of file jstammersThesis.aux
- : \@input{introduction.aux
- :                         }
-I'm skipping whatever remains of this command
-I couldn't open auxiliary file theory.aux
----line 29 of file jstammersThesis.aux
- : \@input{theory.aux
- :                   }
-I'm skipping whatever remains of this command
-I couldn't open auxiliary file compcontrol.aux
----line 30 of file jstammersThesis.aux
- : \@input{compcontrol.aux
- :                        }
-I'm skipping whatever remains of this command
-I couldn't open auxiliary file mots.aux
----line 31 of file jstammersThesis.aux
- : \@input{mots.aux
- :                 }
-I'm skipping whatever remains of this command
-I couldn't open auxiliary file atompreparation.aux
----line 32 of file jstammersThesis.aux
- : \@input{atompreparation.aux
- :                            }
-I'm skipping whatever remains of this command
+A level-1 auxiliary file: frontmatter.aux
+A level-1 auxiliary file: introduction.aux
+A level-1 auxiliary file: theory.aux
+A level-1 auxiliary file: compcontrol.aux
+A level-1 auxiliary file: mots.aux
+A level-1 auxiliary file: atompreparation.aux
 A level-1 auxiliary file: interferometry.aux
-I couldn't open auxiliary file conclusion.aux
----line 64 of file jstammersThesis.aux
- : \@input{conclusion.aux
- :                       }
-I'm skipping whatever remains of this command
-I couldn't open auxiliary file appendices.aux
----line 65 of file jstammersThesis.aux
- : \@input{appendices.aux
- :                       }
-I'm skipping whatever remains of this command
-I couldn't open auxiliary file backmatter.aux
----line 66 of file jstammersThesis.aux
- : \@input{backmatter.aux
- :                       }
-I'm skipping whatever remains of this command
+A level-1 auxiliary file: conclusion.aux
+A level-1 auxiliary file: appendices.aux
+A level-1 auxiliary file: backmatter.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
@@ -64,53 +28,58 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: jstammersThesis-blx.bib
 Database file #2: Thesis.bib
+Warning--I didn't find a database entry for "VanderStraten1993"
+Warning--I didn't find a database entry for "Chang2002"
 Warning--I didn't find a database entry for "Schkolnik2015"
 Warning--I didn't find a database entry for "Lautier2014"
 Warning--I didn't find a database entry for "Merlet2009"
 Warning--I didn't find a database entry for "Geiger2011a"
 Warning--I didn't find a database entry for "Barrett2016a"
+Warning--I didn't find a database entry for "Peters2001"
+Warning--I didn't find a database entry for "Gouet2008"
+Warning--I didn't find a database entry for "M2_manual"
 Biblatex version: 3.8
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 6 entries,
+You've used 20 entries,
             6268 wiz_defined-function locations,
-            1253 strings with 10200 characters,
-and the built_in function-call counts, 28144 in all, are:
-= -- 1712
-> -- 598
-< -- 138
-+ -- 742
-- -- 259
-* -- 2149
-:= -- 2974
+            1387 strings with 15082 characters,
+and the built_in function-call counts, 115455 in all, are:
+= -- 7630
+> -- 2307
+< -- 531
++ -- 3124
+- -- 1111
+* -- 9018
+:= -- 12044
 add.period$ -- 0
-call.type$ -- 6
-change.case$ -- 50
-chr.to.int$ -- 35
-cite$ -- 10
-duplicate$ -- 3262
-empty$ -- 2599
-format.name$ -- 361
-if$ -- 5635
+call.type$ -- 20
+change.case$ -- 213
+chr.to.int$ -- 68
+cite$ -- 38
+duplicate$ -- 12699
+empty$ -- 10780
+format.name$ -- 1346
+if$ -- 23034
 int.to.chr$ -- 0
-int.to.str$ -- 10
+int.to.str$ -- 38
 missing$ -- 0
-newline$ -- 231
-num.names$ -- 205
-pop$ -- 1728
+newline$ -- 823
+num.names$ -- 772
+pop$ -- 6559
 preamble$ -- 1
-purify$ -- 81
+purify$ -- 333
 quote$ -- 0
-skip$ -- 879
+skip$ -- 3124
 stack$ -- 0
-substring$ -- 2558
-swap$ -- 901
-text.length$ -- 161
-text.prefix$ -- 11
+substring$ -- 12902
+swap$ -- 3352
+text.length$ -- 541
+text.prefix$ -- 25
 top$ -- 1
-type$ -- 192
+type$ -- 667
 warning$ -- 0
-while$ -- 429
+while$ -- 1550
 width$ -- 0
-write$ -- 226
-(There were 9 error messages)
+write$ -- 804
+(There were 10 warnings)

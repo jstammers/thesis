@@ -1,6 +1,6 @@
 \chapter{Preparing Atoms for Interferometry}\label{chap:atom_prep}
 \section{Chapter Overview}
-This chapter presents the stages of the experiment which prepare an ensmble of atoms for interferometry, after they are loaded into the 3D \ac{mot}. After being released from the trap, the atoms are cooled and launched using a moving molasses, as described in~\SectionRef{sec:optical_molasses}. Following this, a sequence of optical and microwaves pulses are used to increase the population in the \(\ket{1,0}\) ground state and end with an ensemble which has a narrow velocity spread along the Raman axis. A characterisation of this is given in~\SectionRef{sec:state_prep}.
+This chapter presents the stages of the experiment which prepare an ensemble of atoms for interferometry, after they are loaded into the 3D \ac{mot}. After being released from the trap, the atoms are cooled and launched using a moving molasses, as described in~\SectionRef{sec:optical_molasses}. Following this, a sequence of optical and microwaves pulses are used to increase the population in the \(\ket{1,0}\) ground state and end with an ensemble which has a narrow velocity spread along the Raman axis. A characterisation of this is given in~\SectionRef{sec:state_prep}.
 \par\noindent
 Some sections of this chapter refer to parts of the experiment which have yet to be introduced. Details on the Raman laser and the velocity-selective Raman pulse can be found in~\SectionRef{sec:msquared_laser} and~\SectionRef{sec:raman_velocity_select}, respectively. A description of the detection scheme, used to measure the population of atoms in \(\ket{F=1}\) and \(\ket{F=2}\) is presented in~\SectionRef{sec:atom_detection}
 
@@ -14,7 +14,7 @@ This section describes the work towards to cooling and launching the atoms in a 
 
 
 \subsection{Motivation for Launching}\label{subsec:launching}
-As previously discussed in~\SectionRef{sec:theory_double_int}, there are two pairs of counter-propagating beams which can drive Raman transitions between the two hyperfine ground states. If an atom can be stimulated by both pairs, then the additional trajectories this introduces do not interfere, resulting in a reduction in the fringe visbility. This problem can be avoided by using the fact that the Raman transition is Doppler-sensitive to ensure that the atoms are only driven by one pair of beams. Each pair has an opposite Doppler shift \(\pm \omega_D = \pm \keff.\textbf{v}\) and so their transition frequencies are separated by \(2\omega_D\). Therefore, the atoms are launched so that their centre-of-mass velocity along the Raman axis is large enough to lift the degeneracy of the two Raman transitions. 
+As previously discussed in~\SectionRef{sec:theory_double_int}, there are two pairs of counter-propagating beams which can drive Raman transitions between the two hyperfine ground states. If an atom can be stimulated by both pairs, then the additional trajectories this introduces do not interfere, resulting in a reduction in the fringe visibility. This problem can be avoided by using the fact that the Raman transition is Doppler-sensitive to ensure that the atoms are only driven by one pair of beams. Each pair has an opposite Doppler shift \(\pm \omega_D = \pm \keff.\textbf{v}\) and so their transition frequencies are separated by \(2\omega_D\). Therefore, the atoms are launched so that their centre-of-mass velocity along the Raman axis is large enough to lift the degeneracy of the two Raman transitions. 
 
 %The light used to drive Raman transitions during the exeperiment is launched into the chamber on two orthogonal axes of a \ac{pm} fibre. These are retro-reflected to produce two counter-propagating beams that are orthogonally polarised to the incoming ones. In the absence of \(\pi\)-polarised light, only \((\sigma^+-\sigma^+)\) or \((\sigma^--\sigma^-)\) pairs of polarised beams can drive Raman transitions. If the incoming beams are circularly polarised, then this can occur using counter-propagating pairs of beams which impart momentum \(\pm \hbar \keff\) to an atom. If an atom can be driven by either pair at each interferometer pulse, this results in two interferometer paths, as well as additional trajectories which do not interfere and hence cause a reduction in fringe visibility.
 \subsection{Frequency and Power Control}\label{subsec:molasses_control}
@@ -58,7 +58,7 @@ where \(v`_i = v_i - \langle v_i \rangle\) is the difference from the average ve
     f(v_x) = \left(\frac{m}{2\pi k_B }\right)^{1/2}e^{-\frac{m (v_x-\langle v_x \rangle) ^2}{2 k_B T}}
     \label{eg:mb1D}
 \end{equation}
-Suppose that there are initially \(n_0 (x) \mathrm{d}x\) atoms within the region \((x, x+\mathrm{d}x)\), where \(n_0(x) = n(x, t=t_0)\) is the initial atomic density along one axis. During ballistic expansion, the atoms redestribute themselves according to their velocity. After a time \(t\) of free expansion, the position of an atom initially at \(x\) is \(x + v_x t\). 
+Suppose that there are initially \(n_0 (x) \mathrm{d}x\) atoms within the region \((x, x+\mathrm{d}x)\), where \(n_0(x) = n(x, t=t_0)\) is the initial atomic density along one axis. During ballistic expansion, the atoms redistribute themselves according to their velocity. After a time \(t\) of free expansion, the position of an atom initially at \(x\) is \(x + v_x t\). 
 Assuming that the number density is initially a Gaussian, with a peak number density \(n_0(x_0)\) at the centre-of-mass, the number density at later times is given by a convolution with~\EquationRef{eq:mb1D}
 \begin{equation}
         n(x,t) = \int n_0(x_0) \left(\frac{m}{2\pi k_B}\right)^{1/2} e^{-\frac{m (v_x-\langle v_x \rangle)^2}{2 k_B T}} e^{-\frac{(x+v_x t - x_0)^2}{2\sigma_0^2}} \mathrm{d}v_x
@@ -75,7 +75,7 @@ where \(\sigma_0\) is the \(1/e^2\) initial width of the cloud. As a convolution
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.8\textwidth]{temperature_launch}
-    \caption[Temperature measurement using ballistic expansion]{Atom cloud temperature using a ballistic expansion measurement. After molasses, the cloud is left to expand in the dark and in a region of close to zero magnetic field. A least-squares linear fit of \(\sigma(t)^2\) is used to estimate the temperature using~\EquationRef{eg:expansion_width}. The inset shows a typical density profile from a single image, obtained by integrating the signal from a CCD camera along the two axes of the the sensor. The gradient from the fits for the horizontal (blue) and vertical (orange) axes are  \(T_x = \sivalue{6.38 \pm0.15}{\micro\kelvin}\) and \(T_y = \sivalue{6.38\pm0.12}{\micro\kelvin}\).}
+    \caption[Temperature measurement using ballistic expansion]{Atom cloud temperature using a ballistic expansion measurement. After molasses, the cloud is left to expand in the dark and in a region of close to zero magnetic field. A least-squares linear fit of \(\sigma(t)^2\) is used to estimate the temperature using~\EquationRef{eg:expansion_width}. The inset shows a typical density profile from a single image, obtained by integrating the signal from a CCD camera along the two axes of the sensor. The gradient from the fits for the horizontal (blue) and vertical (orange) axes are  \(T_x = \sivalue{6.38 \pm0.15}{\micro\kelvin}\) and \(T_y = \sivalue{6.38\pm0.12}{\micro\kelvin}\).}
     \label{fig:molasses_temperature}
 \end{figure}
 
@@ -91,7 +91,7 @@ To launch the atoms both vertically and horizontally (along the axis parallel wi
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.8\textwidth]{molasses_position}
-    \caption[Atom cloud centre-of-mass over time]{Measured centre-of-mass position over time. The horiztonal component of the position is shown in blue and the vertical in orange. Each trajectory is fit to~\EquationRef{eq:position_free} to estimate the launch velocity. The best-fit values are \(v_v = \sivalue{25.0\pm0.35}{\centi\meter\per\second}\) and \(a_v = \sivalue{-9.40\pm0.075}{\metre\per\second\squared}\) along the vertical axis and \(v_h = \sivalue{7.39\pm0.21}{\centi\meter\per\second}\) and \(a_h = \sivalue{-0.31\pm0.052}{\metre\per\second\squared}\) along the horizontal.}
+    \caption[Atom cloud centre-of-mass over time]{Measured centre-of-mass position over time. The horizontal component of the position is shown in blue and the vertical in orange. Each trajectory is fit to~\EquationRef{eq:position_free} to estimate the launch velocity. The best-fit values are \(v_v = \sivalue{25.0\pm0.35}{\centi\meter\per\second}\) and \(a_v = \sivalue{-9.40\pm0.075}{\metre\per\second\squared}\) along the vertical axis and \(v_h = \sivalue{7.39\pm0.21}{\centi\meter\per\second}\) and \(a_h = \sivalue{-0.31\pm0.052}{\metre\per\second\squared}\) along the horizontal.}
     \label{fig:molasses_position}
 \end{figure}
 \par\noindent
@@ -100,12 +100,12 @@ When compared to the expected velocities from the detunings, \(v^{(l)}_v = \siva
 \section{State Preparation}\label{sec:state_prep}
 After the atoms have been cooled in an optical molasses, the population will mostly be distributed across the \(\ket{F=2}\) level, along with a small fraction distributed across the \(\ket{F=1}\) level. The Raman transition only couples the \(\ket{1,0}\) and \(\ket{2,0}\) states, so atoms in the other hyperfine ground states cannot participate in the interferometer. In fact, since the individual Zeeman sub-levels are not resolved during detection, these background atoms result in a loss of fringe visibility. One way to overcome this is to apply a pulse of light resonant with the \trans{2}{3} transition to push the non-participating atoms out of the interferometer detection region. Of course, this must be done after applying a Raman pulse to transfer an ensemble of atoms from \(\ket{2,0}\) into \(\ket{1,0}\). In this simple scheme a large fraction of the atoms are removed, which is undesirable since measurements of a low number of atoms are inherently more uncertain due to shot number fluctuations. 
 \par\noindent
-The following section discusses a method of preparing the atoms to increase the population in the \(\ket{1,0}\) ground state. An overview of the scheme is given in~\SectionRef{subsec:prep_schemes}. This is followed by a discussion of the initial steps which optically pump atoms into the \(\ket{1,0}\) state in~\SectionRef{subsec:optical_pumping}. A description of the microwave pulse used to drive atoms into the \(\ket{F=2}\) level is given in~\SectionRef{subsex:microwaves}. This section concludes with the method used to blow away the atoms which do not contribute to the interferometer in~\SectionRef{subsec:blow_away}. A key step which has been omitted is the velocity-selective Raman pulse. This is described in more detail later, in~\SectionRef{subsec:raman_velocity_select}
+The following section discusses a method of preparing the atoms to increase the population in the \(\ket{1,0}\) ground state. An overview of the scheme is given in~\SectionRef{subsec:prep_schemes}. This is followed by a discussion of the initial steps which optically pump atoms into the \(\ket{1,0}\) state in~\SectionRef{subsec:optical_pumping}. A description of the microwave pulse used to drive atoms into the \(\ket{F=2}\) level is given in~\SectionRef{subsec:microwaves}. This section concludes with the method used to blow away the atoms which do not contribute to the interferometer in~\SectionRef{subsec:blow_away}. A key step which has been omitted is the velocity-selective Raman pulse. This is described in more detail later, in~\SectionRef{subsec:raman_velocity_select}
 \subsection{Schemes for Preparation}\label{subsec:prep_schemes}
 The scheme used to prepare atoms in the \(\ket{1,0}\) state is the following:
 \begin{enumerate}
     \item Light resonant with the \trans{2}{2} transition pumps atoms into the \(\ket{F=1}\) level
-    \item Light resonant with the \trans{1}{0} transition drives (\(\sigma^{\pm}\)) transtions to pump atoms into the \(\ket{1,0}\) dark state
+    \item Light resonant with the \trans{1}{0} transition drives (\(\sigma^{\pm}\)) transitions to pump atoms into the \(\ket{1,0}\) dark state
     \item A microwave $\pi$-pulse transfers atoms to \(\ket{2,0}\)
     \item A Raman $\pi$-pulse transfers atoms with a narrow velocity spread back to \(\ket{1,0}\)
     \item The atoms which remain in \(\ket{F=2}\) are blown away
@@ -116,9 +116,9 @@ A timing diagram of the state preparation sequence is shown in~\FigureRef{fig:st
 \begin{figure}[!htbp]
     \centering
     %\def\svgwidth{0.8\textwidth}
-    \fontsize{16pt}{16pt}
+    \fontsize{16pt}{18pt}
     \resizebox{0.8\textwidth}{!}{\input{state_selection.pdf_tex}}
-    \caption[State preparation pulse sequence]{Sequence of optical and microwave pulses used to prepare an ensmble of atoms in \(\ket{1,0}\). The red arrows indicate optical transitions to and from \(\ket{F=2}\) and equivalently for the blue arrows and \(\ket{F=1}\). A residual population in the \(\ket{1,\pm 1}\) states is present, which contributes to a background during the interferometer.}
+    \caption[State preparation pulse sequence]{Sequence of optical and microwave pulses used to prepare an ensemble of atoms in \(\ket{1,0}\). The red arrows indicate optical transitions to and from \(\ket{F=2}\) and equivalently for the blue arrows and \(\ket{F=1}\). A residual population in the \(\ket{1,\pm 1}\) states is present, which contributes to a background during the interferometer.}
     \label{fig:state_prep}
 \end{figure}
 \begin{figure}[!htbp]
@@ -157,13 +157,24 @@ A plot of the population in each Zeeman sub-level for increasing pumping times i
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.8\textwidth]{step2_pumping}
-    \caption[\(\ket{1,m_F}\) populations for increasing \trans{1}{0} pumping time.\]{Population in each Zeeman sub-level as the \trans{1}{0} pumping time is increased. The \(m_F = 0, -1, +1\) populations are shown in blue, orange and green, respectively. After \sivalue{30}{\micro\second}, approximately 5\% of the population remains in the \(m_F = \pm 1\) sub-levels.}
+    \caption[\(\ket{1,m_F}\) populations for increasing \trans{1}{0} pumping time.]{Population in each Zeeman sub-level as the \trans{1}{0} pumping time is increased. The \(m_F = 0, -1, +1\) populations are shown in blue, orange and green, respectively. After \sivalue{30}{\micro\second}, approximately 5\% of the population remains in the \(m_F = \pm 1\) sub-levels.}
     \label{fig:step2_pumping}
 \end{figure}
 \subsection{Including Microwave Transitions}\label{subsec:microwaves}
 Without a dedicated laser to drive transitions from the \(\ket{F=1}\) level, it was necessary to implement a scheme to use light resonant with the \(\ket{F=2}\) level to remove background atoms. Therefore, we included a system for driving microwave frequency transitions from \(\ket{1,0}\) to \(\ket{2,0}\).
 \subsubsection{Microwave Generation}
-A diagram of the setup for this is shown in~\FigureRef{fig:microwave_setup}. The microwave radiation is generated using a \textit{Wind-Freak} synthesiser to output a microwave field oscillating at a frequency close to the hyperfine splitting frequency, \(f_\text{hfs} = \sivalue{6.83846}{\giga\hertz}\). This is amplified by \textit{MiniCircuits MCL ZRON-8G+} amplifier and directed into the chamber using a \textit{Pasternack PE9859/SF-10} microwave horn, which produces a linearly-polarised microwave field. The horn was aligned to the chamber at the position which maximised the population of atoms in the \(\ket{2,0}\) state. The synthesiser is clocked using a stable \sivalue{100}{\mega\hertz} signal from the \Muquans laser. When the synthesiser was clocked using its internal \sivalue{27}{\mega\hertz} reference clock, this produced a noticeable jitter in the output frequency, which led to a significant shot-to-shot fluctuation in the \(\ket{2,0}\) population.
+A diagram of the setup for this is shown
+in~\FigureRef{fig:microwave_setup}. The microwave radiation is
+generated using a \textit{Wind-Freak} synthesiser to output a
+microwave field oscillating at a frequency close to the hyperfine
+splitting frequency, \(f_\text{hfs} =
+\sivalue{6.83846}{\giga\hertz}\). This is amplified by
+\textit{MiniCircuits MCL ZRON-8G+} amplifier and directed into the
+chamber using a \textit{Pasternack PE9859/SF-10} microwave horn, which
+produces a linearly-polarised microwave field. The horn was aligned to
+the chamber at the position which maximised the population of atoms in
+the \(\ket{2,0}\) state. The synthesiser is clocked using a stable
+\sivalue{100}{\mega\hertz} signal from the \Muquans{} laser. When the synthesiser was clocked using its internal \sivalue{27}{\mega\hertz} reference clock, this produced a noticeable jitter in the output frequency, which led to a significant shot-to-shot fluctuation in the \(\ket{2,0}\) population.
 \begin{figure}[!htbp]
     \centering
     \resizebox{0.5\textwidth}{!}{\input{microwave_setup.pdf_tex}}
@@ -176,7 +187,7 @@ A diagram of the setup for this is shown in~\FigureRef{fig:microwave_setup}. The
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.5\textwidth]{mw_rabi}
-    \caption[Microwave Rabi oscillation between \(\ket{1,0}\) and \(\ket{2,0}\)]{Damped Rabi oscillation between \(\ket{1,0}\) and \(\ket{2,0}\) using a microwave pulse of varying length. At longer pulse times, there is a loss of coherence due to a depahasing between the two states. The red dashed line is an envelope is a fit to a decaying exponential with a characteristic time of \(\tau = \sivalue{1016}{\micro\second}\).}
+    \caption[Microwave Rabi oscillation between \(\ket{1,0}\) and \(\ket{2,0}\)]{Damped Rabi oscillation between \(\ket{1,0}\) and \(\ket{2,0}\) using a microwave pulse of varying length. At longer pulse times, there is a loss of coherence due to a dephasing between the two states. The red dashed line is an envelope is a fit to a decaying exponential with a characteristic time of \(\tau = \sivalue{1016}{\micro\second}\).}
     \label{fig:mw_rabi}
 \end{figure}
 \par\noindent
@@ -202,5 +213,5 @@ The final pulse during the state preparation sequence is used to push these non-
 % where \(P_0 = N_\text{bg}/\left(N_1+N_2\right)\) is the proportion of background atoms out of the total number of atoms.
 
 \subsection{Conclusion}
-This chapter has presented the stages of the experiment which are used to prepare an ensemble of atoms for interferometry. This requires cooling the atoms to limit the thermal expansion of the cloud during interferometry. The atoms are also launched using a moving molasses so that only one pair of beams is resonant with the Raman transition. Finally, we then apply a sequence of optical and microwave pulses, to increase the population of atoms in \(\ket{1,0}\). A velocity-selective Raman pulse with a narorow linewidth is used to make the velocity spread along the Raman axis much smaller than the Doppler width. Aside from some residual population in \(\ket{1,\pm 1}\), the remaining atoms are removed using a pulse of light close to resonance with the \trans{2}{3} transition. This results in an ensemble of which around \(40\%\) of the population contributes to the interferometer signal.
+This chapter has presented the stages of the experiment which are used to prepare an ensemble of atoms for interferometry. This requires cooling the atoms to limit the thermal expansion of the cloud during interferometry. The atoms are also launched using a moving molasses so that only one pair of beams is resonant with the Raman transition. Finally, we then apply a sequence of optical and microwave pulses, to increase the population of atoms in \(\ket{1,0}\). A velocity-selective Raman pulse with a narrow linewidth is used to make the velocity spread along the Raman axis much smaller than the Doppler width. Aside from some residual population in \(\ket{1,\pm 1}\), the remaining atoms are removed using a pulse of light close to resonance with the \trans{2}{3} transition. This results in an ensemble of which around \(40\%\) of the population contributes to the interferometer signal.
 

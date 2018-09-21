@@ -9,11 +9,12 @@
 \usepackage{verbatim}
 \usepackage{tikz}
 \usepackage{multirow}
-\usepackage[backend=bibtex,url=false]{biblatex}
+\usepackage[backend=biber,url=false]{biblatex}
 \usetikzlibrary{external}% activate!
 \usepackage{tikz-timing}
 \usepackage{booktabs}
 \usepackage{mathabx}
+\usepackage{anyfontsize}
 \setmainmatterspacing{double}
 
 %%% Useful Commands %%%
@@ -34,12 +35,14 @@
 \newcommand{\pow}[2]{\(#1 \times 10^{#2}\)}
 \newcommand{\mf}[0]{\(m_\textnormal{F}\)}
 \newcommand{\trans}[2]{\(\ket{F=#1} \rightarrow \ket{F'=#2}\)}
+\sisetup{separate-uncertainty}
 \DeclareSIUnit\inch{in}
 \DeclareSIUnit\gauss{G}
 %% Disables warning about Command terminated with a space
 %chktex-file 1
-
-
+%disable warning about group pages
+\pdfsuppresswarningpagegroup=1
+\raggedbottom
 \title{Inertial Navigation using Atom Interferometry}
 \author{Jimmy Stammers}
 

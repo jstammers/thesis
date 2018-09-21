@@ -1,85 +1,24 @@
-This is BibTeX, Version 0.99d (TeX Live 2017)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: jstammersThesis.aux
-The style file: biblatex.bst
-A level-1 auxiliary file: frontmatter.aux
-A level-1 auxiliary file: introduction.aux
-A level-1 auxiliary file: theory.aux
-A level-1 auxiliary file: compcontrol.aux
-A level-1 auxiliary file: mots.aux
-A level-1 auxiliary file: atompreparation.aux
-A level-1 auxiliary file: interferometry.aux
-A level-1 auxiliary file: conclusion.aux
-A level-1 auxiliary file: appendices.aux
-A level-1 auxiliary file: backmatter.aux
-Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=20001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: jstammersThesis-blx.bib
-Database file #2: Thesis.bib
-Warning--I didn't find a database entry for "VanderStraten1993"
-Warning--I didn't find a database entry for "Chang2002"
-Warning--I didn't find a database entry for "Schkolnik2015"
-Warning--I didn't find a database entry for "Lautier2014"
-Warning--I didn't find a database entry for "Merlet2009"
-Warning--I didn't find a database entry for "Geiger2011a"
-Warning--I didn't find a database entry for "Barrett2016a"
-Warning--I didn't find a database entry for "Peters2001"
-Warning--I didn't find a database entry for "Gouet2008"
-Warning--I didn't find a database entry for "M2_manual"
-Biblatex version: 3.8
-Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 20 entries,
-            6268 wiz_defined-function locations,
-            1387 strings with 15082 characters,
-and the built_in function-call counts, 115455 in all, are:
-= -- 7630
-> -- 2307
-< -- 531
-+ -- 3124
-- -- 1111
-* -- 9018
-:= -- 12044
-add.period$ -- 0
-call.type$ -- 20
-change.case$ -- 213
-chr.to.int$ -- 68
-cite$ -- 38
-duplicate$ -- 12699
-empty$ -- 10780
-format.name$ -- 1346
-if$ -- 23034
-int.to.chr$ -- 0
-int.to.str$ -- 38
-missing$ -- 0
-newline$ -- 823
-num.names$ -- 772
-pop$ -- 6559
-preamble$ -- 1
-purify$ -- 333
-quote$ -- 0
-skip$ -- 3124
-stack$ -- 0
-substring$ -- 12902
-swap$ -- 3352
-text.length$ -- 541
-text.prefix$ -- 25
-top$ -- 1
-type$ -- 667
-warning$ -- 0
-while$ -- 1550
-width$ -- 0
-write$ -- 804
-(There were 10 warnings)
+[0] Config.pm:302> INFO - This is Biber 2.11
+[0] Config.pm:305> INFO - Logfile is 'jstammersThesis.blg'
+[25] biber:313> INFO - === Thu Sep 20, 2018, 22:16:38
+[48] Biber.pm:371> INFO - Reading 'jstammersThesis.bcf'
+[118] Biber.pm:857> INFO - Found 12 citekeys in bib section 0
+[132] Biber.pm:3976> INFO - Processing section 0
+[141] Biber.pm:4136> INFO - Looking for bibtex format file 'Thesis.bib' for section 0
+[145] bibtex.pm:1500> INFO - LaTeX decoding ...
+[240] bibtex.pm:1316> INFO - Found BibTeX data source 'Thesis.bib'
+[257] Utils.pm:193> WARN - month field 'jun' in entry 'Drever1983' is not an integer - this will probably not sort properly.
+[268] Utils.pm:193> WARN - month field 'sep' in entry 'Rocco2014' is not an integer - this will probably not sort properly.
+[273] Utils.pm:193> WARN - month field 'jun' in entry 'Welch1967' is not an integer - this will probably not sort properly.
+[279] Utils.pm:193> WARN - month field 'sep' in entry 'Weiss1994' is not an integer - this will probably not sort properly.
+[292] Utils.pm:193> WARN - month field 'feb' in entry 'Peters2001' is not an integer - this will probably not sort properly.
+[306] Utils.pm:193> WARN - month field 'feb' in entry 'Merlet2009' is not an integer - this will probably not sort properly.
+[323] Utils.pm:193> WARN - BibTeX subsystem: /tmp/Y4YNtOA3lF/Thesis.bib_26688.utf8, line 6, warning: 172 characters of junk seen at toplevel
+[324] Utils.pm:193> WARN - I didn't find a database entry for 'M2_manual' (section 0)
+[339] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[339] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[339] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[340] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[357] bbl.pm:617> INFO - Writing 'jstammersThesis.bbl' with encoding 'UTF-8'
+[363] bbl.pm:720> INFO - Output to jstammersThesis.bbl
+[363] Biber.pm:110> INFO - WARNINGS: 8

@@ -1,21 +1,712 @@
 \chapter{Theory}\label{chap:theory}
-\begin{itemize}
-    \item Describe general principles of light-matter interaction
-    \item Specific cases for laser cooling (doppler/sub-doppler) and Raman transitions 
-    \item Lead into atom interferometry
-    \item Perhaps split this into two shorter chapters 
-\end{itemize}
-\section{Overview}\label{sec:theory_overview}
-\section{Light-Matter Interactions}\label{sec:theory_lmi}
-\section{Laser Cooling of Rubidium-87}
+\section{Chapter Overview}\label{sec:theory_overview}
+This chapter presents a theoretical discussion of the interaction
+between light and matter that forms the basis of atom interferometry.
+It begins with a review of the theory of matter-wave interference and
+its application to measuring inertial forces such as accelerations
+in~\SectionRef{sec:theory_atomint}. This is followed by a derivation of
+the equations of motion for a Raman transition in a simplified
+three-level atom
+in~\SectionRef{sec:theory_raman}. Finally, this chapter concludes with
+a discussion of the atomic structure of \ac{rb87}, focusing on the
+aspects relevant to the previously mentioned phenomena.
+\par\noindent
+This chapter assumes some prior understanding of light-matter
+interactions on the part of the reader. A comprehensive description of
+the semi-classical approximation to atom-light interactions can be
+found in~\cite{Grynberg2011}. Theories on laser cooling and magneto-optical
+trapping are of interest to some experimental aspects of these thesis.
+Details of these can be found in~\cite{Metcalf2003}. For an exact derivation of
+the two-level approximation to the Raman transition, the reader is referred
+to~\cite{Wu1996}.  
+\section{Light-Pulse Matter-Wave Interference}\label{sec:theory_atomint}
+A cornerstone of quantum mechanics is the wave-like evolution of
+quantum states as described by the Schr\"odinger equation. As a
+consequence of this, it is possible to create superpositions of states
+that evolve coherently. Furthermore, these states can interfere with
+each other if their wavefunctions overlap. The interference pattern,
+which depends on the difference in phase between the two paths.
+\par\noindent
+In this section, the theory of matter-wave interference using pulses
+of laser light is presented. It begins with a description of the
+$\pi/2-\pi-\pi/2$ pulse sequence that forms an analogue of the
+Mach-Zehnder interferometer in~\SectionRef{subsec:theory_mz}. This is
+followed by a derivation of the interferometer phase in~\SectionRef{subsec:theory_path}. In
+particular, it is shown that this depends upon the
+acceleration of the atom during the interferometer. 
+
+\subsection{The Mach-Zehnder Scheme}\label{subsec:theory_mz}
+One method for realising matter-wave interference is the
+Ramsey-Bord\'e interferometer. This requires an ensemble
+of atoms that can be driven between two states using an interaction
+with a laser field. The absorption and stimulated emission of photons
+exchanges momentum between the atom and the light such that the state
+of the atom is defined as a product of its internal states and
+momentum eigenstates, labelled as $\ket{1,\textbf{p}}$ and
+$\ket{2,\textbf{p} + \hbar \textbf{k}}$. When compared with
+conventional optical interferometry, it is the light which alters the
+trajectory of the matter, rather than the other way around. Indeed,
+laser pulses with pulse areas of $\pi/2$ and $\pi$ are analogous to
+beam-splitters and mirrors in optical systems.  
+\par\noindent
+A three pulse interferometer is the simplest configuration for which
+the two trajectories can overlap after separation. Schematically, this
+is shown in~\FigureRef{fig:interferometer}. An atom in
+$\ket{1,\textbf{p}}$ is driven into a superposition of two states
+using a $\pi/2$ pulse. The wavepacket in $\ket{2,\textbf{p} + \hbar
+\textbf{k}}$ has a different momentum, so the two become
+spatially separated. After a time $T$, a $\pi$ pulse inverts the state
+along each path, so that after another duration of $T$ the two
+wavepackets overlap. These are recombined by a final $\pi/2$ pulse.
+The interference between the two states is manifested in their
+population, which depends on the phase difference between the two
+paths. This phase difference $\Delta \Phi$ is expressed as follows
+\begin{equation}
+  \label{eq:phase_difference}
+  \Delta \Phi = \Delta \Phi_\textnormal{prop} +\Delta
+  \Phi_\textnormal{int}+\Delta \Phi_\textnormal{laser}
+\end{equation}
+where $\Delta \Phi_\textnormal{prop}$ is the phase difference due to
+propagation along each path, $\Delta \Phi_\textnormal{int}$ is the
+phase difference due to evolution of the internal state and $\Delta
+\Phi_\textnormal{laser}$ is the phase difference caused by
+interactions with the laser field.   
+\begin{figure}[htpb]
+  \centering
+  \resizebox{0.8\textwidth}{!}{\input{interferometer.pdf_tex}}
+  \caption[Mach-Zehnder atom interferometer configuration.]{Mach-Zehnder atom interferometer configuration. A sequence
+  of laser pulses are used to drive an atom into a superposition of
+two states. When the two paths overlap at the final $\pi/2$ pulse,
+they interfere with each other. The final occupation probability is
+proportional to the phase difference between the two paths.}
+  \label{fig:interferometer}
+\end{figure}
+
+\subsection{Phase Shift Contributions}\label{subsec:theory_path}
+\subsubsection{Propagation Phase}
+The propagation phase can be evaluated using the path integral
+approach to quantum mechanics. The trajectory of
+a quantum state is obtained by integrating over all possible paths.
+The total amplitude for arriving at position $x_b$ at $t_b$, starting
+from $x_a$ at $t_a$ is given by the following propagator
+\begin{equation}
+  K(t_b,x_b,t_a,x_a) = \int_{x_a}^{x_b} e^{i S/\hbar} \mathrm{d}x(t)  
+\end{equation}
+where $x_b \equiv x(t_b)$ and similarly for $x_a$. The action $S$
+along a path is
+defined using the Lagrangian of the system
+\begin{equation}
+  S = \int_{t_a}^{t_b} L(x,\dot{x})\; \mathrm{d}t
+  \label{eq:action_def}
+\end{equation}
+and the classical limit is recovered when the action $S_\textnormal{cl}
+\gg
+\hbar$. In this case, most paths destructively interfere as their
+phases oscillate rapidly. Along the classical path, the action is
+minimised. Paths close to this lead to constructive interference, so
+the trajectory of the system is well-described using the Euler-Lagrange equations. Under this
+condition, it can be shown~\cite{Storey1994} that for a plane wave,
+the propagation phase is proportional to the action along the
+classical path
+\begin{equation}
+  \label{eq:prop_phase}
+  \Delta \Phi_\textnormal{prop} = \frac{i}{\hbar} S_\textnormal{cl}(t_b,x_b,t_a,x_a)
+\end{equation}
+\par\noindent
+This is indeed the case for an atom interferometer. When considering a
+single atom under a constant
+acceleration, the Lagrangian is given by
+\begin{equation}
+  \label{eq:lagrange_acc}
+  L = \frac{1}{2}m\dot{x}^2 + m a x
+\end{equation}
+so that it's position and velocity are given by
+\begin{subequations}
+\begin{align}
+  x(t) &= x_a + v_a (t-t_a) + \frac{1}{2} a (t-t_a)^2 \\
+  v(t) &= v_a + a(t-t_a)
+\end{align}
+\end{subequations}
+for initial values of position ($x_a$), velocity ($v_a$) and time
+($t_a$).     
+Using~\EquationRef{eq:action_def}, the action is given by 
+\begin{equation}
+  \label{eq:action_classical}
+  S(t_b,x_b,t_a,x_a) = \frac{m(x_b-x_a)^2}{2(t_b-t_a)} + \frac{m a
+  (x_b+x_a)(t_b-t_a)}{2} -\frac{m a^2 (t_b-t_a)^3}{24} 
+\end{equation}
+The trajectories along each interferometer path under acceleration is
+shown in~\FigureRef{fig:interferometer_accel}. Denoting
+$S_\textnormal{ac} \equiv S(T,x_c,0,x_a)$ and likewise for the other
+co-ordinates, the difference in the action along the upper and lower paths is 
+\begin{align}
+  S_\textnormal{ac} + S_\textnormal{cd} -
+\left(S_\textnormal{ab}+S_\textnormal{bd}\right) &= -\frac{\text{m}
+(x_b-x_c) \left(a T^2- x_a+x_b+x_c-x_d\right)}{T}\nonumber \\
+&= -\frac{\text{m}
+(x'_b-x'_c) \left((x'_c-x'_a) + (x'_d+-x'_b)\right)}{T}
+\label{eq:prop_action}
+\end{align}
+where the second expression is obtained using $x_b - x_b' = x_c - x_c'
+= \frac{1}{2}a T^2$ and $x_d-x_d' = 2 a T^2$. When there is zero
+acceleration, the area enclosed by the interferometer forms a
+parallelogram and the action along each path is equal. It follows
+from~\EquationRef{eq:prop_phase} that $\Delta \Phi_\textnormal{prop} =
+0$ when there is a constant acceleration of the atom.
+\begin{figure}[htpb]
+  \centering
+  \resizebox{0.8\textwidth}{!}{\input{interferometer_accel.pdf_tex}}
+  \caption[Interferemeter paths under constant
+  acceleration]{Interferometer paths under a constant acceleration.
+  The dashed lines indicate the trajectories under zero acceleration.}
+\label{fig:interferometer_accel}
+\end{figure}
+\subsubsection{Internal State Evolution}
+Between each laser pulse, the atom evolves freely. Therefore, the
+phase due to this evolution is given by
+\begin{equation}
+  \label{eq:internal_evolution}
+  \phi^{(j)}(t_a,t_b) = \int_{t_a}^{t_b} i \omega_j t\;\mathrm{d} t
+\end{equation}
+where $\omega_j$ depends on the state of the atom along that
+trajectory. The phase difference due to the internal state evolution
+is 
+\begin{equation}
+  \label{eq:phase_internal}
+  \Delta \Phi_\textnormal{int} = \phi^{(2)}(t_1,t_2) +
+  \phi^{(1)}(t_2,t_3) - \left(\phi^{(1)}(t_1,t_2) + \phi^{(2)}(t_2,t_3)\right)
+\end{equation}
+which is zero if the time between successive pulses is the same and
+the energy of each state does not vary. The latter case is important
+when considering the effects of the ac Stark shift and is addressed
+subsequently in~\SectionRef{subsec:light_shift}.
+
+\subsubsection{Laser Phase}
+Finally, there is the contribution from the laser phase. During each
+transition, the phase of the laser modifies the state of the atom. The
+propagator that describes this transition for arbitrary Rabi
+frequencies and detuning is derived below,
+in~\SectionRef{sec:theory_raman}. For now, it is sufficient to focus
+on the ideal case of perfect pulse areas and zero detuning. The laser
+interaction modifies the two states as follows
+\begin{subequations}
+  \begin{align}
+    U_\text{L}(\phi) \ket{1} &= e^{-i \phi} \ket{2} \\
+    U_\text{L}(\phi) \ket{2} &= e^{i \phi} \ket{1} 
+  \end{align}
+\end{subequations}
+where $\phi = \textbf{k.x} - \omega_\text{L}t + \phi_j$ is the phase
+of the light driving the transition. If the time between each pulse is
+constant the $\omega_\text{L} t$ term can be omitted, so that the
+phase of the atom along each path depends on its position and the
+phase of the laser. If the acceleration is along the same axis as the
+light's wavevector ($\textbf{k.x} \equiv k x$), the phase along the upper and lower paths are 
+\begin{subequations}
+  \begin{align}
+    \phi_l &= i(k x_b + \phi_2) \\
+    \phi_u &= i(k (x_a - x_c + x_d) + \phi_1 - \phi_2 + \phi_3)
+  \end{align}
+\end{subequations}
+Following the same argument used in~\EquationRef{eq:prop_action}, this
+can be simplified so that the phase difference due to the laser interaction ($\phi_u -
+\phi_l$), and hence the total phase difference, is
+\begin{equation}
+  \label{eq:phase_interferometer}
+  \Delta_\Phi = \Delta \Phi_\textnormal{laser} = \textbf{k.a} T^2 + \phi_1 - 2\phi_2
+  + \phi_3
+\end{equation}
+
 \section{Raman Transitions in Rubidium-87}\label{sec:theory_raman}
-\section{Light Pulse Atom Interferometry}\label{sec:theory_atomint}
+In this section, an analysis of the dynamics of the stimulated Raman transition is
+presented. This is modeled as an effective transition between two
+ground states $\ket{1}$ and $\ket{2}$. These two states are coupled
+via an intermediate state $\ket{i}$ which can be adiabatically
+eliminated when the two light fields are sufficiently detuned from
+resonance. An explicit derivation of this process can be found
+elsewhere
+\cite{Moler1992,Weiss1994}. The key results, which aid the discussion
+of the performance of the interferometer in subsequent chapters, are
+summarised below. Following this, a propagator is derived which
+describes the evolution of the atomic state during a Raman transition.
+This is used to derive the final state after the interferometer pulse
+sequence. Modeling the atomic system in this way makes it possible to consider
+the effects of finite pulse duration, detuning and intensity
+on the final state. 
+\par\noindent
+The energy level scheme for a Raman transition is shown
+in~\FigureRef{fig:raman_model}. Each ground state is coupled to the
+intermediate state $\ket{i}$ by an interaction with an electric field  
+$ \textbf{E}_j=
+\textbf{E}_{0,j} \cos(\omega_j^l t - \textbf{k}_j.\textbf{x}+
+\phi_j)$. The strength of this interaction is defined by the Rabi
+frequency\begin{equation}
+  \label{eq:rabi_freq}
+  \Omega_j = \frac{1}{\hbar}\bra{j} -\textbf{d}.\textbf{E}_{0,j}
+  \ket{i} e^{i \phi_j}
+\end{equation}
+where $\textbf{d}$ is the dipole operator. The frequency of each field is detuned from resonance to
+give a two-photon detuning $\Delta$. It is assumed that the
+hyperfine splitting $\omega_\text{hfs}$ is much larger than this, so
+that each field only drives transitions from one of the ground states. 
+%The total electric field is described by the superposition $\textbf{E}_1 + \textbf{E}_2$. 
+When $\Delta$ is sufficiently larger than the natural transition
+linewidth, the population of the intermediate state remains constant
+and can be adiabatically eliminated. The
+interference of the two fields means that the transition can be
+represented by an interaction with an effective field with the
+following parameters
+\begin{subequations}
+  \begin{align}
+    \omega_\textnormal{eff} &= \omega^l_1 - \omega^2_l \\
+    \phi_\textnormal{eff} &= \phi_1 -\phi_2 \\
+    \keff &= \textbf{k}_1 - \textbf{k}_2 \\
+          &\approx 2\textbf{k}_1\;
+    \text{(when counter-propagating)} \nonumber 
+  \end{align}
+\end{subequations}
+The resonance condition for the Raman transition is given by 
+\begin{equation}
+  \delta = \omega_\textnormal{eff} - \left[\omega_\textnormal{hfs} + \keff .
+\textbf{v} + \frac{\hbar |\keff|^2}{2m}\right]
+  \label{eq:raman_detuning}
+\end{equation}
+\begin{figure}[htpb]
+  \centering
+  \fontsize{16pt}{16pt}
+  \resizebox{0.4\textwidth}{!}{\input{raman_model.pdf_tex}}
+  \caption[Schematic diagram of a raman transition.]{Schematic diagram of a raman transition. Two states,
+  $\ket{1}$ and $\ket{2}$, are coupled to each other via transitions
+  to an
+intermediate state $\ket{i}$. When the frequencies of the light
+fields are
+far-detuned from resonance,
+then $\ket{i}$ can be adiabatically eliminated, resulting in an
+effective two-level system.}
+  \label{fig:raman_model}
+\end{figure}
+\subsection{State Propagation}
+To describe the dynamics of the Raman transition, it is convenient to
+express the system in the interaction picture. This allows the
+Hamiltonian to be represented in a time-independent form. An analytic
+solution to the equations of motion can then be obtained, which
+describes the evolution of the atomic state during a Raman transition. After adiabatically
+eliminating the intermediate state~\cite{Weiss1994}, the state of the
+atom in a rotating frame is given by
+\begin{equation}
+  \label{eq:state_raman}
+  \ket{\psi} = c_1 e^{-i \omega_1 t}\ket{1} + c_2 e^{-i (\omega_2 +
+  \delta) t} \ket{2}
+\end{equation}
+The Hamiltonian can be simplified by making the rotating wave
+approximation, which neglects the rapidly oscillating terms. After
+this, the Schr\"odinger equation becomes
+\begin{equation}
+  \label{eq:raman_eom}
+  i \begin{pmatrix} \dot{c}_1 \\ \dot{c}_2 \end{pmatrix} =
+  \frac{1}{2} \begin{pmatrix}
+    -\Omega_1^\textnormal{ac} & \Omega_\textnormal{eff} \\
+    \Omega_\textnormal{eff}^*&  -2 \delta - \Omega_2^\textnormal{ac}  \\
+    \end{pmatrix} \begin{pmatrix} c_1 \\ c_2\end{pmatrix}
+\end{equation}
+Where in terms of the single-photon Rabi frequencies $\Omega_1$ and
+$\Omega_2$, the ac Stark shifts $\Omega_j^\textnormal{ac}$ and
+effective Rabi frequency $\Omega_\textnormal{eff}$ are given by 
+\begin{subequations}
+\begin{align}
+  \Omega_j^\textnormal{ac} &= -\frac{|\Omega_j|^2}{2 \Delta
+  }\label{eq:raman_ac_stark}\\
+  \Omega_\textnormal{eff}&=\frac{e^{i\phi_\textnormal{eff}} |\Omega_1|
+    |\Omega_2|}{2 \Delta }\label{eq:raman_rabi} 
+\end{align}
+\end{subequations}
+Under an appropriate choice of intensities and two-photon detuning, it
+is possible to cancel the differential ac Stark shift
+$\Omega_1^\textnormal{ac} -\Omega_2^\textnormal{ac}$ (see
+\SectionRef{subsec:light_shift} for further details on this).
+Therefore, they can be omitted from~\EquationRef{eq:raman_eom} so that
+after solving the Schr\"odinger equation, the coefficients $c_1,c_2$
+evolve according to 
+\begin{equation}
+  \label{eq:schrodinger_prop}
+  \begin{pmatrix} c_1(t) \\ c_2(t)\end{pmatrix} = U \begin{pmatrix}
+c_1(0) \\ c_2(0)\end{pmatrix}
+\end{equation}
+where the propagator $U$ is
+\begin{equation}
+  U = e^{\frac{1}{2}i\delta t } \begin{pmatrix} 
+  \cos \left(\frac{ \Omega' t}{2}\right)-i\frac{\delta}{\Omega'}\sin
+  \left(\frac{\Omega' t}{2}\right) & 
+ -i e^{i \phi_\textnormal{eff}} \frac{
+ \Omega_\textnormal{eff}}{\Omega'} \sin \left(\frac{\Omega'
+ t}{2}\right) \\ 
+  -i e^{-i \phi_\textnormal{eff}} \frac{
+  \Omega_\textnormal{eff}}{\Omega'} \sin \left(\frac{\Omega'
+t}{2}\right)& \cos \left(\frac{ \Omega' t}{2}\right)+i\frac{
+\delta  }{\Omega'}\sin \left(\frac{ \Omega' t}{2}\right) \\
+\end{pmatrix}
+\label{eq:propagator_first}
+\end{equation}
+and $\Omega' = \sqrt{\delta^2 + \Omega_\textnormal{eff}^2}$ is the
+generalised Rabi frequency. After transforming back into the
+stationary frame, \EquationRef{eq:propagator_first} becomes
+\begin{equation}
+U =  \begin{pmatrix} 
+  e^{\frac{i(\omega_\textnormal{eff}-\delta_R)t}{2}  }\left(\cos \left(\frac{ \Omega' t}{2}\right)-i\frac{\delta}{\Omega'}\sin
+  \left(\frac{\Omega' t}{2}\right)\right) & 
+ -i e^{\frac{i(\omega_\textnormal{eff}-\delta_R)t}{2}  }e^{i \phi_\textnormal{eff}} \frac{
+ \Omega_\textnormal{eff}}{\Omega'} \sin \left(\frac{\Omega'
+ t}{2}\right) \\ 
+  -i e^{\frac{-i(\omega_\textnormal{eff}-\delta_R)t}{2}  }e^{-i \phi_\textnormal{eff}} \frac{
+  \Omega_\textnormal{eff}}{\Omega'} \sin \left(\frac{\Omega'
+  t}{2}\right)& e^{-\frac{i(\omega_\textnormal{eff}-\delta_R)t}{2}  }\left(\cos \left(\frac{ \Omega' t}{2}\right)+i\frac{
+\delta  }{\Omega'}\sin \left(\frac{ \Omega' t}{2}\right)\right) \\
+\end{pmatrix}
+\label{eq:propagator_stationary}
+\end{equation}  
+where $\delta_R = \keff.\textbf{v} + \hbar |\keff|^2/2m$ is the Raman
+detuning from
+\EquationRef{eq:raman_detuning}.
+\subsection{Application to a Sequence of Raman Pulses}
+Now, this propagator can be used to determine the state of the atom
+after a sequence of Raman pulses. The propagator was derived using an
+initial state at $t=0$. This can be generalised to an arbitrary time
+by replacing $t\rightarrow t-t_0$ and $\phi_\textnormal{eff} \rightarrow \phi_\textnormal{eff} +
+\omega_\textnormal{eff} t_0$. Between successive Raman pulses, there is a period of
+free evolution for a time $T$. During this, the state evolves
+according to
+\begin{equation}
+  \label{eq:free_evolution}
+  F(T) = \begin{pmatrix} e^{-i \frac{\omega_\textnormal{hfs} T}{2}} &0 \\
+  0 & e^{i \frac{\omega_\textnormal{hfs} T}{2}}\end{pmatrix}
+\end{equation}
+Treating the Rabi frequency, phase, detuning and pulse duration as free
+parameters denoted by an index $j=1,2,3$, the state after three arbitrary pulses separated in time
+is given by
+\begin{equation}
+  \label{eq:general_state}
+  \ket{\psi} = U(\Omega_3,\phi_3,\delta_3,\tau_3) F(T_2)
+  U(\Omega_2,\phi_2,\delta_3,\tau_2) F(T_1)
+  U(\Omega_1,\phi_1,\delta_1,\tau_1)
+  \ket{\psi_0}
+\end{equation}
+for an initial state $\ket{\psi_0}$. This expression is valid for
+arbitrary pulses and is useful when considering a
+distribution of intensities and Doppler detunings across an atomic
+ensemble. In the case of perfect pulse areas to realise a
+$(\pi/2-\pi-\pi/2)$ interferometer and zero
+detuning with the initial state $\ket{\psi_0} =
+\ket{1}$, \EquationRef{eq:general_state} yields the following
+occupation probability for $\ket{2}$
+\begin{align}
+  \label{eq:state_simp}
+  P_{\ket{2}} &= \sin \left(\frac{1}{2} (\phi_1-2
+  \phi_2+\phi_3)\right)^2 \nonumber \\
+  &= \sin\left(\frac{\Delta \Phi}{2}\right)
+\end{align}
+Where $\Delta \Phi$, defined
+in~\EquationRef{eq:phase_interferometer}, is recovered by substituting 
+$\phi_j \rightarrow \phi_j^{(l)} + \textbf{k.x}$ and using the
+position of the centre-of-mass at each pulse for $\textbf{x}$.
+%In order to observe interference between two atomic states, it is
+%essential that they remain coherent over the required timescale. The
+%most suitable choice of states for this are the $\ket{F=1,m_F=0}$ and
+%$\ket{F=2,m_F=0}$ hyperfine ground states. Neither of these states
+%will spontaneously decay and their energy has only a second-order
+%dependence on magnetic fields. However, the transition frequency
+%$\omega_\text{hfs} \approx 2\pi \times$ \sivalue{6.835}{\GHz} is
+%stimulated using microwave radiation, so each photon imparts little
+%momentum to the atom. Since the sensitivity of an atom interferometer to
+%inertial forces is proportional to the momentum transferred, this can
+%be increased by stimulating Raman transitions using light at optical
+%frequencies. In this case, an atom will absorb a photon from one light
+%field and emit into the other. If the two fields are
+%counter-propagating, this has the effect 
+
+\subsection{Extending to a Real Atomic System}
+
+In a real atomic system, there are many intermediate states which
+couple to the two ground states. This theory can be extended to
+consider the additional intermediate states using their individual
+Rabi frequencies. In this case, the effective Rabi frequency is given
+by the following sum
+\begin{equation}
+  \label{eq:rabi_raman_sum}
+  \Omega_\textnormal{eff} = e^{i \phi_\textnormal{eff}}  \sum_k
+\frac{|\Omega_{1k}| |\Omega_{2k}|}{2\Delta_k}
+\end{equation}
+where the index $k$ labels the intermediate states which couple to
+both $\ket{1}$ and $\ket{2}$. A similar expression can be obtained for
+the ac Stark shift terms. The effective Rabi frequency in \EquationRef{eq:rabi_raman_sum} implicitly
+depends on the polarisation of the light. The individual Rabi
+frequencies $\Omega_{jk}$ are calculated using the Clebsch-Gordan
+coefficients that describe the coupling of angular momentum states.
+Further detail on calculating transition matrix elements of tensor
+operators can be found in~\cite{Brink1968}. 
+%\par\noindent
+%A Raman transition is a two-photon process whereby the state of an
+%atom evolves by interacting with two laser fields. This can occur in
+%an atomic system with two states $\ket{1}$ and $\ket{2}$ that are both coupled to an
+%intermediate state $\ket{i}$ via electric dipole transitions. The eigenstates
+%$\ket{j,\textbf{p}_j}$ are products of the internal state $\ket{j}$ and a momentum
+%eigenstate $\ket{\textbf{p}_j} = e^{i
+%\frac{\textbf{p}_j.\textbf{x}}{\hbar}}$. In general,
+%the state of the atom is a superposition of these eigenstates
+%\begin{equation}
+%  \ket{\psi} = c_1\ket{1,\textbf{p}_1} + c_2
+%  \ket{2,\textbf{p}_2} + c_i \ket{i,\textbf{p}_i}
+%  \label{eq:raman_state}
+%\end{equation}
+%and the Hamiltonian that describes the evolution of this system is
+%\begin{equation}
+%  H = H_0 + H_I
+%  \label{eq:raman_hamiltonian}
+%\end{equation}
+%where $H_0$ is the free Hamiltonian
+%\begin{equation}
+%  H_0 = \hbar \begin{pmatrix}
+%    \omega_1 + \frac{p_1^2}{2m\hbar}& 0 & 0 \\
+%    0 & \omega_2+ \frac{p_2^2}{2m\hbar} & 0 \\
+%    0 & 0 & \omega_i+ \frac{p_i^2}{2m\hbar}
+%  \end{pmatrix}
+%  \label{eq:free_hamiltonian}
+%\end{equation}
+%and $H_I$ is the interaction Hamiltonian which describes the
+%interaction between the atom and the light. Writing the
+%electric fields of the respective lasers as $ \textbf{E}_j=
+%\textbf{E}_{0,j} \cos(\omega_j^l t - \textbf{k}_j.\textbf{x}+
+%\phi_j)$ for $j=1,2$, the interaction Hamiltonian depends upon
+%their superposition $\textbf{E}_1 + \textbf{E}_2$. Assuming that the
+%energy difference of $\ket{1}$ and $\ket{2}$ is much greater than the
+%transition linewidth, each field stimulates transitions from just one of the lower states. In this case, $H_I$ is  
+%\begin{equation}
+%  \label{eq:interaction_hamiltonian}
+%  H_I = \frac{\hbar}{2} \begin{pmatrix}
+%    0 & 0 & \Omega_1e^{-i (\omega_1^l t- \textbf{k}_1.\textbf{x}+\phi_1)} \\
+%    0 & 0 &\Omega_2 e^{-i (\omega_2^l t- \textbf{k}_2.\textbf{x}+\phi_2)} \\
+%    \Omega^*_1 e^{i (\omega_1^l t - \textbf{k}_1.\textbf{x}+ \phi_1)} & \Omega_2^* e^{i
+%    (\omega_2^l t - \textbf{k}_2.\textbf{x}+ \phi_2)}& 0
+%  \end{pmatrix} + c.c. 
+%\end{equation}
+%where $\Omega_j$ is the Rabi frequency
+%\begin{equation}
+%  \label{eq:rabi_freq}
+%  \Omega_j = \bra{j} -\textbf{d}.\textbf{E}_{0,j} \ket{i}
+%\end{equation}
+%and $\textbf{d}$ is the electric dipole operator. 
+%In the interaction picture, the state of the atom is given by
+%\begin{equation}
+%  \ket{\psi(t)} = c_1 e^{-\gamma_1 t} \ket{1, \textbf{p}_1} +c_2 e^{-i
+%  \gamma_2 t} \ket{2, \textbf{p}_2} +c_i e^{-i \gamma_i t} \ket{i, \textbf{p}_i} 
+%  \label{eq:raman_state_time}
+%\end{equation}
+%where $\gamma_i \equiv \omega_i + p_i^2/2m\hbar$. The interaction
+%Hamiltonian becomes
+%\begin{align}
+%  \label{eq:hamiltonian_interaction}
+%  H_{I,I} &= e^{i H_0 t/\hbar} H_I e^{-i H_0 t/\hbar} \nonumber \\
+% &=  \frac{\hbar}{2} \begin{pmatrix}
+%  0 & 0 &e^{i \gamma_{1i} t} \Omega_1e^{-i (\omega_1^l t- \textbf{k}_1.\textbf{x}+\phi_1)} \\
+%    0 & 0 &e^{i \gamma_{2i} t}\Omega_2 e^{-i (\omega_2^l t- \textbf{k}_2.\textbf{x}+\phi_2)} \\
+%    e^{-i \gamma_{1i} t}\Omega^*_1 e^{i (\omega_1^l t -
+%      \textbf{k}_1.\textbf{x}+ \phi_1)} & e^{-i \gamma_{2i} t}\Omega_2^* e^{i
+%    (\omega_2^l t - \textbf{k}_2.\textbf{x}+ \phi_2)}& 0
+%  \end{pmatrix} + c.c.
+%\end{align}
+%where $\gamma_{ji} \equiv \gamma_j - \gamma_i$. The terms oscillating
+%at a fast frequency (implicitly defined as $c.c.$) can now be
+%neglected using the rotating wave approximation as over the timescale
+%of the interaction, their contribution will average to zero. 
+%\begin{equation}
+%  \ket{\psi(t)} = c_1(0) e^{-i \omega_1 t} \ket{1} +c_2(0) e^{-i \omega_2 t} \ket{2} +c_i(0) e^{-i \omega_i t} \ket{i} 
+%  \label{eq:raman_state_time}
+%\end{equation}this system is described by the following
+%hamiltonian
+\
+\section{Applications to Rubidium-87}
+This final section places what has been discussed thus far into the
+context of Rubidium-87, the atomic species used in this experiment. It
+begins with a presentation of the atomic structure of the D2
+transition in~\SectionRef{subsec:theory_atomic}. Transitions between
+different hyperfine levels are used throughout this experiment. Most
+importantly, these are used for cooling and trapping, as well as driving
+Raman transitions. This is followed by an overview of the
+techniques used to drive counter-propagating Raman transitions
+in~\SectionRef{subsec:theory_rb87_raman}. In
+particular, this motivates the choice of polarisation used for the two
+Raman beams. Finally, this section concludes with a discussion of the
+two interferometer paths in~\SectionRef{sec:theory_double_int}.
+\subsection{Atomic Structure}\label{subsec:theory_atomic}
+Rubidium-87 has a hyperfine structure that is well-suited for a wide
+range of experiments. For instance, the energy splitting in the
+$5P^{3/2}$ level is large enough that it can be efficiently laser
+cooled using one laser to cool and another to prevent dark state
+population build-up. 
+\par\noindent
+In addition to this, the existence of two hyperfine
+levels in its ground state presents suitable choices of states for
+interferometry. Neither the $\ket{F=1}$ nor $\ket{F=2}$ levels will
+spontaneously decay, which helps to preserve their coherence during
+the interferometer. Particular pairs of Zeeman sub-levels can be
+identified which are coupled via a Raman transition. When the two
+laser fields are counter-propagating, this imparts much more momentum
+than the equivalent microwave transition. This is desirable for
+acceleration sensing, since the sensitivity is directly proportional to
+the recoil momentum. 
+\par\noindent
+The D2 transition between the $5S^{1/2}$ ground state and $5P^{3/2}$
+excited state is
+shown in~\FigureRef{fig:rb87_hyperfine}. The key transitions used in
+this experiment are also indicated. The Zeeman sub-levels (which range
+from $-F,-F+1,\ldots,F$) are not
+shown explicitly but can be inferred from the Land\'e $g$-factor.
+The energy difference of two Zeeman sub-levels is
+$E_m - E_m' = g_F B (m - m')$. The values listed are taken
+from~\cite{Steck2001}. Further quantities, such as relative transition
+strengths and physical properties of Rubidium-87 are contained
+therein. 
+\begin{figure}[htpb]
+  \centering
+  \resizebox{0.8\textwidth}{!}{\input{Figures/Chapter2/rb87_hyperfine.pdf_tex}}
+  \caption[Rubidium-87 D2 transition hyperfine structure.]{\ac{rb87} D2 transition hyperfine structure. The absolute
+    energy difference of the $\ket{F=2}$ and $\ket{F'=3}$ levels is shown
+    as an equivalent frequency. The energy of the other levels are
+    shown relative to this. The
+  approximate $g$-factors for each hyperfine level and Zeeman
+shifts are also indicated. The main transitions used in this
+experiment are indicated by red and blue arrows. The values are taken
+from \cite{Steck2001}.} 
+  \label{fig:rb87_hyperfine}
+\end{figure}
+\subsection{Driving Raman Transitions}\label{subsec:theory_rb87_raman}
+Within the Rubidium-87 ground state, there are multiple pairs of
+states that can be coherently coupled using a Raman transition.
+A natural choice is the $m_F = 0$ sub-levels\footnote{In what follows,
+  the states $\ket{1}$ and $\ket{2}$ will be used as alternative
+  notation for $\ket{F=1,m_F=0}$ and $\ket{F=2,m_F=0}$ in instances
+  where the
+explicit quantum numbers are not required}. These
+are magnetically-insensitive; their transition frequency has at most a
+second-order Zeeman shift. Consequently, this transition is least
+affected by magnetic field variations from field gradients or
+environment noise. 
+\par\noindent
+The polarisation of the two light fields is
+crucial to ensuring that the $\Delta m_F = 0$ transition is driven.
+The $\ket{1,0} \rightarrow \ket{2,0}$ transition does not change the
+magnetic quantum number, i.e. the projection of angular momentum
+along the given quantisation axis. However, the total angular momentum quantum number
+increases by 1, which means that the Raman transition is described by a vector
+operator proportional to the product of two dipole operators. This can
+occur when the two electric
+field are orthogonally linearly polarised (lin $\perp$ lin) to each
+other and to the quantisation axis. \par\noindent
+For circular polarisation, it can be shown that the two fields must
+have the same handedness. The electric field of a right-handed
+circularly polarised beam is $\textbf{E} = E_+ e^{-i \omega t} + E_-
+e^{i \omega t}$, so the product $\textbf{d.E}$
+can be written as
+\begin{equation}
+  \label{eq:dipole_expansion}
+  r_j =  
+(d^{(j)}_+ E^{(j)}_+ e^{-i \omega_j t} + d^{(j)}_- E^{(j)}_- e^{i
+\omega_j t})
+\end{equation}
+where $d^{(j)}_+$ and $d^{(j)}_-$ are the components of the dipole operator which
+increase and decrease $m_F$, respectively. The index $j$ labels
+the $\ket{j,0}$ state. The product $r_1 \times r_2$ is expanded to
+give
+\begin{equation}
+  \label{eq:dipole_exp}
+%(d^{(1)}_+ E^{(1)}_+ e^{-i \omega_1 t} + d^{(1)}_- E^{(1)}_- e^{i
+%\omega_1 t})
+%(d^{(2)}_+ E^{(2)}_+ e^{-i \omega_2 t} + d^{(2)}_- E^{(2)}_- e^{i
+%\omega_1 t})\nonumber \\
+r_1 \times r_2= (d^{(1)}_+ E^{(1)}_+ d^{(2)}_- E^{(2)}_- e^{-i (\omega_1 - \omega_2)
+  t} + d^{(1)}_- E^{(1)}_- d^{(2)}_+ E^{(2)}_+  e^{i(
+\omega_1 -\omega_2)t})
+\end{equation}
+where the first term corresponds to the component which drives
+$\ket{1,0} \rightarrow \ket{2,0}$ and the second to $\ket{2,0}
+\rightarrow \ket{1,0}$.
+The terms proportional
+to $(\omega_1 + \omega_2)$ have been neglected as they are
+off-resonant. A similar argument follows in the case of two left-handed
+circular polarised fields $\textbf{E} = E_+ e^{-i \omega t} - E_-
+e^{i \omega t}$. Conversely, a pair of left- and right-handed beams
+will not drive transitions. The product of the dipole operators
+results in components of the form $d^{(1)}_+ d^{(2)}_+$, which
+change the magnetic quantum number by $\pm2$.
 \subsection{The Double Interferometer}\label{sec:theory_double_int}
+The two frequencies for driving the Raman transition are sent into the
+experiment along the fast and slow axis of a \ac{pm} fibre. 
+To produce the necessary counter-propagating beams, a \ac{qwp} and
+mirror retro-reflect and invert the polarisation of each beam. This
+results in the beam configuration shown in~\FigureRef{fig:double_int}.
+With a magnetic field aligned parallel to the light's wavevector, each
+beam drives $\sigma^\pm$ transitions. The $\Delta m_F = 2$ transitions
+corresponding to the $\sigma^+ - \sigma^-$ combinations are forbidden,
+leaving the two combinations which drive counter-propagating $\Delta m
+= 0$ transitions. These have effective wavevectors in opposite
+directions, which means that an atom resonant with both pairs is
+driven into a superposition of $\ket{1,\textbf{p}},
+  \ket{2,\textbf{p}+\hbar \textbf{k}}$ and  $\ket{2,\textbf{p}-\hbar
+  \textbf{k}}$. The $\pi/2-\pi-\pi/2$ pulse sequence results in a trajectory shown schematically
+  in~\FigureRef{fig:double_int_path}. Two sets of paths recombine to
+  form an interferometer which have oppositely signed phase shifts.
+  The fact that there is no longer a single momentum eigenstate
+  associated with $\ket{2}$ means that not every trajectory will
+  overlap. Consequently, this results in a loss of coherence between
+  the two states. 
+\begin{figure}[htpb]
+  \centering
+  \resizebox{0.8\textwidth}{!}{\input{double_int.pdf_tex}}
+  \caption[Raman beam configuration.]{Raman beam configuration. The two incoming beams are
+  orthogonally circularly polarised. The reflected beams pass through
+a \ac{qwp} to invert their handedness. The selection rules of the
+Raman transition result in two pairs of beams that drive transitions
+with oppositely directed effective wavevectors.}
+  \label{fig:double_int}
+\end{figure}
+Fortunately, these Raman transitions have Doppler shifts of
+opposite sign. Therefore, by appropriately detuning the light from
+resonance, an atom with a non-zero velocity will be shifted closer to
+resonance with one pair and further out from the other. Indeed, if
+the difference between their resonances $2 |\keff.\textbf{v}|$ is
+larger than the transition linewidth, only one pair of beams drives
+the transition. The moving molasses method used to launch the atoms
+and lift this degeneracy is
+discussed later, in~\SectionRef{subsec:moving_molasses}; a characterisation of the Raman
+transition spectrum in the experiment is presented
+in~\SectionRef{subsec:raman_spec} 
+\begin{figure}[htpb]
+  \centering
+  \resizebox{0.4\textwidth}{!}{\input{double_int_path.pdf_tex}}
+  \caption[Interferometer paths with two oppositely directed Raman
+  transitions.]{Interferometer paths with two oppositely directed Raman
+  transitions. If the atom is resonant with both transitions, its
+momentum changes by $\pm \hbar \keff$. This results in two
+interferometers with oppositely signed phase differences. The dashed
+directed lines indicate trajectories which will not interfere, leading
+to a loss of coherence.}
+\label{fig:double_int_path}
+\end{figure}
 
+\section{note on units}
 
-\section{Note on Units}
-In subsequent chapters of this thesis, various non-SI units are used for convenience. Their values are defined here:
+in subsequent chapters of this thesis, various non-si units are used for convenience. Their values are defined here:
 \begin{itemize}
     \item 1 Gauss (G) \(= \sivalue{1e-4}{\tesla}\)
-    \item g = \sivalue{9.80665}{\metre\per\second\squared} (as defined in~\cite{})
-\end{itemize}
+    \item g = \sivalue{9.80665}{\metre\per\second\squared} (as defined
+      in~\cite{})
+  \end{itemize}
+\section{Conclusion}
+This chapter has presented a theoretical overview of matter-wave
+interferometry and motivated the use of a $\pi/2-\pi-\pi/2$ sequence
+of laser pulses to measure the acceleration of an atom. Furthermore,
+it was shown how this can be implemented using a Raman transition
+between two ground states in
+\ac{rb87}. This induces a larger momentum recoil when compared to a
+microwave transition and thus, a greater sensitivity to accelerations.
+The effect of rotation on the interferometer phase has not been
+discussed. For further details on an atom interferometer gyroscope,
+the reader is referred to~\cite{Gauguet2009}.

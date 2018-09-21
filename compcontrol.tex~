@@ -37,7 +37,7 @@ process of switching to using MOTMaster to control the experiment, I designed
 a graphical method of structuring sequences, which functioned identically on
 a device level to the original method of defining sequences. In addition to
 this, I included an interface to the M Squared laser system, so that it could
-be controlled using MOTMaster. A schematic of the structure of MOTMaster and how it interfaces with hardware is shown in~\FigureRef{fig:motmaster_structre}. It is designed so that experiments can be controlled without requiring specific details about the hardware in use.
+be controlled using MOTMaster. A schematic of the structure of MOTMaster and how it interfaces with hardware is shown in~\FigureRef{fig:motmaster_structure}. It is designed so that experiments can be controlled without requiring specific details about the hardware in use.
 \begin{figure}[!htbp]
     \centering
     \fontsize{16pt}{16pt}
@@ -261,7 +261,7 @@ communication protocol is described in further detail in
 Squared laser, so that it can control all the parameters necessary to drive
 Raman transitions during the experiment. This is done by sending structured
 JSON messages that contain commands to implement this control. More detail on how this is used in the experiment is given in
-\SectionRef{subsuc:msquared_comm}.
+\SectionRef{subsec:msquared_control}.
 \begin{figure}[!htbp]
     \centering
     \fontsize{16pt}{14pt}

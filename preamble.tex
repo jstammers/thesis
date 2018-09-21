@@ -2,6 +2,7 @@
 \usepackage{mathpazo}
 \usepackage{braket}
 \usepackage{siunitx}
+\usepackage{textcomp}
 \usepackage{acronym}
 \usepackage{xspace}
 \usepackage{morefloats,subfig,afterpage}
@@ -9,11 +10,12 @@
 \usepackage{verbatim}
 \usepackage{tikz}
 \usepackage{multirow}
-\usepackage[backend=bibtex,url=false]{biblatex}
+\usepackage[backend=biber,url=false]{biblatex}
 \usetikzlibrary{external}% activate!
 \usepackage{tikz-timing}
 \usepackage{booktabs}
 \usepackage{mathabx}
+\usepackage{anyfontsize}
 \setmainmatterspacing{double}
 
 %%% Useful Commands %%%
@@ -39,8 +41,9 @@
 \DeclareSIUnit\gauss{G}
 %% Disables warning about Command terminated with a space
 %chktex-file 1
-
-
+%disable warning about group pages
+\pdfsuppresswarningpagegroup=1
+\raggedbottom
 \title{Inertial Navigation using Atom Interferometry}
 \author{Jimmy Stammers}
 

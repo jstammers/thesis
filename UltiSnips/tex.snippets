@@ -1,0 +1,9 @@
+snippet figin "figure input with pdf_tex" 
+\\begin\{figure\}[${1:htbp}]
+    \\centering
+    \\fontsize\{16pt\}\{14pt\}
+    \\resizebox\{${2:0.8}\\textwidth\}\{!\}\{\\input\{${3:name}.pdf_tex\}\}
+    \\caption[]\{${3:name}\}
+    \\label\{fig:${3:name}\}
+\\end\{figure\}
+endsnippet

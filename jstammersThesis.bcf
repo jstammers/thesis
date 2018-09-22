@@ -1975,18 +1975,18 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">Drever1983</bcf:citekey>
-    <bcf:citekey order="2">Rocco2014</bcf:citekey>
-    <bcf:citekey order="3">Welch1967</bcf:citekey>
-    <bcf:citekey order="4">Weiss1994</bcf:citekey>
-    <bcf:citekey order="5">Moler1992</bcf:citekey>
-    <bcf:citekey order="6">Peters2001</bcf:citekey>
-    <bcf:citekey order="7">Merlet2009</bcf:citekey>
-    <bcf:citekey order="8">Allan1966</bcf:citekey>
-    <bcf:citekey order="9">Dick1987</bcf:citekey>
-    <bcf:citekey order="10">Canuel2007</bcf:citekey>
-    <bcf:citekey order="11">Gouet2008</bcf:citekey>
-    <bcf:citekey order="12">M2_manual</bcf:citekey>
-    <bcf:citekey order="13">M2_manual</bcf:citekey>
+    <bcf:citekey order="2">Weiss1994</bcf:citekey>
+    <bcf:citekey order="3">Moler1992</bcf:citekey>
+    <bcf:citekey order="4">Allan1966</bcf:citekey>
+    <bcf:citekey order="5">Rocco2014</bcf:citekey>
+    <bcf:citekey order="6">Welch1967</bcf:citekey>
+    <bcf:citekey order="7">Dick1987</bcf:citekey>
+    <bcf:citekey order="8">Canuel2007</bcf:citekey>
+    <bcf:citekey order="9">Gouet2008</bcf:citekey>
+    <bcf:citekey order="10">M2_manual</bcf:citekey>
+    <bcf:citekey order="11">M2_manual</bcf:citekey>
+    <bcf:citekey order="12">Peters2001</bcf:citekey>
+    <bcf:citekey order="13">Merlet2009</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

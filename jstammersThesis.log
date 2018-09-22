@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.20)  20 SEP 2018 22:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.20)  22 SEP 2018 18:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1580,7 +1580,19 @@ Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
-) (./jstammersThesis.aux (./frontmatter.aux) (./introduction.aux) (./theory.aux) (./compcontrol.aux) (./mots.aux) (./atompreparation.aux) (./ramanoptics.aux) (./interferometry.aux) (./conclusion.aux) (./appendices.aux) (./backmatter.aux))
+) (./jstammersThesis.aux
+No file frontmatter.aux.
+No file introduction.aux.
+No file theory.aux.
+No file compcontrol.aux.
+No file mots.aux.
+No file atompreparation.aux.
+No file ramanoptics.aux.
+(./interferometry.aux)
+No file conclusion.aux.
+No file appendices.aux.
+No file backmatter.aux.
+)
 \openout1 = `jstammersThesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -1761,23 +1773,14 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) Processing 'mainmatter' comment.
 \openout3 = `comment.cut'.
 
- Comment 'mainmatter' writing to comment.cut. Straight input of comment.cut. (./comment.cut [20
+ Comment 'mainmatter' writing to comment.cut. Straight input of comment.cut. (./comment.cut [2
 
 
 ]
 \openout2 = `interferometry.aux'.
 
- (./interferometry.tex [100
-
-
-
-
-
-
-
-
-]
-chapter 7.
+ (./interferometry.tex
+chapter 1.
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 1.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1789,360 +1792,505 @@ Package microtype Info: Loading generic protrusion settings for font family
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 5.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 15.
-Package acronym Info: Label `acro:pbs' newly defined as it shall be overridden
-although it is yet undefined on input line 25.
-Package acronym Info: Label `acro:aoms' newly defined as it shall be overridden
-although it is yet undefined on input line 25.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
+Package acronym Info: Label `acro:rb87' newly defined as it shall be overridden
+although it is yet undefined on input line 5.
 
 
-Package acronym Warning: Acronym `aoms' is not defined on input line 25.
+Package acronym Warning: Acronym `rb87' is not defined on input line 5.
 
 
-Package acronym Warning: Acronym `aoms' is not defined on input line 25.
-
-[101]
-Package acronym Info: Label `acro:pll' newly defined as it shall be overridden
-although it is yet undefined on input line 32.
- (./Figures/Chapter6/msquared_laser.pdf_tex
-<Figures/Chapter6/msquared_laser.pdf, id=142, page=1, 218.15247pt x 327.0516pt>
-File: Figures/Chapter6/msquared_laser.pdf Graphic file (type pdf)
-<use Figures/Chapter6/msquared_laser.pdf, page 1>
-Package pdftex.def Info: Figures/Chapter6/msquared_laser.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 218.15245pt x 327.06577pt.
-<Figures/Chapter6/msquared_laser.pdf, id=143, page=2, 218.15247pt x 327.0516pt>
-File: Figures/Chapter6/msquared_laser.pdf Graphic file (type pdf)
-<use Figures/Chapter6/msquared_laser.pdf, page 2>
-Package pdftex.def Info: Figures/Chapter6/msquared_laser.pdf , page2 used on input line 58.
-(pdftex.def)             Requested size: 218.15245pt x 327.06577pt.
-<Figures/Chapter6/msquared_laser.pdf, id=144, page=3, 218.15247pt x 327.0516pt>
-File: Figures/Chapter6/msquared_laser.pdf Graphic file (type pdf)
-<use Figures/Chapter6/msquared_laser.pdf, page 3>
-Package pdftex.def Info: Figures/Chapter6/msquared_laser.pdf , page3 used on input line 61.
-(pdftex.def)             Requested size: 218.15245pt x 327.06577pt.
-<Figures/Chapter6/msquared_laser.pdf, id=145, page=4, 218.15247pt x 327.0516pt>
-File: Figures/Chapter6/msquared_laser.pdf Graphic file (type pdf)
-<use Figures/Chapter6/msquared_laser.pdf, page 4>
-Package pdftex.def Info: Figures/Chapter6/msquared_laser.pdf , page4 used on input line 64.
-(pdftex.def)             Requested size: 218.15245pt x 327.06577pt.
-<Figures/Chapter6/msquared_laser.pdf, id=146, page=5, 218.15247pt x 327.0516pt>
-File: Figures/Chapter6/msquared_laser.pdf Graphic file (type pdf)
-<use Figures/Chapter6/msquared_laser.pdf, page 5>
-Package pdftex.def Info: Figures/Chapter6/msquared_laser.pdf , page5 used on input line 66.
-(pdftex.def)             Requested size: 218.15245pt x 327.06577pt.
-<Figures/Chapter6/msquared_laser.pdf, id=147, page=6, 218.15247pt x 327.0516pt>
-File: Figures/Chapter6/msquared_laser.pdf Graphic file (type pdf)
-<use Figures/Chapter6/msquared_laser.pdf, page 6>
-Package pdftex.def Info: Figures/Chapter6/msquared_laser.pdf , page6 used on input line 68.
-(pdftex.def)             Requested size: 218.15245pt x 327.06577pt.
-<Figures/Chapter6/msquared_laser.pdf, id=148, page=7, 218.15247pt x 327.0516pt>
-File: Figures/Chapter6/msquared_laser.pdf Graphic file (type pdf)
-<use Figures/Chapter6/msquared_laser.pdf, page 7>
-Package pdftex.def Info: Figures/Chapter6/msquared_laser.pdf , page7 used on input line 73.
-(pdftex.def)             Requested size: 218.15245pt x 327.06577pt.
-<Figures/Chapter6/msquared_laser.pdf, id=149, page=8, 218.15247pt x 327.0516pt>
-File: Figures/Chapter6/msquared_laser.pdf Graphic file (type pdf)
-<use Figures/Chapter6/msquared_laser.pdf, page 8>
-Package pdftex.def Info: Figures/Chapter6/msquared_laser.pdf , page8 used on input line 75.
-(pdftex.def)             Requested size: 218.15245pt x 327.06577pt.
-<Figures/Chapter6/msquared_laser.pdf, id=150, page=9, 218.15247pt x 327.0516pt>
-File: Figures/Chapter6/msquared_laser.pdf Graphic file (type pdf)
-<use Figures/Chapter6/msquared_laser.pdf, page 9>
-Package pdftex.def Info: Figures/Chapter6/msquared_laser.pdf , page9 used on input line 78.
-(pdftex.def)             Requested size: 218.15245pt x 327.06577pt.
-<Figures/Chapter6/msquared_laser.pdf, id=151, page=10, 218.15247pt x 327.0516pt>
-File: Figures/Chapter6/msquared_laser.pdf Graphic file (type pdf)
-<use Figures/Chapter6/msquared_laser.pdf, page 10>
-Package pdftex.def Info: Figures/Chapter6/msquared_laser.pdf , page10 used on input line 81.
-(pdftex.def)             Requested size: 218.15245pt x 327.06577pt.
-<Figures/Chapter6/msquared_laser.pdf, id=152, page=11, 218.15247pt x 327.0516pt>
-File: Figures/Chapter6/msquared_laser.pdf Graphic file (type pdf)
-<use Figures/Chapter6/msquared_laser.pdf, page 11>
-Package pdftex.def Info: Figures/Chapter6/msquared_laser.pdf , page11 used on input line 87.
-(pdftex.def)             Requested size: 218.15245pt x 327.06577pt.
-)
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 44.
-Package acronym Info: Label `acro:pm' newly defined as it shall be overridden
-although it is yet undefined on input line 44.
- [102] [103 <./Figures/Chapter6/msquared_laser.pdf> <./Figures/Chapter6/msquared_laser.pdf> <./Figures/Chapter6/msquared_laser.pdf> <./Figures/Chapter6/msquared_laser.pdf> <./Figures/Chapter6/msquared_laser.pdf> <./Figures/Chapter6/msquared_laser.pdf> <./Figures/Chapter6/msquared_laser.pdf> <./Figures/Chapter6/msquared_laser.pdf> <./Figures/Chapter6/msquared_laser.pdf> <./Figures/Chapter6/msquared_laser.pdf> <./Figures/Chapter6/msquared_laser.pdf>]
-Package acronym Info: Label `acro:eom' newly defined as it shall be overridden
-although it is yet undefined on input line 60.
-Package acronym Info: Label `acro:vco' newly defined as it shall be overridden
-although it is yet undefined on input line 69.
-LaTeX Font Info:    Try loading font information for TS1+ppl on input line 76.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ts1ppl.fd
-File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-) [104]
-Package acronym Info: Label `acro:dds' newly defined as it shall be overridden
-although it is yet undefined on input line 80.
-Package acronym Info: Label `acro:aom' newly defined as it shall be overridden
-although it is yet undefined on input line 81.
-Package acronym Info: Label `acro:fpga' newly defined as it shall be overridden
-although it is yet undefined on input line 82.
-<Figures/Chapter6/dcs_module.pdf, id=409, 1851.91875pt x 784.9325pt>
-File: Figures/Chapter6/dcs_module.pdf Graphic file (type pdf)
-<use Figures/Chapter6/dcs_module.pdf>
-Package pdftex.def Info: Figures/Chapter6/dcs_module.pdf  used on input line 98.
-(pdftex.def)             Requested size: 1851.91425pt x 784.93057pt.
- [105] [106 <./Figures/Chapter6/dcs_module.pdf>]
-
-LaTeX Warning: Reference `fig:photodiode_calib' on page 107 undefined on input line 137.
+Package acronym Warning: Acronym `rb87' is not defined on input line 5.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 139.
+LaTeX Warning: Reference `sec:pulse_characterisation' on page 1 undefined on input line 12.
+
+[1
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\sigma' on input line 139.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 139.
 
-Package acronym Info: Label `acro:mot' newly defined as it shall be overridden
-although it is yet undefined on input line 141.
-Package acronym Info: Label `acro:hwp' newly defined as it shall be overridden
-although it is yet undefined on input line 147.
-(./Figures/Chapter6/photodiode_optics.pdf_tex
-LaTeX Font Info:    Calculating math sizes for size <18> on input line 56.
-<Figures/Chapter6/photodiode_optics.pdf, id=445, page=1, 1299.09425pt x 364.63844pt>
-File: Figures/Chapter6/photodiode_optics.pdf Graphic file (type pdf)
-<use Figures/Chapter6/photodiode_optics.pdf, page 1>
-Package pdftex.def Info: Figures/Chapter6/photodiode_optics.pdf , page1 used on input line 57.
-(pdftex.def)             Requested size: 1299.09422pt x 364.65979pt.
-<Figures/Chapter6/photodiode_optics.pdf, id=446, page=2, 1299.09425pt x 364.63844pt>
-File: Figures/Chapter6/photodiode_optics.pdf Graphic file (type pdf)
-<use Figures/Chapter6/photodiode_optics.pdf, page 2>
-Package pdftex.def Info: Figures/Chapter6/photodiode_optics.pdf , page2 used on input line 59.
-(pdftex.def)             Requested size: 1299.09422pt x 364.65979pt.
-<Figures/Chapter6/photodiode_optics.pdf, id=447, page=3, 1299.09425pt x 364.63844pt>
-File: Figures/Chapter6/photodiode_optics.pdf Graphic file (type pdf)
-<use Figures/Chapter6/photodiode_optics.pdf, page 3>
-Package pdftex.def Info: Figures/Chapter6/photodiode_optics.pdf , page3 used on input line 61.
-(pdftex.def)             Requested size: 1299.09422pt x 364.65979pt.
-<Figures/Chapter6/photodiode_optics.pdf, id=448, page=4, 1299.09425pt x 364.63844pt>
-File: Figures/Chapter6/photodiode_optics.pdf Graphic file (type pdf)
-<use Figures/Chapter6/photodiode_optics.pdf, page 4>
-Package pdftex.def Info: Figures/Chapter6/photodiode_optics.pdf , page4 used on input line 63.
-(pdftex.def)             Requested size: 1299.09422pt x 364.65979pt.
-<Figures/Chapter6/photodiode_optics.pdf, id=449, page=5, 1299.09425pt x 364.63844pt>
-File: Figures/Chapter6/photodiode_optics.pdf Graphic file (type pdf)
-<use Figures/Chapter6/photodiode_optics.pdf, page 5>
-Package pdftex.def Info: Figures/Chapter6/photodiode_optics.pdf , page5 used on input line 65.
-(pdftex.def)             Requested size: 1299.09422pt x 364.65979pt.
-<Figures/Chapter6/photodiode_optics.pdf, id=450, page=6, 1299.09425pt x 364.63844pt>
-File: Figures/Chapter6/photodiode_optics.pdf Graphic file (type pdf)
-<use Figures/Chapter6/photodiode_optics.pdf, page 6>
-Package pdftex.def Info: Figures/Chapter6/photodiode_optics.pdf , page6 used on input line 69.
-(pdftex.def)             Requested size: 1299.09422pt x 364.65979pt.
-) (./Figures/Chapter6/detection.pdf_tex
-<Figures/Chapter6/detection.pdf, id=452, page=1, 668.52623pt x 286.53139pt>
-File: Figures/Chapter6/detection.pdf Graphic file (type pdf)
-<use Figures/Chapter6/detection.pdf, page 1>
-Package pdftex.def Info: Figures/Chapter6/detection.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 668.52626pt x 286.53941pt.
-<Figures/Chapter6/detection.pdf, id=453, page=2, 668.52623pt x 286.53139pt>
-File: Figures/Chapter6/detection.pdf Graphic file (type pdf)
-<use Figures/Chapter6/detection.pdf, page 2>
-Package pdftex.def Info: Figures/Chapter6/detection.pdf , page2 used on input line 69.
-(pdftex.def)             Requested size: 668.52626pt x 286.53941pt.
-<Figures/Chapter6/detection.pdf, id=454, page=3, 668.52623pt x 286.53139pt>
-File: Figures/Chapter6/detection.pdf Graphic file (type pdf)
-<use Figures/Chapter6/detection.pdf, page 3>
-Package pdftex.def Info: Figures/Chapter6/detection.pdf , page3 used on input line 71.
-(pdftex.def)             Requested size: 668.52626pt x 286.53941pt.
-<Figures/Chapter6/detection.pdf, id=455, page=4, 668.52623pt x 286.53139pt>
-File: Figures/Chapter6/detection.pdf Graphic file (type pdf)
-<use Figures/Chapter6/detection.pdf, page 4>
-Package pdftex.def Info: Figures/Chapter6/detection.pdf , page4 used on input line 74.
-(pdftex.def)             Requested size: 668.52626pt x 286.53941pt.
-<Figures/Chapter6/detection.pdf, id=456, page=5, 668.52623pt x 286.53139pt>
-File: Figures/Chapter6/detection.pdf Graphic file (type pdf)
-<use Figures/Chapter6/detection.pdf, page 5>
-Package pdftex.def Info: Figures/Chapter6/detection.pdf , page5 used on input line 76.
-(pdftex.def)             Requested size: 668.52626pt x 286.53941pt.
-) [107] [108 <./Figures/Chapter6/photodiode_optics.pdf> <./Figures/Chapter6/photodiode_optics.pdf> <./Figures/Chapter6/photodiode_optics.pdf> <./Figures/Chapter6/photodiode_optics.pdf> <./Figures/Chapter6/photodiode_optics.pdf> <./Figures/Chapter6/photodiode_optics.pdf>] [109 <./Figures/Chapter6/detection.pdf> <./Figures/Chapter6/detection.pdf> <./Figures/Chapter6/detection.pdf> <./Figures/Chapter6/detection.pdf> <./Figures/Chapter6/detection.pdf>]
-<Figures/Chapter6/photodiode_intensity.pdf, id=508, 722.7pt x 433.62pt>
-File: Figures/Chapter6/photodiode_intensity.pdf Graphic file (type pdf)
-<use Figures/Chapter6/photodiode_intensity.pdf>
-Package pdftex.def Info: Figures/Chapter6/photodiode_intensity.pdf  used on input line 276.
-(pdftex.def)             Requested size: 313.65027pt x 188.18648pt.
- [110]
-<Figures/Chapter6/photodiode_voltage_time.pdf, id=522, 722.7pt x 433.62pt>
-File: Figures/Chapter6/photodiode_voltage_time.pdf Graphic file (type pdf)
-<use Figures/Chapter6/photodiode_voltage_time.pdf>
-Package pdftex.def Info: Figures/Chapter6/photodiode_voltage_time.pdf  used on input line 287.
-(pdftex.def)             Requested size: 313.65027pt x 188.18648pt.
- [111 <./Figures/Chapter6/photodiode_intensity.pdf> <./Figures/Chapter6/photodiode_voltage_time.pdf>]
-
-LaTeX Warning: Reference `eq:scattering_rate' on page 112 undefined on input line 307.
-
-[112]
-<Figures/Chapter6/contrast_bias.pdf, id=579, 722.7pt x 433.62pt>
-File: Figures/Chapter6/contrast_bias.pdf Graphic file (type pdf)
-<use Figures/Chapter6/contrast_bias.pdf>
-Package pdftex.def Info: Figures/Chapter6/contrast_bias.pdf  used on input line 383.
-(pdftex.def)             Requested size: 313.65027pt x 188.18648pt.
- [113] [114 <./Figures/Chapter6/contrast_bias.pdf>]
-Package acronym Info: Label `acro:nep' newly defined as it shall be overridden
-although it is yet undefined on input line 437.
- [115]
-
-LaTeX Warning: Reference `fig:pd_psd' on page 116 undefined on input line 502.
-
-<Figures/Chapter6/noise_source_psd.pdf, id=621, 722.7pt x 433.62pt>
-File: Figures/Chapter6/noise_source_psd.pdf Graphic file (type pdf)
-<use Figures/Chapter6/noise_source_psd.pdf>
-Package pdftex.def Info: Figures/Chapter6/noise_source_psd.pdf  used on input line 522.
-(pdftex.def)             Requested size: 313.65027pt x 188.18648pt.
-[116]
-
-LaTeX Warning: Reference `fig:detection_av' on page 117 undefined on input line 544.
-
-<Figures/Chapter6/detection_av.pdf, id=634, 722.7pt x 433.62pt>
-File: Figures/Chapter6/detection_av.pdf Graphic file (type pdf)
-<use Figures/Chapter6/detection_av.pdf>
-Package pdftex.def Info: Figures/Chapter6/detection_av.pdf  used on input line 552.
-(pdftex.def)             Requested size: 224.03688pt x 134.4208pt.
-[117 <./Figures/Chapter6/noise_source_psd.pdf>] [118 <./Figures/Chapter6/detection_av.pdf>]
-<Figures/Chapter6/raman_spectrum.pdf, id=692, 722.7pt x 433.62pt>
-File: Figures/Chapter6/raman_spectrum.pdf Graphic file (type pdf)
-<use Figures/Chapter6/raman_spectrum.pdf>
-Package pdftex.def Info: Figures/Chapter6/raman_spectrum.pdf  used on input line 653.
-(pdftex.def)             Requested size: 224.03688pt x 134.4208pt.
-<Figures/Chapter6/raman_spectrum_inset.pdf, id=694, 722.7pt x 433.62pt>
-File: Figures/Chapter6/raman_spectrum_inset.pdf Graphic file (type pdf)
-<use Figures/Chapter6/raman_spectrum_inset.pdf>
-Package pdftex.def Info: Figures/Chapter6/raman_spectrum_inset.pdf  used on input line 679.
-(pdftex.def)             Requested size: 224.03688pt x 134.4208pt.
-
-Overfull \hbox (15.64186pt too wide) in paragraph at lines 659--686
-\T1/ppl/m/n/12 (-20) same Doppler shifts are also ob-served in the peaks cor-re-spond-ing to the $[] \U/matha/m/n/12 Ñ
- []
-
-
-Overfull \hbox (14.66827pt too wide) in paragraph at lines 659--686
-[]$ \T1/ppl/m/n/12 (-20) tran-si-tions. The counter-propagating tran-si-tions are Doppler-broadened
- []
-
-[119] [120 <./Figures/Chapter6/raman_spectrum.pdf>]
-
-LaTeX Warning: Reference `sec:raman_trans_theory' on page 121 undefined on input line 692.
-
-[121 <./Figures/Chapter6/raman_spectrum_inset.pdf>]
-<Figures/Chapter6/light_shift_ratio.pdf, id=752, 722.7pt x 433.62pt>
-File: Figures/Chapter6/light_shift_ratio.pdf Graphic file (type pdf)
-<use Figures/Chapter6/light_shift_ratio.pdf>
-Package pdftex.def Info: Figures/Chapter6/light_shift_ratio.pdf  used on input line 744.
-(pdftex.def)             Requested size: 722.69823pt x 433.61894pt.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 744.
-<Figures/Chapter6/light_shift_detuning.pdf, id=753, 722.7pt x 433.62pt>
-File: Figures/Chapter6/light_shift_detuning.pdf Graphic file (type pdf)
-<use Figures/Chapter6/light_shift_detuning.pdf>
-Package pdftex.def Info: Figures/Chapter6/light_shift_detuning.pdf  used on input line 745.
-(pdftex.def)             Requested size: 722.69823pt x 433.61894pt.
-<Figures/Chapter6/cancelled_light_shift.pdf, id=755, 722.7pt x 433.62pt>
-File: Figures/Chapter6/cancelled_light_shift.pdf Graphic file (type pdf)
-<use Figures/Chapter6/cancelled_light_shift.pdf>
-Package pdftex.def Info: Figures/Chapter6/cancelled_light_shift.pdf  used on input line 780.
-(pdftex.def)             Requested size: 224.03688pt x 134.4208pt.
- [122] [123 <./Figures/Chapter6/light_shift_ratio.pdf> <./Figures/Chapter6/light_shift_detuning.pdf> <./Figures/Chapter6/cancelled_light_shift.pdf>]
-<Figures/Chapter6/vel_selected_dist.pdf, id=822, 722.7pt x 433.62pt>
-File: Figures/Chapter6/vel_selected_dist.pdf Graphic file (type pdf)
-<use Figures/Chapter6/vel_selected_dist.pdf>
-Package pdftex.def Info: Figures/Chapter6/vel_selected_dist.pdf  used on input line 841.
-(pdftex.def)             Requested size: 224.03688pt x 134.4208pt.
- [124]
-<Figures/Chapter6/RamanChirp.pdf, id=831, 722.7pt x 433.62pt>
-File: Figures/Chapter6/RamanChirp.pdf Graphic file (type pdf)
-<use Figures/Chapter6/RamanChirp.pdf>
-Package pdftex.def Info: Figures/Chapter6/RamanChirp.pdf  used on input line 870.
-(pdftex.def)             Requested size: 268.847pt x 161.31026pt.
- [125 <./Figures/Chapter6/vel_selected_dist.pdf>]
-
-LaTeX Warning: Reference `fig:rabi_oscillation' on page 126 undefined on input line 889.
-
-[126 <./Figures/Chapter6/RamanChirp.pdf>]
-<Figures/Chapter6/fringe_examp.pdf, id=878, 722.7pt x 433.62pt>
-File: Figures/Chapter6/fringe_examp.pdf Graphic file (type pdf)
-<use Figures/Chapter6/fringe_examp.pdf>
-Package pdftex.def Info: Figures/Chapter6/fringe_examp.pdf  used on input line 917.
-(pdftex.def)             Requested size: 268.847pt x 161.31026pt.
- [127 <./Figures/Chapter6/fringe_examp.pdf>]
-<Figures/Chapter6/high_vib.pdf, id=909, 433.62pt x 289.08pt>
-File: Figures/Chapter6/high_vib.pdf Graphic file (type pdf)
-<use Figures/Chapter6/high_vib.pdf>
-Package pdftex.def Info: Figures/Chapter6/high_vib.pdf  used on input line 980.
-(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
-<Figures/Chapter6/low_vib.pdf, id=910, 433.62pt x 289.08pt>
-File: Figures/Chapter6/low_vib.pdf Graphic file (type pdf)
-<use Figures/Chapter6/low_vib.pdf>
-Package pdftex.def Info: Figures/Chapter6/low_vib.pdf  used on input line 981.
-(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- [128]
-<Figures/Chapter6/low_vib_hist_mems_atom.pdf, id=925, 433.62pt x 289.08pt>
-File: Figures/Chapter6/low_vib_hist_mems_atom.pdf Graphic file (type pdf)
-<use Figures/Chapter6/low_vib_hist_mems_atom.pdf>
-Package pdftex.def Info: Figures/Chapter6/low_vib_hist_mems_atom.pdf  used on input line 1004.
-(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
-<Figures/Chapter6/low_vib_hist_atom_res.pdf, id=926, 433.62pt x 289.08pt>
-File: Figures/Chapter6/low_vib_hist_atom_res.pdf Graphic file (type pdf)
-<use Figures/Chapter6/low_vib_hist_atom_res.pdf>
-Package pdftex.def Info: Figures/Chapter6/low_vib_hist_atom_res.pdf  used on input line 1005.
-(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- [129 <./Figures/Chapter6/high_vib.pdf> <./Figures/Chapter6/low_vib.pdf>]
-<Figures/Chapter6/high_vib_adev.pdf, id=999, 722.7pt x 433.62pt>
-File: Figures/Chapter6/high_vib_adev.pdf Graphic file (type pdf)
-<use Figures/Chapter6/high_vib_adev.pdf>
-Package pdftex.def Info: Figures/Chapter6/high_vib_adev.pdf  used on input line 1041.
-(pdftex.def)             Requested size: 722.69823pt x 433.61894pt.
-<Figures/Chapter6/low_vib_adev.pdf, id=1000, 722.7pt x 433.62pt>
-File: Figures/Chapter6/low_vib_adev.pdf Graphic file (type pdf)
-<use Figures/Chapter6/low_vib_adev.pdf>
-Package pdftex.def Info: Figures/Chapter6/low_vib_adev.pdf  used on input line 1042.
-(pdftex.def)             Requested size: 722.69823pt x 433.61894pt.
- [130 <./Figures/Chapter6/low_vib_hist_mems_atom.pdf> <./Figures/Chapter6/low_vib_hist_atom_res.pdf>] [131 <./Figures/Chapter6/high_vib_adev.pdf> <./Figures/Chapter6/low_vib_adev.pdf>] [132] [133] [134]
-Underfull \hbox (badness 10000) in paragraph at lines 1230--1233
-
- []
-
-[135]
-<Figures/Chapter6/transfer_func_laser.pdf, id=1146, 722.7pt x 433.62pt>
-File: Figures/Chapter6/transfer_func_laser.pdf Graphic file (type pdf)
-<use Figures/Chapter6/transfer_func_laser.pdf>
-Package pdftex.def Info: Figures/Chapter6/transfer_func_laser.pdf  used on input line 1243.
-(pdftex.def)             Requested size: 268.847pt x 161.31026pt.
- [136 <./Figures/Chapter6/transfer_func_laser.pdf>]
-
-LaTeX Warning: Reference `fig:allan_dev_m_squared' on page 137 undefined on input line 1282.
-
-<Figures/Chapter6/allan_dev_m2.pdf, id=1174, 722.7pt x 433.62pt>
-File: Figures/Chapter6/allan_dev_m2.pdf Graphic file (type pdf)
-<use Figures/Chapter6/allan_dev_m2.pdf>
-Package pdftex.def Info: Figures/Chapter6/allan_dev_m2.pdf  used on input line 1289.
-(pdftex.def)             Requested size: 268.847pt x 161.31026pt.
-[137 <./Figures/Chapter6/allan_dev_m2.pdf>]
-<Figures/Chapter6/transfer_func_acc.pdf, id=1199, 722.7pt x 433.62pt>
-File: Figures/Chapter6/transfer_func_acc.pdf Graphic file (type pdf)
-<use Figures/Chapter6/transfer_func_acc.pdf>
-Package pdftex.def Info: Figures/Chapter6/transfer_func_acc.pdf  used on input line 1343.
-(pdftex.def)             Requested size: 268.847pt x 161.31026pt.
- [138]
-<Figures/Chapter6/vibration_spectrum.pdf, id=1214, 722.7pt x 433.62pt>
-File: Figures/Chapter6/vibration_spectrum.pdf Graphic file (type pdf)
-<use Figures/Chapter6/vibration_spectrum.pdf>
-Package pdftex.def Info: Figures/Chapter6/vibration_spectrum.pdf  used on input line 1377.
-(pdftex.def)             Requested size: 268.847pt x 161.31026pt.
-) [139 <./Figures/Chapter6/transfer_func_acc.pdf>] [140 <./Figures/Chapter6/vibration_spectrum.pdf>]) [142
 
 
 
 ]
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 29.
+
+
+Package acronym Warning: Acronym `rb87' is not defined on input line 38.
+
+Package acronym Info: Label `acro:pbs' newly defined as it shall be overridden
+although it is yet undefined on input line 40.
+
+Package acronym Warning: Acronym `pbs' is not defined on input line 40.
+
+
+Package acronym Warning: Acronym `pbs' is not defined on input line 40.
+
+Package acronym Info: Label `acro:aom' newly defined as it shall be overridden
+although it is yet undefined on input line 40.
+
+Package acronym Warning: Acronym `aom' is not defined on input line 40.
+
+
+Package acronym Warning: Acronym `aom' is not defined on input line 40.
+
+Package acronym Info: Label `acro:pll' newly defined as it shall be overridden
+although it is yet undefined on input line 49.
+
+Package acronym Warning: Acronym `pll' is not defined on input line 49.
+
+
+Package acronym Warning: Acronym `pll' is not defined on input line 49.
+
+(./Figures/Chapter6/msquared_laser.pdf_tex
+<Figures/Chapter6/msquared_laser.pdf, id=136, page=1, 282.19609pt x 327.0516pt>
+File: Figures/Chapter6/msquared_laser.pdf Graphic file (type pdf)
+<use Figures/Chapter6/msquared_laser.pdf, page 1>
+Package pdftex.def Info: Figures/Chapter6/msquared_laser.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 282.19609pt x 327.05579pt.
+<Figures/Chapter6/msquared_laser.pdf, id=137, page=2, 282.19609pt x 327.0516pt>
+File: Figures/Chapter6/msquared_laser.pdf Graphic file (type pdf)
+<use Figures/Chapter6/msquared_laser.pdf, page 2>
+Package pdftex.def Info: Figures/Chapter6/msquared_laser.pdf , page2 used on input line 58.
+(pdftex.def)             Requested size: 282.19609pt x 327.05579pt.
+<Figures/Chapter6/msquared_laser.pdf, id=138, page=3, 282.19609pt x 327.0516pt>
+File: Figures/Chapter6/msquared_laser.pdf Graphic file (type pdf)
+<use Figures/Chapter6/msquared_laser.pdf, page 3>
+Package pdftex.def Info: Figures/Chapter6/msquared_laser.pdf , page3 used on input line 61.
+(pdftex.def)             Requested size: 282.19609pt x 327.05579pt.
+<Figures/Chapter6/msquared_laser.pdf, id=139, page=4, 282.19609pt x 327.0516pt>
+File: Figures/Chapter6/msquared_laser.pdf Graphic file (type pdf)
+<use Figures/Chapter6/msquared_laser.pdf, page 4>
+Package pdftex.def Info: Figures/Chapter6/msquared_laser.pdf , page4 used on input line 64.
+(pdftex.def)             Requested size: 282.19609pt x 327.05579pt.
+<Figures/Chapter6/msquared_laser.pdf, id=140, page=5, 282.19609pt x 327.0516pt>
+File: Figures/Chapter6/msquared_laser.pdf Graphic file (type pdf)
+<use Figures/Chapter6/msquared_laser.pdf, page 5>
+Package pdftex.def Info: Figures/Chapter6/msquared_laser.pdf , page5 used on input line 66.
+(pdftex.def)             Requested size: 282.19609pt x 327.05579pt.
+<Figures/Chapter6/msquared_laser.pdf, id=141, page=6, 282.19609pt x 327.0516pt>
+File: Figures/Chapter6/msquared_laser.pdf Graphic file (type pdf)
+<use Figures/Chapter6/msquared_laser.pdf, page 6>
+Package pdftex.def Info: Figures/Chapter6/msquared_laser.pdf , page6 used on input line 68.
+(pdftex.def)             Requested size: 282.19609pt x 327.05579pt.
+<Figures/Chapter6/msquared_laser.pdf, id=142, page=7, 282.19609pt x 327.0516pt>
+File: Figures/Chapter6/msquared_laser.pdf Graphic file (type pdf)
+<use Figures/Chapter6/msquared_laser.pdf, page 7>
+Package pdftex.def Info: Figures/Chapter6/msquared_laser.pdf , page7 used on input line 73.
+(pdftex.def)             Requested size: 282.19609pt x 327.05579pt.
+<Figures/Chapter6/msquared_laser.pdf, id=143, page=8, 282.19609pt x 327.0516pt>
+File: Figures/Chapter6/msquared_laser.pdf Graphic file (type pdf)
+<use Figures/Chapter6/msquared_laser.pdf, page 8>
+Package pdftex.def Info: Figures/Chapter6/msquared_laser.pdf , page8 used on input line 75.
+(pdftex.def)             Requested size: 282.19609pt x 327.05579pt.
+<Figures/Chapter6/msquared_laser.pdf, id=144, page=9, 282.19609pt x 327.0516pt>
+File: Figures/Chapter6/msquared_laser.pdf Graphic file (type pdf)
+<use Figures/Chapter6/msquared_laser.pdf, page 9>
+Package pdftex.def Info: Figures/Chapter6/msquared_laser.pdf , page9 used on input line 78.
+(pdftex.def)             Requested size: 282.19609pt x 327.05579pt.
+<Figures/Chapter6/msquared_laser.pdf, id=145, page=10, 282.19609pt x 327.0516pt>
+File: Figures/Chapter6/msquared_laser.pdf Graphic file (type pdf)
+<use Figures/Chapter6/msquared_laser.pdf, page 10>
+Package pdftex.def Info: Figures/Chapter6/msquared_laser.pdf , page10 used on input line 81.
+(pdftex.def)             Requested size: 282.19609pt x 327.05579pt.
+<Figures/Chapter6/msquared_laser.pdf, id=146, page=11, 282.19609pt x 327.0516pt>
+File: Figures/Chapter6/msquared_laser.pdf Graphic file (type pdf)
+<use Figures/Chapter6/msquared_laser.pdf, page 11>
+Package pdftex.def Info: Figures/Chapter6/msquared_laser.pdf , page11 used on input line 87.
+(pdftex.def)             Requested size: 282.19609pt x 327.05579pt.
+)
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 62.
+
+
+Package acronym Warning: Acronym `pm' is not defined on input line 62.
+
+
+Package acronym Warning: Acronym `pm' is not defined on input line 62.
+
+Package acronym Info: Label `acro:pm' newly defined as it shall be overridden
+although it is yet undefined on input line 62.
+
+Package acronym Warning: Acronym `pm' is not defined on input line 62.
+
+
+Package acronym Warning: Acronym `pm' is not defined on input line 62.
+
+[2]
+Package acronym Info: Label `acro:eom' newly defined as it shall be overridden
+although it is yet undefined on input line 78.
+
+
+Package acronym Warning: Acronym `eom' is not defined on input line 78.
+
+
+Package acronym Warning: Acronym `eom' is not defined on input line 78.
+
+
+Package acronym Warning: Acronym `eom' is not defined on input line 80.
+
+[3 <./Figures/Chapter6/msquared_laser.pdf> <./Figures/Chapter6/msquared_laser.pdf> <./Figures/Chapter6/msquared_laser.pdf> <./Figures/Chapter6/msquared_laser.pdf> <./Figures/Chapter6/msquared_laser.pdf> <./Figures/Chapter6/msquared_laser.pdf> <./Figures/Chapter6/msquared_laser.pdf> <./Figures/Chapter6/msquared_laser.pdf> <./Figures/Chapter6/msquared_laser.pdf> <./Figures/Chapter6/msquared_laser.pdf> <./Figures/Chapter6/msquared_laser.pdf>]
+
+Package acronym Warning: Acronym `pll' is not defined on input line 86.
+
+Package acronym Info: Label `acro:vco' newly defined as it shall be overridden
+although it is yet undefined on input line 87.
+
+Package acronym Warning: Acronym `vco' is not defined on input line 87.
+
+
+Package acronym Warning: Acronym `vco' is not defined on input line 87.
+
+
+Package acronym Warning: Acronym `vco' is not defined on input line 92.
+
+
+Package acronym Warning: Acronym `vco' is not defined on input line 93.
+
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 94.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+)
+Package acronym Info: Label `acro:dds' newly defined as it shall be overridden
+although it is yet undefined on input line 99.
+
+
+Package acronym Warning: Acronym `dds' is not defined on input line 99.
+
+
+Package acronym Warning: Acronym `dds' is not defined on input line 99.
+
+
+Package acronym Warning: Acronym `aom' is not defined on input line 100.
+
+Package acronym Info: Label `acro:fpga' newly defined as it shall be overridden
+although it is yet undefined on input line 101.
+
+Package acronym Warning: Acronym `fpga' is not defined on input line 101.
+
+
+Package acronym Warning: Acronym `fpga' is not defined on input line 101.
+
+[4]
+
+Package acronym Warning: Acronym `pll' is not defined on input line 111.
+
+<Figures/Chapter6/dcs_module.pdf, id=387, 1851.91875pt x 784.9325pt>
+File: Figures/Chapter6/dcs_module.pdf Graphic file (type pdf)
+<use Figures/Chapter6/dcs_module.pdf>
+Package pdftex.def Info: Figures/Chapter6/dcs_module.pdf  used on input line 118.
+(pdftex.def)             Requested size: 1851.91425pt x 784.93057pt.
+[5 <./Figures/Chapter6/dcs_module.pdf>] (./Figures/Chapter6/photodiode_optics.pdf_tex
+LaTeX Font Info:    Calculating math sizes for size <18> on input line 56.
+<Figures/Chapter6/photodiode_optics.pdf, id=406, page=1, 1299.09425pt x 364.63844pt>
+File: Figures/Chapter6/photodiode_optics.pdf Graphic file (type pdf)
+<use Figures/Chapter6/photodiode_optics.pdf, page 1>
+Package pdftex.def Info: Figures/Chapter6/photodiode_optics.pdf , page1 used on input line 57.
+(pdftex.def)             Requested size: 1299.09422pt x 364.65979pt.
+<Figures/Chapter6/photodiode_optics.pdf, id=407, page=2, 1299.09425pt x 364.63844pt>
+File: Figures/Chapter6/photodiode_optics.pdf Graphic file (type pdf)
+<use Figures/Chapter6/photodiode_optics.pdf, page 2>
+Package pdftex.def Info: Figures/Chapter6/photodiode_optics.pdf , page2 used on input line 59.
+(pdftex.def)             Requested size: 1299.09422pt x 364.65979pt.
+<Figures/Chapter6/photodiode_optics.pdf, id=408, page=3, 1299.09425pt x 364.63844pt>
+File: Figures/Chapter6/photodiode_optics.pdf Graphic file (type pdf)
+<use Figures/Chapter6/photodiode_optics.pdf, page 3>
+Package pdftex.def Info: Figures/Chapter6/photodiode_optics.pdf , page3 used on input line 61.
+(pdftex.def)             Requested size: 1299.09422pt x 364.65979pt.
+<Figures/Chapter6/photodiode_optics.pdf, id=409, page=4, 1299.09425pt x 364.63844pt>
+File: Figures/Chapter6/photodiode_optics.pdf Graphic file (type pdf)
+<use Figures/Chapter6/photodiode_optics.pdf, page 4>
+Package pdftex.def Info: Figures/Chapter6/photodiode_optics.pdf , page4 used on input line 63.
+(pdftex.def)             Requested size: 1299.09422pt x 364.65979pt.
+<Figures/Chapter6/photodiode_optics.pdf, id=410, page=5, 1299.09425pt x 364.63844pt>
+File: Figures/Chapter6/photodiode_optics.pdf Graphic file (type pdf)
+<use Figures/Chapter6/photodiode_optics.pdf, page 5>
+Package pdftex.def Info: Figures/Chapter6/photodiode_optics.pdf , page5 used on input line 65.
+(pdftex.def)             Requested size: 1299.09422pt x 364.65979pt.
+<Figures/Chapter6/photodiode_optics.pdf, id=411, page=6, 1299.09425pt x 364.63844pt>
+File: Figures/Chapter6/photodiode_optics.pdf Graphic file (type pdf)
+<use Figures/Chapter6/photodiode_optics.pdf, page 6>
+Package pdftex.def Info: Figures/Chapter6/photodiode_optics.pdf , page6 used on input line 69.
+(pdftex.def)             Requested size: 1299.09422pt x 364.65979pt.
+) [6 <./Figures/Chapter6/photodiode_optics.pdf> <./Figures/Chapter6/photodiode_optics.pdf> <./Figures/Chapter6/photodiode_optics.pdf> <./Figures/Chapter6/photodiode_optics.pdf> <./Figures/Chapter6/photodiode_optics.pdf> <./Figures/Chapter6/photodiode_optics.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 169.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\sigma' on input line 169.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 169.
+
+Package acronym Info: Label `acro:mot' newly defined as it shall be overridden
+although it is yet undefined on input line 171.
+
+Package acronym Warning: Acronym `mot' is not defined on input line 171.
+
+
+Package acronym Warning: Acronym `mot' is not defined on input line 171.
+
+
+Package acronym Warning: Acronym `mot' is not defined on input line 178.
+
+Package acronym Info: Label `acro:hwp' newly defined as it shall be overridden
+although it is yet undefined on input line 179.
+
+Package acronym Warning: Acronym `hwp' is not defined on input line 179.
+
+
+Package acronym Warning: Acronym `hwp' is not defined on input line 179.
+
+
+Package acronym Warning: Acronym `mot' is not defined on input line 185.
+
+(./Figures/Chapter6/detection_scheme.pdf_tex
+<Figures/Chapter6/detection_scheme.pdf, id=429, page=1, 403.15224pt x 468.3765pt>
+File: Figures/Chapter6/detection_scheme.pdf Graphic file (type pdf)
+<use Figures/Chapter6/detection_scheme.pdf, page 1>
+Package pdftex.def Info: Figures/Chapter6/detection_scheme.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 403.15224pt x 468.40392pt.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 57.
+<Figures/Chapter6/detection_scheme.pdf, id=430, page=2, 403.15224pt x 468.3765pt>
+File: Figures/Chapter6/detection_scheme.pdf Graphic file (type pdf)
+<use Figures/Chapter6/detection_scheme.pdf, page 2>
+Package pdftex.def Info: Figures/Chapter6/detection_scheme.pdf , page2 used on input line 59.
+(pdftex.def)             Requested size: 403.15224pt x 468.40392pt.
+<Figures/Chapter6/detection_scheme.pdf, id=431, page=3, 403.15224pt x 468.3765pt>
+File: Figures/Chapter6/detection_scheme.pdf Graphic file (type pdf)
+<use Figures/Chapter6/detection_scheme.pdf, page 3>
+Package pdftex.def Info: Figures/Chapter6/detection_scheme.pdf , page3 used on input line 61.
+(pdftex.def)             Requested size: 403.15224pt x 468.40392pt.
+)
+
+Package acronym Warning: Acronym `mot' is not defined on input line 201.
+
+
+Package acronym Warning: Acronym `hwp' is not defined on input line 201.
+
+
+Package acronym Warning: Acronym `mot' is not defined on input line 201.
+
+
+Package acronym Warning: Acronym `hwp' is not defined on input line 201.
+
+(./Figures/Chapter6/detection.pdf_tex
+<Figures/Chapter6/detection.pdf, id=433, page=1, 668.52623pt x 286.53139pt>
+File: Figures/Chapter6/detection.pdf Graphic file (type pdf)
+<use Figures/Chapter6/detection.pdf, page 1>
+Package pdftex.def Info: Figures/Chapter6/detection.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 668.52626pt x 286.53941pt.
+<Figures/Chapter6/detection.pdf, id=434, page=2, 668.52623pt x 286.53139pt>
+File: Figures/Chapter6/detection.pdf Graphic file (type pdf)
+<use Figures/Chapter6/detection.pdf, page 2>
+Package pdftex.def Info: Figures/Chapter6/detection.pdf , page2 used on input line 69.
+(pdftex.def)             Requested size: 668.52626pt x 286.53941pt.
+<Figures/Chapter6/detection.pdf, id=435, page=3, 668.52623pt x 286.53139pt>
+File: Figures/Chapter6/detection.pdf Graphic file (type pdf)
+<use Figures/Chapter6/detection.pdf, page 3>
+Package pdftex.def Info: Figures/Chapter6/detection.pdf , page3 used on input line 71.
+(pdftex.def)             Requested size: 668.52626pt x 286.53941pt.
+<Figures/Chapter6/detection.pdf, id=436, page=4, 668.52623pt x 286.53139pt>
+File: Figures/Chapter6/detection.pdf Graphic file (type pdf)
+<use Figures/Chapter6/detection.pdf, page 4>
+Package pdftex.def Info: Figures/Chapter6/detection.pdf , page4 used on input line 74.
+(pdftex.def)             Requested size: 668.52626pt x 286.53941pt.
+<Figures/Chapter6/detection.pdf, id=437, page=5, 668.52623pt x 286.53139pt>
+File: Figures/Chapter6/detection.pdf Graphic file (type pdf)
+<use Figures/Chapter6/detection.pdf, page 5>
+Package pdftex.def Info: Figures/Chapter6/detection.pdf , page5 used on input line 76.
+(pdftex.def)             Requested size: 668.52626pt x 286.53941pt.
+) [7] [8 <./Figures/Chapter6/detection_scheme.pdf> <./Figures/Chapter6/detection_scheme.pdf> <./Figures/Chapter6/detection_scheme.pdf>] [9 <./Figures/Chapter6/detection.pdf> <./Figures/Chapter6/detection.pdf> <./Figures/Chapter6/detection.pdf> <./Figures/Chapter6/detection.pdf> <./Figures/Chapter6/detection.pdf>] [10]
+<Figures/Chapter6/photodiode_intensity.pdf, id=535, 722.7pt x 433.62pt>
+File: Figures/Chapter6/photodiode_intensity.pdf Graphic file (type pdf)
+<use Figures/Chapter6/photodiode_intensity.pdf>
+Package pdftex.def Info: Figures/Chapter6/photodiode_intensity.pdf  used on input line 309.
+(pdftex.def)             Requested size: 313.65027pt x 188.18648pt.
+<Figures/Chapter6/photodiode_voltage_time.pdf, id=538, 722.7pt x 433.62pt>
+File: Figures/Chapter6/photodiode_voltage_time.pdf Graphic file (type pdf)
+<use Figures/Chapter6/photodiode_voltage_time.pdf>
+Package pdftex.def Info: Figures/Chapter6/photodiode_voltage_time.pdf  used on input line 320.
+(pdftex.def)             Requested size: 313.65027pt x 188.18648pt.
+ [11 <./Figures/Chapter6/photodiode_intensity.pdf>]
+
+LaTeX Warning: Reference `eq:scattering_rate' on page 12 undefined on input line 340.
+
+[12 <./Figures/Chapter6/photodiode_voltage_time.pdf>] [13]
+<Figures/Chapter6/contrast_bias.pdf, id=606, 722.7pt x 433.62pt>
+File: Figures/Chapter6/contrast_bias.pdf Graphic file (type pdf)
+<use Figures/Chapter6/contrast_bias.pdf>
+Package pdftex.def Info: Figures/Chapter6/contrast_bias.pdf  used on input line 430.
+(pdftex.def)             Requested size: 313.65027pt x 188.18648pt.
+ [14] [15 <./Figures/Chapter6/contrast_bias.pdf>]
+<Figures/Chapter6/raman_spectrum.pdf, id=641, 722.7pt x 433.62pt>
+File: Figures/Chapter6/raman_spectrum.pdf Graphic file (type pdf)
+<use Figures/Chapter6/raman_spectrum.pdf>
+Package pdftex.def Info: Figures/Chapter6/raman_spectrum.pdf  used on input line 529.
+(pdftex.def)             Requested size: 313.65027pt x 188.18648pt.
+<Figures/Chapter6/raman_spectrum_inset.pdf, id=643, 722.7pt x 433.62pt>
+File: Figures/Chapter6/raman_spectrum_inset.pdf Graphic file (type pdf)
+<use Figures/Chapter6/raman_spectrum_inset.pdf>
+Package pdftex.def Info: Figures/Chapter6/raman_spectrum_inset.pdf  used on input line 555.
+(pdftex.def)             Requested size: 313.65027pt x 188.18648pt.
+
+Overfull \hbox (15.64186pt too wide) in paragraph at lines 535--562
+\T1/ppl/m/n/12 (-20) same Doppler shifts are also ob-served in the peaks cor-re-spond-ing to the $[] \U/matha/m/n/12 Ñ
+ []
+
+
+Overfull \hbox (14.66827pt too wide) in paragraph at lines 535--562
+[]$ \T1/ppl/m/n/12 (-20) tran-si-tions. The counter-propagating tran-si-tions are Doppler-broadened
+ []
+
+[16] [17 <./Figures/Chapter6/raman_spectrum.pdf>]
+
+LaTeX Warning: Reference `sec:theory_raman' on page 18 undefined on input line 568.
+
+[18 <./Figures/Chapter6/raman_spectrum_inset.pdf>]
+<Figures/Chapter6/light_shift_ratio.pdf, id=707, 722.7pt x 433.62pt>
+File: Figures/Chapter6/light_shift_ratio.pdf Graphic file (type pdf)
+<use Figures/Chapter6/light_shift_ratio.pdf>
+Package pdftex.def Info: Figures/Chapter6/light_shift_ratio.pdf  used on input line 621.
+(pdftex.def)             Requested size: 722.69823pt x 433.61894pt.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 621.
+<Figures/Chapter6/light_shift_detuning.pdf, id=708, 722.7pt x 433.62pt>
+File: Figures/Chapter6/light_shift_detuning.pdf Graphic file (type pdf)
+<use Figures/Chapter6/light_shift_detuning.pdf>
+Package pdftex.def Info: Figures/Chapter6/light_shift_detuning.pdf  used on input line 622.
+(pdftex.def)             Requested size: 722.69823pt x 433.61894pt.
+<Figures/Chapter6/cancelled_light_shift.pdf, id=710, 722.7pt x 433.62pt>
+File: Figures/Chapter6/cancelled_light_shift.pdf Graphic file (type pdf)
+<use Figures/Chapter6/cancelled_light_shift.pdf>
+Package pdftex.def Info: Figures/Chapter6/cancelled_light_shift.pdf  used on input line 657.
+(pdftex.def)             Requested size: 313.65027pt x 188.18648pt.
+ [19] [20 <./Figures/Chapter6/light_shift_ratio.pdf> <./Figures/Chapter6/light_shift_detuning.pdf>] [21 <./Figures/Chapter6/cancelled_light_shift.pdf>]
+
+LaTeX Warning: Reference `eq:raman_detuning' on page 22 undefined on input line 705.
+
+
+LaTeX Warning: Reference `eq:rabi_raman_sum' on page 22 undefined on input line 708.
+
+<Figures/Chapter6/vel_selected_dist.pdf, id=780, 722.7pt x 433.62pt>
+File: Figures/Chapter6/vel_selected_dist.pdf Graphic file (type pdf)
+<use Figures/Chapter6/vel_selected_dist.pdf>
+Package pdftex.def Info: Figures/Chapter6/vel_selected_dist.pdf  used on input line 720.
+(pdftex.def)             Requested size: 313.65027pt x 188.18648pt.
+<Figures/Chapter6/RamanChirp.pdf, id=782, 722.7pt x 433.62pt>
+File: Figures/Chapter6/RamanChirp.pdf Graphic file (type pdf)
+<use Figures/Chapter6/RamanChirp.pdf>
+Package pdftex.def Info: Figures/Chapter6/RamanChirp.pdf  used on input line 749.
+(pdftex.def)             Requested size: 313.65027pt x 188.18648pt.
+[22]
+
+LaTeX Warning: Reference `fig:rabi_oscillation' on page 23 undefined on input line 768.
+
+[23 <./Figures/Chapter6/vel_selected_dist.pdf>] [24 <./Figures/Chapter6/RamanChirp.pdf>] [25] [26] [27]
+Package acronym Info: Label `acro:nep' newly defined as it shall be overridden
+although it is yet undefined on input line 897.
+
+
+Package acronym Warning: Acronym `nep' is not defined on input line 897.
+
+
+Package acronym Warning: Acronym `nep' is not defined on input line 897.
+
+
+Package acronym Warning: Acronym `nep' is not defined on input line 898.
+
+
+LaTeX Warning: Reference `fig:pd_psd' on page 28 undefined on input line 962.
+
+<Figures/Chapter6/noise_source_psd.pdf, id=864, 722.7pt x 433.62pt>
+File: Figures/Chapter6/noise_source_psd.pdf Graphic file (type pdf)
+<use Figures/Chapter6/noise_source_psd.pdf>
+Package pdftex.def Info: Figures/Chapter6/noise_source_psd.pdf  used on input line 982.
+(pdftex.def)             Requested size: 313.65027pt x 188.18648pt.
+[28]
+
+LaTeX Warning: Reference `fig:detection_av' on page 29 undefined on input line 1004.
+
+<Figures/Chapter6/detection_av.pdf, id=875, 722.7pt x 433.62pt>
+File: Figures/Chapter6/detection_av.pdf Graphic file (type pdf)
+<use Figures/Chapter6/detection_av.pdf>
+Package pdftex.def Info: Figures/Chapter6/detection_av.pdf  used on input line 1012.
+(pdftex.def)             Requested size: 313.65027pt x 188.18648pt.
+[29 <./Figures/Chapter6/noise_source_psd.pdf>] [30 <./Figures/Chapter6/detection_av.pdf>] [31]
+Underfull \hbox (badness 10000) in paragraph at lines 1114--1117
+
+ []
+
+<Figures/Chapter6/transfer_func_laser.pdf, id=938, 722.7pt x 433.62pt>
+File: Figures/Chapter6/transfer_func_laser.pdf Graphic file (type pdf)
+<use Figures/Chapter6/transfer_func_laser.pdf>
+Package pdftex.def Info: Figures/Chapter6/transfer_func_laser.pdf  used on input line 1127.
+(pdftex.def)             Requested size: 313.65027pt x 188.18648pt.
+[32]
+
+LaTeX Warning: Reference `fig:allan_dev_m_squared' on page 33 undefined on input line 1166.
+
+<Figures/Chapter6/allan_dev_m2.pdf, id=951, 722.7pt x 433.62pt>
+File: Figures/Chapter6/allan_dev_m2.pdf Graphic file (type pdf)
+<use Figures/Chapter6/allan_dev_m2.pdf>
+Package pdftex.def Info: Figures/Chapter6/allan_dev_m2.pdf  used on input line 1173.
+(pdftex.def)             Requested size: 313.65027pt x 188.18648pt.
+[33 <./Figures/Chapter6/transfer_func_laser.pdf>] [34 <./Figures/Chapter6/allan_dev_m2.pdf>]
+<Figures/Chapter6/transfer_func_acc.pdf, id=1001, 722.7pt x 433.62pt>
+File: Figures/Chapter6/transfer_func_acc.pdf Graphic file (type pdf)
+<use Figures/Chapter6/transfer_func_acc.pdf>
+Package pdftex.def Info: Figures/Chapter6/transfer_func_acc.pdf  used on input line 1227.
+(pdftex.def)             Requested size: 313.65027pt x 188.18648pt.
+ [35]
+<Figures/Chapter6/vibration_spectrum.pdf, id=1018, 722.7pt x 433.62pt>
+File: Figures/Chapter6/vibration_spectrum.pdf Graphic file (type pdf)
+<use Figures/Chapter6/vibration_spectrum.pdf>
+Package pdftex.def Info: Figures/Chapter6/vibration_spectrum.pdf  used on input line 1261.
+(pdftex.def)             Requested size: 313.65027pt x 188.18648pt.
+ [36 <./Figures/Chapter6/transfer_func_acc.pdf>]
+<Figures/Chapter6/fringe_examp.pdf, id=1044, 722.7pt x 433.62pt>
+File: Figures/Chapter6/fringe_examp.pdf Graphic file (type pdf)
+<use Figures/Chapter6/fringe_examp.pdf>
+Package pdftex.def Info: Figures/Chapter6/fringe_examp.pdf  used on input line 1300.
+(pdftex.def)             Requested size: 313.65027pt x 188.18648pt.
+ [37 <./Figures/Chapter6/vibration_spectrum.pdf>] [38 <./Figures/Chapter6/fringe_examp.pdf>]
+<Figures/Chapter6/high_vib.pdf, id=1097, 433.62pt x 289.08pt>
+File: Figures/Chapter6/high_vib.pdf Graphic file (type pdf)
+<use Figures/Chapter6/high_vib.pdf>
+Package pdftex.def Info: Figures/Chapter6/high_vib.pdf  used on input line 1363.
+(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
+<Figures/Chapter6/low_vib.pdf, id=1098, 433.62pt x 289.08pt>
+File: Figures/Chapter6/low_vib.pdf Graphic file (type pdf)
+<use Figures/Chapter6/low_vib.pdf>
+Package pdftex.def Info: Figures/Chapter6/low_vib.pdf  used on input line 1364.
+(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
+<Figures/Chapter6/low_vib_hist_mems_atom.pdf, id=1102, 433.62pt x 289.08pt>
+File: Figures/Chapter6/low_vib_hist_mems_atom.pdf Graphic file (type pdf)
+<use Figures/Chapter6/low_vib_hist_mems_atom.pdf>
+Package pdftex.def Info: Figures/Chapter6/low_vib_hist_mems_atom.pdf  used on input line 1387.
+(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
+<Figures/Chapter6/low_vib_hist_atom_res.pdf, id=1103, 433.62pt x 289.08pt>
+File: Figures/Chapter6/low_vib_hist_atom_res.pdf Graphic file (type pdf)
+<use Figures/Chapter6/low_vib_hist_atom_res.pdf>
+Package pdftex.def Info: Figures/Chapter6/low_vib_hist_atom_res.pdf  used on input line 1388.
+(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
+ [39] [40 <./Figures/Chapter6/high_vib.pdf> <./Figures/Chapter6/low_vib.pdf> <./Figures/Chapter6/low_vib_hist_mems_atom.pdf> <./Figures/Chapter6/low_vib_hist_atom_res.pdf>]
+<Figures/Chapter6/high_vib_adev.pdf, id=1223, 722.7pt x 433.62pt>
+File: Figures/Chapter6/high_vib_adev.pdf Graphic file (type pdf)
+<use Figures/Chapter6/high_vib_adev.pdf>
+Package pdftex.def Info: Figures/Chapter6/high_vib_adev.pdf  used on input line 1424.
+(pdftex.def)             Requested size: 722.69823pt x 433.61894pt.
+<Figures/Chapter6/low_vib_adev.pdf, id=1224, 722.7pt x 433.62pt>
+File: Figures/Chapter6/low_vib_adev.pdf Graphic file (type pdf)
+<use Figures/Chapter6/low_vib_adev.pdf>
+Package pdftex.def Info: Figures/Chapter6/low_vib_adev.pdf  used on input line 1425.
+(pdftex.def)             Requested size: 722.69823pt x 433.61894pt.
+) [41] [42 <./Figures/Chapter6/high_vib_adev.pdf> <./Figures/Chapter6/low_vib_adev.pdf>])
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 10.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2151,71 +2299,60 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [143] Processing 'appendices' comment.
+ [43
+
+
+
+] Processing 'appendices' comment.
 \openout3 = `comment.cut'.
 
- Comment 'appendices' writing to comment.cut. Straight input of comment.cut. (./comment.cut [144]) Processing 'backmatter' comment.
+ Comment 'appendices' writing to comment.cut. Straight input of comment.cut. (./comment.cut [44]) Processing 'backmatter' comment.
 \openout3 = `comment.cut'.
 
- Comment 'backmatter' writing to comment.cut. Straight input of comment.cut. (./comment.cut [152
+ Comment 'backmatter' writing to comment.cut. Straight input of comment.cut. (./comment.cut [45
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
- (./jstammersThesis.aux (./frontmatter.aux) (./introduction.aux) (./theory.aux) (./compcontrol.aux) (./mots.aux) (./atompreparation.aux) (./ramanoptics.aux) (./interferometry.aux) (./conclusion.aux) (./appendices.aux) (./backmatter.aux))
+ (./jstammersThesis.aux
+No file frontmatter.aux.
+No file introduction.aux.
+No file theory.aux.
+No file compcontrol.aux.
+No file mots.aux.
+No file atompreparation.aux.
+No file ramanoptics.aux.
+(./interferometry.aux)
+No file conclusion.aux.
+No file appendices.aux.
+No file backmatter.aux.
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
 Package rerunfilecheck Info: File `jstammersThesis.out' has not changed.
-(rerunfilecheck)             Checksum: 1107D1C2CEA4FE87A5C40127BE8E3E42;2034.
+(rerunfilecheck)             Checksum: 736B5BCB22F4FC593E77B8183A6AF1EA;1921.
 
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'jstammersThesis.run.xml'.
 \openout1 = `jstammersThesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44726 strings out of 492641
- 876030 string characters out of 6129315
- 1445831 words of memory out of 5000000
- 47367 multiletter control sequences out of 15000+600000
- 675217 words of font info for 430 fonts, out of 8000000 for 9000
+ 44519 strings out of 492641
+ 873466 string characters out of 6129315
+ 1403508 words of memory out of 5000000
+ 47195 multiletter control sequences out of 15000+600000
+ 700062 words of font info for 479 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,20n,73p,9095b,1998s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{equation.2.3.16} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{nep} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{hwp} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{mot} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{fpga} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{aom} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{dds} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{vco} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{eom} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{pm} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{pll} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{pbs} has been referenced but does not exist, replaced by a fixed one
-
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/mathpazo/fplmbi.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/mathabx-type1/matha10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/mathabx-type1/matha12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/mathabx-type1/matha7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/mathabx-type1/matha8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/mathabx-type1/matha9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/mathabx-type1/mathx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on jstammersThesis.pdf (47 pages, 1322775 bytes).
+ 69i,20n,73p,9095b,2015s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/mathpazo/fplmbi.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/mathabx-type1/matha10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/mathabx-type1/matha12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/mathabx-type1/matha7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/mathabx-type1/matha8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/mathabx-type1/matha9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/mathabx-type1/mathx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on jstammersThesis.pdf (47 pages, 1328367 bytes).
 PDF statistics:
- 1393 PDF objects out of 1440 (max. 8388607)
- 1200 compressed objects within 12 object streams
- 204 named destinations out of 1000 (max. 500000)
- 71627 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1412 PDF objects out of 1440 (max. 8388607)
+ 1215 compressed objects within 13 object streams
+ 191 named destinations out of 1000 (max. 500000)
+ 79826 words of extra memory for PDF output out of 89155 (max. 10000000)
 

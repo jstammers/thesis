@@ -1,24 +1,24 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
-[0] Config.pm:305> INFO - Logfile is 'jstammersThesis.blg'
-[25] biber:313> INFO - === Thu Sep 20, 2018, 22:16:38
-[48] Biber.pm:371> INFO - Reading 'jstammersThesis.bcf'
-[118] Biber.pm:857> INFO - Found 12 citekeys in bib section 0
-[132] Biber.pm:3976> INFO - Processing section 0
-[141] Biber.pm:4136> INFO - Looking for bibtex format file 'Thesis.bib' for section 0
-[145] bibtex.pm:1500> INFO - LaTeX decoding ...
-[240] bibtex.pm:1316> INFO - Found BibTeX data source 'Thesis.bib'
-[257] Utils.pm:193> WARN - month field 'jun' in entry 'Drever1983' is not an integer - this will probably not sort properly.
-[268] Utils.pm:193> WARN - month field 'sep' in entry 'Rocco2014' is not an integer - this will probably not sort properly.
-[273] Utils.pm:193> WARN - month field 'jun' in entry 'Welch1967' is not an integer - this will probably not sort properly.
-[279] Utils.pm:193> WARN - month field 'sep' in entry 'Weiss1994' is not an integer - this will probably not sort properly.
-[292] Utils.pm:193> WARN - month field 'feb' in entry 'Peters2001' is not an integer - this will probably not sort properly.
-[306] Utils.pm:193> WARN - month field 'feb' in entry 'Merlet2009' is not an integer - this will probably not sort properly.
-[323] Utils.pm:193> WARN - BibTeX subsystem: /tmp/Y4YNtOA3lF/Thesis.bib_26688.utf8, line 6, warning: 172 characters of junk seen at toplevel
-[324] Utils.pm:193> WARN - I didn't find a database entry for 'M2_manual' (section 0)
-[339] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[339] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[339] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[340] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[357] bbl.pm:617> INFO - Writing 'jstammersThesis.bbl' with encoding 'UTF-8'
-[363] bbl.pm:720> INFO - Output to jstammersThesis.bbl
-[363] Biber.pm:110> INFO - WARNINGS: 8
+[1] Config.pm:305> INFO - Logfile is 'jstammersThesis.blg'
+[43] biber:313> INFO - === Sat Sep 22, 2018, 14:53:42
+[76] Biber.pm:371> INFO - Reading 'jstammersThesis.bcf'
+[157] Biber.pm:857> INFO - Found 12 citekeys in bib section 0
+[176] Biber.pm:3976> INFO - Processing section 0
+[191] Biber.pm:4136> INFO - Looking for bibtex format file 'Thesis.bib' for section 0
+[199] bibtex.pm:1500> INFO - LaTeX decoding ...
+[327] bibtex.pm:1316> INFO - Found BibTeX data source 'Thesis.bib'
+[347] Utils.pm:193> WARN - month field 'jun' in entry 'Drever1983' is not an integer - this will probably not sort properly.
+[355] Utils.pm:193> WARN - month field 'sep' in entry 'Weiss1994' is not an integer - this will probably not sort properly.
+[380] Utils.pm:193> WARN - month field 'sep' in entry 'Rocco2014' is not an integer - this will probably not sort properly.
+[384] Utils.pm:193> WARN - month field 'jun' in entry 'Welch1967' is not an integer - this will probably not sort properly.
+[408] Utils.pm:193> WARN - month field 'feb' in entry 'Peters2001' is not an integer - this will probably not sort properly.
+[422] Utils.pm:193> WARN - month field 'feb' in entry 'Merlet2009' is not an integer - this will probably not sort properly.
+[423] Utils.pm:193> WARN - BibTeX subsystem: /tmp/uhGix4PpfF/Thesis.bib_24047.utf8, line 6, warning: 172 characters of junk seen at toplevel
+[424] Utils.pm:193> WARN - I didn't find a database entry for 'M2_manual' (section 0)
+[446] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[446] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[446] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[447] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[466] bbl.pm:617> INFO - Writing 'jstammersThesis.bbl' with encoding 'UTF-8'
+[475] bbl.pm:720> INFO - Output to jstammersThesis.bbl
+[475] Biber.pm:110> INFO - WARNINGS: 8

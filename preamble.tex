@@ -10,14 +10,13 @@
 \usepackage{verbatim}
 \usepackage{tikz}
 \usepackage{multirow}
-\usepackage[backend=biber,url=false]{biblatex}
+\usepackage[backend=bibtex,url=false]{biblatex}
 \usetikzlibrary{external}% activate!
 \usepackage{tikz-timing}
 \usepackage{booktabs}
 \usepackage{mathabx}
 \usepackage{anyfontsize}
 \setmainmatterspacing{double}
-
 %%% Useful Commands %%%
 
 \immediate\write18{perl texcount.pl \jobname.tex -1 -sum=1 -merge -out=\jobname.sum}
@@ -36,7 +35,7 @@
 \newcommand{\pow}[2]{\(#1 \times 10^{#2}\)}
 \newcommand{\mf}[0]{\(m_\textnormal{F}\)}
 \newcommand{\trans}[2]{\(\ket{F=#1} \rightarrow \ket{F'=#2}\)}
-\sisetup{separate-uncertainty}
+%\sisetup{separate-uncertainty}
 \DeclareSIUnit\inch{in}
 \DeclareSIUnit\gauss{G}
 %% Disables warning about Command terminated with a space
@@ -44,14 +43,15 @@
 %disable warning about group pages
 \pdfsuppresswarningpagegroup=1
 \raggedbottom
-\title{Inertial Navigation using Atom Interferometry}
+\title{An Atom Interferometer for Measuring Horizontal Accelerations}
 \author{Jimmy Stammers}
 
 %% Doc-specific PDF metadata
 \makeatletter%
 \@ifpackageloaded{hyperref}{%
 \hypersetup{%
-pdftitle = {Inertial Navigation using Atom Interferometry},
+pdftitle = {An Atom Interferometer for Measuring Horizontal
+Accelerations},
 pdfsubject = {Jimmy Stammers’ PhD thesis},
 pdfkeywords = {atom interferometry, navigation, physics, Rubidium},
 pdfauthor = {\textcopyright\ Jimmy Stammers},

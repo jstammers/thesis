@@ -164,8 +164,14 @@ optics is \(4\pi \times\)\num{7.056e-3}\si{\steradian}.
 \subsubsection{Photodiode Calibration}
 The photodiode used is a \textit{Femto LCA-S-400K-SI},
 which has a trans-impedance amplifier with a bandwidth of \sivalue{400}{\kilo\hertz} and a photo-sensitive area
-with a diameter of \sivalue{3}{\milli\metre}. This
-gives a conversion factor of \sivalue{1.84e6}{\volt\per\watt}.
+with a diameter of \sivalue{3}{\milli\metre}. The scaling factor from
+incident optical power to output voltage was measured as \sivalue{1.84e6}{\volt\per\watt}. 
+%\begin{figure}[htpb]
+%  \centering
+%  \includegraphics[width=0.8\linewidth]{Figures/Chapter6/pd_calib.pdf}
+%  \caption{Name}
+%  \label{fig:name}
+%\end{figure}
 \subsection{Detection using \(\sigma^+\) transitions}\label{subsec:photodiode_setup}
 The atoms are detected using resonance fluorescence from the two
 vertically aligned \ac{mot} beams. A bias field polarises the atoms
@@ -438,7 +444,6 @@ number dominates over the depopulation.}
   \label{fig:contrast_bias}
 \end{figure}
 
-\(\ket{F=2}\) and \(C\) is the interferometer fringe contrast.
 
 \section{Individual Pulse Characterisation} \label{sec:atomint_rabiosc}
 This section presents a characterisation of the pulses used to drive
@@ -768,18 +773,41 @@ for each interferometer pulse. These are shown
 in~\FigureRef{fig:rabi_oscillation}. The power in each Raman laser was
 set so that a \(\pi\) pulse was achieved with a pulse duration of
 \(\tau = \)\sivalue{15}{\micro\s}. It is clear that the oscillations
-are rapidly damped. Furthermore, this dephasing rate depends on the
+are rapidly damped. This dephasing rate depends on the
 time at which the pulse is applied. Since the atoms are at different
 positions in the beam, this suggests that the dephasing is caused by a
 spatial variation of the Rabi frequency. This is largely a result of
 irregularities in the Raman beam wavefront from defects in
 the aspheric lenses. The Gaussian intensity distribution of each beam
 is unlikely to cause such a fast dephasing, since the atoms remain
-close to the centre of the beams.
-
+close to the centre of the beam. At longer pulse durations,
+spontaneous decay from the intermediate states of the Raman transition
+becomes apparent.
+\begin{figure}[htpb]
+  \centering
+  \includegraphics[width=0.8\linewidth]{SinglePulses.pdf}
+  \caption[Rabi oscillations between the $\ket{1,0}$ and $\ket{2,0}$
+    states.]{Rabi oscillations between the $\ket{1,0}$ and $\ket{2,0}$
+    states. Each pulse occurs at different times after the \ac{mot} is
+    released. The times shown are \sivalue{13}{\ms} (blue),
+  \sivalue{23}{\ms} (orange) and \sivalue{33}{\ms} (green). Full
+  population transfer is not observed due to the atoms in $\ket{1,\pm
+1}$ which have not been removed. }
+\label{fig:rabi_oscillation}
+\end{figure}
 \section{Sensitivity}\label{sec:atomint_sensitivity}
-This section presents a discussion of some of the major sources of
-noise in the interferometer.
+This section presents a discussion of the identified sources of
+noise in the interferometer and their effects on the sensitivity to
+accelerations. The Allan variance used to characterise
+the stability of the interferometer signal is defined
+in~\SectionRef{subsec:allan_variance}. This is followed by an overview
+of the noise sources in~\SectionRef{subsec:noise_sources}.
+\SectionRef{subsec:detection_noise} discusses the noise that arises
+from detecting atoms. The sensitivity function and an analytic method
+for calculating the influence of random phase fluctuations is given
+in~\SectionRef{subsec:sens_func}. This is applied to phase noise from
+the Raman laser in \SectionRef{subsec:laser_phase} and external
+vibrations in~\SectionRef{subsec:vibration_noise}.
 \subsection{The Allan Variance}\label{subsec:allan_variance}
 For the purposes of this experiment, the sensitivity of the
 interferometer relates to the minimum value of uncertainty that can be
@@ -832,7 +860,7 @@ interferometer phase and acceleration uncertainties by
   \label{eq:snr_acc}
 \end{equation}
 
-\subsection{Sources of Noise}
+\subsection{Sources of Noise}\label{subsec:noise_sources}
 Some potential sources of noise have been investigated to determine
 their magnitude. These are not a complete list of the effects which
 reduce the sensitivity to accelerations, but are the most dominant. The
@@ -999,9 +1027,8 @@ follows
 \end{equation}
 Using~\EquationRef{eq:av_psd}, it is possible to determine the
 detection time required to reduce the shot-to-shot variance below the
-atom shot noise level. A plot of the Allan deviation for increasing
-integration time is shown
-in~\FigureRef{fig:detection_av}, along with the rms voltage expected
+atom shot noise level. \FigureRef{fig:detecion_av} shows the Allan deviation for increasing
+integration time, along with the rms voltage expected
 for the same numbers of atoms used
 in~\FigureRef{fig:noise_source_psd}. At the integration time of
 \sivalue{200}{\micro\second}, the detector noise
@@ -1024,7 +1051,7 @@ experiment.}
 
 %subsection{Detection Noise}
 
-\subsection{The Sensitivity Function}
+\subsection{The Sensitivity Function}\label{subsec:sens_func}
 The sources of noise presented thus far arise from statistical
 uncertainties in measuring the number of atoms and are not present in
 the ideal case of perfect interferometer contrast. However, there are
@@ -1065,7 +1092,7 @@ the centre of the \(\pi\) pulse, the sensitivity function is
 \label{eq:sensitivity_interferometer}
 \end{equation}
 for a pulse separation time \(T\). 
-\subsection{Influence of Laser Phase Noise}
+\subsection{Influence of Laser Phase Noise}\label{subsec:laser_phase}
 The response of the interferometer phase to laser phase noise is
 best understood in the frequency domain. In particular, the inverse
 of the interferometer pulse separation time 
@@ -1176,7 +1203,7 @@ laser results in an uncertainty in the interferometer phase of
 \end{figure}
 
 
-\subsection{Vibrations}
+\subsection{Vibrations}\label{subsec:vibration_noise}
 The phase difference between the two Raman beams depends on the
 position of the retro-reflecting mirror. Consequently, this defines a frame of
 reference for the position of the atoms during the interferometer. Any
@@ -1282,19 +1309,23 @@ this isolation.}
 %  \item \underline{Laser intensity noise}.
 %\end{itemize}
 \section{Measuring Accelerations}\label{sec:atomint_accelerations}
-This section presents 
+This section presents the techniques used to characterise the atom interferometer
+and its sensitivity to accelerations. It begins with a calibration of
+the fringe pattern in~\SectionRef{sec:fringe_cal}. Following this, a
+method for filtering the effects of vibrations is given
+in~\SectionRef{sec:vibration_senstivity}. This section concludes with
+a measurement of the Allan variance to determine the long-term
+stability in~\SectionRef{subsec:stability}.
 \subsection{Fringe Calibration}\label{sec:fringe_cal}
 Without perfect fringe visibility, the interferometer signal must
-first be calibrated to infer the phase difference. This is done by
+first be calibrated to infer the phase difference~\cite{Peters2001}. This is done by
 varying the phase difference between the two Raman lasers for the
 middle \(\pi\) pulse. Since the interferometer phase is \(\Delta \Phi = \phi_1 - 2\phi_2
 +\phi_3\), varying \(\phi_2\) induces the largest change in
-\(\Delta\Phi\). An interference fringe obtained in this
-manner is shown in~\FigureRef{fig:fringe_examp}.
-In this instance, the contrast is \(C = 0.055\) and the mean
+\(\Delta\Phi\). \FigureRef{fig:fringe_examp} shows an interference fringe obtained in this
+manner. In this instance, the contrast is \(C = 0.055\) and the mean
 probability of detecting in \(\ket{F=2}\) is \(\textnormal{P}_0 =
-0.39\). 
-Fringe fitting described in~\cite{Peters2001}
+0.39\).
 \begin{figure}[htpb!]
   \centering
   \includegraphics[width=0.7\textwidth]{fringe_examp}
@@ -1321,15 +1352,17 @@ vibration of the retro-reflecting mirror between the
 first and last interferometer pulse. After this time, the phase shift
 due to vibrations is given by the following convolution
 \begin{equation}
-  \phi_\textnormal{vib} = K \int_{-T}^{T} g_a (t) V(t) \mathrm{d}t = K
+  \phi_\textnormal{vib} =  \keff T^2 K\int_{-T}^{T} g_a (t) V(t)
+  \mathrm{d}t = \keff T^2 K
   \widetilde{V}_\textnormal{vib}
   \label{eq:phase_vib}
 \end{equation}
 where \(V(t)\) is the voltage measured across the output of the MEMS
-accelerometer, \(K = \)\sivalue{0.793}{\m\s\tothe{2}\per\V} is the
+accelerometer, \(K = \) \sivalue{0.793}{\m\s\tothe{2}\per\V} is the
 scaling factor from voltage to acceleration and \(g_a(t)\) is the
 acceleration sensitivity function, defined
-in~\EquationRef{eq:acc_sens_approx}. The interferometer signal is then
+in~\EquationRef{eq:acc_sens_approx}. Leaving the scaling factor as a
+free parameter $\alpha$, the interferometer signal is
 fit to the function
 \begin{equation}
   \text{P}_{\ket{F=2}} = \text{P}_0 + \frac{C}{2}\sin(\alpha
@@ -1374,20 +1407,39 @@ on one side of the fringe.
 \end{figure}
 \par\noindent
 The suppression of the vibration noise can be seen in the distribution
-of the estimated acceleration. For the data obtained when the
-vibrations were more suppressed (\FigureRef{fig:low_vib}), histograms of the acceleration measured
-by the MEMS accelerometer and the interferometer are shown
-in~\FigureRef{fig:vibration_hists}.
-\FigureRef{fig:low_vib_hist_mems_atom} compares the distribution of
+of the estimated acceleration. \FigureRef{fig:vibration_hists} shows
+histograms of the acceleration measured by the MEMS and the
+interferometer in the low vibration instance
+of~\FigureRef{fig:low_vib}. \FigureRef{fig:low_vib_hist_mems_atom} compares the distribution of
 the accelerations measured by the MEMS with that of the
-interferometer. The  
-
+interferometer. The noise in the MEMS signal is larger than in the
+interferometer -- their respective standard deviations are
+$\sigma_a^{(m)} =$ \sivalue{66.8}{\um \s\tothe{-2}} and
+$\sigma_a^{(i)} =$ \sivalue{20.8}{\um \s\tothe{-2}}. The MEMS
+accelerometer has a higher acceleration bandwidth (\sivalue{20}{\kHz}) than the
+interferometer (\sivalue{20}{\Hz}). Consequently, the interferometer
+is not sensitive to the high-frequency noise measured by the MEMS
+accelerometer. \FigureRef{fig:low_vib_hist_atom_res} compares the acceleration noise
+from the interferometer with the acceleration inferred from the fit
+residuals
+$\phi_\textnormal{res}$. The latter has a standard deviation of
+$\sigma_a^{(r)} = $ \sivalue{10.4}{\um \s\tothe{-2}}. This method is
+able to filter the effects of vibration from the interfereometer
+signal. However, the non-linear least squares method assumes that
+there is no error in the indepenedent variable
+$\tilde{V}_\textnormal{vib}$. This introduces a random
+error to $\phi_\textnormal{res}$ from the noise intrinsic to the MEMS
+accelerometer. A weighted least-squares fit~\cite{Macdonald1992} is
+able to account for errors in both variables. This requires an
+accurate estimate of the weights for each measurement of
+$\tilde{V}_\textnormal{vib}$ and $P_{\ket{F=2}}$ to avoid inaccurate
+parameter estimates.
 \begin{figure}[htpb!]
   \centering
-  \subfloat[][]{\scalebox{0.5}{\includegraphics{low_vib_hist_mems_atom}}\label{fig:low_vib_hist_mems_atom}}
-    \subfloat[][]{\scalebox{0.5}{\includegraphics{low_vib_hist_atom_res}}\label{fig:low_vib_hist_atom_res}}
+  \subfloat[][]{\scalebox{0.32}{\includegraphics{low_vib_hist_mems_atom}}\label{fig:low_vib_hist_mems_atom}}
+    \subfloat[][]{\scalebox{0.32}{\includegraphics{low_vib_hist_atom_res}}\label{fig:low_vib_hist_atom_res}}
   \caption[Histogram of acceleration noise.]{Histograms of the
-    acceleration noise about the mean value. \textbf{(a)} shows
+    acceleration measured in~\FigureRef{fig:low_vib}. \textbf{(a)} shows
     the distribution of the acceleration measured by the MEMS
     accelerometer (red) and the interferometer (blue). \textbf{(b)} shows
     the distribution after filtering the vibration noise from the
@@ -1407,18 +1459,22 @@ of around \sivalue{3e-6}{\m\s\tothe{-2}} after integrating for
 \sivalue{35}{\s}. This is a bias instability, i.e. fluctuations in
 the bias. This value is obtained by subtracting the vibration
 phase, estimated from the MEMS accelerometer, from the interferometer
-phase. It is possible that noise in the MEMS
-accelerometer is contributing to a bias instability.
+phase. There is additional noise in the MEMS
+accelerometer which leads to this bias instability. At short
+integration times, the Allan deviation has a $\tau^{-1}$
+dependence. This is characteristic of Flicker noise~\cite{Masry1991}
+which exhibits stronger correlations than other random processes, such
+as white noise.  
 \par\noindent
-When the vibration level is reduced, the signal
-remains stable for a longer period of time. Here, the Allan deviation
+\FigureRef{fig:low_vib_adev} shows the Allan devation in the case of
+smaller vibrations. In contrast to the previous case, the signal
+remains stable for a longer period of time. The Allan deviation
 is proportional to \(\tau^{-1/2}\), which is characteristic of
-uncorrelated white phase noise. For longer integration times, the
+uncorrelated white phase noise. At longer integration times, the
 small number of samples introduces a large uncertainty on the Allan
-deviation in~\FigureRef{fig:low_vib_adev}. However, for integration
-times up to \sivalue{100}{\s}, 
-the sensitivity of the signal is not limited by the same bias
-instability as in the presence of larger 
+deviation. For times up to \sivalue{100}{\s}, 
+the sensitivity of the signal is not limited by bias
+instability. 
 \begin{figure}[htpb!]
   \centering
   \subfloat[][]{\scalebox{0.3}{\includegraphics{high_vib_adev}}\label{fig:high_vib_adev}}

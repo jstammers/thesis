@@ -73,7 +73,7 @@
     \put(0.76105851,0.23405099){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2D\end{tabular}}}}%
     \put(0.45251106,0.15574915){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$z_-$\end{tabular}}}}%
     \put(0.31499133,0.15574915){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$z_+$\end{tabular}}}}%
-    \put(0.88833094,0.23631971){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}push\end{tabular}}}}%
+    \put(0.89833094,0.23631971){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}push\end{tabular}}}}%
     \put(0.18910203,0.00176871){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}4\%\end{tabular}}}}%
     \put(0.5342266,0.00176871){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}4\%\end{tabular}}}}%
     \put(0.79028648,0.06781483){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}13.3\%\end{tabular}}}}%

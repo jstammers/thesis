@@ -54,7 +54,7 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{molasses_timing.pdf}}%
-    \put(0.81703782,0.02404954){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\tau_\textnormal{exp}$\end{tabular}}}}%
+    \put(0.81703782,0.02004954){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\tau_\textnormal{exp}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{molasses_timing.pdf}}%
     \put(0.97393596,0.00034279){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}time\end{tabular}}}}%
     \put(0.45235163,0.52783773){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Loading\end{tabular}}}}%
@@ -62,13 +62,13 @@
     \put(0.90782271,0.52783773){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Imaging\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{molasses_timing.pdf}}%
     \put(0.82346658,0.52783773){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Expansion\end{tabular}}}}%
-    \put(0.51492289,0.00263805){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\tau_\text{a}$\end{tabular}}}}%
+    \put(0.51492289,0.00183805){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\tau_\text{a}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{molasses_timing.pdf}}%
-    \put(0.54438439,0.02184837){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sivalue{3}{\milli\second}$\end{tabular}}}}%
+    \put(0.54438439,0.01884837){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sivalue{3}{\milli\second}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{molasses_timing.pdf}}%
-    \put(0.7074076,0.02162673){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sivalue{5}{\milli\second}$\end{tabular}}}}%
+    \put(0.7074076,0.01862673){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sivalue{5}{\milli\second}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{molasses_timing.pdf}}%
-    \put(0.62451837,0.02213032){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sivalue{1.4}{\milli\second}$\end{tabular}}}}%
+    \put(0.62451837,0.01813032){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sivalue{1.4}{\milli\second}$\end{tabular}}}}%
     \put(0.53135563,0.52783773){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Coil Off\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{molasses_timing.pdf}}%
     \put(0.15090444,0.08031687){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Camera \\TTL\end{tabular}}}}%
@@ -79,15 +79,15 @@
     \put(0.3081384,0.14562896){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sivalue{15}{\gauss\per\centi\metre}$\end{tabular}}}}%
     \put(0.32828173,0.36932851){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$-25\Gamma$\end{tabular}}}}%
     \put(0.32828173,0.4176161){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$-0.5\Gamma$\end{tabular}}}}%
-    \put(0.3504394,0.48213099){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$9.84 I_\text{sat}$\end{tabular}}}}%
-    \put(0.3504394,0.45795899){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1.08 I_\text{sat}$\end{tabular}}}}%
-    \put(0.3081384,0.33886912){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$+\sivalue{320}{\kilo\hertz}$\end{tabular}}}}%
-    \put(0.3081384,0.29052521){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sivalue{-320}{\kilo\hertz}$\end{tabular}}}}%
-    \put(0.3081384,0.24848086){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$+\sivalue{75}{\kilo\hertz}$\end{tabular}}}}%
-    \put(0.3081384,0.21864948){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sivalue{-75}{\kilo\hertz}$\end{tabular}}}}%
+    \put(0.3204394,0.48213099){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$9.84 I_\text{sat}$\end{tabular}}}}%
+    \put(0.3204394,0.45795899){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1.08 I_\text{sat}$\end{tabular}}}}%
+    \put(0.2981384,0.33886912){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$+\sivalue{320}{\kilo\hertz}$\end{tabular}}}}%
+    \put(0.2981384,0.29052521){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sivalue{-320}{\kilo\hertz}$\end{tabular}}}}%
+    \put(0.2981384,0.24848086){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$+\sivalue{75}{\kilo\hertz}$\end{tabular}}}}%
+    \put(0.2981384,0.21864948){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sivalue{-75}{\kilo\hertz}$\end{tabular}}}}%
     \put(0.1488901,0.22957495){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\vec{x}, \vec{y}$ AOM\end{tabular}}}}%
     \put(0.23360816,0.2332897){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sivalue{133}{\mega\hertz}$\end{tabular}}}}%
-    \put(0.24166549,0.31368538){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sivalue{133}{\mega\hertz}$\end{tabular}}}}%
+    \put(0.23166549,0.31368538){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sivalue{133}{\mega\hertz}$\end{tabular}}}}%
     \put(0.32828173,0.40150144){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$-2.5\Gamma$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

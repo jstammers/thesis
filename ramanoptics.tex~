@@ -3,38 +3,46 @@
 \section{Chapter Outline}
 This chapter presents in detail the optical system used to produce a
 large collimated beam for driving Raman transitions. It begins with a
-motivation for reducing wavefront distortions
+motivation of the need to minimise wavefront distortions and intensity
+gradients
 in~\SectionRef{sec:wavefront_req}. This is followed by a description
-of the components that form the collimator and retro-reflecting
-assembly in~\SectionRef{sec:setup_ramanoptics}.  
+of the components that form the collimator
+in~\SectionRef{sec:setup_ramanoptics}.
+\SectionRef{subsec:setup_ramanmirror} presents an overview of the
+retro-reflection assembly.
 \section{Wavefront Requirements}\label{sec:wavefront_req}
-When designing an optical system for the light used in an atom interferometer,
-it is worth paying attention to both the spatial extent and beam waist of the
-collimated beam. These requirements are particularly important in this
-experiment, where acceleration due to gravity is perpendicular to the Raman beam
-axis and causes significant transverse motion of the atoms. Firstly, the optical
-system must be designed to make sure that the atoms are illuminated by each
-interferometer pulse. In addition to this, a more subtle requirement on the
-fringe contrast constrains the beam waist size. The gradient of intensity across
-the atom cloud must be small so that each atom is driven by (approximately) the
-same Rabi frequency. Otherwise, this variation in the Rabi frequency will
-dephase the atoms, which reduces the interferometer fringe contrast.
-\par\noindent A further constraint on the optical system comes from the effect
-of thickness variation of optical elements. If the optical path length of the
-light as it passes through an element is not uniform, this will lead to
-wavefront aberrations. A spatially-varying phase leads to a bias in the
-interferometer phase since it does not depend on acceleration. Moreover, since
-this phase is not the same for each atom, it is another source of dephasing.
-Considering the effects of wavefront aberrations was a large motivating factor
-for designing an optical system for use inside the vacuum chamber. Specifically,
-the distortions of a laser wavefront through optical viewports would drastically
-reduce the fringe contrast under transverse motion of the atoms during the
-interferometer. The process used to bond an optical viewport to a flange
-stresses the glass and distorts its thickness, producing wavefront aberrations
-that factor into the phase uncertainty of an atom
-interferometer~\cite{Schkolnik2015a}. 
-%%%{\huge Add requirements on other optics}
-\subsection{Fringe Contrast Dependence}\label{subsec:fringe_contrast}
+The sensitivity of an atom interferometer to inertial forces depends
+on the phase of the light during each pulse. Any component to this
+phase that does not result from the acceleration of the atoms along
+the Raman axis is a source of error. 
+%This is particularly apparent in
+%the wavefront of the light. Optical distortions of the two Raman beams
+%leads to an additional position-dependent phase shift. When there is
+%significant transverse motion across the wavefront, this phase is not
+%the same at each pulse and is not cancelled in the interferometer phase
+%$\Delta \Phi$\footnote{Since $\Delta \Phi = \phi_1 - 2\phi_2 +
+%\phi_3$, any effect which leads to a constant or linear phase shift at
+%each pulse is not measured by the interferometer.}.  
+%\par\noindent
+This section
+outlines the optical characteristics of the light which affect the
+sensitivity of the atom interferometer. These are discussed in the
+context of this experiment, where gravity induces transverse motion
+across the light. For instance, a gradient of intensity across
+the atom cloud leads to a variation in the Rabi frequency that
+dephases the atoms and reduces the interferometer fringe contrast.
+This places requirements on the beam waist size, which are discussed
+in~\SectionRef{subsec:fringe_beam_size}. 
+
+\par\noindent A further constraint on the optical system comes from
+sources of wavefront aberrations. These lead to a spatially-varying
+phase that results in a bias to the interferometer phase.
+This phase is not the same for each atom and therefore reduces the
+interferometer fringe contrast. This was a large motivating factor
+for mounting the optical system inside the vacuum chamber. The effect
+of wavefront distortions on the fringe contrast are quantitatively
+discussed in~\SectionRef{subsec:fringe_wavefront}.
+\subsection{Gradients of Intensity}\label{subsec:fringe_beam_size}
 The effects of a gradient of intensity on the fringe contrast can be shown by
 considering an ensemble of atoms that are spatially distributed by a Gaussian
 distribution. Neglecting the effect of the ensemble's velocity distribution on
@@ -43,18 +51,21 @@ varies only as a function of the radial displacement from the optic axis. The
 total fringe contrast can be determined by a convolution of the contrast for a
 single atom with the atomic density
 \begin{equation}
-	\mathcal{C} = \int \frac{1}{\sqrt{2\pi}\sigma_c}e^{-r^2/(2\sigma_c^2)} f_{\pi/2-\pi-\pi/2}\left(\Omega(r-r_1),\Omega_(r-r_2),\Omega(r-r_3)\right) \;\mathrm{d}r
+	\mathcal{C} = \int \frac{1}{\sqrt{2\pi}\sigma_c}e^{-r^2/(2\sigma_c^2)} c\left(\Omega(r-r_1),\Omega_(r-r_2),\Omega(r-r_3)\right) \;\mathrm{d}r
 	\label{eq:cloud_contrast}
 \end{equation}
-where \(\sigma_c\) is the radial width of the atom cloud,
-\(f_{\pi/2-\pi-\pi/2}\) is the fringe contrast as previously described in
-\EquationRef{eq:fringe_contrast} and \(r_i\) is the position of the ensemble's
-centre-of-mass at the \(i\)-th pulse. If the atom cloud is initially at the
-centre of the laser and falling under gravity, then these coordinates are
-\(\left(0, -\frac{1}{2}g T^2, -2 g T^2\right)\) respectively. Under the
-assumption that the two lasers which drive the Raman transition have the same
-waist size, the Rabi frequency, whichwhich is determined by the product of the
-electric fields (see~\EquationRef{eq:rabi_freq}), can be described by
+where \(\sigma_c\) is the radial width of the atom cloud.
+The fringe contrast for a single atom is denoted by $c$. This is
+defined in \EquationRef{eq:fringe_contrast}. The arguments refer to
+the Rabi frequency during each pulse. The duration of each pulse is
+such that an atom at the centre-of-mass $r_i$ has a $\pi/2$ or $pi$
+rotation. The atom cloud is initially at the
+centre of the laser and falling under gravity so that centre-of-mass coordinates are
+\(\left(0, -\frac{1}{2}g T^2, -2 g T^2\right)\) respectively. It is
+assumed that the two lasers which drive the Raman transition have the same
+waist size and Rabi frequency, which is determined by the product of the
+electric fields (see~\EquationRef{eq:rabi_freq}). Therefore, the
+position-dependent Rabi frequency is
 \begin{equation}
 	\Omega(r) = \Omega_0 e^{-2 r^2/w^2}
 \end{equation}
@@ -70,9 +81,9 @@ large contrast between the two interferometer states. Relaxing the assumptions
 made on the ensemble's velocity distribution to include its influence on the
 detuning and spatial distribution of the atoms during the interferometer would
 strengthen this argument.
-\begin{figure}[!htbp][!ht]
+\begin{figure}[!htbp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{fringe_contrast.pdf}
+	\includegraphics[width=0.7\textwidth]{fringe_contrast.pdf}
 	\caption[Simulated fringe contrast vs beam waist size]{Simulated fringe
 		contrast as a function of waist size \(w\) for an atom cloud falling under
 		gravity. This model assumes a Gaussian distributed atomic density with a
@@ -83,11 +94,8 @@ strengthen this argument.
 		states and reduces the interferometer fringe contrast.}
 	\label{fig:raman_fringecontrast}
 \end{figure}
-
-So far, it has been shown that a large beam waist is necessary to achieve a high
-fringe contrast when allowing for transverse motion of the atoms across the
-laser wavefront. Otherwise, if the fringe contrast was poor, this would limit
-the sensitivity of the interferometer to accelerations. Another optical effect which influences the
+\subsection{Wavefront Distortions}\label{subsec:fringe_wavefront}
+Another optical effect that influences the
 sensitivity is distortions of the laser wavefront. In an ideal case, the
 superposition of the counter-propagating spherical wavefronts of the two lasers results in a planar
 wavefront for the field that drives the Raman transition. However,
@@ -114,13 +122,11 @@ expected value of the contrast over the ensemble is given by
 	\langle \mathcal{C} \rangle & = \frac{1}{\sqrt{2\pi}\sigma_\Phi}\int \mathcal{C}(\delta \phi) \; e^{-\delta\phi^2/2\sigma_\Phi^2} \; \mathrm{d}\delta\phi \\
 	                            & = e^{-2 \sigma_\Phi^2}
 \end{align}
-The value of this expected contrast is plotted in
-\FigureRef{fig:raman_phasenoise} and shows a strong dependence on
-\(\sigma_\phi\). 
-%%% {\huge Add more justification here. Cite Achim Peter's paper}
-\begin{figure}[!htbp]
+\FigureRef{fig:raman_phasenoise} shows the fringe contrast as a
+function of this random phase. 
+\begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{phase_noise_contrast.pdf}
+	\includegraphics[width=0.7\textwidth]{phase_noise_contrast.pdf}
   \caption[Expected fringe contrast as a function of random phase
   contributions.]{Expected contrast as a function of random phase contributions. This
 		assumes that the phase imprinted on an atom during each interferometer pulse
@@ -132,6 +138,22 @@ The value of this expected contrast is plotted in
 		to a surface flatness of \(\lambda/20\).}
 	\label{fig:raman_phasenoise}
 \end{figure}
+\par\noindent
+This effect is particularly apparent in the context of optical
+viewports. The process used to seal an optical viewport to a flange
+stresses the glass and distorts its thickness. In fact, commercially
+available viewports are specified to give thickness variations up
+to $\lambda/20$. At this level, the fringe contrast is severely
+reduced.
+\par\noindent
+A method to systematically characterise this effect has been presented
+in~\cite{Schkolnik2015a}. This requires mapping the wavefront
+aberrations caused by each optical elements to numerically calculate
+their effect on the interferometer phase. This is able to reduce the
+uncertainty in their measurement of gravity by an order of
+magnitude. For this experiment, the optics for the Raman light were
+mounted inside the vacuum chamber to avoid the need for this precise
+characterisation. 
 \section{Collimation Optics}\label{sec:setup_ramanoptics}
 The optical system used to produce the beams for driving Raman transitions,
 which will conventionally be referred to as the Raman optics, was designed to
@@ -205,7 +227,7 @@ magnification of 3.39.
 As one of the main motivations for mounting the Raman optics inside the vacuum
 chamber was to reduce the effects of wavefront distortions, it is worth
 highlighting how inaccurate alignment of the optics can lead to aberrations. As
-discussed before (see \SectionRef{subsec:fringe_contrast}), distortions of the
+previously discussed in \SectionRef{subsec:fringe_wavefront}, distortions of the
 wavefront leads to a dephasing and loss of interferometer fringe visibility.
 Here, the same figures of merit as before are used to consider what misalignment
 is acceptable to ensure that the phase of the Raman wavefront deviates by less
@@ -319,7 +341,7 @@ beam onto this axis is consistent with a horizontal tilt of
 		deviation of the optical path length of \pow{8.6}{-3}\(\lambda\).
 \begin{figure}[!htbp] 
   \centering
-  \includegraphics[width=0.5\textwidth]{waveplate.pdf}
+  \includegraphics[width=0.7\textwidth]{waveplate.pdf}
   \caption[Quarter-wave plate thickness variation.]{Thickness of the first \ac{qwp}, measured by a white light
 		interferometer. The value is given in \sivalue{}{\nano\metre} as a
 		difference from the mean thickness. The standard deviation of this thickness
@@ -373,8 +395,10 @@ back-reflected light which couples into vacuum fibre exits the fibre-splitter on
 the other input port. Therefore, the power at this output was used to indirectly
 measure the alignment of the mirror.  
 \par\noindent 
-Since the travel range of the piezo stacks does not cover the full motional range of the mirror mount, the
-mirror initially had to be manually aligned using the thumbscrew actuators. Once
+The travel range of the piezo stacks does not cover the full motional
+range of the mirror mount. It was initially coarsely aligned using the
+thumbscrew actuators.
+Once
 installed, the lack of direct access to optical system meant that conventional
 methods to coarsely align the mirror, such as observing the location of the
 reflected beam's focus, were not feasible. Rather than carry out the somewhat
@@ -429,7 +453,7 @@ to a tilt of the mirror mount along the horizontal and vertical axis of less
 than \sivalue{13}{\micro\radian}.  
 \begin{figure}[!htbp] 
   \centering
-	\includegraphics[width=0.5\textwidth]{simplex_alignment}
+	\includegraphics[width=0.7\textwidth]{simplex_alignment}
 	\caption[Automatic mirror alignment using the Nelder-Mead simplex
 		algorithm.]{Automatic mirror alignment using the Nelder-Mead simplex
 		algorithm. A sequence of geometric transformations on the initial
@@ -460,7 +484,7 @@ Paris~\cite{Merlet2009} and in parabolic aircraft
 flights~\cite{Geiger2011a,Barrett2016}. \par\noindent The accelerometer is a
 navigation-grade AI-Q-2010 manufactured by \textit{Innalabs}. This particular
 device was chosen because its specified intrinsic noise was
-<\sivalue{7}{\micro\g} in the 0-100\sivalue{\Hertz} bandwidth. For a pulse separation \(T
+<\sivalue{7}{\micro\g} in the 0-\sivalue{100}{\Hertz} bandwidth. For a pulse separation \(T
 = \sivalue{25}{\milli\second}\), the fringe spacing is
 \(\sivalue{31.2}{\micro\g}\) so it is sensitive enough to measure the
 acceleration to within one fringe. A schematic of this device is shown

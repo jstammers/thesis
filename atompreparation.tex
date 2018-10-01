@@ -52,11 +52,41 @@ As previously discussed in~\SectionRef{sec:theory_double_int}, there are two pai
 
 %The light used to drive Raman transitions during the exeperiment is launched into the chamber on two orthogonal axes of a \ac{pm} fibre. These are retro-reflected to produce two counter-propagating beams that are orthogonally polarised to the incoming ones. In the absence of \(\pi\)-polarised light, only \((\sigma^+-\sigma^+)\) or \((\sigma^--\sigma^-)\) pairs of polarised beams can drive Raman transitions. If the incoming beams are circularly polarised, then this can occur using counter-propagating pairs of beams which impart momentum \(\pm \hbar \keff\) to an atom. If an atom can be driven by either pair at each interferometer pulse, this results in two interferometer paths, as well as additional trajectories which do not interfere and hence cause a reduction in fringe visibility.
 \subsection{Frequency and Power Control}\label{subsec:molasses_control}
-A timing diagram illustrating the power and frequency during this stage of the experiment is shown in \FigureRef{fig:molasses_timing}. After the atoms are loaded into the \ac{mot}, they are released by switching off the quadrupole field. Once this field has decayed away, the frequency and intensity of the cooling light are ramped adiabatically. The frequency of the cooling light is ramped to -25\(\Gamma\) over \sivalue{1.4}{\milli\second}. Since the repump light is generated using an \ac{eom}, the modulation frequency is simultaneously ramped up to keep this light resonant with the \trans{1}{2} transition. Additionally, the relative detuning of counter-propagating \ac{mot} beams is varied so that the atoms are cooled into a moving molasses (see~\SectionRef{subsec:moving_molasses}). After this, the intensity of the light is reduced over \sivalue{5}{\milli\second}. The response of the output \ac{aom} on the \Muquans laser was calibrated so that we could apply a voltage ramp that gives an approximately linear intensity ramp.
+A timing diagram illustrating the power and frequency during this
+stage of the experiment is shown in \FigureRef{fig:molasses_timing}.
+After the atoms are loaded into the \ac{mot}, they are released by
+switching off the quadrupole field. Once this field has decayed away,
+the frequency and intensity of the cooling light are ramped
+adiabatically. The frequency of the cooling light is ramped to
+-25\(\Gamma\) over \sivalue{1.4}{\milli\second}. Since the repump
+light is generated using an \ac{eom}, the modulation frequency is
+simultaneously ramped up to keep this light resonant with the
+\trans{1}{2} transition. Additionally, the relative detuning of
+counter-propagating \ac{mot} beams is varied so that the atoms are
+cooled into a moving molasses
+(see~\SectionRef{subsec:moving_molasses}). After this, the intensity
+of the light is reduced over \sivalue{5}{\milli\second}. The response
+of the output \ac{aom} on the \Muquans laser was calibrated so that we
+could apply a voltage ramp that gives an approximately linear
+intensity ramp.
 \begin{figure}[!htbp]
     \centering
-    \resizebox{0.6\textwidth}{!}{\input{molasses_timing.pdf_tex}}
-    \caption[Molasses stage timing diagram]{Timing diagram for the molasses stage of the experiment. After a time \(\tau_\text{a} = \sivalue{100}{\milli\second}\), the atoms are released from the \ac{mot}. The molasses sequence begins \sivalue{3}{\milli\second} later, once the magnetic field from the \ac{mot} coils has decayed away. First, the frequency of the cooling light is ramped to \(-25 \Gamma\) over \sivalue{1.4}{\milli\second}. The relative frequencies of counter-propagating \ac{mot} beams are detuned so that the atoms are cooled in a moving frame, launching them along a parabolic path (see~\SectionRef{subsec:moving_molasses}). Next, the intensity of the \ac{mot} light is reduced linearly over \sivalue{5}{\milli\second}. To measure the temperature, the atoms are left to expand for a duration of \(\tau_\text{exp}\) \sivalue{}{\milli\second}, after which they are imaged using the camera.}
+    \fontsize{14pt}{14pt}
+    \resizebox{0.7\textwidth}{!}{\input{molasses_timing.pdf_tex}}
+    \caption[Molasses stage timing diagram]{Timing diagram for the
+    molasses stage of the experiment. After a time \(\tau_\text{a} =
+  \sivalue{100}{\milli\second}\), the atoms are released from the
+\ac{mot}. The molasses sequence begins \sivalue{3}{\milli\second}
+later, once the magnetic field from the \ac{mot} coils has decayed
+away. First, the frequency of the cooling light is ramped to \(-25
+\Gamma\) over \sivalue{1.4}{\milli\second}. The relative frequencies
+of counter-propagating \ac{mot} beams are detuned so that the atoms
+are cooled in a moving frame, launching them along a parabolic path
+(see~\SectionRef{subsec:moving_molasses}). Next, the intensity of the
+\ac{mot} light is reduced linearly over \sivalue{5}{\milli\second}. To
+measure the temperature, the atoms are left to expand for a duration
+of \(\tau_\text{exp}\) \sivalue{}{\milli\second}, after which they are
+imaged using the camera.}
     \label{fig:molasses_timing}
 \end{figure}
 \subsection{Launching in a Moving Molasses}\label{subsec:moving_molasses}
@@ -144,25 +174,35 @@ Gaussian, with a \(1/e^2\) width given by
     \label{eq:expansion_width}
 \end{equation}
 \par\noindent
-\FigureRef{fig:molasses_temperature} shows the measured cloud width
-over a range of expansion times. The inset shows a typical density
+\FigureRef{fig:molasses_fit_examp} shows a typical density
 profile along each axis, obtained by imaging the cloud on a camera, as
-previously described in~\SectionRef{sec:imaging}. For the purposes of
+previously described in~\SectionRef{sec:imaging}. The width along each
+axis is estimated using a non-linear least squares fit
+to~\EquationRef{eq:density_time}.
+\FigureRef{fig:molasses_temperature} shows the measured cloud width
+over a range of expansion times. For the purposes of
 measuring the temperature, the total atom number and the initial cloud
 size are not important, so no attempt was made to estimate these. The
 initial measurement was made \sivalue{7}{\milli\second} after the end
 of the molasses to allow for enough time to re-lock the laser to
 \(-0.5\Gamma\) below the \trans{2}{3} transition and align the bias
 field to the \(\vec{z}\) axis so that the atoms could be optically
-pumped into the \(\ket{2,2}\) state. At each measurement time, a
-non-linear least squares fit to~\EquationRef{eq:density_time} along
-each axis was carried out to estimate the width of the cloud. Then, a
-least squares linear fit was used to estimate the temperature along
+pumped into the \(\ket{2,2}\) state. The width of the cloud along each
+axis is estimated using a
+non-linear least squares fit to~\EquationRef{eq:density_time}. Then, a
+least squares linear fit estimates the temperature along
 each axis from the gradient, as per~\EquationRef{eq:expansion_width}.
 The measured temperature along the horizontal and vertical axes of the
-camera was \(T_x = \sivalue{6.37 \pm 0.15}{\micro\kelvin}\) and \(T_y =
-\sivalue{6.38 \pm 0.12}{\micro\kelvin}\), respectively.  
-
+camera was \(T_x = \sivalue{6.38 \pm 0.11}{\micro\kelvin}\) and \(T_y =
+\sivalue{6.38 \pm 0.09}{\micro\kelvin}\), respectively.  
+\begin{figure}[htpb]
+  \centering
+  \includegraphics[width=0.8\linewidth]{molasses_fit_examp.pdf}
+  \caption[Integrated pixel counts during ballistic expansion.]{Integrated pixel count for a single image during ballistic
+  expansion. The dashed lines indicate non-linear least squares fits
+to a Gaussian function.}
+  \label{fig:molasses_fit_examp}
+\end{figure}
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.8\textwidth]{temperature_launch}
@@ -171,12 +211,10 @@ camera was \(T_x = \sivalue{6.37 \pm 0.15}{\micro\kelvin}\) and \(T_y =
   molasses, the cloud is left to expand in the dark and in a region of
 close to zero magnetic field. A least-squares linear fit of
 \(\sigma(t)^2\) is used to estimate the temperature
-using~\EquationRef{eq:expansion_width}. The inset shows a typical
-density profile from a single image, obtained by integrating the
-signal from a CCD camera along the two axes of the sensor. The
+using~\EquationRef{eq:expansion_width}.  The
 gradient from the fits for the horizontal (blue) and vertical (orange)
-axes are  \(T_x = \sivalue{6.38 \pm0.15}{\micro\kelvin}\) and \(T_y =
-\sivalue{6.38\pm0.12}{\micro\kelvin}\).}
+axes are  \(T_x = \sivalue{6.38 \pm0.11}{\micro\kelvin}\) and \(T_y =
+\sivalue{6.38\pm0.09}{\micro\kelvin}\).}
     \label{fig:molasses_temperature}
 \end{figure}
 
@@ -204,15 +242,25 @@ frequencies were ramped to give a frequency difference of \(2\times
 centre-of-mass position along the horizontal and vertical camera axes
 over time. A linear least-squares fit
 to~\EquationRef{eq:position_free} gives a vertical launch quantities
-of \(v_v = \sivalue{25.0\pm0.35}{\centi\meter\per\second}\) and \(a_v
-= \sivalue{-9.40\pm0.075}{\metre\per\second\squared}\) and \(v_h =
-\sivalue{7.39\pm0.21}{\centi\meter\per\second}\) and \(a_h =
-\sivalue{-0.31\pm0.052}{\metre\per\second\squared}\) along the
+of \(v_v = \sivalue{25.0\pm0.24}{\centi\meter\per\second}\) and \(a_v
+= \sivalue{-9.40\pm0.051}{\metre\per\second\squared}\) and \(v_h =
+\sivalue{7.39\pm0.14}{\centi\meter\per\second}\) and \(a_h =
+\sivalue{-0.32\pm0.036}{\metre\per\second\squared}\) along the
 horizontal axis. 
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.8\textwidth]{molasses_position}
-    \caption[Atom cloud centre-of-mass over time]{Measured centre-of-mass position over time. The horizontal component of the position is shown in blue and the vertical in orange. Each trajectory is fit to~\EquationRef{eq:position_free} to estimate the launch velocity. The best-fit values are \(v_v = \sivalue{25.0\pm0.35}{\centi\meter\per\second}\) and \(a_v = \sivalue{-9.40\pm0.075}{\metre\per\second\squared}\) along the vertical axis and \(v_h = \sivalue{7.39\pm0.21}{\centi\meter\per\second}\) and \(a_h = \sivalue{-0.31\pm0.052}{\metre\per\second\squared}\) along the horizontal.}
+    \caption[Atom cloud centre-of-mass over time]{Measured
+    centre-of-mass position over time. The horizontal component of the
+  position is shown in blue and the vertical in orange. Each
+trajectory is fit to~\EquationRef{eq:position_free} to estimate the
+launch velocity. The best-fit values are \(v_v =
+\sivalue{25.0\pm0.24}{\centi\meter\per\second}\) and \(a_v =
+\sivalue{-9.40\pm0.051}{\metre\per\second\squared}\) along the
+vertical axis and \(v_h =
+\sivalue{7.39\pm0.14}{\centi\meter\per\second}\) and \(a_h =
+\sivalue{-0.31\pm0.036}{\metre\per\second\squared}\) along the
+horizontal.}
     \label{fig:molasses_position}
 \end{figure}
 \par\noindent
@@ -223,19 +271,23 @@ horizontal velocity is far greater than expected. This can be
 explained by a residual magnetic field, that is not cancelled using
 the bias coils. In the presence of a magnetic field, atoms cooled in
 an optical molasses are decelerated to a velocity at which the Zeeman
-shift is cancelled by the Doppler shift. This \ac{vsr} depends on the
+shift is cancelled by the Doppler shift. This velocity-selective
+resonance depends on the
 orientation of the magnetic field to the polarisation of the light. In
-a one-dimensional optical molasses, a {vsr} occurs at
+a one-dimensional optical molasses, a resonance occurs at
 \(v_\text{res}^{(1)} = - \mu_B g_F B/\hbar k\) when the magnetic field
-is aligned with the wave-vector of the light \cite{VanderStraten1993}.
+is aligned with the wavevector of the light \cite{VanderStraten1993}.
 When the field is aligned at an arbitrary angle an additional
 resonance at \(v_\text{res}^{(2)} = - \mu_B g_F B/2\hbar k\) is
 present, due to additional \(\left(\sigma^{\pm}-\pi\right)\)
 transitions~\cite{Chang2002}. A residual field along the Raman axis of
-\sivalue{20}{\milli\gauss} would shift the \ac{vsr} along \(\vec{x}\)
+\sivalue{20}{\milli\gauss} would shift the resonance along \(\vec{x}\)
 and \(\vec{y}\) by \sivalue{1.09}{\centi\metre\per\second}
 corresponding to a velocity of \sivalue{1.54}{\centi\metre\per\second}
-along the Raman axis. 
+along the Raman axis. The magnetic field inside the chamber is
+controlled using bias coils and no attempt was made to cancel magnetic
+field gradients. It is plausible that a residual field of this
+magnitude is a result of a magnetic field gradient.
 
 \section{State Preparation}\label{sec:state_prep}
 After the atoms have been cooled in an optical molasses, the
@@ -298,7 +350,7 @@ diagram) to preserve the spin state of each atom.
 \begin{figure}[!htbp]
     \centering
     %\def\svgwidth{0.8\textwidth}
-    \fontsize{20pt}{20pt}
+    \fontsize{24pt}{24pt}
     \resizebox{0.8\textwidth}{!}{\input{state_selection.pdf_tex}}
     \caption[State preparation pulse sequence]{Sequence of optical and microwave pulses used to prepare an ensemble of atoms in \(\ket{1,0}\). The red arrows indicate optical transitions to and from \(\ket{F=2}\) and equivalently for the blue arrows and \(\ket{F=1}\). A residual population in the \(\ket{1,\pm 1}\) states is present, which contributes to a background during the interferometer.}
     \label{fig:state_prep}
@@ -335,7 +387,7 @@ shift. At a field strength of \sivalue{3}{\gauss}, the atoms can be
 pumped into \(\ket{F=1}\) in less than \sivalue{5}{\micro\second}.
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=0.5\textwidth]{step1_pumping}
+    \includegraphics[width=0.7\textwidth]{step1_pumping}
     \caption[Ground state distribution during \trans{2}{2} pumping]{Population across the two hyperfine ground states after \trans{2}{2} pumping under various magnetic field strengths. The $\smalltriangledown$ ($\circ$) markers indicate the population in $\ket{F=2}$ ($\ket{F=1})$. The red, blue and green series correspond to field strengths of \sivalue{-0.16}{\gauss}, \sivalue{1.67}{\gauss}, and \sivalue{3}{\gauss}, respectively.}
     \label{fig:step1_pumping}
 \end{figure}
@@ -366,8 +418,8 @@ giving a second-order Zeeman shift of
 \begin{figure}[!htbp]
     \centering
     \def\svgwidth{\columnwidth}
-    \subfloat[][]{\scalebox{0.3}{\includegraphics{step2_mf0}}\label{fig:step2_mf0}}
-    \subfloat[][]{\scalebox{0.3}{\includegraphics{step2_mf1}}\label{fig:step2_mf1}}
+    \subfloat[][]{\scalebox{0.5}{\includegraphics{step2_mf0}}\label{fig:step2_mf0}}\\
+    \subfloat[][]{\scalebox{0.5}{\includegraphics{step2_mf1}}\label{fig:step2_mf1}}
     \caption[\(m_F\) populations before and after \trans{1}{0} pumping]{Population of atoms in (a) \(\ket{1,0}\) and (b) \(\ket{1,-1}\), measured by applying a \sivalue{68}{\micro\second} microwave pulse to drive atoms into the \(\ket{F=2}\) level. The orange and blue points indicate the measured populations with and without \trans{1}{0} pumping. The microwave frequency is plotted as a detuning from the hyperfine splitting frequency \(f_\text{hfs}\).}
     \label{fig:step2_microwave_spec}
 \end{figure} 
@@ -436,7 +488,7 @@ across the \(m_F = \pm 1\) states.
 
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=0.5\textwidth]{mw_rabi}
+    \includegraphics[width=0.7\textwidth]{mw_rabi}
     \caption[Microwave Rabi oscillation between \(\ket{1,0}\) and \(\ket{2,0}\)]{Damped Rabi oscillation between \(\ket{1,0}\) and \(\ket{2,0}\) using a microwave pulse of varying length. At longer pulse times, there is a loss of coherence due to a dephasing between the two states. The red dashed line is an envelope is a fit to a decaying exponential with a characteristic time of \(\tau = \sivalue{1016}{\micro\second}\).}
     \label{fig:mw_rabi}
 \end{figure}
@@ -452,9 +504,15 @@ close to \(f_\text{hfs}\) is applied.
 \begin{figure}[!htbp]
     \centering
     \def\svgwidth{\columnwidth}
-    \subfloat[][]{\scalebox{0.4}{\input{microwave_spectrum.pdf_tex}}\label{fig:microwave_spectrum}}
-    \subfloat[][]{\scalebox{0.4}{\raisebox{4ex}{\input{microwave_transitions.pdf_tex}}}}
-    \caption[Microwave transition spectrum]{Microwave transition spectrum before (blue) and after (orange) \trans{1}{0} pumping. (b) shows the transitions addressed as the microwave frequency is varied. Dashed and lines indicate \(\Delta m = \pm 1\) transitions and solid lines indicate \(\Delta m = 0\). In order of increasing frequency, the transitions in (a) are highlighted in: a) red, b) blue, c) green, d) orange and e) purple.} 
+    \fontsize{14pt}{14pt}
+    \subfloat[][]{\scalebox{0.5}{\input{microwave_spectrum.pdf_tex}}\label{fig:microwave_spectrum}}
+    \subfloat[][]{\scalebox{0.5}{\raisebox{4ex}{\input{microwave_transitions.pdf_tex}}}}
+    \caption[Microwave transition spectrum]{\textbf{(a)} shows the
+      microwave transition spectrum before (blue) and after (orange)
+    \trans{1}{0} pumping. \textbf{(b)} shows the transitions addressed
+  as the microwave frequency is varied. Dashed and lines indicate
+\(\Delta m = \pm 1\) transitions and solid lines indicate \(\Delta m =
+0\). In order of increasing frequency, the transitions in \textbf{(a)} are highlighted in: a) red, b) blue, c) green, d) orange and e) purple.} 
     \label{fig:microwave_data}'
 \end{figure}
 
@@ -462,8 +520,8 @@ close to \(f_\text{hfs}\) is applied.
 After the atoms populate \(\ket{2,0}\), a velocity-selective Raman
 \(\pi\)-pulse is applied to transfer a fraction of those back into
 \(\ket{1,0}\). This step is discussed in detail
-in~\SectionRef{subsec:vel_select}. For now, it suffices to
-say that a Raman pulse transfers 4\% \textbf{Check this!} the atoms
+in~\SectionRef{subsec:vel_select}. The velocity-selective Raman pulse
+transfers 4\% the atoms
 back to \(\ket{1,0}\). The remaining need to be removed, otherwise
 they contribute to a large background signal. \par\noindent
 The final pulse during the state preparation sequence is used to push

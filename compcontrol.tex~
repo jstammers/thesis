@@ -41,7 +41,7 @@ be controlled using MOTMaster. A schematic of the structure of MOTMaster and how
 \begin{figure}[!htbp]
     \centering
     \fontsize{16pt}{16pt}
-    \resizebox{0.4\textwidth}{!}{\input{motmaster_structure.pdf_tex}}
+    \resizebox{0.7\textwidth}{!}{\input{motmaster_structure.pdf_tex}}
     \caption[Schematic diagram of MOTMaster and hardware interface.]{Schematic diagram of MOTMaster and the hardware it controls. A sequence is built using the user interface, which then uses separate modules to communicate to the hardware. In this way, an experiment can be controlled without requiring specific knowledge of the hardware.}
     \label{fig:motmaster_structure}
 \end{figure}

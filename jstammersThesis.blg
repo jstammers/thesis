@@ -1,24 +1,78 @@
-[0] Config.pm:302> INFO - This is Biber 2.11
-[1] Config.pm:305> INFO - Logfile is 'jstammersThesis.blg'
-[43] biber:313> INFO - === Sat Sep 22, 2018, 14:53:42
-[76] Biber.pm:371> INFO - Reading 'jstammersThesis.bcf'
-[157] Biber.pm:857> INFO - Found 12 citekeys in bib section 0
-[176] Biber.pm:3976> INFO - Processing section 0
-[191] Biber.pm:4136> INFO - Looking for bibtex format file 'Thesis.bib' for section 0
-[199] bibtex.pm:1500> INFO - LaTeX decoding ...
-[327] bibtex.pm:1316> INFO - Found BibTeX data source 'Thesis.bib'
-[347] Utils.pm:193> WARN - month field 'jun' in entry 'Drever1983' is not an integer - this will probably not sort properly.
-[355] Utils.pm:193> WARN - month field 'sep' in entry 'Weiss1994' is not an integer - this will probably not sort properly.
-[380] Utils.pm:193> WARN - month field 'sep' in entry 'Rocco2014' is not an integer - this will probably not sort properly.
-[384] Utils.pm:193> WARN - month field 'jun' in entry 'Welch1967' is not an integer - this will probably not sort properly.
-[408] Utils.pm:193> WARN - month field 'feb' in entry 'Peters2001' is not an integer - this will probably not sort properly.
-[422] Utils.pm:193> WARN - month field 'feb' in entry 'Merlet2009' is not an integer - this will probably not sort properly.
-[423] Utils.pm:193> WARN - BibTeX subsystem: /tmp/uhGix4PpfF/Thesis.bib_24047.utf8, line 6, warning: 172 characters of junk seen at toplevel
-[424] Utils.pm:193> WARN - I didn't find a database entry for 'M2_manual' (section 0)
-[446] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[446] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[446] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[447] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[466] bbl.pm:617> INFO - Writing 'jstammersThesis.bbl' with encoding 'UTF-8'
-[475] bbl.pm:720> INFO - Output to jstammersThesis.bbl
-[475] Biber.pm:110> INFO - WARNINGS: 8
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: jstammersThesis.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: frontmatter.aux
+A level-1 auxiliary file: introduction.aux
+A level-1 auxiliary file: theory.aux
+A level-1 auxiliary file: compcontrol.aux
+A level-1 auxiliary file: mots.aux
+A level-1 auxiliary file: atompreparation.aux
+A level-1 auxiliary file: ramanoptics.aux
+A level-1 auxiliary file: interferometry.aux
+A level-1 auxiliary file: conclusion.aux
+A level-1 auxiliary file: appendices.aux
+A level-1 auxiliary file: backmatter.aux
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 12506 items from 5000.
+Database file #1: jstammersThesis-blx.bib
+Database file #2: Thesis.bib
+Warning--I didn't find a database entry for "M2_manual"
+Biblatex version: 3.8
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 53 entries,
+            6268 wiz_defined-function locations,
+            1692 strings with 32881 characters,
+and the built_in function-call counts, 335917 in all, are:
+= -- 22955
+> -- 6115
+< -- 1410
++ -- 9118
+- -- 2844
+* -- 26686
+:= -- 35657
+add.period$ -- 0
+call.type$ -- 53
+change.case$ -- 562
+chr.to.int$ -- 87
+cite$ -- 104
+duplicate$ -- 37449
+empty$ -- 30903
+format.name$ -- 4036
+if$ -- 66674
+int.to.chr$ -- 0
+int.to.str$ -- 108
+missing$ -- 0
+newline$ -- 2393
+num.names$ -- 2164
+pop$ -- 18121
+preamble$ -- 1
+purify$ -- 941
+quote$ -- 0
+skip$ -- 8617
+stack$ -- 0
+substring$ -- 39089
+swap$ -- 9484
+text.length$ -- 1497
+text.prefix$ -- 94
+top$ -- 1
+type$ -- 1788
+warning$ -- 0
+while$ -- 4625
+width$ -- 0
+write$ -- 2341
+(There was 1 warning)

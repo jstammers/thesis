@@ -1,108 +1,222 @@
 \chapter{Introduction}\label{chap:intro}
-\section{Technology and Quantum Mechanics}
-Throughout history, scientific progress has paved
-the way towards great technological and societal advances. A
-(relatively) modern
-example of this is the development of quantum mechanics,
-around the start of the 20\textsuperscript{th} century. This led to
-vast improvements in the understanding of the physical world at the
-microscopic scale. Eventually, the application of quantum theories of
-matter and light led
-to technological discoveries which have hugely impacted upon
-subsequent scientific research, as well as our general lifestyle. These benefits are not always immediately obvious. For
-instance, around the time that the laser was
-discovered~\cite{Schawlow1958}, it
-was believed that a coherent source of light was of little practical
-use
-outside of spectroscopy. Of course, the widespread use of commercial laser systems in
-medicine and telecommunications show that this is not the case.
-Another such example is the development of semiconductor electronics, which started with the transistor and has revolutionised
-modern life with the plethora of devices seen today. 
+%\section{Technology and Quantum Mechanics}
+%Throughout history, scientific progress has paved
+%the way towards great technological and societal advances. A
+%(relatively) modern
+%example of this is the development of quantum mechanics,
+%around the start of the 20\textsuperscript{th} century. This led to
+%vast improvements in the understanding of the physical world at the
+%microscopic scale. Eventually, the application of quantum theories of
+%matter and light led
+%to technological discoveries which have hugely impacted upon
+%subsequent scientific research, as well as our general lifestyle. These benefits are not always immediately obvious. For
+%instance, around the time that the laser was
+%discovered~\cite{Schawlow1958}, it
+%was believed that a coherent source of light was of little practical
+%use
+%outside of spectroscopy. Of course, the widespread use of commercial laser systems in
+%medicine and telecommunications show that this is not the case.
+%Another such example is the development of semiconductor electronics, which started with the transistor and has revolutionised
+%modern life with the plethora of devices seen today. 
+%\par\noindent
+%Broadly speaking, these technologies rely on quantum phenomena that
+%exist within
+%bulk matter, i.e. macroscopic ensembles of quantum objects. 
+%These do not exhibit the microscopic quantum phenomena such as
+%entanglement and interference. They are open systems, which interact strongly with their
+%environment causing a loss of coherence across the ensemble. For
+%this reason, there has been a
+%growth in research that has focused on the control of
+%individual quantum systems, such as atoms, molecules and photons.
+%Experimentally, these can be well-isolated from their environment so
+%that the coherence between quantum states affects the dynamics of the
+%system. Technologies aimed at controlling quantum systems have
+%progressed to the point where it is now possible to engineer robust
+%devices that make use of quantum effects. This is well-known in the
+%context of quantum computing and quantum cryptography, which offer
+%many benefits over their classical counterparts. 
+%\par\noindent
+%The field of metrology has also shown great increases in measurement
+%precision using quantum systems. The archetypal example of this is the
+%atomic clock~\cite{ESSEN1955}, which uses the interference between two internal states
+%of an atom such as Caesium-133 to
+%measure their transition frequency. Owing to their frequency
+%stability, atomic clocks are now used to implicitly define the
+%second in terms of physical constants and provide a continuous,
+%precise time scale~\cite{Levine}.
+\section{Light-Pulse Atom Interferometry}
+The development of quantum theory to explain the wave-like behaviour
+of matter has enabled significant advances in science and technology.
+An early example of this is the atomic clock~\cite{ESSEN1955}, which makes use of the
+interference between two atomic internal states to precisely measure
+their transition frequency. This technology has led to a
+re-definition of the second in terms of physical constants, as well as
+a globally-adopted standard for timekeeping~\cite{Levine} that supports many aspects
+of modern society. Early interferometers relied on driving microwave
+frequency transitions because the contemporary laser technology did
+not have the frequency stability or linewidths necessary to maintain coherence
+between the atomic states. It was later
+suggested by Christian Bord\'e~\cite{Borde1989} that using the larger momentum
+recoil of optical frequency transitions would enable measurements of
+rotation or acceleration using the resulting phase shift between the
+two paths of the interferometer.\par\noindent
+Kasevich and Chu demonstrated inertial force sensing using atom
+interferometry with a measurement of gravitational acceleration~\cite{Kasevich1991,Kasevich1992}. 
+Subsequent work showed that atom interferometers were also able to
+measure rotations~\cite{Durfee2006}. As inertial sensors, these
+experiments showed comparable short-term sensitivities to their
+classical counterparts. By contrast, their long-term stability was
+noteworthy. This is due to the frequency-stability of the atomic
+transition and in the lasers used to stimulate it. Again, this is
+analogous to atomic clock systems which are able to reach very low
+fractional uncertainties by integrating over long timescales. 
+\section{Application to Inertial Navigation}
+This long-term stability is of great practical interest for inertial
+navigation systems. These are systems which measure the position of a
+moving body using successive measurements of its acceleration and
+rotation, known as dead reckoning. The accuracy of this method depends
+on the intrinsic noise of each sensor, as well as their bias. If the
+noise is known \textit{a priori}, then a statistical method such as a
+Kalman filter~\cite{Faruqi2000} can be used to produce a more accurate estimate of the
+position. However, the error from a bias tends to dominate over long
+timescales. For instance, the position
+error from a constant acceleration bias grows quadratically with time.
+This problem is compounded by the fact that the bias in an inertial
+sensor drifts over time due to physical effects such as temperature
+variation and mechanical strain. This bias instability means that
+inertial navigation systems require regular re-calibration and an
+external method of correcting for the position error such as
+\ac{gnss}. 
 \par\noindent
-Broadly speaking, these technologies rely on quantum phenomena that
-exist within
-bulk matter, i.e. macroscopic ensembles of quantum objects. 
-These do not exhibit the microscopic quantum phenomena such as
-entanglement and interference. They are open systems, which interact strongly with their
-environment causing a loss of coherence across the ensemble. For
-this reason, there has been a
-growth in research that has focused on the control of
-individual quantum systems, such as atoms, molecules and photons.
-Experimentally, these can be well-isolated from their environment so
-that the coherence between quantum states affects the dynamics of the
-system. Technologies aimed at controlling quantum systems have
-progressed to the point where it is now possible to engineer robust
-devices that make use of quantum effects. This is well-known in the
-context of quantum computing and quantum cryptography, which offer
-many benefits over their classical counterparts. 
+One drawback of atom interferometers is the interrogation time needed
+between each laser pulse. This leads to a sensitivity bandwidth of the order of
+\sivalue{10}{\Hz}. It should be noted that acceleration bandwidths as
+high as 
+\sivalue{60}{\Hz}~\cite{Rakholia2014a} and even
+\sivalue{10}{\kHz}~\cite{Biedermann2017} using short, high-power
+pulses
+have been reported, but these are at the cost of a reduction in sensitivity.
+A further issue is the measurement dead time as a result of the time
+required to prepare a cold ensemble of atoms. During this preparation time, the system
+does not respond to any acceleration or rotation acting on the atoms.
+It has been suggested that this shortcoming can be counteracted using a
+conventional mechanical accelerometer~\cite{JEKELI2005} or by
+interleaving multiple cold atom interferometers. The latter of these
+has been recently demonstrated in a gyroscope~\cite{Dutta2016}.
 \par\noindent
-The field of metrology has also shown great increases in measurement
-precision using quantum systems. The archetypal example of this is the
-atomic clock~\cite{ESSEN1955}, which uses the interference between two internal states
-of an atom such as Caesium-13 to
-measure their transition frequency. Owing to their frequency
-stability, atomic clocks are now used to implicitly define the
-second in terms of physical constants and provide a continuous,
-precise time scale~\cite{Levine}.
+Hybridising an atom interferometer with a classical
+sensor results in a composite system which aims for both long-term
+stability and high bandwidth. Indeed, a secondary
+measurement is needed to determine the interferometer fringe order and hence obtain
+an absolute value of acceleration. This is of particular importance
+for inertial navigation, where the range of acceleration is far
+greater than the fringe period~\cite{Merlet2009}. This auxillary sensor can also
+improve the sensitivity of the interferometer in high vibration
+enviroments~\cite{Lautier2014}, which is a significant source of phase
+noise. Measuring these vibrations provides a method of filtering their
+effect from the interferometer signal. 
+%\section{Inertial Sensing with Atom Interferometry}
+%Experiments over the past few decades have highlighted the prospect of
+%using cold atoms for precise inertial sensing. Once cooled to the
+%\sivalue{}{\micro\K} regime, the thermal velocity of an atomic ensemble
+%is small enough that they can be controlled for durations up to the order
+%of seconds. Early experiments by Kasevich and Chu using atom
+%interferometry of Sodium atoms\cite{Kasevich1992,Kasevich1992a}
+%demonstrated the ability to measure gravitational acceleration to a high
+%absolute accuracy. Subsequent work also shown the use of atom
+%interferometry to measure rotations and reach the long-term stability
+%required for inertial navigation~\cite{Durfee2006}. 
+%\par\noindent
+%When compared to conventional inertial sensors, cold atom systems have
+%a much lower measurement bandwidth. This is primarily due to the time taken to prepare a sufficiently large ensemble of atoms.
+%During this time, the system is not sensitive to inertial forces.
+%Bandwidths of
+%\sivalue{60}{\Hz}~\cite{Rakholia2014a}
+%and as high as \sivalue{10}{\kHz}~\cite{Biedermann2017} have been
+%reported which make use of short loading times. In the former case,
+%cold atoms are recaptured after each cycle and in the latter, the
+%experiment was performed in a warm vapour without preliminary cooling.
+%A high bandwidth necessarily requires a short interferometer pulse
+%separation, which results in a reduced acceleration sensitivity.
+%For practical applications, the duty cycle must be long enough to ensure that the dynamics of the
+%acceleration are not lost during the measurement dead time. 
+%\par\noindent
+%The concept of hybridising an atom interferometer with a mechanical
+%sensor has been discussed in~\cite{Lautier2014}.  
+%For instance, there exist commerically available \ac{mems} devices
+%which have a noise level of $\sim \sivalue{5}{\mu\g}$ in the
+%0-\sivalue{100}{\Hertz} bandwidth. Since the noise between successive
+%measurements is uncorrelated, the position error  After many successive measurem
+%\section{Application to Inertial Navigation}
+%The ability to measure inertial forces, i.e. accelerations and
+%rotations, is of
+%great practical interest. This is strongly motivated by the need for
+%inertial navigation systems. In general, these make use on on-board
+%sensors to determine its position using the process of dead reckoning.
+%The acceleration and rotation are periodically measured and the
+%position of the object relative to its initial position is determined by
+%integrating these forces. The accuracy of this method depends upon the intrinsic noise and bias of these devices. These
+%lead to a position error which grows in time. For instance, the
+%effects of white noise are discussed in~\cite{Wen2016}. In the context
+%of this project, the effects of a sensor's stability over time is
+%discussed more quantitatively using the Allan variance
+%in~\SectionRef{subsec:allan_variance}.
+%\par\noindent
+%Modern inertial navigation systems reduce the 
+%position error through statistical
+%techniques such as Kalman filtering~\cite{Faruqi2000}. This produces an unbiased estimate
+%of position by taking account of the noise of each sensor. However,
+%this is not able to correct for a bias in the sensor. For instance, a constant acceleration bias $\epsilon$ leads to a
+%position error that grows quadratically in time. An initial
+%calibration of the sensor can remove this bias, but cannot account for
+%drift over time. This phenomenon, known as bias instability, is
+%the result of effects such as temperature variations and mechanical
+%strains. It leads to a characteristic time beyond which the uncertainty is not reduced by averaging successive
+%measurements. This
+%problem can be alleviated by regularly correcting for the position
+%error using an external positioning system, such as \ac{gnss}, and
+%re-calibrating the sensors.
 
-\section{Inertial Navigation}
-The ability to measure inertial forces, i.e. accelerations and
-rotations, is of
-great practical interest. This is strongly motivated by the need for
-inertial navigation systems. In general, these make use on on-board
-sensors to determine its position using the process of dead reckoning.
-The acceleration and rotation are periodically measured and the
-position of the object relative to its initial position is determined by
-integrating these forces. The accuracy of this method depends upon the intrinsic noise and bias of these devices. These
-lead to a position error which grows in time. For instance, the
-effects of white noise are discussed in~\cite{Wen2016}. In the context
-of this project, the effects of a sensor's stability over time is
-discussed more quantitatively using the Allan variance
-in~\SectionRef{subsec:allan_variance}.
-\par\noindent
-Generally, the
-position error due to sensor noise can be reduced through statistical
-techniques such as Kalman filtering. This produces an un-biased estimate
-of the updated position by taking the noise of each sensor into
-account. The position error due to a bias must be addressed
-separately. A constant acceleration bias, $\epsilon$ leads to a
-position error that grows quadratically in time. An initial
-calibration of the sensor can remove this bias, but cannot account for
-drifts over time. This phenemenon, often termed bias instability, is
-the result of effects such as temperature variations and mechanical
-strains. This leads to a characteristic time beyond which the
-measurement uncertainty is not reduced by averaging the signal. This
-problem can be alleviated by regularly correcting for the position
-error using an external positioning system, such as \ac{gnss}, and
-re-calibrating the sensors.
-\subsection{Improving Long-Term Stability with Atom Interferometry}
-Experiments over the past few decades have highlighted the prospect of
-using cold atoms for precise inertial sensing. Once cooled to the
-\sivalue{}{\mu\K} regime, the thermal velocity of an atomic ensemble
-is small enough that they can be controlled for durations up to the order
-of seconds. Early experiments by Kasevich and Chu into matter-wave
-interferometry of Sodium atoms demonstrated the 
-It has been suggested that the problem of bias instability can be
-overcome by using cold atoms to measure inertial forces.  
-For instance, there exist commerically available \ac{mems} devices
-which have a noise level of $\sim \sivalue{5}{\mu\g}$ in the
-0-\sivalue{100}{\Hertz} bandwidth. Since the noise between successive
-measurements is uncorrelated, the position error  After many successive measurem  
-\section{Thesis Overview}
-This thesis is structured as follows. A theoretical introduction to
-matter-wave interferometry and the relevant atomic structure of
-\ac{rb87} is presented in~\ChapterRef{chap:theory}. This is followed
-by a description of the software that was developed to control the experiment and
-acquire data in~\ChapterRef{chap:compinterface}. The subsequent chapters
-focus on various experimental aspects of the project. The preliminary
-cooling and trapping of \ac{rb87} is presented
-in~\ChapterRef{chap:mot}. The techniques used to cool the atoms
-further and prepare an ensemble in the same internal state are
-explained in~\ChapterRef{chap:atom_prep}. This is followed by the
-design and characterisation of an in-vacuum optical system for driving
-Raman transitions in~\ChapterRef{chap:raman_optics}. Finally, a
-characterisation of acceleration-sensitive interference is given
-in~\ChapterRef{chap:atom_int}.
+\section{Aims}
+This aim of this project was to investigate the use of atom
+interferometry in the context of inertial navigation by measuring
+horizontal accelerations. Gravitational acceleration induces motion
+transverse to the laser wavefront. Together with the requirements of
+high acceleration sensitivity and minimal dead-time, this influenced the technical
+aspects of this experiment.  
+\section{Structure of this Thesis}
+This thesis is structured as follows:
+\begin{itemize}
+  \item \textbf{Chapter 2} presents a theoretical introduction to
+    matter-wave interferometry and the relevant atomic structure of
+    Rubidium-87.
+  \item \textbf{Chapter 3} describes the software used to control the
+    experiment and acquire data.
+  \item \textbf{Chapter 4} outlines the preliminary cooling and
+    trapping of Rubidium-87 in a \ac{mot}.
+  \item \textbf{Chapter 5} discusses the techniques used to further
+    cool the atoms and prepare an ensemble in the same internal state,
+  \item \textbf{Chapter 6} gives a detailed description of the
+    in-vacuum optical system for driving Raman transitions.
+  \item \textbf{Chapter 7} characterises the interferometer's
+    sensitivity to accelerations.
+  \item \textbf{Chapter 8} summarises the preceding work and outlines
+    further work towards improving the experiment
+\end{itemize}
+%A theoretical introduction to
+%matter-wave interferometry and the relevant atomic structure of
+%\ac{rb87} is presented in~\ChapterRef{chap:theory}. This is followed
+%by a description of the software that was developed to control the experiment and
+%acquire data in~\ChapterRef{chap:compinterface}. The subsequent chapters
+%focus on various experimental aspects of the project. The preliminary
+%cooling and trapping of \ac{rb87} is presented
+%in~\ChapterRef{chap:mot}. The techniques used to cool the atoms
+%further and prepare an ensemble in the same internal state are
+%explained in~\ChapterRef{chap:atom_prep}. This is followed by the
+%design and characterisation of an in-vacuum optical system for driving
+%Raman transitions in~\ChapterRef{chap:raman_optics}. Finally, a
+%characterisation of acceleration-sensitive interference is given
+%in~\ChapterRef{chap:atom_int}.
 
 
 

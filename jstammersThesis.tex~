@@ -1,20 +1,20 @@
- % !TEX root
+% !TEX root
 %% For normal draft builds (figs not displayed hence fast compile)
-%\documentclass[hyperpdf,nobind,draft,oneside]{hepthesis}
+\documentclass[hyperpdf,nobind,draft,oneside]{hepthesis}
 %\documentclass[hyperpdf,nobind,draft,twoside]{hepthesis}
 
 %% For short draft builds (breaks citations by necessity)
 %\documentclass[hyperpdf,nobind,draft,hidefrontback]{hepthesis}
 
 %% For Cambridge soft-bound version
-\documentclass[hyperpdf,bindnopdf,booktabs]{hepthesis}
+%\documentclass[hyperpdf,bindnopdf,booktabs, oneside]{hepthesis}
 %% For Cambridge hard-bound version (must be one-sided)
 %\documentclass[hyperpdf,oneside]{hepthesis}
 
 % Load special font packages here if you wish
 
 \include{preamble}
-\includeonly{mots,atompreparation, ramanoptics}
+%\includeonly{compcontrol, mots, atompreparation, ramanoptics}
 \makeatother
 %\tikzexternalize
 \begin{document}
@@ -32,6 +32,7 @@
     \include{ramanoptics}
     \include{interferometry}
     \include{conclusion}
+    \bibliographystyle{unsrt}
     \printbibliography
 \end{mainmatter}
 

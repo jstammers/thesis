@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{1235.38552813bp}%
+    \setlength{\unitlength}{799.7384447bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,17 +50,17 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.55872439)%
+  \begin{picture}(1,0.90555103)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0.85393663,0.41328692){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.00981217\unitlength}\raggedright \end{minipage}}}%
-    \put(0.68079001,0.07654751){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}NexTorr Ion Pump\end{tabular}}}}%
-    \put(0.61087818,0.5070571){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}MOT Beam Collimator\end{tabular}}}}%
-    \put(0.11168333,0.49356538){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2D MOT\end{tabular}}}}%
-    \put(0.8622313,0.28188491){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3D MOT \\Quadrupole Coils\end{tabular}}}}%
-    \put(-0.00238333,0.26911164){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Imaging System\end{tabular}}}}%
+    \put(1.00408464,0.60327758){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.01515722\unitlength}\raggedright \end{minipage}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{Vacuum.pdf}}%
-    \put(0.05158371,0.05814967){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Pressure Gauge\end{tabular}}}}%
-    %\put(0.99230456,0.25237873){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}`\end{tabular}}}}%
+    \put(0.6717677,0.04706769){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}NexTorr Ion Pump\end{tabular}}}}%
+    \put(0.56775204,0.8770505){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}MOT Beam Collimator\end{tabular}}}}%
+    \put(0.01507451,0.77190195){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2D MOT\end{tabular}}}}%
+    \put(0.83250384,0.34085338){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3D MOT \\Quadrupole Coils\end{tabular}}}}%
+    \put(-0.00368162,0.29388693){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Imaging System\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{Vacuum.pdf}}%
+    \put(0.14580573,0.04852434){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Pressure Gauge\end{tabular}}}}%
   \end{picture}%
 \endgroup%

@@ -1,5 +1,6 @@
-\titlepage[Imperial College London\\Department of Physics]{A thesis submitted for partial
-fulfillment of the requirements for Doctor of Philosophy \wordcount}
+\titlepage[Department of Physics]{A thesis submitted to Imperial
+  College London for partial
+fulfillment of the requirements for the degree of Doctor of Philosophy \wordcount}
 \begin{abstract}
     Matter-wave interferometry has enabled high precision measurements of
     inertial forces such as gravity and the
@@ -46,8 +47,6 @@ transform or build upon it. For any reuse or redistribution,
 researchers must make clear to others the licence terms of this
 work.
 \end{declaration}
-\begin{Copyright Declaration}
-\end{Copyright Declaration}
 \begin{acknowledgements}
     There are many people to whom I owe a great deal of thanks. 
 \end{acknowledgements}

@@ -27,7 +27,7 @@ a microwave horn for driving microwave transitions between the two
 \ac{rb87} hyperfine ground states. The remaining ports are not
 used for optical access since
 they do not have a direct line of sight to the atoms. Instead, these
-are used to mount a pressure gauge, gate valve, a \ac{NEG} pump
+are used to mount a pressure gauge, gate valve, a \ac{neg} pump
 and electrical feedthroughs for the \ac{mot} coils. 
 \par\noindent
 Two oppositely-facing DN63
@@ -301,9 +301,9 @@ power radiated per atom is constant, the power incident on the CCD
 	P_\textnormal{ccd} = \frac{\Omega}{4\pi} t R_\textnormal{sc}  \hbar \omega N_a
 \end{equation}
 where $\Omega/4\pi = $\pow{1.8}{-3} is the fractional solid angle subtended by
-the imaging optics, \(t\) is the transmission of the bandpass filter,
-\(R_\textnormal{sc}\) is the scattering rate as previously defined
-in~\EquationRef{eq:scattering_rate} and \(\hbar \omega =
+the imaging optics, \(t\) is the transmission of the bandpass filter
+and 
+\(\hbar \omega =
 \sivalue{1.6}{\electronvolt}\) is the emitted photon energy. For a
 two-level system, the scattering rate $R_\textnormal{sc}$ is 
 \begin{equation}
@@ -311,7 +311,9 @@ two-level system, the scattering rate $R_\textnormal{sc}$ is
   R_\textnormal{sc} = \frac{\Gamma}{2} \frac{s}{1+s+\left(\frac{2
   \delta}{\Gamma}\right)^2}
 \end{equation}
-This incident power
+where $\Gamma$ is the natural linewidth of the transition, $\delta$ is
+the frequency detuning and $s = I/I_\textnormal{sat}$ is the
+saturation parameter. This incident power
 is then related to the integrated number of pixel counts \(C_\textnormal{int}\)
 by
 \begin{equation}
@@ -418,10 +420,10 @@ separate beams is described in~\SectionRef{subsec:optical_fibre}.
 \begin{figure}[htpb]
   \centering
   \includegraphics[width=0.8\linewidth]{muquans_cooling.pdf}
-  \caption[Cooling power vs. \ac{AOM} control voltage.]{Combined
+  \caption[Cooling power vs. \ac{aom} control voltage.]{Combined
   3D \ac{mot} cooling power as a function of control voltage for the
   RF power that drives the
-\muquans output \ac{aom}.}
+\Muquans output \ac{aom}.}
   \label{fig:muquans_cooling}
 \end{figure}
 \subsection{Real-Time Control} \label{subsec:muquans_comm}

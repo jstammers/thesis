@@ -27,7 +27,7 @@ a microwave horn for driving microwave transitions between the two
 \ac{rb87} hyperfine ground states. The remaining ports are not
 used for optical access since
 they do not have a direct line of sight to the atoms. Instead, these
-are used to mount a pressure gauge, gate valve, a \ac{NEG} pump
+are used to mount a pressure gauge, gate valve, a \ac{neg} pump
 and electrical feedthroughs for the \ac{mot} coils. 
 \par\noindent
 Two oppositely-facing DN63
@@ -420,10 +420,10 @@ separate beams is described in~\SectionRef{subsec:optical_fibre}.
 \begin{figure}[htpb]
   \centering
   \includegraphics[width=0.8\linewidth]{muquans_cooling.pdf}
-  \caption[Cooling power vs. \ac{AOM} control voltage.]{Combined
+  \caption[Cooling power vs. \ac{aom} control voltage.]{Combined
   3D \ac{mot} cooling power as a function of control voltage for the
   RF power that drives the
-\muquans output \ac{aom}.}
+\Muquans output \ac{aom}.}
   \label{fig:muquans_cooling}
 \end{figure}
 \subsection{Real-Time Control} \label{subsec:muquans_comm}
@@ -435,7 +435,7 @@ These are also
 programmed to ramp the output frequency for a specified duration and
 ramp rate. This is done by sending serial messages to an
 application which interprets the message and synchronously communicates the command to the \ac{dds} using
-SPI. A glossary of the messages and their function is given
+\ac{spi}. A glossary of the messages and their function is given
 in~\AppendixRef{app:serial_commands}. The command is stored in memory on-board the \ac{dds} and
 is triggered to start using a digital pulse. This means that time at which the frequency of the light changes is synchronised with the rest of the experiment. 
 \section{Controlling the MOTs}\label{sec:mot_control} Effective

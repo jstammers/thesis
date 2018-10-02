@@ -1,2546 +1,321 @@
-% $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.9 $
-% Do not modify the above lines!
-%
-% This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated as
-% required.
-%
-\begingroup
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}%
 \makeatletter
-\@ifundefined{ver@biblatex.sty}
-  {\@latex@error
-     {Missing 'biblatex' package}
-     {The bibliography requires the 'biblatex' package.}
-      \aftergroup\endinput}
-  {}
-\endgroup
+\providecommand{\hrefCMSnoop }[0]{\@secondoftwo}%
+\makeatother
+\providecommand{\doi}{\texttt{doi:}\begingroup \urlstyle{tt}\Url}
 
-\datalist[entry]{nty/global//global/global}
-  \entry{Allan1966}{article}{}
-    \name{author}{1}{}{%
-      {{hash=AD}{%
-         family={Allan},
-         familyi={A\bibinitperiod},
-         given={D.W.},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{AD1}
-    \strng{fullhash}{AD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{A}
-    \field{sortinithash}{A}
-    \verb{doi}
-    \verb 10.1109/PROC.1966.4634
-    \endverb
-    \field{issn}{0018-9219}
-    \field{number}{2}
-    \field{pages}{221\bibrangedash 230}
-    \field{title}{{Statistics of atomic frequency standards}}
-    \verb{url}
-    \verb http://ieeexplore.ieee.org/document/1446564/
-    \endverb
-    \field{volume}{54}
-    \field{journaltitle}{Proceedings of the IEEE}
-    \field{year}{1966}
-  \endentry
+\bibitem{ESSEN1955}
+\hrefCMSnoop {} {L.~ESSEN and J.~V.~L. PARRY, ``{An Atomic Standard of
+  Frequency and Time Interval: A C{\ae}sium Resonator}'',} \textit{ Nature}
+  \textbf{ 176} (aug, 1955) 280--282,
+  \href{http://dx.doi.org/10.1038/176280a0}{\doi{10.1038/176280a0}}.
 
-  \entry{Barrett2016}{article}{}
-    \name{author}{7}{}{%
-      {{hash=BB}{%
-         family={Barrett},
-         familyi={B\bibinitperiod},
-         given={Brynle},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=AML}{%
-         family={Antoni-Micollier},
-         familyi={A\bibinitperiod-M\bibinitperiod},
-         given={Laura},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=CL}{%
-         family={Chichet},
-         familyi={C\bibinitperiod},
-         given={Laure},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=BB}{%
-         family={Battelier},
-         familyi={B\bibinitperiod},
-         given={Baptiste},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=LT}{%
-         family={L{\'{e}}v{\`{e}}que},
-         familyi={L\bibinitperiod},
-         given={Thomas},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=LA}{%
-         family={Landragin},
-         familyi={L\bibinitperiod},
-         given={Arnaud},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=BP}{%
-         family={Bouyer},
-         familyi={B\bibinitperiod},
-         given={Philippe},
-         giveni={P\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BB+1}
-    \strng{fullhash}{BBAMLCLBBLTLABP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \field{abstract}{%
-    Quantum technology based on cold-atom interferometers is showing great
-  promise for fields such as inertial sensing and fundamental physics. However,
-  the best precision achievable on Earth is limited by the free-fall time of
-  the atoms, and their full potential can only be realized in Space where
-  interrogation times of many seconds will lead to unprecedented sensitivity.
-  Various mission scenarios are presently being pursued which plan to implement
-  matter-wave inertial sensors. Toward this goal, we realize the first onboard
-  operation of simultaneous {\$}{\^{}}{\{}87{\}}{\$}Rb {\$}-{\$}
-  {\$}{\^{}}{\{}39{\}}{\$}K interferometers in the weightless environment
-  produced during parabolic flight. The large vibration levels
-  ({\$}10{\^{}}{\{}-2{\}}{\~{}}g/\backslashsqrt{\{}\backslashrm Hz{\}}{\$}),
-  acceleration range ({\$}0-1.8{\~{}}g{\$}) and rotation rates ({\$}5{\$}
-  deg/s) during flight present significant challenges. We demonstrate the
-  capability of our dual-quantum sensor by measuring the
-  E$\backslash$"{\{}o{\}}tv$\backslash$"{\{}o{\}}s parameter with
-  systematic-limited uncertainties of {\$}1.1 \backslashtimes
-  10{\^{}}{\{}-3{\}}{\$} and {\$}3.0 \backslashtimes 10{\^{}}{\{}-4{\}}{\$}
-  during standard- and micro-gravity, respectively. This constitutes the first
-  test of the equivalence principle in a free-falling vehicle with quantum
-  sensors. Our results are applicable to inertial navigation, and can be
-  extended to the trajectory of a satellite for future Space missions.%
-    }
-    \verb{doi}
-    \verb 10.1038/ncomms13786
-    \endverb
-    \verb{eprint}
-    \verb 1609.03598
-    \endverb
-    \field{issn}{20411723}
-    \field{title}{{Dual matter-wave inertial sensors in weightlessness}}
-    \field{volume}{7}
-    \field{journaltitle}{Nature Communications}
-    \field{eprinttype}{arXiv}
-    \field{year}{2016}
-  \endentry
+\bibitem{Levine}
+\hrefCMSnoop {} {J.~Levine and T.~Parker, ``{The algorithm used to realize
+  UTC(NIST)}'',} in \textit{ Proceedings of the 2002 IEEE International
+  Frequency Control Symposium and PDA Exhibition (Cat. No.02CH37234)},
+  pp.~537--542.
+\newblock IEEE.
+\newblock
+  \href{http://dx.doi.org/10.1109/FREQ.2002.1075941}{\doi{10.1109/FREQ.2002.1075941}}.
 
-  \entry{Berkeland2002}{article}{}
-    \name{author}{2}{}{%
-      {{hash=BDJ}{%
-         family={Berkeland},
-         familyi={B\bibinitperiod},
-         given={D.\bibnamedelima J.},
-         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=BMG}{%
-         family={Boshier},
-         familyi={B\bibinitperiod},
-         given={M.\bibnamedelima G.},
-         giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BDJBMG1}
-    \strng{fullhash}{BDJBMG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \verb{doi}
-    \verb 10.1103/PhysRevA.65.033413
-    \endverb
-    \field{issn}{1050-2947}
-    \field{number}{3}
-    \field{pages}{033413}
-    \field{title}{{Destabilization of dark states and optical spectroscopy in
-  Zeeman-degenerate atomic systems}}
-    \verb{url}
-    \verb https://link.aps.org/doi/10.1103/PhysRevA.65.033413
-    \endverb
-    \field{volume}{65}
-    \field{journaltitle}{Physical Review A}
-    \field{year}{2002}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Borde1989}
+\hrefCMSnoop {} {C.~Bord{\'{e}}, ``{Atomic interferometry with internal state
+  labelling}'',} \textit{ Physics Letters A} \textbf{ 140} (sep, 1989) 10--12,
+  \href{http://dx.doi.org/10.1016/0375-9601(89)90537-9}{\doi{10.1016/0375-9601(89)90537-9}}.
 
-  \entry{Biedermann2017}{article}{}
-    \name{author}{7}{}{%
-      {{hash=BGW}{%
-         family={Biedermann},
-         familyi={B\bibinitperiod},
-         given={G.\bibnamedelima W.},
-         giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-      {{hash=MHJ}{%
-         family={McGuinness},
-         familyi={M\bibinitperiod},
-         given={H.\bibnamedelima J.},
-         giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=RAV}{%
-         family={Rakholia},
-         familyi={R\bibinitperiod},
-         given={A.\bibnamedelima V.},
-         giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod},
-      }}%
-      {{hash=JYY}{%
-         family={Jau},
-         familyi={J\bibinitperiod},
-         given={Y.-Y.},
-         giveni={Y\bibinitperiod-Y\bibinitperiod},
-      }}%
-      {{hash=WDR}{%
-         family={Wheeler},
-         familyi={W\bibinitperiod},
-         given={D.\bibnamedelima R.},
-         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-      {{hash=SJD}{%
-         family={Sterk},
-         familyi={S\bibinitperiod},
-         given={J.\bibnamedelima D.},
-         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-      {{hash=BGR}{%
-         family={Burns},
-         familyi={B\bibinitperiod},
-         given={G.\bibnamedelima R.},
-         giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BGW+1}
-    \strng{fullhash}{BGWMHJRAVJYYWDRSJDBGR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \verb{doi}
-    \verb 10.1103/PhysRevLett.118.163601
-    \endverb
-    \field{issn}{0031-9007}
-    \field{number}{16}
-    \field{pages}{163601}
-    \field{title}{{Atom Interferometry in a Warm Vapor}}
-    \verb{url}
-    \verb http://link.aps.org/doi/10.1103/PhysRevLett.118.163601
-    \endverb
-    \field{volume}{118}
-    \field{journaltitle}{Physical Review Letters}
-    \field{year}{2017}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Kasevich1991}
+\hrefCMSnoop {} {M.~Kasevich and S.~Chu, ``{Atomic Interferometry Using
+  Stimulated Raman Transistions}'',} \textit{ Physical Review Letters} \textbf{
+  67} (mar, 1991) 181--184,
+  \href{http://dx.doi.org/10.1097/01.NUMA.0000442649.24195.3c}{\doi{10.1097/01.NUMA.0000442649.24195.3c}}.
 
-  \entry{Borde1989}{article}{}
-    \name{author}{1}{}{%
-      {{hash=BC}{%
-         family={Bord{\'{e}}},
-         familyi={B\bibinitperiod},
-         given={Ch.J.},
-         giveni={C\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BC1}
-    \strng{fullhash}{BC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \verb{doi}
-    \verb 10.1016/0375-9601(89)90537-9
-    \endverb
-    \field{issn}{03759601}
-    \field{number}{1-2}
-    \field{pages}{10\bibrangedash 12}
-    \field{title}{{Atomic interferometry with internal state labelling}}
-    \verb{url}
-    \verb http://linkinghub.elsevier.com/retrieve/pii/0375960189905379
-    \endverb
-    \field{volume}{140}
-    \field{journaltitle}{Physics Letters A}
-    \field{year}{1989}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Kasevich1992}
+\href {http://link.springer.com/article/10.1007/BF00325375} {M.~Kasevich and
+  S.~Chu, ``{Measurement of the Gravitational Acceleration of an Atom with a
+  Light-Pulse Atom Interferometer}'',} \textit{ Applied Physics B} \textbf{
+  332} (1992) 321--332.
 
-  \entry{Brink1968}{incollection}{}
-    \name{author}{2}{}{%
-      {{hash=BDM}{%
-         family={Brink},
-         familyi={B\bibinitperiod},
-         given={D.\bibnamedelima M.},
-         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=RSG}{%
-         family={R.},
-         familyi={R\bibinitperiod},
-         given={Satchler\bibnamedelima G.},
-         giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BDMRSG1}
-    \strng{fullhash}{BDMRSG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \field{booktitle}{Angular Momentum}
-    \field{pages}{56\bibrangedash 60}
-    \field{title}{{Matrix Elements of Tensor Operators}}
-    \field{year}{1968}
-  \endentry
+\bibitem{Durfee2006}
+\hrefCMSnoop {} {D.~S. Durfee, Y.~K. Shaham, and M.~A. Kasevich, ``{Long-Term
+  Stability of an Area-Reversible Atom-Interferometer Sagnac Gyroscope}'',}
+  \textit{ Physical Review Letters} \textbf{ 97} (dec, 2006) 240801,
+  \href{http://dx.doi.org/10.1103/PhysRevLett.97.240801}{\doi{10.1103/PhysRevLett.97.240801}}.
 
-  \entry{Canuel2007}{thesis}{}
-    \name{author}{1}{}{%
-      {{hash=CB}{%
-         family={Canuel},
-         familyi={C\bibinitperiod},
-         given={Benjamin},
-         giveni={B\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{CB1}
-    \strng{fullhash}{CB1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{C}
-    \field{sortinithash}{C}
-    \verb{doi}
-    \verb tel-00193288
-    \endverb
-    \field{title}{{{\'{E}}tude d'un gyrom{\`{e}}tre {\`{a}} atomes froids}}
-    \list{institution}{1}{%
-      {Universit{\'{e}} Paris Sud - Paris XI}%
-    }
-    \field{type}{phdthesis}
-    \field{year}{2007}
-  \endentry
+\bibitem{Faruqi2000}
+\hrefCMSnoop {} {F.~A. Faruqi and K.~J. Turner, ``{Extended Kalman filter
+  synthesis for integrated global positioning/inertial navigation systems}'',}
+  \textit{ Applied Mathematics and Computation} \textbf{ 115} (oct, 2000)
+  213--227,
+  \href{http://dx.doi.org/10.1016/S0096-3003(98)10068-1}{\doi{10.1016/S0096-3003(98)10068-1}}.
 
-  \entry{Chang2002}{article}{}
-    \name{author}{4}{}{%
-      {{hash=CS}{%
-         family={Chang},
-         familyi={C\bibinitperiod},
-         given={Soo},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=KTY}{%
-         family={Kwon},
-         familyi={K\bibinitperiod},
-         given={Taeg\bibnamedelima Yong},
-         giveni={T\bibinitperiod\bibinitdelim Y\bibinitperiod},
-      }}%
-      {{hash=LHS}{%
-         family={Lee},
-         familyi={L\bibinitperiod},
-         given={Ho\bibnamedelima Seong},
-         giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-      {{hash=MVG}{%
-         family={Minogin},
-         familyi={M\bibinitperiod},
-         given={V.\bibnamedelima G.},
-         giveni={V\bibinitperiod\bibinitdelim G\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{CS+1}
-    \strng{fullhash}{CSKTYLHSMVG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{C}
-    \field{sortinithash}{C}
-    \field{abstract}{%
-    We analyze the influence of an arbitrarily directed uniform magnetic field
-  on the laser sub-Doppler cooling of atoms. The analysis is done for a
-  ͑3ϩ5͒-level atom excited by a ␴ ϩ -␴ Ϫ laser field configuration.
-  Our analysis shows that the effects of the magnetic field depend strongly on
-  the direction of the magnetic field. In an arbitrarily directed magnetic
-  field the laser cooling configuration produces both the main resonance
-  existing already at zero magnetic field and additional sub-Doppler resonances
-  caused by two-photon and higher-order multiphoton processes. These
-  sub-Doppler resonances are, however, well separated on the velocity scale if
-  the Zeeman shift exceeds the widths of the resonances. This allows one to use
-  the main sub-Doppler resonance for an effective laser cooling of atoms even
-  in the presence of the magnetic field. The effective temperature of the
-  atomic ensemble at the velocity of the main resonance is found to be almost
-  the same as in the absence of the magnetic field. The defined structure of
-  the multiphoton resonances may be of importance for the sub-Doppler laser
-  cooling of atoms, atomic extraction from magneto-optical traps, and
-  applications related to the control of atomic motion.%
-    }
-    \verb{doi}
-    \verb 10.1103/PhysRevA.66.043404
-    \endverb
-    \field{issn}{10941622}
-    \field{number}{4}
-    \field{pages}{23}
-    \field{title}{{Laser sub-Doppler cooling of atoms in an arbitrarily
-  directed magnetic field}}
-    \field{volume}{66}
-    \verb{file}
-    \verb :media/Storage/Dropbox/PhDWork/PapersToRead/PhysRevA.66.043404.pdf:pd
-    \verb f
-    \endverb
-    \field{journaltitle}{Physical Review A - Atomic, Molecular, and Optical
-  Physics}
-    \field{year}{2002}
-  \endentry
+\bibitem{Rakholia2014a}
+\href {http://arxiv.org/abs/1407.3847} {A.~V. Rakholia, H.~J. McGuinness, and
+  G.~W. Biedermann, ``{Dual-axis, high data-rate atom interferometer via cold
+  ensemble exchange}'',} \href{http://www.arXiv.org/abs/1407.3847}{\texttt{
+  arXiv:1407.3847}}.
 
-  \entry{Cheng2018}{thesis}{}
-    \name{author}{1}{}{%
-      {{hash=CX}{%
-         family={Cheng},
-         familyi={C\bibinitperiod},
-         given={Xiaxi},
-         giveni={X\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{CX1}
-    \strng{fullhash}{CX1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{C}
-    \field{sortinithash}{C}
-    \field{title}{{No Title}}
-    \list{institution}{1}{%
-      {Imperial College London}%
-    }
-    \field{type}{phdthesis}
-    \field{year}{2018}
-  \endentry
+\bibitem{Biedermann2017}
+\hrefCMSnoop {} {G.~W. Biedermann, H.~J. McGuinness, A.~V. Rakholia{ et~al.},
+  ``{Atom Interferometry in a Warm Vapor}'',} \textit{ Physical Review Letters}
+  \textbf{ 118} (apr, 2017) 163601,
+  \href{http://dx.doi.org/10.1103/PhysRevLett.118.163601}{\doi{10.1103/PhysRevLett.118.163601}}.
 
-  \entry{Dick1987}{article}{}
-    \name{author}{1}{}{%
-      {{hash=DG}{%
-         family={Dick},
-         familyi={D\bibinitperiod},
-         given={GJ},
-         giveni={G\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{DG1}
-    \strng{fullhash}{DG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{D}
-    \field{sortinithash}{D}
-    \field{title}{{Local oscillator induced instabilities in trapped ion
-  frequency standards}}
-    \verb{url}
-    \verb http://oai.dtic.mil/oai/oai?verb=getRecord{\&}metadataPrefix=html{\&}
-    \verb identifier=ADA502386
-    \endverb
-    \verb{file}
-    \verb :home/jimmy/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
-    \verb ed/Dick - 1987 - Local oscillator induced instabilities in trapped io
-    \verb n frequency standards.pdf:pdf
-    \endverb
-    \field{year}{1987}
-  \endentry
+\bibitem{JEKELI2005}
+\hrefCMSnoop {} {C.~JEKELI, ``{Navigation Error Analysis of Atom Interferometer
+  Inertial Sensor}'',} \textit{ Navigation} \textbf{ 52} (mar, 2005) 1--14,
+  \href{http://dx.doi.org/10.1002/j.2161-4296.2005.tb01726.x}{\doi{10.1002/j.2161-4296.2005.tb01726.x}}.
 
-  \entry{Dieckmann1998}{article}{}
-    \name{author}{4}{}{%
-      {{hash=DK}{%
-         family={Dieckmann},
-         familyi={D\bibinitperiod},
-         given={K.},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=SRJC}{%
-         family={Spreeuw},
-         familyi={S\bibinitperiod},
-         given={R.\bibnamedelima J.\bibnamedelima C.},
-         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
-  C\bibinitperiod},
-      }}%
-      {{hash=WM}{%
-         family={Weidem{\"{u}}ller},
-         familyi={W\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=WJTM}{%
-         family={Walraven},
-         familyi={W\bibinitperiod},
-         given={J.\bibnamedelima T.\bibnamedelima M.},
-         giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim
-  M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{DK+1}
-    \strng{fullhash}{DKSRJCWMWJTM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{D}
-    \field{sortinithash}{D}
-    \verb{doi}
-    \verb 10.1103/PhysRevA.58.3891
-    \endverb
-    \field{issn}{1050-2947}
-    \field{number}{5}
-    \field{pages}{3891\bibrangedash 3895}
-    \field{title}{{Two-dimensional magneto-optical trap as a source of slow
-  atoms}}
-    \verb{url}
-    \verb https://link.aps.org/doi/10.1103/PhysRevA.58.3891
-    \endverb
-    \field{volume}{58}
-    \field{journaltitle}{Physical Review A}
-    \field{year}{1998}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Dutta2016}
+\hrefCMSnoop {} {I.~Dutta, D.~Savoie, B.~Fang{ et~al.}, ``{Continuous Cold-Atom
+  Inertial Sensor with 1 nrad/sec Rotation Stability}'',} \textit{ Physical
+  Review Letters} \textbf{ 116} (may, 2016) 183003,
+  \href{http://dx.doi.org/10.1103/PhysRevLett.116.183003}{\doi{10.1103/PhysRevLett.116.183003}}.
 
-  \entry{Drever1983}{article}{}
-    \name{author}{7}{}{%
-      {{hash=DRWP}{%
-         family={Drever},
-         familyi={D\bibinitperiod},
-         given={R.\bibnamedelima W.\bibnamedelima P.},
-         giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim
-  P\bibinitperiod},
-      }}%
-      {{hash=HJL}{%
-         family={Hall},
-         familyi={H\bibinitperiod},
-         given={J.\bibnamedelima L.},
-         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=KFV}{%
-         family={Kowalski},
-         familyi={K\bibinitperiod},
-         given={F.\bibnamedelima V.},
-         giveni={F\bibinitperiod\bibinitdelim V\bibinitperiod},
-      }}%
-      {{hash=HJ}{%
-         family={Hough},
-         familyi={H\bibinitperiod},
-         given={J.},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=FGM}{%
-         family={Ford},
-         familyi={F\bibinitperiod},
-         given={G.\bibnamedelima M.},
-         giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=MAJ}{%
-         family={Munley},
-         familyi={M\bibinitperiod},
-         given={A.\bibnamedelima J.},
-         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=WH}{%
-         family={Ward},
-         familyi={W\bibinitperiod},
-         given={H.},
-         giveni={H\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{DRWP+1}
-    \strng{fullhash}{DRWPHJLKFVHJFGMMAJWH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{D}
-    \field{sortinithash}{D}
-    \field{abstract}{%
-    We describe a new and highly effective optical frequency discriminator and
-  laser stabilization system based on signals reflected from a stable
-  Fabry-Perot reference interferometer. High sensitivity for detection of
-  resonance information is achieved by optical heterodyne detection with
-  sidebands produced by rf phase modulation. Physical, optical, and electronic
-  aspects of this discriminator/laser frequency stabilization system are
-  considered in detail. We show that a high-speed domain exists in which the
-  system responds to the phase (rather than frequency) change of the laser;
-  thus with suitable design the servo loop bandwidth is not limited by the
-  cavity response time. We report diagnostic experiments in which a dye laser
-  and gas laser were independently locked to one stable cavity. Because of the
-  precautions employed, the observed sub-100 Hz beat line width shows that the
-  lasers were this stable. Applications of this system of laser stabilization
-  include precision laser spectroscopy and interferometric gravity-wave
-  detectors.%
-    }
-    \verb{doi}
-    \verb 10.1007/BF00702605
-    \endverb
-    \field{issn}{0721-7269}
-    \field{number}{2}
-    \field{pages}{97\bibrangedash 105}
-    \field{title}{{Laser phase and frequency stabilization using an optical
-  resonator}}
-    \verb{url}
-    \verb http://link.springer.com/10.1007/BF00702605
-    \endverb
-    \field{volume}{31}
-    \field{journaltitle}{Applied Physics B Photophysics and Laser Chemistry}
-    \field{year}{1983}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Merlet2009}
+\hrefCMSnoop {} {S.~Merlet, J.~{Le Gou{\"{e}}t}, Q.~Bodart{ et~al.},
+  ``{Operating an atom interferometer beyond its linear range}'',} \textit{
+  Metrologia} \textbf{ 46} (feb, 2009) 87--94,
+  \href{http://dx.doi.org/10.1088/0026-1394/46/1/011}{\doi{10.1088/0026-1394/46/1/011}}.
 
-  \entry{Durfee2006}{article}{}
-    \name{author}{3}{}{%
-      {{hash=DDS}{%
-         family={Durfee},
-         familyi={D\bibinitperiod},
-         given={D.\bibnamedelima S.},
-         giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-      {{hash=SYK}{%
-         family={Shaham},
-         familyi={S\bibinitperiod},
-         given={Y.\bibnamedelima K.},
-         giveni={Y\bibinitperiod\bibinitdelim K\bibinitperiod},
-      }}%
-      {{hash=KMA}{%
-         family={Kasevich},
-         familyi={K\bibinitperiod},
-         given={M.\bibnamedelima A.},
-         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{DDSSYKKMA1}
-    \strng{fullhash}{DDSSYKKMA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{D}
-    \field{sortinithash}{D}
-    \verb{doi}
-    \verb 10.1103/PhysRevLett.97.240801
-    \endverb
-    \field{issn}{0031-9007}
-    \field{number}{24}
-    \field{pages}{240801}
-    \field{title}{{Long-Term Stability of an Area-Reversible
-  Atom-Interferometer Sagnac Gyroscope}}
-    \verb{url}
-    \verb https://link.aps.org/doi/10.1103/PhysRevLett.97.240801
-    \endverb
-    \field{volume}{97}
-    \field{journaltitle}{Physical Review Letters}
-    \field{year}{2006}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Lautier2014}
+\hrefCMSnoop {} {J.~Lautier, L.~Volodimer, T.~Hardin{ et~al.}, ``{Hybridizing
+  matter-wave and classical accelerometers}'',} \textit{ Applied Physics
+  Letters} \textbf{ 105} (oct, 2014) 144102,
+  \href{http://dx.doi.org/10.1063/1.4897358}{\doi{10.1063/1.4897358}}.
 
-  \entry{Dutta2016}{article}{}
-    \name{author}{7}{}{%
-      {{hash=DI}{%
-         family={Dutta},
-         familyi={D\bibinitperiod},
-         given={I.},
-         giveni={I\bibinitperiod},
-      }}%
-      {{hash=SD}{%
-         family={Savoie},
-         familyi={S\bibinitperiod},
-         given={D.},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=FB}{%
-         family={Fang},
-         familyi={F\bibinitperiod},
-         given={B.},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=VB}{%
-         family={Venon},
-         familyi={V\bibinitperiod},
-         given={B.},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=GCL}{%
-         family={{Garrido Alzar}},
-         familyi={G\bibinitperiod},
-         given={C.\bibnamedelima L.},
-         giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=GR}{%
-         family={Geiger},
-         familyi={G\bibinitperiod},
-         given={R.},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=LA}{%
-         family={Landragin},
-         familyi={L\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{DI+1}
-    \strng{fullhash}{DISDFBVBGCLGRLA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{D}
-    \field{sortinithash}{D}
-    \verb{doi}
-    \verb 10.1103/PhysRevLett.116.183003
-    \endverb
-    \field{issn}{0031-9007}
-    \field{number}{18}
-    \field{pages}{183003}
-    \field{title}{{Continuous Cold-Atom Inertial Sensor with 1 nrad/sec
-  Rotation Stability}}
-    \verb{url}
-    \verb https://link.aps.org/doi/10.1103/PhysRevLett.116.183003
-    \endverb
-    \field{volume}{116}
-    \field{journaltitle}{Physical Review Letters}
-    \field{year}{2016}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Grynberg2011}
+\hrefCMSnoop {} {G.~Grynberg, A.~Aspect, and C.~Fabre, ``{Introduction to
+  Quantum Optics: From the Semi-Classical Approach to Quantized Light}'',}
+  \textit{ Contemporary Physics} (nov, 2011) 45--106,
+  \href{http://dx.doi.org/10.1080/00107514.2011.604134}{\doi{10.1080/00107514.2011.604134}}.
 
-  \entry{ESSEN1955}{article}{}
-    \name{author}{2}{}{%
-      {{hash=EL}{%
-         family={ESSEN},
-         familyi={E\bibinitperiod},
-         given={L.},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=PJVL}{%
-         family={PARRY},
-         familyi={P\bibinitperiod},
-         given={J.\bibnamedelima V.\bibnamedelima L.},
-         giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim
-  L\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{ELPJVL1}
-    \strng{fullhash}{ELPJVL1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{E}
-    \field{sortinithash}{E}
-    \verb{doi}
-    \verb 10.1038/176280a0
-    \endverb
-    \field{issn}{0028-0836}
-    \field{number}{4476}
-    \field{pages}{280\bibrangedash 282}
-    \field{title}{{An Atomic Standard of Frequency and Time Interval: A
-  C{\ae}sium Resonator}}
-    \verb{url}
-    \verb http://www.nature.com/doifinder/10.1038/176280a0
-    \endverb
-    \field{volume}{176}
-    \field{journaltitle}{Nature}
-    \field{year}{1955}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Metcalf2003}
+\href {http://www.opticsinfobase.org/abstract.cfm?uri=josab-20-5-887}
+  {H.~Metcalf and P.~V.~D. Straten, ``{Laser cooling and trapping of atoms}'',}
+  \textit{ JOSA B} (2003).
 
-  \entry{Faruqi2000}{article}{}
-    \name{author}{2}{}{%
-      {{hash=FFA}{%
-         family={Faruqi},
-         familyi={F\bibinitperiod},
-         given={Farhan\bibnamedelima A.},
-         giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-      {{hash=TKJ}{%
-         family={Turner},
-         familyi={T\bibinitperiod},
-         given={Kenneth\bibnamedelima J.},
-         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{FFATKJ1}
-    \strng{fullhash}{FFATKJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{F}
-    \field{sortinithash}{F}
-    \verb{doi}
-    \verb 10.1016/S0096-3003(98)10068-1
-    \endverb
-    \field{issn}{00963003}
-    \field{number}{2-3}
-    \field{pages}{213\bibrangedash 227}
-    \field{title}{{Extended Kalman filter synthesis for integrated global
-  positioning/inertial navigation systems}}
-    \verb{url}
-    \verb http://linkinghub.elsevier.com/retrieve/pii/S0096300398100681
-    \endverb
-    \field{volume}{115}
-    \field{journaltitle}{Applied Mathematics and Computation}
-    \field{year}{2000}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Wu1996}
+\hrefCMSnoop {} {Y.~Wu, ``{Effective Raman theory for a three-level atom in the
+  $\Lambda$ configuration}'',} \textit{ Physical Review A - Atomic, Molecular,
+  and Optical Physics} \textbf{ 54} (1996), no.~2, 1586--1592,
+  \href{http://dx.doi.org/10.1103/PhysRevA.54.1586}{\doi{10.1103/PhysRevA.54.1586}}.
 
-  \entry{Foote1992}{article}{}
-    \name{author}{2}{}{%
-      {{hash=FS}{%
-         family={Foote},
-         familyi={F\bibinitperiod},
-         given={S.A.},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=GD}{%
-         family={Grindeland},
-         familyi={G\bibinitperiod},
-         given={D.B.},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{FSGD1}
-    \strng{fullhash}{FSGD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{F}
-    \field{sortinithash}{F}
-    \verb{doi}
-    \verb 10.1109/62.145120
-    \endverb
-    \field{issn}{0885-8985}
-    \field{number}{6}
-    \field{pages}{59\bibrangedash 67}
-    \field{title}{{Model QA3000 Q-Flex accelerometer high performance test
-  results}}
-    \verb{url}
-    \verb http://ieeexplore.ieee.org/document/145120/
-    \endverb
-    \field{volume}{7}
-    \field{journaltitle}{IEEE Aerospace and Electronic Systems Magazine}
-    \field{year}{1992}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Storey1994}
+\href
+  {http://jp2.journaldephysique.org/articles/jp2/abs/1994/11/jp2v4p1999/jp2v4p1999.html}
+  {P.~Storey and C.~Cohen-Tannoudji, ``{The Feynman path integral approach to
+  atomic interferometry. A tutorial}'',} \textit{ Journal de Physique II}
+  (1994).
 
-  \entry{Gauguet2009}{article}{}
-    \name{author}{5}{}{%
-      {{hash=GA}{%
-         family={Gauguet},
-         familyi={G\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=CB}{%
-         family={Canuel},
-         familyi={C\bibinitperiod},
-         given={B.},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=LT}{%
-         family={L{\'{e}}v{\`{e}}que},
-         familyi={L\bibinitperiod},
-         given={T.},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=CW}{%
-         family={Chaibi},
-         familyi={C\bibinitperiod},
-         given={W.},
-         giveni={W\bibinitperiod},
-      }}%
-      {{hash=LA}{%
-         family={Landragin},
-         familyi={L\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{GA+1}
-    \strng{fullhash}{GACBLTCWLA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \verb{doi}
-    \verb 10.1103/PhysRevA.80.063604
-    \endverb
-    \field{issn}{1050-2947}
-    \field{number}{6}
-    \field{pages}{063604}
-    \field{title}{{Characterization and limits of a cold-atom Sagnac
-  interferometer}}
-    \verb{url}
-    \verb https://link.aps.org/doi/10.1103/PhysRevA.80.063604
-    \endverb
-    \field{volume}{80}
-    \field{journaltitle}{Physical Review A}
-    \field{year}{2009}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Moler1992}
+\href {http://www.atomwave.org/rmparticle/ao refs/aifm pdfs by group
+  leaders/chu pdfs/MWK92.pdf} {K.~Moler, D.~Weiss, M.~Kasevich{ et~al.},
+  ``{Theoretical Analysis of Velocity-Selective Raman Transitions}'',} \textit{
+  Physical Review A} \textbf{ 45} (1992), no.~1, 342--348.
 
-  \entry{Geiger2011a}{article}{}
-    \name{author}{13}{}{%
-      {{hash=GR}{%
-         family={Geiger},
-         familyi={G\bibinitperiod},
-         given={R},
-         giveni={R},
-      }}%
-      {{hash=MV}{%
-         family={M{\'{e}}noret},
-         familyi={M\bibinitperiod},
-         given={V},
-         giveni={V},
-      }}%
-      {{hash=SG}{%
-         family={Stern},
-         familyi={S\bibinitperiod},
-         given={G},
-         giveni={G},
-      }}%
-      {{hash=ZN}{%
-         family={Zahzam},
-         familyi={Z\bibinitperiod},
-         given={N},
-         giveni={N},
-      }}%
-      {{hash=CP}{%
-         family={Cheinet},
-         familyi={C\bibinitperiod},
-         given={P},
-         giveni={P},
-      }}%
-      {{hash=BB}{%
-         family={Battelier},
-         familyi={B\bibinitperiod},
-         given={B},
-         giveni={B},
-      }}%
-      {{hash=Va}{%
-         family={Villing},
-         familyi={V\bibinitperiod},
-         given={a},
-         giveni={a},
-      }}%
-      {{hash=MF}{%
-         family={Moron},
-         familyi={M\bibinitperiod},
-         given={F},
-         giveni={F},
-      }}%
-      {{hash=LM}{%
-         family={Lours},
-         familyi={L\bibinitperiod},
-         given={M},
-         giveni={M},
-      }}%
-      {{hash=BY}{%
-         family={Bidel},
-         familyi={B\bibinitperiod},
-         given={Y},
-         giveni={Y},
-      }}%
-      {{hash=Ba}{%
-         family={Bresson},
-         familyi={B\bibinitperiod},
-         given={a},
-         giveni={a},
-      }}%
-      {{hash=La}{%
-         family={Landragin},
-         familyi={L\bibinitperiod},
-         given={a},
-         giveni={a},
-      }}%
-      {{hash=BP}{%
-         family={Bouyer},
-         familyi={B\bibinitperiod},
-         given={P},
-         giveni={P},
-      }}%
-    }
-    \strng{namehash}{GR+1}
-    \strng{fullhash}{GRMVSGZNCPBBVaMFLMBYBaLaBP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \field{abstract}{%
-    Inertial sensors relying on atom interferometry offer a breakthrough
-  advance in a variety of applications, such as inertial navigation, gravimetry
-  or ground- and space-based tests of fundamental physics. These instruments
-  require a quiet environment to reach their performance and using them outside
-  the laboratory remains a challenge. Here we report the first operation of an
-  airborne matter-wave accelerometer set up aboard a 0g plane and operating
-  during the standard gravity (1g) and microgravity (0g) phases of the flight.
-  At 1g, the sensor can detect inertial effects more than 300 times weaker than
-  the typical acceleration fluctuations of the aircraft. We describe the
-  improvement of the interferometer sensitivity in 0g, which reaches 2 x 10-4
-  ms-2 / √Hz with our current setup. We finally discuss the extension of our
-  method to airborne and spaceborne tests of the Universality of free fall with
-  matter waves.%
-    }
-    \verb{doi}
-    \verb 10.1038/ncomms1479
-    \endverb
-    \field{issn}{2041-1723}
-    \field{pages}{474}
-    \field{title}{{Detecting inertial effects with airborne matter-wave
-  interferometry.}}
-    \verb{url}
-    \verb http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3195217{\&}
-    \verb tool=pmcentrez{\&}rendertype=abstract
-    \endverb
-    \field{volume}{2}
-    \verb{file}
-    \verb :home/jimmy/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
-    \verb ed/Geiger et al. - 2011 - Detecting inertial effects with airborne ma
-    \verb tter-wave interferometry.pdf:pdf
-    \endverb
-    \field{journaltitle}{Nature communications}
-    \field{year}{2011}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Weiss1994}
+\hrefCMSnoop {} {D.~S. Weiss, B.~C. Young, and S.~Chu, ``{Precision measurement
+  of ?/m Cs based on photon recoil using laser-cooled atoms and atomic
+  interferometry}'',} \textit{ Applied Physics B Lasers and Optics} \textbf{
+  59} (sep, 1994) 217--256,
+  \href{http://dx.doi.org/10.1007/BF01081393}{\doi{10.1007/BF01081393}}.
 
-  \entry{Gouet2008}{article}{}
-    \name{author}{3}{}{%
-      {{hash=GJL}{%
-         family={Gou{\"{e}}t},
-         familyi={G\bibinitperiod},
-         given={J\bibnamedelima Le},
-         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=MT}{%
-         family={Mehlst{\"{a}}ubler},
-         familyi={M\bibinitperiod},
-         given={TE},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=KJ}{%
-         family={Kim},
-         familyi={K\bibinitperiod},
-         given={J},
-         giveni={J},
-      }}%
-    }
-    \strng{namehash}{GJLMTKJ1}
-    \strng{fullhash}{GJLMTKJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \verb{eprint}
-    \verb arXiv:0801.1270v1
-    \endverb
-    \field{pages}{1\bibrangedash 30}
-    \field{title}{{Limits to the sensitivity of a low noise compact atomic
-  gravimeter}}
-    \verb{url}
-    \verb http://link.springer.com/article/10.1007/s00340-008-3088-1
-    \endverb
-    \verb{file}
-    \verb :home/jimmy/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
-    \verb ed/Gou{\"{e}}t, Mehlst{\"{a}}ubler, Kim - 2008 - Limits to the sensit
-    \verb ivity of a low noise compact atomic gravimeter.pdf:pdf
-    \endverb
-    \field{journaltitle}{Applied Physics B}
-    \field{eprinttype}{arXiv}
-    \field{year}{2008}
-  \endentry
+\bibitem{Brink1968}
+\hrefCMSnoop {} {D.~M. Brink and S.~G. R., ``{Matrix Elements of Tensor
+  Operators}'',} in \textit{ Angular Momentum}, pp.~56--60.
+\newblock 1968.
 
-  \entry{Grynberg2011}{article}{}
-    \name{author}{3}{}{%
-      {{hash=GG}{%
-         family={Grynberg},
-         familyi={G\bibinitperiod},
-         given={Gilbert},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=AA}{%
-         family={Aspect},
-         familyi={A\bibinitperiod},
-         given={Alain},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=FC}{%
-         family={Fabre},
-         familyi={F\bibinitperiod},
-         given={Claude},
-         giveni={C\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{GGAAFC1}
-    \strng{fullhash}{GGAAFC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \verb{doi}
-    \verb 10.1080/00107514.2011.604134
-    \endverb
-    \field{isbn}{978-0521551120}
-    \field{issn}{0010-7514}
-    \field{pages}{45\bibrangedash 106}
-    \field{title}{{Introduction to Quantum Optics: From the Semi-Classical
-  Approach to Quantized Light}}
-    \verb{url}
-    \verb http://www.tandfonline.com/doi/abs/10.1080/00107514.2011.604134
-    \endverb
-    \field{journaltitle}{Contemporary Physics}
-    \field{year}{2011}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Steck2001}
+\href {http://www.steck.us/alkalidata/rubidium87numbers.pdf} {D.~Steck,
+  ``{Rubidium 87 D Line Data}'',}.
 
-  \entry{JEKELI2005}{article}{}
-    \name{author}{1}{}{%
-      {{hash=JC}{%
-         family={JEKELI},
-         familyi={J\bibinitperiod},
-         given={CHRISTOPHER},
-         giveni={C\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{JC1}
-    \strng{fullhash}{JC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{J}
-    \field{sortinithash}{J}
-    \verb{doi}
-    \verb 10.1002/j.2161-4296.2005.tb01726.x
-    \endverb
-    \field{issn}{00281522}
-    \field{number}{1}
-    \field{pages}{1\bibrangedash 14}
-    \field{title}{{Navigation Error Analysis of Atom Interferometer Inertial
-  Sensor}}
-    \verb{url}
-    \verb http://doi.wiley.com/10.1002/j.2161-4296.2005.tb01726.x
-    \endverb
-    \field{volume}{52}
-    \verb{file}
-    \verb :home/jimmy/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
-    \verb ed/JEKELI - 2005 - Navigation Error Analysis of Atom Interferometer I
-    \verb nertial Sensor.pdf:pdf
-    \endverb
-    \field{journaltitle}{Navigation}
-    \field{year}{2005}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Gauguet2009}
+\hrefCMSnoop {} {A.~Gauguet, B.~Canuel, T.~L{\'{e}}v{\`{e}}que{ et~al.},
+  ``{Characterization and limits of a cold-atom Sagnac interferometer}'',}
+  \textit{ Physical Review A} \textbf{ 80} (dec, 2009) 063604,
+  \href{http://dx.doi.org/10.1103/PhysRevA.80.063604}{\doi{10.1103/PhysRevA.80.063604}}.
 
-  \entry{Kasevich1992}{article}{}
-    \name{author}{2}{}{%
-      {{hash=KM}{%
-         family={Kasevich},
-         familyi={K\bibinitperiod},
-         given={M},
-         giveni={M},
-      }}%
-      {{hash=CS}{%
-         family={Chu},
-         familyi={C\bibinitperiod},
-         given={S},
-         giveni={S},
-      }}%
-    }
-    \strng{namehash}{KMCS1}
-    \strng{fullhash}{KMCS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{K}
-    \field{sortinithash}{K}
-    \field{pages}{321\bibrangedash 332}
-    \field{title}{{Measurement of the Gravitational Acceleration of an Atom
-  with a Light-Pulse Atom Interferometer}}
-    \verb{url}
-    \verb http://link.springer.com/article/10.1007/BF00325375
-    \endverb
-    \field{volume}{332}
-    \verb{file}
-    \verb :home/jimmy/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
-    \verb ed/Kasevich, Chu - 1992 - Measurement of the Gravitational Accelerati
-    \verb on of an Atom with a Light-Pulse Atom Interferometer.pdf:pdf
-    \endverb
-    \field{journaltitle}{Applied Physics B}
-    \field{year}{1992}
-  \endentry
+\bibitem{Keshet2012}
+\hrefCMSnoop {} {A.~Keshet and W.~Ketterle, ``{A Distributed GUI-based Computer
+  Control System for Atomic Physics Experiments}'',}
+  \href{http://dx.doi.org/10.1063/1.4773536}{\doi{10.1063/1.4773536}},
+  \href{http://www.arXiv.org/abs/1208.2607}{\texttt{ arXiv:1208.2607}}.
 
-  \entry{Kasevich1991}{article}{}
-    \name{author}{2}{}{%
-      {{hash=KM}{%
-         family={Kasevich},
-         familyi={K\bibinitperiod},
-         given={Mark},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=CS}{%
-         family={Chu},
-         familyi={C\bibinitperiod},
-         given={Steven},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{KMCS2}
-    \strng{fullhash}{KMCS2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{K}
-    \field{sortinithash}{K}
-    \verb{doi}
-    \verb 10.1097/01.NUMA.0000442649.24195.3c
-    \endverb
-    \field{issn}{1538-8670}
-    \field{number}{2}
-    \field{pages}{181\bibrangedash 184}
-    \field{title}{{Atomic Interferometry Using Stimulated Raman Transistions}}
-    \verb{url}
-    \verb http://www.ncbi.nlm.nih.gov/pubmed/24473106 http://www.ncbi.nlm.nih.g
-    \verb ov/pubmed/24472781
-    \endverb
-    \field{volume}{67}
-    \verb{file}
-    \verb :home/jimmy/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
-    \verb ed/Kasevich, Chu - 1991 - Atomic Interferometry Using Stimulated Rama
-    \verb n Transistions.pdf:pdf
-    \endverb
-    \field{journaltitle}{Physical Review Letters}
-    \field{annotation}{%
-    First paper demonstrating Atom interferometry to measure acceleration due
-  to gravity Time of flight to distinguish between field-sensitve and
-  insensitive states Fringe contrast decreased to 27{\%} due to some atoms
-  being out of resonance with the driving Raman deams. Performed worse due to
-  vibration of the inertial platform and wave-front instabilities - 7{\%}
-  Sensitivity of 3 mu g after 1000s of integration time%
-    }
-    \field{year}{1991}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Dieckmann1998}
+\hrefCMSnoop {} {K.~Dieckmann, R.~J.~C. Spreeuw, M.~Weidem{\"{u}}ller{ et~al.},
+  ``{Two-dimensional magneto-optical trap as a source of slow atoms}'',}
+  \textit{ Physical Review A} \textbf{ 58} (nov, 1998) 3891--3895,
+  \href{http://dx.doi.org/10.1103/PhysRevA.58.3891}{\doi{10.1103/PhysRevA.58.3891}}.
 
-  \entry{Keshet2012}{article}{}
-    \name{author}{2}{}{%
-      {{hash=KA}{%
-         family={Keshet},
-         familyi={K\bibinitperiod},
-         given={Aviv},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=KW}{%
-         family={Ketterle},
-         familyi={K\bibinitperiod},
-         given={Wolfgang},
-         giveni={W\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{KAKW1}
-    \strng{fullhash}{KAKW1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{K}
-    \field{sortinithash}{K}
-    \field{abstract}{%
-    Atomic physics experiments often require a complex sequence of precisely
-  timed computer controlled events. A distributed GUI-based control system
-  designed with such experiments in mind, The Cicero Word Generator, is
-  described. The system makes use of a client-server separation between a user
-  interface for sequence design and a set of output hardware servers. Output
-  hardware servers are designed to use standard National Instruments output
-  cards, but the client-server nature allows this to be extended to other
-  output hardware. Output sequences running on multiple servers and output
-  cards can be synchronized using a shared clock. By using an FPGA-generated
-  variable frequency clock, redundant buffers can be dramatically shortened,
-  and a time resolution of 100ns achieved over effectively arbitrary sequence
-  lengths.%
-    }
-    \verb{doi}
-    \verb 10.1063/1.4773536
-    \endverb
-    \verb{eprint}
-    \verb 1208.2607
-    \endverb
-    \field{title}{{A Distributed GUI-based Computer Control System for Atomic
-  Physics Experiments}}
-    \verb{url}
-    \verb https://arxiv.org/pdf/1208.2607.pdf http://arxiv.org/abs/1208.2607 ht
-    \verb tp://dx.doi.org/10.1063/1.4773536
-    \endverb
-    \field{eprinttype}{arXiv}
-    \field{year}{2012}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Walhout1992}
+\hrefCMSnoop {} {M.~Walhout, J.~Dalibard, S.~L. Rolston{ et~al.},
+  ``{$\sigma${\_}+–$\sigma${\_}− Optical molasses in a longitudinal
+  magnetic field}'',} \textit{ Journal of the Optical Society of America B}
+  \textbf{ 9} (nov, 1992) 1997,
+  \href{http://dx.doi.org/10.1364/JOSAB.9.001997}{\doi{10.1364/JOSAB.9.001997}}.
 
-  \entry{Lautier2014}{article}{}
-    \name{author}{7}{}{%
-      {{hash=LJ}{%
-         family={Lautier},
-         familyi={L\bibinitperiod},
-         given={J.},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=VL}{%
-         family={Volodimer},
-         familyi={V\bibinitperiod},
-         given={L.},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=HT}{%
-         family={Hardin},
-         familyi={H\bibinitperiod},
-         given={T.},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=MS}{%
-         family={Merlet},
-         familyi={M\bibinitperiod},
-         given={S.},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=LM}{%
-         family={Lours},
-         familyi={L\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=PF}{%
-         family={{Pereira Dos Santos}},
-         familyi={P\bibinitperiod},
-         given={F.},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=LA}{%
-         family={Landragin},
-         familyi={L\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LJ+1}
-    \strng{fullhash}{LJVLHTMSLMPFLA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{L}
-    \field{sortinithash}{L}
-    \verb{doi}
-    \verb 10.1063/1.4897358
-    \endverb
-    \field{issn}{0003-6951}
-    \field{number}{14}
-    \field{pages}{144102}
-    \field{title}{{Hybridizing matter-wave and classical accelerometers}}
-    \field{volume}{105}
-    \verb{file}
-    \verb :home/jimmy/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
-    \verb ed/Lautier et al. - 2014 - Hybridizing matter-wave and classical acce
-    \verb lerometers.pdf:pdf
-    \endverb
-    \field{journaltitle}{Applied Physics Letters}
-    \field{year}{2014}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{muquansWebPage}
+\href {https://www.muquans.com/images/stories/muquans{\_}laser{\_}systems.pdf}
+  {``{$\mu$Quans Laser System Specifications}''.}
 
-  \entry{Levine}{inproceedings}{}
-    \name{author}{2}{}{%
-      {{hash=LJ}{%
-         family={Levine},
-         familyi={L\bibinitperiod},
-         given={J.},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=PT}{%
-         family={Parker},
-         familyi={P\bibinitperiod},
-         given={T.},
-         giveni={T\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {IEEE}%
-    }
-    \strng{namehash}{LJPT1}
-    \strng{fullhash}{LJPT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{L}
-    \field{sortinithash}{L}
-    \field{booktitle}{Proceedings of the 2002 IEEE International Frequency
-  Control Symposium and PDA Exhibition (Cat. No.02CH37234)}
-    \verb{doi}
-    \verb 10.1109/FREQ.2002.1075941
-    \endverb
-    \field{isbn}{0-7803-7082-1}
-    \field{pages}{537\bibrangedash 542}
-    \field{title}{{The algorithm used to realize UTC(NIST)}}
-    \verb{url}
-    \verb http://ieeexplore.ieee.org/document/1075941/
-    \endverb
-  \endentry
+\bibitem{Steane1992}
+\hrefCMSnoop {} {A.~M.~A. Steane, M.~Chowdhury, and C.~J. Foot, ``{Radiation
+  force in the magneto-optical trap}'',} \textit{ Journal of the Optical
+  Society of America B} \textbf{ 9} (dec, 1992) 2142,
+  \href{http://dx.doi.org/10.1364/JOSAB.9.002142}{\doi{10.1364/JOSAB.9.002142}}.
 
-  \entry{Macdonald1992}{article}{}
-    \name{author}{2}{}{%
-      {{hash=MJR}{%
-         family={Macdonald},
-         familyi={M\bibinitperiod},
-         given={J.\bibnamedelima Ross},
-         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-      {{hash=TWJ}{%
-         family={Thompson},
-         familyi={T\bibinitperiod},
-         given={William\bibnamedelima J.},
-         giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MJRTWJ1}
-    \strng{fullhash}{MJRTWJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \verb{doi}
-    \verb 10.1119/1.17046
-    \endverb
-    \field{issn}{0002-9505}
-    \field{number}{1}
-    \field{pages}{66\bibrangedash 73}
-    \field{title}{{Least‐squares fitting when both variables contain errors:
-  Pitfalls and possibilities}}
-    \verb{url}
-    \verb http://aapt.scitation.org/doi/10.1119/1.17046
-    \endverb
-    \field{volume}{60}
-    \field{journaltitle}{American Journal of Physics}
-    \field{year}{1992}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Prentiss1988}
+\hrefCMSnoop {} {M.~Prentiss, E.~L. Raab, D.~E. Pritchard{ et~al.},
+  ``{Atomic-density-dependent losses in an optical trap}'',} \textit{ Optics
+  Letters} \textbf{ 13} (jun, 1988) 452,
+  \href{http://dx.doi.org/10.1364/OL.13.000452}{\doi{10.1364/OL.13.000452}}.
 
-  \entry{Masry1991}{article}{}
-    \name{author}{1}{}{%
-      {{hash=ME}{%
-         family={Masry},
-         familyi={M\bibinitperiod},
-         given={E.},
-         giveni={E\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{ME1}
-    \strng{fullhash}{ME1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \verb{doi}
-    \verb 10.1109/18.86968
-    \endverb
-    \field{issn}{00189448}
-    \field{number}{4}
-    \field{pages}{1173\bibrangedash 1177}
-    \field{title}{{Flicker noise and the estimation of the Allan variance}}
-    \verb{url}
-    \verb http://ieeexplore.ieee.org/document/86968/
-    \endverb
-    \field{volume}{37}
-    \field{journaltitle}{IEEE Transactions on Information Theory}
-    \field{year}{1991}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Schoser2002}
+\hrefCMSnoop {} {J.~Schoser, A.~Bat{\"{a}}r, R.~L{\"{o}}w{ et~al.}, ``{Intense
+  source of cold Rb atoms from a pure two-dimensional magneto-optical trap}'',}
+  \textit{ Physical Review A} \textbf{ 66} (aug, 2002) 023410,
+  \href{http://dx.doi.org/10.1103/PhysRevA.66.023410}{\doi{10.1103/PhysRevA.66.023410}},
+  \href{http://www.arXiv.org/abs/0201034}{\texttt{ arXiv:0201034}}.
 
-  \entry{Merlet2009}{article}{}
-    \name{author}{7}{}{%
-      {{hash=MS}{%
-         family={Merlet},
-         familyi={M\bibinitperiod},
-         given={S},
-         giveni={S},
-      }}%
-      {{hash=LJ}{%
-         family={{Le Gou{\"{e}}t}},
-         familyi={L\bibinitperiod},
-         given={J},
-         giveni={J},
-      }}%
-      {{hash=BQ}{%
-         family={Bodart},
-         familyi={B\bibinitperiod},
-         given={Q},
-         giveni={Q},
-      }}%
-      {{hash=CA}{%
-         family={Clairon},
-         familyi={C\bibinitperiod},
-         given={A},
-         giveni={A},
-      }}%
-      {{hash=LA}{%
-         family={Landragin},
-         familyi={L\bibinitperiod},
-         given={A},
-         giveni={A},
-      }}%
-      {{hash=PF}{%
-         family={{Pereira Dos Santos}},
-         familyi={P\bibinitperiod},
-         given={F},
-         giveni={F},
-      }}%
-      {{hash=RP}{%
-         family={Rouchon},
-         familyi={R\bibinitperiod},
-         given={P},
-         giveni={P},
-      }}%
-    }
-    \strng{namehash}{MS+1}
-    \strng{fullhash}{MSLJBQCALAPFRP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \verb{doi}
-    \verb 10.1088/0026-1394/46/1/011
-    \endverb
-    \field{issn}{0026-1394}
-    \field{number}{1}
-    \field{pages}{87\bibrangedash 94}
-    \field{title}{{Operating an atom interferometer beyond its linear range}}
-    \verb{url}
-    \verb http://stacks.iop.org/0026-1394/46/i=1/a=011?key=crossref.025e308ee80
-    \verb 4d672b9e0d9287887a32c
-    \endverb
-    \field{volume}{46}
-    \verb{file}
-    \verb :home/jimmy/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
-    \verb ed/Merlet et al. - 2009 - Operating an atom interferometer beyond its
-    \verb  linear range.pdf:pdf
-    \endverb
-    \field{journaltitle}{Metrologia}
-    \field{year}{2009}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Ohshima1995}
+\hrefCMSnoop {} {S.-i. Ohshima, T.~Kurosu, T.~Ikegami{ et~al.}, ``{Cesium
+  Atomic Fountain with Two-Dimensional Moving Molasses}'',} \textit{ Japanese
+  Journal of Applied Physics} \textbf{ 34} (sep, 1995) L1170--L1173,
+  \href{http://dx.doi.org/10.1143/JJAP.34.L1170}{\doi{10.1143/JJAP.34.L1170}}.
 
-  \entry{Metcalf2003}{article}{}
-    \name{author}{2}{}{%
-      {{hash=MH}{%
-         family={Metcalf},
-         familyi={M\bibinitperiod},
-         given={HJ},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=SPVD}{%
-         family={Straten},
-         familyi={S\bibinitperiod},
-         given={P\bibnamedelima Van\bibnamedelima Der},
-         giveni={P\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim
-  D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MHSPVD1}
-    \strng{fullhash}{MHSPVD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{title}{{Laser cooling and trapping of atoms}}
-    \verb{url}
-    \verb http://www.opticsinfobase.org/abstract.cfm?uri=josab-20-5-887
-    \endverb
-    \verb{file}
-    \verb :home/jimmy/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
-    \verb ed/Metcalf, Straten - 2003 - Laser cooling and trapping of atoms.pdf:
-    \verb pdf
-    \endverb
-    \field{journaltitle}{JOSA B}
-    \field{year}{2003}
-  \endentry
+\bibitem{VanderStraten1993}
+\hrefCMSnoop {} {P.~van~der Straten, S.-Q. Shang, B.~Sheehy{ et~al.}, ``{Laser
+  cooling at low intensity in a strong magnetic field}'',} \textit{ Phys. Rev.
+  A} \textbf{ 47} (1993), no.~5, 4160--4175,
+  \href{http://dx.doi.org/10.1103/PhysRevA.47.4160}{\doi{10.1103/PhysRevA.47.4160}}.
 
-  \entry{Moler1992}{article}{}
-    \name{author}{4}{}{%
-      {{hash=MK}{%
-         family={Moler},
-         familyi={M\bibinitperiod},
-         given={Kathryn},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=WD}{%
-         family={Weiss},
-         familyi={W\bibinitperiod},
-         given={DS},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=KM}{%
-         family={Kasevich},
-         familyi={K\bibinitperiod},
-         given={Mark},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=CS}{%
-         family={Chu},
-         familyi={C\bibinitperiod},
-         given={Steven},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MK+1}
-    \strng{fullhash}{MKWDKMCS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{number}{1}
-    \field{pages}{342\bibrangedash 348}
-    \field{title}{{Theoretical Analysis of Velocity-Selective Raman
-  Transitions}}
-    \verb{url}
-    \verb http://www.atomwave.org/rmparticle/ao refs/aifm pdfs by group leaders
-    \verb /chu pdfs/MWK92.pdf
-    \endverb
-    \field{volume}{45}
-    \verb{file}
-    \verb :home/jimmy/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
-    \verb ed/Moler et al. - 1992 - Theoretical Analysis of Velocity-Selective R
-    \verb aman Transitions.pdf:pdf
-    \endverb
-    \field{journaltitle}{Physical Review A}
-    \field{year}{1992}
-  \endentry
+\bibitem{Chang2002}
+\hrefCMSnoop {} {S.~Chang, T.~Y. Kwon, H.~S. Lee{ et~al.}, ``{Laser sub-Doppler
+  cooling of atoms in an arbitrarily directed magnetic field}'',} \textit{
+  Physical Review A - Atomic, Molecular, and Optical Physics} \textbf{ 66}
+  (2002), no.~4, 23,
+  \href{http://dx.doi.org/10.1103/PhysRevA.66.043404}{\doi{10.1103/PhysRevA.66.043404}}.
 
-  \entry{muquansWebPage}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{title}{{$\mu$Quans Laser System Specifications}}
-    \verb{url}
-    \verb https://www.muquans.com/images/stories/muquans{\_}laser{\_}systems.pd
-    \verb f
-    \endverb
-    \field{urlday}{08}
-    \field{urlmonth}{01}
-    \field{urlyear}{2018}
-  \endentry
+\bibitem{Berkeland2002}
+\hrefCMSnoop {} {D.~J. Berkeland and M.~G. Boshier, ``{Destabilization of dark
+  states and optical spectroscopy in Zeeman-degenerate atomic systems}'',}
+  \textit{ Physical Review A} \textbf{ 65} (feb, 2002) 033413,
+  \href{http://dx.doi.org/10.1103/PhysRevA.65.033413}{\doi{10.1103/PhysRevA.65.033413}}.
 
-  \entry{Nelder1965}{article}{}
-    \name{author}{2}{}{%
-      {{hash=NJA}{%
-         family={Nelder},
-         familyi={N\bibinitperiod},
-         given={J.\bibnamedelima A.},
-         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-      {{hash=MR}{%
-         family={Mead},
-         familyi={M\bibinitperiod},
-         given={R.},
-         giveni={R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{NJAMR1}
-    \strng{fullhash}{NJAMR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{N}
-    \field{sortinithash}{N}
-    \verb{doi}
-    \verb 10.1093/comjnl/7.4.308
-    \endverb
-    \field{issn}{0010-4620}
-    \field{number}{4}
-    \field{pages}{308\bibrangedash 313}
-    \field{title}{{A Simplex Method for Function Minimization}}
-    \verb{url}
-    \verb https://academic.oup.com/comjnl/article-lookup/doi/10.1093/comjnl/7.4
-    \verb .308
-    \endverb
-    \field{volume}{7}
-    \field{journaltitle}{The Computer Journal}
-    \field{year}{1965}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Schkolnik2015a}
+\hrefCMSnoop {} {V.~Schkolnik, B.~Leykauf, M.~Hauth{ et~al.}, ``{The effect of
+  wavefront aberrations in atom interferometry}'',} \textit{ Applied Physics B}
+  \textbf{ 120} (aug, 2015) 311--316,
+  \href{http://dx.doi.org/10.1007/s00340-015-6138-5}{\doi{10.1007/s00340-015-6138-5}}.
 
-  \entry{Ohshima1995}{article}{}
-    \name{author}{4}{}{%
-      {{hash=OSi}{%
-         family={Ohshima},
-         familyi={O\bibinitperiod},
-         given={Shin-ichi},
-         giveni={S\bibinitperiod-i\bibinitperiod},
-      }}%
-      {{hash=KT}{%
-         family={Kurosu},
-         familyi={K\bibinitperiod},
-         given={Takayuki},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=IT}{%
-         family={Ikegami},
-         familyi={I\bibinitperiod},
-         given={Takeshi},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=NY}{%
-         family={Nakadan},
-         familyi={N\bibinitperiod},
-         given={Yasuhiro},
-         giveni={Y\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{OSi+1}
-    \strng{fullhash}{OSiKTITNY1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{O}
-    \field{sortinithash}{O}
-    \verb{doi}
-    \verb 10.1143/JJAP.34.L1170
-    \endverb
-    \field{issn}{00214922}
-    \field{number}{Part 2, No. 9A}
-    \field{pages}{L1170\bibrangedash L1173}
-    \field{title}{{Cesium Atomic Fountain with Two-Dimensional Moving
-  Molasses}}
-    \verb{url}
-    \verb http://stacks.iop.org/1347-4065/34/L1170
-    \endverb
-    \field{volume}{34}
-    \field{journaltitle}{Japanese Journal of Applied Physics}
-    \field{year}{1995}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Tackmann2012}
+\hrefCMSnoop {} {G.~Tackmann, P.~Berg, C.~Schubert{ et~al.}, ``{Self-alignment
+  of a compact large-area atomic Sagnac interferometer}'',} \textit{ New
+  Journal of Physics} \textbf{ 14} (jan, 2012) 015002,
+  \href{http://dx.doi.org/10.1088/1367-2630/14/1/015002}{\doi{10.1088/1367-2630/14/1/015002}}.
 
-  \entry{Peters2001}{article}{}
-    \name{author}{3}{}{%
-      {{hash=PA}{%
-         family={Peters},
-         familyi={P\bibinitperiod},
-         given={A},
-         giveni={A},
-      }}%
-      {{hash=CKY}{%
-         family={Chung},
-         familyi={C\bibinitperiod},
-         given={K\bibnamedelima Y},
-         giveni={K\bibinitperiod\bibinitdelim Y\bibinitperiod},
-      }}%
-      {{hash=CS}{%
-         family={Chu},
-         familyi={C\bibinitperiod},
-         given={S},
-         giveni={S},
-      }}%
-    }
-    \strng{namehash}{PACKYCS1}
-    \strng{fullhash}{PACKYCS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{P}
-    \field{sortinithash}{P}
-    \verb{doi}
-    \verb 10.1088/0026-1394/38/1/4
-    \endverb
-    \field{issn}{0026-1394}
-    \field{number}{1}
-    \field{pages}{25\bibrangedash 61}
-    \field{title}{{High-precision gravity measurements using atom
-  interferometry}}
-    \verb{url}
-    \verb http://stacks.iop.org/0026-1394/38/i=1/a=4?key=crossref.33bae2a3cd81d
-    \verb f1aadcc7dc5746aa663
-    \endverb
-    \field{volume}{38}
-    \verb{file}
-    \verb :home/jimmy/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
-    \verb ed/Peters, Chung, Chu - 2001 - High-precision gravity measurements us
-    \verb ing atom interferometry.pdf:pdf
-    \endverb
-    \field{journaltitle}{Metrologia}
-    \field{year}{2001}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Nelder1965}
+\hrefCMSnoop {} {J.~A. Nelder and R.~Mead, ``{A Simplex Method for Function
+  Minimization}'',} \textit{ The Computer Journal} \textbf{ 7} (jan, 1965)
+  308--313,
+  \href{http://dx.doi.org/10.1093/comjnl/7.4.308}{\doi{10.1093/comjnl/7.4.308}}.
 
-  \entry{Prentiss1988}{article}{}
-    \name{author}{6}{}{%
-      {{hash=PM}{%
-         family={Prentiss},
-         familyi={P\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=REL}{%
-         family={Raab},
-         familyi={R\bibinitperiod},
-         given={E.\bibnamedelima L.},
-         giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=PDE}{%
-         family={Pritchard},
-         familyi={P\bibinitperiod},
-         given={D.\bibnamedelima E.},
-         giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-      {{hash=CA}{%
-         family={Cable},
-         familyi={C\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=BJE}{%
-         family={Bjorkholm},
-         familyi={B\bibinitperiod},
-         given={J.\bibnamedelima E.},
-         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-      {{hash=CS}{%
-         family={Chu},
-         familyi={C\bibinitperiod},
-         given={Steven},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{PM+1}
-    \strng{fullhash}{PMRELPDECABJECS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{P}
-    \field{sortinithash}{P}
-    \verb{doi}
-    \verb 10.1364/OL.13.000452
-    \endverb
-    \field{issn}{0146-9592}
-    \field{number}{6}
-    \field{pages}{452}
-    \field{title}{{Atomic-density-dependent losses in an optical trap}}
-    \verb{url}
-    \verb https://www.osapublishing.org/abstract.cfm?URI=ol-13-6-452
-    \endverb
-    \field{volume}{13}
-    \field{journaltitle}{Optics Letters}
-    \field{year}{1988}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Zhang2004}
+\hrefCMSnoop {} {R.~Zhang and F.~Shi, ``{A Novel Algorithm for Fiber-Optic
+  Alignment Automation}'',} \textit{ IEEE Transactions on Advanced Packaging}
+  \textbf{ 27} (feb, 2004) 173--178,
+  \href{http://dx.doi.org/10.1109/TADVP.2004.825434}{\doi{10.1109/TADVP.2004.825434}}.
 
-  \entry{Rakholia2014a}{article}{}
-    \name{author}{3}{}{%
-      {{hash=RAV}{%
-         family={Rakholia},
-         familyi={R\bibinitperiod},
-         given={Akash\bibnamedelima V},
-         giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod},
-      }}%
-      {{hash=MHJ}{%
-         family={McGuinness},
-         familyi={M\bibinitperiod},
-         given={Hayden\bibnamedelima J.},
-         giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=BGW}{%
-         family={Biedermann},
-         familyi={B\bibinitperiod},
-         given={Grant\bibnamedelima W},
-         giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{RAVMHJBGW1}
-    \strng{fullhash}{RAVMHJBGW1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{R}
-    \field{sortinithash}{R}
-    \field{abstract}{%
-    We demonstrate a dual-axis accelerometer and gyroscope atom interferometer,
-  which forms the building blocks of a six-axis inertial measurement unit. By
-  recapturing the atoms after the interferometer sequence, we maintain a large
-  atom number at high data-rates of 50 to 100 measurements per second. Two cold
-  ensembles are formed in trap zones located a few centimeters apart, and are
-  launched toward one-another. During their ballistic trajectory, they are
-  interrogated with a stimulated Raman sequence, detected, and recaptured in
-  the opposing trap zone. We achieve sensitivities at
-  {\$}\backslashmathrm{\{}\backslashmu \backslashmathit{\{}g{\}} /
-  \backslashsqrt{\{}Hz{\}}{\}}{\$} and {\$}\backslashmathrm{\{}\backslashmu rad
-  / s / \backslashsqrt{\{}Hz{\}}{\}}{\$} levels, making this a compelling
-  prospect for expanding the use of atom interferometer inertial sensors beyond
-  benign laboratory environments.%
-    }
-    \verb{eprint}
-    \verb 1407.3847
-    \endverb
-    \field{pages}{8}
-    \field{title}{{Dual-axis, high data-rate atom interferometer via cold
-  ensemble exchange}}
-    \verb{url}
-    \verb http://arxiv.org/abs/1407.3847
-    \endverb
-    \verb{file}
-    \verb :home/jimmy/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
-    \verb ed/Rakholia, McGuinness, Biedermann - 2014 - Dual-axis, high data-rat
-    \verb e atom interferometer via cold ensemble exchange(2).pdf:pdf
-    \endverb
-    \field{eprinttype}{arXiv}
-    \field{year}{2014}
-  \endentry
+\bibitem{Geiger2011a}
+\hrefCMSnoop {} {R.~Geiger, V.~M{\'{e}}noret, G.~Stern{ et~al.}, ``{Detecting
+  inertial effects with airborne matter-wave interferometry.}'',} \textit{
+  Nature communications} \textbf{ 2} (jan, 2011) 474,
+  \href{http://dx.doi.org/10.1038/ncomms1479}{\doi{10.1038/ncomms1479}}.
 
-  \entry{Rocco2014}{article}{}
-    \name{author}{6}{}{%
-      {{hash=RE}{%
-         family={Rocco},
-         familyi={R\bibinitperiod},
-         given={E},
-         giveni={E},
-      }}%
-      {{hash=PRN}{%
-         family={Palmer},
-         familyi={P\bibinitperiod},
-         given={R\bibnamedelima N},
-         giveni={R\bibinitperiod\bibinitdelim N\bibinitperiod},
-      }}%
-      {{hash=VT}{%
-         family={Valenzuela},
-         familyi={V\bibinitperiod},
-         given={T},
-         giveni={T},
-      }}%
-      {{hash=BV}{%
-         family={Boyer},
-         familyi={B\bibinitperiod},
-         given={V},
-         giveni={V},
-      }}%
-      {{hash=FA}{%
-         family={Freise},
-         familyi={F\bibinitperiod},
-         given={A},
-         giveni={A},
-      }}%
-      {{hash=BK}{%
-         family={Bongs},
-         familyi={B\bibinitperiod},
-         given={K},
-         giveni={K},
-      }}%
-    }
-    \strng{namehash}{RE+1}
-    \strng{fullhash}{REPRNVTBVFABK1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{R}
-    \field{sortinithash}{R}
-    \verb{doi}
-    \verb 10.1088/1367-2630/16/9/093046
-    \endverb
-    \field{issn}{1367-2630}
-    \field{number}{9}
-    \field{pages}{093046}
-    \field{title}{{Fluorescence detection at the atom shot noise limit for atom
-  interferometry}}
-    \verb{url}
-    \verb http://stacks.iop.org/1367-2630/16/i=9/a=093046?key=crossref.2f06bf4c
-    \verb 7a4317bfd0db65670609c694
-    \endverb
-    \field{volume}{16}
-    \field{journaltitle}{New Journal of Physics}
-    \field{year}{2014}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Barrett2016}
+\hrefCMSnoop {} {B.~Barrett, L.~Antoni-Micollier, L.~Chichet{ et~al.}, ``{Dual
+  matter-wave inertial sensors in weightlessness}'',} \textit{ Nature
+  Communications} \textbf{ 7} (2016)
+  \href{http://dx.doi.org/10.1038/ncomms13786}{\doi{10.1038/ncomms13786}},
+  \href{http://www.arXiv.org/abs/1609.03598}{\texttt{ arXiv:1609.03598}}.
 
-  \entry{Schkolnik2015a}{article}{}
-    \name{author}{5}{}{%
-      {{hash=SV}{%
-         family={Schkolnik},
-         familyi={S\bibinitperiod},
-         given={V.},
-         giveni={V\bibinitperiod},
-      }}%
-      {{hash=LB}{%
-         family={Leykauf},
-         familyi={L\bibinitperiod},
-         given={B.},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=HM}{%
-         family={Hauth},
-         familyi={H\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=FC}{%
-         family={Freier},
-         familyi={F\bibinitperiod},
-         given={C.},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=PA}{%
-         family={Peters},
-         familyi={P\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SV+1}
-    \strng{fullhash}{SVLBHMFCPA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \verb{doi}
-    \verb 10.1007/s00340-015-6138-5
-    \endverb
-    \field{issn}{0946-2171}
-    \field{number}{2}
-    \field{pages}{311\bibrangedash 316}
-    \field{title}{{The effect of wavefront aberrations in atom interferometry}}
-    \verb{url}
-    \verb http://link.springer.com/10.1007/s00340-015-6138-5
-    \endverb
-    \field{volume}{120}
-    \field{journaltitle}{Applied Physics B}
-    \field{year}{2015}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Foote1992}
+\hrefCMSnoop {} {S.~Foote and D.~Grindeland, ``{Model QA3000 Q-Flex
+  accelerometer high performance test results}'',} \textit{ IEEE Aerospace and
+  Electronic Systems Magazine} \textbf{ 7} (jun, 1992) 59--67,
+  \href{http://dx.doi.org/10.1109/62.145120}{\doi{10.1109/62.145120}}.
 
-  \entry{Schoser2002}{article}{}
-    \name{author}{7}{}{%
-      {{hash=SJ}{%
-         family={Schoser},
-         familyi={S\bibinitperiod},
-         given={J.},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=BA}{%
-         family={Bat{\"{a}}r},
-         familyi={B\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=LR}{%
-         family={L{\"{o}}w},
-         familyi={L\bibinitperiod},
-         given={R.},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=SV}{%
-         family={Schweikhard},
-         familyi={S\bibinitperiod},
-         given={V.},
-         giveni={V\bibinitperiod},
-      }}%
-      {{hash=GA}{%
-         family={Grabowski},
-         familyi={G\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=OYB}{%
-         family={Ovchinnikov},
-         familyi={O\bibinitperiod},
-         given={Yu.\bibnamedelima B.},
-         giveni={Y\bibinitperiod\bibinitdelim B\bibinitperiod},
-      }}%
-      {{hash=PT}{%
-         family={Pfau},
-         familyi={P\bibinitperiod},
-         given={T.},
-         giveni={T\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SJ+1}
-    \strng{fullhash}{SJBALRSVGAOYBPT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \field{abstract}{%
-    We present a 2D-MOT setup for the production of a continuous collimated
-  beam of cold 87-Rb atoms out of a vapor cell. The underlying physics is
-  purely two-dimensional cooling and trapping, which allows for a high flux of
-  up to 6*10{\^{}}(10) atoms/s and a small divergence of the resulting beam. We
-  analyze the velocity distribution of the 2D-MOT. The longitudinal velocity
-  distribution of the atomic beam shows a broad feature(FWHM=75m/s), centered
-  around 50m/s. The dependence of the flux on laser intensity, geometry of the
-  trapping volume and on pressure in the vapor cell was investigated in detail.
-  The influence of the geometry of the 2D-MOT on the mean velocity of the cold
-  beam has been studied. We present a simple model for the velocity
-  distribution of the flux based on rate equations describing the general
-  dependencies.%
-    }
-    \verb{doi}
-    \verb 10.1103/PhysRevA.66.023410
-    \endverb
-    \verb{eprint}
-    \verb 0201034
-    \endverb
-    \field{issn}{1050-2947}
-    \field{number}{2}
-    \field{pages}{023410}
-    \field{title}{{Intense source of cold Rb atoms from a pure two-dimensional
-  magneto-optical trap}}
-    \verb{url}
-    \verb https://link.aps.org/doi/10.1103/PhysRevA.66.023410 http://arxiv.org/
-    \verb abs/physics/0201034
-    \endverb
-    \field{volume}{66}
-    \field{journaltitle}{Physical Review A}
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{physics}
-    \field{year}{2002}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Drever1983}
+\hrefCMSnoop {} {R.~W.~P. Drever, J.~L. Hall, F.~V. Kowalski{ et~al.}, ``{Laser
+  phase and frequency stabilization using an optical resonator}'',} \textit{
+  Applied Physics B Photophysics and Laser Chemistry} \textbf{ 31} (jun, 1983)
+  97--105,
+  \href{http://dx.doi.org/10.1007/BF00702605}{\doi{10.1007/BF00702605}}.
 
-  \entry{Schuler1923}{article}{}
-    \name{author}{1}{}{%
-      {{hash=SM}{%
-         family={Schuler},
-         familyi={S\bibinitperiod},
-         given={Maximilian},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SM1}
-    \strng{fullhash}{SM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \field{number}{16}
-    \field{title}{{Die St{\"{o}}rung von Pendel und Kreiselapparaten durch die
-  Beschleunigung des Fahrzeuges}}
-    \field{volume}{24}
-    \field{journaltitle}{Physikalische Zeitschrift}
-    \field{year}{1923}
-  \endentry
+\bibitem{Allan1966}
+\hrefCMSnoop {} {D.~Allan, ``{Statistics of atomic frequency standards}'',}
+  \textit{ Proceedings of the IEEE} \textbf{ 54} (1966), no.~2, 221--230,
+  \href{http://dx.doi.org/10.1109/PROC.1966.4634}{\doi{10.1109/PROC.1966.4634}}.
 
-  \entry{Steane1992}{article}{}
-    \name{author}{3}{}{%
-      {{hash=SAMA}{%
-         family={Steane},
-         familyi={S\bibinitperiod},
-         given={A.\bibnamedelima M.\bibnamedelima AM},
-         giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
-  A\bibinitperiod},
-      }}%
-      {{hash=CM}{%
-         family={Chowdhury},
-         familyi={C\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=FCJ}{%
-         family={Foot},
-         familyi={F\bibinitperiod},
-         given={CJ\bibnamedelima J.},
-         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SAMACMFCJ1}
-    \strng{fullhash}{SAMACMFCJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \verb{doi}
-    \verb 10.1364/JOSAB.9.002142
-    \endverb
-    \field{issn}{0740-3224}
-    \field{number}{12}
-    \field{pages}{2142}
-    \field{title}{{Radiation force in the magneto-optical trap}}
-    \verb{url}
-    \verb http://www.opticsinfobase.org/abstract.cfm?uri=josab-9-12-2142 https:
-    \verb //www.osapublishing.org/abstract.cfm?URI=josab-9-12-2142
-    \endverb
-    \field{volume}{9}
-    \verb{file}
-    \verb :home/jimmy/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
-    \verb ed/Steane, Chowdhury, Foot - 1992 - Radiation force in the magneto-op
-    \verb tical trap.pdf:pdf
-    \endverb
-    \field{journaltitle}{Journal of the Optical Society of America B}
-    \field{year}{1992}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Rocco2014}
+\hrefCMSnoop {} {E.~Rocco, R.~N. Palmer, T.~Valenzuela{ et~al.},
+  ``{Fluorescence detection at the atom shot noise limit for atom
+  interferometry}'',} \textit{ New Journal of Physics} \textbf{ 16} (sep, 2014)
+  093046,
+  \href{http://dx.doi.org/10.1088/1367-2630/16/9/093046}{\doi{10.1088/1367-2630/16/9/093046}}.
 
-  \entry{Steck2001}{article}{}
-    \name{author}{1}{}{%
-      {{hash=SD}{%
-         family={Steck},
-         familyi={S\bibinitperiod},
-         given={DA},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SD1}
-    \strng{fullhash}{SD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \field{title}{{Rubidium 87 D Line Data}}
-    \verb{url}
-    \verb http://www.steck.us/alkalidata/rubidium87numbers.pdf
-    \endverb
-    \verb{file}
-    \verb :home/jimmy/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
-    \verb ed/Steck - 2001 - Rubidium 87 D Line Data.pdf:pdf
-    \endverb
-    \field{year}{2001}
-  \endentry
+\bibitem{Welch1967}
+\hrefCMSnoop {} {P.~Welch, ``{The use of fast Fourier transform for the
+  estimation of power spectra: A method based on time averaging over short,
+  modified periodograms}'',} \textit{ IEEE Transactions on Audio and
+  Electroacoustics} \textbf{ 15} (jun, 1967) 70--73,
+  \href{http://dx.doi.org/10.1109/TAU.1967.1161901}{\doi{10.1109/TAU.1967.1161901}}.
 
-  \entry{Storey1994}{article}{}
-    \name{author}{2}{}{%
-      {{hash=SP}{%
-         family={Storey},
-         familyi={S\bibinitperiod},
-         given={P},
-         giveni={P},
-      }}%
-      {{hash=CTC}{%
-         family={Cohen-Tannoudji},
-         familyi={C\bibinitperiod-T\bibinitperiod},
-         given={C},
-         giveni={C},
-      }}%
-    }
-    \strng{namehash}{SPCTC1}
-    \strng{fullhash}{SPCTC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \field{title}{{The Feynman path integral approach to atomic interferometry.
-  A tutorial}}
-    \verb{url}
-    \verb http://jp2.journaldephysique.org/articles/jp2/abs/1994/11/jp2v4p1999/
-    \verb jp2v4p1999.html
-    \endverb
-    \verb{file}
-    \verb :home/jimmy/.local/share/data/Mendeley Ltd./Mendeley Desktop/Download
-    \verb ed/Storey, Cohen-Tannoudji - 1994 - The Feynman path integral approac
-    \verb h to atomic interferometry. A tutorial.pdf:pdf
-    \endverb
-    \field{journaltitle}{Journal de Physique II}
-    \field{year}{1994}
-  \endentry
+\bibitem{Dick1987}
+\href
+  {http://oai.dtic.mil/oai/oai?verb=getRecord{\&}metadataPrefix=html{\&}identifier=ADA502386}
+  {G.~Dick, ``{Local oscillator induced instabilities in trapped ion frequency
+  standards}'',}.
 
-  \entry{VanderStraten1993}{article}{}
-    \name{author}{5}{}{%
-      {{hash=vdSP}{%
-         prefix={van\bibnamedelima der},
-         prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
-         family={Straten},
-         familyi={S\bibinitperiod},
-         given={P},
-         giveni={P},
-      }}%
-      {{hash=SSQ}{%
-         family={Shang},
-         familyi={S\bibinitperiod},
-         given={S-Q.},
-         giveni={S\bibinitperiod-Q\bibinitperiod},
-      }}%
-      {{hash=SB}{%
-         family={Sheehy},
-         familyi={S\bibinitperiod},
-         given={B},
-         giveni={B},
-      }}%
-      {{hash=MH}{%
-         family={Metcalf},
-         familyi={M\bibinitperiod},
-         given={H},
-         giveni={H},
-      }}%
-      {{hash=NG}{%
-         family={Nienhuis},
-         familyi={N\bibinitperiod},
-         given={G},
-         giveni={G},
-      }}%
-    }
-    \strng{namehash}{SPvd+1}
-    \strng{fullhash}{SPvdSSQSBMHNG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \verb{doi}
-    \verb 10.1103/PhysRevA.47.4160
-    \endverb
-    \field{issn}{10502947}
-    \field{number}{5}
-    \field{pages}{4160\bibrangedash 4175}
-    \field{title}{{Laser cooling at low intensity in a strong magnetic field}}
-    \verb{url}
-    \verb http://link.aps.org/doi/10.1103/PhysRevA.47.4160
-    \endverb
-    \field{volume}{47}
-    \verb{file}
-    \verb :media/Storage/Dropbox/PhDWork/PapersToRead/PhysRevA.47.4160.pdf:pdf
-    \endverb
-    \field{journaltitle}{Phys. Rev. A}
-    \field{year}{1993}
-  \endentry
+\bibitem{Canuel2007}
+\hrefCMSnoop {} {B.~Canuel, ``{{\'{E}}tude d'un gyrom{\`{e}}tre {\`{a}} atomes
+  froids}''}.
+\newblock PhD thesis, Universit{\'{e}} Paris Sud - Paris XI, 2007.
+\newblock \href{http://dx.doi.org/tel-00193288}{\doi{tel-00193288}}.
 
-  \entry{Tackmann2012}{article}{}
-    \name{author}{7}{}{%
-      {{hash=TG}{%
-         family={Tackmann},
-         familyi={T\bibinitperiod},
-         given={G},
-         giveni={G},
-      }}%
-      {{hash=BP}{%
-         family={Berg},
-         familyi={B\bibinitperiod},
-         given={P},
-         giveni={P},
-      }}%
-      {{hash=SC}{%
-         family={Schubert},
-         familyi={S\bibinitperiod},
-         given={C},
-         giveni={C},
-      }}%
-      {{hash=AS}{%
-         family={Abend},
-         familyi={A\bibinitperiod},
-         given={S},
-         giveni={S},
-      }}%
-      {{hash=GM}{%
-         family={Gilowski},
-         familyi={G\bibinitperiod},
-         given={M},
-         giveni={M},
-      }}%
-      {{hash=EW}{%
-         family={Ertmer},
-         familyi={E\bibinitperiod},
-         given={W},
-         giveni={W},
-      }}%
-      {{hash=REM}{%
-         family={Rasel},
-         familyi={R\bibinitperiod},
-         given={E\bibnamedelima M},
-         giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{TG+1}
-    \strng{fullhash}{TGBPSCASGMEWREM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{T}
-    \field{sortinithash}{T}
-    \verb{doi}
-    \verb 10.1088/1367-2630/14/1/015002
-    \endverb
-    \field{issn}{1367-2630}
-    \field{number}{1}
-    \field{pages}{015002}
-    \field{title}{{Self-alignment of a compact large-area atomic Sagnac
-  interferometer}}
-    \verb{url}
-    \verb http://stacks.iop.org/1367-2630/14/i=1/a=015002?key=crossref.13b30801
-    \verb ced49186a60a1a4b9c818e92
-    \endverb
-    \field{volume}{14}
-    \field{journaltitle}{New Journal of Physics}
-    \field{year}{2012}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Gouet2008}
+\href {http://link.springer.com/article/10.1007/s00340-008-3088-1} {J.~L.
+  Gou{\"{e}}t, T.~Mehlst{\"{a}}ubler, and J.~Kim, ``{Limits to the sensitivity
+  of a low noise compact atomic gravimeter}'',} \textit{ Applied Physics B}
+  (2008) 1--30, \href{http://www.arXiv.org/abs/arXiv:0801.1270v1}{\texttt{
+  arXiv:arXiv:0801.1270v1}}.
 
-  \entry{Walhout1992}{article}{}
-    \name{author}{4}{}{%
-      {{hash=WM}{%
-         family={Walhout},
-         familyi={W\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=DJ}{%
-         family={Dalibard},
-         familyi={D\bibinitperiod},
-         given={J.},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=RSL}{%
-         family={Rolston},
-         familyi={R\bibinitperiod},
-         given={S.\bibnamedelima L.},
-         giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=PWD}{%
-         family={Phillips},
-         familyi={P\bibinitperiod},
-         given={W.\bibnamedelima D.},
-         giveni={W\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{WM+1}
-    \strng{fullhash}{WMDJRSLPWD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{W}
-    \field{sortinithash}{W}
-    \verb{doi}
-    \verb 10.1364/JOSAB.9.001997
-    \endverb
-    \field{issn}{0740-3224}
-    \field{number}{11}
-    \field{pages}{1997}
-    \field{title}{{$\sigma${\_}+–$\sigma${\_}− Optical molasses in a
-  longitudinal magnetic field}}
-    \verb{url}
-    \verb https://www.osapublishing.org/abstract.cfm?URI=josab-9-11-1997
-    \endverb
-    \field{volume}{9}
-    \field{journaltitle}{Journal of the Optical Society of America B}
-    \field{year}{1992}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Peters2001}
+\hrefCMSnoop {} {A.~Peters, K.~Y. Chung, and S.~Chu, ``{High-precision gravity
+  measurements using atom interferometry}'',} \textit{ Metrologia} \textbf{ 38}
+  (feb, 2001) 25--61,
+  \href{http://dx.doi.org/10.1088/0026-1394/38/1/4}{\doi{10.1088/0026-1394/38/1/4}}.
 
-  \entry{Weiss1994}{article}{}
-    \name{author}{3}{}{%
-      {{hash=WDS}{%
-         family={Weiss},
-         familyi={W\bibinitperiod},
-         given={D.\bibnamedelima S.},
-         giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-      {{hash=YBC}{%
-         family={Young},
-         familyi={Y\bibinitperiod},
-         given={B.\bibnamedelima C.},
-         giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod},
-      }}%
-      {{hash=CS}{%
-         family={Chu},
-         familyi={C\bibinitperiod},
-         given={S.},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{WDSYBCCS1}
-    \strng{fullhash}{WDSYBCCS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{W}
-    \field{sortinithash}{W}
-    \verb{doi}
-    \verb 10.1007/BF01081393
-    \endverb
-    \field{issn}{0946-2171}
-    \field{number}{3}
-    \field{pages}{217\bibrangedash 256}
-    \field{title}{{Precision measurement of ?/m Cs based on photon recoil using
-  laser-cooled atoms and atomic interferometry}}
-    \verb{url}
-    \verb http://link.springer.com/10.1007/BF01081393
-    \endverb
-    \field{volume}{59}
-    \field{journaltitle}{Applied Physics B Lasers and Optics}
-    \field{year}{1994}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Macdonald1992}
+\hrefCMSnoop {} {J.~R. Macdonald and W.~J. Thompson, ``{Least‐squares fitting
+  when both variables contain errors: Pitfalls and possibilities}'',} \textit{
+  American Journal of Physics} \textbf{ 60} (jan, 1992) 66--73,
+  \href{http://dx.doi.org/10.1119/1.17046}{\doi{10.1119/1.17046}}.
 
-  \entry{Welch1967}{article}{}
-    \name{author}{1}{}{%
-      {{hash=WP}{%
-         family={Welch},
-         familyi={W\bibinitperiod},
-         given={P.},
-         giveni={P\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{WP1}
-    \strng{fullhash}{WP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{W}
-    \field{sortinithash}{W}
-    \verb{doi}
-    \verb 10.1109/TAU.1967.1161901
-    \endverb
-    \field{issn}{0018-9278}
-    \field{number}{2}
-    \field{pages}{70\bibrangedash 73}
-    \field{title}{{The use of fast Fourier transform for the estimation of
-  power spectra: A method based on time averaging over short, modified
-  periodograms}}
-    \verb{url}
-    \verb http://ieeexplore.ieee.org/document/1161901/
-    \endverb
-    \field{volume}{15}
-    \field{journaltitle}{IEEE Transactions on Audio and Electroacoustics}
-    \field{year}{1967}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
+\bibitem{Masry1991}
+\hrefCMSnoop {} {E.~Masry, ``{Flicker noise and the estimation of the Allan
+  variance}'',} \textit{ IEEE Transactions on Information Theory} \textbf{ 37}
+  (jul, 1991) 1173--1177,
+  \href{http://dx.doi.org/10.1109/18.86968}{\doi{10.1109/18.86968}}.
 
-  \entry{Wu1996}{article}{}
-    \name{author}{1}{}{%
-      {{hash=WY}{%
-         family={Wu},
-         familyi={W\bibinitperiod},
-         given={Ying},
-         giveni={Y\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{WY1}
-    \strng{fullhash}{WY1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{W}
-    \field{sortinithash}{W}
-    \field{abstract}{%
-    It is shown that a three-level atom in the $\Lambda$ configuration with
-  arbitrary detunings can be exactly reduced to a two-level system with an
-  effective Raman coupling, which depends nonlinearly on the intensity of the
-  two radiation fields. This is done by exactly evaluating the unitary
-  transformation introduced by Alexanian and Bose [Phys. Rev. A 52, 2218
-  (1995)] for a three-level atom coupled to two modes of the radiation field.
-  We obtain an exact transformed Hamiltonian in which one of the three levels
-  is decoupled for all values of the detunings. In particular, our result is
-  then valid for any ratios of the coupling constants to detunings, even for
-  zero detuning, in contrast to earlier work which requires that these ratios
-  be small. We find the the eigenvalues of the exact transformed Hamiltonian
-  and study its population dynamics%
-    }
-    \verb{doi}
-    \verb 10.1103/PhysRevA.54.1586
-    \endverb
-    \field{issn}{10941622}
-    \field{number}{2}
-    \field{pages}{1586\bibrangedash 1592}
-    \field{title}{{Effective Raman theory for a three-level atom in the
-  $\Lambda$ configuration}}
-    \field{volume}{54}
-    \verb{file}
-    \verb :media/Storage/Dropbox/PhDWork/PapersToRead/PhysRevA.54.1586.pdf:pdf
-    \endverb
-    \field{journaltitle}{Physical Review A - Atomic, Molecular, and Optical
-  Physics}
-    \field{year}{1996}
-  \endentry
+\bibitem{Cheng2018}
+\hrefCMSnoop {} {X.~Cheng, ``{No Title}''}.
+\newblock PhD thesis, Imperial College London, 2018.
 
-  \entry{Zhang2004}{article}{}
-    \name{author}{2}{}{%
-      {{hash=ZR}{%
-         family={Zhang},
-         familyi={Z\bibinitperiod},
-         given={R.},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=SF}{%
-         family={Shi},
-         familyi={S\bibinitperiod},
-         given={F.G.},
-         giveni={F\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{ZRSF1}
-    \strng{fullhash}{ZRSF1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{Z}
-    \field{sortinithash}{Z}
-    \verb{doi}
-    \verb 10.1109/TADVP.2004.825434
-    \endverb
-    \field{issn}{1521-3323}
-    \field{number}{1}
-    \field{pages}{173\bibrangedash 178}
-    \field{title}{{A Novel Algorithm for Fiber-Optic Alignment Automation}}
-    \verb{url}
-    \verb http://ieeexplore.ieee.org/document/1288283/
-    \endverb
-    \field{volume}{27}
-    \field{journaltitle}{IEEE Transactions on Advanced Packaging}
-    \field{year}{2004}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-\enddatalist
-\endinput
+\bibitem{Schuler1923}
+\hrefCMSnoop {} {M.~Schuler, ``{Die St{\"{o}}rung von Pendel und
+  Kreiselapparaten durch die Beschleunigung des Fahrzeuges}'',} \textit{
+  Physikalische Zeitschrift} \textbf{ 24} (1923), no.~16,.
+
+\end{thebibliography}\endgroup

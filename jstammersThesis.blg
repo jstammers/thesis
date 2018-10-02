@@ -1,7 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: jstammersThesis.aux
-The style file: biblatex.bst
 A level-1 auxiliary file: frontmatter.aux
 A level-1 auxiliary file: introduction.aux
 A level-1 auxiliary file: theory.aux
@@ -13,66 +12,51 @@ A level-1 auxiliary file: interferometry.aux
 A level-1 auxiliary file: conclusion.aux
 A level-1 auxiliary file: appendices.aux
 A level-1 auxiliary file: backmatter.aux
-Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=20001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 12506 items from 5000.
-Database file #1: jstammersThesis-blx.bib
-Database file #2: Thesis.bib
+The style file: lucas_unsrt.bst
+Database file #1: Thesis.bib
+Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "M2_manual"
-Biblatex version: 3.8
-Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 53 entries,
-            6268 wiz_defined-function locations,
-            1692 strings with 32881 characters,
-and the built_in function-call counts, 335917 in all, are:
-= -- 22955
-> -- 6115
-< -- 1410
-+ -- 9118
-- -- 2844
-* -- 26686
-:= -- 35657
-add.period$ -- 0
-call.type$ -- 53
-change.case$ -- 562
-chr.to.int$ -- 87
-cite$ -- 104
-duplicate$ -- 37449
-empty$ -- 30903
-format.name$ -- 4036
-if$ -- 66674
+Warning--empty year in Levine
+Warning--empty publisher in Brink1968
+You've used 52 entries,
+            2517 wiz_defined-function locations,
+            1076 strings with 17720 characters,
+and the built_in function-call counts, 17828 in all, are:
+= -- 1810
+> -- 659
+< -- 0
++ -- 228
+- -- 176
+* -- 1478
+:= -- 2371
+add.period$ -- 58
+call.type$ -- 52
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 54
+duplicate$ -- 1018
+empty$ -- 1714
+format.name$ -- 117
+if$ -- 4511
 int.to.chr$ -- 0
-int.to.str$ -- 108
-missing$ -- 0
-newline$ -- 2393
-num.names$ -- 2164
-pop$ -- 18121
+int.to.str$ -- 52
+missing$ -- 143
+newline$ -- 169
+num.names$ -- 51
+pop$ -- 311
 preamble$ -- 1
-purify$ -- 941
+purify$ -- 0
 quote$ -- 0
-skip$ -- 8617
+skip$ -- 652
 stack$ -- 0
-substring$ -- 39089
-swap$ -- 9484
-text.length$ -- 1497
-text.prefix$ -- 94
-top$ -- 1
-type$ -- 1788
-warning$ -- 0
-while$ -- 4625
-width$ -- 0
-write$ -- 2341
-(There was 1 warning)
+substring$ -- 960
+swap$ -- 439
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 146
+width$ -- 54
+write$ -- 602
+(There were 4 warnings)

@@ -392,14 +392,25 @@ is given by
 for an initial state $\ket{\psi_0}$. This expression is valid for
 arbitrary pulses and is useful when considering a
 distribution of intensities and Doppler detunings across an atomic
-ensemble. In the case of perfect pulse areas to realise a
-$(\pi/2-\pi-\pi/2)$ interferometer and zero
+ensemble. For instance, the occupation probability for $\ket{2}$ is
+given by 
+\begin{equation}
+  \label{eq:occ_prob}
+  P_{\ket{2}} = |\braket{2|\psi}|^2
+\end{equation}
+It is also useful to define the fringe contrast -- the difference
+between the maximum and minimum of $P_{\ket{2}}$
+\begin{equation}
+  \label{eq:fringe_contrast}
+  C = \max_{\Delta \Phi} P_{\ket{2}} -  \min_{\Delta \Phi} P_{\ket{2}} 
+\end{equation}
+which ranges between 0 and 1. This fringe contrast implicitly depends
+on the pulse area and detuning of each pulse. In the case of perfect pulse areas and zero
 detuning with the initial state $\ket{\psi_0} =
-\ket{1}$, \EquationRef{eq:general_state} yields the following
-occupation probability for $\ket{2}$
+\ket{1}$, \EquationRef{eq:occ_prob} yields the following
 \begin{align}
   \label{eq:state_simp}
-  P_{\ket{2}} &= \sin \left(\frac{1}{2} (\phi_1-2
+  P'_{\ket{2}} &= \sin \left(\frac{1}{2} (\phi_1-2
   \phi_2+\phi_3)\right)^2 \nonumber \\
   &= \sin\left(\frac{\Delta \Phi}{2}\right)
 \end{align}
@@ -421,7 +432,6 @@ position of the centre-of-mass at each pulse for $\textbf{x}$.
 %frequencies. In this case, an atom will absorb a photon from one light
 %field and emit into the other. If the two fields are
 %counter-propagating, this has the effect 
-
 \subsection{Extending to a Real Atomic System}
 
 In a real atomic system, there are many intermediate states which

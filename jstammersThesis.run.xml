@@ -41,11 +41,10 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="1">
+  <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>jstammersThesis.aux</file>
-      <file>jstammersThesis-blx.bib</file>
+      <file>jstammersThesis.bcf</file>
     </provides>
     <requires type="dynamic">
       <file>jstammersThesis.bbl</file>
@@ -53,7 +52,6 @@
     <requires type="static">
       <file>blx-dm.def</file>
       <file>blx-compat.def</file>
-      <file>blx-bibtex.def</file>
       <file>biblatex.def</file>
       <file>standard.bbx</file>
       <file>numeric.bbx</file>
@@ -62,15 +60,14 @@
       <file>english.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="1">
-    <generic>bibtex</generic>
+  <external package="biblatex" priority="5" active="0">
+    <generic>biber</generic>
     <cmdline>
-      <binary>bibtex</binary>
-      <option>-min-crossrefs 2</option>
+      <binary>biber</binary>
       <infile>jstammersThesis</infile>
     </cmdline>
     <input>
-      <file>jstammersThesis.aux</file>
+      <file>jstammersThesis.bcf</file>
     </input>
     <output>
       <file>jstammersThesis.bbl</file>
@@ -79,14 +76,10 @@
       <file>jstammersThesis.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>jstammersThesis.aux</file>
-      <file>jstammersThesis-blx.bib</file>
+      <file>jstammersThesis.bcf</file>
     </requires>
     <requires type="editable">
       <file>Thesis.bib</file>
-    </requires>
-    <requires type="static">
-      <file>biblatex.bst</file>
     </requires>
   </external>
 </requests>

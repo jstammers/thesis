@@ -58,7 +58,7 @@ where \(\sigma_c\) is the radial width of the atom cloud.
 The fringe contrast for a single atom is denoted by $c$. This is
 defined in \EquationRef{eq:fringe_contrast}. The arguments refer to
 the Rabi frequency during each pulse. The duration of each pulse is
-such that an atom at the centre-of-mass $r_i$ has a $\pi/2$ or $pi$
+such that an atom at the centre-of-mass $r_i$ has a $\pi/2$ or $\pi$
 rotation. The atom cloud is initially at the
 centre of the laser and falling under gravity so that centre-of-mass coordinates are
 \(\left(0, -\frac{1}{2}g T^2, -2 g T^2\right)\) respectively. It is

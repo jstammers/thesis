@@ -56,23 +56,32 @@ of modern society. Early interferometers relied on driving microwave
 frequency transitions because the contemporary laser technology did
 not have the frequency stability or linewidths necessary to maintain coherence
 between the atomic states. It was later
-suggested by Christian Bord\'e~\cite{Borde1989} that using the larger momentum
-recoil of optical frequency transitions would enable measurements of
-rotation or acceleration using the resulting phase shift between the
-two paths of the interferometer.\par\noindent
+suggested that interference of matter-waves could be used to make
+sensitive measurements of accelerations and
+rotations~\cite{Clauser1988}. This sensitivity is increased using the large momentum
+recoil of optical frequency transitions to make an interferometer
+using successive pulses of light~\cite{Borde1989}.\par\noindent
 Kasevich and Chu demonstrated inertial force sensing using atom
 interferometry with a measurement of gravitational acceleration~\cite{Kasevich1991,Kasevich1992}. 
 Subsequent work showed that atom interferometers were also able to
-measure rotations~\cite{Durfee2006}. As inertial sensors, these
+measure rotations~\cite{Durfee2006,Dubetsky2006}. As inertial sensors, these
 experiments showed comparable short-term sensitivities to their
 classical counterparts. By contrast, their long-term stability was
 noteworthy. This is due to the frequency-stability of the atomic
 transition and in the lasers used to stimulate it. Again, this is
 analogous to atomic clock systems which are able to reach very low
-fractional uncertainties by integrating over long timescales. 
+fractional uncertainties by integrating over long
+timescales~\cite{Borde2002}. 
 \section{Application to Inertial Navigation}
-This long-term stability is of great practical interest for inertial
-navigation systems. These are systems which measure the position of a
+Mobile applications of atom interferometry as inertial sensors have
+demonstrated both high sensitivity and long-term stability outside of
+laboratory environments~\cite{Barrett2013}. Experiments during the
+parabolic flight of an aircraft have also demonstrated measurements of
+acceleration around \sivalue{0}{\g} and
+\sivalue{1}{\g}~\cite{Nyman2006a,Geiger2011a}. 
+The ability to precisely measure of a range of accelerations over long durations
+is of great practical interest for inertial
+navigation systems. These measure the position of a
 moving body using successive measurements of its acceleration and
 rotation, known as dead reckoning. The accuracy of this method depends
 on the intrinsic noise of each sensor, as well as their bias. If the
@@ -86,7 +95,7 @@ sensor drifts over time due to physical effects such as temperature
 variation and mechanical strain. This bias instability means that
 inertial navigation systems require regular re-calibration and an
 external method of correcting for the position error such as
-\ac{gnss}. 
+\ac{gnss}~\cite{Wen2016}. 
 \par\noindent
 One drawback of atom interferometers is the interrogation time needed
 between each laser pulse. This leads to a sensitivity bandwidth of the order of
@@ -99,10 +108,11 @@ have been reported, but these are at the cost of a reduction in sensitivity.
 A further issue is the measurement dead time as a result of the time
 required to prepare a cold ensemble of atoms. During this preparation time, the system
 does not respond to any acceleration or rotation acting on the atoms.
-It has been suggested that this shortcoming can be counteracted using a
-conventional mechanical accelerometer~\cite{JEKELI2005} or by
+It has been suggested that this shortcoming can be counteracted by
+combining the interferometer with a mechanical accelerometer~\cite{JEKELI2005} or by
 interleaving multiple cold atom interferometers. The latter of these
-has been recently demonstrated in a gyroscope~\cite{Dutta2016}.
+has been demonstrated in a gyroscope~\cite{Dutta2016}, but is
+technically more challenging. 
 \par\noindent
 Hybridising an atom interferometer with a classical
 sensor results in a composite system which aims for both long-term
@@ -110,9 +120,9 @@ stability and high bandwidth. Indeed, a secondary
 measurement is needed to determine the interferometer fringe order and hence obtain
 an absolute value of acceleration. This is of particular importance
 for inertial navigation, where the range of acceleration is far
-greater than the fringe period~\cite{Merlet2009}. This auxillary sensor can also
+greater than the fringe period~\cite{Merlet2009}. This auxiliary sensor can also
 improve the sensitivity of the interferometer in high vibration
-enviroments~\cite{Lautier2014}, which is a significant source of phase
+environments~\cite{Lautier2014}, which is a significant source of phase
 noise. Measuring these vibrations provides a method of filtering their
 effect from the interferometer signal. 
 %\section{Inertial Sensing with Atom Interferometry}
@@ -176,7 +186,7 @@ effect from the interferometer signal.
 %problem can be alleviated by regularly correcting for the position
 %error using an external positioning system, such as \ac{gnss}, and
 %re-calibrating the sensors.
-
+\nocite{Dimopoulos2008}
 \section{Aims}
 This aim of this project was to investigate the use of atom
 interferometry in the context of inertial navigation by measuring

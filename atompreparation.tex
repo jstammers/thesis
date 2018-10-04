@@ -20,7 +20,6 @@ atoms in \(\ket{F=1}\) and \(\ket{F=2}\) is presented
 in~\SectionRef{sec:atom_detection}.
 
 \section{Cooling in Optical Molasses}\label{sec:optical_molasses}
-{\textbf{Introduce motivation here}}
 A low thermal velocity means that the atoms can be interrogated for a
 longer time and in the case of atom interferometry, leads to a more
 sensitive measurement of acceleration. In addition, the thermal
@@ -31,7 +30,10 @@ than desired, so further cooling is required before a strong
 interferometer signal can be achieved. Temperatures well below that of
 the Doppler limit (\sivalue{146}{\micro\kelvin} for \ac{rb87}) can be
 reached using the dissipative force that acts on an atom travelling
-through a spatially varying electric field. 
+through a spatially varying electric field~\cite{Salomon1990}. In what follows, the principles of
+sub-Doppler cooling using polarisation gradients will not be discussed
+in detail. Further details can be found
+elsewhere~\cite{Dalibard1989,Berg-Sorensent1992}. 
 
 \par\noindent
 This section describes the work towards to cooling and launching the
@@ -47,7 +49,18 @@ measured using a ballistic expansion method.
 
 
 \subsection{Motivation for Launching}\label{subsec:launching}
-As previously discussed in~\SectionRef{sec:theory_double_int}, there are two pairs of counter-propagating beams which can drive Raman transitions between the two hyperfine ground states. If an atom can be stimulated by both pairs, then the additional trajectories this introduces do not interfere, resulting in a reduction in the fringe visibility. This problem can be avoided by using the fact that the Raman transition is Doppler-sensitive to ensure that the atoms are only driven by one pair of beams. Each pair has an opposite Doppler shift \(\pm \omega_D = \pm \keff.\textbf{v}\) and so their transition frequencies are separated by \(2\omega_D\). Therefore, the atoms are launched so that their centre-of-mass velocity along the Raman axis is large enough to lift the degeneracy of the two Raman transitions. 
+As previously discussed in~\SectionRef{sec:theory_double_int}, there
+are two pairs of counter-propagating beams which can drive Raman
+transitions between the two hyperfine ground states. If an atom can be
+stimulated by both pairs, then the additional trajectories this
+introduces do not interfere, resulting in a reduction in the fringe
+visibility. This problem can be avoided by using the fact that the
+Raman transition is Doppler-sensitive to ensure that the atoms are
+only driven by one pair of beams. Each pair has an opposite Doppler
+shift \(\pm \omega_D = \pm \keff.\textbf{v}\) and so their transition
+frequencies are separated by \(2\omega_D\). Therefore, the atoms are
+launched so that their centre-of-mass velocity along the Raman axis is
+large enough to lift the degeneracy of the two Raman transitions. 
 
 %The light used to drive Raman transitions during the exeperiment is launched into the chamber on two orthogonal axes of a \ac{pm} fibre. These are retro-reflected to produce two counter-propagating beams that are orthogonally polarised to the incoming ones. In the absence of \(\pi\)-polarised light, only \((\sigma^+-\sigma^+)\) or \((\sigma^--\sigma^-)\) pairs of polarised beams can drive Raman transitions. If the incoming beams are circularly polarised, then this can occur using counter-propagating pairs of beams which impart momentum \(\pm \hbar \keff\) to an atom. If an atom can be driven by either pair at each interferometer pulse, this results in two interferometer paths, as well as additional trajectories which do not interfere and hence cause a reduction in fringe visibility.
 \subsection{Frequency and Power Control}\label{subsec:molasses_control}
@@ -56,7 +69,7 @@ stage of the experiment is shown in \FigureRef{fig:molasses_timing}.
 After the atoms are loaded into the \ac{mot}, they are released by
 switching off the quadrupole field. Once this field has decayed away,
 the frequency and intensity of the cooling light are ramped
-adiabatically. The frequency of the cooling light is ramped to
+adiabatically~\cite{Molmer1990}. The frequency of the cooling light is ramped to
 -25\(\Gamma\) over \sivalue{1.4}{\milli\second}. Since the repump
 light is generated using an \ac{eom}, the modulation frequency is
 simultaneously ramped up to keep this light resonant with the
@@ -90,7 +103,22 @@ imaged using the camera.}
 \end{figure}
 \subsection{Launching in a Moving Molasses}\label{subsec:moving_molasses}
 
-The configuration for launching atoms along the Raman axis is shown in \FigureRef{fig:moving_molasses}. The forward-propagating beams are blue-detuned by \(+\delta_l\) and the backward-propagating ones are red-detuned by \(-\delta_l\), so that atoms with a velocity along the beam axis of \(\vec{v} = \delta_l \lambda\) are+ resonant with both beams. The frequency of each beam is ramped from the initial value by varying the modulation frequency of its \ac{aom}. This ramp occurs slowly to ensure the atoms are adiabatically accelerated to the resonant velocity, minimising excess heating of the atoms. As there is no pair of \ac{mot} beams along the axis of the Raman beams, the \(\vec{x}\) and \(\vec{y}\) \ac{mot} beams, whose axes are nominally at 45\(^{\circ}\) to the Raman axis, are used to launch the atoms. By controlling the power and alignment of each beam, the net velocity on the atoms will be along the Raman axis. If the detuning of both pairs of beams is the same, then the velocity along the Raman axis is given by \(\vec{v_r} = \sqrt{2} \delta_l \lambda\)~\nocite{Ohshima1995}.
+The configuration for launching atoms along the Raman axis is shown in
+\FigureRef{fig:moving_molasses}. The forward-propagating beams are
+blue-detuned by \(+\delta_l\) and the backward-propagating ones are
+red-detuned by \(-\delta_l\), so that atoms with a velocity along the
+beam axis of \(\vec{v} = \delta_l \lambda\) are+ resonant with both
+beams. The frequency of each beam is ramped from the initial value by
+varying the modulation frequency of its \ac{aom}. This ramp occurs
+slowly to ensure the atoms are adiabatically accelerated to the
+resonant velocity, minimising excess heating of the atoms. As there is
+no pair of \ac{mot} beams along the axis of the Raman beams, the
+\(\vec{x}\) and \(\vec{y}\) \ac{mot} beams, whose axes are nominally
+at 45\(^{\circ}\) to the Raman axis, are used to launch the atoms. By
+controlling the power and alignment of each beam, the net velocity on
+the atoms will be along the Raman axis. If the detuning of both pairs
+of beams is the same, then the velocity along the Raman axis is given
+by \(\vec{v_r} = \sqrt{2} \delta_l \lambda\)~\cite{Ohshima1995}.
 \begin{figure}[!htbp]
     \centering
     \def\svgwidth{0.6\textwidth}\input{moving_molasses.pdf_tex}
@@ -279,7 +307,7 @@ is aligned with the wavevector of the light \cite{VanderStraten1993}.
 When the field is aligned at an arbitrary angle an additional
 resonance at \(v_\text{res}^{(2)} = - \mu_B g_F B/2\hbar k\) is
 present, due to additional \(\left(\sigma^{\pm}-\pi\right)\)
-transitions~\cite{Chang2002}. A residual field along the Raman axis of
+transitions~\cite{Chang2002,Walhout1992}. A residual field along the Raman axis of
 \sivalue{20}{\milli\gauss} would shift the resonance along \(\vec{x}\)
 and \(\vec{y}\) by \sivalue{1.09}{\centi\metre\per\second}
 corresponding to a velocity of \sivalue{1.54}{\centi\metre\per\second}
@@ -518,7 +546,7 @@ close to \(f_\text{hfs}\) is applied.
 \subsection{Blow-Away}\label{subsec:blow_away}
 After the atoms populate \(\ket{2,0}\), a velocity-selective Raman
 \(\pi\)-pulse is applied to transfer a fraction of those back into
-\(\ket{1,0}\). This step is discussed in detail
+\(\ket{1,0}\)~\cite{Kasevich1991a}. This step is discussed in detail
 in~\SectionRef{subsec:vel_select}. The velocity-selective Raman pulse
 transfers 4\% the atoms
 back to \(\ket{1,0}\). The remaining need to be removed, otherwise

@@ -17,7 +17,11 @@ interference and an analysis of its sensitivity to accelerations is
 given in~\SectionRef{sec:atomint_accelerations}.
 \section{The M-Squared Laser System}\label{sec:msquared_laser} 
   This section describes the laser system manufactured by \textit{M-Squared
-  Lasers}, which is used to drive Raman transitions. An overview of the laser
+  Lasers}, which is used to drive Raman transitions. Essential to this
+  is a \ac{pll} which controls the phase difference of the two lasers.
+  A low interferometer phase noise correspondingly requires low phase
+  noise of the local oscillator used for the
+  \ac{pll}~\cite{Lautier2014b}\nocite{Marino2008}. An overview of the laser
   system can be found in~\SectionRef{subsec:msquared_overview}, which includes
   the techniques used to externally communicate with the laser's ICE-BLOC
   control modules. The control of the frequency and phase-lock is then described
@@ -135,7 +139,7 @@ number and interferometer phase
 in~\SectionRef{subsec:phase_measurement}.
 \subsection{Optical Setup}\label{subsec:optical_setup}
 A precise measurement of the number of atoms requires that the atom shot noise
-is the dominant source of uncertainty. The CCD used in
+is the dominant source of uncertainty~\cite{Pappa2011}. The CCD used in
 previous stages of the experiment is not sensitive enough for this as there is a
 significant amount of noise in reading out the charge collected at each pixel.
 Instead, a more sensitive photodiode is used to detect the atoms. With a
@@ -435,7 +439,7 @@ the residual atoms.
   \centering
   \includegraphics[width=0.7\textwidth]{contrast_bias}
   \caption[Interferometer contrast for an increasing
-  resudual atoms ratio]{Interferometer contrast for an increasing
+  residual atoms ratio]{Interferometer contrast for an increasing
     residual atom ratio.
     The black dashed line indicates the reduction expected when no
     atoms are lost from \(\ket{F=2}\). The dot-dashed line indicates
@@ -564,10 +568,11 @@ Doppler-broadened lineshape for each of the counter-propagating
 profiles.}
   \label{fig:raman_spectrum_inset}
 \end{figure}
+
 \subsection{Cancelling the Differential ac Stark
 Shift}\label{subsec:light_shift}
 It is worth considering the effects of ac Stark shifts on the atom
-interferometer. Firstly, they are intrinsically related to the
+interferometer~\cite{Gauguet2008}. Firstly, they are intrinsically related to the
 effective Rabi frequency and as such, cannot be avoided. The average
 ac Stark shift \(\Omega^\text{ac}_\text{avg} = (\Omega_1^\text{ac} +
 \Omega_2^\text{ac})/2 \) (see~\SectionRef{sec:theory_raman} for more
@@ -868,7 +873,10 @@ identified sources and their estimated effects on acceleration
 measurements are shown in~\TableRef{tab:noise_sources}. The largest
 contributor comes from vibrations of the retro-reflecting mirror.
 Other noise sources, such as magnetic field gradients, laser intensity
-noise and rotations have not yet been characterised.
+noise and rotations have not yet been characterised. Higher-order
+phase shifts due to inertial effects, such as the Coriolis force and
+gravity gradients, have been
+studied elsewhere\cite{Bongs2006}.
 \begin{table}[htpb!]
   \centering
   \begin{tabular}{c|c|c}
@@ -984,10 +992,10 @@ level for an integration time \(tau_D\) is given by
 %bandwidth.   
 \subsubsection{Photodiode Technical Noise}
 Technical noise in the detector typically arises from multiple electronic processes -- such as Johnson noise and shot noise in
-the current -- but it is not necessary to consider them independently
-in the following discussion. The technical noise of the detector can
+the current~\cite{Howard2002}. The technical noise of the detector can
 be estimated by measuring the output voltage when no light is
-collected. A plot of the power spectral density of the photodiode is shown in~\FigureRef{fig:pd_psd} taken
+collected. A plot of the power spectral density of the photodiode is
+shown in~\FigureRef{fig:noise_source_psd} taken
 with a sampling frequency of \sivalue{200}{\kilo\hertz}. The
 photodiode was covered and the output voltage was sampled for
 \sivalue{2}{\second}. The power spectral density has been calculated
@@ -1059,7 +1067,8 @@ still other sources which introduce interferometer phase noise. Generally speaki
 the interferometer phase which is independent of the forces acting on
 the atoms. Two dominant sources of phase noise are vibrations of the
 retro-reflecting mirror and laser phase noise, i.e. fluctuations in
-the relative phase between the two Raman light fields.
+the relative phase between the two Raman light
+fields~\cite{Cheinet2008}.
 \par\noindent
 The sensitivity function~\cite{Dick1987}
 defines the instantaneous shift of the
@@ -1091,7 +1100,7 @@ the centre of the \(\pi\) pulse, the sensitivity function is
   \end{cases}
 \label{eq:sensitivity_interferometer}
 \end{equation}
-for a pulse separation time \(T\). 
+for a pulse separation time \(T\).  
 \subsection{Influence of Laser Phase Noise}\label{subsec:laser_phase}
 The response of the interferometer phase to laser phase noise is
 best understood in the frequency domain. In particular, the inverse
@@ -1192,7 +1201,7 @@ integration time was measured by M-Squared during installation of the
 laser system. A plot of the Allan deviation is shown
 in~\FigureRef{fig:allan_dev_m2}. At an interferometer pulse
 separation of
-\(T = \)\sivalue{25}{\milli\second}, the phase noise in the Raman
+\(T = \) \sivalue{25}{\milli\second}, the phase noise in the Raman
 laser results in an uncertainty in the interferometer phase of
 \sivalue{10}{\milli\radian}. 
 \begin{figure}[htpb!]
@@ -1245,8 +1254,9 @@ Equivalent definitions for the variance and Allan variance are
 obtained using this and the acceleration noise spectral density
 \(S_a(2\pi f)\) as the respective definitions
 in~\EquationRef{eq:phase_noise_psd}
-and~\EquationRef{eq:avar_transfer}. The transfer function for
-acceleration noise is shown in~\FigureRef{fig:transfer_func_acc}. The
+and~\EquationRef{eq:avar_transfer}. \FigureRef{fig:transfer_func_acc}
+shows the transfer function for
+acceleration noise is shown in. The
 gain is largest at low frequencies and approximates a second-order
 filter at higher frequencies.
 \begin{figure}[htpb]
@@ -1263,26 +1273,24 @@ vibrations. Acceleration noise at frequencies greater than \(1/2T\)
 will mostly average out, contributing little to an overall phase.
 Precise measurements of the interferometer phase rely on reducing the
 low frequency noise. The vibration of the retro-reflecting mirror is
-reduced by passively isolated it from its environment. The
-chamber is mounted on a layer of Sorbothane to dissipate the
+reduced by passively isolating it from its environment. The
+chamber is mounted on a layer of Sorbothane to dissipate
 vibrations from the ground. This isolation is enhanced by a
 pneumatic suspension system between the optical table and its
 supporting legs. 
 \par\noindent
-A comparison of the acceleration noise spectral density with and
+\FigureRef{fig:vibration_spectrum} shows a comparison of the acceleration noise spectral density with and
 without the pneumatic suspension, measured using
-the accelerometer mounted behind the retro-reflecting mirror, is shown
-in~\FigureRef{fig:vibration_spectrum}. The suspension acts as a
+the accelerometer mounted behind the retro-reflecting mirror. The suspension acts as a
 low-pass filter and reduces the power within the
 10-\sivalue{200}{\hertz} bandwidth, which is aliased into the lower
 frequency band. For an interferometer pulse separation of \(T =
-\)\sivalue{25}{\ms}, the
-vibration phase noise using~\EquationRef{eq:avar_transfer} is \(\sigma_\Phi = \)\sivalue{270}{\milli\radian}. Without
-floating the table, this becomes \sivalue{7}{\radian}. With the
-vibration isolation systems currently used, this remains the dominant
-source of phase noise. More sophisticated methods of damping
-low-frequency vibrations are required to improve the interferometer's
-acceleration sensitivity. 
+\) \sivalue{25}{\ms}, the
+vibration phase noise using~\EquationRef{eq:avar_transfer} is \(\sigma_\Phi =\) \sivalue{270}{\milli\radian}. Without
+floating the table, this becomes \sivalue{7}{\radian}. This is the dominant
+source of phase noise using the current vibration isolation systems.
+This phase noise can be reduced using more sophisticated method of damping vibrations, such as an active
+isolation system~\cite{Zhou2012}.
 \begin{figure}[htpb!]
   \centering
   \includegraphics[width=0.7\textwidth]{vibration_spectrum.pdf}
@@ -1317,10 +1325,14 @@ in~\SectionRef{sec:vibration_senstivity}. This section concludes with
 a measurement of the Allan variance to determine the long-term
 stability in~\SectionRef{subsec:stability}.
 \subsection{Fringe Calibration}\label{sec:fringe_cal}
-Without perfect fringe visibility, the interferometer signal must
-first be calibrated to infer the phase difference~\cite{Peters2001}. This is done by
-varying the phase difference between the two Raman lasers for the
-middle \(\pi\) pulse. Since the interferometer phase is \(\Delta \Phi = \phi_1 - 2\phi_2
+With spatial resolution of the atom cloud, it is possible to resolve
+the fringe contrast from a single shot~\cite{Sugarbaker2013}. Of
+course, this is not possible using a photodiode, so the fringe
+contrast is measured using successive experiment
+cycles~\cite{Peters2001}. 
+The interferometer phase difference $\Delta \Phi$ is controlled 
+by varying the phase difference between the two Raman lasers for the
+middle \(\pi\) pulse. Since \(\Delta \Phi = \phi_1 - 2\phi_2
 +\phi_3\), varying \(\phi_2\) induces the largest change in
 \(\Delta\Phi\). \FigureRef{fig:fringe_examp} shows an interference fringe obtained in this
 manner. In this instance, the contrast is \(C = 0.055\) and the mean
@@ -1338,7 +1350,8 @@ shaded region indicates the 95\% confidence band. }
   \label{fig:fringe_examp}
 \end{figure}
 
-\subsection{Correcting for Vibration Noise}\label{sec:vibration_senstivity}
+\subsection{Correcting for Vibration
+Noise}\label{subsec:vibration_sensitivity}
 Vibrations of the retro-reflecting mirror are a significant source of
 phase noise, which limits the sensitivity of the interferometer to
 accelerations. This is particularly apparent when the vibration noise
@@ -1424,13 +1437,13 @@ from the interferometer with the acceleration inferred from the fit
 residuals
 $\phi_\textnormal{res}$. The latter has a standard deviation of
 $\sigma_a^{(r)} = $ \sivalue{10.4}{\um \s\tothe{-2}}. This method is
-able to filter the effects of vibration from the interfereometer
+able to filter the effects of vibration from the interferometer
 signal. However, the non-linear least squares method assumes that
-there is no error in the indepenedent variable
+there is no error in the independent variable
 $\tilde{V}_\textnormal{vib}$. This introduces a random
 error to $\phi_\textnormal{res}$ from the noise intrinsic to the MEMS
-accelerometer. A weighted least-squares fit~\cite{Macdonald1992} is
-able to account for errors in both variables. This requires an
+accelerometer. A weighted least-squares fit is
+able to account for errors in both variables~\cite{Macdonald1992}. This requires an
 accurate estimate of the weights for each measurement of
 $\tilde{V}_\textnormal{vib}$ and $P_{\ket{F=2}}$ to avoid inaccurate
 parameter estimates.
@@ -1454,7 +1467,9 @@ be determined from the Allan deviation. A comparison of the
 Allan deviation in the presence of high and low vibrations is shown
 in~\FigureRef{fig:adev_comparison}. In both instances, the sensitivity
 to accelerations is improved by correcting for the vibration-induced
-phase. Under high vibration (\FigureRef{fig:high_vib_adev}), the Allan deviation has a minimum value
+phase. \FigureRef{fig:high_vib_adev} shows the Allan deviation
+measured under high vibrations (without floating the optical table).
+The Allan deviation has a minimum value
 of around \sivalue{3e-6}{\m\s\tothe{-2}} after integrating for
 \sivalue{35}{\s}. This is a bias instability, i.e. fluctuations in
 the bias. This value is obtained by subtracting the vibration
@@ -1462,9 +1477,11 @@ phase, estimated from the MEMS accelerometer, from the interferometer
 phase. There is additional noise in the MEMS
 accelerometer which leads to this bias instability. At short
 integration times, the Allan deviation has a $\tau^{-1}$
-dependence. This is characteristic of Flicker noise~\cite{Masry1991}
-which exhibits stronger correlations than other random processes, such
-as white noise.  
+dependence. It is likely that this arises from additional low
+frequency noise from the MEMS signal~\cite{Meunier2015, Fang2016}. This is
+well-correlated between successive measurements, where the dead time
+between them means that full dynamics of the system are not captured. In the context of
+atomic clocks, this is referred to as the Dick effect~\cite{Dick1990}.  
 \par\noindent
 \FigureRef{fig:low_vib_adev} shows the Allan devation in the case of
 smaller vibrations. In contrast to the previous case, the signal

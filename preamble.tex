@@ -10,7 +10,7 @@
 \usepackage{verbatim}
 \usepackage{tikz}
 \usepackage{multirow}
-%\usepackage[backend=biber,url=false]{biblatex}
+%\usepackage[backend=biber,url=false, defernumbers=true]{biblatex}
 \usepackage{cite}
 \usetikzlibrary{external}% activate!
 \usepackage{tikz-timing}
@@ -20,6 +20,8 @@
 \setmainmatterspacing{double}
 %%% Useful Commands %%%
 
+%\DeclareBibliographyCategory{cited}
+%\AtEveryCitekey{\addtocategory{cited}{\thefield{entrykey}}}
 \immediate\write18{perl texcount.pl \jobname.tex -1 -sum=1 -merge -out=\jobname.sum}
 \newcommand\wordcount{\input{\jobname.sum}}
 %\addbibresource{Thesis.bib}

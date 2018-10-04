@@ -1,42 +1,22 @@
 \chapter{\Muquans Laser Serial
     Commands}\label{app:serial_commands}
-% \chapter{Laser Systems}\label{chap:setup}
-% This chapter provides a description of the hardware that makes up the experiment. Over the course of the project, the complexity of the experiment necessarily increased. The setup is presented in a bottom-up approach, starting from the most fundamental components, to provide a clear overview of the system. \\
-
-% \verysubsection{To-Do}
-% \begin{itemize}\item Figures describing each of the lasers
-%     \item Describe 3D and 2D MOT setups  
-%     \item Imaging systems
-%     \item Microwave synthesisers
-%     \item Raman Assembly
-%     \item MOT light distribution
-% \end{itemize}
-% \section{Chapter Overview}\label{sec:setup_overview}
-% The first two sections describe the two commercial laser systems used in this experiment. The \Muquans\ laser system which generates the light used for cooling and repump in the 2D and 3D \acp{mots}, referred to as the \acs{mot} light. The design and operation of this laser is given in \SectionRef{sec:setup_muquans}. A secondary laser system, built by MSquared, is used to generate light to drive Raman transitions between two hyperfine ground states in \ac{rb87}\footnote{The \Muquans\ laser also has a pair of lasers designed for driving Raman transitions, but these are not used in this experiment. \SectionRef{sec:setup_msquared} gives an explanation for this.}, otherwise referred to as Raman light. This is described in \SectionRef{sec:setup_msquared}.This is followed by a description of the vacuum chamber in \SectionRef{sec:setup_chamber} which contains both the 2D \ac{mot} (\SectionRef{subsec:setup_2DMOT}) and the 3D \ac{mot} (\SectionRef{subsec:setup_3DMOT}).  
-
-% \section{The \Muquans\ Laser System}\label{sec:setup_muquans}
-% \verysubsection{To-Do}
-% \begin{itemize}
-%     \item Laser Schematic
-%     \item Plots of lock signals
-%     \item DDS Serial communication
-%     \item Power output, stability
-%     \item Ref for error signal generation by current modulation
-%     \item Move some of this to appendix
-% \end{itemize}
-
-% \subsection{Generating MOT light}
-% \subsection{Raman light}
-% \subsection{Real-time Frequency Control}
-% \section{The M-Squared Laser System}\label{sec:setup_msquared}
-% \verysubsection{To-Do}
-% \begin{itemize}
-%     \item Schematic
-%     \item Raman PLL phase-noise
-%     \item Laser Control
-%     \item DCS module
-% \end{itemize}
-% \subsection{Laser Specifications}
-% \subsection{The DCS Control Module}
-% \subsection{Frequency Control of the Raman Lasers}
-% \subsection{Controlling the Phase Difference}
+    \begin{table}[htpb]
+      \centering
+      \begin{tabular}{p{7cm}p{7cm}}%{|p{7cm}|p{7cm}|}
+    \toprule
+    \textbf{Message} & \textbf{Description} \\
+    \midule
+    \texttt{set\_freq <CHANNEL\_NAME> FREQ\_HZ} & sets the frequency of \texttt{CHANNEL\_NAME} \\
+    \texttt{set\_phase <CHANNEL\_NAME> PHASE\_RAD} & sets the phase of \texttt{CHANNEL\_NAME} \\
+    \texttt{sweep\_to <CHANNEL\_NAME> TO\_FREQ\_HZ DURATION\_SEC} & linearly sweeps \texttt{<CHANNEL\_NAME>} to the given frequency in the given time \\
+    \texttt{clear\_chirp} & stops the current Raman chip \\
+    \texttt{set\_chirp START\_FREQ\_HZ PHASE\_RAD STEP\_DURATION\_SEC SLOPE\_HZ\_PER\_SEC} & sets a chirp of the Raman laser with the given initial frequency phase, chirp duration and frequency gradient \\
+    \texttt{adjust\_phase\_in\_chirp\_mode PHASE\_RAD} & changes the phase during a Raman chirp \\
+    \texttt{ext\_update} & wait for an external TTL trigger before updating \\
+    \texttt{int\_update\_sw\_trig} & update using an internal software trigger (no TTL) \\
+    \bottomrule
+    \end{tabular}
+    \caption{Serial messages used to control the DDS in the \Muquans
+    laser.}
+    \label{fig:ddscomm}
+    \end{table}

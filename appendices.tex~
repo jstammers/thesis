@@ -1,48 +1,25 @@
-\chapter*{Acronyms}
-    \begin{acronym}
-        \acro{adc}[ADC]{Analogue-to-Digital Converter}
-        \acro{aom}[AOM]{Acousto-optic Modulator}
-        \acro{ccm}[CCM]{Centre for Cold Matter}
-        \acro{dac}[DAC]{Digital-to-Analogue Converter}
-        \acro{daq}[DAQ]{Data Acquisition}
-        \acro{dro}[DRO]{Dielectric Resonator Oscillator}
-        \acro{dds}[DDS]{Direct Digital Synthesiser}
-        \acro{ecdl}[ECDL]{External-Cavity Diode Laser}
-        \acro{edfa}[EDFA]{Erbium-Doped Fibre Amplifier}
-        \acro{eom}[EOM]{Electro-optic Modulator}
-        \acro{fpga}[FPGA]{Field-Programmable Gate Array}
-        \acro{gnss}[GNSS]{Global Navigation Satellite System}
-        \acro{hal}[HAL]{Hardware Abstraction Layer}
-        \acro{hwp}[HWP]{Half-wave Plate}
-        \acro{mfd}[MFD]{Mode Field Diameter}
-        \acro{mot}[MOT]{Magneto-optical Trap}
-        \acro{na}[NA]{Numerical Aperture}
-        \acro{neg}[NEG]{Non-evaporative Getter}
-        \acro{nep}[NEP]{noise-equivalent power}
-        \acro{ni}[NI]{National Instruments}
-        \acro{pbs}[PBS]{Polarising beam-splitter}
-        \acro{pll}[PLL]{Phase-Locked Loop}
-        \acro{pm}[PM]{Polarisation-Maintaining}
-        \acro{ppln}[PPLN]{Periodically-Poled Lithium Niobate}
-        \acro{qwp}[QWP]{Quarter-wave Plate}
-        \acro{sdlc}[SDLC]{sub-Doppler laser cooling}
-        \acro{spi}[SPI]{Serial Programming Interface}
-        \acro{ttl}[TTL]{Transistor-transistor Logic Circuit}
-        %\acro{rb85}[\(^{85}\)Rb]{Rubidium-85}
-        \acro{uhv}[UHV]{Ultra-high Vacuum}
-        \acro{vca}[VCA]{Voltage-Controlled Attenuator}
-        \acro{vco}[VCO]{Voltage-Controlled Oscillator}
-        \acro{vsr}[VSR]{Velocity-selective resonance}
-        \acrodefplural{aom}[AOMs]{Acousto-optic Modulators}
-        \acrodefplural{ecdl}[ECDLs]{External-Cavity Diode Lasers}
-        \acrodefplural{edfa}[EDFAs]{Erbium-Doped Fibre Amplifiers}
-        \acrodefplural{ttl}[TTLs]{Transistor-transistor Logic Circuits}
-        \acrodefplural{mots}[MOTs]{Magneto-optical Traps}
-        \acro{rb87}[\(^{87}\)Rb]{Rubidium-87}
-    \end{acronym}
-
 \chapter{\Muquans Laser Serial
     Commands}\label{app:serial_commands}
+    \begin{table}[htpb]
+      \centering
+      \begin{tabular}{p{7cm}p{7cm}}%{|p{7cm}|p{7cm}|}
+    \toprule
+    \textbf{Message} & \textbf{Description} \\
+    \midule
+    \texttt{set\_freq <CHANNEL\_NAME> FREQ\_HZ} & sets the frequency of \texttt{CHANNEL\_NAME} \\
+    \texttt{set\_phase <CHANNEL\_NAME> PHASE\_RAD} & sets the phase of \texttt{CHANNEL\_NAME} \\
+    \texttt{sweep\_to <CHANNEL\_NAME> TO\_FREQ\_HZ DURATION\_SEC} & linearly sweeps \texttt{<CHANNEL\_NAME>} to the given frequency in the given time \\
+    \texttt{clear\_chirp} & stops the current Raman chip \\
+    \texttt{set\_chirp START\_FREQ\_HZ PHASE\_RAD STEP\_DURATION\_SEC SLOPE\_HZ\_PER\_SEC} & sets a chirp of the Raman laser with the given initial frequency phase, chirp duration and frequency gradient \\
+    \texttt{adjust\_phase\_in\_chirp\_mode PHASE\_RAD} & changes the phase during a Raman chirp \\
+    \texttt{ext\_update} & wait for an external TTL trigger before updating \\
+    \texttt{int\_update\_sw\_trig} & update using an internal software trigger (no TTL) \\
+    \bottomrule
+    \end{tabular}
+    \caption{Serial messages used to control the DDS in the \Muquans
+    laser.}
+    \label{fig:ddscomm}
+    \end{table}
 % \chapter{Laser Systems}\label{chap:setup}
 % This chapter provides a description of the hardware that makes up the experiment. Over the course of the project, the complexity of the experiment necessarily increased. The setup is presented in a bottom-up approach, starting from the most fundamental components, to provide a clear overview of the system. \\
 

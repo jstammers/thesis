@@ -14,49 +14,54 @@ A level-1 auxiliary file: appendices.aux
 A level-1 auxiliary file: backmatter.aux
 The style file: lucas_unsrt.bst
 Database file #1: Thesis.bib
-Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "Han2006"
 Warning--I didn't find a database entry for "M2_manual"
 Warning--empty year in Levine
 Warning--empty publisher in Brink1968
-You've used 52 entries,
+Warning--empty author in accelStandard
+Warning--empty booktitle in Lawrence1998
+Warning--empty publisher in Lawrence1998
+Warning--empty publisher in RBerman1997
+Warning--empty publisher in Howard2002
+You've used 102 entries,
             2517 wiz_defined-function locations,
-            1076 strings with 17720 characters,
-and the built_in function-call counts, 17828 in all, are:
-= -- 1810
-> -- 659
+            1463 strings with 30393 characters,
+and the built_in function-call counts, 35293 in all, are:
+= -- 3533
+> -- 1416
 < -- 0
-+ -- 228
-- -- 176
-* -- 1478
-:= -- 2371
-add.period$ -- 58
-call.type$ -- 52
++ -- 504
+- -- 402
+* -- 2975
+:= -- 4751
+add.period$ -- 115
+call.type$ -- 102
 change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 54
-duplicate$ -- 1018
-empty$ -- 1714
-format.name$ -- 117
-if$ -- 4511
+cite$ -- 109
+duplicate$ -- 1986
+empty$ -- 3374
+format.name$ -- 238
+if$ -- 8896
 int.to.chr$ -- 0
-int.to.str$ -- 52
-missing$ -- 143
-newline$ -- 169
-num.names$ -- 51
-pop$ -- 311
+int.to.str$ -- 102
+missing$ -- 283
+newline$ -- 325
+num.names$ -- 100
+pop$ -- 610
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 652
+skip$ -- 1230
 stack$ -- 0
-substring$ -- 960
-swap$ -- 439
+substring$ -- 1816
+swap$ -- 838
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 146
-width$ -- 54
-write$ -- 602
-(There were 4 warnings)
+warning$ -- 7
+while$ -- 282
+width$ -- 105
+write$ -- 1193
+(There were 9 warnings)

@@ -135,6 +135,12 @@
   \textbf{ 78} (dec, 2008) 122002,
   \href{http://dx.doi.org/10.1103/PhysRevD.78.122002}{\doi{10.1103/PhysRevD.78.122002}}.
 
+\bibitem{accelStandard}
+\hrefCMSnoop {} {``{IEEE Standard Specification Format Guide and Test Procedure
+  for Linear, Single-Axis, Non-Gyroscopic Accelerometers}'',} \textit{ IEEE Std
+  1293-1998 (R2008)} (2011) 1--249,
+  \href{http://dx.doi.org/10.1109/IEEESTD.2011.5960745}{\doi{10.1109/IEEESTD.2011.5960745}}.
+
 \bibitem{Grynberg2011}
 \hrefCMSnoop {} {G.~Grynberg, A.~Aspect, and C.~Fabre, ``{Introduction to
   Quantum Optics: From the Semi-Classical Approach to Quantized Light}'',}
@@ -184,12 +190,6 @@ P.~{R Berman}, ``{Atom Interferometry}''.
 \bibitem{Steck2001}
 \href {http://www.steck.us/alkalidata/rubidium87numbers.pdf} {D.~Steck,
   ``{Rubidium 87 D Line Data}'',}.
-
-\bibitem{accelStandard}
-\hrefCMSnoop {} {``{IEEE Standard Specification Format Guide and Test Procedure
-  for Linear, Single-Axis, Non-Gyroscopic Accelerometers}'',} \textit{ IEEE Std
-  1293-1998 (R2008)} (2011) 1--249,
-  \href{http://dx.doi.org/10.1109/IEEESTD.2011.5960745}{\doi{10.1109/IEEESTD.2011.5960745}}.
 
 \bibitem{Gauguet2009}
 \hrefCMSnoop {} {A.~Gauguet, B.~Canuel, T.~L{\'{e}}v{\`{e}}que{ et~al.},

@@ -701,13 +701,14 @@ to a loss of coherence.}
 \label{fig:double_int_path}
 \end{figure}
 
-\section{note on units}
+\section{Note on Units}
 
-in subsequent chapters of this thesis, various non-si units are used for convenience. Their values are defined here:
+In subsequent chapters of this thesis, various non-SI units are used for convenience. Their values are defined here:
 \begin{itemize}
     \item 1 Gauss (G) \(= \sivalue{1e-4}{\tesla}\)
     \item g = \sivalue{9.80665}{\metre\per\second\squared} (as defined
       in~\cite{accelStandard})
+    \item $I_\textnormal{sat}$ = \sivalue{1.38}{\mW\per\cm\tothe{2}}
   \end{itemize}
 \section{Conclusion}
 This chapter has presented a theoretical overview of matter-wave

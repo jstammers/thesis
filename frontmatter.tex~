@@ -51,9 +51,9 @@ work.
     There are many people to whom I owe a great deal of thanks. 
 \end{acknowledgements}
 
-\begin{preface}
-    This thesis describes my research on various aspects of\ldots
-\end{preface}
+%\begin{preface}
+%    This thesis describes my research on various aspects of\ldots
+%\end{preface}
 
 %\begin{frontmatter}
     %   \dedication{For the World}
@@ -63,3 +63,5 @@ work.
 \tableofcontents
 \listoffigures
 \listoftables
+\frontquote{I may not have gone where I intended to go, but I think I
+have ended up where I needed to be}{Douglas Adams}

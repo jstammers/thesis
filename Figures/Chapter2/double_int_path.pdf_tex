@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{388.89614423bp}%
+    \setlength{\unitlength}{382.95938652bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,16 +50,16 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,1.14569935)%
+  \begin{picture}(1,1.16346034)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{double_int_path.pdf}}%
-    \put(0.3073003,0.72372341){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\ket{2,\textbf{p} + \hbar\keff}$\end{tabular}}}}%
-    \put(0.30423673,0.41515761){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\ket{2,\textbf{p} - \hbar\keff}$\end{tabular}}}}%
-    \put(0.11854641,0.53103034){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\ket{1,\textbf{p}}$\end{tabular}}}}%
-    \put(0.47670283,1.0115112){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\ket{1,\textbf{p} + 2\hbar\keff}$\end{tabular}}}}%
-    \put(0.47568583,0.14366992){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\ket{1,\textbf{p} - 2\hbar\keff}$\end{tabular}}}}%
-    \put(0.91433964,0.27766927){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\Delta\Phi = -\keff a T^2$\end{tabular}}}}%
-    \put(0.91433964,0.85237277){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\Delta\Phi = \keff a T^2$\end{tabular}}}}%
+    \put(0.26474844,0.7349428){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\ket{2,\textbf{p} + \hbar \keff}$\end{tabular}}}}%
+    \put(0.26163738,0.42159351){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\ket{2,\textbf{p} - \hbar \keff}$\end{tabular}}}}%
+    \put(0.12038416,0.5275121){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\ket{1,\textbf{p}}$\end{tabular}}}}%
+    \put(0.4323678,1.02719197){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\ket{1,\textbf{p} + 2\hbar \keff}$\end{tabular}}}}%
+    \put(0.42925673,0.14589713){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\ket{1,\textbf{p} - 2\hbar \keff}$\end{tabular}}}}%
+    \put(0.93243026,0.28980741){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\phi = -\keff a T^2$\end{tabular}}}}%
+    \put(0.93243026,0.85775279){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\phi = \keff a T^2$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

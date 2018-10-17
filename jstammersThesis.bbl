@@ -182,8 +182,14 @@ P.~{R Berman}, ``{Atom Interferometry}''.
   treatment}'',} \textit{ Journal of Modern Optics} \textbf{ 60} (sep, 2012)
   17, \href{http://www.arXiv.org/abs/1209.6569}{\texttt{ arXiv:1209.6569}}.
 
+\bibitem{Ramsey1950}
+\hrefCMSnoop {} {N.~F. Ramsey, ``{A Molecular Beam Resonance Method with
+  Separated Oscillating Fields}'',} \textit{ Physical Review} \textbf{ 78}
+  (jun, 1950) 695--699,
+  \href{http://dx.doi.org/10.1103/PhysRev.78.695}{\doi{10.1103/PhysRev.78.695}}.
+
 \bibitem{Brink1968}
-\hrefCMSnoop {} {D.~M. Brink and S.~G. R., ``{Matrix Elements of Tensor
+\hrefCMSnoop {} {D.~M. Brink and G.~R. Satchler, ``{Matrix Elements of Tensor
   Operators}'',} in \textit{ Angular Momentum}, pp.~56--60.
 \newblock 1968.
 
@@ -580,23 +586,24 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
   034030,
   \href{http://dx.doi.org/10.1103/PhysRevApplied.10.034030}{\doi{10.1103/PhysRevApplied.10.034030}}.
 
-\bibitem{Masry1991}
-\hrefCMSnoop {} {E.~Masry, ``{Flicker noise and the estimation of the Allan
-  variance}'',} \textit{ IEEE Transactions on Information Theory} \textbf{ 37}
-  (jul, 1991) 1173--1177,
-  \href{http://dx.doi.org/10.1109/18.86968}{\doi{10.1109/18.86968}}.
-
-\bibitem{Chu1985}
-\href {http://prl.aps.org/abstract/PRL/v55/i1/p48{\_}1} {S.~Chu, L.~Hollberg,
-  J.~Bjorkholm{ et~al.}, ``{Three-Dimensional Viscous Confinement and Cooling
-  of Atoms by Resonance Radiation Pressure}'',} \textit{ Physical Review
-  Letters} \textbf{ 55} (1985), no.~1,.
-
 \bibitem{Miffre2006}
 \hrefCMSnoop {} {A.~Miffre, M.~Jacquey, M.~B{\"{u}}chner{ et~al.}, ``{Atom
   interferometry}'',}
   \href{http://dx.doi.org/10.1088/0031-8949/74/2/N01}{\doi{10.1088/0031-8949/74/2/N01}},
   \href{http://www.arXiv.org/abs/0605055}{\texttt{ arXiv:0605055}}.
+
+\bibitem{Lan2012}
+\hrefCMSnoop {} {S.~Y. Lan, P.~C. Kuan, B.~Estey{ et~al.}, ``{Influence of the
+  coriolis force in atom interferometry}'',} \textit{ Physical Review Letters}
+  \textbf{ 108} (2012), no.~9, 1--5,
+  \href{http://dx.doi.org/10.1103/PhysRevLett.108.090402}{\doi{10.1103/PhysRevLett.108.090402}},
+  \href{http://www.arXiv.org/abs/1110.6910}{\texttt{ arXiv:1110.6910}}.
+
+\bibitem{Masry1991}
+\hrefCMSnoop {} {E.~Masry, ``{Flicker noise and the estimation of the Allan
+  variance}'',} \textit{ IEEE Transactions on Information Theory} \textbf{ 37}
+  (jul, 1991) 1173--1177,
+  \href{http://dx.doi.org/10.1109/18.86968}{\doi{10.1109/18.86968}}.
 
 \bibitem{Hogan}
 \href {http://arxiv.org/abs/0806.3261} {J.~Hogan, D.~Johnson, and M.~Kasevich,
@@ -609,18 +616,17 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
 \hrefCMSnoop {} {J.~Hogan, ``{Towards precision tests of general relativity
   using an atom interferometer}'',}.
 
-\bibitem{Lan2012}
-\hrefCMSnoop {} {S.~Y. Lan, P.~C. Kuan, B.~Estey{ et~al.}, ``{Influence of the
-  coriolis force in atom interferometry}'',} \textit{ Physical Review Letters}
-  \textbf{ 108} (2012), no.~9, 1--5,
-  \href{http://dx.doi.org/10.1103/PhysRevLett.108.090402}{\doi{10.1103/PhysRevLett.108.090402}},
-  \href{http://www.arXiv.org/abs/1110.6910}{\texttt{ arXiv:1110.6910}}.
-
 \bibitem{Schunemann1999}
 \hrefCMSnoop {} {U.~Schünemann, H.~Engler, R.~Grimm{ et~al.}, ``{Simple
   scheme for tunable frequency offset locking of two lasers}'',} \textit{
   Review of Scientific Instruments} \textbf{ 70} (1999), no.~1, 242,
   \href{http://dx.doi.org/10.1063/1.1149573}{\doi{10.1063/1.1149573}}.
+
+\bibitem{Chu1985}
+\href {http://prl.aps.org/abstract/PRL/v55/i1/p48{\_}1} {S.~Chu, L.~Hollberg,
+  J.~Bjorkholm{ et~al.}, ``{Three-Dimensional Viscous Confinement and Cooling
+  of Atoms by Resonance Radiation Pressure}'',} \textit{ Physical Review
+  Letters} \textbf{ 55} (1985), no.~1,.
 
 \bibitem{Kasevich1992a}
 \hrefCMSnoop {} {M.~Kasevich, ``{Atom Interferometry in an atomic fountain}'',}

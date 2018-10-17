@@ -64,8 +64,8 @@
     \put(0.47294768,0.4483868){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}F'=0\end{tabular}}}}%
     \put(0.47294768,0.14149928){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}F=2\end{tabular}}}}%
     \put(0.47294768,0.0199587){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}F=1\end{tabular}}}}%
-    \put(0.15042919,0.14259827){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\\$5S^{1/2}$\end{tabular}}}}%
-    \put(0.1473907,0.6469944){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\\$5P^{3/2}$\end{tabular}}}}%
+    \put(0.15042919,0.14259827){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\\$5S_{1/2}$\end{tabular}}}}%
+    \put(0.1473907,0.6469944){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\\$5P_{3/2}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{rb87_hyperfine.pdf}}%
     \put(0.2629635,0.65809214){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small{\sivalue{266.65}{\MHz}}\end{tabular}}}}%
     \put(0.2629635,0.55174349){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small{\sivalue{156.947}{\MHz}}\end{tabular}}}}%

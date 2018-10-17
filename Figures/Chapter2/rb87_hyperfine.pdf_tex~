@@ -71,7 +71,7 @@
     \put(0.2629635,0.55174349){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small{\sivalue{156.947}{\MHz}}\end{tabular}}}}%
     \put(0.2629635,0.47954028){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small{\sivalue{72.218}{\MHz}}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{rb87_hyperfine.pdf}}%
-    \put(0.67696322,0.45142187){\color[rgb]{0.95686275,0.89019608,0.84313725}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}\small{\sivalue{384.2281152033}{\THz}}\end{tabular}}}}%
+    \put(0.67696322,0.45142187){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}\small{\sivalue{384.2281152033}{\THz}}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{rb87_hyperfine.pdf}}%
     \put(0.27869864,0.0837762){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\small{\sivalue{6.834682611}{\GHz}}\end{tabular}}}}%
     \put(0.4222065,0.71769198){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}\tiny{$g_F = 2/3$}\end{tabular}}}}%

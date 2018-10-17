@@ -55,17 +55,30 @@ generation or acquisition of digital or analogue voltage waveforms. By design, t
 capable of precisely timing and synchronising their I/O across multiple
 devices. Most components in the experiment rely on this precise timing to
 function correctly. Other devices, where timing accuracy is less critical,
-are controlled by sending or receiving data using serial communication. This
-has the advantage of allowing more structured command beyond analogue or
+are controlled by sending or receiving data using serial
+communication. Serial messages enable the execution of more complex
+commands than what is typical with analogue or
 digital voltages, but the communication speed of the serial channel limits
 the accuracy of the execution time. \par\noindent
-The following section describes the low-level interface between MOTMaster and the experimental hardware. It begins by introducing the concept of hardware abstraction in~\SectionRef{subsec:compinterface_hwabstraction}. This is followed by a more detailed discussion of how each type of control is implemented. \SectionRef{subsec:compinterface_patterngen} describes how analogue and digital output waveforms are generated. \SectionRef{subsec:compinterface_serial} outlines serial communication, along with a method for triggering this communication during an experiment. Finally, this section concludes with a discussion on acquiring analogue input data, which is given in~\SectionRef{subsec:compinterface_mmacquisition}.
+The following section describes the low-level interface between
+MOTMaster and the experimental hardware. It begins by introducing the
+concept of hardware abstraction
+in~\SectionRef{subsec:compinterface_hwabstraction}. This is followed
+by a more detailed discussion of how each type of control is
+implemented. \SectionRef{subsec:compinterface_patterngen} describes
+how analogue and digital output waveforms are generated.
+\SectionRef{subsec:compinterface_serial} outlines serial
+communication, along with a method for triggering this communication
+during an experiment. Finally, this section concludes with a
+discussion on acquiring analogue input data, which is given
+in~\SectionRef{subsec:compinterface_mmacquisition}.
 
 \subsection{Hardware Abstraction}\label{subsec:compinterface_hwabstraction}
 When designing software, it is often useful to structure a program in such a
 way that modules which make use of other components do not need to know about
-their specific implementation in order to use them. This approach means that the submodule can be modified without harming the
-compatibility of these two components. In the context of experimental
+their specific implementation in order to use them. This approach
+means that a module can be modified without harming the
+compatibility with the rest of the programme. In the context of experimental
 hardware, this is equivalent to requiring that changing specific components,
 for example the \ac{vco} that generates the RF power for an \ac{aom}, will
 not stop the experiment from working. This is done using abstract
@@ -104,10 +117,12 @@ of these patterns for the appropriate number of clock cycles.
     \caption[Scripted pattern generation for an NI-HSDIO card]{Scripted
     pattern generation for an NI-HSDIO digital output card. A pattern is
     split into segments which correspond to a duration for which all the
-    channels output a constant value. Each of these smaller waveforms are
+    channels output a constant value. The vertical lines indicate when
+    at least one channel changes state, requiring a new segment. Each of these smaller waveforms are
     written to the on-board memory, along with a script that instructs the
     card to output each pattern for the required number of times to
-    reconstruct the original sequence. By reducing the amount of memory
+    reconstruct the original sequence. The dotted lines illustrate the
+    duration for which the segment is repeated. By reducing the amount of memory
     required to define the sequence, a faster clock frequency and hence
     timing resolution can be used to output digital control
     signals.}\label{fig:hsdio_timing}
@@ -163,7 +178,8 @@ point of view of the hardware, the two methods of control are equivalent.
 
 \subsection{Sequence Structure}
 A MOTMaster sequence is composed of a list of sequence steps, which define
-the state of the control hardware over a discrete amount of time. Each step
+the state of the control hardware over a discrete amount of time.
+Each step
 contains the following properties:
 \begin{itemize}
     \item \underline{Name}: A descriptive name for the step.
@@ -172,8 +188,11 @@ contains the following properties:
     \item \underline{Serial Channel}: A serial message encoded as a string of text.
     \item \underline{Digital Output Channel}: High (\sivalue{3.3}{\volt}) or Low (\sivalue{0}{\volt})
     \item \underline{Analogue Output Channel}: Single value, step or ramp the output from a start to end value, or output an arithmetic function over time.
+    \item \underline{Analogue Input Channel}: An array of measured
+      voltages stored.
 \end{itemize}
-where each individual output channel has its own property.
+where each channel is represented by its own property and associated
+with an identifying name.
 \par\noindent
 A sequence step is useful to represent a single action, so that each
 stage of the experiment, for example the initial \ac{mot} loading phase, is
@@ -189,7 +208,7 @@ MOTMaster is designed to run in two modes, referred to as repeat and scan.
 The distinction between these is that the repeat mode does not need to
 recreate a sequence between each cycle. Before MOTMaster starts controlling
 the experiment, the sequence is built once and the output hardware is configured
-to regenerate their patterns. This reduces the delay between
+to regenerate its patterns. This reduces the delay between
 each cycle, which is largely a result of the time needed to process acquired
 data and reconfigure the control hardware. In contrast, scan mode varies a
 parameter during each cycle, so additional time is required to rebuild the
@@ -197,7 +216,24 @@ sequence and write to each \ac{daq} card. Aside from this, these modes
 operate equivalently. \par\noindent
 At the start of an experiment cycle, the hardware is
 initialised and timing properties, such as the trigger and sample clock for
-each \ac{daq} card is set. An example of a sequence as represented in the user interface is shown in~\FigureRef{fig:motmaster_sequence}. This is
+each \ac{daq} card are set. An example of a sequence as represented in
+the user interface is shown in~\FigureRef{fig:motmaster_sequence}. In
+this example, the output hardware is re-initialised to its default
+values before enabled the 2D and 3D \ac{mots}. Subsequent stages of
+the experiment are similarly defined, but are not shown in the figure. Each sequence step is represented as a column, where the rows
+correspond to the properties defined above. An exception to this are
+the analogue input channels, whose data are not shown in the user
+interface. Values for a selected output channel are set on the right-hand
+side. The default value \verb|Continue| is used to indicate that the
+state of that channel does not change during that step. The value
+\verb|Function| is used to modify the state of that output channel. In
+this instance, during the step \verb|Initialization 2| the channel \verb|zmaomFreq| is set to the value of a
+parameter named \verb|z2Freq|. An optional start time and duration,
+relative to the start of that sequence step can be defined. In addition, the user interface is used to configure
+the two modes of operation and to define a descriptive
+name used in saving data from the experiment.
+\par\noindent 
+The sequence is 
 converted into the analogue and digital voltage patterns for each \ac{daq}
 card. The required buffer for the analogue input
 data is calculated based on the state of the \verb|acquisitionTrigger|
@@ -237,9 +273,13 @@ of \sivalue{10}{\micro\second}. Any jitter on this sample clock did not
 produce any noticeable effects during the experiment. \par\noindent
 Two cards on the chassis are able to acquire data from analogue inputs. The
 first is a PXIe-6341, which has 16 input channels, each with a 16-bit
-\ac{adc}. In addition to this, a counter channel on this card was used to trigger the output of serial messages. During the preliminary stages of the experiment, this bit-depth was
+\ac{adc}. In addition to this, a counter channel on this card was used
+to trigger the output of serial messages. During the preliminary
+stages of the experiment, this bit-depth was
 sufficiently large to prevent quantisation effects becoming significant. However
-the AI-Q-2010 MEMS accelerometer used in the experiment, discussed further in \SectionRef{subsec:raman_mems}, has an equivalent voltage noise below this quantisation level. Therefore, a
+the AI-Q-2010 MEMS accelerometer used in the experiment, discussed
+further in \SectionRef{subsec:raman_mems}, has an equivalent voltage
+noise below this quantisation level. Therefore, a
 PXI-4462 card, which contains 4 24-bit analogue input channels, was added.
 This card is used to acquire data from devices where the higher voltage
 resolution is desirable --- namely, the MEMS accelerometer and the

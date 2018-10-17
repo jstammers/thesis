@@ -228,19 +228,6 @@ P.~{R Berman}, ``{Atom Interferometry}''.
   \textbf{ T105} (2003), no.~1, 19,
   \href{http://dx.doi.org/10.1238/Physica.Topical.105a00019}{\doi{10.1238/Physica.Topical.105a00019}}.
 
-\bibitem{Raab1987}
-\hrefCMSnoop {} {E.~L. Raab, M.~Prentiss, A.~Cable{ et~al.}, ``{Trapping of
-  Neutral Sodium Atoms with Radiation Pressure}'',} \textit{ Physical Review
-  Letters} \textbf{ 59} (dec, 1987) 2631--2634,
-  \href{http://dx.doi.org/10.1103/PhysRevLett.59.2631}{\doi{10.1103/PhysRevLett.59.2631}}.
-
-\bibitem{Walhout1992}
-\hrefCMSnoop {} {M.~Walhout, J.~Dalibard, S.~L. Rolston{ et~al.},
-  ``{$\sigma${\_}+–$\sigma${\_}− Optical molasses in a longitudinal
-  magnetic field}'',} \textit{ Journal of the Optical Society of America B}
-  \textbf{ 9} (nov, 1992) 1997,
-  \href{http://dx.doi.org/10.1364/JOSAB.9.001997}{\doi{10.1364/JOSAB.9.001997}}.
-
 \bibitem{muquansWebPage}
 \href {https://www.muquans.com/images/stories/muquans{\_}laser{\_}systems.pdf}
   {``{$\mu$Quans Laser System Specifications}''.}
@@ -342,6 +329,13 @@ P.~{R Berman}, ``{Atom Interferometry}''.
   Physical Review A - Atomic, Molecular, and Optical Physics} \textbf{ 66}
   (2002), no.~4, 23,
   \href{http://dx.doi.org/10.1103/PhysRevA.66.043404}{\doi{10.1103/PhysRevA.66.043404}}.
+
+\bibitem{Walhout1992}
+\hrefCMSnoop {} {M.~Walhout, J.~Dalibard, S.~L. Rolston{ et~al.},
+  ``{$\sigma${\_}+–$\sigma${\_}− Optical molasses in a longitudinal
+  magnetic field}'',} \textit{ Journal of the Optical Society of America B}
+  \textbf{ 9} (nov, 1992) 1997,
+  \href{http://dx.doi.org/10.1364/JOSAB.9.001997}{\doi{10.1364/JOSAB.9.001997}}.
 
 \bibitem{Berkeland2002}
 \hrefCMSnoop {} {D.~J. Berkeland and M.~G. Boshier, ``{Destabilization of dark
@@ -631,5 +625,11 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
 \bibitem{Kasevich1992a}
 \hrefCMSnoop {} {M.~Kasevich, ``{Atom Interferometry in an atomic fountain}'',}
   1992.
+
+\bibitem{Raab1987}
+\hrefCMSnoop {} {E.~L. Raab, M.~Prentiss, A.~Cable{ et~al.}, ``{Trapping of
+  Neutral Sodium Atoms with Radiation Pressure}'',} \textit{ Physical Review
+  Letters} \textbf{ 59} (dec, 1987) 2631--2634,
+  \href{http://dx.doi.org/10.1103/PhysRevLett.59.2631}{\doi{10.1103/PhysRevLett.59.2631}}.
 
 \end{thebibliography}\endgroup

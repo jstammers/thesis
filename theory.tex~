@@ -144,7 +144,7 @@ co-ordinates, the difference in the action along the upper and lower paths is
 \left(S_\textnormal{ab}+S_\textnormal{bd}\right) &= -\frac{\text{m}
 (x_b-x_c) \left(a T^2- x_a+x_b+x_c-x_d\right)}{T}\nonumber \\
 &= -\frac{\text{m}
-(x'_b-x'_c) \left((x'_c-x'_a) - (x'_d+x'_b)\right)}{T}
+(x'_b-x'_c) \left((x'_c-x'_a) - (x'_d-x'_b)\right)}{T}
 \label{eq:prop_action}
 \end{align}
 The second expression is obtained using $x_b - x_b' = x_c - x_c'
@@ -198,9 +198,9 @@ and third pulses have pulse areas of $\pi/2$, which modifies the two
 states as follows
 \begin{subequations}
   \begin{align}
-    U_{\pi/2}(\phi) \ket{1} &= \frac{1}{\sqrt{2}}\ket{1}- i
+    U_{\pi/2}(\phi) \ket{1} &= \frac{1}{\sqrt{2}}\ket{1}+ 
     \frac{e^{-i \phi}}{\sqrt{2}} \ket{2} \\
-    U_{\pi/2}(\phi) \ket{2} &= - i \frac{e^{i \phi}}{\sqrt{2}} \ket{1}
+    U_{\pi/2}(\phi) \ket{2} &=  \frac{e^{i \phi}}{\sqrt{2}} \ket{1}
     + \frac{1}{\sqrt{2}} \ket{2}
   \end{align}
 \end{subequations}
@@ -214,31 +214,32 @@ described by
     U_\pi(\phi) \ket{2} &= e^{i \phi} \ket{1} 
   \end{align}
 \end{subequations}
-The phases along the upper and lower path are then 
+At the output corresponding to the state $\ket{1}$, the phases along the upper and lower path are then 
 \begin{subequations}
   \begin{align}
-    \phi_l &= k (x_d-x_b) - \omega_\text{L} T + \phi_{0}^{(3)} -\phi_{0}^{(2)}  \\
-    \phi_u &= k (x_c-x_a) - \omega_\text{L} T + \phi_{0}^{(2)} -\phi_{0}^{(1)}  \\
+    \phi_l &= \textbf{k}.(\textbf{x}_d-\textbf{x}_b) - \omega_\text{L}
+    T + (\phi_{0})_{3} -(\phi_{0})_{2}  \\
+    \phi_u &= \textbf{k}.(\textbf{x}_c-\textbf{x}_a) - \omega_\text{L}
+    T + (\phi_{0})_{2} -\left(\phi_{0}\right)_{1}  \\
   \end{align}
 \end{subequations}
-where $\phi_{0}^{(j)}$ refers to the phase of the laser at the $j-$th
+where $(\phi_{0})_{j}$ refers to the phase of the laser at the $j-$th
 light pulse. Following the same argument used in~\EquationRef{eq:prop_action}, this
 can be simplified so that the phase difference due to the laser interaction ($\phi_u -
 \phi_l$), and hence the total phase difference, is
 \begin{equation}
   \label{eq:phase_interferometer}
-  \Delta \Phi_\textnormal{laser} = \textbf{k.a} T^2 - \phi_0^{(1)} + 2
-  \phi_0^{(2)}
-  - \phi_{0}^{(3)}
+  \Delta \Phi_\textnormal{laser} = \textbf{k.a} T^2 - (\phi_0)_{1} + 2(\phi_0)_{2}- (\phi_{0})_{3}
 \end{equation}
 In summary, the phase difference along the two paths of the
 interferometer comes not from the atomic motion along the path, nor
 from the phase evolution of the internal states, but rather the
 position-dependent phase of the light field, which is impressed on the
-atom each time a transition is driven. This makes a phase difference
+atom each time a transition is driven. In other words, $\Delta_\Phi =
+\Delta\Phi_\textnormal{laser}$. This makes a phase difference
 of $\textbf{k.a} T^2$. In addition, if the phase of the light is
 adjusted between pulses, there is a further interferometer phase of
-$- \phi_0^{(1)} + 2\phi_0^{(2)} - \phi_0^{(3)}$. This second part
+$- (\phi_0)_{1} + 2(\phi_0)_{2}- (\phi_{0})_{3}$. This second part
 vanishes if the phase of the light is undisturbed between pulses.
 \section{Raman Transitions in Rubidium-87}\label{sec:theory_raman}
 In this section, an analysis of the dynamics of the stimulated Raman transition is
@@ -639,14 +640,15 @@ fields are orthogonally linearly polarised (lin $\perp$ lin) to each
 other and to the quantisation axis. \par\noindent
 For circular polarisation, it can be shown that the two fields must
 have the same handedness. The electric field of a right-handed
-circularly polarised beam is $\textbf{E} = E_- e^{-i \omega t} + E_+
-e^{i \omega t}$, where $E_-$ is the annihilation operator and $E_+$ is
-the creation operator. The product $r \equiv \textbf{d.E}$
+circularly polarised beam is $\textbf{E} = \textbf{E}_0\left(\mathcal{E}_- e^{-i \omega t} + \mathcal{E}_+
+e^{i \omega t}\right)$, where $\mathcal{E}_-$ is the spherical tensor
+component that lowers the angular momentum of the light and
+$\mathcal{E}_+$ raises it. The product $r \equiv \textbf{d.E}$
 can be written as
 \begin{equation}
   \label{eq:dipole_expansion}
   r_j =  
-(d^{(j)}_+ E^{(j)}_- e^{-i \omega_j t} + d^{(j)}_- E^{(j)}_+ e^{i
+E_0(d^{(j)}_+ \mathcal{E}^{(j)}_- e^{-i \omega_j t} + d^{(j)}_- \mathcal{E}^{(j)}_+ e^{i
 \omega_j t})
 \end{equation}
 where $d^{(j)}_+$ and $d^{(j)}_-$ are the components of the dipole operator which
@@ -656,12 +658,9 @@ rotating wave approximation to
 give
 \begin{equation}
   \label{eq:dipole_exp}
-%(d^{(1)}_+ E^{(1)}_+ e^{-i \omega_1 t} + d^{(1)}_- E^{(1)}_- e^{i
-%\omega_1 t})
-%(d^{(2)}_+ E^{(2)}_+ e^{-i \omega_2 t} + d^{(2)}_- E^{(2)}_- e^{i
-%\omega_1 t})\nonumber \\
-r_1 r_2= (d^{(1)}_+ E^{(1)}_- d^{(2)}_- E^{(2)}_+ e^{-i (\omega_1 - \omega_2)
-  t} + d^{(1)}_- E^{(1)}_+ d^{(2)}_+ E^{(2)}_-  e^{i(
+  r_1 r_2= E^{(1)}_0E^{(2)}_0(d^{(1)}_+ \mathcal{E}^{(1)}_- d^{(2)}_-
+  \mathcal{E}^{(2)}_+ e^{-i (\omega_1 - \omega_2)
+    t} + d^{(1)}_- \mathcal{E}^{(1)}_+ d^{(2)}_+ \mathcal{E}^{(2)}_-  e^{i(
 \omega_1 -\omega_2)t})
 \end{equation}
 where the first term corresponds to the component which drives

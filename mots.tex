@@ -151,10 +151,10 @@ cell. These produce a radial field gradient per unit current of
 \sivalue{20}{\gauss\per\centi\metre\per\ampere}. During the
 experiment, a current of \sivalue{0.97}{\A} produces a radial field
 gradient of \sivalue{19.4}{\gauss\per\centi\metre}.
-\FigureRef{fig:2d_field_xz} shows the calculated magnetic field
-strength in the radial plane where the axial co-ordinate $y = 0$.
-Close to the centre, there is a quadrupole field which has a large
-magnetic field gradient. \FigureRef{fig:2d_grad} shows the field
+\FigureRef{fig:2d_field_xz} shows the magnitude of the calculated magnetic field
+strength in the radial plane where the axial co-ordinate is $y = 0$.
+The equally-spaced contours of constant magnetic field are indicative
+of a quadrupole field. \FigureRef{fig:2d_grad} shows the field
 gradient $\partial B/\partial x$ where $y = 0$ and $z=0$. This is
 uniform across the central \sivalue{10}{\mm}, where the \ac{mot}
 forms. \FigureRef{fig:2d_field_xy} shows the field strength in the
@@ -181,25 +181,140 @@ field per unit current of
 		coils]{Calculated field and field gradients for the 2D \ac{mot}
 		quadrupole coils. In this coordinate system, the 2D \ac{mot}cools and
 		traps atoms in the \(\vec{x}\) and \(\vec{z}\) directions. The
-    field was calculated using a current of
-		\sivalue{0.97}{\ampere}, which corresponds to a current density in each
-    coil of \sivalue{7.55}{\ampere\per\square\milli\metre}.
-    \textbf{(a)} shows the magnitude of
-		the magnetic field (in units of \sivalue{}{\gauss}) in the radial
-    plane where the axial coordinate $y=0$. The gradient of the
-    magnetic field in this plane along $z=0$ is shown in
-    \textbf{(b)}.
-    \textbf{(c)} shows the magnitude of the magnetic field in the
-  axial plane where $z=0$.} 
+		simulation was performed using a nominal current of
+		\sivalue{1}{\ampere}, which corresponds to a current density in each
+		coil of \sivalue{7.78}{\ampere\per\square\milli\metre}. The magnitude of
+		the magnetic field (in units of \sivalue{}{\gauss}) and its direction in
+		the axial and radial planes of symmetry are shown in \textbf{(a)} and
+		\textbf{(b)}, respectively. \textbf{(c)} shows the field gradient
+		components \(\partial_x B_x\) (blue), \(\partial_y B_y\) (orange) and
+		\(\partial_z B_z\) (green) along their corresponding axes.}
+	\label{fig:2d_mot_field_gradient}
 \end{figure}
+\subsection{The 3D MOT system}\label{sec:3d_mot}
+The main chamber contains the apparatus that is used to make a 3D
+\ac{mot}~\cite{Raab1987}. Each \ac{mot} beam originates from a \ac{pm} fibre and is collimated using a
+lens with a nominal focal length of \sivalue{75}{\milli\metre} to a waist size of \sivalue{7.5}{\milli\metre}. At the output
+of each collimator is a \ac{qwp}, with its slow axis oriented at a 45\(^\circ\)
+angle to either the fast or slow axis of the fibre, to produce either left- or right-handed circularly polarised light. The \ac{mot} beams along the axial direction of the quadrupole field
+(i.e. the \(\vec{z}\) direction) are orthogonally
+polarised to the others along the \(\vec{x}\) and \(\vec{y}\) directions. The \ac{mot} beams are aligned so that their intensities at the centre of the chamber are equal, so that the \ac{mot} forms where the magnetic field is zero.
+\subsubsection{Spherical quadrupole magnetic field}
+The magnetic field for the 3D \ac{mot} is created by a pair of coils in an
+anti-Helmholtz configuration. Each coil is wound using rectangular wire coated in a
+\sivalue{35}{\micro\metre} thick layer of Pyre-M.L, a UHV-compatible polyamide
+which provides a layer of insulation between each loop. The wire has a
+cross-section of dimensions \(\sivalue{1.1}{\milli\metre} \times
+\sivalue{1.1}{\milli\metre}\), including the insulation. The coils has
+20 layers in the axial direction and 12 radially. The
+inner diameter of the coil is \sivalue{25.4}{\milli\metre}, to allow for optical
+access of the \(\vec{z}\)-axis \ac{mot} beams, and the maximum diameter is
+\sivalue{59.2}{\milli\metre} -- small enough that the coil could be
+inserted into the chamber through the DN63 CF ports. The coils are mounted to
+the chamber using groove grabbers which clamp into grooves inside the wall of
+the DN40 ports. The coil formers increase the surface area in contact
+with the chamber, increasing the rate of heat dissipation from the
+coils. 
+\par\noindent 
+\FigureRef{fig:mot_coil_temp}~shows the temperature rise after the
+coils are turned on, both at atmospheric pressure and after evacuating
+the chamber. At a low pressure (here around
+\sivalue{1e-2}{\milli\bar}), the
+temperature of the coils inside the chamber does not exceed
+\sivalue{40}{\celsius}. This warms the chamber up by a few degreees,
+as shown in~\FigureRef{fig:mot_coil_temp_tg4}. Once mounted, the distance between the
+innermost
+loops is \sivalue{70}{\milli\metre}. The red and blue circles in~
+\FigureRef{fig:coil_a} show the
+magnetic field, measured using a Hall probe, along the axis of symmetry for each
+of the coils with a current of \sivalue{2.53}{\ampere}.
+\FigureRef{fig:coil_b} shows the axial field measured when the coils
+are operating together. This shows good agreement with the field
+calculated from the Biot-Savart law.
+\begin{figure}[!htbp]
+	\centering
+	\def\svgwidth{\columnwidth}
+  \subfloat[][]{\includegraphics[width=0.45\textwidth]{mot_coil_temperature.pdf}\label{fig:mot_coil_temp}}
+	\subfloat[][]{\includegraphics[width=0.45\textwidth]{mot_coil_temperature_chamber.pdf}\label{fig:mot_coil_temp_tg4}}
+	\caption[\ac{mot} coil temperature rise]{Temperature rise due to the
+  \ac{mot} coils over 1 hour of operation. The blue curves were
+measured when the coils were at atmosphere and the orange were
+measured under a rough vacuum around \sivalue{1e-2}{\milli\bar}.
+\textbf{(a)} shows the temperature of the coils and \textbf{(b)} is
+the temperature of the exterior of the chamber. The measurements under
+rough vacuum were measured without allowing enough time for the coils
+to cool down to room temperature.}
+	\label{fig:mot_coil_temp_both}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	\def\svgwidth{\columnwidth}
+  \subfloat[][]{\includegraphics[width=0.45\textwidth]{mot_field_3D.pdf}\label{fig:coil_a}}
+  \subfloat[][]{\includegraphics[width=0.45\textwidth]{mot_field_together_3D.pdf}\label{fig:coil_b}}
+	\caption[Measured magnetic field and field gradient for the 3D \ac{mot}
+		coils]{Measured magnetic field and field gradient for the 3D \ac{mot}
+		coils. \textbf{(a)} red and blue circles show the axial magnetic
+    field component of both coils as
+		measured using a Hall probe.\textbf{(b)} red circles show the
+    field close to the centre when the coils are operating together. The dashed lines indicate the axial field as
+		calculated from the Biot-Savart law.}
+    \label{fig:mot_coil_plots_subfig}	
+\end{figure}
+
+%\begin{figure}[!htbp]
+%	\centering
+%	\def\svgwidth{\columnwidth}
+%	\subfloat[][]{\scalebox{0.3}{\includegraphics{3D_field_xz.pdf}}\label{fig:3D_mot_axial}}
+%	\subfloat[][]{\scalebox{0.3}{\includegraphics{3D_field_xy.pdf}\label{fig:3D_mot_radial}}}\\
+%	\caption[Simulated magnetic field for the 3D \ac{mot} quadrupole
+%		coils]{Simulated magnetic field for the 3D \ac{mot} quadrupole coils. In
+%		this coordinate system, the axial direction is defined as the
+%		\(\vec{z}\) axis. The simulation was performed using a nominal current
+%		of \sivalue{2.53}{\ampere}, which corresponds to a current density in
+%		each coil of \sivalue{1.33}{\ampere\per\square\milli\metre}. The
+%		magnitude of the magnetic field (in units of \sivalue{}{\gauss}) and its
+%		direction in the axial and radial planes of symmetry are shown in
+%		\textbf{(a)} and
+%		\textbf{(b)}, respectively.}
+%	\label{fig:3D_mot_field_sim}
+%\end{figure}
+\subsubsection{Bias Coils}
+Three orthogonally arranged pairs of coils are used during the
+experiment to provide a homogeneous magnetic field close to the centre of the chamber. In the initial loading and molasses stages, these are used to zero the magnetic field at the centre of the chamber. This is required for effective sub-Doppler cooling~\nocite{Walhout1992}. In subsequent stages,
+these coils provide a bias field along the appropriate axes during state
+preparation, interferometry and state detection. Each coil was wound using
+\sivalue{1}{\milli\metre} thick wire and consisted of 5 turns in the
+axial direction and 10 turns radially. For a pair of coils in Helmholtz configuration, the magnetic field
+gradient at the centre is minimised when the axial separation \(a\) is equal to
+the coil radius \(r\), but the geometry of the vacuum chamber meant that it was
+not possible to satisfy this condition. The radii and axial separations of each
+coil pair are presented in \TableRef{tab:bias_coils}.\begin{table}
+	\begin{tabular}{ccccc}
+		\toprule
+		Axis        & \(a\) (mm) & \(r_i\) (mm) & \(r_o\) (mm) \\
+		\midrule
+		\(\vec{x}\) & 88         & 105          & 115          \\
+		\(\vec{y}\) & 132        & 178          & 188          \\
+		\(\vec{z}\) & 116        & 123          & 133          \\
+		\bottomrule
+	\end{tabular}
+	\caption[Table of parameters for each 3D \ac{mot} bias coil.]{Table of
+		parameters for each 3D \ac{mot} bias coil. \(a\) denotes the axial
+		separation between each coil, measured from their centres. \(r_i\) and \(r_o\) are the inner and
+		outer radii, respectively.}
+	\label{tab:bias_coils}
+\end{table}
 \subsection{CCD Imaging}\label{sec:imaging}
 During the experiment, atoms are imaged using a CCD camera to spatially resolve the cloud. This was done to measure the temperature using a ballistic expansion method and the trajectory of the cloud (see~\SectionRef{subsec:molasses_imaging}). \FigureRef{fig:imaging_optics} shows a
 diagram of the apparatus used for imaging. A pair of \sivalue{125}{\milli\metre}
 and \sivalue{50}{\milli\metre} focal length lenses are used to image the cloud
 onto a Pike F505-B CCD camera. The camera has a maximum resolution of \(2452 \times
-2054\) pixels. A measurement of the magnification of a ruler gave a calibration factor of
-\sivalue{7.065\pm 0.07}{pixel\per\milli\metre}. To reduce the level of background light on the CCD, a bandpass filter is placed in front of the sensor. This transmits \sivalue{780}{\nano\metre} light at an
-efficiency of 60\%.
+2054\) pixels. A ruler placed in the object plane gave a calibration factor of
+\sivalue{7.062\pm 0.048}{pixel\per\milli\metre}. To reduce the level
+of background light on the CCD, a bandpass filter is placed in front
+of the sensor. This transmits the Rubidium fluorescence at
+\sivalue{780}{\nano\metre} with an efficiency of 60\%.
 \begin{figure}[!htbp]
 	\centering
 	\def\svgwidth{0.6\textwidth}
@@ -212,13 +327,12 @@ efficiency of 60\%.
 	\label{fig:imaging_optics}
 \end{figure}
 \subsubsection{Incident Optical Power Calibration} 
-Measuring the incident optical power is useful for estimating the
-number of atoms \(N_a\) by measuring the amount of light emitted
-during resonance fluorescence. However, typical number densities in a
-\ac{mot} mean that incident light is strongly absorbed by atoms close
-to the surface. Consequently, the
-assumption of a constant scattering rate per atom is not valid and leads to an
-under-estimate of the atom number. More accurate techniques such as
+Measuring the incident optical power emitted
+during resonance fluorescence is useful for estimating the
+number of atoms \(N_a\). However, typical number densities in a
+\ac{mot} mean that the cloud is optically thick and we see mainly 
+the atoms close to the surface. Consequently, the fluorescence can
+lead to an under-estimate of the atom number. More accurate techniques such as
 absorption imaging can be used, but for the purposes of this
 experiment, it was
 sufficient to use fluorescence imaging as a rough estimate of the
@@ -227,9 +341,9 @@ experiment, a sensitive photodiode with a high bandwidth was used to
 detect the atoms in each hyperfine ground state. Details on this setup
 can
 be found in~\SectionRef{subsec:photodiode_setup}. \par\noindent
-Under the assumption that the
-power radiated per atom is constant, the power incident on the CCD
-\(P_\textnormal{ccd}\) can be related to the scattering rate per atom as follows
+Neglecting absorption, the power incident on the CCD, let us call that
+\(P_\textnormal{ccd}\), can be related to the scattering rate per atom
+$R_\textnormal{sc}$ as follows
 \begin{equation}
 	P_\textnormal{ccd} = \frac{\Omega}{4\pi} t R_\textnormal{sc}  \hbar \omega N_a
 \end{equation}
@@ -237,15 +351,15 @@ where $\Omega/4\pi = $\pow{1.8}{-3} is the fractional solid angle subtended by
 the imaging optics, \(t\) is the transmission of the bandpass filter
 and 
 \(\hbar \omega =
-\sivalue{1.6}{\electronvolt}\) is the emitted photon energy. For a
+\sivalue{1.6}{\electronvolt}\) is the fluorescence photon energy. For a
 two-level system, the scattering rate $R_\textnormal{sc}$ is 
 \begin{equation}
   \label{eq:scattering_rate}
   R_\textnormal{sc} = \frac{\Gamma}{2} \frac{s}{1+s+\left(\frac{2
   \delta}{\Gamma}\right)^2}
 \end{equation}
-where $\Gamma$ is the natural linewidth of the transition, $\delta$ is
-the frequency detuning and $s = I/I_\textnormal{sat}$ is the
+where $\Gamma$ is the spontaneous decay rate of the upper level, $\delta$ is
+the angular frequency detuning and $s = I/I_\textnormal{sat}$ is the
 saturation parameter. This incident power
 is then related to the integrated number of pixel counts \(C_\textnormal{int}\)
 by
@@ -254,12 +368,15 @@ by
 \end{equation}
 where \(\tau_\textnormal{exp}\) is the exposure time, \(\eta = 0.14\) is the
 quantum efficiency of the CCD and \(\alpha\) is a scaling factor that relates
-the total charge collected to the total number of pixel counts. By varying the
+the energy to pixel counts. By varying the
 exposure time used to image a collimated beam with a total power of
 \sivalue{0.17}{\micro\watt}, the total number of counts recorded by the camera
 as a function of exposure time is plotted in~\FigureRef{fig:camera_counts}. This
 gives a count scaling factor of \(\alpha\) =
 \pow{2.2}{5}\,counts\,\sivalue{}{\per\micro\second\per\micro\watt}.
+With this calibration, the number of atoms in the \ac{mot} can be
+estimated. This is described further
+in~\SectionRef{subsec:loading_rate}.
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{cam_per_exposure}
@@ -296,22 +413,31 @@ not be discussed in further detail. The power in each of these slave lasers is a
 an \ac{edfa}. The frequency is doubled to around \sivalue{780}{\nano\metre} using a \ac{ppln}. The output power is controlled using an
 \ac{aom}.
 \begin{figure}[!htbp]
-	\includegraphics[width=0.8\textwidth]{muquans_schematic}
-	\caption[\Muquans\ Laser System Diagram]{Schematic of the \Muquans\ laser system. Each output laser is derived from a\sivalue{1560}{\nano\metre} \acs{ecdl} (shown in green) which is amplified using an \acs{edfa} and then frequency-doubled to \sivalue{780}{\nano\metre} using a \acs{ppln} crystal. A master laser is locked to the 3,4 crossover in \ac{rb85} and the output lasers are offset-locked to their corresponding frequencies. The dashed region indicates the components used for generating light for the \acp{mots}, which was the only function of this laser for this experiment.}\label{fig:muquans_schematic}
+  \fontsize{8pt}{8pt}
+  \resizebox{1\textwidth}{!}{\input{muquans_schematic.pdf_tex}}
+	\caption[\Muquans\ Laser System Diagram]{Schematic of the \Muquans\
+  laser system. Each output laser is derived from
+a\sivalue{1560}{\nano\metre} \acs{ecdl} (shown in green) which is
+amplified using an \acs{edfa} and then frequency-doubled to
+\sivalue{780}{\nano\metre} using a \acs{ppln} crystal. A master laser
+is locked to the 3,4 crossover in \ac{rb85} and the output lasers are
+offset-locked to their corresponding frequencies. The dashed region
+indicates the components used for generating light for the \acp{mots},
+which was the part used for this experiment.}\label{fig:muquans_schematic}
 \end{figure}
 \subsection{Absolute Frequency Reference}\label{subsec:muquans_master}
 The master laser provides an absolute frequency to which the slave
 lasers are offset-locked. The reference frequency is created using 
 saturated absorption spectroscopy inside a Rubidium vapour cell. The sub-Doppler
-features in this spectrum are insensitive to temperature changes, and under
-have linewidths closer to the natural linewidth of
+features in this spectrum are insensitive to temperature changes, and 
+have linewidths close to the natural linewidth of
 Rubidium (\(\Gamma \sim 2\pi \times 6\) MHz). \FigureRef{fig:muquans_satspec}
 shows the saturated absorption spectrum using the \Muquans\ master laser. The frequency is varied
 by finely adjusting the temperature of the master \ac{ecdl}. The
 master laser is set to lock to the crossover resonance between the \(F = 3
 \rightarrow F' = 3\) and \(F = 3 \rightarrow F' = 4 \) transitions in \ac{rb85}
-(indicated as \textbf{(b)}), which is the strongest feature in the spectrum. This
-absorption feature is around \sivalue{1.1}{\giga\hertz} below the cooling
+(indicated as \textbf{(b)}), which is the strongest feature in the
+spectrum. This crossover is around \sivalue{1.1}{\giga\hertz} above the cooling
 transition in \ac{rb87} (indicated as \textbf{(a)}).
 \begin{figure}[!htbp]
 	\includegraphics[width=0.6\textwidth]{sat_spec}
@@ -321,36 +447,63 @@ transition in \ac{rb87} (indicated as \textbf{(a)}).
 	\includegraphics[width=0.6\textwidth]{error_signal}
 	\caption[Error Signal for the \Muquans\ master servo.]{Error signal obtained by modulating the laser current. Close to the lock point, the signal is approximately linear. This signal is used in a feed-back loop to correct for frequency changes of the master laser.}\label{fig:muquans_error_signal}
 \end{figure}
-The frequency of the laser is modulated by modulating the current to
-the \ac{ecdl}~\cite{Supplee1994}. This produces a signal that is
-proportional to the frequency difference from the lock point. The error signal shown in
-\FigureRef{fig:muquans_error_signal} is obtained by demodulating the absorption
-signal using a lock-in amplifier. The servo that controls the master laser frequency also contains
+The frequency of the laser is dithered by modulating the current to
+the \ac{ecdl}~\cite{Supplee1994}. Phase-sensitive detection using a
+lock-in amplifier then produces the derivative signal shown in
+\FigureRef{fig:muquans_error_signal}. Close to the lock point that
+provides an error signal that is
+proportional to the frequency difference from the lock point. The servo that controls the master laser frequency also contains
 an integrator to compensate for long-term drifts arising from temperature
 variations.
 \subsection{Cooling and Repump Light}
 The first of the slave lasers provides light to address the cooling
 transition. This is
 frequency-offset locked to the master by comparing their beat frequency to a
-reference from a \ac{dds}. A plot of the error signal used to lock this offset
-frequency is shown in \FigureRef{fig:slave_offset}.
+reference from a \ac{dds} (labelled as $f_0$
+in~\FigureRef{fig:muquans_schematic}). The reference is multiplied by a factor
+of 8 before it is mixed with the beat frequency of the
+\sivalue{1560}{\nm} light. After frequency doubling and taking into account the frequency shift of
+the output \ac{aom} and those used to control each \ac{mot} beam
+(see~\SectionRef{sec:mot_control}), a \ac{dds} frequency of
+\sivalue{88.82}{\MHz} offsets the frequency of the slave laser from
+the master laser's frequency so that it is resonant with the
+\trans{2}{3} cooling transition. Similarly, a \ac{dds} frequency of
+\sivalue{87.89}{\MHz} red-detunes the slave laser from this transition
+by \sivalue{15}{\MHz}. A plot of the error signal used to lock this offset
+frequency is shown in \FigureRef{fig:slave_offset}. The zero-crossing
+occurs when the frequency difference of the two lasers is equal to
+$8 f_0$. 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.6\textwidth]{slave0_error}
-	\caption[Error Signal for the \Muquans\ Cooling laser.]{Error signal for the \Muquans cooling laser, plotted as a frequency difference from the start of the scan. This is obtained by comparing the beat frequency between the master and slave lasers to a reference frequency generated by a \ac{dds}. A servo loop feeds-back onto the frequency of the slave laser to keep this difference close to zero.}\label{fig:slave_offset}
+	\caption[Error Signal for the \Muquans\ Cooling laser.]{Error signal
+  for the \Muquans cooling laser, plotted as a difference from the
+reference frequency. The beat frequency between the master and slave
+lasers is compared to a reference frequency generated by a \ac{dds}
+(see text). A servo loop feeds-back onto the frequency of the slave laser to keep this difference close to zero.}\label{fig:slave_offset}
 \end{figure}
-\par\noindent An \ac{eom} modulates the phase of the cooling laser to
+\par\noindent 
+An \ac{eom} modulates the phase of the cooling laser to
 produce light for the \trans{1}{2} repump transition. This modulation
 creates frequency sidebands separated by integer multiples of the
-modulation frequency
-\(f_m\). If the amplitude of the modulation is small, only the first
-positive and negative sidebands are present. A separate \ac{dds} provides the reference for the modulation frequency, so that the frequency of the cooling and repump
+modulation frequency. If the amplitude of the modulation is small, only the first
+positive and negative sidebands are present. When the carrier is set
+to drive the cooling transition, the modulation frequency is set so that the first
+positive sideband drives the repump transition, which is
+\sivalue{6.6}{\GHz} higher in frequency. A separate \ac{dds} provides
+the reference for the modulation frequency (labelled as $f_m$
+in~\FigureRef{fig:muquans_schematic}), so that the frequency of
+the cooling and repump
 light can be independently ramped during the experiment (see
-\SectionRef{subsec:muquans_comm}). This is amplified, doubled and subtracted
-from a \sivalue{3.5}{\giga\hertz} reference signal so that the positive
-frequency sideband is approximately \sivalue{6.6}{\giga\hertz} above that of the
-cooling light, to address the repump transition. The modulation power is externally controlled using a \ac{vca} to control the ratio of
-repump power to cooling power. An RF switch turns the repump on and off by blocking the reference frequency. \par\noindent The total output power is controlled using an
+\SectionRef{subsec:muquans_comm}). The \ac{dds} frequency is amplified, doubled and subtracted
+from a \sivalue{3.5}{\giga\hertz} reference signal to give the
+modulation frequency for the \ac{eom}. A \ac{dds} frequency of $f_m
+=$\sivalue{104.25}{\MHz} produces a positive sideband to drive the
+\trans{1}{2} transition when the carrier is \sivalue{-15}{\MHz} below
+the \trans{2}{3} transition. The modulation power is externally controlled using a \ac{vca} to control the ratio of
+repump power to cooling power. An RF switch turns the repump on and off by blocking the reference frequency. 
+\par\noindent 
+The total output power is controlled using an
 \ac{aom} that has a fixed modulation frequency of
 \sivalue{110}{\mega\hertz}. \FigureRef{fig:muquans_cooling} shows
 the combined power of the cooling light for the 3D \ac{mot} as a

@@ -1,110 +1,16 @@
-\BOOKMARK [0][-]{chapter*.2}{List of figures}{}% 1
-\BOOKMARK [0][-]{chapter*.5}{List of tables}{}% 2
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 3
-\BOOKMARK [1][-]{section.1.1}{Light-Pulse Atom Interferometry}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.2}{Application to Inertial Navigation}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.3}{Aims}{chapter.1}% 6
-\BOOKMARK [1][-]{section.1.4}{Note on Units}{chapter.1}% 7
-\BOOKMARK [1][-]{section.1.5}{Structure of this Thesis}{chapter.1}% 8
-\BOOKMARK [0][-]{chapter.2}{Theory}{}% 9
-\BOOKMARK [1][-]{section.2.1}{Chapter Overview}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.2}{Light-Pulse Matter-Wave Interference}{chapter.2}% 11
-\BOOKMARK [2][-]{subsection.2.2.1}{The Mach-Zehnder Scheme}{section.2.2}% 12
-\BOOKMARK [2][-]{subsection.2.2.2}{Phase Shift Contributions}{section.2.2}% 13
-\BOOKMARK [1][-]{section.2.3}{Raman Transitions in Rubidium-87}{chapter.2}% 14
-\BOOKMARK [2][-]{subsection.2.3.1}{State Propagation}{section.2.3}% 15
-\BOOKMARK [2][-]{subsection.2.3.2}{Application to a Sequence of Raman Pulses}{section.2.3}% 16
-\BOOKMARK [2][-]{subsection.2.3.3}{Extending to a Real Atomic System}{section.2.3}% 17
-\BOOKMARK [1][-]{section.2.4}{Applications to Rubidium-87}{chapter.2}% 18
-\BOOKMARK [2][-]{subsection.2.4.1}{Atomic Structure}{section.2.4}% 19
-\BOOKMARK [2][-]{subsection.2.4.2}{Driving Raman Transitions}{section.2.4}% 20
-\BOOKMARK [2][-]{subsection.2.4.3}{The Double Interferometer}{section.2.4}% 21
-\BOOKMARK [1][-]{section.2.5}{Conclusion}{chapter.2}% 22
-\BOOKMARK [0][-]{chapter.3}{MOTMaster}{}% 23
-\BOOKMARK [1][-]{section.3.1}{Chapter Overview}{chapter.3}% 24
-\BOOKMARK [1][-]{section.3.2}{Motivation}{chapter.3}% 25
-\BOOKMARK [1][-]{section.3.3}{Interfacing with Hardware}{chapter.3}% 26
-\BOOKMARK [2][-]{subsection.3.3.1}{Hardware Abstraction}{section.3.3}% 27
-\BOOKMARK [2][-]{subsection.3.3.2}{Voltage Pattern Generation}{section.3.3}% 28
-\BOOKMARK [2][-]{subsection.3.3.3}{Timed Serial Communication}{section.3.3}% 29
-\BOOKMARK [2][-]{subsection.3.3.4}{Voltage Acquisition}{section.3.3}% 30
-\BOOKMARK [1][-]{section.3.4}{MOTMaster Sequences}{chapter.3}% 31
-\BOOKMARK [2][-]{subsection.3.4.1}{Sequence Structure}{section.3.4}% 32
-\BOOKMARK [2][-]{subsection.3.4.2}{Running a Sequence}{section.3.4}% 33
-\BOOKMARK [1][-]{section.3.5}{Experiment Control Hardware}{chapter.3}% 34
-\BOOKMARK [1][-]{section.3.6}{Experimental Sequence Overview}{chapter.3}% 35
 \BOOKMARK [0][-]{chapter.4}{Cooling and Trapping in a MOT}{}% 36
 \BOOKMARK [1][-]{section.4.1}{Chapter Overview}{chapter.4}% 37
 \BOOKMARK [1][-]{section.4.2}{The Navigator Vacuum Chamber}{chapter.4}% 38
 \BOOKMARK [2][-]{subsection.4.2.1}{The 2D MOT system}{section.4.2}% 39
-\BOOKMARK [2][-]{subsection.4.2.2}{CCD Imaging}{section.4.2}% 40
-\BOOKMARK [1][-]{section.4.3}{Generating MOT light}{chapter.4}% 41
-\BOOKMARK [2][-]{subsection.4.3.1}{Absolute Frequency Reference}{section.4.3}% 42
-\BOOKMARK [2][-]{subsection.4.3.2}{Cooling and Repump Light}{section.4.3}% 43
-\BOOKMARK [2][-]{subsection.4.3.3}{Real-Time Control}{section.4.3}% 44
-\BOOKMARK [1][-]{section.4.4}{Controlling the MOTs}{chapter.4}% 45
-\BOOKMARK [2][-]{subsection.4.4.1}{Optical Fibre Network}{section.4.4}% 46
-\BOOKMARK [2][-]{subsection.4.4.2}{Magnetic Field Control}{section.4.4}% 47
-\BOOKMARK [1][-]{section.4.5}{Characterising the MOTs}{chapter.4}% 48
-\BOOKMARK [2][-]{subsection.4.5.1}{3D MOT Loading Rate}{section.4.5}% 49
-\BOOKMARK [1][-]{section.4.6}{Conclusion}{chapter.4}% 50
-\BOOKMARK [0][-]{chapter.5}{Preparing Atoms for Interferometry}{}% 51
-\BOOKMARK [1][-]{section.5.1}{Chapter Overview}{chapter.5}% 52
-\BOOKMARK [1][-]{section.5.2}{Cooling in Optical Molasses}{chapter.5}% 53
-\BOOKMARK [2][-]{subsection.5.2.1}{Motivation for Launching}{section.5.2}% 54
-\BOOKMARK [2][-]{subsection.5.2.2}{Frequency and Power Control}{section.5.2}% 55
-\BOOKMARK [2][-]{subsection.5.2.3}{Launching in a Moving Molasses}{section.5.2}% 56
-\BOOKMARK [2][-]{subsection.5.2.4}{Imaging the Atom Cloud over Time}{section.5.2}% 57
-\BOOKMARK [1][-]{section.5.3}{State Preparation}{chapter.5}% 58
-\BOOKMARK [2][-]{subsection.5.3.1}{Schemes for Preparation}{section.5.3}% 59
-\BOOKMARK [2][-]{subsection.5.3.2}{Optically Pumping the Atoms}{section.5.3}% 60
-\BOOKMARK [2][-]{subsection.5.3.3}{Including Microwave Transitions}{section.5.3}% 61
-\BOOKMARK [2][-]{subsection.5.3.4}{Blow-Away}{section.5.3}% 62
-\BOOKMARK [1][-]{section.5.4}{Conclusion}{chapter.5}% 63
-\BOOKMARK [0][-]{chapter.6}{Raman Optical System}{}% 64
-\BOOKMARK [1][-]{section.6.1}{Chapter Outline}{chapter.6}% 65
-\BOOKMARK [1][-]{section.6.2}{Wavefront Requirements}{chapter.6}% 66
-\BOOKMARK [2][-]{subsection.6.2.1}{Gradients of Intensity}{section.6.2}% 67
-\BOOKMARK [2][-]{subsection.6.2.2}{Wavefront Distortions}{section.6.2}% 68
-\BOOKMARK [1][-]{section.6.3}{Collimation Optics}{chapter.6}% 69
-\BOOKMARK [2][-]{subsection.6.3.1}{Component Overview}{section.6.3}% 70
-\BOOKMARK [2][-]{subsection.6.3.2}{Alignment and Collimation}{section.6.3}% 71
-\BOOKMARK [2][-]{subsection.6.3.3}{Measuring the Beam Width}{section.6.3}% 72
-\BOOKMARK [1][-]{section.6.4}{Retro-Reflection Assembly}{chapter.6}% 73
-\BOOKMARK [2][-]{subsection.6.4.1}{In-Situ Alignment and Optimisation}{section.6.4}% 74
-\BOOKMARK [2][-]{subsection.6.4.2}{The Mechanical Accelerometer}{section.6.4}% 75
-\BOOKMARK [1][-]{section.6.5}{Conclusion}{chapter.6}% 76
-\BOOKMARK [0][-]{chapter.7}{Acceleration-Sensitive Interference}{}% 77
-\BOOKMARK [1][-]{section.7.1}{Chapter Outline}{chapter.7}% 78
-\BOOKMARK [1][-]{section.7.2}{The M-Squared Laser System}{chapter.7}% 79
-\BOOKMARK [2][-]{subsection.7.2.1}{Laser System Overview}{section.7.2}% 80
-\BOOKMARK [2][-]{subsection.7.2.2}{Frequency and Phase Control}{section.7.2}% 81
-\BOOKMARK [2][-]{subsection.7.2.3}{The DCS Module}{section.7.2}% 82
-\BOOKMARK [1][-]{section.7.3}{Atom Detection}{chapter.7}% 83
-\BOOKMARK [2][-]{subsection.7.3.1}{Optical Setup}{section.7.3}% 84
-\BOOKMARK [2][-]{subsection.7.3.2}{Detection using + transitions}{section.7.3}% 85
-\BOOKMARK [2][-]{subsection.7.3.3}{Measuring the Occupation Probability}{section.7.3}% 86
-\BOOKMARK [1][-]{section.7.4}{Individual Pulse Characterisation}{chapter.7}% 87
-\BOOKMARK [2][-]{subsection.7.4.1}{Raman Transition Spectrum}{section.7.4}% 88
-\BOOKMARK [2][-]{subsection.7.4.2}{Cancelling the Differential ac Stark Shift}{section.7.4}% 89
-\BOOKMARK [2][-]{subsection.7.4.3}{Velocity-Selective Pulse}{section.7.4}% 90
-\BOOKMARK [2][-]{subsection.7.4.4}{Interferometer Pulses}{section.7.4}% 91
-\BOOKMARK [1][-]{section.7.5}{Sensitivity}{chapter.7}% 92
-\BOOKMARK [2][-]{subsection.7.5.1}{The Allan Variance}{section.7.5}% 93
-\BOOKMARK [2][-]{subsection.7.5.2}{Sources of Noise}{section.7.5}% 94
-\BOOKMARK [2][-]{subsection.7.5.3}{Detection Noise}{section.7.5}% 95
-\BOOKMARK [2][-]{subsection.7.5.4}{The Sensitivity Function}{section.7.5}% 96
-\BOOKMARK [2][-]{subsection.7.5.5}{Influence of Laser Phase Noise}{section.7.5}% 97
-\BOOKMARK [2][-]{subsection.7.5.6}{Vibrations}{section.7.5}% 98
-\BOOKMARK [1][-]{section.7.6}{Measuring Accelerations}{chapter.7}% 99
-\BOOKMARK [2][-]{subsection.7.6.1}{Fringe Calibration}{section.7.6}% 100
-\BOOKMARK [2][-]{subsection.7.6.2}{Correcting for Vibration Noise}{section.7.6}% 101
-\BOOKMARK [2][-]{subsection.7.6.3}{Signal Stability}{section.7.6}% 102
-\BOOKMARK [1][-]{section.7.7}{Conclusion}{chapter.7}% 103
-\BOOKMARK [0][-]{chapter.8}{Outlook}{}% 104
-\BOOKMARK [1][-]{section.8.1}{Conclusions}{chapter.8}% 105
-\BOOKMARK [1][-]{section.8.2}{Avenues of Further Research}{chapter.8}% 106
-\BOOKMARK [1][-]{section.8.3}{Concluding Remarks}{chapter.8}% 107
-\BOOKMARK [0][-]{appendix.A}{Quans Laser Serial Commands}{}% 108
-\BOOKMARK [0][-]{chapter*.133}{Bibliography}{}% 109
-\BOOKMARK [0][-]{chapter*.134}{Acronyms}{}% 110
+\BOOKMARK [2][-]{subsection.4.2.2}{The 3D MOT system}{section.4.2}% 40
+\BOOKMARK [2][-]{subsection.4.2.3}{CCD Imaging}{section.4.2}% 41
+\BOOKMARK [1][-]{section.4.3}{Generating MOT light}{chapter.4}% 42
+\BOOKMARK [2][-]{subsection.4.3.1}{Absolute Frequency Reference}{section.4.3}% 43
+\BOOKMARK [2][-]{subsection.4.3.2}{Cooling and Repump Light}{section.4.3}% 44
+\BOOKMARK [2][-]{subsection.4.3.3}{Real-Time Control}{section.4.3}% 45
+\BOOKMARK [1][-]{section.4.4}{Controlling the MOTs}{chapter.4}% 46
+\BOOKMARK [2][-]{subsection.4.4.1}{Optical Fibre Network}{section.4.4}% 47
+\BOOKMARK [2][-]{subsection.4.4.2}{Magnetic Field Control}{section.4.4}% 48
+\BOOKMARK [1][-]{section.4.5}{Characterising the MOTs}{chapter.4}% 49
+\BOOKMARK [2][-]{subsection.4.5.1}{3D MOT Loading Rate}{section.4.5}% 50
+\BOOKMARK [1][-]{section.4.6}{Conclusion}{chapter.4}% 51

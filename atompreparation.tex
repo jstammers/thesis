@@ -5,7 +5,7 @@ ensemble of atoms for interferometry, after they are loaded into the
 3D \ac{mot}. After being released from the trap, the atoms are cooled
 and launched using a moving molasses, as described
 in~\SectionRef{sec:optical_molasses}. Following this, a sequence of
-optical and microwaves pulses are used to increase the population in
+optical and microwaves pulses is used to increase the population in
 the \(\ket{1,0}\) ground state and end with an ensemble which has a
 narrow velocity spread along the Raman axis. A characterisation of
 this is given in~\SectionRef{sec:state_prep}.
@@ -21,16 +21,13 @@ in~\SectionRef{sec:atom_detection}.
 
 \section{Cooling in Optical Molasses}\label{sec:optical_molasses}
 A low thermal velocity means that the atoms can be interrogated for a
-longer time and in the case of atom interferometry, leads to a more
-sensitive measurement of acceleration. In addition, the thermal
-expansion of the ensemble leads to greater systematic phase shifts due
-to effects such as magnetic field gradients and laser wavefront
-distortions. The temperature of atoms inside the \ac{mot} is greater
-than desired, so further cooling is required before a strong
+longer time, $2T$, because the atom cloud spreads out more slowly.
+This in turn makes the accelerometer more sensitive because the
+interferometer phase is proportional to $T^2$. 
+Further cooling is therefore required before the most sensitive
 interferometer signal can be achieved. Temperatures well below that of
 the Doppler limit (\sivalue{146}{\micro\kelvin} for \ac{rb87}) can be
-reached using the dissipative force that acts on an atom travelling
-through a spatially varying electric field~\cite{Salomon1990}. In what follows, the principles of
+reached using polarisation gradient cooling~\cite{Salomon1990}. In what follows, the principles of
 sub-Doppler cooling using polarisation gradients will not be discussed
 in detail. Further details can be found
 elsewhere~\cite{Dalibard1989,Berg-Sorensent1992}. 
@@ -64,15 +61,15 @@ large enough to lift the degeneracy of the two Raman transitions.
 
 %The light used to drive Raman transitions during the exeperiment is launched into the chamber on two orthogonal axes of a \ac{pm} fibre. These are retro-reflected to produce two counter-propagating beams that are orthogonally polarised to the incoming ones. In the absence of \(\pi\)-polarised light, only \((\sigma^+-\sigma^+)\) or \((\sigma^--\sigma^-)\) pairs of polarised beams can drive Raman transitions. If the incoming beams are circularly polarised, then this can occur using counter-propagating pairs of beams which impart momentum \(\pm \hbar \keff\) to an atom. If an atom can be driven by either pair at each interferometer pulse, this results in two interferometer paths, as well as additional trajectories which do not interfere and hence cause a reduction in fringe visibility.
 \subsection{Frequency and Power Control}\label{subsec:molasses_control}
-A timing diagram illustrating the power and frequency during this
-stage of the experiment is shown in \FigureRef{fig:molasses_timing}.
+A timing diagram illustrating the power and frequency during the
+molasses phase is shown in \FigureRef{fig:molasses_timing}.
 After the atoms are loaded into the \ac{mot}, they are released by
 switching off the quadrupole field. Once this field has decayed away,
 the frequency and intensity of the cooling light are ramped
 adiabatically~\cite{Molmer1990}. The frequency of the cooling light is ramped to
 -25\(\Gamma\) over \sivalue{1.4}{\milli\second}. Since the repump
-light is generated using an \ac{eom}, the modulation frequency is
-simultaneously ramped up to keep this light resonant with the
+light is a sideband of the cooling light, the modulation frequency is
+simultaneously ramped up to keep this sideband resonant with the
 \trans{1}{2} transition. Additionally, the relative detuning of
 counter-propagating \ac{mot} beams is varied so that the atoms are
 cooled into a moving molasses
@@ -105,34 +102,42 @@ imaged using the camera.}
 
 The configuration for launching atoms along the Raman axis is shown in
 \FigureRef{fig:moving_molasses}. The forward-propagating beams are
-blue-detuned by \(+\delta_l\) and the backward-propagating ones are
-red-detuned by \(-\delta_l\), so that atoms with a velocity along the
-beam axis of \(\vec{v} = \delta_l \lambda\) are+ resonant with both
+blue-detuned by \(+\delta f_l\) and the backward-propagating ones are
+red-detuned by \(-\delta f_l\), so that atoms with a velocity along the
+beam axis of \(\vec{v} = \delta f_l \lambda\) are resonant with both
 beams. The frequency of each beam is ramped from the initial value by
 varying the modulation frequency of its \ac{aom}. This ramp occurs
-slowly to ensure the atoms are adiabatically accelerated to the
-resonant velocity, minimising excess heating of the atoms. As there is
+slowly to ensure strong cooling throughout the period of accelerating
+the atoms to their final velocity. As there is
 no pair of \ac{mot} beams along the axis of the Raman beams, the
 \(\vec{x}\) and \(\vec{y}\) \ac{mot} beams, whose axes are nominally
-at 45\(^{\circ}\) to the Raman axis, are used to launch the atoms. By
+at $\pm45^{\circ}$ to the Raman axis, are used to launch the atoms. By
 controlling the power and alignment of each beam, the net velocity on
 the atoms will be along the Raman axis. If the detuning of both pairs
 of beams is the same, then the velocity along the Raman axis is given
-by \(\vec{v_r} = \sqrt{2} \delta_l \lambda\)~\cite{Ohshima1995}.
+by \(\vec{v_r} = \sqrt{2} \delta f_l \lambda\)~\cite{Ohshima1995}.
 \begin{figure}[!htbp]
     \centering
     \def\svgwidth{0.6\textwidth}\input{moving_molasses.pdf_tex}
     %\resizebox{0.6\textwidth}{!}{\input{moving_molasses.pdf_tex}}
-    \caption[Beam configuration for a moving molasses]{Beam configuration for a moving molasses. When counter-propagating beams are detuned from each other, the atoms are slowed to a velocity which balances the frequency of each beam. Along the vertical axis, the beams are detuned by \(\delta_v\) so that the cloud is launched upwards with a velocity \(v_z = \delta_v \lambda\). In the horizontal plane, the \(\vec{x}\) and \(\vec{y}\) beams are detuned by \(\delta_h\) so that the resultant velocity is along the Raman axis \(v_r = \sqrt{2}\delta_h\lambda\). }
+    \caption[Beam configuration for a moving molasses]{Beam
+    configuration for a moving molasses. When counter-propagating
+  beams are detuned from each other, the atoms are cooled into a
+  moving frame where the Doppler shift brings both beams to the same
+  frequency. Along the vertical
+axis, the beams are detuned by \(\delta f_v\) so that the cloud is
+launched upwards with a velocity \(v_z = \delta f_v \lambda\). In the
+horizontal plane, the \(\vec{x}\) and \(\vec{y}\) beams are detuned by
+\(\delta f_h\) so that the resultant velocity is along the Raman axis
+\(v_r = \sqrt{2}\delta f_h\lambda\). }
     \label{fig:moving_molasses}
 \end{figure}
 \par\noindent
 As well as launching the atoms horizontally, the atoms are launched
-vertically so that they do not fall as far under gravity. Since the
-atoms remain close to the centre of the beam, where the intensity
-across the cloud is more uniform, longer pulse separation times can be
-used before the intensity gradient causes a significant dephasing.
-This launch is carried out using the \ac{mot} beams that lie along the
+vertically so that they can remain closer to the centre of the chamber
+after the free fall time $2T$. This keeps them in a region of more
+uniform Raman beam intensity where the pulse area is more homogeneous
+across the cloud, giving better fringe visibility. This launch is carried out using the \ac{mot} beams that lie along the
 vertical \(\vec{z}\) axis. 
 %Under an appropriate choice of launch
 %velocity, the centre-of-mass trajectory transverse to the Raman beam
@@ -141,15 +146,12 @@ vertical \(\vec{z}\) axis.
 %in~\SectionRef{subsec:launch_contrast}. 
 \par\noindent
 \subsection{Imaging the Atom Cloud over Time}\label{subsec:molasses_imaging}
-Once released from the trap, the atom cloud is free to expand.
-Provided that there are no external forces on the atoms from electric
-or magnetic fields, the expansion of the cloud is determined by its
+Once released from the trap, the atom cloud is free to expand at a
+rate due to its
 thermal velocity distribution. In addition to this, the centre-of-mass
-moves due to its initial velocity and acceleration due to gravity. For
-the purposes of this discussion, it is worthwhile to consider the
-motion of atoms within the ensemble separately to the centre-of-mass
-motion as these provide a means of measuring the temperature and
-launch velocity, respectively. These were measured by imaging the
+moves due to its initial velocity and acceleration due to gravity
+(and any other external forces).
+The temperature of the cloud $T$ was measured by imaging the
 distribution of atoms after allowing the cloud to expand in the dark
 for a range of expansion times. A typical atom cloud trajectory is
 shown in~\FigureRef{fig:molasses_launch}, in which the cloud was imaged
@@ -163,31 +165,34 @@ up to \sivalue{76}{\milli\second} after being released from the trap.
 \end{figure}
 \subsubsection{Measuring the Temperature}
 In thermal equilibrium, the velocity distribution of the atoms is
-described by a Maxwell-Boltzmann distribution
+described by a Maxwell-Boltzmann distribution. The velocity
+component along one direction has the distribution
+%\begin{equation}
+%    f(v_x,v_y,v_z) = \left(\frac{m}{2\pi k_B }\right)^{3/2}e^{-\frac{m (v`_x^2+v`_y^2+v`_z^2)}{2 k_B T}}
+%    \label{eq:mb3D}
+%\end{equation}
+%where \(v`_i = v_i - \langle v_i \rangle\) is the difference from the
+%average velocity. Along a single axis, the velocity distribution is
+%obtained by integrating over the other velocity components. For the
+%sake of notation, the following discussion uses \(x\) and \(v_x\) as
+%labels for position and velocity, but these are interchangeable with
+%the equivalent components along the other axes.
+%As~\EquationRef{eq:mb3D} is a product of velocity distributions along
+%each axis, the velocity distribution along one axis is 
 \begin{equation}
-    f(v_x,v_y,v_z) = \left(\frac{m}{2\pi k_B }\right)^{3/2}e^{-\frac{m (v`_x^2+v`_y^2+v`_z^2)}{2 k_B T}}
-    \label{eq:mb3D}
-\end{equation}
-where \(v`_i = v_i - \langle v_i \rangle\) is the difference from the
-average velocity. Along a single axis, the velocity distribution is
-obtained by integrating over the other velocity components. For the
-sake of notation, the following discussion uses \(x\) and \(v_x\) as
-labels for position and velocity, but these are interchangeable with
-the equivalent components along the other axes.
-As~\EquationRef{eq:mb3D} is a product of velocity distributions along
-each axis, the velocity distribution along one axis is 
-\begin{equation}
-    f(v_x) = \left(\frac{m}{2\pi k_B }\right)^{1/2}e^{-\frac{m (v_x-\langle v_x \rangle) ^2}{2 k_B T}}
+    f(v_x) = \left(\frac{m}{2\pi k_B T}\right)^{1/2}e^{-\frac{m (v_x-\langle v_x \rangle) ^2}{2 k_B T}}
     \label{eq:mb1D}
 \end{equation}
-Suppose that there are initially \(n_0 (x) \mathrm{d}x\) atoms within
-the region \((x, x+\mathrm{d}x)\), where \(n_0(x) = n(x, t=t_0)\) is
-the initial atomic density along one axis. During ballistic expansion,
-the atoms redistribute themselves according to their velocity. After a
-time \(t\) of free expansion, the position of an atom initially at
-\(x\) is \(x + v_x t\). 
+%Suppose that there are initially \(n_0 (x) \mathrm{d}x\) atoms within
+%the region \((x, x+\mathrm{d}x)\), where \(n_0(x) = n(x, t=t_0)\) is
+%the initial atomic density along one axis. During ballistic expansion,
+%the atoms redistribute themselves according to their velocity. After a
+%time \(t\) of free expansion, the position of an atom initially at
+%\(x\) is \(x + v_x t\). 
 Assuming that the number density is initially a Gaussian, with a peak
-number density \(n_0(x_0)\) at the centre-of-mass, the number density
+number density \(n_0(x_0)\) at the centre-of-mass,
+and a mean square radius projected along $x$ of $\sigma_0^2$, the
+number density (projected along $x$)
 at later times is given by a convolution with~\EquationRef{eq:mb1D}
 \begin{equation}
         n(x,t) = \int n_0(x_0) \left(\frac{m}{2\pi k_B}\right)^{1/2} e^{-\frac{m (v_x-\langle v_x \rangle)^2}{2 k_B T}} e^{-\frac{(x+v_x t - x_0)^2}{2\sigma_0^2}} \mathrm{d}v_x
@@ -202,25 +207,19 @@ Gaussian, with a \(1/e^2\) width given by
 \end{equation}
 \par\noindent
 \FigureRef{fig:molasses_fit_examp} shows a typical density
-profile along each axis, obtained by imaging the cloud on a camera, as
-previously described in~\SectionRef{sec:imaging}. The width along each
+profile projected along each axis seen by the camera,
+as described in~\SectionRef{sec:imaging}. The width along each
 axis is estimated using a non-linear least squares fit
 to~\EquationRef{eq:density_time}.
 \FigureRef{fig:molasses_temperature} shows the measured cloud width
-over a range of expansion times. For the purposes of
-measuring the temperature, the total atom number and the initial cloud
-size are not important, so no attempt was made to estimate these. The
+over a range of expansion times. The
 initial measurement was made \sivalue{7}{\milli\second} after the end
 of the molasses to allow for enough time to re-lock the laser to
 \(-0.5\Gamma\) below the \trans{2}{3} transition and align the bias
 field to the \(\vec{z}\) axis so that the atoms could be optically
-pumped into the \(\ket{2,2}\) state. The width of the cloud along each
-axis is estimated using a
-non-linear least squares fit to~\EquationRef{eq:density_time}. Then, a
-least squares linear fit estimates the temperature along
-each axis from the gradient, as per~\EquationRef{eq:expansion_width}.
-The measured temperature along the horizontal and vertical axes of the
-camera was \(T_x = \sivalue{6.38 \pm 0.11}{\micro\kelvin}\) and \(T_y =
+pumped into the \(\ket{2,2}\) state. 
+The slopes of these graphs give the temperatures along the horizontal and vertical axes of the
+camera as \(T_x = \sivalue{6.38 \pm 0.11}{\micro\kelvin}\) and \(T_y =
 \sivalue{6.38 \pm 0.09}{\micro\kelvin}\), respectively.  
 \begin{figure}[htpb]
   \centering
@@ -233,14 +232,14 @@ to a Gaussian function.}
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.8\textwidth]{temperature_launch}
-    \caption[Temperature measurement using ballistic expansion]{Atom
-    cloud temperature using a ballistic expansion measurement. After
+    \caption[Temperature measurement using ballistic expansion]{Mean
+      squared cloud radius plotted against the square of the ballistic
+      expansion time. After
   molasses, the cloud is left to expand in the dark and in a region of
-close to zero magnetic field. A least-squares linear fit of
-\(\sigma(t)^2\) is used to estimate the temperature
-using~\EquationRef{eq:expansion_width}.  The
-gradient from the fits for the horizontal (blue) and vertical (orange)
-axes are  \(T_x = \sivalue{6.38 \pm0.11}{\micro\kelvin}\) and \(T_y =
+  close to zero magnetic field. Least-squares fits to the camera
+  images give the mean-square radii $\sigma(t)^2$ in the horizontal
+  (blue) and vertical (orange) directions. 
+The gradient of these curves gives temperatures \(T_x = \sivalue{6.38 \pm0.11}{\micro\kelvin}\) and \(T_y =
 \sivalue{6.38\pm0.09}{\micro\kelvin}\).}
     \label{fig:molasses_temperature}
 \end{figure}
@@ -259,13 +258,13 @@ constant acceleration
 where \(v_i\) is the initial velocity along the given axis and \(a_i\)
 is the acceleration.
 \par\noindent
-To launch the atoms both vertically and horizontally (along the axis
-parallel with the Raman light), the \((z_+, z_-)\) \acp{aom} were
-ramped so that the relative frequency difference between each beam was
-\(2\times\)\sivalue{320}{\kilo\hertz} and the \(x\) and \(y\) \ac{aom}
+To launch the atoms vertically, the \((z_+, z_-)\) \acp{aom} were
+ramped so that the frequency difference between the light beams was
+\(2\times\)\sivalue{320}{\kilo\hertz}. To launch along the Raman
+beams, the \(x\) and \(y\) \ac{aom}
 frequencies were ramped to give a frequency difference of \(2\times
-\sivalue{75}{\kilo\hertz}\) between the horizontal \ac{mot} beams.
-\FigureRef{fig:molasses_launch} is a plot of the measured
+\sivalue{75}{\kilo\hertz}\) between each pair of horizontal \ac{mot} beams.
+\FigureRef{fig:molasses_position} is a plot of the measured
 centre-of-mass position along the horizontal and vertical camera axes
 over time. A linear least-squares fit
 to~\EquationRef{eq:position_free} gives a vertical launch quantities
@@ -314,7 +313,11 @@ corresponding to a velocity of \sivalue{1.54}{\centi\metre\per\second}
 along the Raman axis. The magnetic field inside the chamber is
 controlled using bias coils and no attempt was made to cancel magnetic
 field gradients. It is plausible that a residual field of this
-magnitude is a result of a magnetic field gradient.
+magnitude is a result of a magnetic field gradient. For the moment,
+this does not cause a problem as we simply adjust the molasses
+detuning to achieve the desired launch velocity. In future, a
+precisely known launch velocity may be required for sensing rotations,
+and then it will be necessary to return to this issue.
 
 \section{State Preparation}\label{sec:state_prep}
 After the atoms have been cooled in an optical molasses, the

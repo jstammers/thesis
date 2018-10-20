@@ -1,16 +1,13 @@
-\BOOKMARK [0][-]{chapter.4}{Cooling and Trapping in a MOT}{}% 36
-\BOOKMARK [1][-]{section.4.1}{Chapter Overview}{chapter.4}% 37
-\BOOKMARK [1][-]{section.4.2}{The Navigator Vacuum Chamber}{chapter.4}% 38
-\BOOKMARK [2][-]{subsection.4.2.1}{The 2D MOT system}{section.4.2}% 39
-\BOOKMARK [2][-]{subsection.4.2.2}{The 3D MOT system}{section.4.2}% 40
-\BOOKMARK [2][-]{subsection.4.2.3}{CCD Imaging}{section.4.2}% 41
-\BOOKMARK [1][-]{section.4.3}{Generating MOT light}{chapter.4}% 42
-\BOOKMARK [2][-]{subsection.4.3.1}{Absolute Frequency Reference}{section.4.3}% 43
-\BOOKMARK [2][-]{subsection.4.3.2}{Cooling and Repump Light}{section.4.3}% 44
-\BOOKMARK [2][-]{subsection.4.3.3}{Real-Time Control}{section.4.3}% 45
-\BOOKMARK [1][-]{section.4.4}{Controlling the MOTs}{chapter.4}% 46
-\BOOKMARK [2][-]{subsection.4.4.1}{Optical Fibre Network}{section.4.4}% 47
-\BOOKMARK [2][-]{subsection.4.4.2}{Magnetic Field Control}{section.4.4}% 48
-\BOOKMARK [1][-]{section.4.5}{Characterising the MOTs}{chapter.4}% 49
-\BOOKMARK [2][-]{subsection.4.5.1}{3D MOT Loading Rate}{section.4.5}% 50
-\BOOKMARK [1][-]{section.4.6}{Conclusion}{chapter.4}% 51
+\BOOKMARK [0][-]{chapter.5}{Preparing Atoms for Interferometry}{}% 52
+\BOOKMARK [1][-]{section.5.1}{Chapter Overview}{chapter.5}% 53
+\BOOKMARK [1][-]{section.5.2}{Cooling in Optical Molasses}{chapter.5}% 54
+\BOOKMARK [2][-]{subsection.5.2.1}{Motivation for Launching}{section.5.2}% 55
+\BOOKMARK [2][-]{subsection.5.2.2}{Frequency and Power Control}{section.5.2}% 56
+\BOOKMARK [2][-]{subsection.5.2.3}{Launching in a Moving Molasses}{section.5.2}% 57
+\BOOKMARK [2][-]{subsection.5.2.4}{Imaging the Atom Cloud over Time}{section.5.2}% 58
+\BOOKMARK [1][-]{section.5.3}{State Preparation}{chapter.5}% 59
+\BOOKMARK [2][-]{subsection.5.3.1}{Schemes for Preparation}{section.5.3}% 60
+\BOOKMARK [2][-]{subsection.5.3.2}{Optically Pumping the Atoms}{section.5.3}% 61
+\BOOKMARK [2][-]{subsection.5.3.3}{Including Microwave Transitions}{section.5.3}% 62
+\BOOKMARK [2][-]{subsection.5.3.4}{Blow-Away}{section.5.3}% 63
+\BOOKMARK [1][-]{section.5.4}{Conclusion}{chapter.5}% 64

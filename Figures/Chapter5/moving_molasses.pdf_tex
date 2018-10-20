@@ -54,15 +54,15 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{moving_molasses.pdf}}%
-    \put(0.4931449,0.92760715){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}-$\delta_v$\end{tabular}}}}%
+    \put(0.4931449,0.92760715){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}-$\delta f_v$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{moving_molasses.pdf}}%
-    \put(0.92700945,0.68745534){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}-$\delta_h$\end{tabular}}}}%
-    \put(0.92700945,0.24038415){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}-$\delta_h$\end{tabular}}}}%
+    \put(0.92700945,0.68745534){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}-$\delta f_h$\end{tabular}}}}%
+    \put(0.92700945,0.24038415){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}-$\delta f_h$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{moving_molasses.pdf}}%
-    \put(0.07874645,0.24038415){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}+$\delta_h$\end{tabular}}}}%
+    \put(0.07874645,0.24038415){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}+$\delta f_h$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{moving_molasses.pdf}}%
-    \put(0.07874645,0.69518653){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}+$\delta_h$\end{tabular}}}}%
-    \put(0.48398471,0.00628982){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}+$\delta_v$\end{tabular}}}}%
+    \put(0.07874645,0.69518653){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}+$\delta f_h$\end{tabular}}}}%
+    \put(0.48398471,0.00628982){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}+$\delta f_v$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{moving_molasses.pdf}}%
     \put(0.49999421,0.63357103){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$v_z$\end{tabular}}}}%
     \put(0.63253903,0.55676329){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$v_y$\end{tabular}}}}%

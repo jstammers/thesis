@@ -228,6 +228,12 @@ P.~{R Berman}, ``{Atom Interferometry}''.
   \textbf{ T105} (2003), no.~1, 19,
   \href{http://dx.doi.org/10.1238/Physica.Topical.105a00019}{\doi{10.1238/Physica.Topical.105a00019}}.
 
+\bibitem{Raab1987}
+\hrefCMSnoop {} {E.~L. Raab, M.~Prentiss, A.~Cable{ et~al.}, ``{Trapping of
+  Neutral Sodium Atoms with Radiation Pressure}'',} \textit{ Physical Review
+  Letters} \textbf{ 59} (dec, 1987) 2631--2634,
+  \href{http://dx.doi.org/10.1103/PhysRevLett.59.2631}{\doi{10.1103/PhysRevLett.59.2631}}.
+
 \bibitem{muquansWebPage}
 \href {https://www.muquans.com/images/stories/muquans{\_}laser{\_}systems.pdf}
   {``{$\mu$Quans Laser System Specifications}''.}
@@ -275,13 +281,6 @@ P.~{R Berman}, ``{Atom Interferometry}''.
   ``{Atomic-density-dependent losses in an optical trap}'',} \textit{ Optics
   Letters} \textbf{ 13} (jun, 1988) 452,
   \href{http://dx.doi.org/10.1364/OL.13.000452}{\doi{10.1364/OL.13.000452}}.
-
-\bibitem{Schoser2002}
-\hrefCMSnoop {} {J.~Schoser, A.~Bat{\"{a}}r, R.~L{\"{o}}w{ et~al.}, ``{Intense
-  source of cold Rb atoms from a pure two-dimensional magneto-optical trap}'',}
-  \textit{ Physical Review A} \textbf{ 66} (aug, 2002) 023410,
-  \href{http://dx.doi.org/10.1103/PhysRevA.66.023410}{\doi{10.1103/PhysRevA.66.023410}},
-  \href{http://www.arXiv.org/abs/0201034}{\texttt{ arXiv:0201034}}.
 
 \bibitem{Salomon1990}
 \hrefCMSnoop {} {C.~Salomon, J.~Dalibard, W.~D. Phillips{ et~al.}, ``{Laser
@@ -586,6 +585,13 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
   \href{http://dx.doi.org/10.1088/0031-8949/74/2/N01}{\doi{10.1088/0031-8949/74/2/N01}},
   \href{http://www.arXiv.org/abs/0605055}{\texttt{ arXiv:0605055}}.
 
+\bibitem{Schoser2002}
+\hrefCMSnoop {} {J.~Schoser, A.~Bat{\"{a}}r, R.~L{\"{o}}w{ et~al.}, ``{Intense
+  source of cold Rb atoms from a pure two-dimensional magneto-optical trap}'',}
+  \textit{ Physical Review A} \textbf{ 66} (aug, 2002) 023410,
+  \href{http://dx.doi.org/10.1103/PhysRevA.66.023410}{\doi{10.1103/PhysRevA.66.023410}},
+  \href{http://www.arXiv.org/abs/0201034}{\texttt{ arXiv:0201034}}.
+
 \bibitem{Lan2012}
 \hrefCMSnoop {} {S.~Y. Lan, P.~C. Kuan, B.~Estey{ et~al.}, ``{Influence of the
   coriolis force in atom interferometry}'',} \textit{ Physical Review Letters}
@@ -625,11 +631,5 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
 \bibitem{Kasevich1992a}
 \hrefCMSnoop {} {M.~Kasevich, ``{Atom Interferometry in an atomic fountain}'',}
   1992.
-
-\bibitem{Raab1987}
-\hrefCMSnoop {} {E.~L. Raab, M.~Prentiss, A.~Cable{ et~al.}, ``{Trapping of
-  Neutral Sodium Atoms with Radiation Pressure}'',} \textit{ Physical Review
-  Letters} \textbf{ 59} (dec, 1987) 2631--2634,
-  \href{http://dx.doi.org/10.1103/PhysRevLett.59.2631}{\doi{10.1103/PhysRevLett.59.2631}}.
 
 \end{thebibliography}\endgroup

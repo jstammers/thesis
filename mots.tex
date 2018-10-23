@@ -561,12 +561,11 @@ polarised using a polarising beam-splitter before a \ac{hwp} aligns it
 with the slow axis of a \ac{pm} fibre. The light is first divided on a
 1:2 beam-splitter, with 66\% exiting one port, used for the 3D
 \ac{mot}. The 34\% on the other port is split again using a 95:5
-beam-splitter in the hope of making 34\% of the input power available
+beam-splitter in the hope of making 32\% of the input power available
 for the 2D \ac{mot}, leaving 1.7\% for the push beam.
-But still the output powers are significantly lower than that, as
-indicated in~\FigureRef{fig:fibre_network}. The
-junctions between components are spliced together to minimise
-insertion loss. The slow axes of the spliced fibres are aligned so that the
+The junctions between components are spliced together to minimise
+insertion loss, but still the output powers are significantly lower than that, as
+indicated in~\FigureRef{fig:fibre_network}. The slow axes of the spliced fibres are aligned so that the
 linear polarisation of the light is maintained. Independent control of each
 output is done using a \textit{Gooch and Housego} fibre \ac{aom} with
 a central modulation frequency of \sivalue{135}{\mega\hertz}. \par\noindent The light
@@ -596,16 +595,14 @@ at each output, accounting for insertion loss and driving each
 \end{figure} 
 \subsection{Magnetic Field Control}\label{subsec:coil_control} 
 There are 5 pairs of bias coils used to control the zero of magnetic
-field - 3 for the 3D \ac{mot} and 2 for the 2D \ac{mot}. There are
-no bias coils along the axial direction of the 2D \ac{mot} because
-the quadrupole coils produce a field which is constant along this
-axis (see~\FigureRef{fig:2d_field_xy}). The radial position of the magnetic field zero can then be
-controlled using bias coils along the other two axes, so that the
-2D \ac{mot} forms along the axis which is co-linear with the central
-axis of the pinhole. In contrast, 3 pairs of coils are used for the 3D
-\ac{mot} so that the position of zero magnetic field coincides
-with the position where the scattering rate from each beam is the
-same. \par\noindent
+field - 3 for the 3D \ac{mot} and 2 for the 2D \ac{mot}. 
+%The radial position of the magnetic field zero can then be
+%controlled using bias coils along the other two axes, so that the
+%2D \ac{mot} forms along the axis which is co-linear with the central
+%axis of the pinhole. In contrast, 3 pairs of coils are used for the 3D
+%\ac{mot} so that the position of zero magnetic field coincides
+%with the position where the scattering rate from each beam is the
+%same. \par\noindent
 The current through each set of
 bias coils is
 controlled using a voltage-controlled current source. The control
@@ -615,11 +612,10 @@ The coils are placed in series with a sense resistor of resistance
 at the inverting terminal is \(V_- = i R_s\).  This forms a negative
 feed-back loop to keep the output current constant if the load
 resistance changes. The bias coils can be supplied with up to
-\sivalue{2}{\ampere} using a control voltage of \sivalue{10}{\volt}.
-\par\noindent This same circuit is used to control the 3D \ac{mot}
-coils, except for the fact that their larger resistance means that a
-smaller sense resistor is needed to achieve the current required to produce a strong field
-gradient. During the experiment, the 3D \ac{mot} coils need to be
+\sivalue{2}{\ampere} using a control voltage of \sivalue{10}{\volt}. This same circuit is used to control the 3D \ac{mot}
+coils.
+\par \noindent
+During the experiment, the 3D \ac{mot} coils need to be
 switched off rapidly, to allow for effective sub-Doppler cooling of
 the atoms~\cite{Dedman2001}. By actively controlling the current
 through the coils, their stored energy can be dissipated faster than
@@ -655,7 +651,7 @@ lab. The cooling light is detuned by \(-2 \Gamma\) from the
 \trans{2}{3} transition for the 2D \ac{mot} and by\(-2.5 \Gamma\) for the 3D
 \ac{mot}. The push beam is at resonance. A timing diagram of the
 loading sequence is given in~\FigureRef{fig:mot_loading_timing}. The
-light and magnetic fields (both the quadrupole and bias fields)
+light and quadrupole field 
 for the 2D \ac{mot} are switched off after \sivalue{100}{\milli\second} and the
 3D \ac{mot} is kept on for a further \sivalue{50}{\milli\second} to allow for
 the transit of the remaining atoms from the 2D \ac{mot} to the 3D \ac{mot}.
@@ -701,7 +697,8 @@ switching off the 3D quadrupole field prior to cooling in an optical molasses.
   and 3D \acp{mots}. The optical powers listed are the total used for
 each \ac{mot}, which is divided into separate beams. The bias field
 strengths are the values used during the preliminary trapping stage of
-the experiment to cancel the stray field from the lab. The specified field gradients are given along the
+the experiment to cancel the stray field from the lab. This depends on the location of the experiment, rather than the
+experiment itself. The specified field gradients are given along the
 radial direction and the symmetry axis of the quadrupole coils for the
 2D and 3D \acp{mots}, respectively.}
   \label{tab:mot_parameters}
@@ -743,9 +740,7 @@ great enough, the loss due to background atom collisions is small compared to
 the loss due to rubidium collisions and the number of atoms in the
 \ac{mot} becomes independent of
 \(\phi_\text{rb}\). \par\noindent The flux of atoms from the 2D \ac{mot} depends on the 2D
-\ac{mot} loading rate, which in turn depends on the capture volume and rubidium
-number density inside the cell. This is controlled by
-varying the partial pressure of rubidium inside the source cell. The number of atoms in the 3D \ac{mot} was measured over time for a range of dispenser currents. At low partial pressures,
+\ac{mot} loading rate, which in turn depends on the capture volume and the partial pressure of rubidium inside the source cell. The number of atoms in the 3D \ac{mot} was measured over time for a range of dispenser currents. At low partial pressures,
 the loading rate increases due to the increase in the flux from the 2D \ac{mot}.
 As the pressure increases, the increasing flux gives a larger steady-state
 number of atoms, up until the background pressure becomes negligible.

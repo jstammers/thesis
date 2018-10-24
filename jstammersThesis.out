@@ -1,13 +1,13 @@
-\BOOKMARK [0][-]{chapter.5}{Preparing Atoms for Interferometry}{}% 52
-\BOOKMARK [1][-]{section.5.1}{Chapter Overview}{chapter.5}% 53
-\BOOKMARK [1][-]{section.5.2}{Cooling in Optical Molasses}{chapter.5}% 54
-\BOOKMARK [2][-]{subsection.5.2.1}{Motivation for Launching}{section.5.2}% 55
-\BOOKMARK [2][-]{subsection.5.2.2}{Frequency and Power Control}{section.5.2}% 56
-\BOOKMARK [2][-]{subsection.5.2.3}{Launching in a Moving Molasses}{section.5.2}% 57
-\BOOKMARK [2][-]{subsection.5.2.4}{Imaging the Atom Cloud over Time}{section.5.2}% 58
-\BOOKMARK [1][-]{section.5.3}{State Preparation}{chapter.5}% 59
-\BOOKMARK [2][-]{subsection.5.3.1}{Schemes for Preparation}{section.5.3}% 60
-\BOOKMARK [2][-]{subsection.5.3.2}{Optically Pumping the Atoms}{section.5.3}% 61
-\BOOKMARK [2][-]{subsection.5.3.3}{The Microwave Transitions}{section.5.3}% 62
-\BOOKMARK [2][-]{subsection.5.3.4}{Blow-Away}{section.5.3}% 63
-\BOOKMARK [1][-]{section.5.4}{Conclusion}{chapter.5}% 64
+\BOOKMARK [0][-]{chapter.6}{Raman Optical System}{}% 65
+\BOOKMARK [1][-]{section.6.1}{Chapter Outline}{chapter.6}% 66
+\BOOKMARK [1][-]{section.6.2}{Requirements}{chapter.6}% 67
+\BOOKMARK [2][-]{subsection.6.2.1}{Gradients of Intensity}{section.6.2}% 68
+\BOOKMARK [2][-]{subsection.6.2.2}{Wavefront Distortions}{section.6.2}% 69
+\BOOKMARK [1][-]{section.6.3}{Raman Optics}{chapter.6}% 70
+\BOOKMARK [2][-]{subsection.6.3.1}{Component Overview}{section.6.3}% 71
+\BOOKMARK [2][-]{subsection.6.3.2}{Alignment and Collimation}{section.6.3}% 72
+\BOOKMARK [2][-]{subsection.6.3.3}{Measuring the Beam Width}{section.6.3}% 73
+\BOOKMARK [1][-]{section.6.4}{Retro-Reflection Assembly}{chapter.6}% 74
+\BOOKMARK [2][-]{subsection.6.4.1}{In-Situ Alignment and Optimisation}{section.6.4}% 75
+\BOOKMARK [2][-]{subsection.6.4.2}{The Mechanical Accelerometer}{section.6.4}% 76
+\BOOKMARK [1][-]{section.6.5}{Conclusion}{chapter.6}% 77

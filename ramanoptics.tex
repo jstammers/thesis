@@ -3,18 +3,32 @@
 \section{Chapter Outline}
 This chapter presents in detail the optical system used to produce a
 large collimated beam for driving Raman transitions. It begins with a
-motivation of the need to minimise wavefront distortions and intensity
-gradients
+motivation of the need to minimise intensity gradients and wavefront distortions 
 in~\SectionRef{sec:wavefront_req}. This is followed by a description
 of the components that form the collimator
 in~\SectionRef{sec:setup_ramanoptics}.
 \SectionRef{subsec:setup_ramanmirror} presents an overview of the
 retro-reflection assembly.
-\section{Wavefront Requirements}\label{sec:wavefront_req}
-The sensitivity of an atom interferometer to inertial forces depends
-on the phase of the light during each pulse. Any component to this
-phase that does not result from the acceleration of the atoms along
-the Raman axis is a source of error. 
+\section{Requirements}\label{sec:wavefront_req}
+This section
+outlines the optical characteristics of the light which affect the
+sensitivity of the atom interferometer. These are discussed in the
+context of this experiment, where gravity induces transverse motion
+across the light. The light beams that drive the Raman transition have
+a intensity profile that varies radially, e.g. along the axis parallel
+to gravity. The motion of the atoms through
+a gradient of intensity leads to a variation in the Rabi frequency that reduces the interferometer fringe
+contrast and decreases acceleration sensitivity~\cite{Kim2017}.
+This places requirements on the beam waist size, which are discussed
+in~\SectionRef{subsec:fringe_beam_size}. 
+\par\noindent
+The atom interferometer senses acceleration through the second
+derivative of the phase of the beat note between the two
+counter-propagating light fields that drive the Raman transition. Any
+such phase derivative that does not result from the acceleration of the atoms along
+the Raman axis is a source of error.
+One such source is distortion of the Raman beams wavefronts, which can
+arise from transmission through rough optical elements.
 %This is particularly apparent in
 %the wavefront of the light. Optical distortions of the two Raman beams
 %leads to an additional position-dependent phase shift. When there is
@@ -23,108 +37,192 @@ the Raman axis is a source of error.
 %$\Delta \Phi$\footnote{Since $\Delta \Phi = \phi_1 - 2\phi_2 +
 %\phi_3$, any effect which leads to a constant or linear phase shift at
 %each pulse is not measured by the interferometer.}.  
-%\par\noindent
-This section
-outlines the optical characteristics of the light which affect the
-sensitivity of the atom interferometer. These are discussed in the
-context of this experiment, where gravity induces transverse motion
-across the light. For instance, a gradient of intensity across
-the atom cloud leads to a variation in the Rabi frequency that
-dephases the atoms and reduces the interferometer fringe
-contrast~\cite{Kim2017}.
-This places requirements on the beam waist size, which are discussed
-in~\SectionRef{subsec:fringe_beam_size}. 
-
-\par\noindent A further constraint on the optical system comes from
-sources of wavefront aberrations. These lead to a spatially-varying
-phase that results in a bias to the interferometer phase.
-This phase is not the same for each atom and therefore reduces the
-interferometer fringe contrast. This was a large motivating factor
-for mounting the optical system inside the vacuum chamber. The effect
-of wavefront distortions on the fringe contrast are quantitatively
+In fact, the typical flatness of optical viewports is greater than
+desired for making a sensitive accelerometer. To avoid the need for
+optical viewports, the Raman optical system, described
+in~\SectionRef{sec:setup_ramanoptics}, was mounted inside the
+chamber and built using optical elements that were manufactured to
+far better surface
+qualities than conventional optics. 
+The effect of wavefront distortions as a source of phase noise is
 discussed in~\SectionRef{subsec:fringe_wavefront}.
 \subsection{Gradients of Intensity}\label{subsec:fringe_beam_size}
 The effects of a gradient of intensity on the fringe contrast can be shown by
-considering an ensemble of atoms that are spatially distributed by a Gaussian
-distribution. Neglecting the effect of the ensemble's velocity distribution on
-the Raman detuning and for fixed pulse times, the pulse area \(\Omega \tau\)
-varies only as a function of the radial displacement from the optic axis. The
-total fringe contrast can be determined by a convolution of the contrast for a
-single atom with the atomic density
+considering an ensemble of atoms with a Gaussian
+distribution of position. Neglecting the effect of the ensemble's velocity distribution on
+the Raman detuning, the Rabi frequency \(\Omega\)
+varies only as a function of the radial displacement $\rho$ from the optic axis. The
+fringe contrast is then a convolution of the contrast for a
+single atom with the atomic density distribution
 \begin{equation}
-	\mathcal{C} = \int \frac{1}{\sqrt{2\pi}\sigma_c}e^{-r^2/(2\sigma_c^2)} c\left(\Omega(r-r_1),\Omega_(r-r_2),\Omega(r-r_3)\right) \;\mathrm{d}r
+	\mathcal{C} = \int_0^\infty
+  \frac{\rho}{\sigma_c^2}e^{-\rho^2/(2\sigma_c^2)}
+  c\left(\Omega(\rho-\rho_1),\Omega_(\rho-\rho_2),\Omega(\rho-\rho_3)\right)
+  \;\mathrm{d}\rho
 	\label{eq:cloud_contrast}
 \end{equation}
-where \(\sigma_c\) is the radial width of the atom cloud.
-The fringe contrast for a single atom is denoted by $c$. This is
+where \(\sigma_c\) is the rms radius of the atom cloud projected along any one
+Cartesian axis. 
+The fringe contrast for a single atom, denoted by $c$, is
 defined in \EquationRef{eq:fringe_contrast}. The arguments refer to
 the Rabi frequency during each pulse. The duration of each pulse is
-such that an atom at the centre-of-mass $r_i$ has a $\pi/2$ or $\pi$
-rotation. The atom cloud is initially at the
-centre of the laser and falling under gravity so that centre-of-mass coordinates are
-\(\left(0, -\frac{1}{2}g T^2, -2 g T^2\right)\) respectively. It is
-assumed that the two lasers which drive the Raman transition have the same
-waist size and Rabi frequency, which is determined by the product of the
+chosen such that an atom at the centre-of-mass radius $\rho_i$ has a $\pi/2$ or $\pi$
+rotation. It is
+assumed that the two light beams which drive the Raman transition have the same
+waist size and Rabi frequency, determined by the product of the
 electric fields (see~\EquationRef{eq:rabi_freq}). Therefore, the
 position-dependent Rabi frequency is
 \begin{equation}
-	\Omega(r) = \Omega_0 e^{-2 r^2/w^2}
+	\Omega(r) = \Omega_0 e^{-2 \rho^2/w^2}
 \end{equation}
 where \(\Omega_0\) is the Rabi frequency along the optic axis and \(w\) is the
 waist size -- the distance at which the electric field falls to \(1/e\) of its
-peak value. The fringe contrast as a function as beam waist for an atom cloud of
-width a width \(\sigma_c = \sivalue{5}{\milli\metre}\) and a time between
-interferometer pulses of \(T = \sivalue{25}{\milli\second}\) is plotted in
-\FigureRef{fig:raman_fringecontrast}. For small beam waists, the intensity
-gradient across the cloud significantly reduces the fringe contrast. In fact, a
-beam waist much greater than the width of the cloud is necessary to achieve a
-large contrast between the two interferometer states. Relaxing the assumptions
-made on the ensemble's velocity distribution to include its influence on the
-detuning and spatial distribution of the atoms during the interferometer would
-strengthen this argument.
+peak value. 
+\par\noindent
+\FigureRef{fig:raman_fringecontrast} shows the fringe contrast as a function as beam waist for an atom cloud of
+rms radius \(\sigma_c = \sivalue{5}{\milli\metre}\) and a time between
+interferometer pulses of \(T = \sivalue{25}{\milli\second}\) for three
+cases. The blue curve shows the contrast when the atom cloud is initially at the
+centre of the laser and falls from rest under gravity so that centre-of-mass coordinates are
+\(\left(0, -\frac{1}{2}g T^2, -2 g T^2\right)\) respectively. The
+orange curve includes the vertical velocity of
+$u =$ \sivalue{25}{\cm\per\s} that the atoms are launched with by the
+molasses. Finally, the green curve displaces the starting position of
+the atom cloud to an initial position $\rho_0 = \frac{u T}{2} - \frac{g
+T^2}{4}$, so that each pulse is displaced by the same amount from the
+centre of the beam and the cloud sees the same intensity gradient. For small beam waists, the intensity
+gradient across the cloud significantly reduces the fringe contrast,
+particularly when the atoms are not launched. A beam waist much greater than the width of the cloud is necessary to achieve a
+large contrast. 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{fringe_contrast.pdf}
 	\caption[Simulated fringe contrast vs beam waist size]{Simulated fringe
 		contrast as a function of waist size \(w\) for an atom cloud falling under
-		gravity. This model assumes a Gaussian distributed atomic density with a
-		width \(\sigma_c = \sivalue{5}{\milli\metre}\) and a time between
-		interferometer pulses of \(T = \sivalue{25}{\milli\second}\). For smaller
-		beam waists the subsequent interferometer pulses have a larger intensity
-		gradient across the atom ensemble, which increases the dephasing of the two
-		states and reduces the interferometer fringe contrast.}
+		gravity. This model assumes a Gaussian distributed atomic density
+    with a rms radius \(\sigma_c = \sivalue{5}{\milli\metre}\) and a time between
+		interferometer pulses of \(T = \sivalue{25}{\milli\second}\). The
+    blue curve shows the contrast when the atoms fall from rest under gravity.
+    The orange curve includes the vertical launch velocity provided
+    during the molasses phase. In the green curve, the atoms are
+    displaced from the centre such that each pulse has the same
+  intensity gradient (see text).} 
+  %For smaller
+	%	beam waists the subsequent interferometer pulses have a larger intensity
+	%	gradient across the atom ensemble, which increases the dephasing of the two
+	%	states and reduces the interferometer fringe contrast.}
 	\label{fig:raman_fringecontrast}
 \end{figure}
-\subsection{Wavefront Distortions}\label{subsec:fringe_wavefront}
-Another optical effect that influences the
-sensitivity is distortions of the laser wavefront. In an ideal case, the
-superposition of the counter-propagating spherical wavefronts of the two lasers results in a planar
-wavefront for the field that drives the Raman transition. However,
-propagation through rough optical elements distort these wavefronts and
-introduce a spatially varying component of the Raman phase that is independent
-of acceleration. If the atom cloud's trajectory is parallel with the Raman axis,
-then this additional phase is the same at each laser pulse and is therefore
-cancelled out. 
 \par\noindent
-On the other hand, this phase is not cancelled when the cloud moves transverse to
-the Raman axis. It has the effect of reducing the fringe
-contrast. Starting with the assumption that this phase is Gaussian distributed
-around 0, with a standard deviation of \(\sigma_\phi\), if this is uncorrelated
-at each interferometer pulse, then the interferometer phase \(\Delta \Phi\) will
-be distributed with a standard deviation of \(\sigma_\Phi = \sqrt{6}
-\sigma_\phi\). Denoting this random phase as \(\delta\phi\), the fringe contrast
-is then given by
+The velocity distribution of the atoms introduces a detuning to each
+interferometer pulse due to the Doppler shift, as well as modifying
+the spatial distribution due to thermal expansion.
+\FigureRef{fig:phase_vel} shows the fringe contrast when including the
+one-dimensional velocity distribution of an atom ensemble with a
+temperature of \sivalue{5}{\micro\K}. The most significant difference is
+for small beam waists in
+the case of no initial launch velocity, where the contrast is now less
+suppressed. Aside from this, the fringe contrast is not hugely
+affected by the velocity distribution of the atoms. 
+\begin{figure}[htpb]
+  \centering
+  \includegraphics[width=0.7\linewidth]{fringe_contrast_vel.pdf}
+  \caption[Simulated fringe contrast vs beam waist size including a
+  thermal velocity distribution.]{Simulated fringe contrast as a function of waist size $w$,
+  including the effects of a velocity distribution along the Raman
+beam corresponding to a temperature of \sivalue{5}{\micro\K}. The other
+parameters are the same as those used
+in~\FigureRef{fig:raman_fringecontrast}.}
+  \label{fig:phase_vel}
+\end{figure}
+\subsection{Wavefront Distortions}\label{subsec:fringe_wavefront}
+\subsubsection{Systematic Effects}
+The field that drives the Raman transition comes from the
+superposition of the two counter-propagating Raman beams. Ideally,
+these are Gaussian beams and with a beam
+waist of \sivalue{35}{\mm}, the Rayleigh length $z_R \approx
+$ \sivalue{5}{\km} means that when collimated, the two beams have an
+almost identical radius of curvature.  
+In this case, the effective field will have a planar wavefront.
+However, if the beams are not collimated they will have different
+radii of curvature and their superposition will therefore
+have a parabolic wavefront. Each Raman pulse will impress a different
+phase to an atom falling under gravity, leading to a component of the
+interferometer phase that does not cancel out. If the incoming beam is
+has a spherical wavefront with a radius of curvature $R_1 = z_0 +
+\frac{z_R}{z_0}$ and a divergence angle $\theta$, the
+reflected beam, which has propagated a further distance of $2L$ has a
+radius of curvature $R_2 = R_1 + 2\theta L$. These have respective
+phases of $i k z^2/R_1^2$ and $-i k z^2/R_2^2$, where $k =
+2\pi/$(\sivalue{780}{\nm}). For an atom falling under
+gravity located
+between the output of the collimator and the retro-reflecting mirror
+such that $z_0 = L =$ \sivalue{7.5}{\cm}, a divergence angle of
+$\theta =$ \sivalue{1}{\milli\radian} contributes
+\sivalue{8e-12}{\radian} to the
+interferometer phase for a pulse separation of $T=$
+\sivalue{25}{\milli\s}. Provided that the beams are reasonably
+well-collimated, this effect can be largely neglected as it is
+unlikely to be a dominant source of error. 
+\par\noindent
+A more significant contribution 
+arises if there is a tilt of the retro-reflecting
+mirror. If the reflected beam is not counter-propagating,
+then to first order this results in a linear gradient in the Raman
+phase difference $\phi \rightarrow \phi + \alpha z$. After falling
+under gravity, this gives a false acceleration of $a_\text{false} = -
+\alpha g/k_\textnormal{eff}$. A false acceleration of $a_\text{false}
+=$ \sivalue{100}{\nano\g} results from a Raman phase gradient of
+$\alpha = $ \sivalue{1.6}{\radian\per\metre} and corresponds to a tilt
+of the retro-reflecting mirror of \sivalue{0.1}{\micro\radian}.
+\SectionRef{sec:in_situ} describes a method
+used to ensure good alignment of the mirror is discussed later, which
+renders this error negligible.
+
+\subsubsection{Random Sources of Phase}
+The propagation through rough optical elements distorts
+the wavefronts and introduce a spatially varying component of the
+Raman phase that is independent
+of acceleration. If this phase is common to both beams then it does
+not affect the atomic phase induced by the Raman
+transition. It is necessary only to consider the difference in the phase of
+the two light fields. If an atom's trajectory is parallel with the Raman axis,
+then this phase difference is the same at each laser pulse and makes
+no contribution to the interferometer phase for that atom. On the other hand, 
+the Raman phase difference can change if the atom moves transverse to
+the Raman axis and that contributes to the interferometer phase of the
+atom. If that is the same for all atoms in the cloud then we are once
+again describing the systematic error discussed immediately above. If
+it differs for different atoms, then there is a loss of fringe
+visibility that we estimate now.
+\par\noindent 
+For simplicity, let us assume that the interferometer phase has a
+Gaussian distribution over the cloud with a standard deviation of \(\sigma_\Phi 
+\). Denoting the random interferometer phase as \(\delta\phi\), the
+fringe pattern for a single atom is
 \begin{equation}
-	\mathcal{C}(\delta \phi) = \cos\left(2 \delta\phi\right)
+	F = \cos\left(\phi + \delta\phi\right)^2
 \end{equation}
-Following from this, if \( \delta \phi\) is uncorrelated between each atom, the
-expected value of the contrast over the ensemble is given by
+Following from this, the fringe pattern averaged over the cloud is
 \begin{align}
-	\langle \mathcal{C} \rangle & = \frac{1}{\sqrt{2\pi}\sigma_\Phi}\int \mathcal{C}(\delta \phi) \; e^{-\delta\phi^2/2\sigma_\Phi^2} \; \mathrm{d}\delta\phi \\
-	                            & = e^{-2 \sigma_\Phi^2}
+  \langle F \rangle & = \frac{1}{\sqrt{2\pi}\sigma_\Phi}\int
+  \cos(\phi+\delta \phi)^2 \; e^{-\delta\phi^2/2\sigma_\Phi^2} \; \mathrm{d}\delta\phi \\
+                    &= \frac{1}{2}(1+e^{-2\sigma_{\Phi}^2}\cos(2\phi)) 
 \end{align}
+This give a fringe contrast of
+\begin{equation}
+    \mathcal{C} = e^{-2 \sigma_\Phi^2}
+\end{equation}
 \FigureRef{fig:raman_phasenoise} shows the fringe contrast as a
-function of this random phase. 
+function of this random phase. Given the high quality of the optical
+elements (see~\SectionRef{sec:setup_ramanoptics}), it seems unlikely
+that the wavefront will wobble by more than $\lambda/50$ over a
+transverse region of \sivalue{5}{\mm}. I therefore expect that
+$\sigma_\Phi$ will not exceed \sivalue{100}{\milli\radian} and hence
+the loss of contrast from this mechanism will not be large. However,
+one can see that it is important to use optical components of high
+quality and that the standard $\lambda/20$ is likely to produce
+fringes of low contrast.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{phase_noise_contrast.pdf}
@@ -134,47 +232,50 @@ function of this random phase.
 		has an additional random component that is Gaussian distributed around 0
 		with a standard deviation of \(\sigma_\phi\). This random phase is also
 		uncorrelated between each pulse so that the total can be obtained using
-		Gaussian propagation of error. The dashed lines indicate the contrast for
-		phase noise expected from conventional optics, which are usually engineered
-		to a surface flatness of \(\lambda/20\).}
+		Gaussian propagation of error. The dashed lines indicate the
+    contrast for an rms phase uncertainty of \(\lambda/20\).}
 	\label{fig:raman_phasenoise}
 \end{figure}
 \par\noindent
-This effect is particularly apparent in the context of optical
-viewports. The process used to seal an optical viewport to a flange
-stresses the glass and distorts its thickness. In fact, commercially
-available viewports are specified to give thickness variations up
-to $\lambda/20$. At this level, the fringe contrast is severely
-reduced.
-\par\noindent
-A method to systematically characterise this effect has been presented
-in~\cite{Schkolnik2015}. This requires mapping the wavefront
-aberrations caused by each optical elements to numerically calculate
-their effect on the interferometer phase. This is able to reduce the
-uncertainty in their measurement of gravity by an order of
-magnitude. For this experiment, the optics for the Raman light were
-mounted inside the vacuum chamber to avoid the need for this precise
-characterisation. 
-\section{Collimation Optics}\label{sec:setup_ramanoptics}
+\section{Raman Optics}\label{sec:setup_ramanoptics}
 The optical system used to produce the beams for driving Raman transitions,
-which will conventionally be referred to as the Raman optics, was designed to
-reduce the previously mentioned effects which result in poorer interferometric
-fringe visibility and sensitivity to accelerations. Principally, the entire
+will be referred to as the Raman Optics. For the reasons described in
+the previous section, this was designed to
+have good control over the flatness and orientation of the phase
+fronts of the Raman beams. Principally, the entire
 optical system was mounted inside the optical chamber so that the Raman light
 does not pass through any optical viewports before interacting with the atoms.
-Typically, the stress placed on the glass during the bonding process will
-distort the flatness more than is acceptable for achieving a high contrast. For
-example the viewports used for the \ac{mot} optics have a specified flatness of
-\(\lambda/4\), so mounting the entire optical system inside the chamber was the
-simplest way to avoid a large distortion. 
+This avoids the phase and polarisation distortions that are typically
+introduced by passing light through a vacuum window.
 \subsection{Component Overview}\label{subsec:setup_ramancollimator}
+\begin{figure}[!htbp]
+	\centering
+	\def\svgwidth{\columnwidth}
+  \fontsize{16pt}{16pt}
+	\subfloat[][]{\scalebox{0.4}{\input{Figures/Chapter6/raman_optics.pdf_tex}\label{fig:raman_collimator}}}
+	\subfloat[][]{\scalebox{0.4}{\input{Figures/Chapter6/mirror_mount.pdf_tex}\label{fig:mirror_mount}}}
+	\caption[Drawings of the componets used in the Raman optics
+		assemblies]{Diagrams of the components used in the Raman optical assemblies.
+      \textbf{(a)} shows the collimator setup. Light is coupled into the chamber using a
+		UHV fibre feedthrough. A pair of aspheric lenses is used to increase the
+		divergence angle of the fibre output, before the light is collimated by a
+		triplet lens. Finally, a quarter-wave plate is aligned so that it circularly
+    polarises both collimated light fields. \textbf{(b)} illustrates the other half of the
+		setup, which is used to retro-reflect the light. A second quarter-wave plate
+		is used so that the reflected beams have the reversed circular
+    polarisation. A MEMS accelerometer is mounted on the back of the
+		mirror to measure vibrations. These components are all mounted on a
+		piezo-controlled mirror mount whose tilt can be controlled from outside the
+		vacuum chamber.}
+	\label{fig:raman_optics}
+\end{figure}
 \FigureRef{fig:raman_collimator} presents a diagram of the components used to
 send Raman light into the chamber and produce a collimated beam in the centre of
 the chamber. The light is coupled into the chamber using a UHV compatible
 \ac{pm} fibre, manufactured by Diamond photonics. This is a kapton-coated PM-780
 HP fibre that is bonded on one end to a DN16 flange using an epoxy resin. The
 external side of this flange has an FC/APC connector for coupling light from
-another fibre. Inside the chamber, the ferrule is connected to an FC/APC fibre
+another fibre. Inside the chamber, the output of the fibre plugs into to an FC/APC fibre
 plate. This is clamped between a piece which bolts onto the inside of a DN63
 flange and another stainless steel plate which bolts onto the rest of the optics
 assembly. Fine adjustment of the position of the fibre along the optic axis is
@@ -183,77 +284,51 @@ achieved using shim plates with a thickness ranging from
 orientation of the fibre with respect to a \ac{qwp} at the output of the
 collimator. This \ac{qwp} is manufactured by Light Machinery, and is described
 further is \SectionRef{subsec:setup_ramanmirror}. When the fibre is correctly
-orientated (e.g. when the slow axis of the fibre is at 45\(\deg\) to the slow
+orientated (e.g. when the slow axis of the fibre is at 45$^\circ$ to the slow
 axis of the waveplate), the two Raman light fields are orthogonally circularly
 polarised. \par\noindent The original design for the optical system consisted of
 a triplet lens, as a system of three lenses is capable of correcting for the
 five types of Seidel aberrations that distort rays of monochromatic light. This
-was designed and manufactured by IC Optical Systems. Another specification for
+was designed and manufactured by IC Optical Systems to deliver a
+wavefront quality of $\lambda/100$. Another specification for
 this lens system was that it had to produce a collimated beam with a waist size
-of around \sivalue{35}{\milli\metre} so that the sensitivity of the
-interferometer was not limited by the effects of intensity gradients across the
+of around \sivalue{35}{\milli\metre} so that the visibility of the
+interferometer fringes would not be limited by the effects of intensity gradients across the
 atoms. Unfortunately, the triplet was designed with an incorrect \ac{na}. With a
 focal length of \sivalue{123.4}{\milli\metre} and a diameter of
 \sivalue{50}{\milli\metre}, the triplet lens has a \ac{na} of 0.194. However,
 the nominal \ac{na} for PM780-HP fibre used in the UHV compatible \ac{pm} fibre
 is 0.12. Consequently, the light from this fibre did not fill the \ac{na} of the
-triplet lens and produced a beam with a waist of 13mm. 
+triplet lens and produced a beam with a waist of \sivalue{13}{\mm}. 
 %%{\huge Plot to illustrate this}. 
 To address this issue, a pair of aspheric lenses was included to increase
 the divergence angle of light from the fibre. These are manufactured by Thorlabs
 and have a focal length of \sivalue{4.51}{\milli\metre} (352230-B) and
 \(\sivalue{15.29}{\milli\metre}\) (352260-B), respectively, to give a
 magnification of 3.39.
-\begin{figure}[!htbp]
-	\centering
-	\def\svgwidth{\columnwidth}
-	\subfloat[][]{\scalebox{0.4}{\input{Figures/Chapter6/raman_optics.pdf_tex}\label{fig:raman_collimator}}}
-	\subfloat[][]{\scalebox{0.4}{\input{Figures/Chapter6/mirror_mount.pdf_tex}\label{fig:mirror_mount}}}
-	\caption[Drawings of the componets used in the Raman optics
-		assemblies]{Diagrams of the components used in the Raman optical assemblies.
-		(a) shows the collimator setup. Light is coupled into the chamber using a
-		UHV fibre feedthrough. A pair of aspheric lenses is used to increase the
-		divergence angle of the fibre output, before the light is collimated by a
-		triplet lens. Finally, a quarter-wave plate is aligned so that it circularly
-		polarises the collimated light fields. (b) illustrates the other half of the
-		setup, which is used to retro-reflect the light. A second quarter-wave plate
-		is used so that the reflected beams have the same handedness to their
-		respected incoming ones. A MEMS accelerometer is mounted on the back of the
-		mirror to measure vibrations. These components are all mounted on a
-		piezo-controlled mirror mount whose tilt can be controlled from outside the
-		vacuum chamber.}
-	\label{fig:raman_optics}
-\end{figure}
 \subsection{Alignment and Collimation}
 As one of the main motivations for mounting the Raman optics inside the vacuum
 chamber was to reduce the effects of wavefront distortions, it is worth
 highlighting how inaccurate alignment of the optics can lead to aberrations. As
 previously discussed in \SectionRef{subsec:fringe_wavefront}, distortions of the
-wavefront leads to a dephasing and loss of interferometer fringe visibility.
+wavefront can produce a false acceleration and possible loss of interferometer fringe visibility.
 Here, the same figures of merit as before are used to consider what misalignment
 is acceptable to ensure that the phase of the Raman wavefront deviates by less
 than \(\lambda/100\) after a transverse distance of
-\sivalue{12.5}{\milli\metre}. \par\noindent Taking the fibre as a point source,
-misalignment can occur if it is displaced from the front focal point of the
-optical system longitudinally along or transversely to the optic axis. If it is
+\sivalue{12.5}{\milli\metre} (that being the distance fallen from rest
+after \sivalue{50}{\ms}. 
+\par\noindent 
+Taking the fibre as a point source, misalignment can occur if it is displaced from the front focal point of the
+optical system either along or transversely to the optic axis. If it is
 transversely displaced, this manifests as an angular displacement of the
-collimated light after the triplet lens. A large angular displacement is
-undesirable due to the fact that since one of the Raman light fields propagates
-further, the two wavefronts that drive acceleration-sensitive Raman transitions
-are not parallel. \FigureRef{fig:raman_wave_transverse} shows a simulation of
-the wavefront distortion as a result of this transverse misalignment. This is
-obtained by simulating the propagation of rays corresponding to each Raman light
-field through the optical system. The wavefront is estimated using the slope of
-each ray at a distance of \sivalue{43}{\milli\metre} from the output of the
-triplet lens, which corresponds to the position of the centre of the vacuum
-chamber. The mirror is mounted at the same distance from the centre, so the
-second beam propagates \sivalue{129}{\milli\metre}. Close to the optic axis,
-this distortion is approximately linear (i.e. a tilt) and it can be seen that a
-displacement of the fibre from the optic axis of <\sivalue{1}{\milli\metre} is
-sufficient to achieve the desired wavefront flatness. \par\noindent Aside from a
-transverse displacement, it is possible that the fibre could be misaligned along
-the optic axis. In which case, the output beam will not be collimated.
-Consequently, the counter-propagating reflected rays will not be antiparallel to
+collimated light after the triplet lens.       
+\par\noindent 
+Although we do not expect to have any significant transverse
+misalignment of the fibre, there could be an axial one. In that case,
+the output beam will not be collimated. This leads to a systematic
+error, already discussed in~\SectionRef{subsec:fringe_wavefront},
+where transverse motion of the atoms produces an interferometer phase
+that is misinterpreted as an acceleration along the optic axis. 
 incoming ones. The effect of this longitudinal displacement on the Raman
 wavefront is shown in~\FigureRef{fig:raman_wave_longitudinal}. Further from the
 optic axis the deviation in the phase of the light is greater, giving a
@@ -381,7 +456,7 @@ travelling along different trajectories will accumulate different phases due to
 the spatial variation of \(\keff{}\). Across the atom ensemble, this leads to a
 dephasing and consequently, a loss of interferometer fringe
 visibility~\cite{Tackmann2012} 
-\subsection{In-Situ Alignment and Optimisation} 
+\subsection{In-Situ Alignment and Optimisation}\label{sec:in_situ} 
 After mounting the Raman optical system inside the chamber, the
 mirror had to be aligned to retro-reflect the light. When the mirror is close to
 perpendicular to the light's wavevector, some of the power in the reflected beam

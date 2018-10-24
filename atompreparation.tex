@@ -435,14 +435,15 @@ which is described in~\SectionRef{subsec:microwaves}. For each \(\pi\)
 microwave transition, the frequency of the microwave field was varied
 to find the resonant frequency. The resulting spectra for \(m_F = -1\)
 and \(m_F = 0\) are shown in~\FigureRef{fig:step2_microwave_spec},
-both with and without applying light to pump into the \(\ket{1,0}\)
-state. From~\FigureRef{fig:step2_mf1}, the first-order
+both with (blue curves) and without (orange curves) applying light to pump into the \(\ket{1,0}\)
+state. It can be seen that the $m_F=0$ population is enhanced while
+the $m_F=-1$ population is suppressed. From~\FigureRef{fig:step2_mf1}, the first-order
 Zeeman shift (\sivalue{1.4}{\MHz\per\gauss}) of the $m_F = -1$ state is \sivalue{-4.435}{\MHz}, which gives a
 field strength of \sivalue{3.17}{\gauss}. This is in close agreement
 with the value measured from the second-order shift of the 0
 \(\rightarrow\) 0 clock transition. The second-order shift of
 \sivalue{575.15}{\hert\per\gauss\squared} and the measured shift of
-\sivalue{5.6}{\kilo\hertz} corresponds to a field strength of
+\sivalue{5.6}{\kilo\hertz} correspond to a field strength of
 \sivalue{3.12}{\gauss}. 
 \begin{figure}[!htbp]
     \centering
@@ -468,16 +469,21 @@ $(\sqrt{(1-\epsilon^2)/2},\epsilon,
 with a residual $m_F = \pm 1$ population of 5\%. For circularly
 polarised light, a $\pi$-component of this magnitude can be caused by
 a mis-alignment of the magnetic field from the $\vec{z}$ axis of
-$2.4^\circ$. The coils used to generate a magnetic field along the
-$\vec{z}$ axis are not in Helmholtz configuration, so it is plausible
-that an inhomogeneous magnetic field is the cause of the
-mis-alignment. The effect of these background atoms on the measured
+$2.4^\circ$. This is reasonable given that the coils were fixed around
+the vacuum chamber without accurately aligning to
+the vertical axis of the chamber.
+
+The effect of these background atoms on the measured
 interferometer signal is discussed later,
 in~\SectionRef{subsec:phase_measurement}.
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.8\textwidth]{step2_pumping}
-    \caption[\(\ket{1,m_F}\) populations for increasing \trans{1}{0} pumping time.]{Population in each Zeeman sub-level as the \trans{1}{0} pumping time is increased. The \(m_F = 0, -1, +1\) populations are shown in blue, orange and green, respectively. After \sivalue{30}{\micro\second}, approximately 5\% of the population remains in the \(m_F = \pm 1\) sub-levels.}
+    \caption[\(\ket{1,m_F}\) populations for increasing \trans{1}{0}
+    pumping time.]{Population in each Zeeman sub-level as the
+    \trans{1}{0} pumping time is increased. The \(m_F = 0, -1, +1\)
+  populations are shown in blue, orange and green, respectively. blue
+points: with F-1. orange points: without pumping. After \sivalue{30}{\micro\second}, approximately 5\% of the population remains in the \(m_F = \pm 1\) sub-levels.}
     \label{fig:step2_pumping}
 \end{figure}
 \subsection{The Microwave Transitions}\label{subsec:microwaves}
@@ -486,7 +492,7 @@ A diagram of the microwave setup is shown
 in~\FigureRef{fig:microwave_setup}. The microwave radiation is
 generated using a \textit{Wind-Freak} synthesiser oscillating at a frequency close to the hyperfine
 splitting frequency, \(f_\text{hfs} =
-\sivalue{6.83846}{\giga\hertz}\). This is amplified by
+\sivalue{6.83846}{\giga\hertz}\). This is amplified by a
 \textit{MiniCircuits MCL ZRON-8G+} amplifier and directed into the
 chamber using a \textit{Pasternack PE9859/SF-10} microwave horn, which
 produces a linearly-polarised microwave field. The horn was aligned to
@@ -515,12 +521,17 @@ to the synthesiser is used to control both its power and frequency.}
     \label{fig:microwave_setup}
 \end{figure}
 \subsubsection{Pulse Characterisation}
-\FigureRef{fig:microwave_spectrum} shows a spectrum obtained by
-varying the frequency of the microwave pulse. This spectrum was
-measured with an applied magnetic field along the $\vec{z}$ axis of
-\sivalue{0.67}{\gauss} and shows the presence
-of \(\Delta m = 0, +1 \) and $-1$ transitions from \(\ket{1,0}\). It
-can also be seen that the population in \(\ket{1,m_F=\pm 1}\) decreases after
+The blue curve in \FigureRef{fig:microwave_spectrum} shows a spectrum obtained by
+varying the frequency of the microwave pulse with an applied magnetic field along the $\vec{z}$ axis of
+\sivalue{0.67}{\gauss}. This spectrum has a central line due to the
+$\Delta m = 0$ transition from $\ket{1,0}$. The peaks on either side
+of that are a mix of transitions out of $\ket{1,0}$ and
+$\ket{1,\pm1}$. At the far left and right are the peaks from the
+$\Delta m = 0$ transitions out of $\pm 1$. The seven transitions that
+make up these five peaks are illustrated in
+\FigureRef{fig:mw_spectrum_trans}. The orange curve
+in~\FigureRef{fig:microwave_spectrum} shows 
+that the population in \(\ket{1,m_F=\pm 1}\) is very small after
 the \trans{1}{0} pumping step is applied. The linewidth of the
 microwave transition is much narrower than the Zeeman splitting, so
 only the clock transition is driven when a pulse with a frequency
@@ -533,7 +544,22 @@ microwave pulse. Rabi oscillations between the \(\ket{1,0}\) and
 between the states can be explained by an inhomogeneous driving field.
 Once inside the chamber, the microwaves reflect and scatter off the
 interior surfaces which results in a spatially-dependent Rabi
-frequency. \par\noindent
+frequency. The data is fit to an exponentially damped Rabi oscillation
+given by
+\begin{equation}
+  \text{P}_{\ket{F=2}} = e^{-\gamma t} \sin(\Omega t)^2
+  \label{eq:damped_rabi}
+\end{equation}
+and gives a characteristic time of $\tau = 1/\gamma =$
+\sivalue{1016}{\mus}. It is clear that \EquationRef{eq:damped_rabi}
+does not exactly described the observed dephasing. This is not
+surprising given that there is no reason that an inhomogeneous
+microwave field should give an exponential dephasing rate.
+Nevertheless, this indicates that the coherence time between the two
+$m_F=0$ states is sufficiently long. The Raman pulses have linewidths
+on the order of \sivalue{100}{\kHz}, with durations on the order of
+\sivalue{10}{\us}. Over this time, the two states remain coherent.
+\par\noindent
 A further cause of inhomogeneity is a mis-alignment of the microwave
 field to the magnetic field. Referring
 to~\FigureRef{fig:mw_spectrum_trans}, the
@@ -560,10 +586,12 @@ $\ket{1,0}$ population is driven into $\ket{2,0}$.
     \subfloat[][]{\scalebox{0.5}{\raisebox{4ex}{\input{microwave_transitions.pdf_tex}}}\label{fig:mw_spectrum_trans}}
     \caption[Microwave transition spectrum]{\textbf{(a)} shows the
       microwave transition spectrum before (blue) and after (orange)
-    \trans{1}{0} pumping. \textbf{(b)} shows the transitions addressed
+    \trans{1}{0} pumping. The inset is a magnification around $\delta
+    f_\textnormal{hfs}$ showing the $m_F = 0$ \rightarrow $m_F' = 0$
+    clock transition. \textbf{(b)} shows the transitions addressed
   as the microwave frequency is varied. Dashed and lines indicate
 \(\Delta m = \pm 1\) transitions and solid lines indicate \(\Delta m =
-0\). In order of increasing frequency, the transitions in \textbf{(a)} are highlighted in: a) red, b) blue, c) green, d) orange and e) purple.} 
+0\). In order of increasing frequency, the transitions in \textbf{(a)} are highlighted in: red, blue, green, orange and purple.} 
     \label{fig:microwave_data}'
 \end{figure}
 \begin{figure}[!htbp]

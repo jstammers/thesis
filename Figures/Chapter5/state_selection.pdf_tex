@@ -66,8 +66,8 @@
     \put(0,0){\includegraphics[width=\unitlength,page=4]{state_selection.pdf}}%
     \put(0.81421493,0.41898132){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\ket{F=1}$\end{tabular}}}}%
     \put(0.81421493,0.48964575){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\ket{F=2}$\end{tabular}}}}%
-    \put(0.91257145,0.66706715){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$5 \; ^{\frac{3}{2}}\text{P}$\end{tabular}}}}%
-    \put(0.91257145,0.45776723){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$5\; ^{\frac{1}{2}}\text{S}$\end{tabular}}}}%
+    \put(0.91257145,0.66706715){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{20.25}\smash{\begin{tabular}[t]{c}$5\text{P}_{\frac{3}{2}}$\end{tabular}}}}%
+    \put(0.91257145,0.45776723){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{20.25}\smash{\begin{tabular}[t]{c}$5\text{S}_{\frac{1}{2}}$\end{tabular}}}}%
     \put(0.0045724,0.74984494){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1)\end{tabular}}}}%
     \put(0.27874894,0.74984494){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2)\end{tabular}}}}%
     \put(0.54484921,0.74984494){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}3)\end{tabular}}}}%

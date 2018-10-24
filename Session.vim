@@ -32,13 +32,15 @@ badd +56 Figures/Chapter4/2D_mot_optics.pdf_tex
 badd +49 frontmatter.tex
 badd +9 description.tex
 badd +61 ramanoptics.tex
-badd +1 atompreparation.tex
-badd +0 conclusion.tex
+badd +581 atompreparation.tex
+badd +61 conclusion.tex
+badd +1 Figures/Chapter5/StateSelection.svg
+badd +72 Figures/Chapter5/state_selection.pdf_tex
 argglobal
 silent! argdel *
 $argadd interferometry.tex
 set stal=2
-edit atompreparation.tex
+edit ramanoptics.tex
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -55,33 +57,50 @@ setlocal fdn=20
 setlocal fen
 1
 normal! zo
-2
+3
 normal! zo
-let s:l = 16 - ((2 * winheight(0) + 4) / 8)
+13
+normal! zo
+50
+normal! zo
+58
+normal! zo
+102
+normal! zo
+179
+normal! zo
+184
+normal! zo
+190
+normal! zo
+195
+normal! zo
+143
+normal! zo
+144
+normal! zo
+206
+normal! zo
+211
+normal! zo
+217
+normal! zo
+230
+normal! zo
+422
+normal! zo
+479
+normal! zo
+565
+normal! zo
+let s:l = 162 - ((15 * winheight(0) + 25) / 51)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-16
-normal! 02|
+162
+normal! 026|
 lcd /media/Storage/Dropbox/PhDWork/Thesis
-tabnew
-set splitbelow splitright
-set nosplitbelow
-set nosplitright
-wincmd t
-set winminheight=1 winminwidth=1 winheight=1 winwidth=1
-argglobal
-enew
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-lcd /media/Storage/Dropbox/PhDWork/Thesis
-tabedit /media/Storage/Dropbox/PhDWork/Thesis/conclusion.tex
+tabedit /media/Storage/Dropbox/PhDWork/Thesis/ramanoptics.tex
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -98,14 +117,76 @@ setlocal fdn=20
 setlocal fen
 1
 normal! zo
-let s:l = 61 - ((50 * winheight(0) + 31) / 62)
+3
+normal! zo
+13
+normal! zo
+50
+normal! zo
+58
+normal! zo
+102
+normal! zo
+132
+normal! zo
+179
+normal! zo
+184
+normal! zo
+190
+normal! zo
+195
+normal! zo
+143
+normal! zo
+144
+normal! zo
+206
+normal! zo
+211
+normal! zo
+217
+normal! zo
+230
+normal! zo
+422
+normal! zo
+479
+normal! zo
+565
+normal! zo
+let s:l = 479 - ((25 * winheight(0) + 25) / 51)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-61
-normal! 029|
+479
+normal! 066|
 lcd /media/Storage/Dropbox/PhDWork/Thesis
-tabnext 3
+tabedit /media/Storage/Dropbox/PhDWork/Thesis/jstammersThesis.tex
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winminheight=1 winminwidth=1 winheight=1 winwidth=1
+argglobal
+setlocal fdm=expr
+setlocal fde=vimtex#fold#level(v:lnum)
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+3
+normal! zo
+let s:l = 17 - ((16 * winheight(0) + 25) / 51)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+17
+normal! 024|
+lcd /media/Storage/Dropbox/PhDWork/Thesis
+tabnext 1
 set stal=1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf

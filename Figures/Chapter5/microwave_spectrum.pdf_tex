@@ -54,17 +54,12 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{microwave_spectrum.pdf}}%
-    \put(0.24018363,0.18837589){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$-1 \rightarrow -1$\end{tabular}}}}%
-    \put(0.40419006,0.15046411){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$-1 \rightarrow 0$\end{tabular}}}}%
-    \put(0.40419006,0.11921411){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$0 \rightarrow -1$\end{tabular}}}}%
-    \put(0.15801724,0.22152158){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}a)\end{tabular}}}}%
-    \put(0.33441941,0.1691627){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}b)\end{tabular}}}}%
-    \put(0.52836829,0.50780992){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}c)\end{tabular}}}}%
-    \put(0.68183059,0.21927443){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}d)\end{tabular}}}}%
-    \put(0.86677195,0.18893775){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}e)\end{tabular}}}}%
-    \put(0.45510948,0.49342809){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$0 \rightarrow 0$\end{tabular}}}}%
-    \put(0.61342438,0.19439544){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$1 \rightarrow 0$\end{tabular}}}}%
-    \put(0.61342438,0.14022877){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$0 \rightarrow 1$\end{tabular}}}}%
-    \put(0.80925063,0.18620278){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$1 \rightarrow 1$\end{tabular}}}}%
+    \put(0.18167375,0.22778267){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$-1 \rightarrow -1$\end{tabular}}}}%
+    \put(0.33318017,0.21903756){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$-1 \rightarrow 0$\end{tabular}}}}%
+    \put(0.34151351,0.18570423){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$0 \rightarrow -1$\end{tabular}}}}%
+    \put(0.51118293,0.53700153){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$0 \rightarrow 0$\end{tabular}}}}%
+    \put(0.6924145,0.26088555){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$1 \rightarrow 0$\end{tabular}}}}%
+    \put(0.6924145,0.22755222){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$0 \rightarrow 1$\end{tabular}}}}%
+    \put(0.85699075,0.19852623){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$1 \rightarrow 1$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

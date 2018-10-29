@@ -1,4 +1,4 @@
-%% Creator: Inkscape inkscape 0.92.2, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'mirror_mount.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{377.9545633bp}%
+    \setlength{\unitlength}{463.08525354bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,10 +50,16 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.68068103)%
+  \begin{picture}(1,0.7349849)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{mirror_mount.pdf}}%
-    \put(0.38462036,0.59909171){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{MEMS}}}%
-    \put(0.17838806,0.61468323){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Mirror}}}%
-    \put(-0.00445707,0.62177018){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{QWP}}}%
+    \put(0.31680628,0.68576509){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}MEMS accelerometer\end{tabular}}}}%
+    \put(0.14559432,0.61635494){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mirror\end{tabular}}}}%
+    \put(-0.00363771,0.62213907){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}QWP\end{tabular}}}}%
+    \put(0.14559432,0.00091734){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mirror mount\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{mirror_mount.pdf}}%
+    \put(0.87580681,0.52743841){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}Vacuum electrical \\feedthroughs to piezos\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{mirror_mount.pdf}}%
   \end{picture}%
 \endgroup%

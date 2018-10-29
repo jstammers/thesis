@@ -138,47 +138,133 @@ in~\FigureRef{fig:raman_fringecontrast}.}
 \subsection{Wavefront Distortions}\label{subsec:fringe_wavefront}
 \subsubsection{Systematic Effects}
 The field that drives the Raman transition comes from the
-superposition of the two counter-propagating Raman beams. Ideally,
-these are Gaussian beams and with a beam
+superposition of the two counter-propagating Raman beams. The optical
+system used to collimate the Raman beams is presented below,
+in~\SectionRef{sec:setup_ramanoptics}. Ideally,
+the Raman beams are Gaussian beams and with a beam
 waist of \sivalue{35}{\mm}, the Rayleigh length $z_R \approx
 $ \sivalue{5}{\km} means that when collimated, the two beams have an
-almost identical radius of curvature.  
-In this case, the effective field will have a planar wavefront.
+almost identical radius of curvature. In this case, the effective field will have a planar wavefront.
 However, if the beams are not collimated they will have different
 radii of curvature and their superposition will therefore
 have a parabolic wavefront. Each Raman pulse will impress a different
 phase to an atom falling under gravity, leading to a component of the
-interferometer phase that does not cancel out. If the incoming beam is
-has a spherical wavefront with a radius of curvature $R_1 = z_0 +
-\frac{z_R}{z_0}$ and a divergence angle $\theta$, the
-reflected beam, which has propagated a further distance of $2L$ has a
-radius of curvature $R_2 = R_1 + 2\theta L$. These have respective
-phases of $i k z^2/R_1^2$ and $-i k z^2/R_2^2$, where $k =
-2\pi/$(\sivalue{780}{\nm}). For an atom falling under
-gravity located
-between the output of the collimator and the retro-reflecting mirror
-such that $z_0 = L =$ \sivalue{7.5}{\cm}, a divergence angle of
-$\theta =$ \sivalue{1}{\milli\radian} contributes
-\sivalue{8e-12}{\radian} to the
-interferometer phase for a pulse separation of $T=$
-\sivalue{25}{\milli\s}. Provided that the beams are reasonably
+interferometer phase that does not cancel out.
+\FigureRef{fig:collimation_wavefront} shows the effects of poor
+collimation on the effective Raman wavefront for increasing divergence
+angles, where it can be seen that the curvature of the Raman wavefront
+similarly increases. \FigureRef{fig:collimation_interferometer} shows yhe corresponding interferometer phase for an
+atom falling from rest under gravity with a pulse separation of $T=$
+\sivalue{25}{\ms}. A divergence angle of
+\sivalue{1}{\milli\radian} results in an interferometer phase
+contribution of \sivalue{8e-7}{\radian}.  
+Provided that the beams are reasonably
 well-collimated, this effect can be largely neglected as it is
 unlikely to be a dominant source of error. 
+%\begin{figure}[!htbp]
+%	\centering
+%	\def\svgwidth{\columnwidth}
+%	\subfloat[][]{\includegraphics[width=0.4\textwidth]{wavefront_transverse.pdf}\label{fig:raman_wave_transverse}}
+%	\subfloat[][]{\includegraphics[width=0.4\textwidth]{wavefront_longitudinal.pdf}\label{fig:raman_wave_longitudinal}}
+%	\caption[Simulated wavefront distortion for longitudinal and transverse fibre
+%		misalignment]{Simulated wavefront distortion for longitudinal and transverse
+%		fibre misalignment. Rays from a point source with a divergence angle
+%		corresponding to a \ac{na} of 0.12 are propagated through the Raman optical
+%		system. Rays corresponding to the reflected beam are propagated further with
+%		the assumption that the mirror is perpendicular to the optic axis. The first
+%		set of rays propagates \sivalue{43}{\milli\metre} and the second propagates
+%		\sivalue{129}{\milli\metre}. The wavefront for each beam is calculated by
+%		taking the slope of each ray and subtracting from the slope of the central
+%		ray. The wavefront of the effective field that drives the Raman transition
+%		is the difference of these two wavefronts. (a) shows the distortion of the
+%		wavefront for a transverse misalignment of the fibre for a displacement of
+%		\sivalue{0}{\milli\metre} (blue), \sivalue{0.5}{\milli\metre} (orange)
+%		\sivalue{1}{\milli\metre} (green) and \sivalue{1.5}{\milli\metre}
+%		(red) from
+%		the front focal point. (b) shows the wavefront for longitudinal
+%		displacements of \sivalue{0}{\milli\metre} (blue),
+%		\sivalue{0.3}{\milli\metre} (orange)
+%		\sivalue{0.6}{\milli\metre} (green) and \sivalue{1}{\milli\metre}
+%		(red).}\label{fig:fig_label}
+%\end{figure}
+\begin{figure}[!htbp]
+	\centering
+	\def\svgwidth{\columnwidth}
+	\subfloat[][]{\includegraphics[width=0.4\textwidth]{wavefront_longitudinal.pdf}\label{fig:collimation_wavefront}}
+	\subfloat[][]{\includegraphics[width=0.4\textwidth]{collimation_phase_error.pdf}\label{fig:collimation_error}}
+	\caption[Wavefront distortion and interferometer phase error for
+  diverging Raman beams.]{Wavefront distortion and interferometer phase error for
+  diverging Raman beams. The wavefront is calculated by propagating
+  the two Raman beams. Rays corresponding to the reflected beam are propagated further with the assumption that the mirror is perpendicular to the optic axis. The first
+		set of rays propagates \sivalue{43}{\milli\metre} and the second propagates
+		\sivalue{129}{\milli\metre}. The wavefront for each beam is calculated by
+		taking the slope of each ray and subtracting from the slope of the central
+		ray. The wavefront of the effective field that drives the Raman transition
+    is the difference of these two wavefronts. \textbf{(a)} shows the distortion of the
+		wavefront for divergence angles of
+		\sivalue{20}{\micro\radian} (blue), \sivalue{400}{\micro\radian} (orange)
+		\sivalue{800}{\micro\radian} (green) and
+    \sivalue{1.2}{\milli\radian} (red). \text{(b)} shows the resultant
+    interferometer phase error as a function of divergence angle for an atom falling under gravity
+    starting at rest on the optic axis.  
+		}\label{fig:collimation_error_plots}
+\end{figure}
 \par\noindent
 A more significant contribution 
-arises if there is a tilt of the retro-reflecting
-mirror. If the reflected beam is not counter-propagating,
-then to first order this results in a linear gradient in the Raman
-phase difference $\phi \rightarrow \phi + \alpha z$. After falling
-under gravity, this gives a false acceleration of $a_\text{false} = -
-\alpha g/k_\textnormal{eff}$. A false acceleration of $a_\text{false}
-=$ \sivalue{100}{\nano\g} results from a Raman phase gradient of
-$\alpha = $ \sivalue{1.6}{\radian\per\metre} and corresponds to a tilt
-of the retro-reflecting mirror of \sivalue{0.1}{\micro\radian}.
-\SectionRef{sec:in_situ} describes a method
-used to ensure good alignment of the mirror is discussed later, which
+arises if there is a tilt of the beams. \FigureRef{fig:perfect_retro}
+presents the configuration when the incoming beam is tilted from the
+optic axis, but is perfectly retro-reflected. The Raman wavefront is
+planar, but the Raman axis is tilted from the optic axis. If the optic
+axis is perpendicular to the axis of gravitational
+acceleration, then the interferometer will measure a component of
+gravitational acceleration $g \sin(\theta)$. If we require that this
+acceleration error is no greater than \sivalue{100}{\nano\g}, then
+this is equivalent to requiring that the tilt of the Raman axis is
+less than \sivalue{0.1}{\micro\radian}. Such a tilt can be caused by a
+displacement of the input fibre from the optic axis. This is discussed
+in more detail in~\SectionRef{subsec:setup_ramancollimator}.
+\begin{figure}[!htbp]
+	\centering
+  \fontsize{12pt}{12pt}
+  \resizebox{0.5\textwidth}{!}{\input{Retro_Perfect.pdf_tex}}
+	\caption[Tilted Raman beams with perfect retro-reflection.]{Tilted
+  Raman beams with perfect retro-reflection. The Raman wavefront
+propagates along the Raman axis, indicated by the dotted line. The
+optic axis is perpendicular to gravity such that the interferometer is
+sensitive to a component of gravitational acceleration given by
+$\textbf{g} \sin(\theta)$.}\label{fig:perfect_retro}
+\end{figure}
+\par\noindent
+If the mirror is parallel with the optic axis, it does not perfectly
+retro-reflect the tilted incoming beam. At a given transverse
+displacement, both the incoming and reflected beams have the same
+phase shift, so it is cancelled in the Raman phase difference. 
+\FigureRef{fig:imperfect_retro} illustrates the wavefronts in this
+case. The Raman wavefront is still planar, but the wavevectors of the
+two beams are not colinear. The Raman wavevector along the optic axis
+($\hat{\textbf{x}}$)
+is now $\keff' =
+(k_1-k_2)\cos(\theta)\hat{\textbf{x}} \approx  \keff (1-\theta^2)$. This leads to an
+interferometer phase error of $\keff\theta^2 a T^2$. For an
+acceleration of \sivalue{0.3}{\g} and $T = $ \sivalue{25}{\ms}, a tilt
+of $\theta = $ \sivalue{0.18}{\milli\radian} gives an interferometer
+phase error of \sivalue{1}{\milli\radian}. \SectionRef{sec:in_situ} describes a method
+used to ensure good alignment of the mirror, which
 renders this error negligible.
-
+\begin{figure}[htpb]
+  \centering
+  \fontsize{12pt}{12pt}
+  \resizebox{0.5\textwidth}{!}{\input{Retro_Imperfect.pdf_tex}}
+  \caption[Imperfect retro-reflection with a tilted incoming beam.
+  ]{Imperfect retro-reflection with a tilted incoming beam.
+  Here, the mirror is perpendicular to the optic axis so that the
+Raman phase has a planar wavefront (indicated by the dotted line) that
+travels along that axis. The tilt of the two beams means that their
+wavevectors are not colinear and the Raman wavevector is $\keff' =
+(k_1-k_2)\cos(\theta)\hat{\textbf{x}}$, where $\hat{\textbf{x}}$ is
+the optic axis.}
+  \label{fig:imperfect_retro}
+\end{figure}
 \subsubsection{Random Sources of Phase}
 The propagation through rough optical elements distorts
 the wavefronts and introduce a spatially varying component of the
@@ -251,11 +337,12 @@ introduced by passing light through a vacuum window.
 \begin{figure}[!htbp]
 	\centering
 	\def\svgwidth{\columnwidth}
-  \fontsize{16pt}{16pt}
-	\subfloat[][]{\scalebox{0.4}{\input{Figures/Chapter6/raman_optics.pdf_tex}\label{fig:raman_collimator}}}
+  \fontsize{18pt}{18pt}
+  \subfloat[][]{\raisebox{.4\height}{\scalebox{0.4}{\input{Figures/Chapter6/raman_optics.pdf_tex}\label{fig:raman_collimator}}}}\quad
 	\subfloat[][]{\scalebox{0.4}{\input{Figures/Chapter6/mirror_mount.pdf_tex}\label{fig:mirror_mount}}}
 	\caption[Drawings of the componets used in the Raman optics
-		assemblies]{Diagrams of the components used in the Raman optical assemblies.
+		assemblies]{Diagrams of the components used in the Raman optical
+      assemblies, not drawn to scale.
       \textbf{(a)} shows the collimator setup. Light is coupled into the chamber using a
 		UHV fibre feedthrough. A pair of aspheric lenses is used to increase the
 		divergence angle of the fibre output, before the light is collimated by a
@@ -311,17 +398,20 @@ As one of the main motivations for mounting the Raman optics inside the vacuum
 chamber was to reduce the effects of wavefront distortions, it is worth
 highlighting how inaccurate alignment of the optics can lead to aberrations. As
 previously discussed in \SectionRef{subsec:fringe_wavefront}, distortions of the
-wavefront can produce a false acceleration and possible loss of interferometer fringe visibility.
+wavefront can produce a false acceleration and possible loss of
+interferometer fringe visibility. 
 Here, the same figures of merit as before are used to consider what misalignment
-is acceptable to ensure that the phase of the Raman wavefront deviates by less
-than \(\lambda/100\) after a transverse distance of
-\sivalue{12.5}{\milli\metre} (that being the distance fallen from rest
-after \sivalue{50}{\ms}. 
+is acceptable to ensure that the false acceleration due to a distorted
+wavefront is less than \sivalue{100}{\nano\g}.
+%than \(\lambda/100\) after a transverse distance of
+%\sivalue{12.5}{\milli\metre} (that being the distance fallen from rest
+%after \sivalue{50}{\ms}. 
 \par\noindent 
 Taking the fibre as a point source, misalignment can occur if it is displaced from the front focal point of the
 optical system either along or transversely to the optic axis. If it is
 transversely displaced, this manifests as an angular displacement of the
-collimated light after the triplet lens.       
+collimated light after the triplet lens which tilts the Raman axis
+relative to the optic axis.   
 \par\noindent 
 Although we do not expect to have any significant transverse
 misalignment of the fibre, there could be an axial one. In that case,
@@ -329,66 +419,41 @@ the output beam will not be collimated. This leads to a systematic
 error, already discussed in~\SectionRef{subsec:fringe_wavefront},
 where transverse motion of the atoms produces an interferometer phase
 that is misinterpreted as an acceleration along the optic axis. 
-incoming ones. The effect of this longitudinal displacement on the Raman
-wavefront is shown in~\FigureRef{fig:raman_wave_longitudinal}. Further from the
-optic axis the deviation in the phase of the light is greater, giving a
-quadratic distortion which is characteristic of a defocus. Comparing the
+incoming ones. Comparing the
 wavefront distortion in this case, a requirement on the longitudinal
-misalignment of \(< \sivalue{0.6}{\milli\metre}\) is needed for the previously
-specified flatness.
-
-\begin{figure}[!htbp]
-	\centering
-	\def\svgwidth{\columnwidth}
-	\subfloat[][]{\includegraphics[width=0.4\textwidth]{wavefront_transverse.pdf}\label{fig:raman_wave_transverse}}
-	\subfloat[][]{\includegraphics[width=0.4\textwidth]{wavefront_longitudinal.pdf}\label{fig:raman_wave_longitudinal}}
-	\caption[Simulated wavefront distortion for longitudinal and transverse fibre
-		misalignment]{Simulated wavefront distortion for longitudinal and transverse
-		fibre misalignment. Rays from a point source with a divergence angle
-		corresponding to a \ac{na} of 0.12 are propagated through the Raman optical
-		system. Rays corresponding to the reflected beam are propagated further with
-		the assumption that the mirror is perpendicular to the optic axis. The first
-		set of rays propagates \sivalue{43}{\milli\metre} and the second propagates
-		\sivalue{129}{\milli\metre}. The wavefront for each beam is calculated by
-		taking the slope of each ray and subtracting from the slope of the central
-		ray. The wavefront of the effective field that drives the Raman transition
-		is the difference of these two wavefronts. (a) shows the distortion of the
-		wavefront for a transverse misalignment of the fibre for a displacement of
-		\sivalue{0}{\milli\metre} (blue), \sivalue{0.5}{\milli\metre} (orange)
-		\sivalue{1}{\milli\metre} (green) and \sivalue{1.5}{\milli\metre} (red) from
-		the front focal point. (b) shows the wavefront for longitudinal
-		displacements of \sivalue{0}{\milli\metre} (blue),
-		\sivalue{0.3}{\milli\metre} (orange)
-		\sivalue{0.6}{\milli\metre} (green) and \sivalue{1}{\milli\metre}
-		(red).}\label{fig:fig_label}
-\end{figure}
+misalignment of \(< \sivalue{0.6}{\milli\metre}\) is needed to ensure
+that the divergence angle is less than \sivalue{1}{\milli\radian}.
 \subsection{Measuring the Beam Width}
-To measure the waist of the beam, its reflection from a flat surface was imaged
-using a CCD camera. The radius of the triplet lens is smaller than the beam
-waist, so the beam is apertured by this lens. To take account of this aperture,
-the beam waist was estimated using a Taylor expansion of a Gaussian to second
-order:
+To measure the waist of the beam, the scattered light from a flat surface was imaged
+using a CCD camera. Because the beam is clipped, the profile is not
+Gaussian, but it could be fitted to a symmetrical quadratic having the
+same curvature as a Gaussian near its centre. 
+A Taylor expansion of the Gaussian to third order gives
 \begin{align}
-	I(x) & = A e^{-\frac{(x-x_0)^2}{2 w^2}} \nonumber                                                                              \\
-	     & \approx A-\frac{2 A x_0^2}{w^2}+\frac{4 A x x_0}{w^2}-\frac{2 A x^2}{w^2} + \mathcal{O}(x^3) \label{eq:gaussian_approx}
+	I(x) & = A e^{-\frac{2(x-x_0)^2}{ w^2}} \nonumber                                                                              \\
+       & \approx A\left(1-\frac{2(x- x_0)^2}{w^2}\right) +
+       \mathcal{O}(x^4)
 \end{align}
 A typical intensity profile along the horizontal and vertical camera axes is
 shown in~\FigureRef{fig:beam_examp}. A threshold intensity value excludes
-contributions from pixels outside of the spatial extent of the beam. The waist
-was estimated using a linear least-squares fit of the intensity profile to a
-second-order polynomial \(c_0 + c_1 x + c_2 x^2\), where \begin{equation} w =
-\left|\frac{\sqrt{c_1^2-4c_0 c_2}}{\sqrt{2}c_2} \right| \end{equation} A plot of
-the estimated beam waist over a propagation distance of \sivalue{1}{\metre} is
-shown in~\FigureRef{fig:beam_waist}. Inside the chamber each Raman beam
-propagates \sivalue{5.25}{\centi\metre} and \sivalue{15.75}{\centi\metre}, where
-the beam is well collimated. Along the vertical axis, the beam has a waist of
-around \sivalue{36.9}{\milli\metre}. The horizontal waist is smaller because the
-camera was horizontally tilted from the beam's optic axis. The projection of the
-beam onto this axis is consistent with a horizontal tilt of
-\sivalue{16}{\degree}.  \begin{figure} \centering
+contributions to the fit from pixels outside of the spatial extent of
+the beam. The "waist" parameter $w$
+was estimated using a linear least-squares fit of the intensity
+profile. 
+Measurements were made of $w$ at various distances from the triplet
+lens ranging from 0 to \sivalue{1}{\m} with the results plotted
+in~\FigureRef{fig:beam_waist}. This shows that the beam is not
+perfectly collimated, but the fit shown by the line
+in~\FigureRef{fig:beam_waist} gives a divergence angle of only
+\sivalue{0.4\pm0.03}{\milli\radian}. For an atom starting at rest and
+falling under gravity that produces an interferometer phase error of
+only \sivalue{10\pm 2}{\nano\radian}. This is sufficiently small
+that the collimator was installed without further adjustment. 
+\begin{figure} 
+  \centering
 	\def\svgwidth{\columnwidth}
-	\subfloat[][]{\scalebox{0.3}{\includegraphics{beam_waist}}\label{fig:beam_waist}}
 	\subfloat[][]{\scalebox{0.3}{\includegraphics{beam_examp}}\label{fig:beam_examp}}
+	\subfloat[][]{\scalebox{0.3}{\includegraphics{beam_waist}}\label{fig:beam_waist}}
 	\caption[Measured Raman beam waist]{Raman beam waist measured over a distance
 		of \sivalue{1}{\metre}, shown in \textbf{(a)}. The waist along the
 		horizontal and vertical axes are indicated in blue and orange respectively.
@@ -400,12 +465,18 @@ beam onto this axis is consistent with a horizontal tilt of
   \label{fig:beam_waist_plots} 
 \end{figure}
 \section{Retro-Reflection Assembly}\label{subsec:setup_ramanmirror} The
-		Raman transitions used in the interferometer are driven by
+		Raman transitions used in the interferometer need to be driven by
 		counter-propagating light fields to give a large momentum transfer of \(2
-		\hbar k\) to the atoms. The two beams enter from the same fibre input, so a
+		\hbar k\) to the atoms. The two beams enter from the same fibre
+    input, with polarisations $\sigma^+$ and $\sigma^-$, and a
 		mirror is used to retro-reflect them. The retro-reflection assembly includes
-		a \ac{qwp} to ensure that the reflected beams have the same polarisation
-		handedness as their circularly polarised incoming counterpart. \par\noindent
+		a \ac{qwp} to reverse the circular polarisation of each light
+    beam. The polarisation then ensures that the Raman transition is
+    driven by counter-propagating beams - either $\sigma^+ - \sigma^+$
+    or $\sigma^- - \sigma^-$. This retro-reflection part of the
+    optical
+    is the most crucial for avoiding transverse spatial variation in
+    the Raman phase.\par\noindent
 		The mirror is also manufactured by Light Machinery, and the \ac{qwp} is made
 		to the same specifications as the one that circularly polarises the incoming
 		beams.  During the manufacturing process, the waveplates and mirror were
@@ -429,8 +500,8 @@ beam onto this axis is consistent with a horizontal tilt of
 \end{figure} 
 The \ac{qwp} and mirror are fixed onto the front
 plate of a UHV compatible MDI-HS mirror mount, manufactured by Radiant dye. The
-horizontal and vertical tilt of the mirror can be adjusted using two thumbscrew
-actuators which cause the front plate to pivot around a ball bearing. This mount
+horizontal and vertical tilts of the mirror can be adjusted using two thumbscrew
+actuators which cause the front plate to tip. This mount
 is designed for high stability, but of course the alignment will still drift
 over time. To avoid the need to periodically open the chamber to realign the
 mirror, a piezo-electric stack is placed between each actuator and the front
@@ -440,22 +511,6 @@ piezo-stack is connected to a high-voltage feedthrough, so that their length
 applied across them. A control voltage ranging between 0--\sivalue{10}{\volt} is
 amplified by a controller to give an applied voltage across the piezo stack
 between -10--\sivalue{150}{\volt}. This corresponds to a travel range of
-\sivalue{23}{\micro\metre}. \par\noindent To understand the effect of
-misalignment, it is instructive to consider its effect on the effective
-wavevector \(\keff\). If the
-mirror is misaligned from the incoming beam's wavevector by an angle
-\(\theta\),
-the two counter-propagating fields that drive Raman transitions have wavevectors
-\(k_1 \left(1,0\right)\) and \(k_2 \left(\cos(\theta),\sin(\theta)\right)\).
-\(\keff = {\textbf k_1} - {\textbf k_2} \cos (2\theta_i)\). Fortunately, for
-small angular displacements, i.e. \(< \sivalue{1}{\milli\radian}\), this does
-not greatly reduce the sensitivity to accelerations. In short, this means that
-\(\keff\) will have a spatially varying direction. Since an atom interacting via
-a Raman transition picks up a phase \(\phi = \keff . {\textbf x}\), atoms
-travelling along different trajectories will accumulate different phases due to
-the spatial variation of \(\keff{}\). Across the atom ensemble, this leads to a
-dephasing and consequently, a loss of interferometer fringe
-visibility~\cite{Tackmann2012} 
 \subsection{In-Situ Alignment and Optimisation}\label{sec:in_situ} 
 After mounting the Raman optical system inside the chamber, the
 mirror had to be aligned to retro-reflect the light. When the mirror is close to
@@ -466,29 +521,25 @@ to align the mirror. A 99:1 fibre splitter was used to couple light into the
 chamber, which provided a means to measure the back-reflected power without
 needing any free-space optics. This was set up so that 99\% of the incoming
 light entered the chamber, with the other 1\% coupled into the corresponding
-output port. Due to the fact that a beam-splitter acts reversibly, 1\% of the
+output port. The beam-splitter acts reversibly so 1\% of the
 back-reflected light which couples into vacuum fibre exits the fibre-splitter on
-the other input port. Therefore, the power at this output was used to indirectly
-measure the alignment of the mirror.  
+the other input port.  
+By splitting off only a small amount of
+power, most of the light enters the chamber and is thus useful for
+driving Raman transitions. The back-reflected power can be used to 
+continuously monitor the alignment of the mirror.
+%However, it was found that this fibre
+%splitter did not sufficiently preserve the polarisation of the
+%incoming light. A drift of the polarisation from its output rendered
+%this continuous monitoring impractical. 
 \par\noindent 
-The travel range of the piezo stacks does not cover the full motional
-range of the mirror mount. It was initially coarsely aligned using the
-thumbscrew actuators.
-Once
-installed, the lack of direct access to optical system meant that conventional
-methods to coarsely align the mirror, such as observing the location of the
-reflected beam's focus, were not feasible. Rather than carry out the somewhat
-tedious job of systematically adjusting each thumbscrew until the mirror was
-aligned, an automatic routine was devised to do this. This was carried out using
-a pair of bipolar stepper motors that each rotated a ball driver inserted into
-the head of each thumbscrew. The revolution of these motors was controlled using
-an Arduino microcontroller, which communicated to the computer using a serial
+Out sponsors, the dstl, want the accelerometer to have an automated
+start-up procedure, so an automatic routine was devised to do align
+the retro-reflector. This was carried out using
+a pair of bipolar stepper motors to adjust each thumbscrew. The revolution of these motors was controlled using
+an Arduino microcontroller, which communicated with the computer using a serial
 interface.  The motors rotated by 0.9\(\deg\)/step, which corresponds to a tilt
-of the mirror by \sivalue{18.1}{\micro\radian}. This is smaller than the
-\sivalue{0.67}{\milli\radian} angular displacement that the piezo stack could
-provide, but the slow execution speed of the motor control meant that it was
-more practical to use a combination of the motors and piezos to systematically
-scan through the tilt of the mirror mount.  %%{\textbf {huge find out how big spot size was }}. 
+of the mirror by \sivalue{18.1}{\micro\radian}. 
 \par\noindent 
 Using this method, the mirror mount was aligned so
 that the maximum of the back-reflected power was reachable with the piezo
@@ -508,7 +559,7 @@ a set of \(n-1\) points distributed randomly across the parameter space are
 chosen as the initial simplex. These are sorted in decreasing order of the value
 of the objective function and the algorithm proceeds by performing geometric
 transformations on this simplex, by sequentially reflecting, expanding and
-contracting this simplex. Each step starts with a reflection about the line
+contracting it. Each step starts with a reflection about the line
 between the two greatest values. The coordinates of the simplex are updated if
 the function has a greater value at the location given by one of these
 transformations, until the algorithm converges on a maximum value. As with many
@@ -522,11 +573,14 @@ ratio of the measured voltage was poor. An example of this algorithm aligning
 the mirror mount is presented in \FigureRef{fig:simplex_optimisation}. To verify
 that the converged value was optimal, a systematic scan of the piezo stack
 control voltages in the region around this value was also carried out. In this
-case, the algorithm converged on a local maximum, but one that greatly enhanced
+case, the algorithm converged on a local maximum, that was very close
+to the global maximum and greatly enhanced
 the coupling efficiency of the reflected light back into the fibre. The
-difference in the piezo control voltages from their optimal values corresponds
-to a tilt of the mirror mount along the horizontal and vertical axis of less
-than \sivalue{13}{\micro\radian}.  
+difference in the piezo control voltages between the local and global
+maxima corresponded 
+to a tilt of the mirror mount of less
+than \sivalue{13}{\micro\radian}. This scheme was thus selected as the
+one to incorporate into the start-up routine for the accelerometer.
 \begin{figure}[!htbp] 
   \centering
 	\includegraphics[width=0.7\textwidth]{simplex_alignment}
@@ -543,23 +597,28 @@ than \sivalue{13}{\micro\radian}.
 		\label{fig:simplex_optimisation} 
   \end{figure}
 \subsection{The Mechanical Accelerometer}\label{subsec:raman_mems}
-The periodic interferometer signal means that the interferometer phase is only
-proportional to acceleration over one fringe spacing \(\Delta a =
-\frac{\pi}{\keff T^2}\). Furthermore, the fringe spacing is inversely
-proportional to \(T^2\) so there is a trade-off between dynamic range and
-sensitivity. These problems can be addressed by making use of a mechanical
-accelerometer mounted onto the back of the retro-reflecting mirror to form a
-hybrid system~\cite{Lautier2014}. The accelerometer determines the acceleration
-up to the fringe spacing  and the interferometer measures the acceleration more
-precisely. The accelerometer also measures the vibrations of the
-retro-reflecting mirror, so it can be used to filter the effects of vibration
-noise on the interferometer signal. This is discussed in more detail
-in~\SectionRef{subsec:vibration_sensitivity}. This hybridisation scheme has been
-used in measurements of gravity in high noise environments such as the centre of
+The interferometer phase is proportional to the acceleration of the
+retro-reflecting mirror relative to the freely-falling atoms. However,
+the sinusoidal interferometer signal is periodic with period
+\(\Delta a = \frac{\pi}{\keff T^2}\), so we need to know the order
+number of the fringe before the acceleration can be deduced from the
+signal. For this reason, a mechanical (MEMS)
+accelerometer is mounted on the back of the retro-reflecting mirror to determine the acceleration up to the fringe spacing and the interferometer measures the acceleration more
+precisely. 
+%The accelerometer is also sensitive to vibrations of the
+%retro-reflecting mirror, so it can be used to filter the effects of vibration
+%noise on the interferometer signal.  
+The MEMS accelerometer is also sensitive to vibrations of the
+retro-reflecting mirror and can be used to characterise the
+vibration-induced phase noise. This is discussed in more detail
+in~\SectionRef{subsec:vibration_sensitivity}. This technique enables
+accurate measurements of acceleration in high-noise environments and has been
+used to measure the acceleration due to gravity at the centre of
 Paris~\cite{Merlet2009} and in parabolic aircraft
-flights~\cite{Geiger2011a,Barrett2016}. \par\noindent The accelerometer is a
-navigation-grade AI-Q-2010 manufactured by \textit{Innalabs}. This particular
-device was chosen because its specified intrinsic noise was
+flights~\cite{Geiger2011a,Barrett2016}. 
+\par\noindent 
+The accelerometer is a navigation-grade AI-Q-2010 manufactured by \textit{Innalabs}. This particular
+device was chosen for its low noise specification of
 <\sivalue{7}{\micro\g} in the 0-\sivalue{100}{\Hz} bandwidth. For a pulse separation \(T
 = \sivalue{25}{\milli\second}\), the fringe spacing is
 \(\sivalue{31.2}{\micro\g}\) so it is sensitive enough to measure the

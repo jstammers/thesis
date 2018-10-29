@@ -17,11 +17,9 @@ interference and an analysis of its sensitivity to accelerations is
 given in~\SectionRef{sec:atomint_accelerations}.
 \section{The M-Squared Laser System}\label{sec:msquared_laser} 
   This section describes the laser system manufactured by \textit{M-Squared
-  Lasers}, which is used to drive Raman transitions. Essential to this
-  is a \ac{pll} which controls the phase difference of the two lasers.
-  A low interferometer phase noise correspondingly requires low phase
-  noise of the local oscillator used for the
-  \ac{pll}~\cite{Lautier2014b}\nocite{Marino2008}. An overview of the laser
+  Lasers}, which is used to drive Raman transitions. 
+  A \ac{pll} controls the phase difference of two Ti:Sapphire lasers
+  by comparing the beat note with a stable local oscillator\nocite{Lautier2014b}\nocite{Marino2008}. An overview of the laser
   system can be found in~\SectionRef{subsec:msquared_overview}, which includes
   the techniques used to externally communicate with the laser's ICE-BLOC
   control modules. The control of the frequency and phase-lock is then described
@@ -31,16 +29,16 @@ given in~\SectionRef{sec:atomint_accelerations}.
   the amplitude, frequency and phase of the Raman laser beat-note
   during the experiment.
 \subsection{Laser System Overview}
-\label{subsec:msquared_overview} The Raman laser system contains two Solstis lasers which
-generate laser light by pumping a Ti-sapphire crystal housed inside a resonator.
+\label{subsec:msquared_overview} The Raman laser system contains two
+SolsTiS lasers, each generating \sivalue{780}{\nm} light by pumping a Ti:Sapphire crystal housed inside a resonator.
 The output light is frequency-stabilised using piezo-electric stacks to adjust
 the resonator length~\cite{Drever1983}. A schematic diagram of this laser system is given
-in~\FigureRef{fig:msquared_laser}. Each laser is seeded using a
-\textit{Lighthouse Photonics} Sprout laser to generate light around
-\sivalue{780}{\nano\metre}. The first laser acts as the master whose frequency
-is fixed to an absorption feature in the transition spectrum of
+in~\FigureRef{fig:msquared_laser}. Each laser is pumped using a
+\sivalue{12}{\Watt} \textit{Lighthouse Photonics} Sprout laser at
+\sivalue{532}{\nm}. One SolsTiS acts as the master frequency locked
+to an absorption feature in the saturated absorption spectrum of
 \ac{rb87}. The second is slaved to this using a phase-locked loop to keep their
-beat frequency and relative phase constant. The two beams are mixed on a
+beat frequency constant. The two beams are mixed on a
 \ac{pbs}, so that they are orthogonally polarised. Two \acp{aom} control the
 output power. 
 %A planned upgrade for this system will have multiple output ports
@@ -61,7 +59,8 @@ experiment.
 	\caption[M-Squared Laser System Schematic]{Schematic Diagram of the M-Squared
 		laser system. Two Solstis lasers provide the two Raman frequencies, which
 		are fibre coupled onto the orthogonal axes of a \ac{pm} fibre. Control of
-		the power, frequency and phase as required to drive Raman transitions is
+		the power, frequency and phase as required to drive and control
+    the Raman transitions is
 		handled by the four ICE-BLOC modules indicated in blue. Further detail of
 		this control is given in the text.} \label{fig:msquared_laser}
 \end{figure}
@@ -73,7 +72,7 @@ accessing a web page that each module hosts. These web pages control the ICE-BLO
 by sending structured JSON messages. This graphical interface can be bypassed by
 directly communicating these messages. This is done using MOTMaster so that
 various parameters, such as the frequency and phase of the Raman beat-note, can
-be automatically varied between each experiment cycle. 
+be automatically varied between experiment cycles. 
 \subsection{Frequency and Phase Control}\label{subsec:msquared_control}
 
 \subsubsection{Master Lock}
@@ -83,8 +82,12 @@ modulated by an \ac{eom}. The positive frequency sideband is used to lock the
 master laser to the 2,3 crossover feature. In effect, this means that the
 modulation frequency of the \ac{eom} sets the one-photon detuning of the Raman
 transition. The modulation frequency is set so that the master laser frequency
-is \sivalue{1.13}{\giga\hertz} below the \trans{2}{3} transition.
-
+is \sivalue{1.13}{\giga\hertz} below the \trans{2}{3} transition. This
+frequency is chosen because the light shift of the clock transition
+vanishes there provided the two Raman beams have the right intensity
+ratio as discussed in~\SectionRef{subsec:light_shift}. This ensures
+that the resonant frequency is independent of variations in the
+over-all intensity of the Raman beams.
 \subsubsection{Frequency and Phase Lock} The optical beat-note between the two
 lasers is measured using a fast photodiode. The signal from this is used in a
 \ac{pll} to fix the relative phase between the two lasers. A frequency
@@ -117,14 +120,14 @@ optionally triggered by sending a digital pulse to the \ac{pll} ICE-BLOC.
 at a chosen timestep for an external trigger. It can also iterate through a set
 number of parameters, such as timestep duration or phase shift by re-building
 the sequence after each cycle.  
-\begin{figure}[!htbp] 
+\begin{sidewaysfigure}[!htbp] 
   \centering
-	\resizebox{0.7\textwidth}{!}{\includegraphics{dcs_module.pdf}}
+	\resizebox{1\textwidth}{!}{\includegraphics{dcs_module.pdf}}
 	\caption[DCS Module User interface]{DCS module user interface. The sequence is
 		synthesised from individual steps. The parameters of each Raman laser pulse
 		can be configured independently.} 
   \label{fig:dcs_module} 
-\end{figure}
+\end{sidewaysfigure}
 \section{Atom Detection}\label{sec:atom_detection} 
 This section describes the methods used to
 measure the number of atoms in each hyperfine ground state and infer
@@ -138,25 +141,28 @@ discussion on converting the measured photodiode signals into atom
 number and interferometer phase
 in~\SectionRef{subsec:phase_measurement}.
 \subsection{Optical Setup}\label{subsec:optical_setup}
-A precise measurement of the number of atoms requires that the atom shot noise
-is the dominant source of uncertainty~\cite{Pappa2011}. The CCD used in
-previous stages of the experiment is not sensitive enough for this as there is a
+Out aim in this device is to reach the standard quantum noise limit,
+which comes from the quantum projection noise. Expressed as a
+fractional accuracy this is given approximately by
+$N^{-1/2}$~\cite{Wineland}, where $N$ is the number of atoms detected.
+The CCD used initially was not sensitive enough for this as there wass a
 significant amount of noise in reading out the charge collected at each pixel.
 Instead, a more sensitive photodiode is used to detect the atoms. With a
 suitably high bandwidth, the readout time is much faster than the CCD as well,
 so that the atoms can be detected well before they fall out of the field of
 view. \par\noindent A diagram of the setup used to detect the atoms is given
-in~\FigureRef{fig:photodiode_optics}. It is a triplet system which uses an
+in~\FigureRef{fig:photodiode_optics}. It is a triplet system which uses
 lenses with focal lengths \sivalue{150}{\milli\metre},
-\sivalue{75}{\milli\metre} and \sivalue{60}{\milli\metre} in order from the
-atoms to the photodiode.  A ray-tracing simulation of the optical
+\sivalue{75}{\milli\metre} and \sivalue{60}{\milli\metre}, with the
+\sivalue{150}{\mm} lens closest to the atoms and the \sivalue{60}{\mm}
+lens closest to the photodiode. A ray-tracing simulation of the optical
 system indicates spherical aberrations on the image. This is caused by
 the third lens, which was added to shorten the back focal length. The
 front lens has a diameter of
 \sivalue{50.4}{\milli\metre}, so the solid angle subtended by the
-optics is \(4\pi \times\)\num{7.056e-3}\si{\steradian}.
+optics is \(4\pi \times\)\num{7.1e-3}\si{\steradian}.
 \begin{figure}[!htbp] 
-  \centering \fontsize{18pt}{18pt}
+  \centering \fontsize{24pt}{24pt}
 	\resizebox{0.7\textwidth}{!}{\input{photodiode_optics.pdf_tex}}
 	\caption[Optical setup for Photodiode Detection]{Optical setup for photodiode
 		detection. A triplet lens system focuses light from radiated from the atoms
@@ -178,18 +184,14 @@ incident optical power to output voltage was measured as \sivalue{1.84e6}{\volt\
 %\end{figure}
 \subsection{Detection using \(\sigma^+\) transitions}\label{subsec:photodiode_setup}
 The atoms are detected using resonance fluorescence from the two
-vertically aligned \ac{mot} beams. A bias field polarises the atoms
-along the
-\(\vec{z}\) axis, so the light drives both \(\sigma^+\) and
-\(\sigma^-\)
-transitions. The Zeeman shift means that each magnetic sub-level has a different scattering rate, which
-must be accounted for to calculate the number of atoms. This can be
-simplified by inverting the handedness of
-one of the \(\vec{z}\) \ac{mot} beams using a liquid-crystal
-\ac{hwp}. Now, both beams drive \(\sigma^+\) transitions. The
-atoms are optically pumped into \(\ket{2,2}\) and cycle on the
-\(\ket{2,2} \rightarrow \ket{3,3}\) transition. Therefore, only one
-scattering rate is needed to calculate the number of atoms. 
+vertically aligned \ac{mot} beams in the presence of a vertical
+magnetic field. For the \ac{mot} and molasses these are polarised
+$\sigma^+$ and $\sigma^-$, but for this detection step, we use a
+liquid-crystal \ac{hwp} to give both beams $\sigma^+$ polarisation.
+This causes the atoms to be optically pumped into \(\ket{2,2}\) and cycle on the
+\(\ket{2,2} \rightarrow \ket{3,3}\) transition, which allows the atoms
+to scatter many photons with minimum probability of unwanted optical
+pumping into $\ket{F=1}$.
 \par\noindent
 \FigureRef{fig:detection_scheme} shows the setup used to invert the
 polarisation of one \ac{mot} beam prior to detection. The liquid-crystal
@@ -197,7 +199,7 @@ waveplate is an electro-optical device whose birefringence changes
 when an ac voltage is applied across it. The waveplate is placed at
 the output of the downward-propagating (\(\vec{z}_-\))
 collimator. The liquid-crystal waveplate is triggered to rotate the
-incoming linearly polarised light by $\pi/2$\sivalue{}{\radian}. 
+incoming linearly polarised light by $\pi/2$ \sivalue{}{\radian}. 
 \begin{figure}[!htpb]
     \centering
     \fontsize{14pt}{14pt}
@@ -225,15 +227,16 @@ light is reduced to around \(3 I_\text{sat}\). As shown below, this
 intensity was empirically found to minimise the variance in output
 voltage. The acquisition of the photodiode voltage is
 triggered to start at the first Dwell time. The cooling light is first
-switched on, so that only atoms in \(\ket{F=2}\) scatter light. After this, the repump
+switched on without any repump light so that only atoms in \(\ket{F=2}\) scatter light. After this, the repump
 is switched on, so that atoms in \(\ket{F=1}\) are optically pumped
-into \(\ket{F=2}\) and all the atoms scatter light. This repump light is a
+into \(\ket{F=2}\) and all the atoms scatter light. Now the
+fluorescence measures the total number of atoms $N$. This repump light is a
 sideband of the cooling laser, so the total output is increased
 to ensure that the intensity of the cooling light remains constant.
 Each detection step lasts \sivalue{250}{\micro\second}, but the
 first \sivalue{50}{\micro\second} is discarded to allow time for the
 intensity to stabilise and for optical pumping into \(\ket{F=2}\).
-The atoms are then blown away by switching off one of the detection
+All the atoms are then blown away by switching off one of the detection
 beams before the sequence is repeated to collect a
 background signal.
 \begin{figure}[!htbp] 
@@ -241,9 +244,10 @@ background signal.
   \fontsize{14pt}{14pt}
   \resizebox{0.8\textwidth}{!}{\input{detection.pdf_tex}} 
   \caption[State detection sequence timing]{Timing diagram for state
-  detection. Atoms in \(\ket{F=2}\) are detected before the repump
-light pumps those in \(\ket{F=1}\), so they are detected as well. A
-background light measurement for each step is also taken.}
+    detection. Atoms in \(\ket{F=2}\) are detected first, then repump
+    light pumps the \(\ket{F=1}\) atoms into $\ket{F=2}$ so they are detected as well. A
+background light measurement follows the measurement of the atom
+numbers.}
 	\label{fig:detection} 
 \end{figure}
 \subsubsection{Maximum Detection Time}\label{subsubsec:intensity_dependendce}
@@ -255,15 +259,8 @@ axes. It is necessary to ensure that the
 heating rate is low enough that the atoms remain within the
 detection beam for the entire detection time. A requirement on the
 maximum detection time can be obtained as follows. The momentum of
-an atom scattering photons follows a random walk, so the variance of
-the momentum along one axis after a time \(t\) is
-\(\langle\Delta p\rangle^2 = 2 D t\). The scattered photon is equally
-likely to be emitted in any direction, so the diffusion coefficient is
-\begin{equation}
-  D = \frac{1}{3}(\hbar k)^2 R_\text{sc}
-  \label{eq:diffusion_coeff}
-\end{equation}
-If the cloud has a
+an atom scattering photons follows a random walk, so 
+if the cloud has a
 Gaussian spatial distribution with an
 initial width of \(\sigma_0\), the width at a later time of
 is given by
@@ -273,7 +270,8 @@ is given by
 \end{equation}
 where \(v_r = \frac{\hbar k}{m_\text{rb}} =
 \) \sivalue{6}{\milli\metre\per\second} is the recoil velocity and \(n_p\) is the
-number of photons scattered. To remain within the detection region,
+number of photons scattered. The factor of $2/3$ is because only the
+transverse component of the recoil is relevant here. To remain within the detection region,
 the width of the cloud must be smaller than the detection beam waist
 \(w\), so the detection time must satisfy
 \begin{equation}
@@ -284,7 +282,8 @@ the width of the cloud must be smaller than the detection beam waist
 For a beam waist of \sivalue{7.5}{\milli\metre}, initial cloud size of
 \sivalue{5}{\milli\metre} and a maximum scattering rate of
 \sivalue{2e7}{\per\second} the detection time must be much less than
-\sivalue{4.7}{\milli\second}. 
+\sivalue{4.7}{\milli\second}. This inequality is amply satisfied by
+our detection time of \sivalue{100}{\micro\s}.
 %\begin{equation}
 %  p(x,t) = \int \frac{1}{\sqrt{2\pi} e^{-\frac{(x + \frac{p}{m}
 %    t)^2}}{2 \sigma_x^2} \frac{1}{\sqrt{2\pi D t} e^{-\frac{p^2}{2 D
@@ -292,14 +291,20 @@ For a beam waist of \sivalue{7.5}{\milli\metre}, initial cloud size of
 %  \label{eq:prob_atom_diff}
 %\end{equation}
 \subsubsection{Optimal Intensity}
-The optimal intensity was empirically found by varying the total power
+The intensity for detection was chosen by varying the total power
 in the detection beams and recording the photodiode voltage for a
 fixed detection time of \sivalue{200}{\micro\second}.
-\FigureRef{fig:photodiode_intensity_calib} the average voltage
-measured by detecting atoms in the \(\ket{F=2}\) state as the
+\FigureRef{fig:photodiode_intensity_calib} shows the average voltage
+measured when detecting atoms in the \(\ket{F=2}\) state as the
 intensity of the light increases. The saturation parameter \(s\) is
-defined using the peak intensity and by the time they are detected,
-the atoms have moved from this region. A non-linear least squares fit
+inferred from the control voltage used control the light
+through the \ac{aom} at the output of the
+\Muquans laser (see~\FigureRef{fig:muquans_cooling}) and the peak
+intensity of the \ac{mot} beams. By the time the atoms are detected,
+they have moved away from the region of peak intensity, so the
+intensity on the atoms is smaller than the applied control voltage
+would indicate if they were at the peak intensity. A fit parameter $b$
+is introduced to account for this. A non-linear least squares fit
 to the function
 \begin{equation}
   v = a\frac{b s}{1 + b s + 4 \left(\delta_D/\Gamma\right)^2}

@@ -1,4 +1,4 @@
-%% Creator: Inkscape inkscape 0.92.2, www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'raman_optics.pdf' (pdf, eps, ps)
 %%
@@ -35,8 +35,10 @@
     \renewcommand\transparent[1]{}%
   }%
   \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{576.33372538bp}%
+    \setlength{\unitlength}{788.49179145bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,11 +50,17 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.36064922)%
+  \begin{picture}(1,0.4257867)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{raman_optics.pdf}}%
-    \put(0.07672787,0.29879251){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Fibre}}}%
-    \put(0.23288744,0.321101){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Aspheric Lens Pair}}}%
-    \put(0.66762406,0.30275719){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Triplet Lens}}}%
-    \put(0.87797496,0.31180581){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{QWP}}}%
+    \put(0.32515104,0.31194196){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Fibre\end{tabular}}}}%
+    \put(0.43929303,0.36629528){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Aspheric Lens Pair\end{tabular}}}}%
+    \put(0.69618014,0.31483987){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Triplet Lens\end{tabular}}}}%
+    \put(0.91080802,0.39754845){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}QWP\end{tabular}}}}%
+    \put(0.43046061,0.00008979){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}PM fibre connector\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{raman_optics.pdf}}%
+    \put(0.02088763,0.17425584){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}Vacuum fibre \\feedthrough\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{raman_optics.pdf}}%
   \end{picture}%
 \endgroup%

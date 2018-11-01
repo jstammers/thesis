@@ -330,9 +330,9 @@ this, the Schr\"odinger equation becomes
 \begin{equation}
   \label{eq:raman_eom}
   i \begin{pmatrix} \dot{c}_1 \\ \dot{c}_2 \end{pmatrix} =
-  \frac{1}{2} \begin{pmatrix}
+  \begin{pmatrix}
     -\Omega_1^\textnormal{ac} & \Omega_\textnormal{eff} \\
-    \Omega_\textnormal{eff}^*&  -2 \delta - \Omega_2^\textnormal{ac}  \\
+    \Omega_\textnormal{eff}^*&  -\delta - \Omega_2^\textnormal{ac}  \\
     \end{pmatrix} \begin{pmatrix} c_1 \\ c_2\end{pmatrix}
 \end{equation}
 Where in terms of the single-photon Rabi frequencies $\Omega_1$ and
@@ -340,10 +340,10 @@ $\Omega_2$, the ac Stark shifts $\Omega_j^\textnormal{ac}$ and
 effective Rabi frequency $\Omega_\textnormal{eff}$ are given by 
 \begin{subequations}
 \begin{align}
-  \Omega_j^\textnormal{ac} &= -\frac{|\Omega_j|^2}{2 \Delta
+  \Omega_j^\textnormal{ac} &= -\frac{|\Omega_j|^2}{4 \Delta
   }\label{eq:raman_ac_stark}\\
   \Omega_\textnormal{eff}&=\frac{e^{i\phi_\textnormal{eff}} |\Omega_1|
-    |\Omega_2|}{2 \Delta }\label{eq:raman_rabi} 
+    |\Omega_2|}{4 \Delta }\label{eq:raman_rabi} 
 \end{align}
 \end{subequations}
 where the contribution of $\delta$ to the one-photon detuning of the
@@ -469,7 +469,7 @@ by the following sum
 \begin{equation}
   \label{eq:rabi_raman_sum}
   \Omega_\textnormal{eff} = e^{i \phi_\textnormal{eff}}  \sum_k
-\frac{|\Omega_{1k}| |\Omega_{2k}|}{2\Delta_k}
+\frac{|\Omega_{1k}| |\Omega_{2k}|}{4\Delta_k}
 \end{equation}
 where the index $k$ labels the intermediate states which couple to
 both $\ket{1}$ and $\ket{2}$. A similar expression can be obtained for

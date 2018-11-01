@@ -330,9 +330,9 @@ this, the Schr\"odinger equation becomes
 \begin{equation}
   \label{eq:raman_eom}
   i \begin{pmatrix} \dot{c}_1 \\ \dot{c}_2 \end{pmatrix} =
-  \frac{1}{2} \begin{pmatrix}
+  \begin{pmatrix}
     -\Omega_1^\textnormal{ac} & \Omega_\textnormal{eff} \\
-    \Omega_\textnormal{eff}^*&  -2 \delta - \Omega_2^\textnormal{ac}  \\
+    \Omega_\textnormal{eff}^*&  -\delta - \Omega_2^\textnormal{ac}  \\
     \end{pmatrix} \begin{pmatrix} c_1 \\ c_2\end{pmatrix}
 \end{equation}
 Where in terms of the single-photon Rabi frequencies $\Omega_1$ and
@@ -340,10 +340,10 @@ $\Omega_2$, the ac Stark shifts $\Omega_j^\textnormal{ac}$ and
 effective Rabi frequency $\Omega_\textnormal{eff}$ are given by 
 \begin{subequations}
 \begin{align}
-  \Omega_j^\textnormal{ac} &= -\frac{|\Omega_j|^2}{2 \Delta
+  \Omega_j^\textnormal{ac} &= -\frac{|\Omega_j|^2}{4 \Delta
   }\label{eq:raman_ac_stark}\\
   \Omega_\textnormal{eff}&=\frac{e^{i\phi_\textnormal{eff}} |\Omega_1|
-    |\Omega_2|}{2 \Delta }\label{eq:raman_rabi} 
+    |\Omega_2|}{4 \Delta }\label{eq:raman_rabi} 
 \end{align}
 \end{subequations}
 where the contribution of $\delta$ to the one-photon detuning of the
@@ -469,7 +469,7 @@ by the following sum
 \begin{equation}
   \label{eq:rabi_raman_sum}
   \Omega_\textnormal{eff} = e^{i \phi_\textnormal{eff}}  \sum_k
-\frac{|\Omega_{1k}| |\Omega_{2k}|}{2\Delta_k}
+\frac{|\Omega_{1k}| |\Omega_{2k}|}{4\Delta_k}
 \end{equation}
 where the index $k$ labels the intermediate states which couple to
 both $\ket{1}$ and $\ket{2}$. A similar expression can be obtained for
@@ -669,8 +669,9 @@ $\ket{1,0} \rightarrow \ket{2,0}$ and the second to $\ket{2,0}
 The terms proportional
 to $(\omega_1 + \omega_2)$ have been neglected as they are
 off-resonant. A similar argument follows in the case of two left-handed
-circular polarised fields $\textbf{E} = E_- e^{-i \omega t} - E_+
-e^{i \omega t}$. Conversely, the transition is not driven if one beam
+circular polarised fields $\textbf{E} =
+\textbf{E}_0\left(\mathcal{E}_+ e^{-i \omega t} - \mathcal{E}_-
+e^{i \omega t}\right)$. Conversely, the transition is not driven if one beam
 is left-handed and the other is right-handed, since the near-resonant product of dipole operators
 results in components of the form $d^{(1)}_+ d^{(2)}_+$, which
 change the magnetic quantum number by $\pm2$.

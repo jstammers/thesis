@@ -407,6 +407,12 @@ A.~Lawrence, ``{Modern Inertial Technology}''.
   97--105,
   \href{http://dx.doi.org/10.1007/BF00702605}{\doi{10.1007/BF00702605}}.
 
+\bibitem{Bollinger1996}
+\hrefCMSnoop {} {J.~J.~. Bollinger, W.~M. Itano, D.~J. Wineland{ et~al.},
+  ``{Optimal frequency measurements with maximally correlated states}'',}
+  \textit{ Physical Review A} \textbf{ 54} (dec, 1996) R4649--R4652,
+  \href{http://dx.doi.org/10.1103/PhysRevA.54.R4649}{\doi{10.1103/PhysRevA.54.R4649}}.
+
 \bibitem{Gauguet2008}
 \hrefCMSnoop {} {A.~Gauguet, T.~E. Mehlst{\"{a}}ubler, T.~L{\'{e}}v{\`{e}}que{
   et~al.}, ``{Off-resonant Raman transition impact in an atom
@@ -420,17 +426,6 @@ A.~Lawrence, ``{Modern Inertial Technology}''.
   leaders/chu pdfs/MWK92.pdf} {K.~Moler, D.~Weiss, M.~Kasevich{ et~al.},
   ``{Theoretical Analysis of Velocity-Selective Raman Transitions}'',} \textit{
   Physical Review A} \textbf{ 45} (1992), no.~1, 342--348.
-
-\bibitem{Allan1966}
-\hrefCMSnoop {} {D.~Allan, ``{Statistics of atomic frequency standards}'',}
-  \textit{ Proceedings of the IEEE} \textbf{ 54} (1966), no.~2, 221--230,
-  \href{http://dx.doi.org/10.1109/PROC.1966.4634}{\doi{10.1109/PROC.1966.4634}}.
-
-\bibitem{Bongs2006}
-\hrefCMSnoop {} {K.~Bongs, R.~Launay, and M.~Kasevich, ``{High-order inertial
-  phase shifts for time-domain atom interferometers}'',} \textit{ Applied
-  Physics B} \textbf{ 84} (aug, 2006) 599--602,
-  \href{http://dx.doi.org/10.1007/s00340-006-2397-5}{\doi{10.1007/s00340-006-2397-5}}.
 
 \bibitem{Rocco2014}
 \hrefCMSnoop {} {E.~Rocco, R.~N. Palmer, T.~Valenzuela{ et~al.},
@@ -449,6 +444,17 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
   modified periodograms}'',} \textit{ IEEE Transactions on Audio and
   Electroacoustics} \textbf{ 15} (jun, 1967) 70--73,
   \href{http://dx.doi.org/10.1109/TAU.1967.1161901}{\doi{10.1109/TAU.1967.1161901}}.
+
+\bibitem{Allan1966}
+\hrefCMSnoop {} {D.~Allan, ``{Statistics of atomic frequency standards}'',}
+  \textit{ Proceedings of the IEEE} \textbf{ 54} (1966), no.~2, 221--230,
+  \href{http://dx.doi.org/10.1109/PROC.1966.4634}{\doi{10.1109/PROC.1966.4634}}.
+
+\bibitem{El-Sheimy2008}
+\hrefCMSnoop {} {N.~El-Sheimy, H.~Hou, and X.~Niu, ``{Analysis and Modeling of
+  Inertial Sensors Using Allan Variance}'',} \textit{ IEEE Transactions on
+  Instrumentation and Measurement} \textbf{ 57} (jan, 2008) 140--149,
+  \href{http://dx.doi.org/10.1109/TIM.2007.908635}{\doi{10.1109/TIM.2007.908635}}.
 
 \bibitem{Cheinet2008}
 \hrefCMSnoop {} {P.~Cheinet, B.~Canuel, F.~{Pereira Dos Santos}{ et~al.},
@@ -489,6 +495,12 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
   cold-atom gravimeter with an active vibration isolator}'',} \textit{ Physical
   Review A} \textbf{ 86} (oct, 2012) 043630,
   \href{http://dx.doi.org/10.1103/PhysRevA.86.043630}{\doi{10.1103/PhysRevA.86.043630}}.
+
+\bibitem{Bongs2006}
+\hrefCMSnoop {} {K.~Bongs, R.~Launay, and M.~Kasevich, ``{High-order inertial
+  phase shifts for time-domain atom interferometers}'',} \textit{ Applied
+  Physics B} \textbf{ 84} (aug, 2006) 599--602,
+  \href{http://dx.doi.org/10.1007/s00340-006-2397-5}{\doi{10.1007/s00340-006-2397-5}}.
 
 \bibitem{Sugarbaker2013}
 \href {http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.111.113002}
@@ -561,37 +573,21 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
   034030,
   \href{http://dx.doi.org/10.1103/PhysRevApplied.10.034030}{\doi{10.1103/PhysRevApplied.10.034030}}.
 
+\bibitem{Hogan2010}
+\hrefCMSnoop {} {J.~Hogan, ``{Towards precision tests of general relativity
+  using an atom interferometer}'',}.
+
+\bibitem{Chu1985}
+\href {http://prl.aps.org/abstract/PRL/v55/i1/p48{\_}1} {S.~Chu, L.~Hollberg,
+  J.~Bjorkholm{ et~al.}, ``{Three-Dimensional Viscous Confinement and Cooling
+  of Atoms by Resonance Radiation Pressure}'',} \textit{ Physical Review
+  Letters} \textbf{ 55} (1985), no.~1,.
+
 \bibitem{Tackmann2012}
 \hrefCMSnoop {} {G.~Tackmann, P.~Berg, C.~Schubert{ et~al.}, ``{Self-alignment
   of a compact large-area atomic Sagnac interferometer}'',} \textit{ New
   Journal of Physics} \textbf{ 14} (jan, 2012) 015002,
   \href{http://dx.doi.org/10.1088/1367-2630/14/1/015002}{\doi{10.1088/1367-2630/14/1/015002}}.
-
-\bibitem{Miffre2006}
-\hrefCMSnoop {} {A.~Miffre, M.~Jacquey, M.~B{\"{u}}chner{ et~al.}, ``{Atom
-  interferometry}'',}
-  \href{http://dx.doi.org/10.1088/0031-8949/74/2/N01}{\doi{10.1088/0031-8949/74/2/N01}},
-  \href{http://www.arXiv.org/abs/0605055}{\texttt{ arXiv:0605055}}.
-
-\bibitem{Schoser2002}
-\hrefCMSnoop {} {J.~Schoser, A.~Bat{\"{a}}r, R.~L{\"{o}}w{ et~al.}, ``{Intense
-  source of cold Rb atoms from a pure two-dimensional magneto-optical trap}'',}
-  \textit{ Physical Review A} \textbf{ 66} (aug, 2002) 023410,
-  \href{http://dx.doi.org/10.1103/PhysRevA.66.023410}{\doi{10.1103/PhysRevA.66.023410}},
-  \href{http://www.arXiv.org/abs/0201034}{\texttt{ arXiv:0201034}}.
-
-\bibitem{Lan2012}
-\hrefCMSnoop {} {S.~Y. Lan, P.~C. Kuan, B.~Estey{ et~al.}, ``{Influence of the
-  coriolis force in atom interferometry}'',} \textit{ Physical Review Letters}
-  \textbf{ 108} (2012), no.~9, 1--5,
-  \href{http://dx.doi.org/10.1103/PhysRevLett.108.090402}{\doi{10.1103/PhysRevLett.108.090402}},
-  \href{http://www.arXiv.org/abs/1110.6910}{\texttt{ arXiv:1110.6910}}.
-
-\bibitem{Pappa2011}
-\hrefCMSnoop {} {M.~Pappa, P.~C. Condylis, G.~O. Konstantinidis{ et~al.},
-  ``{Ultra-sensitive atom imaging for matter-wave optics}'',} \textit{ New
-  Journal of Physics} \textbf{ 13} (nov, 2011) 115012,
-  \href{http://dx.doi.org/10.1088/1367-2630/13/11/115012}{\doi{10.1088/1367-2630/13/11/115012}}.
 
 \bibitem{Masry1991}
 \hrefCMSnoop {} {E.~Masry, ``{Flicker noise and the estimation of the Allan
@@ -606,30 +602,46 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
   \href{http://www.arXiv.org/abs/arXiv:0806.3261v1}{\texttt{
   arXiv:arXiv:0806.3261v1}}.
 
-\bibitem{Hogan2010}
-\hrefCMSnoop {} {J.~Hogan, ``{Towards precision tests of general relativity
-  using an atom interferometer}'',}.
-
 \bibitem{Schunemann1999}
 \hrefCMSnoop {} {U.~Schünemann, H.~Engler, R.~Grimm{ et~al.}, ``{Simple
   scheme for tunable frequency offset locking of two lasers}'',} \textit{
   Review of Scientific Instruments} \textbf{ 70} (1999), no.~1, 242,
   \href{http://dx.doi.org/10.1063/1.1149573}{\doi{10.1063/1.1149573}}.
 
-\bibitem{Chu1985}
-\href {http://prl.aps.org/abstract/PRL/v55/i1/p48{\_}1} {S.~Chu, L.~Hollberg,
-  J.~Bjorkholm{ et~al.}, ``{Three-Dimensional Viscous Confinement and Cooling
-  of Atoms by Resonance Radiation Pressure}'',} \textit{ Physical Review
-  Letters} \textbf{ 55} (1985), no.~1,.
-
-\bibitem{Kasevich1992a}
-\hrefCMSnoop {} {M.~Kasevich, ``{Atom Interferometry in an atomic fountain}'',}
-  1992.
+\bibitem{Miffre2006}
+\hrefCMSnoop {} {A.~Miffre, M.~Jacquey, M.~B{\"{u}}chner{ et~al.}, ``{Atom
+  interferometry}'',}
+  \href{http://dx.doi.org/10.1088/0031-8949/74/2/N01}{\doi{10.1088/0031-8949/74/2/N01}},
+  \href{http://www.arXiv.org/abs/0605055}{\texttt{ arXiv:0605055}}.
 
 \bibitem{Schkolnik2015}
 \hrefCMSnoop {} {V.~Schkolnik, B.~Leykauf, M.~Hauth{ et~al.}, ``{The effect of
   wavefront aberrations in atom interferometry}'',} \textit{ Applied Physics B}
   \textbf{ 120} (aug, 2015) 311--316,
   \href{http://dx.doi.org/10.1007/s00340-015-6138-5}{\doi{10.1007/s00340-015-6138-5}}.
+
+\bibitem{Schoser2002}
+\hrefCMSnoop {} {J.~Schoser, A.~Bat{\"{a}}r, R.~L{\"{o}}w{ et~al.}, ``{Intense
+  source of cold Rb atoms from a pure two-dimensional magneto-optical trap}'',}
+  \textit{ Physical Review A} \textbf{ 66} (aug, 2002) 023410,
+  \href{http://dx.doi.org/10.1103/PhysRevA.66.023410}{\doi{10.1103/PhysRevA.66.023410}},
+  \href{http://www.arXiv.org/abs/0201034}{\texttt{ arXiv:0201034}}.
+
+\bibitem{Pappa2011}
+\hrefCMSnoop {} {M.~Pappa, P.~C. Condylis, G.~O. Konstantinidis{ et~al.},
+  ``{Ultra-sensitive atom imaging for matter-wave optics}'',} \textit{ New
+  Journal of Physics} \textbf{ 13} (nov, 2011) 115012,
+  \href{http://dx.doi.org/10.1088/1367-2630/13/11/115012}{\doi{10.1088/1367-2630/13/11/115012}}.
+
+\bibitem{Kasevich1992a}
+\hrefCMSnoop {} {M.~Kasevich, ``{Atom Interferometry in an atomic fountain}'',}
+  1992.
+
+\bibitem{Lan2012}
+\hrefCMSnoop {} {S.~Y. Lan, P.~C. Kuan, B.~Estey{ et~al.}, ``{Influence of the
+  coriolis force in atom interferometry}'',} \textit{ Physical Review Letters}
+  \textbf{ 108} (2012), no.~9, 1--5,
+  \href{http://dx.doi.org/10.1103/PhysRevLett.108.090402}{\doi{10.1103/PhysRevLett.108.090402}},
+  \href{http://www.arXiv.org/abs/1110.6910}{\texttt{ arXiv:1110.6910}}.
 
 \end{thebibliography}\endgroup

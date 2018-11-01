@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{401.64606567bp}%
+    \setlength{\unitlength}{401.64606709bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -54,11 +54,12 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{detection_scheme.pdf}}%
-    \put(0.21816465,0.62971936){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\lambda/2$\end{tabular}}}}%
+    \put(0.21816465,0.62971935){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\lambda/2$\end{tabular}}}}%
     \put(0.23216955,0.29266945){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\lambda/4$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{detection_scheme.pdf}}%
-    \put(0.67005508,0.99197868){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\theta$ = 0\end{tabular}}}}%
+    \put(0.67005505,0.99197867){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\theta$ = 0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{detection_scheme.pdf}}%
-    \put(0.93147942,0.99197868){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\theta = \pi/2$\end{tabular}}}}%
+    \put(0.93147939,0.99197867){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\theta = \pi/2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{detection_scheme.pdf}}%
   \end{picture}%
 \endgroup%

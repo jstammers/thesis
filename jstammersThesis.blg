@@ -14,7 +14,6 @@ A level-1 auxiliary file: appendices.aux
 A level-1 auxiliary file: backmatter.aux
 The style file: lucas_unsrt.bst
 Database file #1: Thesis.bib
-Warning--I didn't find a database entry for "Wineland"
 Warning--I didn't find a database entry for "M2_manual"
 Warning--empty year in Levine
 Warning--empty author in accelStandard
@@ -23,45 +22,45 @@ Warning--empty publisher in Brink1968
 Warning--empty booktitle in Lawrence1998
 Warning--empty publisher in Lawrence1998
 Warning--empty publisher in Howard2002
-You've used 102 entries,
+You've used 104 entries,
             2517 wiz_defined-function locations,
-            1466 strings with 31080 characters,
-and the built_in function-call counts, 35104 in all, are:
-= -- 3499
-> -- 1440
+            1478 strings with 31532 characters,
+and the built_in function-call counts, 36007 in all, are:
+= -- 3597
+> -- 1469
 < -- 0
-+ -- 515
-- -- 413
-* -- 2936
-:= -- 4731
-add.period$ -- 116
-call.type$ -- 102
++ -- 524
+- -- 420
+* -- 3014
+:= -- 4845
+add.period$ -- 118
+call.type$ -- 104
 change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 109
-duplicate$ -- 1983
-empty$ -- 3348
-format.name$ -- 240
-if$ -- 8845
+cite$ -- 111
+duplicate$ -- 2029
+empty$ -- 3430
+format.name$ -- 246
+if$ -- 9073
 int.to.chr$ -- 0
-int.to.str$ -- 102
-missing$ -- 281
-newline$ -- 326
-num.names$ -- 100
-pop$ -- 620
+int.to.str$ -- 104
+missing$ -- 287
+newline$ -- 332
+num.names$ -- 102
+pop$ -- 630
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1225
+skip$ -- 1261
 stack$ -- 0
-substring$ -- 1766
-swap$ -- 835
+substring$ -- 1846
+swap$ -- 859
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 7
-while$ -- 274
-width$ -- 105
-write$ -- 1185
-(There were 9 warnings)
+while$ -- 282
+width$ -- 107
+write$ -- 1209
+(There were 8 warnings)

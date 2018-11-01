@@ -28,7 +28,7 @@ counter-propagating light fields that drive the Raman transition. Any
 such phase derivative that does not result from the acceleration of the atoms along
 the Raman axis is a source of error.
 One such source is distortion of the Raman beams wavefronts, which can
-arise from transmission through rough optical elements.
+arise from transmission through imperfect optical elements.
 %This is particularly apparent in
 %the wavefront of the light. Optical distortions of the two Raman beams
 %leads to an additional position-dependent phase shift. When there is
@@ -37,11 +37,10 @@ arise from transmission through rough optical elements.
 %$\Delta \Phi$\footnote{Since $\Delta \Phi = \phi_1 - 2\phi_2 +
 %\phi_3$, any effect which leads to a constant or linear phase shift at
 %each pulse is not measured by the interferometer.}.  
-In fact, the typical flatness of optical viewports is greater than
-desired for making a sensitive accelerometer. To avoid the need for
-optical viewports, the Raman optical system, described
+Because vacuum windows are birefringent and have significant
+variations in optical thickness, the Raman optical system, described
 in~\SectionRef{sec:setup_ramanoptics}, was mounted inside the
-chamber and built using optical elements that were manufactured to
+chamber. It was built using optical elements having 
 far better surface
 qualities than conventional optics. 
 The effect of wavefront distortions as a source of phase noise is
@@ -114,11 +113,11 @@ large contrast.
 	\label{fig:raman_fringecontrast}
 \end{figure}
 \par\noindent
-The velocity distribution of the atoms introduces a detuning to each
-interferometer pulse due to the Doppler shift, as well as modifying
+The velocity distribution of the atoms inhomogeneously detunes each
+Raman pulse due to the Doppler shift, as well as modifying
 the spatial distribution due to thermal expansion.
 \FigureRef{fig:phase_vel} shows the fringe contrast when including the
-one-dimensional velocity distribution of an atom ensemble with a
+velocity distribution of an atom ensemble with a
 temperature of \sivalue{5}{\micro\K}. The most significant difference is
 for small beam waists in
 the case of no initial launch velocity, where the contrast is now less
@@ -149,11 +148,10 @@ However, if the beams are not collimated they will have different
 radii of curvature and their superposition will therefore
 have a parabolic wavefront. Each Raman pulse will impress a different
 phase to an atom falling under gravity, leading to a component of the
-interferometer phase that does not cancel out.
+interferometer phase that gives a false acceleration. 
 \FigureRef{fig:collimation_wavefront} shows the effects of poor
-collimation on the effective Raman wavefront for increasing divergence
-angles, where it can be seen that the curvature of the Raman wavefront
-similarly increases. \FigureRef{fig:collimation_interferometer} shows yhe corresponding interferometer phase for an
+collimation on the Raman phase shift for several divergence
+angles. \FigureRef{fig:collimation_error} shows the corresponding interferometer phase for an
 atom falling from rest under gravity with a pulse separation of $T=$
 \sivalue{25}{\ms}. A divergence angle of
 \sivalue{1}{\milli\radian} results in an interferometer phase
@@ -210,8 +208,7 @@ unlikely to be a dominant source of error.
 		}\label{fig:collimation_error_plots}
 \end{figure}
 \par\noindent
-A more significant contribution 
-arises if there is a tilt of the beams. \FigureRef{fig:perfect_retro}
+Another point to consider is the possible tilt of the Raman beams. \FigureRef{fig:perfect_retro}
 presents the configuration when the incoming beam is tilted from the
 optic axis, but is perfectly retro-reflected. The Raman wavefront is
 planar, but the Raman axis is tilted from the optic axis. If the optic
@@ -220,9 +217,10 @@ acceleration, then the interferometer will measure a component of
 gravitational acceleration $g \sin(\theta)$. If we require that this
 acceleration error is no greater than \sivalue{100}{\nano\g}, then
 this is equivalent to requiring that the tilt of the Raman axis is
-less than \sivalue{0.1}{\micro\radian}. Such a tilt can be caused by a
-displacement of the input fibre from the optic axis. This is discussed
-in more detail in~\SectionRef{subsec:setup_ramancollimator}.
+less than \sivalue{0.1}{\micro\radian}. Clearly this level of
+precision will require the transverse position of the input fibre 
+(see ~\SectionRef{subsec:setup_ramancollimator}) to be exceedingly
+stable.
 \begin{figure}[!htbp]
 	\centering
   \fontsize{12pt}{12pt}
@@ -235,18 +233,18 @@ sensitive to a component of gravitational acceleration given by
 $\textbf{g} \sin(\theta)$.}\label{fig:perfect_retro}
 \end{figure}
 \par\noindent
-If the mirror is parallel with the optic axis, it does not perfectly
-retro-reflect the tilted incoming beam. At a given transverse
-displacement, both the incoming and reflected beams have the same
-phase shift, so it is cancelled in the Raman phase difference. 
-\FigureRef{fig:imperfect_retro} illustrates the wavefronts in this
-case. The Raman wavefront is still planar, but the wavevectors of the
-two beams are not colinear. The Raman wavevector along the optic axis
+If instead the mirror is parallel with the optic axis, the two
+wavefronts are at an angle to each other, as illustrated
+in~\FigureRef{fig:imperfect_retro}. In this case the phase difference
+between the incoming and reflected beams is independent of transverse
+position and there is no systematic offset in the interferometer
+phase. However, the wavevectors of the
+two beams are no longer colinear. The Raman wavevector along the optic axis
 ($\hat{\textbf{x}}$)
 is now $\keff' =
-(k_1-k_2)\cos(\theta)\hat{\textbf{x}} \approx  \keff (1-\theta^2)$. This leads to an
-interferometer phase error of $\keff\theta^2 a T^2$. For an
-acceleration of \sivalue{0.3}{\g} and $T = $ \sivalue{25}{\ms}, a tilt
+(k_1-k_2)\cos(\theta)\hat{\textbf{x}} \approx  \keff (1-\theta^2)$. This leads to a
+calibration error by a factor of $(1-\theta^2)$. For an
+acceleration of \sivalue{0.3}{\g}, a tilt
 of $\theta = $ \sivalue{0.18}{\milli\radian} gives an interferometer
 phase error of \sivalue{1}{\milli\radian}. \SectionRef{sec:in_situ} describes a method
 used to ensure good alignment of the mirror, which
@@ -261,7 +259,8 @@ renders this error negligible.
 Raman phase has a planar wavefront (indicated by the dotted line) that
 travels along that axis. The tilt of the two beams means that their
 wavevectors are not colinear and the Raman wavevector is $\keff' =
-(k_1-k_2)\cos(\theta)\hat{\textbf{x}}$, where $\hat{\textbf{x}}$ is
+\textbf{k}_1 - \textbf{k}_2 \simeq
+(k_1+k_2)\cos(\theta)\hat{\textbf{x}}$, where $\hat{\textbf{x}}$ is
 the optic axis.}
   \label{fig:imperfect_retro}
 \end{figure}
@@ -269,10 +268,7 @@ the optic axis.}
 The propagation through rough optical elements distorts
 the wavefronts and introduce a spatially varying component of the
 Raman phase that is independent
-of acceleration. If this phase is common to both beams then it does
-not affect the atomic phase induced by the Raman
-transition. It is necessary only to consider the difference in the phase of
-the two light fields. If an atom's trajectory is parallel with the Raman axis,
+of acceleration. If an atom's trajectory is parallel with the Raman axis,
 then this phase difference is the same at each laser pulse and makes
 no contribution to the interferometer phase for that atom. On the other hand, 
 the Raman phase difference can change if the atom moves transverse to
@@ -287,12 +283,12 @@ Gaussian distribution over the cloud with a standard deviation of \(\sigma_\Phi
 \). Denoting the random interferometer phase as \(\delta\phi\), the
 fringe pattern for a single atom is
 \begin{equation}
-	F = \cos\left(\phi + \delta\phi\right)^2
+	F = \cos^2\left(\phi + \delta\phi\right)
 \end{equation}
 Following from this, the fringe pattern averaged over the cloud is
 \begin{align}
   \langle F \rangle & = \frac{1}{\sqrt{2\pi}\sigma_\Phi}\int
-  \cos(\phi+\delta \phi)^2 \; e^{-\delta\phi^2/2\sigma_\Phi^2} \; \mathrm{d}\delta\phi \\
+  \cos^2(\phi+\delta \phi) \; e^{-\delta\phi^2/2\sigma_\Phi^2} \; \mathrm{d}\delta\phi \\
                     &= \frac{1}{2}(1+e^{-2\sigma_{\Phi}^2}\cos(2\phi)) 
 \end{align}
 This give a fringe contrast of
@@ -313,13 +309,10 @@ fringes of low contrast.
 	\centering
 	\includegraphics[width=0.7\textwidth]{phase_noise_contrast.pdf}
   \caption[Expected fringe contrast as a function of random phase
-  contributions.]{Expected contrast as a function of random phase contributions. This
-		assumes that the phase imprinted on an atom during each interferometer pulse
-		has an additional random component that is Gaussian distributed around 0
-		with a standard deviation of \(\sigma_\phi\). This random phase is also
-		uncorrelated between each pulse so that the total can be obtained using
-		Gaussian propagation of error. The dashed lines indicate the
-    contrast for an rms phase uncertainty of \(\lambda/20\).}
+  contributions.]{Expected contrast as a function of random phase
+  contributions to the interferometer phase. We expect that
+$\sigma_\Phi$ will not exceed \sivalue{0.1}{\radian} because of the
+high-quality optics used.}
 	\label{fig:raman_phasenoise}
 \end{figure}
 \par\noindent
@@ -361,24 +354,24 @@ send Raman light into the chamber and produce a collimated beam in the centre of
 the chamber. The light is coupled into the chamber using a UHV compatible
 \ac{pm} fibre, manufactured by Diamond photonics. This is a kapton-coated PM-780
 HP fibre that is bonded on one end to a DN16 flange using an epoxy resin. The
-external side of this flange has an FC/APC connector for coupling light from
-another fibre. Inside the chamber, the output of the fibre plugs into to an FC/APC fibre
+external side of this flange has an FC/APC connector for receiving the
+fibre input from the laser system. Inside the chamber, the output of the fibre plugs into to an FC/APC fibre
 plate. This is clamped between a piece which bolts onto the inside of a DN63
 flange and another stainless steel plate which bolts onto the rest of the optics
 assembly. Fine adjustment of the position of the fibre along the optic axis is
 achieved using shim plates with a thickness ranging from
-200--\sivalue{300}{\micro\metre}. The fibre plate is free to rotate so that the
-orientation of the fibre with respect to a \ac{qwp} at the output of the
+200--\sivalue{300}{\micro\metre}. The fibre plate is free to rotate so
+that the fibre is correctly orientated with respect to a \ac{qwp} at the output of the
 collimator. This \ac{qwp} is manufactured by Light Machinery, and is described
 further is \SectionRef{subsec:setup_ramanmirror}. When the fibre is correctly
-orientated (e.g. when the slow axis of the fibre is at 45$^\circ$ to the slow
-axis of the waveplate), the two Raman light fields are orthogonally circularly
-polarised. \par\noindent The original design for the optical system consisted of
-a triplet lens, as a system of three lenses is capable of correcting for the
+orientated, the slow axis of the fibre is at 45$^\circ$ to the slow
+axis of the waveplate and the two Raman light fields are orthogonally circularly
+polarised. 
+\par\noindent 
+The original design for the collimator had only the triplet lens, as a system of three lenses is capable of correcting for the
 five types of Seidel aberrations that distort rays of monochromatic light. This
 was designed and manufactured by IC Optical Systems to deliver a
-wavefront quality of $\lambda/100$. Another specification for
-this lens system was that it had to produce a collimated beam with a waist size
+collimated wavefront quality of $\lambda/100$ with a waist size
 of around \sivalue{35}{\milli\metre} so that the visibility of the
 interferometer fringes would not be limited by the effects of intensity gradients across the
 atoms. Unfortunately, the triplet was designed with an incorrect \ac{na}. With a
@@ -392,37 +385,45 @@ To address this issue, a pair of aspheric lenses was included to increase
 the divergence angle of light from the fibre. These are manufactured by Thorlabs
 and have a focal length of \sivalue{4.51}{\milli\metre} (352230-B) and
 \(\sivalue{15.29}{\milli\metre}\) (352260-B), respectively, to give a
-magnification of 3.39.
-\subsection{Alignment and Collimation}
-As one of the main motivations for mounting the Raman optics inside the vacuum
-chamber was to reduce the effects of wavefront distortions, it is worth
-highlighting how inaccurate alignment of the optics can lead to aberrations. As
-previously discussed in \SectionRef{subsec:fringe_wavefront}, distortions of the
-wavefront can produce a false acceleration and possible loss of
-interferometer fringe visibility. 
-Here, the same figures of merit as before are used to consider what misalignment
-is acceptable to ensure that the false acceleration due to a distorted
-wavefront is less than \sivalue{100}{\nano\g}.
-%than \(\lambda/100\) after a transverse distance of
-%\sivalue{12.5}{\milli\metre} (that being the distance fallen from rest
-%after \sivalue{50}{\ms}. 
-\par\noindent 
-Taking the fibre as a point source, misalignment can occur if it is displaced from the front focal point of the
-optical system either along or transversely to the optic axis. If it is
-transversely displaced, this manifests as an angular displacement of the
-collimated light after the triplet lens which tilts the Raman axis
-relative to the optic axis.   
-\par\noindent 
-Although we do not expect to have any significant transverse
-misalignment of the fibre, there could be an axial one. In that case,
-the output beam will not be collimated. This leads to a systematic
-error, already discussed in~\SectionRef{subsec:fringe_wavefront},
-where transverse motion of the atoms produces an interferometer phase
-that is misinterpreted as an acceleration along the optic axis. 
-incoming ones. Comparing the
-wavefront distortion in this case, a requirement on the longitudinal
-misalignment of \(< \sivalue{0.6}{\milli\metre}\) is needed to ensure
-that the divergence angle is less than \sivalue{1}{\milli\radian}.
+magnification of 3.39. These lenses are designed to give a diffraction-limited
+performance when collimating or focusing a beam from a fibre output.
+Their specified surface quality is 40-20 scratch-dig, which is typical
+of moderate-quality optical elements. However, it
+was found that defects in the surfaces of these lenses produced an
+irregular intensity profile in the collimated beam. This inhomogeneity
+was subsequently found to significantly dephase the atoms during a
+Raman transition, which is discussed
+in~\SectionRef{subsec:int_pulses}.
+%\subsection{Alignment and Collimation}
+%As one of the main motivations for mounting the Raman optics inside the vacuum
+%chamber was to reduce the effects of wavefront distortions, it is worth
+%highlighting how inaccurate alignment of the optics can lead to aberrations. As
+%previously discussed in \SectionRef{subsec:fringe_wavefront}, distortions of the
+%wavefront can produce a false acceleration and possible loss of
+%interferometer fringe visibility. 
+%Here, the same figures of merit as before are used to consider what misalignment
+%is acceptable to ensure that the false acceleration due to a distorted
+%wavefront is less than \sivalue{100}{\nano\g}.
+%%than \(\lambda/100\) after a transverse distance of
+%%\sivalue{12.5}{\milli\metre} (that being the distance fallen from rest
+%%after \sivalue{50}{\ms}. 
+%\par\noindent 
+%Taking the fibre as a point source, misalignment can occur if it is displaced from the front focal point of the
+%optical system either along or transversely to the optic axis. If it is
+%transversely displaced, this manifests as an angular displacement of the
+%collimated light after the triplet lens which tilts the Raman axis
+%relative to the optic axis.   
+%\par\noindent 
+%Although we do not expect to have any significant transverse
+%misalignment of the fibre, there could be an axial one. In that case,
+%the output beam will not be collimated. This leads to a systematic
+%error, already discussed in~\SectionRef{subsec:fringe_wavefront},
+%where transverse motion of the atoms produces an interferometer phase
+%that is misinterpreted as an acceleration along the optic axis. 
+%incoming ones. Comparing the
+%wavefront distortion in this case, a requirement on the longitudinal
+%misalignment of \(< \sivalue{0.6}{\milli\metre}\) is needed to ensure
+%that the divergence angle is less than \sivalue{1}{\milli\radian}.
 \subsection{Measuring the Beam Width}
 To measure the waist of the beam, the scattered light from a flat surface was imaged
 using a CCD camera. Because the beam is clipped, the profile is not
@@ -454,14 +455,14 @@ that the collimator was installed without further adjustment.
 	\def\svgwidth{\columnwidth}
 	\subfloat[][]{\scalebox{0.3}{\includegraphics{beam_examp}}\label{fig:beam_examp}}
 	\subfloat[][]{\scalebox{0.3}{\includegraphics{beam_waist}}\label{fig:beam_waist}}
-	\caption[Measured Raman beam waist]{Raman beam waist measured over a distance
-		of \sivalue{1}{\metre}, shown in \textbf{(a)}. The waist along the
-		horizontal and vertical axes are indicated in blue and orange respectively.
-		The dashed lines indicate the approximate propagation distance of each beam
-		at the position of the atoms. \textbf{(b)} shows the intensity profile along
+	\caption[Raman beam intensity profile and beam waist.]{ \textbf{(a)} shows the intensity profile along
 		each axis, with the fitted parabola. The dot-dashed line is a threshold
 		intensity value, which excludes pixels from outside the spatial extent of
-		the beam.} 
+    the beam. \textbf{(b)} shows the Raman beam waist measured over a distance
+		of \sivalue{1}{\metre}.
+		The dashed line is a best-fit line which gives a gradient of
+  \sivalue{0.4\pm0.03}{\mm\per\m}, corresponding to a divergence
+angle of \sivalue{0.4\pm0.03}{\milli\radian}.} 
   \label{fig:beam_waist_plots} 
 \end{figure}
 \section{Retro-Reflection Assembly}\label{subsec:setup_ramanmirror} The
@@ -597,26 +598,31 @@ one to incorporate into the start-up routine for the accelerometer.
 		\label{fig:simplex_optimisation} 
   \end{figure}
 \subsection{The Mechanical Accelerometer}\label{subsec:raman_mems}
-The periodic interferometer signal means that the interferometer phase is only
-proportional to acceleration over one fringe spacing \(\Delta a =
-\frac{\pi}{\keff T^2}\). Furthermore, the fringe spacing is inversely
-proportional to \(T^2\) so there is a trade-off between dynamic range and
-sensitivity. These problems can be addressed by making use of a mechanical
-accelerometer mounted onto the back of the retro-reflecting mirror to form a
-hybrid system~\cite{Lautier2014}. The accelerometer determines the acceleration
-up to the fringe spacing  and the interferometer measures the acceleration more
-precisely. The accelerometer also measures the vibrations of the
-retro-reflecting mirror, so it can be used to filter the effects of vibration
-noise on the interferometer signal. This is discussed in more detail
-in~\SectionRef{subsec:vibration_sensitivity}. This hybridisation scheme has been
-used in measurements of gravity in high noise environments such as the centre of
+The interferometer phase is proportional to the acceleration of the
+retro-reflecting mirror relative to the freely-falling atoms. However,
+the sinusoidal interferometer signal is periodic with period
+\(\Delta a = \frac{\pi}{\keff T^2}\), so we need to know the order
+number of the fringe before the acceleration can be deduced from the
+signal. For this reason, a mechanical (MEMS)
+accelerometer is mounted on the back of the retro-reflecting mirror to determine the acceleration up to the fringe spacing and the interferometer measures the acceleration more
+precisely. 
+%The accelerometer is also sensitive to vibrations of the
+%retro-reflecting mirror, so it can be used to filter the effects of vibration
+%noise on the interferometer signal.  
+The MEMS accelerometer is also sensitive to vibrations of the
+retro-reflecting mirror and can be used to characterise the
+vibration-induced phase noise. This is discussed in more detail
+in~\SectionRef{subsec:vibration_sensitivity}. This technique enables
+accurate measurements of acceleration in high-noise environments and has been
+used to measure the acceleration due to gravity at the centre of
 Paris~\cite{Merlet2009} and in parabolic aircraft
-flights~\cite{Geiger2011a,Barrett2016}. \par\noindent The accelerometer is a
-navigation-grade AI-Q-2010 manufactured by \textit{Innalabs}. This particular
-device was chosen because its specified intrinsic noise was
+flights~\cite{Geiger2011a,Barrett2016}. 
+\par\noindent 
+The accelerometer is a navigation-grade AI-Q-2010 manufactured by \textit{Innalabs}. This particular
+device was chosen for its low noise specification of
 <\sivalue{7}{\micro\g} in the 0-\sivalue{100}{\Hz} bandwidth. For a pulse separation \(T
 = \sivalue{25}{\milli\second}\), the fringe spacing is
-\(\sivalue{31.2}{\micro\g}\) so it is sensitive enough to measure the
+\(\sivalue{64}{\micro\g}\) so it is sensitive enough to measure the
 acceleration to within one fringe. A schematic of this device is shown
 in~\FigureRef{fig:innalabs}. It operates using a quartz pendulum which is is
 free to move about one

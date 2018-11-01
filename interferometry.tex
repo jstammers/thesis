@@ -34,7 +34,7 @@ SolsTiS lasers, each generating \sivalue{780}{\nm} light by pumping a Ti:Sapphir
 The output light is frequency-stabilised using piezo-electric stacks to adjust
 the resonator length~\cite{Drever1983}. A schematic diagram of this laser system is given
 in~\FigureRef{fig:msquared_laser}. Each laser is pumped using a
-\sivalue{12}{\Watt} \textit{Lighthouse Photonics} Sprout laser at
+\sivalue{12}{\W} \textit{Lighthouse Photonics} Sprout laser at
 \sivalue{532}{\nm}. One SolsTiS acts as the master frequency locked
 to an absorption feature in the saturated absorption spectrum of
 \ac{rb87}. The second is slaved to this using a phase-locked loop to keep their
@@ -54,10 +54,10 @@ the optical beat-note between the two lasers. The final ICE-BLOC, referred to
 as the DCS module, is used to control the lasers in real-time during the
 experiment.  
 \begin{figure}
-	\centering \fontsize{12pt}{11pt}
-	\resizebox{0.5\textwidth}{!}{\input{msquared_laser.pdf_tex}}
+	\centering \fontsize{10pt}{10pt}
+	\resizebox{0.8\textwidth}{!}{\input{msquared_laser.pdf_tex}}
 	\caption[M-Squared Laser System Schematic]{Schematic Diagram of the M-Squared
-		laser system. Two Solstis lasers provide the two Raman frequencies, which
+		laser system. Two SolsTiS lasers provide the two Raman frequencies, which
 		are fibre coupled onto the orthogonal axes of a \ac{pm} fibre. Control of
 		the power, frequency and phase as required to drive and control
     the Raman transitions is
@@ -144,7 +144,7 @@ in~\SectionRef{subsec:phase_measurement}.
 Out aim in this device is to reach the standard quantum noise limit,
 which comes from the quantum projection noise. Expressed as a
 fractional accuracy this is given approximately by
-$N^{-1/2}$~\cite{Wineland}, where $N$ is the number of atoms detected.
+$N^{-1/2}$~\cite{Bollinger1996}, where $N$ is the number of atoms detected.
 The CCD used initially was not sensitive enough for this as there wass a
 significant amount of noise in reading out the charge collected at each pixel.
 Instead, a more sensitive photodiode is used to detect the atoms. With a
@@ -226,7 +226,7 @@ detection volume for a longer period of time. The intensity of the
 light is reduced to around \(3 I_\text{sat}\). As shown below, this
 intensity was empirically found to minimise the variance in output
 voltage. The acquisition of the photodiode voltage is
-triggered to start at the first Dwell time. The cooling light is first
+triggered to start at the first Dwell time. Durin The cooling light is first
 switched on without any repump light so that only atoms in \(\ket{F=2}\) scatter light. After this, the repump
 is switched on, so that atoms in \(\ket{F=1}\) are optically pumped
 into \(\ket{F=2}\) and all the atoms scatter light. Now the
@@ -290,7 +290,7 @@ our detection time of \sivalue{100}{\micro\s}.
 %      t}} \mathrm{d}t
 %  \label{eq:prob_atom_diff}
 %\end{equation}
-\subsubsection{Optimal Intensity}
+\subsubsection{Detection Intensity}
 The intensity for detection was chosen by varying the total power
 in the detection beams and recording the photodiode voltage for a
 fixed detection time of \sivalue{200}{\micro\second}.
@@ -341,119 +341,110 @@ saturation parameter \(s\).}
 \subsection{Measuring the Occupation Probability}\label{subsec:phase_measurement}
 
 The occupation probability of the $\ket{F=2}$ state is obtained by measuring the proportion of
-atoms in each hyperfine ground state. The number of atoms
-\(n_\text{at}\) that scatter light on the cycling transition is
-proportional to the photodiode voltage \(U_\text{pd}\) as follows
+atoms in each hyperfine ground state. The voltage of the amplified
+photodiode signal is related to the number of atoms
+\(n_\text{at}\) that scatter light on the cycling transition by
 \begin{equation}
-  U_\textnormal{pd} &= \eta R_\text{sc}(I,\Delta) n_\text{at} \hbar \omega G \nonumber \\
-  &= \alpha \eta R_\text{sc}(I, \Delta) n_\text{at}
+ V &= \eta R_\text{sc}(s,\delta) n_\text{at} \hbar \omega G 
   \label{eq:pd_signal}
 \end{equation}
 where \(\eta = \Omega/4\pi\) is the fractional solid angle subtended by the
 collection optics, \(\hbar\omega = \sivalue{1.6}{\electronvolt}\) is
-the photon energy, \(R_\text{sc}\) is the scattering rate defined
+the photon energy, \(R_\text{sc}\) is the scattering rate per atom defined
 in~\EquationRef{eq:scattering_rate} and \(G\) is the photodiode
-conversion gain. At the saturation intensity and a detuning of
+conversion gain of \sivalue{1.84e6}{\V\per\W}. At the saturation intensity and a detuning of
 \sivalue{3}{\mega\hertz}, the voltage measured per
-atom is around \sivalue{30}{\nano\volt} per atom. The probability of
+atom is around \sivalue{30}{\nano\volt} per atom. With a detection
+time of \sivalue{200}{\micro\s}, around 7 photons per atom are
+detected. The probability of
 an atom occupying \(\ket{F=2}\) is estimated as follows
 \begin{equation}
   \text{P}_{\ket{F=2}} =
-  \frac{\text{N}_2-\text{B}_2}{\text{N}_\text{Tot} -
-  \text{B}_\text{Tot}}
+  \frac{\text{N}_2}{\text{N}_\text{Tot}}
   \label{eq:prob_measurement}
 \end{equation}
-where N and B denote the average voltage during signal and background measurements,
-respectively. Subtracting the background signal from each measurement
-removes the bias that arises from detecting light not
-scattered by the atoms.
-The interferometer phase \(\Phi\) is determined from \EquationRef{eq:prob_measurement} using
+Here the subscript 2 indicates the average voltage measured with
+cooling light only (detecting $\ket{F=2}$ atoms) while the subscript
+Tot indicates the average voltage with the repump light as well
+(detecting all the atoms). 
+The interferometer phase difference \(\Delta\Phi\) is determined from \EquationRef{eq:prob_measurement} using
 \begin{equation}
-\text{P}_{\ket{F=2}} = \text{P}_0+\frac{C}{2}\cos(\Phi)
+  \text{P}_{\ket{F=2}} = \text{P}_0 - \frac{C}{2}\cos(\Delta\Phi)
   \label{eq:interferometer_phase}
 \end{equation}
 where P\(_0\) is the mean probability of detecting atoms in
 \(\ket{F=2}\) and \(C\) is the interferometer fringe contrast. These
-are experimentally determined by varying $\Phi$ as described
+are experimentally determined by varying $\Delta\Phi$ as described
 in~\SectionRef{sec:fringe_cal}.
 
 \subsubsection{Atom Number Bias}\label{subsec:atom_number_bias}
-If is worth describing the voltages measured by the photodiode in more
-detail.
-The expression for the population in~\EquationRef{eq:prob_measurement} assumes that the voltage measured in
-the N\(_2\) and N\(_\text{Tot}\) detection steps are directly
-proportional to the number of atoms present in \(\ket{F=2}\) and the
-total number in the interferometer, respectively. In actual fact,
-there is a bias in N\(_2\) from the previously mentioned de-population
-and a bias in N\(_\text{Tot}\) from a residual population in the
-\(\ket{F=1,m_F=\pm 1}\) states. These contribute to an error in
-P\(_{\ket{F=2}}\), which reduces the maximum population that can be
-detected in \(\ket{F=2}\). This causes a reduction in the
-interferometer fringe contrast and hence, sensitivity. In the
-following discussion, these systematic errors are addressed emphasise
-their effect. It is shown that for an increasing fraction of
-atoms in the $\ket{1,\pm 1}$ states, this dominates over the
-depopulation from the $\ket{F=2}$ level.
+After the initial state preparation is complete, there are still some
+residual atoms left in the states $\ket{F=1, m_F = \pm 1}$. Also, as
+shown in~\FigureRef{fig:detection_time}, the photodiode signal that
+yields $N_2$ is not constant because some of the $\ket{F=2}$ atoms are
+optically pumped into the $\ket{F=1}$ state. In the following, we
+consider how both these defects affect the validity
+of~\EquationRef{eq:interferometer_phase}.
 \par\noindent
 If atoms are pumped out of
 \(\ket{F=2}\) at a rate \(\gamma\), then the number of atoms in the
-number of atoms in both hyperfine ground states is given by
+number of atoms in $\ket{F=2}$ is given by
 \begin{equation}
-  n_2(t) = n^i_2e^{-\gamma t}
+  n_2(t) = n_{20}e^{-\gamma t}
   \label{eq:n2_time}
 \end{equation}
-where \(n^i_2\) is the initial number in \(\ket{F=2}\). After
+where \(n_{20}\) is the initial number in \(\ket{F=2}\). After
 averaging over a time \(\tau\), this gives
 \begin{equation}
-  \bar{n}_2 = \frac{n^i_2 (1-e^{-\gamma \tau})}{\gamma \tau}
+  N_2 = \frac{n_{20} (1-e^{-\gamma \tau})}{\gamma \tau}
   \label{eq:n2_avg}
 \end{equation}
-Consequently, the number of atoms in \(\ket{F=1}\) increases. This is
-expressed as
+The total number of atoms, measured during the second detection pulse
+is
 \begin{equation}
-\bar{n}_1 = n_1^i + (1-e^{-\gamma \tau})n_2^i + n_{\pm 1}
+  N_\textnormal{Tot} =  n_{10} + n_{20} + n_{\pm 1}
   \label{eq:n1_avg}
 \end{equation}
-where \(n_{\pm 1}\) is the background population in \(\ket{1,\pm{1}}\). The bias
-is the occupation probability is then
-\begin{equation}
-\delta P =  \frac{\bar{n}_2}{\bar{n}_2 + \bar{n}_1} - \frac{n^i_2}{n_1^i + n_2^i}
-  \label{eq:prob_bias}
-\end{equation}
-This bias has the effect of reducing the interferometer contrast.
-The residual atoms in m\(_F = \pm 1\) and the depopulation
-means it is not possible to ever detect the total
-population in \(\ket{F=2}\). The contrast is given by
+where \(n_{\pm 1}\) is the background population in
+\(\ket{1,\pm{1}}\) and $n_{10}$ is the initial population in
+$\ket{1,0}$. The detected probability is then
 \begin{align}
-  C &=  P_\text{max} - P_\text{min} \nonumber \\
-  & = 1 - \frac{(1-e^{-\gamma \tau})}{1-\alpha}
-  \label{eq:contrast}
+  \text{P} &= \frac{N_2}{N_\text{Tot}} \nonumber \\
+    &= \frac{\frac{n_{20} (1-e^{-\gamma \tau})}{\gamma \tau}}{n_{10} +
+    n_{20} + n_{\pm 1}}
+    \label{eq:prob_bias}
 \end{align}
-where \(\alpha = \frac{n_{\pm{1}}}{n_1+n_2}\) is the ratio of the
-number of residual
-atoms to the number in the interferometer.
-A plot of the contrast for an increasing
-proportion of m\(_F = \pm 1\) atoms is shown
-in~\FigureRef{fig:contrast_bias}, taking the loss rate of the
-photodiode signal
-measured in~\FigureRef{fig:detection_time} for \(s = 3\). For an
-m\(_F=\pm 1\) population of at least
-4\% of that in m\(_F = 0\), the reduction in contrast is dominated by
-the residual atoms.  
-\begin{figure}[htpb]
-  \centering
-  \includegraphics[width=0.7\textwidth]{contrast_bias}
-  \caption[Interferometer contrast for an increasing
-  residual atoms ratio]{Interferometer contrast for an increasing
-    residual atom ratio.
-    The black dashed line indicates the reduction expected when no
-    atoms are lost from \(\ket{F=2}\). The dot-dashed line indicates
-  the ratio at which the loss in contrast from the residual atom
-number dominates over the depopulation.}
-  \label{fig:contrast_bias}
-\end{figure}
-
-
+which is not the same as occupation probability from the
+interferometer fringe
+\begin{equation}
+  \text{P}_0 = \frac{n_{20}}{n_{10} + n_{20}}
+\end{equation}
+Dividing~\EquationRef{eq:prob_bias} by $n_{10}+n_{20}$, the detected
+probability is expressed in terms of $\text{P}_0$ as
+follows 
+\begin{equation}
+  \text{P} = \frac{\text{P}_0}{1+\epsilon}\frac{1-e^{-\gamma \tau}}{\gamma \tau}
+\end{equation}
+where \(\epsilon = \frac{n_{\pm{1}}}{n_1+n_2}\) is the ratio of the
+number of residual atoms to the number in the interferometer.
+Similarly, the contrast $C$ of the detected fringe is related to the
+actual contrast $C_0$ by 
+\begin{equation}
+  C = \frac{C_0}{1+\epsilon}\frac{1-e^{-\gamma \tau}}{\gamma \tau}
+  \label{eq:contrast}
+\end{equation}
+For small $\gamma \tau$, this multiplicative factor is
+well-approximated by $\frac{1-\gamma \tau}{1+\epsilon}$. 
+From~\FigureRef{fig:detection_time}, around 7\% of the signal is lost
+for \(s = 3\), so $\gamma = $ \sivalue{360}{\per\s} and $\tau =$
+\sivalue{200}{\micro\s}. From the imperfect state preparation, after
+velocity selection there is roughly equal population in the $m_F = 0$
+state as the $m_F = \pm 1$ states, so we assume $\epsilon = 1$. 
+Now the detected contrast is $C = 0.46 C_0$, which includes a factor
+of $1/2$ from the $m_F = \pm 1$ atoms. This background population
+greatly reduces the detected fringe contrast. Increasing the purity of
+the state prior to interferometry will certainly be required to
+improve this fringe contrast. 
 \section{Individual Pulse Characterisation} \label{sec:atomint_rabiosc}
 This section presents a characterisation of the pulses used to drive
 Raman transitions between the two hyperfine ground states. First, the
@@ -468,58 +459,57 @@ in~\SectionRef{subsec:vel_select}. This section concludes with a presentation
 of the dynamics of the three pulses used to coherently control the
 atoms during the interferometer in~\SectionRef{subsec:int_pulses}
 \subsection{Raman Transition Spectrum}\label{subsec:raman_spec}
-
-The state preparation sequence optically pumps the majority of the atoms 
-into the \(\ket{1,0}\) state. Ideally, each
-Raman beam is perfectly circularly polarised and can only drive
-\(\ket{1,0}\leftrightarrow\ket{2,0}\) transitions using either of the
-counter-propagating pairs of beams. More generally, the selection
-rules of the Raman transition allow for transitions between other
-states, depending on the polarisation of the light. The allowed
-transitions between the different Zeeman states are presented
-in~\TableRef{tab:raman_trans}. The laser polarisation
-configurations are given in~\TableRef{tab:raman_pol_config}. These
-are defined for an atom being excited from \(\ket{F=1}\) and
-stimulated into \(\ket{F=2}\), so that the \(\vec{k}_2\) beam
-\textit{decreases} the angular momentum when it drives a \(\sigma^+\)
-transition. \nocite{Gauguet2008} 
+When a circularly polarised light beam excites an atom, the angular
+momentum of the light is transferred to the atom. Therefore, a
+$\sigma^+$ circularly polarised beam raises the $m_F$ quantum number
+by 1 when a photon is absorbed. Similarly, the stimulated emission
+induced by a $\sigma^+$ beam lowers $m_F$ by 1. In the case of our
+Raman transitions, one beam (with wavevector $\textbf{k}_1$) excites
+the atom and another (wavevector $\textbf{k}_2$) stimulates it back
+down to the other hyperfine ground state.
+\TableRef{tab:raman_polarisation} shows the polarisation selection
+rules for these transitions.
 \par\noindent
 \FigureRef{fig:raman_spectrum} shows an example of the Raman
-transition spectrum. The beat frequency
+transition spectrum taken with atoms that have been launched along the
+Raman axis at about \sivalue{8}{\cm\per\s}. The beat frequency
 between the two Raman lasers is scanned and the light is pulsed for
-\sivalue{160}{\micro\second} to drive atoms into the \(\ket{F=2}\)
-state. There is a large peak close to the hyperfine splitting
-frequency. This peak is a result of Doppler-insensitive co-propagating
+\sivalue{160}{\micro\second} to drive atoms from $\ket{1,0}$ into the \(\ket{F=2}\)
+state. The labels in~\FigureRef{fig:raman_spectrum} indicate the
+initial and final $m_F$ values. There is a large narrow peak labelled
+$0\rightarrow0$ close to the hyperfine splitting
+frequency. This is a result of velocity-insensitive co-propagating
 transitions\footnote{When the two light fields are co-propagating, the
-  Doppler resonance term \(\delta_\text{D} \propto \vec{k}_1 -
-\vec{k}_2\) is close to zero}. This indicates that the two Raman beams
-are not orthogonally circularly polarised, as that cannot drive co-propagating
-transitions. This is further supported by the fact
+  Doppler shift, being proportional to \(\vec{k}_1 -
+  \vec{k}_2\) is close to zero}. Looking at the entry
+  in~\TableRef{tab:raman_polarisation} for $\Delta m = 0$, this peak
+  indicates that the co-propagating beams do not have exactly the
+  $\sigma^+ - \sigma^+$ polarisation that was intended. This is further supported by the fact
 that there are \(\Delta m = \pm 1\) transitions, which can only occur
-if one of the lasers drives a \(\pi\) transition. The Zeeman shift on
+if one of the lasers drives a \(\pi\) transition. The Zeeman shifts on
 the co-propagating transitions between \(\ket{F=1,0}
 \rightarrow \ket{F=2,1}\) and \(\ket{F=1,1}\rightarrow \ket{F=2,1}\)
-are \sivalue{95}{\kilo\hertz} and \sivalue{189.5}{\kilo\hertz}, which
-correspond to a bias field of \sivalue{1.35}{\gauss}.
-\begin{table}
-  \centering
-  \begin{tabular}{ccccc}
-    \toprule
-    & & \multicolumn{3}{c}{\(\vec{k}_2\)} \\
-     \midrule
-     & & \(\sigma^-\) & \(\pi\) & \(\sigma^+\)\\
-     \multirow{3}{*}{\(\vec{k}_1\)} & \(\sigma^-\) &  c\(_1\) &
-     c\(_2\)&
-     --  \\
-     & \(\pi\) &c\(_3\) & -- & c\(_4\) \\
-     & \(\sigma^+\) & --& c\(_5\)& c\(_6\)\\
-    \bottomrule
-  \end{tabular}
-  \caption[Raman transition polarisation configurations]{Labels for Raman transitions excited
-    from \(\ket{F=1}\) by \(\vec{k}_1\) and stimulated into
-  \(\ket{F=2}\) by \(\vec{k}_2\).}
-  \label{tab:raman_pol_config}
-\end{table}
+are \sivalue{95}{\kilo\hertz} and \sivalue{189.5}{\kilo\hertz}, and
+are perfectly consistent with the known applied magnetic field of \sivalue{1.4}{\gauss}.
+%\begin{table}
+%  \centering
+%  \begin{tabular}{ccccc}
+%    \toprule
+%    & & \multicolumn{3}{c}{\(\vec{k}_2\)} \\
+%     \midrule
+%     & & \(\sigma^-\) & \(\pi\) & \(\sigma^+\)\\
+%     \multirow{3}{*}{\(\vec{k}_1\)} & \(\sigma^-\) &  c\(_1\) &
+%     c\(_2\)&
+%     --  \\
+%     & \(\pi\) &c\(_3\) & -- & c\(_4\) \\
+%     & \(\sigma^+\) & --& c\(_5\)& c\(_6\)\\
+%    \bottomrule
+%  \end{tabular}
+%  \caption[Raman transition polarisation configurations]{Labels for Raman transitions excited
+%    from \(\ket{F=1}\) by \(\vec{k}_1\) and stimulated into
+%  \(\ket{F=2}\) by \(\vec{k}_2\).}
+%  \label{tab:raman_polarisation}
+%\end{table}
 \begin{table}
   \centering
   \begin{tabular}{ccccccc}
@@ -536,7 +526,7 @@ correspond to a bias field of \sivalue{1.35}{\gauss}.
   \end{tabular}
   \caption{Allowed polarisation configurations between each hyperfine
   ground state Zeeman sub-levels.}
-  \label{tab:raman_trans}
+  \label{tab:raman_polarisation}
 \end{table}
 \begin{figure}[htpb]
   \centering
@@ -547,18 +537,31 @@ correspond to a bias field of \sivalue{1.35}{\gauss}.
   \label{fig:raman_spectrum}
 \end{figure}
 \par\noindent
-Each co-propagating transition from \(\ket{1,0}\) has two smaller
-peaks which are the Doppler-sensitive counter-propagating transitions.
+Each narrow transition from \(\ket{1,0}\) has broader
+peaks on either side which are the Doppler-sensitive transitions
+produced by counter-propagating beams.
 The central peak is shown in more detail
 in~\FigureRef{fig:raman_spectrum_inset}. The counter-propagating
-transitions are shifted by \sivalue{-185}{\kilo\hertz} and
-\(+\)\sivalue{215}{\kilo\hertz} respectively, which correspond to
-velocities of \sivalue{7.2}{\centi\metre\per\second} and
-\sivalue{8.4}{\centi\metre\per\second}. The same Doppler shifts are also
+transitions are shifted from the central co-propagating peak by \sivalue{-185}{\kilo\hertz} and
+\(+\)\sivalue{215}{\kilo\hertz} respectively. This difference is
+explained by the recoil shift $\Delta f_r = \frac{1}{2\pi}\frac{\hbar
+k^2_\textnormal{eff}}{2m} = $ \sivalue{14.9}{\kHz}, which increases
+the resonance frequency of both counter-propagating transitions.
+After subtracting the recoil shift, the Doppler shifts of
+$\pm$\sivalue{200}{\kHz} corresponding to
+velocity of \sivalue{7.69}{\centi\metre\per\second}. The same Doppler shifts are also
 observed in the peaks corresponding to the \(\ket{F=1,m_F = 0}
 \rightarrow \ket{F=2,m_F=\pm 1}\) transitions. The counter-propagating transitions are
 Doppler-broadened by the thermal velocity of the atoms along the direction
-of the Raman beams. Fitting the transition to the lineshape expected
+of the Raman beams. 
+%The Doppler shift $\Delta f = \frac{2
+%v}{\lambda}$, where $\lambda = $ \sivalue{780}{\nm} broadens the
+%transition so that the FWHM is given by
+%\begin{equation}
+%  \Delta f_\text{FWHM} = 4 \sqrt{2 \ln{2}} \sqrt{\frac{k_B T}{m
+%  \lambda^2}}
+%\end{equation}
+Fitting the transition to the lineshape expected
 from a thermal distribution of atoms gives a temperature of
 \sivalue{15}{\micro\kelvin} and \sivalue{13.5}{\micro\kelvin} from
 each counter-propagating transition. At the time this spectrum was
@@ -577,18 +580,35 @@ profiles.}
 \subsection{Cancelling the Differential ac Stark
 Shift}\label{subsec:light_shift}
 It is worth considering the effects of ac Stark shifts on the atom
-interferometer~\cite{Gauguet2008}. Firstly, they are intrinsically related to the
-effective Rabi frequency and as such, cannot be avoided. The average
-ac Stark shift \(\Omega^\text{ac}_\text{avg} = (\Omega_1^\text{ac} +
-\Omega_2^\text{ac})/2 \) (see~\SectionRef{sec:theory_raman} for more
-details) is
-the same along both paths of the interferometer, provided that the
-intensity variation of the Raman beams over the path separation can be
-neglected. Therefore, this should not lead to an observable phase
+interferometer~\cite{Gauguet2008}. They are intrinsically related to the
+effective Rabi frequency and as such, cannot be avoided. Each light
+beam couples each hyperfine ground state to intermediate states in the
+5$P_{1/2}$ and 5$P_{3/2}$ levels in Rubidium-87. The total ac Stark
+shift of each level\footnote{The ac Stark shift term
+in~\EquationRef{eq:raman_ac_stark} was defined assuming that each
+field $\textbf{E}_j$ couples to only one ground state $\ket{j}$. Here,
+we do not make that assumption.} is a sum over the shift from each
+coupled excited state
+\begin{equation}
+  \Omega_j^\text{ac} = \sum_{ik} -\frac{|\Omega_{ijk}|^2}{4\Delta_{ijk}}
+\end{equation}
+in terms of the one-photon Rabi frequencies \(\Omega_{ijk}\) and detunings \(\Delta_{ijk}\) where the index $i = 1,2$ labels each light field, $j = 1,2$ labels
+each hyperfine ground state and $k$ labels each excited state that is
+coupled by a dipole transition to $j$. From the free evolution of the atom's internal state, there is a contribution to the phase along each path that is
+proportional to the sum of the light shifts of each hyperfine ground
+state $(\Omega_1^\text{ac} +
+\Omega_2^\text{ac})$. For an interferometer pulse separation of $T=
+$\sivalue{25}{\ms}, the maximal separation of each path is
+$\frac{\hbar k_\text{eff}}{m} T$ = \sivalue{300}{\micro\m}. Close to
+the centre of the Raman beams, there is a negligible variation of
+intensity over this distance, so the sum of the ac Stark shifts of
+each state should not lead to an observable interferometer phase
 shift.
 \par\noindent
-On the other hand, the differential ac Stark shift \(\delta^\text{ac}
-= \Omega_1^\text{ac} - \Omega_2^\text{ac}\) can lead to an observable
+The Raman resonance depends on the difference in energy of the two
+states $\hbar(\omega_2 - \omega_1)$. The ac Stark shifts of each state
+therefore leads to a contribution to the detuning that depends on the differential ac Stark shift \(\delta^\text{ac}
+= \Omega_2^\text{ac} - \Omega_1^\text{ac}\). can lead to an observable
 phase shift. Using the results from Ref.~\cite{Weiss1994} for \(\pi\)
 and \(\frac{\pi}{2}\) pulses, the phase shift to a Mach-Zender type
 interferometer is
@@ -599,23 +619,27 @@ interferometer is
 \end{equation}
 where \(\delta_3^\text{ac}\) and \(\delta_1^\text{ac}\) are the ac
 Stark shifts of the last and first \(\frac{\pi}{2}\) pulses,
-respectively. Therefore, the interferometer is sensitive to the
-difference in the ac Stark shift of these pulses. 
+respectively, and $\Omega_\textnormal{eff}$ is the effective Rabi
+frequency defined in~\EquationRef{eq:rabi_raman_sum}. Note that there
+is no sum over the beam index $k$, because in making the rotating wave
+approximation, terms which contain $\Delta_{21k}$ and $\Delta_{12k}$
+are dropped as they oscillate much faster than the retained terms. 
 \par\noindent
 As the atoms fall
-under gravity, it is likely that the intensity of the Raman beams
-during these pulses will not be the same. Fortunately, it is possible
-to eliminate this differential phase shift using an appropriate choice
+under gravity, they move through the Raman beam profile and experience
+the interferometer pulses at different intensities. To the extent that
+there is a light shift of the clock transition, this can produce a
+non-zero interferometer phase. Fortunately, it is possible
+to eliminate such a shift using an appropriate choice
 of intensity and detuning of the Raman lasers. This can be seen by
 first writing out the differential ac Stark shift
 \begin{equation}
-  \delta^\text{ac} = \Omega_1^\text{ac} - \Omega_2^\text{ac} = \sum_{k}
-  \frac{\lvert\Omega_{1k}\rvert^2}{4\Delta_{1k}} - \sum_{k}
-  \frac{\lvert\Omega_{2k}\rvert^2}{4\Delta_{2k}} 
+  \delta^\text{ac} = \Omega_1^\text{ac} - \Omega_2^\text{ac} = \sum_{ik}
+  \frac{\lvert\Omega_{i1k}\rvert^2}{4\Delta_{i1k}} - \sum_{ik}
+  \frac{\lvert\Omega_{i2k}\rvert^2}{4\Delta_{i2k}} 
   \label{eq:diff_shift}
 \end{equation}
-in terms of the one-photon Rabi frequencies \(\Omega_{ik}\) and
-detunings \(\Delta_{ik}\). When both Raman beams are red-detuned from
+When both Raman beams are red-detuned from
 all the one-photon transitions, both terms
 in~\EquationRef{eq:diff_shift} are strictly negative. Therefore,
 \(\delta^\text{ac}\) can be cancelled by choosing the correct
@@ -623,8 +647,11 @@ intensities for each Raman beam. A plot of \(\delta^{\text{ac}}\)
 for various Raman beam intensities as a function of the ratio between
 the two Raman beams is shown in~\FigureRef{fig:light_shift_ratio}. There
 is a ratio at which the differential ac Stark shift cancels and is
-independent of the total intensity. The ratio that cancels
-\(\delta^\text{ac}\) for increasing two-photon detuning \(\Delta_R\) is shown
+independent of the total intensity. The one-photon detuning $\Delta_R$
+is defined such that the laser frequency $\omega_2^l$ is detuned from
+the \trans{2}{3} transition (in the absence of light shifts) by
+$\Delta_R$. The ratio that cancels
+\(\delta^\text{ac}\) for increasing \(\Delta_R\) is shown
 in~\FigureRef{fig:light_shift_detuning}. When \(\Delta_R\) is
 \sivalue{1.13}{\giga\hertz} below the \trans{2}{3} transition, this
 ratio is maximised. The differential ac Stark shift is cancelled when
@@ -654,27 +681,28 @@ the experiment and its corresponding ratio of 0.583.}
 	\label{fig:light_shift_plots}
 \end{figure}
 \par\noindent
-Since it is not straight-forward to directly measure the intensity of
-each Raman beam on the atoms, a better method to cancel the
-differential ac Stark shift is to use the transition spectrum to
-determine when the intensity of the lasers are set to the appropriate
+It is not straight-forward to directly measure the intensity of
+each Raman beam on the atoms, so the transition spectrum was used to cancel the
+differential ac Stark shift and determine when the intensities of the
+lasers are set to the appropriate
 ratio. Experimentally, this was done by adjusting the power of the
-pump lasers for the master and slave Solstis lasers. When the master
+pump lasers for the master and slave SolsTiS lasers. When the master
 is seeded with \sivalue{10}{\watt} and the slave with
 \sivalue{6.5}{\watt}, the differential ac Stark shift is eliminated.
 \FigureRef{fig:cancelled_light_shift} shows the transition spectrum using two different effective Rabi
 frequencies, corresponding to \(\pi\) pulse times of
 \sivalue{22.5}{\micro\second} and
 \sivalue{45}{\micro\second}. In this instance, the frequency difference of the two
-co-propagating peaks is less than \sivalue{1}{\kilo\hertz}.
+co-propagating peaks, shown in blue and orange, is less than \sivalue{1}{\kilo\hertz}.
 \begin{figure}[htpb!]
   \centering
   \includegraphics[width=0.7\textwidth]{cancelled_light_shift}
   \caption[Raman transition spectrum after cancelling the differential
   ac Stark shift.]{Raman transition spectrum after cancelling the differential
-    ac Stark shift. The blue (orange) curve shows a pulse with a \(\pi\) pulse
-  time of \sivalue{22.5}{\micro\second}
-(\sivalue{45}{\micro\second}).}
+    ac Stark shift. The blue curve shows a pulse with a \(\pi\) pulse
+  time of \sivalue{22.5}{\micro\second} and the orange shows the
+  spectrum using a less intense pulse with a $\pi$-pulse time of
+\sivalue{45}{\micro\second}.}
   \label{fig:cancelled_light_shift}
 \end{figure}
 There is also a shift of \sivalue{1.4}{\mega\hertz} from
@@ -683,28 +711,27 @@ This is a result of a
 second-order Zeeman shift and corresponds to a field strength of
 \sivalue{1.56}{\gauss}.
 \subsection{Velocity-Selective Pulse}\label{subsec:vel_select}
-
-The Raman transition is Doppler-sensitive, so the velocity spread of atoms 
-contributes to their dynamics. At a temperature of \sivalue{6}{\micro\kelvin}, the Doppler
-width is \(\sigma_f = \frac{2}{\lambda}\sqrt{\frac{k_b T}{m}}
-\approx\) \sivalue{60}{\kilo\hertz}. Coherent control of the atomic
-state during the interferometer requires that the linewidth of the Raman
-transition must be much broader than the Doppler width. This ensures
-that each atom is driven at approximately the same Rabi frequency,
-reducing the dephasing rate of the atomic coherence. The linewidth of
-a Raman transition is determined solely by the pulse intensity and
-duration. A pulse duration of \sivalue{7}{\micro\second} has a
+The accelerometer has to use the velocity-sensitive transitions
+induced by counter-propagating beams in order to be sensitive to
+acceleration. In order for all the atoms to experience the same
+desired pulse areas of $\pi/2-\pi-\pi/2$, it is necessary for the
+Doppler width to be much less than the natural width arising from the
+duration of the Raman pulses. In this apparatus, the laser cooling
+gives a temperature of \sivalue{6}{\micro\kelvin}, for which the Doppler
+width (FWHM) is \(\sigma_f = \frac{4 \sqrt{2 \ln(2)}}{\lambda}\sqrt{\frac{k_b T}{m}}
+\approx\) \sivalue{140}{\kilo\hertz}. 
+A $\pi$-pulse duration of \sivalue{6}{\micro\second} gives a
 linewidth close
-to the Doppler width, but the intensities required for this are above
+to this Doppler width, but the intensities required for this are above
 what is attainable with our Raman laser. 
 \par\noindent
-It is possible to reduce the Doppler width of the participating atoms
-by first applying a Raman pulse to select a subset of the population
+We therefore reduce the Doppler width of the participating atoms
+by first applying a long Raman pulse to select a subset of the population
 with a narrower velocity spread~\cite{Moler1992}. This
-velocity-selective pulse has a narrower linewidth than the subsequent
-interferometer pulses. This ensures that the
-Doppler width of atoms in the interferometer is small compared with
-the Raman transition linewidth. 
+velocity-selective pulse gives a narrower Doppler linewidth than the
+subsequent shorter
+interferometer pulses thereby ensuring that the Rabi frequencies are
+reasonably homogeneous across the cloud of selected atoms.
 \par\noindent 
 Starting with a velocity distribution of atoms
 described by a 1-D Maxwell-Boltzmann distribution all occupying the
@@ -712,7 +739,7 @@ described by a 1-D Maxwell-Boltzmann distribution all occupying the
 population in \(\ket{2,0}\) after applying a Raman pulse is
 distributed according to
 \begin{equation}
-  P_{\ket{2,0}}(v) = \frac{\Omega_\textnormal{eff}^2}{\Omega_\textnormal{eff}^2 + \delta^2}
+  \text{P}_{\ket{2,0}}(v) = \frac{\Omega_\textnormal{eff}^2}{\Omega_\textnormal{eff}^2 + \delta^2}
   \sin\left(\sqrt{\Omega_\textnormal{eff}^2+\delta^2}\;\tau\right)^2 p(v)
   \label{eq:vel_selected_dist}
 \end{equation}
@@ -721,44 +748,54 @@ in~\EquationRef{eq:raman_detuning}, \(p(v) = \sqrt{\frac{m}{2\pi
 k_B T}} e^{-\frac{m v^2}{2 k_B T}}\) is the velocity distribution and
 \(\Omega_\textnormal{eff}\) is the effective Rabi frequency defined
 in~\EquationRef{eq:rabi_raman_sum}. \FigureRef{fig:vel_selected_dist}
-shows a simulation of the
-distribution of atoms driven by a $\pi$ pulse with a duration of
-\sivalue{40}{\micro\second} and a temperature of
-\sivalue{6}{\micro\kelvin}.
+shows the expected
+distribution of Doppler shifts in the selected atoms after a
+\sivalue{6}{\micro\K} cloud has been driven by a $\pi$ pulse with a duration of
+\sivalue{40}{\micro\second}.
 The population that is stimulated
 has a mean velocity shifted by twice the recoil velocity. In this
 instance, the rms
-frequency is \(\sigma_f
+Doppler shift is \(\sigma_f
 =\)\sivalue{19.7}{\kilo\hertz}.
 \begin{figure}[htpb!]
   \centering
   \includegraphics[width=0.7\textwidth]{vel_selected_dist.pdf}
-  \caption[Simulated velocity distribution after a Raman $\pi$ pulse.]{Velocity distribution of a \sivalue{6}{\micro\kelvin}
-  ensemble of atoms after a \sivalue{40}{\micro\second} Raman \(\pi\)
-pulse. The mean velocity of the stimulated distribution, shown in
-orange, is increased due to the recoil during the transition.}
+  \caption[Simulated velocity distribution after a Raman $\pi$
+  pulse.]{Calculated distribution of frequency shifts in the ensemble
+    selected from a \sivalue{6}{\micro\kelvin}
+  cloud by a \sivalue{40}{\micro\second} Raman \(\pi\)
+pulse. Blue curve: atoms not selected. Orange curve: atoms selected.
+Note the recoil shift of the selected atoms in addition to their
+Doppler shifts. }
   \label{fig:vel_selected_dist}
 \end{figure}
 \subsubsection{Velocity-Selected Distribution}
 The velocity distribution of atoms after the velocity selective pulse
-can be measured using a second Raman pulse as a probe. In contrast to
-the interferometer pulses, this probe must be much lower power than
-the velocity-selective pulse so that its linewidth is comparatively narrow.
-A measurement of the velocity distribution of the atoms is shown
-in~\FigureRef{fig:vel_select_chirp}. An initial
+can be measured using a second Raman pulse as a probe. This probe must
+be much longer duration than
+the velocity-selection pulse so that it gives even narrower
+resonances. 
+\FigureRef{fig:vel_select_chirp} shows a measurement of the transition
+spectrum close to the peak of the Doppler-sensitive transition that is
+greater in frequency than the Doppler-insensitive peak. The orange
+curve shows the spectrum obtained before velocity selection, using a single Raman $pi$ pulse of
+duration \sivalue{40}{\micro\s}. The blue curve, which illustrates the
+distribution of atoms after velocity selection, is obtained by first
+applying a
 \sivalue{40}{\micro\second} \(\pi\) pulse with a Raman beat frequency
-\(f_v = \) \sivalue{6834.51}{\mega\hertz} prepares atoms in
-\(\ket{1,0}\), before blowing away the atoms which remain in
-\(\ket{F=2}\). After \sivalue{10}{\milli\second}, a
+\(f_v = \) \sivalue{6834.51}{\mega\hertz}. This prepares atoms in
+\(\ket{1,0}\), then the atoms which remain in
+\(\ket{F=2}\) are blown away. After \sivalue{10}{\milli\second}, a
 \sivalue{80}{\micro\second} \(\pi\) pulse transfers some of the
 remaining population back into \(\ket{2,0}\). The frequency of the
 probe pulse is varied by chirping the Raman laser beat frequency. In
-this instance, the power of the pulse was not tuned to give a \(\pi\)
+this instance, the power of the \sivalue{80}{\micro\s} pulse was not tuned to give a \(\pi\)
 pulse area so the measured population is not indicative of the maximum
-driven by the Raman transition. It is clear that the velocity
-distribution of the selected atoms is narrower than the initial
-thermal distribution. Fitting to a 1D Maxwell-Boltzmann distribution
-gives an effective temperature of around \sivalue{1}{\micro\K}.
+driven by the Raman transition. The red curve shows a fit to a
+Doppler-broadened lineshape, which gives an effective temperature
+of around \sivalue{1}{\micro\K}. Comparing this to the peak from
+before velocity selection, it is clear that the velocity
+distribution of the selected atoms is much narrower. 
 \begin{figure}[htpb!]
   \centering
   \includegraphics[width=0.7\textwidth]{RamanChirp.pdf}
@@ -768,27 +805,25 @@ gives an effective temperature of around \sivalue{1}{\micro\K}.
     \(\ket{1,0}\). This distribution is probed by
   applying a narrow pulse at a frequency \(f_{R}\). The population
 measured in \(\ket{F=2}\) is shown in blue. The red dashed line is a
-fit to a 1D Maxwell-Boltzmann distribution of the Doppler-broadened
-transition peak. For comparison, the
-transition spectrum of a single \(\tau = \)\sivalue{40}{\micro\s} \(\pi\)
-pulse is shown in orange.}
+fit to the Doppler-broadened
+transition peak. The orange curve shows
+transition spectrum (without velocity selection) from a $pi$-pulse
+of duration \(\tau = \)\sivalue{40}{\micro\s}.}
   \label{fig:vel_select_chirp}
 \end{figure}
 \subsection{Interferometer Pulses}\label{subsec:int_pulses}
-The atoms are coherently controlled by pulsing the Raman
-light to drive Rabi oscillations between the two m\(_F = 0\)
-hyperfine ground states. The appropriate pulses areas were empirically
-determined by observing Rabi oscillations at the corresponding time
-for each interferometer pulse. These are shown
-in~\FigureRef{fig:rabi_oscillation}. The power in each Raman laser was
-set so that a \(\pi\) pulse was achieved with a pulse duration of
+The power settings needed to make Raman $\pi$ and $\pi/2$ pulses were
+empirically determined by observing Rabi oscillations. These are shown
+in~\FigureRef{fig:rabi_oscillation}. For a $\pi$ pulse, the Raman
+laser power was
+set so that the Rabi oscillation reached its maximum after a pulse duration of
 \(\tau = \)\sivalue{15}{\micro\s}. It is clear that the oscillations
 are rapidly damped. This dephasing rate depends on the
 time at which the pulse is applied. Since the atoms are at different
 positions in the beam, this suggests that the dephasing is caused by a
 spatial variation of the Rabi frequency. This is largely a result of
-irregularities in the Raman beam wavefront from defects in
-the aspheric lenses. The Gaussian intensity distribution of each beam
+irregularities in the Raman beam intensity profile from defects in
+the two small aspheric lenses. The Gaussian intensity distribution of each beam
 is unlikely to cause such a fast dephasing, since the atoms remain
 close to the centre of the beam. At longer pulse durations,
 spontaneous decay from the intermediate states of the Raman transition
@@ -805,197 +840,151 @@ becomes apparent.
 1}$ which have not been removed. }
 \label{fig:rabi_oscillation}
 \end{figure}
-\section{Sensitivity}\label{sec:atomint_sensitivity}
+\section{Noise}\label{sec:atomint_sensitivity}
 This section presents a discussion of the identified sources of
 noise in the interferometer and their effects on the sensitivity to
-accelerations. The Allan variance used to characterise
+accelerations. It begins with a discussion of the noise that arises
+from detecting atoms in~\SectionRef{subsec:detection_noise}. This
+defines an uncertainty in measuring the occupation probability, which then used to
+express the corresponding acceleration uncertainty
+in~\SectionRef{subsec:accel_uncert}. The Allan variance used to characterise
 the stability of the interferometer signal is defined
-in~\SectionRef{subsec:allan_variance}. This is followed by an overview
-of the noise sources in~\SectionRef{subsec:noise_sources}.
-\SectionRef{subsec:detection_noise} discusses the noise that arises
-from detecting atoms. The sensitivity function and an analytic method
+in~\SectionRef{subsec:allan_variance}. The sensitivity function and an analytic method
 for calculating the influence of random phase fluctuations is given
 in~\SectionRef{subsec:sens_func}. This is applied to phase noise from
 the Raman laser in \SectionRef{subsec:laser_phase} and external
-vibrations in~\SectionRef{subsec:vibration_noise}.
-\subsection{The Allan Variance}\label{subsec:allan_variance}
-For the purposes of this experiment, the sensitivity of the
-interferometer relates to the minimum value of uncertainty that can be
-placed on a measurement of acceleration. As such, the limit to the
-sensitivity is given by the measurement noise. One possible way to
-characterise this is to use the variance. However with a finite sequence
-of measurements, this depends on the number of samples and might not
-converge as the number of samples increases. On the other hand, the
-two-sample variance 
-\begin{equation}
-  \sigma_a^2(2,\tau) = \frac{1}{2}\left\langle
-  (a_{n+1}-a_n)^2\right\rangle
-  \label{eq:two_sample_var}
-\end{equation}
-does not depend on the number of samples. This can be generalized to
-longer time separations \(t = N \tau\) by taking the mean of \(N\)
-consecutive measurements
-\begin{equation}
-  \sigma_a^2(2,t) = \frac{1}{2}
-  \left\langle
-  \left(\frac{1}{N}\sum_{k=0}^{N-1}a_{n+1}-\frac{1}{N}\sum_{k=N}^{2N-1}a_n\right)^2\right\rangle
-  \label{eq:allan_var_mean}
-\end{equation}
-which is referred to as the Allan variance~\cite{Allan1966}. If the noise in each measurement is uncorrelated, then this becomes
-\begin{equation}
-\sigma_a(2,t) = \frac{1}{\sqrt{N}}\sigma_a(2,\tau)
-\label{eq:allan_var_simp}
-\end{equation}
-\par\noindent
-The variance is also related to the signal-to-noise ratio of the
-observed interferometer fringes. From the interferometer signal
-defined in~\EquationRef{eq:interferometer_phase}, the variance at the
-mid-point of the fringe \(\Delta \phi = \pi/2\) is given by
-\begin{equation}
-\sigma_P^2 = \sigma_{\text{P}_0}^2 +\frac{C^2}{4}
-  \sigma_{\Delta \phi}^2
-  \label{eq:var_expansion}
-\end{equation}
-The signal-to-noise ratio
-\begin{equation}
-  \left(\frac{S}{N}\right) = \frac{C}{2\sigma_P}
-  \label{eq:snr}
-\end{equation}
-is the ratio of the fringe amplitude to the standard deviation of the
-interferometer signal. Under the assumption that \(\text{P}_0\) and
-\(C\) do not fluctuate, the signal-to-noise ratio is related to the
-interferometer phase and acceleration uncertainties by
-\begin{equation}
-  \left(\frac{S}{N}\right)^{-1} = \sigma_{\Delta \phi} = \keff T^2 \sigma_a
-  \label{eq:snr_acc}
-\end{equation}
-
-\subsection{Sources of Noise}\label{subsec:noise_sources}
-Some potential sources of noise have been investigated to determine
-their magnitude. These are not a complete list of the effects which
-reduce the sensitivity to accelerations, but are the most dominant. The
-identified sources and their estimated effects on acceleration
-measurements are shown in~\TableRef{tab:noise_sources}. The largest
-contributor comes from vibrations of the retro-reflecting mirror.
-Other noise sources, such as magnetic field gradients, laser intensity
-noise and rotations have not yet been characterised. Higher-order
-phase shifts due to inertial effects, such as the Coriolis force and
-gravity gradients, have been
-studied elsewhere\cite{Bongs2006}.
-\begin{table}[htpb!]
-  \centering
-  \begin{tabular}{c|c|c}
-    \toprule
-    Noise Source & Signal/Noise & \(\sigma_a\)
-    (\sivalue{}{\micro\meter\per\s\squared}) \\
-    \midrule
-    Atom shot noise (\num{5e6} atoms) & 2200 & 0.07 \\
-    Laser phase noise & 157 & 1 \\
-    Detection noise & 15 & 10.5 \\
-    Vibrations & 5.8 & 26\\
-    \bottomrule
-  \end{tabular}
-  \caption[Comparison of known noise sources.]{Comparison of known noise sources and their effects on
-  acceleration measurements. These values are estimated assuming a
-separation between pulses of \(T = \)\sivalue{25}{\ms} and a \(\pi/2\)
-pulse time of \(\tau = \)\sivalue{20}{\micro\s}.}
-  \label{tab:noise_sources}
-\end{table}
+vibrations in~\SectionRef{subsec:vibration_noise}. Finally, the
+section concludes with a summary of the identified sources of noise
+in~\SectionRef{subsec:noise_sources}.
 \subsection{Detection Noise}\label{subsec:detection_noise}
 
 Each measurement of the number of atoms has an uncertainty due to
 random processes that influence the voltage measured by the detector. These errors
 combine to give an uncertainty in the interferometer phase and
 hence, acceleration. It is worth distinguishing between the different
-sources of noise in measuring the number of atoms. Uncertainties due
-to fluctuations in the number of atoms and detected photons per
-measurement cannot be reduced below their shot-noise levels. In
-particular, the phase noise corresponding to the atom shot noise is
-the minimum value attainable. Therefore, it is essential that the
+sources of noise in measuring the occupation probability
+$\text{P}_{\ket{F=2}}$. Fluctuations in the number of atoms and detected
+photons lead to an uncertainty in the measured voltages that
+correspond to $N_2$ and $N_\text{Tot}$. It is essential that the
 photo-detector used is sensitive enough to ensure that this does not
-limit the sensitivity~\cite{Rocco2014}.
-\subsubsection{Atom and Photon Shot Noise}
-The discrete nature and the fact that atoms are loaded into the
-experiment and scatter photons at a constant rate mean that the
-statistics on the number of atoms and photons are well-described by
-Poisson distributions. It follows that the number of atoms in the
-interferometer as well as the number of photons arriving at the detector during
-each measurement have
-shot noise fluctuations. From~\EquationRef{eq:pd_signal}, these are related to an
-equivalent output voltage as follows
+limit the sensitivity~\cite{Rocco2014}. A more fundamental limitation
+is the noise that arises when an atom is projected into either the
+$\ket{1,0}$ state or the $\ket{2,0}$ state. In what follows, these
+three sources of detection noise are discussed in the context of the
+detection sequence previously described
+in~\SectionRef{subsec:detection_sequence}. 
+\subsubsection{Atom and Photon Number Fluctuations}
+The random processes by which atoms are loaded and cooled in the
+initial stages of the experiment, as well as the random direction a
+photon is spontaneously emitted mean that both the total number of
+atoms after interferometry and the number of photons arriving at the
+detector within a given time duration will have shot noise
+fluctuations. The voltage measured by the detector, as defined
+in~\EquationRef{eq:pd_signal}, is proportional to the number of atoms
+scattering the incident light. Therefore, the variance in the measured
+voltage due to atom and photon shot noise fluctuations are 
 \begin{align}
   \sigma_\text{at,v}^2 &= \alpha^2 \eta^2 R_\text{sc}^2 n_\text{at}\\
   \sigma_\text{p,v}^2 &= \alpha^2 \eta R_\text{sc} n_\text{at} 
   \label{eq:atom_photon_noise}
 \end{align}
-where \(\sigma_\text{at,v}\) dominates, provided at least one photon
-per atom is detected. Hereafter, no attention will be paid to the
-photon shot noise. For the detection parameters previously defined,
-the shot noise is equal to around \sivalue{46.5}{\nano\volt} per atom. 
-\par\noindent
-In order for the uncertainty in the atom number to
-be dominated by the atom shot noise, the detector must be sensitive
+where $\alpha = \hbar \omega G$ and the subscripts ``at'' and ``p'' refer to atoms and photons,
+respectively. Of the two, \(\sigma_\text{at,v}\) dominates provided at least one photon
+per atom is detected. As previously discussed
+in~\SectionRef{subsec:photodiode_setup}, around 7 photons per atom
+are detected, so this is certainly the case. For the detection parameters previously defined, the shot noise is equal to around \sivalue{46.5}{\nano\volt} per atom. 
+The standard deviation of the detected voltage during background light
+measurements was on the order of \sivalue{80}{\micro\volt}. Since at
+least \num{1e6} atoms are detected, the noise from background light
+fluctuations is negligible.  
+
+\subsubsection{Quantum Projection Noise}
+The occupation probability $\text{P}_{\ket{F=2}}$ is determined by measuring the ratio
+$\frac{N_2}{N_\text{Tot}}$. In
+measuring both the number of atoms in $\ket{F=2}$ and the total number of atoms, the contribution of atom shot
+noise to an uncertainty in $\text{P}_{\ket{F=2}}$ is suppressed. However, for a
+fixed number of atoms there is still an uncertainty due to the
+projection of an atom's internal state onto the $\ket{1,0}$ and
+$\ket{2,0}$ states. This is the standard quantum limit -- the minimum
+uncertainty that can be reached for an ensemble of atoms prepared in
+the same internal state~\cite{Bollinger1996}. 
+To derive the uncertainty in $\text{P}_{\ket{F=2}}$, we first make the assumption
+that there are atoms in $m_F=\pm 1$, as
+in~\SectionRef{subsec:atom_number_bias}, which are detected but do not
+contribute to the interferometer. The total number of atoms is
+$N_\text{Tot}$. Similarly, $n_2$ atoms detected in $\ket{F=2}$, which
+has an average value denoted as $\langle N_2 \rangle$ and a mean
+occupation probability $\langle p_2 \rangle$. If $n_{10}$ is the
+number atoms prepared in $\ket{1,0}$, it follows that the mean and
+variance of $n_2$ are given by
+\begin{align}
+  \langle N_2 \rangle &= \langle p_2 \rangle \\
+  \Delta N_2 &= n_{10} \Delta p_2 = n_{10} \langle p_2 \rangle \langle
+  p_1 \rangle \label{eq:proj_noise}
+\end{align}
+where $\langle p_1 \rangle$ is the average occupation probability of
+$\ket{F=1}$ after interferometry. The measured probability is given by
+\begin{align}
+  \text{P}_{\ket{F=2}} &= \frac{\langle p_2 \rangle n_{10} \pm \sqrt{n_{10}
+  \langle p_2 \rangle \langle p_1 \rangle}}{n_{10}(1+\epsilon)}
+  \nonumber \\
+                &= \frac{\langle p_2 \rangle}{1+\epsilon} \pm
+                \frac{1}{1+\epsilon} \sqrt{\frac{\langle p_2 \rangle
+                \langle p_1 \rangle}{n_{10}}} 
+                \label{eq:prob_noise}
+\end{align}
+where as before $\epsilon$ is the ratio of the number of atoms in $m_F = \pm 1$ to
+the number in the interferometer and it is assumed that this ratio
+does not fluctuate. Without any inhomogeneity in the
+Rabi frequency\footnote{Atoms which experience different pulse areas
+  have different phase shifts. The interferometer signal is a
+convolution of these. In which case, the contribution to the detection
+noise from the projection noise of each atom is less straight-forward.
+For simplicity, it is assumed here that the only loss
+in fringe contrast is due to background atoms.}, the average occupation probabilities are 
+$\langle p_2 \rangle = \sin^2(\Delta \Phi/2)$ and $ \langle p_1
+\rangle = \cos^2(\Delta \Phi/2)$. In terms of the interferometer phase
+difference $\Delta \Phi$, \EquationRef{eq:prob_noise} becomes
+\begin{equation}
+  \text{P}_{\ket{F=2}} = \frac{1-\cos(\Delta \Phi)}{2(1+\epsilon)} \pm
+  \frac{1}{2(1+\epsilon)}\frac{\sin(\Delta \Phi)}{\sqrt{n_{10}}}
+\end{equation}
+A useful measure of the interferometer's sensitivity is given by the
+ratio of the noise to the fringe amplitude which is
+\begin{equation}
+  S = \frac{\sin(\Delta\Phi)}{\sqrt{n_{10}}}
+  \label{eq:sens_proj}
+\end{equation}
+and is independent of $\epsilon$. At the mid-point
+of a fringe $\Delta \Phi = \frac{\pi}{2}$, this is maximised and the
+interferometer is most sensitive to changes in $\Delta \Phi$. A
+relation between the uncertainty in $\text{P}_{\ket{F=2}}$ and the
+interferometer phase is derived in~\SectionRef{subsec:accel_uncert}.
+
+\subsubsection{Photodiode Technical Noise}
+In order for the detection noise
+be dominated by the quantum projection noise, the detector must be sensitive
 enough that it has a \ac{nep} much lower than the noise in the optical
 power detected. The \ac{nep} of a detector is defined as the
-equivalent optical power which gives a signal-to-noise ratio of 0
-after an integration time of \sivalue{0.5}{\second}. It is convenient
-to express this as a voltage density, by multiplying it by the
-photodiode gain. Hence, the
-voltage density of a detector whose sensitivity is at the atom shot noise
-level for an integration time \(tau_D\) is given by
+equivalent optical power which gives a signal-to-noise ratio of 1
+after an integration time of \sivalue{0.5}{\second}. The photodiode
+signal is amplified so it is convenient
+to express the technical noise as a voltage density, by multiplying it by the
+amplifier gain. Hence, the
+voltage density of a detector whose sensitivity is equivalent to the
+voltage corresponding to the quantum projection noise for an
+integration time \(\tau_D\) is given by
 \begin{equation}
-  V_\text{at} = \frac{\sigma_\text{at,v}}{\sqrt{1/2\tau_D}}
+  V^2_\text{at} =
+  \frac{1}{2\tau_D}\eta \hbar \omega G R_\text{sc}\Delta N_\text{proj}
   \label{eq:nep}
-\end{equation}. 
-
-%In the time domain, the signal is convolved with a rectangular pulse
-%of a characteristic time \(\tau\), so the power spectral density is a
-%product of the individual power spectral densities
-%\begin{equation}
-%  S(f) = 2 S_0\left(\frac{\sin(\pi f \tau)}{\pi f \tau}\right)^2
-%  \label{eq:psd_shot_conf}
-%\end{equation}
-%where \(S_0\) is the one-sided power spectral density of the shot
-%noise component. From the Wiener-Khinchin theorem, the variance is
-%equal to the integral of the power spectral density, so
-%\begin{equation}
-%  S_0 = \sigma^2_\text{i,v} \tau
-%  \label{eq:shot_noise_amp}
-%\end{equation}
-%For shorter detection times, this has the effect of aliasing
-%high-frequency noise into the lower-frequency components.  
-%The number of photons
-%arriving at the detector in a time interval \(\Delta t\) is given by
-%\begin{align}
-%  n_p &= N R_\text{sc}(I,\Delta) \eta \delta t \nonumber\\
-%  &= \alpha N
-%  \label{eq:photon_detector}
-%\end{align}
-%where \(\eta\) is the collection efficiency of the detector, \(N\) is
-%the number of atoms and \(R_\text{sc}\) is the scattering rate defined
-%in \EquationRef{eq:scattering_rate}. The atom shot noise and photon
-%shot noise are given by \(\sigma_N = \sqrt{N}\) and \(\sigma_p =
-%\sqrt{n_p}\), respectively. The
-%uncertainty in the number of detected photons \(\sigma_D\) has
-%contributions from both the atom shot noise and the photon shot noise
-%\begin{equation}
-%  \sigma_D = \sqrt{\alpha^2\sigma_N^2 + \sigma_p^2} 
-%  \label{eq:detection_uncertainty}
-%\end{equation}
-%This is dominated by the atom shot noise when \(\alpha^2 > 1\), i.e. when
-%more than one photon per atom is detected by the photodiode. 
-%\par\noindent
-%There is additional contribution to \(\sigma_D\) from the technical
-%noise of the detector. The signal from the photodiode is averaged over
-%the detection time \(\Delta t\), so the variance in this is given by
-%\begin{equation}
-%  \sigma_v = \int_0^{f_c} |S_\text{pd}|^2 \mathrm{d}f 
-%  \label{eq:photodiode_noise_bandwidth}
-%\end{equation}
-%where \(|S_\text{pd}|^2\) is the one-sided power spectral density of the
-%photodiode signal and \(f_c = 1/(2\Delta t)\) is the frequency
-%bandwidth.   
-\subsubsection{Photodiode Technical Noise}
+\end{equation}
+where $\Delta N_\text{proj} = \sqrt{N_\text{proj}}$ is the variance in
+the number of atoms detected due to the projection of atoms onto the
+states $\ket{1,0}$ and $\ket{2,0}$. If the signal is detected for $\tau_D =$ \sivalue{200}{\micro\s},
+multiplicative factor that relates $V_\text{at}$ to
+$\Delta N_\text{proj}$ is \sivalue{6.7e-12}{\volt\squared\per\hertz}.
+\par\noindent
 Technical noise in the detector typically arises from multiple electronic processes -- such as Johnson noise and shot noise in
 the current~\cite{Howard2002}. The technical noise of the detector can
 be estimated by measuring the output voltage when no light is
@@ -1015,54 +1004,177 @@ noise-equivalent power of \sivalue{391}{\femto\W\per\hertz\tothe{1/2}}.
 For higher frequencies, the power spectral density starts to
 increase. The plot also indicates the corresponding voltage noise
 density to reach the
-atom shot noise limit for atom numbers of 
-of n\(_\text{at} =\) \num{5e6} and \num{1e6} with the previously
-defined output voltage per atom. 
+quantum projection noise limit after detecting for a duration $\tau =
+2/f$ for atom numbers of 
+of n\(_{10} =\) \num{5e6} and \num{1e6} with the previously
+defined output voltage per atom of $\sivalue{30}{\nano\volt}$. The
+dot-dashed line corresponds to a detection time of
+$\sivalue{200}{\micro\s}$. At this duration, the detection noise is
+limited by the technical noise in the detector. This issue certainly
+needs to be addressed to ensure that the detection noise reaches the
+fundamental projection noise limit. 
 \begin{figure}[htpb!]
   \centering
   \includegraphics[width=0.7\textwidth]{noise_source_psd}
-  \caption[Photodiode power spectral density]{Power spectral density of the photodiode output voltage
+  \caption[Photodiode power spectral density]{Power spectral density
+    of the voltage from the amplified photodiode signal
   sampled for \sivalue{2}{\second} at a rate of
 \sivalue{200}{\kilo\hertz}. The red and green dashed lines indicate
-the required voltage noise density to equal the atom shot noise level
+the required voltage noise density to equal the quantum projection
+noise level
 after integrating for \(\tau = 2/f\)\sivalue{}{\s} for atom numbers of
-\num{5e6} and \num{1e6}, respectively.}
+\num{5e6} and \num{1e6}, respectively. The dot-dashed line indicates
+the frequency corresponding to a detection time of
+\sivalue{200}{\micro\s}.}
   \label{fig:noise_source_psd}
 \end{figure}
-Averaging the detection signal over a time \(\tau\) has the effect of
-filtering the signal above the Nyquist frequency \(f_n = 1/(2 \tau)\).
-The variance in the averaged voltage over successive shots
-i.e. the Allan variance, is related to the power spectral density as
-follows
+%\par\noindent
+%Averaging the detection signal over a time \(\tau\) has the effect of
+%filtering the signal above the Nyquist frequency \(f_n = 1/(2 \tau)\).
+%The variance in the averaged voltage over successive shots
+%i.e. the Allan variance, is related to the power spectral density as
+%follows
+%\begin{equation}
+%  \sigma^2_\text{av}(\tau) = 2 \int_0^\infty \frac{\sin(\pi \tau f)^4}{(\pi \tau f)^2}S(f)\;\mathrm{d}\;f
+%  \label{eq:av_psd}
+%\end{equation}
+%Using~\EquationRef{eq:av_psd}, it is possible to determine the
+%detection time required to reduce the shot-to-shot variance below the
+%quantum projection noise level. \FigureRef{fig:detecion_av} shows the Allan deviation for increasing
+%integration time. Above it shows the $\tau^{-1/2}$ dependence
+%characteristic of uncorrelated white noise. The red and greed curves
+%show the voltages corresponding to the quantum projection noise
+%for the same numbers of atoms used
+%in~\FigureRef{fig:noise_source_psd}. At the integration time of
+%\sivalue{200}{\micro\second}, the detector noise
+%is close to \sivalue{5}{\micro\volt} -- well below the quantum
+%projection noise level.
+%\begin{figure}[htpb!]
+%  \centering
+%  \includegraphics[width=0.7\textwidth]{detection_av}
+%  \caption[Allan deviation of Photodiode voltage.]{Allan deviation of
+%    the amplified photodiode voltages for increasing
+%  integration time \(\tau\). The red and green dashed lines are the
+%quantum projection noise levels for the atom numbers used
+%in~\FigureRef{fig:noise_source_psd}. The black dot-dashed line indicates the
+%integration time of \sivalue{200}{\micro\second} used in the
+%experiment.}
+%  \label{fig:detecion_av}
+%\end{figure}
+
+\subsubsection{Summary of Detection Noise}
+It is worth summarising the various contributions to the noise in the
+occupation probability $\text{P}_{\ket{F=2}}$. Fluctuations in the
+atom number and detected photon number lead to shot noise
+contributions to the voltages corresponding to $N_2$ and
+$N_\text{Tot}$. However, we detect many photons per atom and in taking
+the ratio of the two voltages, the contribution of variations in the
+total atom number to $\text{P}_{\ket{F=2}}$ is largely suppressed.
+This does not remove the quantum projection noise or technical noise
+in the detector itself. Their effect on the interferometer uncertainty
+are very different. The former represents a
+fundamental limit to the measurement uncertainty, whereas the latter
+is determined by the apparatus used in the experiment. In this case,
+since the technical detector noise is greater than the projection
+noise for the number of atoms in the experiment, the photodiode is
+insufficiently sensitive and will need to be replaced by one with suitably
+low noise.
+
+\subsection{Acceleration Uncertainty}\label{subsec:accel_uncert}
+The noise in measuring the occupation of each state determines the
+accuracy to which the interferometer phase, and hence acceleration,
+can be measured.
+For simplicity, it is assumed that the fringe contrast $C$ is
+independent from the mean probability of detecting atoms in
+$\ket{F=2}$, $\text{P}_0$. This is valid if the contrast is reduced due to
+inhomogeneities in the Rabi frequencies of each pulse and if the mean
+probability is reduced from 0.5 by the presence of background $m_F=\pm
+1$ atoms,
+which can never occupy $\ket{F=2}$. Under these
+assumptions~\EquationRef{eq:prob_measurement} yields the following variance
 \begin{equation}
-  \sigma^2_\text{av}(\tau) = 2 \int_0^\infty \frac{\sin(\pi \tau f)^4}{(\pi \tau f)^2}S(f)\;\mathrm{d}\;f
-  \label{eq:av_psd}
+  \sigma_\text{P}^2 = \sigma_{P_0}^2 + \frac{1}{4} \sigma_C^2
+  \cos(\Delta \Phi)^2 + \frac{C^2}{4}\sigma_{\Delta \Phi}^2 \sin(\Delta \Phi)^2
 \end{equation}
-Using~\EquationRef{eq:av_psd}, it is possible to determine the
-detection time required to reduce the shot-to-shot variance below the
-atom shot noise level. \FigureRef{fig:detecion_av} shows the Allan deviation for increasing
-integration time, along with the rms voltage expected
-for the same numbers of atoms used
-in~\FigureRef{fig:noise_source_psd}. At the integration time of
-\sivalue{200}{\micro\second}, the detector noise
-is close to \sivalue{5}{\micro\volt} -- well below the level of the
-atom shot noise.
-\begin{figure}[htpb!]
+At the mid-point of the fringe, $\Delta \Phi = \pi/2$, this variance
+becomes
+\begin{equation}
+  \sigma_\text{P}^2 = \sigma_{P_0}^2 + 
+  \frac{C}{4}\sigma_{\Delta \Phi}^2 
+\end{equation}
+so if $\text{P}_0$ and $C$ do not vary, the ratio of $\sigma_P$ to the
+fringe amplitude $C/2$ is
+given by
+\begin{equation}
+  S = \sigma_{\Delta \Phi}
+\end{equation}
+Returning to the interferometer sensitivity defined
+in~\EquationRef{eq:sens_proj}, we can identify the maximum sensitivity
+to accelerations as 
+\begin{equation}
+  \sigma_a = \frac{1}{\sqrt{n_{10}} k_\text{eff} T^2}
+\end{equation}
+So it is clear that the uncertainty in measuring the acceleration is enhanced by
+increasing the number of atoms or by increasing the time between
+interferometer pulses. Of course, this is an under-estimate as other sources of noise will result in a
+greater uncertainty. Nevertheless, it provides a useful
+figure-of-merit for quantifying other sources of noise in terms of
+their equivalent acceleration uncertainty. 
+
+\subsection{The Allan Variance}\label{subsec:allan_variance}
+The variance of successive measurements is often a useful measure for
+quantifying uncertainty. However with a finite sequence
+of measurements, this depends on the number of samples and might not
+converge as the number of samples increases. On the other hand, the
+two-sample variance 
+\begin{equation}
+  \sigma^2(\tau) = \frac{1}{2}\left\langle
+  (a_{n+1}-a_n)^2\right\rangle
+  \label{eq:two_sample_var}
+\end{equation}
+does not depend on the number of samples. This can be generalized to
+longer time separations \(t = N \tau\) by taking the mean of \(N\)
+consecutive measurements
+\begin{equation}
+  \sigma_\text{av}^2(t) = \frac{1}{2}
+  \left\langle
+  \left(\frac{1}{N}\sum_{k=0}^{N-1}a_{n+1}-\frac{1}{N}\sum_{k=N}^{2N-1}a_n\right)^2\right\rangle
+  \label{eq:allan_var_mean}
+\end{equation}
+which is referred to as the Allan variance~\cite{Allan1966}. Operationally, the Allan variance is useful for characterising the
+correlation of measurement noise. 
+%For instance, in the case of white
+%noise, the uncertainty in each measurement is uncorrelated
+%and the Allan variance becomes
+%\begin{equation}
+%  \sigma^2_\text{av}(t) = \frac{1}{N}\sigma^2_\text{av}(\tau)
+%\label{eq:allan_var_simp}
+%\end{equation}
+%This is typically the case over short timescales. More generally, the
+The Allan variance can be used to identify the timescales that
+characterise the behaviour of the bias in an
+accelerometer~\cite{El-Sheimy2008}. At short
+timescales, the Allan variance is dominated by white noise if the
+uncertainty in successive measurements is uncorrelated. 
+At longer timescales the bias instability -- fluctuations of
+the bias value -- causes the Allan variance to reach a minimum value.
+Finally, at still longer timescales, the bias drift -- a long-term
+change in the bias value -- causes
+an increase in the Allan variance. \TableRef{tab:avar} summarises these three processes and their characteristic dependences on $\tau$. 
+\begin{table}[htpb]
   \centering
-  \includegraphics[width=0.7\textwidth]{detection_av}
-  \caption[Allan variance of the Photodiode voltage.]{Allan variance of the Photodiode voltage for increasing
-  integration time \(\tau\). The red and green dashed lines are the
-atom shot noise rms voltages for the values used
-in~\FigureRef{fig:noise_source_psd}. The black dot-dashed line indicates the
-integration time of \sivalue{200}{\micro\second} used in the
-experiment.}
-  \label{fig:detecion_av}
-\end{figure}
-
-
-%\subsection{Atom Shot Noise}
-
-%subsection{Detection Noise}
+  \begin{tabular}{cc}
+  \toprule
+    Process & $\tau$ dependence \\ 
+    \midrule
+    White noise & $\tau^{-1}$ \\
+    Bias instability & $\tau^{0}$ \\
+    Bias drift & $\tau^{2}$\\
+    \bottomrule
+  \end{tabular}
+  \caption{Allan variance characteristic timescales.}
+  \label{tab:avar}
+\end{table}
 
 \subsection{The Sensitivity Function}\label{subsec:sens_func}
 The sources of noise presented thus far arise from statistical
@@ -1321,6 +1433,37 @@ this isolation.}
 %    phase which does not cancel. 
 %  \item \underline{Laser intensity noise}.
 %\end{itemize}
+\subsection{Summary of Identified Noise Sources}\label{subsec:noise_sources}
+To conclude this discussion, it is helpful to compare the identified
+sources of noise. These are not a complete list of the effects which
+reduce the sensitivity to accelerations, but are the most dominant. The
+identified sources and their estimated effects on acceleration
+measurements are shown in~\TableRef{tab:noise_sources}. The largest
+contributor comes from vibrations of the retro-reflecting mirror.
+Other noise sources, such as magnetic field gradients, laser intensity
+noise and rotations have not yet been characterised. Higher-order
+phase shifts due to inertial effects, such as the Coriolis force and
+gravity gradients, have been
+studied elsewhere\cite{Bongs2006}.
+\begin{table}[htpb!]
+  \centering
+  \begin{tabular}{ccc}
+    \toprule
+    Noise Source & Signal/Noise & \(\sigma_a\)
+    (\sivalue{}{\micro\meter\per\s\squared}) \\
+    \midrule
+    Projection noise (\num{5e6} atoms) & 2200 & 0.07 \\
+    Laser phase noise & 157 & 1 \\
+    Technical detector noise & 15 & 10.5 \\
+    Vibrations & 5.8 & 26\\
+    \bottomrule
+  \end{tabular}
+  \caption[Comparison of known noise sources.]{Comparison of known noise sources and their effects on
+  acceleration measurements. These values are estimated assuming a
+separation between pulses of \(T = \)\sivalue{25}{\ms} and a \(\pi/2\)
+pulse time of \(\tau = \)\sivalue{20}{\micro\s}.}
+  \label{tab:noise_sources}
+\end{table}
 \section{Measuring Accelerations}\label{sec:atomint_accelerations}
 This section presents the techniques used to characterise the atom interferometer
 and its sensitivity to accelerations. It begins with a calibration of
@@ -1450,7 +1593,7 @@ error to $\phi_\textnormal{res}$ from the noise intrinsic to the MEMS
 accelerometer. A weighted least-squares fit is
 able to account for errors in both variables~\cite{Macdonald1992}. This requires an
 accurate estimate of the weights for each measurement of
-$\tilde{V}_\textnormal{vib}$ and $P_{\ket{F=2}}$ to avoid inaccurate
+$\tilde{V}_\textnormal{vib}$ and $\text{P}_{\ket{F=2}}$ to avoid inaccurate
 parameter estimates.
 \begin{figure}[htpb!]
   \centering

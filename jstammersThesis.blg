@@ -14,7 +14,6 @@ A level-1 auxiliary file: appendices.aux
 A level-1 auxiliary file: backmatter.aux
 The style file: lucas_unsrt.bst
 Database file #1: Thesis.bib
-Warning--I didn't find a database entry for "M2_manual"
 Warning--empty year in Levine
 Warning--empty author in accelStandard
 Warning--empty publisher in RBerman1997
@@ -24,7 +23,7 @@ Warning--empty publisher in Lawrence1998
 Warning--empty publisher in Howard2002
 You've used 104 entries,
             2517 wiz_defined-function locations,
-            1478 strings with 31532 characters,
+            1476 strings with 31514 characters,
 and the built_in function-call counts, 36007 in all, are:
 = -- 3597
 > -- 1469
@@ -63,4 +62,4 @@ warning$ -- 7
 while$ -- 282
 width$ -- 107
 write$ -- 1209
-(There were 8 warnings)
+(There were 7 warnings)

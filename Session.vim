@@ -7,40 +7,43 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +1311 interferometry.tex
-badd +18 jstammersThesis.tex
+badd +1604 interferometry.tex
+badd +1 jstammersThesis.tex
 badd +1 /media/Storage/Dropbox/PhDWork/Software/Showcase/interferomtry.tex
 badd +1 /media/Storage/Dropbox/PhDWork/Software/Showcase/interferometry.tex
 badd +1870 jstammersThesis.log
-badd +375 theory.tex
+badd +745 theory.tex
 badd +57 Figures/Chapter2/interferometer.pdf_tex
 badd +103 /media/Storage/Dropbox/CV/academic_cv.tex
 badd +180 ~/.vimrc
-badd +73 introduction.tex
+badd +222 introduction.tex
 badd +315 ~/texmf/tex/latex/hepthesis/hepthesis.cls
 badd +146 jstammersThesis.bbl
 badd +1 jstammersThesis.aux
-badd +1 comment.cut
+badd +9 comment.cut
 badd +30 Figures/Chapter6/detection.pdf_tex
 badd +496 term://.//6570:/bin/bash
 badd +56 Figures/Chapter3/motmaster_structure.pdf_tex
-badd +276 compcontrol.tex
-badd +316 mots.tex
+badd +317 compcontrol.tex
+badd +788 mots.tex
 badd +5 Figures/Chapter3/hsdio_timing.tex
 badd +34 preamble.tex
 badd +56 Figures/Chapter4/2D_mot_optics.pdf_tex
 badd +49 frontmatter.tex
 badd +9 description.tex
-badd +61 ramanoptics.tex
-badd +581 atompreparation.tex
+badd +629 ramanoptics.tex
+badd +615 atompreparation.tex
 badd +61 conclusion.tex
 badd +1 Figures/Chapter5/StateSelection.svg
 badd +72 Figures/Chapter5/state_selection.pdf_tex
+badd +1 interferometry.aux
+badd +979 Thesis.bib
+badd +87 Figures/Chapter4/fibre_network.pdf_tex
 argglobal
 silent! argdel *
 $argadd interferometry.tex
 set stal=2
-edit ramanoptics.tex
+edit interferometry.tex
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -57,48 +60,94 @@ setlocal fdn=20
 setlocal fen
 1
 normal! zo
-3
+843
 normal! zo
-13
+859
 normal! zo
-50
+877
 normal! zo
-58
+914
 normal! zo
-102
+926
 normal! zo
-179
+944
 normal! zo
-184
+950
 normal! zo
-190
+963
 normal! zo
-195
+1101
 normal! zo
-143
+1216
 normal! zo
-144
+1228
 normal! zo
-206
+1235
 normal! zo
-211
+1248
 normal! zo
-217
+1250
 normal! zo
-230
+1258
 normal! zo
-422
+1266
 normal! zo
-479
+1275
 normal! zo
-565
+1281
 normal! zo
-let s:l = 162 - ((15 * winheight(0) + 25) / 51)
+1287
+normal! zo
+1301
+normal! zo
+1304
+normal! zo
+1310
+normal! zo
+1316
+normal! zo
+1330
+normal! zo
+1364
+normal! zo
+1401
+normal! zo
+1411
+normal! zo
+1428
+normal! zo
+1456
+normal! zo
+1461
+normal! zo
+1474
+normal! zo
+1482
+normal! zo
+1518
+normal! zo
+1566
+normal! zo
+1588
+normal! zo
+1603
+normal! zo
+1605
+normal! zo
+1623
+normal! zo
+1631
+normal! zo
+1657
+normal! zo
+1816
+normal! zo
+let s:l = 1584 - ((20 * winheight(0) + 25) / 51)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-162
-normal! 026|
+1584
+normal! 028|
 lcd /media/Storage/Dropbox/PhDWork/Thesis
 tabedit /media/Storage/Dropbox/PhDWork/Thesis/ramanoptics.tex
 set splitbelow splitright
@@ -119,43 +168,31 @@ setlocal fen
 normal! zo
 3
 normal! zo
-13
+12
 normal! zo
-50
+48
 normal! zo
-58
+56
 normal! zo
-102
+96
 normal! zo
-132
+126
 normal! zo
-179
+137
 normal! zo
-184
+138
 normal! zo
-190
+188
 normal! zo
-195
+224
 normal! zo
-143
+319
 normal! zo
-144
+468
 normal! zo
-206
+515
 normal! zo
-211
-normal! zo
-217
-normal! zo
-230
-normal! zo
-422
-normal! zo
-479
-normal! zo
-565
-normal! zo
-let s:l = 479 - ((25 * winheight(0) + 25) / 51)
+let s:l = 479 - ((52 * winheight(0) + 10) / 20)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -179,7 +216,7 @@ setlocal fdn=20
 setlocal fen
 3
 normal! zo
-let s:l = 17 - ((16 * winheight(0) + 25) / 51)
+let s:l = 17 - ((6 * winheight(0) + 10) / 20)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt

@@ -456,6 +456,12 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
   Instrumentation and Measurement} \textbf{ 57} (jan, 2008) 140--149,
   \href{http://dx.doi.org/10.1109/TIM.2007.908635}{\doi{10.1109/TIM.2007.908635}}.
 
+\bibitem{Dick1987}
+\href
+  {http://oai.dtic.mil/oai/oai?verb=getRecord{\&}metadataPrefix=html{\&}identifier=ADA502386}
+  {G.~Dick, ``{Local oscillator induced instabilities in trapped ion frequency
+  standards}'',}.
+
 \bibitem{Cheinet2008}
 \hrefCMSnoop {} {P.~Cheinet, B.~Canuel, F.~{Pereira Dos Santos}{ et~al.},
   ``{Measurement of the sensitivity function in a time-domain atomic
@@ -463,12 +469,6 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
   Measurement} \textbf{ 57} (jun, 2008) 1141--1148,
   \href{http://dx.doi.org/10.1109/TIM.2007.915148}{\doi{10.1109/TIM.2007.915148}},
   \href{http://www.arXiv.org/abs/0510197}{\texttt{ arXiv:0510197}}.
-
-\bibitem{Dick1987}
-\href
-  {http://oai.dtic.mil/oai/oai?verb=getRecord{\&}metadataPrefix=html{\&}identifier=ADA502386}
-  {G.~Dick, ``{Local oscillator induced instabilities in trapped ion frequency
-  standards}'',}.
 
 \bibitem{Canuel2007}
 \hrefCMSnoop {} {B.~Canuel, ``{{\'{E}}tude d'un gyrom{\`{e}}tre {\`{a}} atomes
@@ -502,6 +502,12 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
   Physics B} \textbf{ 84} (aug, 2006) 599--602,
   \href{http://dx.doi.org/10.1007/s00340-006-2397-5}{\doi{10.1007/s00340-006-2397-5}}.
 
+\bibitem{Peters2001}
+\hrefCMSnoop {} {A.~Peters, K.~Y. Chung, and S.~Chu, ``{High-precision gravity
+  measurements using atom interferometry}'',} \textit{ Metrologia} \textbf{ 38}
+  (feb, 2001) 25--61,
+  \href{http://dx.doi.org/10.1088/0026-1394/38/1/4}{\doi{10.1088/0026-1394/38/1/4}}.
+
 \bibitem{Sugarbaker2013}
 \href {http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.111.113002}
   {A.~Sugarbaker and S.~Dickerson, ``{Enhanced atom interferometer readout
@@ -509,12 +515,6 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
   {\ldots}} \textbf{ 94305} (2013)
   \href{http://www.arXiv.org/abs/arXiv:1305.3298v1}{\texttt{
   arXiv:arXiv:1305.3298v1}}.
-
-\bibitem{Peters2001}
-\hrefCMSnoop {} {A.~Peters, K.~Y. Chung, and S.~Chu, ``{High-precision gravity
-  measurements using atom interferometry}'',} \textit{ Metrologia} \textbf{ 38}
-  (feb, 2001) 25--61,
-  \href{http://dx.doi.org/10.1088/0026-1394/38/1/4}{\doi{10.1088/0026-1394/38/1/4}}.
 
 \bibitem{Macdonald1992}
 \hrefCMSnoop {} {J.~R. Macdonald and W.~J. Thompson, ``{Least‐squares fitting
@@ -573,9 +573,11 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
   034030,
   \href{http://dx.doi.org/10.1103/PhysRevApplied.10.034030}{\doi{10.1103/PhysRevApplied.10.034030}}.
 
-\bibitem{Hogan2010}
-\hrefCMSnoop {} {J.~Hogan, ``{Towards precision tests of general relativity
-  using an atom interferometer}'',}.
+\bibitem{Schunemann1999}
+\hrefCMSnoop {} {U.~Schünemann, H.~Engler, R.~Grimm{ et~al.}, ``{Simple
+  scheme for tunable frequency offset locking of two lasers}'',} \textit{
+  Review of Scientific Instruments} \textbf{ 70} (1999), no.~1, 242,
+  \href{http://dx.doi.org/10.1063/1.1149573}{\doi{10.1063/1.1149573}}.
 
 \bibitem{Chu1985}
 \href {http://prl.aps.org/abstract/PRL/v55/i1/p48{\_}1} {S.~Chu, L.~Hollberg,
@@ -583,42 +585,37 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
   of Atoms by Resonance Radiation Pressure}'',} \textit{ Physical Review
   Letters} \textbf{ 55} (1985), no.~1,.
 
-\bibitem{Tackmann2012}
-\hrefCMSnoop {} {G.~Tackmann, P.~Berg, C.~Schubert{ et~al.}, ``{Self-alignment
-  of a compact large-area atomic Sagnac interferometer}'',} \textit{ New
-  Journal of Physics} \textbf{ 14} (jan, 2012) 015002,
-  \href{http://dx.doi.org/10.1088/1367-2630/14/1/015002}{\doi{10.1088/1367-2630/14/1/015002}}.
-
-\bibitem{Masry1991}
-\hrefCMSnoop {} {E.~Masry, ``{Flicker noise and the estimation of the Allan
-  variance}'',} \textit{ IEEE Transactions on Information Theory} \textbf{ 37}
-  (jul, 1991) 1173--1177,
-  \href{http://dx.doi.org/10.1109/18.86968}{\doi{10.1109/18.86968}}.
-
-\bibitem{Hogan}
-\href {http://arxiv.org/abs/0806.3261} {J.~Hogan, D.~Johnson, and M.~Kasevich,
-  ``{Light-pulse atom interferometry}'',} \textit{ arXiv preprint
-  arXiv:0806.3261} (2008) 1--38,
-  \href{http://www.arXiv.org/abs/arXiv:0806.3261v1}{\texttt{
-  arXiv:arXiv:0806.3261v1}}.
-
-\bibitem{Schunemann1999}
-\hrefCMSnoop {} {U.~Schünemann, H.~Engler, R.~Grimm{ et~al.}, ``{Simple
-  scheme for tunable frequency offset locking of two lasers}'',} \textit{
-  Review of Scientific Instruments} \textbf{ 70} (1999), no.~1, 242,
-  \href{http://dx.doi.org/10.1063/1.1149573}{\doi{10.1063/1.1149573}}.
-
 \bibitem{Miffre2006}
 \hrefCMSnoop {} {A.~Miffre, M.~Jacquey, M.~B{\"{u}}chner{ et~al.}, ``{Atom
   interferometry}'',}
   \href{http://dx.doi.org/10.1088/0031-8949/74/2/N01}{\doi{10.1088/0031-8949/74/2/N01}},
   \href{http://www.arXiv.org/abs/0605055}{\texttt{ arXiv:0605055}}.
 
+\bibitem{Pappa2011}
+\hrefCMSnoop {} {M.~Pappa, P.~C. Condylis, G.~O. Konstantinidis{ et~al.},
+  ``{Ultra-sensitive atom imaging for matter-wave optics}'',} \textit{ New
+  Journal of Physics} \textbf{ 13} (nov, 2011) 115012,
+  \href{http://dx.doi.org/10.1088/1367-2630/13/11/115012}{\doi{10.1088/1367-2630/13/11/115012}}.
+
 \bibitem{Schkolnik2015}
 \hrefCMSnoop {} {V.~Schkolnik, B.~Leykauf, M.~Hauth{ et~al.}, ``{The effect of
   wavefront aberrations in atom interferometry}'',} \textit{ Applied Physics B}
   \textbf{ 120} (aug, 2015) 311--316,
   \href{http://dx.doi.org/10.1007/s00340-015-6138-5}{\doi{10.1007/s00340-015-6138-5}}.
+
+\bibitem{Hogan2010}
+\hrefCMSnoop {} {J.~Hogan, ``{Towards precision tests of general relativity
+  using an atom interferometer}'',}.
+
+\bibitem{Kasevich1992a}
+\hrefCMSnoop {} {M.~Kasevich, ``{Atom Interferometry in an atomic fountain}'',}
+  1992.
+
+\bibitem{Masry1991}
+\hrefCMSnoop {} {E.~Masry, ``{Flicker noise and the estimation of the Allan
+  variance}'',} \textit{ IEEE Transactions on Information Theory} \textbf{ 37}
+  (jul, 1991) 1173--1177,
+  \href{http://dx.doi.org/10.1109/18.86968}{\doi{10.1109/18.86968}}.
 
 \bibitem{Schoser2002}
 \hrefCMSnoop {} {J.~Schoser, A.~Bat{\"{a}}r, R.~L{\"{o}}w{ et~al.}, ``{Intense
@@ -627,21 +624,24 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
   \href{http://dx.doi.org/10.1103/PhysRevA.66.023410}{\doi{10.1103/PhysRevA.66.023410}},
   \href{http://www.arXiv.org/abs/0201034}{\texttt{ arXiv:0201034}}.
 
-\bibitem{Pappa2011}
-\hrefCMSnoop {} {M.~Pappa, P.~C. Condylis, G.~O. Konstantinidis{ et~al.},
-  ``{Ultra-sensitive atom imaging for matter-wave optics}'',} \textit{ New
-  Journal of Physics} \textbf{ 13} (nov, 2011) 115012,
-  \href{http://dx.doi.org/10.1088/1367-2630/13/11/115012}{\doi{10.1088/1367-2630/13/11/115012}}.
-
-\bibitem{Kasevich1992a}
-\hrefCMSnoop {} {M.~Kasevich, ``{Atom Interferometry in an atomic fountain}'',}
-  1992.
-
 \bibitem{Lan2012}
 \hrefCMSnoop {} {S.~Y. Lan, P.~C. Kuan, B.~Estey{ et~al.}, ``{Influence of the
   coriolis force in atom interferometry}'',} \textit{ Physical Review Letters}
   \textbf{ 108} (2012), no.~9, 1--5,
   \href{http://dx.doi.org/10.1103/PhysRevLett.108.090402}{\doi{10.1103/PhysRevLett.108.090402}},
   \href{http://www.arXiv.org/abs/1110.6910}{\texttt{ arXiv:1110.6910}}.
+
+\bibitem{Tackmann2012}
+\hrefCMSnoop {} {G.~Tackmann, P.~Berg, C.~Schubert{ et~al.}, ``{Self-alignment
+  of a compact large-area atomic Sagnac interferometer}'',} \textit{ New
+  Journal of Physics} \textbf{ 14} (jan, 2012) 015002,
+  \href{http://dx.doi.org/10.1088/1367-2630/14/1/015002}{\doi{10.1088/1367-2630/14/1/015002}}.
+
+\bibitem{Hogan}
+\href {http://arxiv.org/abs/0806.3261} {J.~Hogan, D.~Johnson, and M.~Kasevich,
+  ``{Light-pulse atom interferometry}'',} \textit{ arXiv preprint
+  arXiv:0806.3261} (2008) 1--38,
+  \href{http://www.arXiv.org/abs/arXiv:0806.3261v1}{\texttt{
+  arXiv:arXiv:0806.3261v1}}.
 
 \end{thebibliography}\endgroup

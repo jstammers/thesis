@@ -394,7 +394,7 @@ irregular intensity profile in the collimated beam. This inhomogeneity
 was subsequently found to significantly dephase the atoms during a
 Raman transition, which is discussed
 in~\SectionRef{subsec:int_pulses}.
-%\subsection{Alignment and Collimation}
+\subsection{Alignment and Collimation}
 %As one of the main motivations for mounting the Raman optics inside the vacuum
 %chamber was to reduce the effects of wavefront distortions, it is worth
 %highlighting how inaccurate alignment of the optics can lead to aberrations. As

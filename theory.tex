@@ -60,15 +60,15 @@ along each path, so that after another duration of $T$ the two
 wavepackets overlap. These are recombined by a final $\pi/2$ pulse.
 The interference between the two states is manifested in their
 population, which depends on the phase difference between the two
-paths. This phase difference $\Delta \Phi$ is expressed as follows
+paths. This phase difference $\Phi$ is expressed as follows
 \begin{equation}
   \label{eq:phase_difference}
-  \Delta \Phi = \Delta \Phi_\textnormal{prop} +\Delta
-  \Phi_\textnormal{int}+\Delta \Phi_\textnormal{laser}
+  \Phi = \Phi_\textnormal{prop} +
+  \Phi_\textnormal{int}+\Phi_\textnormal{laser}
 \end{equation}
-where $\Delta \Phi_\textnormal{prop}$ is the phase difference due to
-propagation along each path, $\Delta \Phi_\textnormal{int}$ is the
-phase difference due to evolution of the internal state and $\Delta
+where $\Phi_\textnormal{prop}$ is the phase difference due to
+propagation along each path, $\Phi_\textnormal{int}$ is the
+phase difference due to evolution of the internal state and $
 \Phi_\textnormal{laser}$ is the phase difference caused by
 interactions with the laser field.   
 \begin{figure}[htpb]
@@ -151,12 +151,12 @@ The second expression is obtained using $x_b - x_b' = x_c - x_c'
 = \frac{1}{2}a T^2$ and $x_d-x_d' = 2 a T^2$, where the primes
 indicate positions in the absence of acceleration. The last factor on
 the numerator of~\EquationRef{eq:prop_action} is zero because the
-paths enclose a parallelogram for which $x_c' - x_a' = x_d'-x)b'$. It follows
+paths enclose a parallelogram for which $x_c' - x_a' = x_d'-x_b'$. It follows
 from~\EquationRef{eq:prop_phase} that there is no difference in the
-propagation phase along the two paths $acd
-(\Phi_\textnormal{prop}^{u})$ and $acd (\Phi_\textnormal{prop}^{l})$. In other words,
-$\Delta\Phi_\textnormal{prop} = \Phi_\textnormal{prop}^{u}-
-\Phi_\textnormal{prop}^{l}=
+propagation phase along the two paths $acd \;
+(\phi_\textnormal{prop}^{u})$ and $abd \; (\phi_\textnormal{prop}^{l})$. In other words,
+$\Phi_\textnormal{prop} \equiv \phi_\textnormal{prop}^{u}-
+\phi_\textnormal{prop}^{l}=
 0$ when there is a constant acceleration of the atom.
 \begin{figure}[htpb]
   \centering
@@ -178,7 +178,7 @@ trajectory. The phase difference due to the internal state evolution
 is 
 \begin{equation}
   \label{eq:phase_internal}
-  \Delta \Phi_\textnormal{int} = \phi^{(2)}(t_1,t_2) +
+  \Phi_\textnormal{int} = \phi^{(2)}(t_1,t_2) +
   \phi^{(1)}(t_2,t_3) - \left(\phi^{(1)}(t_1,t_2) + \phi^{(2)}(t_2,t_3)\right)
 \end{equation}
 which is zero if the time between successive pulses is the same and
@@ -187,7 +187,7 @@ variation is important
 when considering the effects of the ac Stark shift and is addressed
 subsequently in~\SectionRef{subsec:light_shift}.
 
-\subsubsection{Laser Phase}
+\subsubsection{Laser Phase}\label{subsec:laser_phase}
 Finally, there is the contribution from the laser phase. During each
 transition, the phase of the laser modifies the state of the atom. The
 propagator that describes this transition for arbitrary Rabi
@@ -229,14 +229,14 @@ can be simplified so that the phase difference due to the laser interaction ($\p
 \phi_l$), and hence the total phase difference, is
 \begin{equation}
   \label{eq:phase_interferometer}
-  \Delta \Phi_\textnormal{laser} = \textbf{k.a} T^2 - (\phi_0)_{1} + 2(\phi_0)_{2}- (\phi_{0})_{3}
+  \Phi_\textnormal{laser} = \textbf{k.a} T^2 - (\phi_0)_{1} + 2(\phi_0)_{2}- (\phi_{0})_{3}
 \end{equation}
 In summary, the phase difference along the two paths of the
 interferometer comes not from the atomic motion along the path, nor
 from the phase evolution of the internal states, but rather the
 position-dependent phase of the light field, which is impressed on the
-atom each time a transition is driven. In other words, $\Delta_\Phi =
-\Delta\Phi_\textnormal{laser}$. This makes a phase difference
+atom each time a transition is driven. In other words, $\Phi =
+\Phi_\textnormal{laser}$. This makes a phase difference
 of $\textbf{k.a} T^2$. In addition, if the phase of the light is
 adjusted between pulses, there is a further interferometer phase of
 $- (\phi_0)_{1} + 2(\phi_0)_{2}- (\phi_{0})_{3}$. This second part
@@ -431,7 +431,7 @@ It is also useful to define the fringe contrast -- the difference
 between the maximum and minimum of $P_{\ket{2}}$
 \begin{equation}
   \label{eq:fringe_contrast}
-  c = \max_{\Delta \Phi} P_{\ket{2}} -  \min_{\Delta \Phi} P_{\ket{2}} 
+  c = \max_{\Phi} P_{\ket{2}} -  \min_{\Phi} P_{\ket{2}} 
 \end{equation}
 which ranges between 0 and 1. This fringe contrast implicitly depends
 on the pulse area and detuning of each pulse. In the case of perfect pulse areas and zero
@@ -441,9 +441,9 @@ detuning with the initial state $\ket{\psi_0} =
   \label{eq:state_simp}
   P'_{\ket{2}} &= \sin \left(\frac{1}{2} (\phi_1-2
   \phi_2+\phi_3)\right)^2 \nonumber \\
-  &= \sin\left(\frac{\Delta \Phi}{2}\right)^2,
+  &= \sin\left(\frac{\Phi}{2}\right)^2,
 \end{align}
-where $\Delta \Phi$ is related to the acceleration of the atom
+where $\Phi$ is related to the acceleration of the atom
 in~\EquationRef{eq:phase_interferometer}.
 %In order to observe interference between two atomic states, it is
 %essential that they remain coherent over the required timescale. The

@@ -187,7 +187,7 @@ variation is important
 when considering the effects of the ac Stark shift and is addressed
 subsequently in~\SectionRef{subsec:light_shift}.
 
-\subsubsection{Laser Phase}
+\subsubsection{Laser Phase}\label{subsec:laser_phase}
 Finally, there is the contribution from the laser phase. During each
 transition, the phase of the laser modifies the state of the atom. The
 propagator that describes this transition for arbitrary Rabi

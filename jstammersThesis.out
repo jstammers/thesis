@@ -94,14 +94,14 @@
 \BOOKMARK [2][-]{subsection.7.5.1}{Detection Noise}{section.7.5}% 94
 \BOOKMARK [2][-]{subsection.7.5.2}{Acceleration Uncertainty}{section.7.5}% 95
 \BOOKMARK [2][-]{subsection.7.5.3}{The Allan Variance}{section.7.5}% 96
-\BOOKMARK [2][-]{subsection.7.5.4}{The Sensitivity Function}{section.7.5}% 97
-\BOOKMARK [2][-]{subsection.7.5.5}{The Interferometer Transfer Function}{section.7.5}% 98
+\BOOKMARK [2][-]{subsection.7.5.4}{The Sensitivity Function g\(t\)}{section.7.5}% 97
+\BOOKMARK [2][-]{subsection.7.5.5}{The Interferometer Transfer Function H\(\)}{section.7.5}% 98
 \BOOKMARK [2][-]{subsection.7.5.6}{Vibrations}{section.7.5}% 99
 \BOOKMARK [2][-]{subsection.7.5.7}{Summary of Identified Noise Sources}{section.7.5}% 100
 \BOOKMARK [1][-]{section.7.6}{Measuring Accelerations}{chapter.7}% 101
 \BOOKMARK [2][-]{subsection.7.6.1}{Fringe Calibration}{section.7.6}% 102
-\BOOKMARK [2][-]{subsection.7.6.2}{Correcting for Vibration Noise}{section.7.6}% 103
-\BOOKMARK [2][-]{subsection.7.6.3}{Signal Stability}{section.7.6}% 104
+\BOOKMARK [2][-]{subsection.7.6.2}{Comparing the atom accelerometer with the MEMS accelerometer}{section.7.6}% 103
+\BOOKMARK [2][-]{subsection.7.6.3}{Expected vs observed Allan deviation}{section.7.6}% 104
 \BOOKMARK [1][-]{section.7.7}{Conclusion}{chapter.7}% 105
 \BOOKMARK [0][-]{chapter.8}{Outlook}{}% 106
 \BOOKMARK [1][-]{section.8.1}{Conclusions}{chapter.8}% 107

@@ -394,7 +394,15 @@ U =  \begin{pmatrix}
 \end{equation}  
 where $\delta_R = \keff.\textbf{v} + \hbar |\keff|^2/2m$ is the Raman
 detuning from
-\EquationRef{eq:raman_detuning}.
+\EquationRef{eq:raman_detuning}. If we consider an atom starting in
+the state $\ket{1}$, then it is straightforward to show that after
+applying $U$, the probability of stimulating a transition to $\ket{2}$
+is given by
+\begin{equation}
+  \text{P}_{\ket{2}} = \frac{\Omega_\textnormal{eff}^2}{\Omega'^2}
+  \sin^2\left(\frac{\Omega' t}{2}\right)
+  \label{eq:trans_prob}
+\end{equation}
 \subsection{Application to a Sequence of Raman Pulses}
 Now, this propagator can be used to determine the state of the atom
 after a sequence of Raman pulses. The propagator was derived using an

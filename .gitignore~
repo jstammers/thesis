@@ -10,3 +10,8 @@ build/*
 *.gz
 *.aux
 *.log
+*.lof
+*.toc
+*.fls
+Drafts/*
+*.tex~

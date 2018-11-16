@@ -13,3 +13,6 @@ build/*
 *.lof
 *.toc
 *.fls
+Drafts/*
+*.tex~
+*.pdf_tex~

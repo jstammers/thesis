@@ -522,6 +522,13 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
   American Journal of Physics} \textbf{ 60} (jan, 1992) 66--73,
   \href{http://dx.doi.org/10.1119/1.17046}{\doi{10.1119/1.17046}}.
 
+\bibitem{Dick1990}
+\hrefCMSnoop {} {G.~J. Dick, J.~D. Prestage, C.~A. Greenhall{ et~al.}, ``{Local
+  oscillator induced degradation of medium-term stability in passive atomic
+  frequency standards}'',} in \textit{ The 22nd Annual Precise Time and Time
+  Interval (PTTI) Applications and Planning Meeting}, pp.~487--508.
+\newblock 1990.
+
 \bibitem{Meunier2015}
 \hrefCMSnoop {} {M.~Meunier, I.~Dutta, R.~Geiger{ et~al.}, ``{Stability
   enhancement by joint phase measurements in a single cold atomic fountain}'',}
@@ -534,13 +541,6 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
   \textit{ Journal of Physics: Conference Series} \textbf{ 723} (2016), no.~1,
   \href{http://dx.doi.org/10.1088/1742-6596/723/1/012049}{\doi{10.1088/1742-6596/723/1/012049}},
   \href{http://www.arXiv.org/abs/1601.06082}{\texttt{ arXiv:1601.06082}}.
-
-\bibitem{Dick1990}
-\hrefCMSnoop {} {G.~J. Dick, J.~D. Prestage, C.~A. Greenhall{ et~al.}, ``{Local
-  oscillator induced degradation of medium-term stability in passive atomic
-  frequency standards}'',} in \textit{ The 22nd Annual Precise Time and Time
-  Interval (PTTI) Applications and Planning Meeting}, pp.~487--508.
-\newblock 1990.
 
 \bibitem{Cheng2018}
 \hrefCMSnoop {} {X.~Cheng, ``{No Title}''}.

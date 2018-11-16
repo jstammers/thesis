@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{siunitx}
+\usepackage{amsmath}
+\newcommand{\sivalue}[2]{\SI[mode=text]{#1}{#2}}
+\title{An Atom Interferometer for Measuring Horizontal Accelerations}
+\date{}
+\begin{document}
+\maketitle
+Matter-wave interferometry has enabled high precision measurements of
+    inertial forces such as gravity and the
+    Coriolis force. This is facilitated by the long-term stability of
+    the physical properties of atoms and lasers. Recent experiments have
+    demonstrated the operation of portable, robust sensors using atom
+    interferometry. This has potential uses in the context of inertial
+    navigation, where conventional devices suffer from long-term
+    drifts due to bias instability. Furthermore, determining position
+    via dead reckoning requires minimisation of dead time between
+    measurements. This thesis presents the development of an atom
+    interferometer for measuring horizontal accelerations. In this
+    configuration, gravity induces motion across
+    the laser wavefront, which constrains the tolerable level of
+    wavefront distortions. Effective control of the experiment allows
+    the interferometer to be operated at a rate of \sivalue{4}{\Hz}. A cold ensemble of $10^6$ atoms in the same
+    internal state is prepared in \sivalue{150}{\ms}. The
+    interferometer operates
+    using a sequence of three laser pulses separated by
+    $T=$ \sivalue{25}{\ms} to achieve sensitivity
+    to horizontal accelerations. Combining this with a classical
+    accelerometer provides a method of correcting for
+    vibration-induced noise, as well as determining the interferometer
+    fringe order. After an integration time of \sivalue{70}{\s}, the
+    sensitivity to horizontal accelerations is better than
+    \sivalue{1e-6}{\m\s\tothe{-2}}. Effects which limit this
+    sensitivity are discussed.
+  \end{document} 

@@ -1,11 +1,17 @@
 \chapter{Outlook}
 \section{Conclusions}
-This project set out to explore the use of atom interferometry for
-inertial navigation. The specific aim was to demonstrate sensitivity
+This project set out to develop an atom interferometer that could be
+suitable for 
+inertial navigation. The specific aim was to build a device and demonstrate sensitivity
 to horizontal accelerations where gravitational acceleration acts
 perpendicularly to the sensitive axis. Requirements for a high
 measurement bandwidth and low dead time influenced the development of
-the experiment. \par\noindent
+the experiment. The project was a team effort in which my particular
+tasks were to design, build and programme the computer control systems
+and to control the whole complex apparatus through a user interface. I
+was also responsible for characterising and understanding the various
+sources of noise in the device. 
+\par\noindent
 The dead time between measurements is reduced by
 loading the atoms from a 2D \ac{mot} and through an improved design of
 the control software. Using a 2D \ac{mot} reduces the time required to
@@ -13,12 +19,12 @@ load a sufficient number of atoms when compared to loading from a
 background vapour. The hardware that controls the experiment
 regenerates the necessary voltage patterns, removing the need for
 additional time to
-re-calculate the experimental sequence. This enables the loading of
+re-calculate the experimental sequence. This made it possible to load
 $10^8$ atoms into the 3D \ac{mot} after \sivalue{100}{\ms}. With a
-maximal interrogation time of $2T = $\sivalue{50}{\ms}, the
-interferometer can be operated up to a rate of \sivalue{4}{\Hz}, which
+maximum interrogation time of $2T = $ \sivalue{50}{\ms}, the
+interferometer can currently be operated up to a rate of \sivalue{4}{\Hz}, which
 corresponds to a duty cycle of 20\%. With further optimisation of the
-2D \ac{mot} system, such as increased cooling beam power, it is
+2D \ac{mot} system, such as increased cooling beam power, it will be
 possible to increase the atomic flux and hence increase the experiment
 cycling rate. 
 \par\noindent
@@ -58,55 +64,52 @@ this can be found in Xiaxi Cheng's PhD thesis~\cite{Cheng2018}.
 The sensitivity to horizontal accelerations was demonstrated by
 comparing the interferometer signal in differing levels of vibration
 noise. This also highlighted the importance of vibration isolation for
-accurate acceleration measurements. When the phase noise is larger
-than $2\pi$ \sivalue{}{\radian}, it
-is not possible to accurately estimate acceleration using the
-interferometer signal. An auxiliary measurement from a classical
-sensor is needed to filter the vibration noise. After correcting for
-this phase noise, it was found that the stability of the
-interferometer signal improved, particularly when the noise was
-smaller than $\pi$ \sivalue{}{\radian} - a half-side of a fringe. 
+accurate acceleration measurements. A study has been made of a hybrid
+system in which the atom interferometer works together with a MEMS
+accelerometer. This will be particularly important in a high-vibration
+environment where the classical accelerometer can identify the order
+number of the atom interferometer fringe. 
 \section{Avenues of Further Research}
 Although this work represents the first step towards inertial
 navigation using atom interferometry, there is still more to be done.
-Further work is planned to extend this system measure accelerations
+The bias is one area to study. It is believed that the
+interferometer will have exceedingly low bias and that its main role
+might be to correct the bias of an associated conventional
+accelerometer. This is important as any bias can result in significant
+position error at long times. When navigating on the surface of the
+Earth, there is a feedback mechanism which partially corrects for bias
+and leads to Schuler oscillations~\cite{Schuler1923}. Nevertheless, it
+is desirable to have no bias and that seems possible with atom
+interferometry. Further work is planned to extend this system to measure accelerations
 along 3 axes. This requires a modification of the Raman laser system so
-that it can provide enough power from three outputs. This
-configuration will need to account for the orientation of the
-accelerometer. If the
-direction of gravity is not accurately known, it will bias the
-acceleration measured by the accelerometer, depending on its
-orientation. This is a known problem in inertial navigation. An error
-in orientation leads to a
-position error that oscillates periodically, known as a Schuler
-oscillation~\cite{Schuler1923}. Orienting the accelerometer using a
-gyroscope will help to improve the position accuracy, particularly over
-durations longer than the Schuler period $2\pi
-\sqrt{R_\textnormal{Earth}/g} \approx$
-\sivalue{84.4}{\minute}. 
+that it can provide enough power from three outputs. It will be
+important to have good control over the orientation of the
+accelerometer.
 \par\noindent
-A comparison of the interferometer's performance to conventional
+A comparison of the interferometer with conventional
 accelerometers will greatly benefit research aimed towards
 practical applications of atom interferometry. This has already been
 demonstrated in the context of gravimeters~\cite{Farah2014,Gillot2014}, where a
 mobile atomic system has demonstrated greater insensitivity to
 vibration noise and better short-term stability than the
 state-of-the-art classical counterpart. Additionally, this interferometer has
-yet to be tested outside of a laboratory environment. A recent
+yet to be tested outside of a laboratory environment. As a first step
+in that direction, it was demonstrated at the UK National Quantum
+Technologies Showcase in November $2018$ in the Queen Elizabeth
+\rom{2} conference centre, where it operated in a normal room in the
+presence of 800 people and a large fluctuating ambient magnetic field. A recent
 experiment has investigated the bias stability of a hybrid sensor in a
-simulated harsh environment~\cite{Cheiney2018}. An extension of this
-work to measuring a range of accelerations would further
-support the viability of cold atom inertial sensors.  
+simulated harsh environment~\cite{Cheiney2018}.   
 \section{Concluding Remarks}
 The application of newly understood physics has often led to the
 development of more advanced technology. In turn, this has contributed
 to further progress in scientific disciplines, and society in general.
-This philosophy can be applied to the application of matter-wave
-interferometry to inertial sensing. There already exists a significant
+This describes well the present effort to use matter-wave
+interferometry for inertial sensing. There already exists a significant
 body of research that demonstrates the technical feasibility of
 measuring inertial forces using cold atomic systems. In addition, the
 practical requirements for navigation have served to identify a need
-for the unique benefits of atom interferometers. This work presented
+for the unique benefits of atom interferometers. The work presented
 in this thesis has helped to address this need. It is anticipated that
 the application of quantum mechanics to technology will
 bring practical benefits as well as enable a deeper understanding of

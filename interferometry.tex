@@ -299,25 +299,33 @@ measured when detecting atoms in the \(\ket{F=2}\) state as the
 intensity of the light increases. The saturation parameter \(s\) is
 inferred from the control voltage used control the light
 through the \ac{aom} at the output of the
-\Muquans laser (see~\FigureRef{fig:muquans_cooling}) and the peak
-intensity of the \ac{mot} beams. By the time the atoms are detected,
+\Muquans laser (see~\FigureRef{fig:muquans_cooling}). This value
+assumes that the atoms are at the peak
+intensity of the \ac{mot} beams. However, by the time the atoms are detected,
 they have moved away from the region of peak intensity, so the
-intensity on the atoms is smaller than the applied control voltage
-would indicate if they were at the peak intensity. A fit parameter $b$
-is introduced to account for this. A non-linear least squares fit
+intensity on the atoms is smaller than indicated. A fit parameter $b$
+is introduced to account for this reduction. This is estimated using a non-linear least squares fit
 to the function
 \begin{equation}
-  v = a\frac{b s}{1 + b s + 4 \left(\delta_D/\Gamma\right)^2}
+  V = a\frac{b s}{1 + b s + 4 \left(\delta_D/\Gamma\right)^2}
   \label{eq:voltage_fit}
 \end{equation}
-gives a scaling for the intensity of \(b = 0.83\). The variance in the
-measured voltage (for a constant mean number of atoms) is minimised when the
-intensity is around 3\(I_\text{sat}\). Above this intensity, there is
-a significant depopulation into \(\ket{F=1}\) caused by off-resonant
-excitations to the \(\ket{F'=2}\) state.
-This is evident in the voltage signal over time, which is
-shown in \FigureRef{fig:detection_time} for various intensities. At an
-intensity of 3\(I_\text{sat}\), around 5\% of the population is
+which for $\delta_D = \sivalue{3}{\MHz}$ gives a value of \(b =
+0.83(11)\)
+and . \FigureRef{fig:detection_time} shows the voltage recorded by the
+photodiode during detection for a range of detection intensities.
+We can see that there is evidence of a de-population of the
+$\ket{F=2}$ state, which is not expected given that the detection
+beams are polarised to both drive the $\sigma^+$ transition. However,
+as previously seen in
+\SectionRef{subsec:optical_pumping}, we know that the magnetic field is not
+perfectly aligned with axis of the $\vec{z}$ \ac{mot} beams. It is
+likely that a small component of the light is driving off-resonant
+transitions to $\ket{F'=2}$ and de-populating the $\ket{F=2}$ state
+for the same reason that we do not see a complete population of the
+$\ket{F=1,0}$ state.
+The photodiode signal is most stable at an intensity of
+3\(I_\text{sat}\), where approximately 5\% of the population is
 pumped out of \(\ket{F=2}\).
 \begin{figure}[htpb!]
   \centering
@@ -489,7 +497,7 @@ that there are \(\Delta m = \pm 1\) transitions, which can only occur
 if one of the lasers drives a \(\pi\) transition. The Zeeman shifts on
 the co-propagating transitions between \(\ket{F=1,0}
 \rightarrow \ket{F=2,1}\) and \(\ket{F=1,1}\rightarrow \ket{F=2,1}\)
-are \sivalue{95}{\kilo\hertz} and \sivalue{189.5}{\kilo\hertz}, and
+are \sivalue{0.95}{\mega\hertz} and \sivalue{1.895}{\mega\hertz}, and
 are perfectly consistent with the known applied magnetic field of \sivalue{1.4}{\gauss}.
 %\begin{table}
 %  \centering
@@ -554,7 +562,10 @@ Each narrow transition from \(\ket{1,0}\) has broader
 peaks on either side which are the Doppler-sensitive transitions
 produced by counter-propagating beams.
 The central peak is shown in more detail
-in~\FigureRef{fig:raman_spectrum_inset}. The counter-propagating
+in~\FigureRef{fig:raman_spectrum_inset}. The shoulder visible on the
+right, but not the left, of the central peak suggests an asymmetry in
+the forwards and backwards-propagating Raman beams which has not yet
+been understood. The counter-propagating
 transitions are shifted from the central co-propagating peak by \sivalue{-185}{\kilo\hertz} and
 \(+\)\sivalue{215}{\kilo\hertz} respectively. This difference is
 explained by the recoil shift $\Delta f_r = \frac{1}{2\pi}\frac{\hbar
@@ -579,7 +590,7 @@ from a thermal distribution of atoms gives a temperature of
 \sivalue{15}{\micro\kelvin} and \sivalue{13.5}{\micro\kelvin} from
 each counter-propagating transition. At the time this spectrum was
 measured, the molasses was not optimised to give the lowest
-temperature.
+temperature. 
 \begin{figure}[htpb!]
   \centering
   \includegraphics[width=0.7\textwidth]{raman_spectrum_inset}
@@ -1574,7 +1585,7 @@ $S_\Phi(\omega) = H_a(\omega)^2 S_a(\omega)$.
 separation time of $T = $ \sivalue{25}{\ms} with and
 without the pneumatic suspension. The filtering of the noise within
 the 6-\sivalue{200}{\Hz} band is also apparent here, as is the
-amplification of the low frequency noise.  
+amplification of the low frequency noise. 
 \begin{figure}[htpb!]
   \centering
   \subfloat[][]{\includegraphics[width=0.5\textwidth]{vibration_trace}\label{fig:vibration_trace}}
@@ -1631,7 +1642,9 @@ acceleration.
 \begin{figure}[htpb]
   \centering
   \includegraphics[width=0.7\linewidth]{vibration_shot_fluct.pdf}
-  \caption{Calculated Allan deviation of the interferometer phase for
+  \caption[Calculated Allan deviation of the interferometer phase from vibration
+  noise.]{Calculated
+    Allan deviation of the interferometer phase from vibration noise
     versus number of samples (each measurement lasts for
     \sivalue{50}{\ms}). As in~\FigureRef{fig:vibration_spectrum}, the blue curve
 shows the high vibration noise case and the orange curve shows the low
@@ -1672,7 +1685,7 @@ when we average over more than 30 measurements
   \centering
   \begin{tabular}{ccccc}
     \toprule
-    \multirow{2}{}{Noise Source}  & \multicolumn{2}{c}{2 samples} &
+    \multirow{2}{*}{Noise Source}  & \multicolumn{2}{c}{2 samples} &
     \multicolumn{2}{c}{50 samples} \\
                                   & $\sigma_{\Phi}$  (\sivalue{}{\milli\radian})  &\(\sigma_a\)
     (\sivalue{}{\micro\meter\per\s\squared}) &
@@ -1995,7 +2008,8 @@ opportunity for aliasing of the high-frequency noise.
   environment.]{Allan deviation of the interferometer phase with
     floating table. Orange curve: measured deviation including
     vibrations. Blue curve: measured deviation after subtracting MEMS
-    accelerometer reading. Orange dotted line: Allan deviation
+    accelerometer reading, where the uncertainty is dominated by the
+    noise floor of the MEMS. Orange dotted line: Allan deviation
     expected from vibration noise. Orange dashed line: $N^{-1/2}$
     scaling before subtracting vibrations. Blue dashed line: $N^{-1/2}$
     scaling after subtracting vibrations. Black dashed line:

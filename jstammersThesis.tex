@@ -9,14 +9,12 @@
 %% For Cambridge soft-bound version
 %\documentclass[hyperpdf,bindnopdf,booktabs, oneside]{hepthesis}
 %% For Cambridge hard-bound version (must be one-sided)
-%\documentclass[hyperpdf,oneside]{hepthesis}
-
+%\documentclass[hyperpdf,oneside,bind]{hepthesis}
 % Load special font packages here if you wish
 
 \include{preamble}
 %\includeonly{mots,interferometry}
 \makeatother
-%\tikzexternalize
 \begin{document}
 \begin{frontmatter}
     \include{frontmatter}
@@ -26,7 +24,6 @@
    \include{introduction}
     \include{theory}
     \include{compcontrol}
-  %\include{expsetup}
     \include{mots}
     \include{atompreparation}
     \include{ramanoptics}
@@ -34,9 +31,6 @@
     \include{conclusion}
 \end{mainmatter}
 
-\begin{appendices}
-    \include{appendices}
-\end{appendices}
 
 \begin{backmatter}
     \include{backmatter}

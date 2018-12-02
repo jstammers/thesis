@@ -174,9 +174,9 @@ field per unit current of
 \begin{figure}[htbp!]
 	\centering
 	\def\svgwidth{\columnwidth}
-	\subfloat[][]{\scalebox{0.4}{\includegraphics{2D_field_xz.pdf}}\label{fig:2d_field_xz}}
-  \subfloat[][]{\scalebox{0.4}{\includegraphics{2D_grad.pdf}}\label{fig:2d_grad}}\\
-  \subfloat[][]{\scalebox{0.4}{\includegraphics{2D_field_xy.pdf}\label{fig:2d_field_xy}}}
+	\subfloat[][]{\scalebox{0.35}{\includegraphics{2D_field_xz.pdf}}\label{fig:2d_field_xz}}
+  \subfloat[][]{\scalebox{0.35}{\includegraphics{2D_grad.pdf}}\label{fig:2d_grad}}\\
+  \subfloat[][]{\scalebox{0.35}{\includegraphics{2D_field_xy.pdf}\label{fig:2d_field_xy}}}
 	\caption[Calculated field and field gradients for the 2D \ac{mot} quadrupole
 		coils]{Calculated field and field gradients for the 2D \ac{mot}
 		quadrupole coils. In this coordinate system, the 2D \ac{mot}cools and
@@ -651,7 +651,7 @@ lab. The cooling light is detuned by \(-2 \Gamma\) from the
 \trans{2}{3} transition for the 2D \ac{mot} and by\(-2.5 \Gamma\) for the 3D
 \ac{mot}. The push beam is at resonance. A timing diagram of the
 loading sequence is given in~\FigureRef{fig:mot_loading_timing}. The
-light and magnetic fields (both the quadrupole and bias fields)
+light and quadrupole field 
 for the 2D \ac{mot} are switched off after \sivalue{100}{\milli\second} and the
 3D \ac{mot} is kept on for a further \sivalue{50}{\milli\second} to allow for
 the transit of the remaining atoms from the 2D \ac{mot} to the 3D \ac{mot}.

@@ -49,9 +49,49 @@ researchers must make clear to others the licence terms of this
 work.
 \end{declaration}
 \begin{acknowledgements}
-    There are many people to whom I owe a great deal of thanks. 
+\noindent
+There are many people whose support I wish to acknowledge. Firstly, I would like to thank Ed Hinds for his
+supervision and guidance throughout the project. His attention to
+detail and desire to understand the experiment from first principles
+have taught me a lot about how to approach scientific research. I also
+owe a great deal of thanks to the various post-docs I have worked
+with. Yu-Hung Lien and Giovanni Barontini were both immensely helpful when I was a new student
+and unfamiliar with the techniques required to trap and cool Rubidium
+was invaluable. After they moved on, we were soon joined by Indranil
+Dutta. As someone who had just come from a well-established
+atom interferometry experiment, he was a welcome addition
+to our project. I owe him a great deal for everything he taught me
+about how to build an interferometer and to diagnose the inevitable
+problems along the way. Later on, we were joined by Joe Cotter and
+Teodor Krastev, who were both very helpful in developing the
+interferometer into a more robust device. Joe was. Theo's expert
+Then there are the other students on the Navigator project. It was a
+great pleasure working with Xiaxi Cheng as he was always willing to
+work on understanding the problem at hand. The next stage of the
+project is being undertaken by Shane de Souza and Nicola Bilton. I
+have enjoyed working with the both of them and being able to pass on
+some of the knowledge that I have learned to them. I wish them all the
+best for the continuation of their PhDs. 
+\par\noindent 
+I have thoroughly enjoyed working as part of CCM. The friendly,
+collaborative environment, as well as the social cohesion of the group
+is something often hard to come by. I would like to particularly
+acknowledge Kyle Jarvis and Dylan Sabulsky. The three of us started
+our PhDs together, and I feel that we have a lot of shared experiences
+of life as PhD students, both positive and negative. I also owe a
+great deal of thanks to Sanja Maricic and Jon Dyne. Without Sanja's
+ability to deal with the complex and intricate details of Imperial
+College's administration and Jon's expertise at turning
+any Inventor design into a precision-engineered component, I am
+certain my PhD would have gone much differently.
+\par\noindent
+Finally, I would like to acknowledge people within my personal life
+who have helped me get to where I am today. My parents, Si\^{a}n and
+Carl have always been very supportive of my choices and life and I
+will be forever grateful to them. Last, but by no means least, I would
+like to thank Vickie for all of her support and encouragement during
+my PhD. Even when  
 \end{acknowledgements}
-
 %\begin{preface}
 %    This thesis describes my research on various aspects of\ldots
 %\end{preface}

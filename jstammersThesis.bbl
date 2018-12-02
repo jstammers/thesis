@@ -4,136 +4,12 @@
 \makeatother
 \providecommand{\doi}{\texttt{doi:}\begingroup \urlstyle{tt}\Url}
 
-\bibitem{ESSEN1955}
-\hrefCMSnoop {} {L.~ESSEN and J.~V.~L. PARRY, ``{An Atomic Standard of
-  Frequency and Time Interval: A C{\ae}sium Resonator}'',} \textit{ Nature}
-  \textbf{ 176} (aug, 1955) 280--282,
-  \href{http://dx.doi.org/10.1038/176280a0}{\doi{10.1038/176280a0}}.
-
-\bibitem{Levine}
-\hrefCMSnoop {} {J.~Levine and T.~Parker, ``{The algorithm used to realize
-  UTC(NIST)}'',} in \textit{ Proceedings of the 2002 IEEE International
-  Frequency Control Symposium and PDA Exhibition (Cat. No.02CH37234)},
-  pp.~537--542.
-\newblock IEEE.
-\newblock
-  \href{http://dx.doi.org/10.1109/FREQ.2002.1075941}{\doi{10.1109/FREQ.2002.1075941}}.
-
-\bibitem{Clauser1988}
-\href {http://www.sciencedirect.com/science/article/pii/0378436388901763}
-  {J.~Clauser, ``{Ultra-High Sensitvity Accelerometers And Gyroscopes Using
-  Neutral Atom Matter-Wave Interferometry}'',} \textit{ Physica B+ C} \textbf{
-  151} (1988) 262--272.
-
-\bibitem{Borde1989}
-\hrefCMSnoop {} {C.~Bord{\'{e}}, ``{Atomic interferometry with internal state
-  labelling}'',} \textit{ Physics Letters A} \textbf{ 140} (sep, 1989) 10--12,
-  \href{http://dx.doi.org/10.1016/0375-9601(89)90537-9}{\doi{10.1016/0375-9601(89)90537-9}}.
-
-\bibitem{Kasevich1991}
-\hrefCMSnoop {} {M.~Kasevich and S.~Chu, ``{Atomic Interferometry Using
-  Stimulated Raman Transistions}'',} \textit{ Physical Review Letters} \textbf{
-  67} (mar, 1991) 181--184,
-  \href{http://dx.doi.org/10.1097/01.NUMA.0000442649.24195.3c}{\doi{10.1097/01.NUMA.0000442649.24195.3c}}.
-
-\bibitem{Kasevich1992}
-\href {http://link.springer.com/article/10.1007/BF00325375} {M.~Kasevich and
-  S.~Chu, ``{Measurement of the Gravitational Acceleration of an Atom with a
-  Light-Pulse Atom Interferometer}'',} \textit{ Applied Physics B} \textbf{
-  332} (1992) 321--332.
-
-\bibitem{Durfee2006}
-\hrefCMSnoop {} {D.~S. Durfee, Y.~K. Shaham, and M.~A. Kasevich, ``{Long-Term
-  Stability of an Area-Reversible Atom-Interferometer Sagnac Gyroscope}'',}
-  \textit{ Physical Review Letters} \textbf{ 97} (dec, 2006) 240801,
-  \href{http://dx.doi.org/10.1103/PhysRevLett.97.240801}{\doi{10.1103/PhysRevLett.97.240801}}.
-
-\bibitem{Dubetsky2006}
-\hrefCMSnoop {} {B.~Dubetsky and M.~Kasevich, ``{Atom interferometer as a
-  selective sensor of rotation or gravity}'',} \textit{ Physical Review A}
-  \textbf{ 74} (aug, 2006) 023615,
-  \href{http://dx.doi.org/10.1103/PhysRevA.74.023615}{\doi{10.1103/PhysRevA.74.023615}}.
-
-\bibitem{Borde2002}
-\hrefCMSnoop {} {C.~J. Borde, ``{Atomic clocks and inertial sensors}'',}
-  \textit{ Metrologia} \textbf{ 39} (2002), no.~5, 435--463,
-  \href{http://dx.doi.org/10.1088/0026-1394/39/5/5}{\doi{10.1088/0026-1394/39/5/5}}.
-
-\bibitem{Barrett2013}
-\hrefCMSnoop {} {B.~Barrett, P.~a. Gominet, E.~Cantin{ et~al.}, ``{Mobile and
-  remote inertial sensing with atom interferometers}'',} \textit{ Proceedings
-  of the International School of Physics "Enrico Fermi", Vol 188} (2013)
-  \href{http://dx.doi.org/10.3254/978-1-61499-448-0-493}{\doi{10.3254/978-1-61499-448-0-493}},
-  \href{http://www.arXiv.org/abs/1311.7033}{\texttt{ arXiv:1311.7033}}.
-
-\bibitem{Nyman2006a}
-\hrefCMSnoop {} {R.~Nyman, G.~Varoquaux, F.~Lienhart{ et~al.}, ``{I.C.E.: a
-  transportable atomic inertial sensor for test in microgravity}'',} \textit{
-  Applied Physics B} \textbf{ 84} (aug, 2006) 673--681,
-  \href{http://dx.doi.org/10.1007/s00340-006-2395-7}{\doi{10.1007/s00340-006-2395-7}}.
-
-\bibitem{Geiger2011a}
-\hrefCMSnoop {} {R.~Geiger, V.~M{\'{e}}noret, G.~Stern{ et~al.}, ``{Detecting
-  inertial effects with airborne matter-wave interferometry.}'',} \textit{
-  Nature communications} \textbf{ 2} (jan, 2011) 474,
-  \href{http://dx.doi.org/10.1038/ncomms1479}{\doi{10.1038/ncomms1479}}.
-
-\bibitem{Faruqi2000}
-\hrefCMSnoop {} {F.~A. Faruqi and K.~J. Turner, ``{Extended Kalman filter
-  synthesis for integrated global positioning/inertial navigation systems}'',}
-  \textit{ Applied Mathematics and Computation} \textbf{ 115} (oct, 2000)
-  213--227,
-  \href{http://dx.doi.org/10.1016/S0096-3003(98)10068-1}{\doi{10.1016/S0096-3003(98)10068-1}}.
-
-\bibitem{Wen2016}
-\hrefCMSnoop {} {K.~Wen, C.~K. Seow, and S.~Y. Tan, ``{Inertial navigation
-  system positioning error analysis and Cram{\'{e}}r-Rao lower bound}'',} in
-  \textit{ 2016 IEEE/ION Position, Location and Navigation Symposium (PLANS)},
-  pp.~213--218.
-\newblock IEEE, apr, 2016.
-\newblock
-  \href{http://dx.doi.org/10.1109/PLANS.2016.7479704}{\doi{10.1109/PLANS.2016.7479704}}.
-
-\bibitem{Rakholia2014a}
-\href {http://arxiv.org/abs/1407.3847} {A.~V. Rakholia, H.~J. McGuinness, and
-  G.~W. Biedermann, ``{Dual-axis, high data-rate atom interferometer via cold
-  ensemble exchange}'',} \href{http://www.arXiv.org/abs/1407.3847}{\texttt{
-  arXiv:1407.3847}}.
-
-\bibitem{Biedermann2017}
-\hrefCMSnoop {} {G.~W. Biedermann, H.~J. McGuinness, A.~V. Rakholia{ et~al.},
-  ``{Atom Interferometry in a Warm Vapor}'',} \textit{ Physical Review Letters}
-  \textbf{ 118} (apr, 2017) 163601,
-  \href{http://dx.doi.org/10.1103/PhysRevLett.118.163601}{\doi{10.1103/PhysRevLett.118.163601}}.
-
-\bibitem{JEKELI2005}
-\hrefCMSnoop {} {C.~JEKELI, ``{Navigation Error Analysis of Atom Interferometer
-  Inertial Sensor}'',} \textit{ Navigation} \textbf{ 52} (mar, 2005) 1--14,
-  \href{http://dx.doi.org/10.1002/j.2161-4296.2005.tb01726.x}{\doi{10.1002/j.2161-4296.2005.tb01726.x}}.
-
-\bibitem{Dutta2016}
-\hrefCMSnoop {} {I.~Dutta, D.~Savoie, B.~Fang{ et~al.}, ``{Continuous Cold-Atom
-  Inertial Sensor with 1 nrad/sec Rotation Stability}'',} \textit{ Physical
-  Review Letters} \textbf{ 116} (may, 2016) 183003,
-  \href{http://dx.doi.org/10.1103/PhysRevLett.116.183003}{\doi{10.1103/PhysRevLett.116.183003}}.
-
-\bibitem{Merlet2009}
-\hrefCMSnoop {} {S.~Merlet, J.~{Le Gou{\"{e}}t}, Q.~Bodart{ et~al.},
-  ``{Operating an atom interferometer beyond its linear range}'',} \textit{
-  Metrologia} \textbf{ 46} (feb, 2009) 87--94,
-  \href{http://dx.doi.org/10.1088/0026-1394/46/1/011}{\doi{10.1088/0026-1394/46/1/011}}.
-
-\bibitem{Lautier2014}
-\hrefCMSnoop {} {J.~Lautier, L.~Volodimer, T.~Hardin{ et~al.}, ``{Hybridizing
-  matter-wave and classical accelerometers}'',} \textit{ Applied Physics
-  Letters} \textbf{ 105} (oct, 2014) 144102,
-  \href{http://dx.doi.org/10.1063/1.4897358}{\doi{10.1063/1.4897358}}.
-
-\bibitem{Dimopoulos2008}
-\hrefCMSnoop {} {S.~Dimopoulos, P.~Graham, J.~Hogan{ et~al.}, ``{Atomic
-  gravitational wave interferometric sensor}'',} \textit{ Physical Review D}
-  \textbf{ 78} (dec, 2008) 122002,
-  \href{http://dx.doi.org/10.1103/PhysRevD.78.122002}{\doi{10.1103/PhysRevD.78.122002}}.
+\bibitem{Farah2014}
+\hrefCMSnoop {} {T.~Farah, C.~Guerlin, A.~Landragin{ et~al.}, ``{Underground
+  operation at best sensitivity of the mobile LNE-SYRTE Cold Atom
+  Gravimeter}'',}
+  \href{http://dx.doi.org/10.1134/S2075108714040051}{\doi{10.1134/S2075108714040051}},
+  \href{http://www.arXiv.org/abs/1404.6722}{\texttt{ arXiv:1404.6722}}.
 
 \bibitem{accelStandard}
 \hrefCMSnoop {} {``{IEEE Standard Specification Format Guide and Test Procedure
@@ -141,159 +17,24 @@
   1293-1998 (R2008)} (2011) 1--249,
   \href{http://dx.doi.org/10.1109/IEEESTD.2011.5960745}{\doi{10.1109/IEEESTD.2011.5960745}}.
 
-\bibitem{Grynberg2011}
-\hrefCMSnoop {} {G.~Grynberg, A.~Aspect, and C.~Fabre, ``{Introduction to
-  Quantum Optics: From the Semi-Classical Approach to Quantized Light}'',}
-  \textit{ Contemporary Physics} (nov, 2011) 45--106,
-  \href{http://dx.doi.org/10.1080/00107514.2011.604134}{\doi{10.1080/00107514.2011.604134}}.
+\bibitem{Lawrence1998a}
+A.~Lawrence, ``{Modern Inertial Technology}''.
+\newblock Mechanical Engineering Series. Springer New York, New York, NY, 1998.
 
-\bibitem{Metcalf2003}
-\href {http://www.opticsinfobase.org/abstract.cfm?uri=josab-20-5-887}
-  {H.~Metcalf and P.~V.~D. Straten, ``{Laser cooling and trapping of atoms}'',}
-  \textit{ JOSA B} (2003).
+\bibitem{Cheng2018}
+\hrefCMSnoop {} {X.~Cheng, ``{No Title}''}.
+\newblock PhD thesis, Imperial College London, 2018.
 
-\bibitem{Wu1996}
-\hrefCMSnoop {} {Y.~Wu, ``{Effective Raman theory for a three-level atom in the
-  $\Lambda$ configuration}'',} \textit{ Physical Review A - Atomic, Molecular,
-  and Optical Physics} \textbf{ 54} (1996), no.~2, 1586--1592,
-  \href{http://dx.doi.org/10.1103/PhysRevA.54.1586}{\doi{10.1103/PhysRevA.54.1586}}.
+\bibitem{Borde1989}
+\hrefCMSnoop {} {C.~Bord{\'{e}}, ``{Atomic interferometry with internal state
+  labelling}'',} \textit{ Physics Letters A} \textbf{ 140} (sep, 1989) 10--12,
+  \href{http://dx.doi.org/10.1016/0375-9601(89)90537-9}{\doi{10.1016/0375-9601(89)90537-9}}.
 
-\bibitem{RBerman1997}
-P.~{R Berman}, ``{Atom Interferometry}''.
-\newblock 1997.
-
-\bibitem{Storey1994}
-\href
-  {http://jp2.journaldephysique.org/articles/jp2/abs/1994/11/jp2v4p1999/jp2v4p1999.html}
-  {P.~Storey and C.~Cohen-Tannoudji, ``{The Feynman path integral approach to
-  atomic interferometry. A tutorial}'',} \textit{ Journal de Physique II}
-  (1994).
-
-\bibitem{Weiss1994}
-\hrefCMSnoop {} {D.~S. Weiss, B.~C. Young, and S.~Chu, ``{Precision measurement
-  of ?/m Cs based on photon recoil using laser-cooled atoms and atomic
-  interferometry}'',} \textit{ Applied Physics B Lasers and Optics} \textbf{
-  59} (sep, 1994) 217--256,
-  \href{http://dx.doi.org/10.1007/BF01081393}{\doi{10.1007/BF01081393}}.
-
-\bibitem{Han2012}
-\href {http://arxiv.org/abs/1209.6569} {R.~Han, H.~K. Ng, and B.-G. Englert,
-  ``{Raman transitions without adiabatic elimination: A simple and accurate
-  treatment}'',} \textit{ Journal of Modern Optics} \textbf{ 60} (sep, 2012)
-  17, \href{http://www.arXiv.org/abs/1209.6569}{\texttt{ arXiv:1209.6569}}.
-
-\bibitem{Ramsey1950}
-\hrefCMSnoop {} {N.~F. Ramsey, ``{A Molecular Beam Resonance Method with
-  Separated Oscillating Fields}'',} \textit{ Physical Review} \textbf{ 78}
-  (jun, 1950) 695--699,
-  \href{http://dx.doi.org/10.1103/PhysRev.78.695}{\doi{10.1103/PhysRev.78.695}}.
-
-\bibitem{Brink1968}
-\hrefCMSnoop {} {D.~M. Brink and G.~R. Satchler, ``{Matrix Elements of Tensor
-  Operators}'',} in \textit{ Angular Momentum}, pp.~56--60.
-\newblock 1968.
-
-\bibitem{Steck2001}
-\href {http://www.steck.us/alkalidata/rubidium87numbers.pdf} {D.~Steck,
-  ``{Rubidium 87 D Line Data}'',}.
-
-\bibitem{Gauguet2009}
-\hrefCMSnoop {} {A.~Gauguet, B.~Canuel, T.~L{\'{e}}v{\`{e}}que{ et~al.},
-  ``{Characterization and limits of a cold-atom Sagnac interferometer}'',}
-  \textit{ Physical Review A} \textbf{ 80} (dec, 2009) 063604,
-  \href{http://dx.doi.org/10.1103/PhysRevA.80.063604}{\doi{10.1103/PhysRevA.80.063604}}.
-
-\bibitem{Keshet2012}
-\hrefCMSnoop {} {A.~Keshet and W.~Ketterle, ``{A Distributed GUI-based Computer
-  Control System for Atomic Physics Experiments}'',}
-  \href{http://dx.doi.org/10.1063/1.4773536}{\doi{10.1063/1.4773536}},
-  \href{http://www.arXiv.org/abs/1208.2607}{\texttt{ arXiv:1208.2607}}.
-
-\bibitem{Dieckmann1998}
-\hrefCMSnoop {} {K.~Dieckmann, R.~J.~C. Spreeuw, M.~Weidem{\"{u}}ller{ et~al.},
-  ``{Two-dimensional magneto-optical trap as a source of slow atoms}'',}
-  \textit{ Physical Review A} \textbf{ 58} (nov, 1998) 3891--3895,
-  \href{http://dx.doi.org/10.1103/PhysRevA.58.3891}{\doi{10.1103/PhysRevA.58.3891}}.
-
-\bibitem{Muller2007}
-\hrefCMSnoop {} {T.~M{\"{u}}ller, T.~Wendrich, M.~Gilowski{ et~al.},
-  ``{Versatile compact atomic source for high-resolution dual atom
-  interferometry}'',} \textit{ Physical Review A} \textbf{ 76} (dec, 2007)
-  063611,
-  \href{http://dx.doi.org/10.1103/PhysRevA.76.063611}{\doi{10.1103/PhysRevA.76.063611}}.
-
-\bibitem{Roos2003}
-\hrefCMSnoop {} {C.~Roos, P.~Cren, J.~Dalibard{ et~al.}, ``{A Source of Cold
-  Atoms for a Continuously Loaded Magnetic Guide}'',} \textit{ Physica Scripta}
-  \textbf{ T105} (2003), no.~1, 19,
-  \href{http://dx.doi.org/10.1238/Physica.Topical.105a00019}{\doi{10.1238/Physica.Topical.105a00019}}.
-
-\bibitem{Raab1987}
-\hrefCMSnoop {} {E.~L. Raab, M.~Prentiss, A.~Cable{ et~al.}, ``{Trapping of
-  Neutral Sodium Atoms with Radiation Pressure}'',} \textit{ Physical Review
-  Letters} \textbf{ 59} (dec, 1987) 2631--2634,
-  \href{http://dx.doi.org/10.1103/PhysRevLett.59.2631}{\doi{10.1103/PhysRevLett.59.2631}}.
-
-\bibitem{muquansWebPage}
-\href {https://www.muquans.com/images/stories/muquans{\_}laser{\_}systems.pdf}
-  {``{$\mu$Quans Laser System Specifications}''.}
-
-\bibitem{Menoret2011}
-\hrefCMSnoop {} {V.~M{\'{e}}noret, R.~Geiger, G.~Stern{ et~al.},
-  ``{Dual-wavelength laser source for onboard atom interferometry}'',} \textit{
-  Optics Letters} \textbf{ 36} (nov, 2011) 4128,
-  \href{http://dx.doi.org/10.1364/OL.36.004128}{\doi{10.1364/OL.36.004128}}.
-
-\bibitem{Leveque2014}
-\hrefCMSnoop {} {T.~L{\'{e}}v{\`{e}}que, L.~Antoni-Micollier, B.~Faure{
-  et~al.}, ``{A laser setup for rubidium cooling dedicated to space
-  applications}'',} \textit{ Applied Physics B} \textbf{ 116} (sep, 2014)
-  997--1004,
-  \href{http://dx.doi.org/10.1007/s00340-014-5788-z}{\doi{10.1007/s00340-014-5788-z}},
-  \href{http://www.arXiv.org/abs/1309.2075}{\texttt{ arXiv:1309.2075}}.
-
-\bibitem{Supplee1994}
-\hrefCMSnoop {} {J.~M. Supplee, E.~A. Whittaker, and W.~Lenth, ``{Theoretical
-  description of frequency modulation and wavelength modulation
-  spectroscopy}'',} \textit{ Applied Optics} \textbf{ 33} (sep, 1994) 6294,
-  \href{http://dx.doi.org/10.1364/AO.33.006294}{\doi{10.1364/AO.33.006294}}.
-
-\bibitem{Steane1992}
-\hrefCMSnoop {} {A.~M.~A. Steane, M.~Chowdhury, and C.~J. Foot, ``{Radiation
-  force in the magneto-optical trap}'',} \textit{ Journal of the Optical
-  Society of America B} \textbf{ 9} (dec, 1992) 2142,
-  \href{http://dx.doi.org/10.1364/JOSAB.9.002142}{\doi{10.1364/JOSAB.9.002142}}.
-
-\bibitem{Dedman2001}
-\hrefCMSnoop {} {C.~J. Dedman, K.~G.~H. Baldwin, and M.~Colla, ``{Fast
-  switching of magnetic fields in a magneto-optic trap}'',} \textit{ Review of
-  Scientific Instruments} \textbf{ 72} (2001), no.~11, 4055--4058,
-  \href{http://dx.doi.org/10.1063/1.1408935}{\doi{10.1063/1.1408935}}.
-
-\bibitem{Haw2012}
-\hrefCMSnoop {} {M.~Haw, N.~Evetts, W.~Gunton{ et~al.}, ``{Magneto-optical trap
-  loading rate dependence on trap depth and vapor density}'',} \textit{ Journal
-  of the Optical Society of America B} \textbf{ 29} (feb, 2012) 475,
-  \href{http://dx.doi.org/10.1364/JOSAB.29.000475}{\doi{10.1364/JOSAB.29.000475}}.
-
-\bibitem{Prentiss1988}
-\hrefCMSnoop {} {M.~Prentiss, E.~L. Raab, D.~E. Pritchard{ et~al.},
-  ``{Atomic-density-dependent losses in an optical trap}'',} \textit{ Optics
-  Letters} \textbf{ 13} (jun, 1988) 452,
-  \href{http://dx.doi.org/10.1364/OL.13.000452}{\doi{10.1364/OL.13.000452}}.
-
-\bibitem{Salomon1990}
-\hrefCMSnoop {} {C.~Salomon, J.~Dalibard, W.~D. Phillips{ et~al.}, ``{Laser
-  Cooling of Cesium Atoms Below 3 $\mu$K}'',} \textit{ Europhysics Letters
-  (EPL)} \textbf{ 12} (aug, 1990) 683--688,
-  \href{http://dx.doi.org/10.1209/0295-5075/12/8/003}{\doi{10.1209/0295-5075/12/8/003}}.
-
-\bibitem{Dalibard1989}
-\hrefCMSnoop {} {J.~Dalibard and C.~Cohen-Tannoudji, ``{Laser cooling below the
-  Doppler limit by polarization gradients: simple theoretical models}'',}
-  \textit{ Journal of the Optical Society of America B} \textbf{ 6} (nov, 1989)
-  2023,
-  \href{http://dx.doi.org/10.1364/JOSAB.6.002023}{\doi{10.1364/JOSAB.6.002023}}.
+\bibitem{Geiger2011a}
+\hrefCMSnoop {} {R.~Geiger, V.~M{\'{e}}noret, G.~Stern{ et~al.}, ``{Detecting
+  inertial effects with airborne matter-wave interferometry.}'',} \textit{
+  Nature communications} \textbf{ 2} (jan, 2011) 474,
+  \href{http://dx.doi.org/10.1038/ncomms1479}{\doi{10.1038/ncomms1479}}.
 
 \bibitem{Berg-Sorensent1992}
 \hrefCMSnoop {} {K.~Berg-S{\o}rensent, Y.~Castin, E.~Bonderup{ et~al.},
@@ -302,165 +43,18 @@ P.~{R Berman}, ``{Atom Interferometry}''.
   no.~20, 4195--4215,
   \href{http://dx.doi.org/10.1088/0953-4075/25/20/016}{\doi{10.1088/0953-4075/25/20/016}}.
 
-\bibitem{Molmer1990}
-\hrefCMSnoop {} {K.~Molmer, ``{Atomic momentum diffusion in a
-  $\backslash$sigma{\^{}}+-$\backslash$sigma{\^{}}- laser configuration:
-  influence of an internal sublevel structure}'',} \textit{ Journal of Physics
-  B: Atomic, Molecular and Optical Physics} \textbf{ 23} (1990), no.~22,
-  4101--4110,
-  \href{http://dx.doi.org/10.1088/0953-4075/23/22/012}{\doi{10.1088/0953-4075/23/22/012}}.
+\bibitem{Gauguet2009}
+\hrefCMSnoop {} {A.~Gauguet, B.~Canuel, T.~L{\'{e}}v{\`{e}}que{ et~al.},
+  ``{Characterization and limits of a cold-atom Sagnac interferometer}'',}
+  \textit{ Physical Review A} \textbf{ 80} (dec, 2009) 063604,
+  \href{http://dx.doi.org/10.1103/PhysRevA.80.063604}{\doi{10.1103/PhysRevA.80.063604}}.
 
-\bibitem{Ohshima1995}
-\hrefCMSnoop {} {S.-i. Ohshima, T.~Kurosu, T.~Ikegami{ et~al.}, ``{Cesium
-  Atomic Fountain with Two-Dimensional Moving Molasses}'',} \textit{ Japanese
-  Journal of Applied Physics} \textbf{ 34} (sep, 1995) L1170--L1173,
-  \href{http://dx.doi.org/10.1143/JJAP.34.L1170}{\doi{10.1143/JJAP.34.L1170}}.
-
-\bibitem{VanderStraten1993}
-\hrefCMSnoop {} {P.~van~der Straten, S.-Q. Shang, B.~Sheehy{ et~al.}, ``{Laser
-  cooling at low intensity in a strong magnetic field}'',} \textit{ Phys. Rev.
-  A} \textbf{ 47} (1993), no.~5, 4160--4175,
-  \href{http://dx.doi.org/10.1103/PhysRevA.47.4160}{\doi{10.1103/PhysRevA.47.4160}}.
-
-\bibitem{Chang2002}
-\hrefCMSnoop {} {S.~Chang, T.~Y. Kwon, H.~S. Lee{ et~al.}, ``{Laser sub-Doppler
-  cooling of atoms in an arbitrarily directed magnetic field}'',} \textit{
-  Physical Review A - Atomic, Molecular, and Optical Physics} \textbf{ 66}
-  (2002), no.~4, 23,
-  \href{http://dx.doi.org/10.1103/PhysRevA.66.043404}{\doi{10.1103/PhysRevA.66.043404}}.
-
-\bibitem{Walhout1992}
-\hrefCMSnoop {} {M.~Walhout, J.~Dalibard, S.~L. Rolston{ et~al.},
-  ``{$\sigma${\_}+–$\sigma${\_}− Optical molasses in a longitudinal
-  magnetic field}'',} \textit{ Journal of the Optical Society of America B}
-  \textbf{ 9} (nov, 1992) 1997,
-  \href{http://dx.doi.org/10.1364/JOSAB.9.001997}{\doi{10.1364/JOSAB.9.001997}}.
-
-\bibitem{Berkeland2002}
-\hrefCMSnoop {} {D.~J. Berkeland and M.~G. Boshier, ``{Destabilization of dark
-  states and optical spectroscopy in Zeeman-degenerate atomic systems}'',}
-  \textit{ Physical Review A} \textbf{ 65} (feb, 2002) 033413,
-  \href{http://dx.doi.org/10.1103/PhysRevA.65.033413}{\doi{10.1103/PhysRevA.65.033413}}.
-
-\bibitem{Kasevich1991a}
-\hrefCMSnoop {} {M.~Kasevich, D.~S. Weiss, E.~Riis{ et~al.}, ``{Atomic velocity
-  selection using stimulated Raman transitions}'',} \textit{ Physical Review
-  Letters} \textbf{ 66} (may, 1991) 2297--2300,
-  \href{http://dx.doi.org/10.1103/PhysRevLett.66.2297}{\doi{10.1103/PhysRevLett.66.2297}}.
-
-\bibitem{Kim2017}
-\hrefCMSnoop {} {T.~H. Kim, S.~H. Yim, K.~M. Shim{ et~al.}, ``{Spatial-contrast
-  analysis in a cold-atom Sagnac interferometer with a single large Raman
-  beam}'',} \textit{ Physical Review A} \textbf{ 95} (2017), no.~3, 1--6,
-  \href{http://dx.doi.org/10.1103/PhysRevA.95.033632}{\doi{10.1103/PhysRevA.95.033632}}.
-
-\bibitem{Nelder1965}
-\hrefCMSnoop {} {J.~A. Nelder and R.~Mead, ``{A Simplex Method for Function
-  Minimization}'',} \textit{ The Computer Journal} \textbf{ 7} (jan, 1965)
-  308--313,
-  \href{http://dx.doi.org/10.1093/comjnl/7.4.308}{\doi{10.1093/comjnl/7.4.308}}.
-
-\bibitem{Zhang2004}
-\hrefCMSnoop {} {R.~Zhang and F.~Shi, ``{A Novel Algorithm for Fiber-Optic
-  Alignment Automation}'',} \textit{ IEEE Transactions on Advanced Packaging}
-  \textbf{ 27} (feb, 2004) 173--178,
-  \href{http://dx.doi.org/10.1109/TADVP.2004.825434}{\doi{10.1109/TADVP.2004.825434}}.
-
-\bibitem{Barrett2016}
-\hrefCMSnoop {} {B.~Barrett, L.~Antoni-Micollier, L.~Chichet{ et~al.}, ``{Dual
-  matter-wave inertial sensors in weightlessness}'',} \textit{ Nature
-  Communications} \textbf{ 7} (2016)
-  \href{http://dx.doi.org/10.1038/ncomms13786}{\doi{10.1038/ncomms13786}},
-  \href{http://www.arXiv.org/abs/1609.03598}{\texttt{ arXiv:1609.03598}}.
-
-\bibitem{Foote1992}
-\hrefCMSnoop {} {S.~Foote and D.~Grindeland, ``{Model QA3000 Q-Flex
-  accelerometer high performance test results}'',} \textit{ IEEE Aerospace and
-  Electronic Systems Magazine} \textbf{ 7} (jun, 1992) 59--67,
-  \href{http://dx.doi.org/10.1109/62.145120}{\doi{10.1109/62.145120}}.
-
-\bibitem{Lawrence1998}
-\hrefCMSnoop {} {A.~Lawrence, ``{The Pendulous Accelerometer}'',} pp.~57--71.
-\newblock 1998.
-
-\bibitem{Lawrence1998a}
-A.~Lawrence, ``{Modern Inertial Technology}''.
-\newblock Mechanical Engineering Series. Springer New York, New York, NY, 1998.
-
-\bibitem{Lautier2014b}
-\hrefCMSnoop {} {J.~Lautier, M.~Lours, and a.~Landragin, ``{A compact
-  micro-wave synthesizer for transportable cold-atom interferometers}'',}
-  \textit{ Review of Scientific Instruments} \textbf{ 85} (2014), no.~6,
-  \href{http://dx.doi.org/10.1063/1.4884338}{\doi{10.1063/1.4884338}},
-  \href{http://www.arXiv.org/abs/1406.2911}{\texttt{ arXiv:1406.2911}}.
-
-\bibitem{Marino2008}
-\hrefCMSnoop {} {A.~M. Marino and C.~R. Stroud, ``{Phase-locked laser system
-  for use in atomic coherence experiments.}'',} \textit{ The Review of
-  scientific instruments} \textbf{ 79} (jan, 2008) 013104,
-  \href{http://dx.doi.org/10.1063/1.2823330}{\doi{10.1063/1.2823330}}.
-
-\bibitem{Drever1983}
-\hrefCMSnoop {} {R.~W.~P. Drever, J.~L. Hall, F.~V. Kowalski{ et~al.}, ``{Laser
-  phase and frequency stabilization using an optical resonator}'',} \textit{
-  Applied Physics B Photophysics and Laser Chemistry} \textbf{ 31} (jun, 1983)
-  97--105,
-  \href{http://dx.doi.org/10.1007/BF00702605}{\doi{10.1007/BF00702605}}.
-
-\bibitem{Bollinger1996}
-\hrefCMSnoop {} {J.~J.~. Bollinger, W.~M. Itano, D.~J. Wineland{ et~al.},
-  ``{Optimal frequency measurements with maximally correlated states}'',}
-  \textit{ Physical Review A} \textbf{ 54} (dec, 1996) R4649--R4652,
-  \href{http://dx.doi.org/10.1103/PhysRevA.54.R4649}{\doi{10.1103/PhysRevA.54.R4649}}.
-
-\bibitem{Gauguet2008}
-\hrefCMSnoop {} {A.~Gauguet, T.~E. Mehlst{\"{a}}ubler, T.~L{\'{e}}v{\`{e}}que{
-  et~al.}, ``{Off-resonant Raman transition impact in an atom
-  interferometer}'',} \textit{ Physical Review A} \textbf{ 78} (oct, 2008)
-  043615,
-  \href{http://dx.doi.org/10.1103/PhysRevA.78.043615}{\doi{10.1103/PhysRevA.78.043615}},
-  \href{http://www.arXiv.org/abs/0809.0149}{\texttt{ arXiv:0809.0149}}.
-
-\bibitem{Moler1992}
-\href {http://www.atomwave.org/rmparticle/ao refs/aifm pdfs by group
-  leaders/chu pdfs/MWK92.pdf} {K.~Moler, D.~Weiss, M.~Kasevich{ et~al.},
-  ``{Theoretical Analysis of Velocity-Selective Raman Transitions}'',} \textit{
-  Physical Review A} \textbf{ 45} (1992), no.~1, 342--348.
-
-\bibitem{Rocco2014}
-\hrefCMSnoop {} {E.~Rocco, R.~N. Palmer, T.~Valenzuela{ et~al.},
-  ``{Fluorescence detection at the atom shot noise limit for atom
-  interferometry}'',} \textit{ New Journal of Physics} \textbf{ 16} (sep, 2014)
-  093046,
-  \href{http://dx.doi.org/10.1088/1367-2630/16/9/093046}{\doi{10.1088/1367-2630/16/9/093046}}.
-
-\bibitem{Howard2002}
-R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
-\newblock 2002.
-
-\bibitem{Welch1967}
-\hrefCMSnoop {} {P.~Welch, ``{The use of fast Fourier transform for the
-  estimation of power spectra: A method based on time averaging over short,
-  modified periodograms}'',} \textit{ IEEE Transactions on Audio and
-  Electroacoustics} \textbf{ 15} (jun, 1967) 70--73,
-  \href{http://dx.doi.org/10.1109/TAU.1967.1161901}{\doi{10.1109/TAU.1967.1161901}}.
-
-\bibitem{Allan1966}
-\hrefCMSnoop {} {D.~Allan, ``{Statistics of atomic frequency standards}'',}
-  \textit{ Proceedings of the IEEE} \textbf{ 54} (1966), no.~2, 221--230,
-  \href{http://dx.doi.org/10.1109/PROC.1966.4634}{\doi{10.1109/PROC.1966.4634}}.
-
-\bibitem{El-Sheimy2008}
-\hrefCMSnoop {} {N.~El-Sheimy, H.~Hou, and X.~Niu, ``{Analysis and Modeling of
-  Inertial Sensors Using Allan Variance}'',} \textit{ IEEE Transactions on
-  Instrumentation and Measurement} \textbf{ 57} (jan, 2008) 140--149,
-  \href{http://dx.doi.org/10.1109/TIM.2007.908635}{\doi{10.1109/TIM.2007.908635}}.
-
-\bibitem{Dick1987}
-\href
-  {http://oai.dtic.mil/oai/oai?verb=getRecord{\&}metadataPrefix=html{\&}identifier=ADA502386}
-  {G.~Dick, ``{Local oscillator induced instabilities in trapped ion frequency
-  standards}'',}.
+\bibitem{Dalibard1989}
+\hrefCMSnoop {} {J.~Dalibard and C.~Cohen-Tannoudji, ``{Laser cooling below the
+  Doppler limit by polarization gradients: simple theoretical models}'',}
+  \textit{ Journal of the Optical Society of America B} \textbf{ 6} (nov, 1989)
+  2023,
+  \href{http://dx.doi.org/10.1364/JOSAB.6.002023}{\doi{10.1364/JOSAB.6.002023}}.
 
 \bibitem{Cheinet2008}
 \hrefCMSnoop {} {P.~Cheinet, B.~Canuel, F.~{Pereira Dos Santos}{ et~al.},
@@ -470,11 +64,27 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
   \href{http://dx.doi.org/10.1109/TIM.2007.915148}{\doi{10.1109/TIM.2007.915148}},
   \href{http://www.arXiv.org/abs/0510197}{\texttt{ arXiv:0510197}}.
 
-\bibitem{Canuel2007}
-\hrefCMSnoop {} {B.~Canuel, ``{{\'{E}}tude d'un gyrom{\`{e}}tre {\`{a}} atomes
-  froids}''}.
-\newblock PhD thesis, Universit{\'{e}} Paris Sud - Paris XI, 2007.
-\newblock \href{http://dx.doi.org/tel-00193288}{\doi{tel-00193288}}.
+\bibitem{RBerman1997}
+P.~{R Berman}, ``{Atom Interferometry}''.
+\newblock 1997.
+
+\bibitem{Salomon1990}
+\hrefCMSnoop {} {C.~Salomon, J.~Dalibard, W.~D. Phillips{ et~al.}, ``{Laser
+  Cooling of Cesium Atoms Below 3 $\mu$K}'',} \textit{ Europhysics Letters
+  (EPL)} \textbf{ 12} (aug, 1990) 683--688,
+  \href{http://dx.doi.org/10.1209/0295-5075/12/8/003}{\doi{10.1209/0295-5075/12/8/003}}.
+
+\bibitem{Moler1992}
+\href {http://www.atomwave.org/rmparticle/ao refs/aifm pdfs by group
+  leaders/chu pdfs/MWK92.pdf} {K.~Moler, D.~Weiss, M.~Kasevich{ et~al.},
+  ``{Theoretical Analysis of Velocity-Selective Raman Transitions}'',} \textit{
+  Physical Review A} \textbf{ 45} (1992), no.~1, 342--348.
+
+\bibitem{Peters2001}
+\hrefCMSnoop {} {A.~Peters, K.~Y. Chung, and S.~Chu, ``{High-precision gravity
+  measurements using atom interferometry}'',} \textit{ Metrologia} \textbf{ 38}
+  (feb, 2001) 25--61,
+  \href{http://dx.doi.org/10.1088/0026-1394/38/1/4}{\doi{10.1088/0026-1394/38/1/4}}.
 
 \bibitem{Gouet2008}
 \href {http://link.springer.com/article/10.1007/s00340-008-3088-1} {J.~L.
@@ -483,95 +93,48 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
   (2008) 1--30, \href{http://www.arXiv.org/abs/arXiv:0801.1270v1}{\texttt{
   arXiv:arXiv:0801.1270v1}}.
 
-\bibitem{Vigue2006}
-\hrefCMSnoop {} {M.~J. Vigu{\'{e}}, A.~Miffre, M.~B{\"{u}}chner{ et~al.},
-  ``{Phase noise due to vibrations in Mach-Zehnder atom interferometers}'',}
-  \textit{ EPL (Europhysics Letters)} \textbf{ 75} (2006), no.~5, 688,
-  \href{http://dx.doi.org/10.1209/epl/i2006-10177-6}{\doi{10.1209/epl/i2006-10177-6}},
-  \href{http://www.arXiv.org/abs/0604028}{\texttt{ arXiv:0604028}}.
+\bibitem{Haw2012}
+\hrefCMSnoop {} {M.~Haw, N.~Evetts, W.~Gunton{ et~al.}, ``{Magneto-optical trap
+  loading rate dependence on trap depth and vapor density}'',} \textit{ Journal
+  of the Optical Society of America B} \textbf{ 29} (feb, 2012) 475,
+  \href{http://dx.doi.org/10.1364/JOSAB.29.000475}{\doi{10.1364/JOSAB.29.000475}}.
 
-\bibitem{Zhou2012}
-\hrefCMSnoop {} {M.-K. Zhou, Z.-K. Hu, X.-C. Duan{ et~al.}, ``{Performance of a
-  cold-atom gravimeter with an active vibration isolator}'',} \textit{ Physical
-  Review A} \textbf{ 86} (oct, 2012) 043630,
-  \href{http://dx.doi.org/10.1103/PhysRevA.86.043630}{\doi{10.1103/PhysRevA.86.043630}}.
+\bibitem{Lautier2014b}
+\hrefCMSnoop {} {J.~Lautier, M.~Lours, and a.~Landragin, ``{A compact
+  micro-wave synthesizer for transportable cold-atom interferometers}'',}
+  \textit{ Review of Scientific Instruments} \textbf{ 85} (2014), no.~6,
+  \href{http://dx.doi.org/10.1063/1.4884338}{\doi{10.1063/1.4884338}},
+  \href{http://www.arXiv.org/abs/1406.2911}{\texttt{ arXiv:1406.2911}}.
 
-\bibitem{Bongs2006}
-\hrefCMSnoop {} {K.~Bongs, R.~Launay, and M.~Kasevich, ``{High-order inertial
-  phase shifts for time-domain atom interferometers}'',} \textit{ Applied
-  Physics B} \textbf{ 84} (aug, 2006) 599--602,
-  \href{http://dx.doi.org/10.1007/s00340-006-2397-5}{\doi{10.1007/s00340-006-2397-5}}.
+\bibitem{Metcalf2003}
+\href {http://www.opticsinfobase.org/abstract.cfm?uri=josab-20-5-887}
+  {H.~Metcalf and P.~V.~D. Straten, ``{Laser cooling and trapping of atoms}'',}
+  \textit{ JOSA B} (2003).
 
-\bibitem{Peters2001}
-\hrefCMSnoop {} {A.~Peters, K.~Y. Chung, and S.~Chu, ``{High-precision gravity
-  measurements using atom interferometry}'',} \textit{ Metrologia} \textbf{ 38}
-  (feb, 2001) 25--61,
-  \href{http://dx.doi.org/10.1088/0026-1394/38/1/4}{\doi{10.1088/0026-1394/38/1/4}}.
+\bibitem{Rakholia2014a}
+\href {http://arxiv.org/abs/1407.3847} {A.~V. Rakholia, H.~J. McGuinness, and
+  G.~W. Biedermann, ``{Dual-axis, high data-rate atom interferometer via cold
+  ensemble exchange}'',} \href{http://www.arXiv.org/abs/1407.3847}{\texttt{
+  arXiv:1407.3847}}.
 
-\bibitem{Sugarbaker2013}
-\href {http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.111.113002}
-  {A.~Sugarbaker and S.~Dickerson, ``{Enhanced atom interferometer readout
-  through the application of phase shear}'',} \textit{ Physical review
-  {\ldots}} \textbf{ 94305} (2013)
-  \href{http://www.arXiv.org/abs/arXiv:1305.3298v1}{\texttt{
-  arXiv:arXiv:1305.3298v1}}.
+\bibitem{Raab1987}
+\hrefCMSnoop {} {E.~L. Raab, M.~Prentiss, A.~Cable{ et~al.}, ``{Trapping of
+  Neutral Sodium Atoms with Radiation Pressure}'',} \textit{ Physical Review
+  Letters} \textbf{ 59} (dec, 1987) 2631--2634,
+  \href{http://dx.doi.org/10.1103/PhysRevLett.59.2631}{\doi{10.1103/PhysRevLett.59.2631}}.
 
-\bibitem{Macdonald1992}
-\hrefCMSnoop {} {J.~R. Macdonald and W.~J. Thompson, ``{Least‐squares fitting
-  when both variables contain errors: Pitfalls and possibilities}'',} \textit{
-  American Journal of Physics} \textbf{ 60} (jan, 1992) 66--73,
-  \href{http://dx.doi.org/10.1119/1.17046}{\doi{10.1119/1.17046}}.
+\bibitem{Prentiss1988}
+\hrefCMSnoop {} {M.~Prentiss, E.~L. Raab, D.~E. Pritchard{ et~al.},
+  ``{Atomic-density-dependent losses in an optical trap}'',} \textit{ Optics
+  Letters} \textbf{ 13} (jun, 1988) 452,
+  \href{http://dx.doi.org/10.1364/OL.13.000452}{\doi{10.1364/OL.13.000452}}.
 
-\bibitem{Dick1990}
-\hrefCMSnoop {} {G.~J. Dick, J.~D. Prestage, C.~A. Greenhall{ et~al.}, ``{Local
-  oscillator induced degradation of medium-term stability in passive atomic
-  frequency standards}'',} in \textit{ The 22nd Annual Precise Time and Time
-  Interval (PTTI) Applications and Planning Meeting}, pp.~487--508.
-\newblock 1990.
-
-\bibitem{Meunier2015}
-\hrefCMSnoop {} {M.~Meunier, I.~Dutta, R.~Geiger{ et~al.}, ``{Stability
-  enhancement by joint phase measurements in a single cold atomic fountain}'',}
-  \href{http://dx.doi.org/10.1103/PhysRevA.90.063633}{\doi{10.1103/PhysRevA.90.063633}},
-  \href{http://www.arXiv.org/abs/1501.01943}{\texttt{ arXiv:1501.01943}}.
-
-\bibitem{Fang2016}
-\hrefCMSnoop {} {B.~Fang, I.~Dutta, P.~Gillot{ et~al.}, ``{Metrology with Atom
-  Interferometry: Inertial Sensors from Laboratory to Field Applications}'',}
-  \textit{ Journal of Physics: Conference Series} \textbf{ 723} (2016), no.~1,
-  \href{http://dx.doi.org/10.1088/1742-6596/723/1/012049}{\doi{10.1088/1742-6596/723/1/012049}},
-  \href{http://www.arXiv.org/abs/1601.06082}{\texttt{ arXiv:1601.06082}}.
-
-\bibitem{Cheng2018}
-\hrefCMSnoop {} {X.~Cheng, ``{No Title}''}.
-\newblock PhD thesis, Imperial College London, 2018.
-
-\bibitem{Schuler1923}
-\hrefCMSnoop {} {M.~Schuler, ``{Die St{\"{o}}rung von Pendel und
-  Kreiselapparaten durch die Beschleunigung des Fahrzeuges}'',} \textit{
-  Physikalische Zeitschrift} \textbf{ 24} (1923), no.~16,.
-
-\bibitem{Farah2014}
-\hrefCMSnoop {} {T.~Farah, C.~Guerlin, A.~Landragin{ et~al.}, ``{Underground
-  operation at best sensitivity of the mobile LNE-SYRTE Cold Atom
-  Gravimeter}'',}
-  \href{http://dx.doi.org/10.1134/S2075108714040051}{\doi{10.1134/S2075108714040051}},
-  \href{http://www.arXiv.org/abs/1404.6722}{\texttt{ arXiv:1404.6722}}.
-
-\bibitem{Gillot2014}
-\hrefCMSnoop {} {P.~Gillot, O.~Francis, A.~Landragin{ et~al.}, ``{Stability
-  comparison of two absolute gravimeters: Optical versus atomic
-  interferometers}'',} \textit{ Metrologia} \textbf{ 51} (2014), no.~5,
-  L15--L17,
-  \href{http://dx.doi.org/10.1088/0026-1394/51/5/L15}{\doi{10.1088/0026-1394/51/5/L15}},
-  \href{http://www.arXiv.org/abs/1406.5134}{\texttt{ arXiv:1406.5134}}.
-
-\bibitem{Cheiney2018}
-\hrefCMSnoop {} {P.~Cheiney, L.~Fouch{\'{e}}, S.~Templier{ et~al.},
-  ``{Navigation-Compatible Hybrid Quantum Accelerometer Using a Kalman
-  Filter}'',} \textit{ Physical Review Applied} \textbf{ 10} (sep, 2018)
-  034030,
-  \href{http://dx.doi.org/10.1103/PhysRevApplied.10.034030}{\doi{10.1103/PhysRevApplied.10.034030}}.
+\bibitem{Weiss1994}
+\hrefCMSnoop {} {D.~S. Weiss, B.~C. Young, and S.~Chu, ``{Precision measurement
+  of ?/m Cs based on photon recoil using laser-cooled atoms and atomic
+  interferometry}'',} \textit{ Applied Physics B Lasers and Optics} \textbf{
+  59} (sep, 1994) 217--256,
+  \href{http://dx.doi.org/10.1007/BF01081393}{\doi{10.1007/BF01081393}}.
 
 \bibitem{Schunemann1999}
 \hrefCMSnoop {} {U.~Schünemann, H.~Engler, R.~Grimm{ et~al.}, ``{Simple
@@ -585,11 +148,62 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
   of Atoms by Resonance Radiation Pressure}'',} \textit{ Physical Review
   Letters} \textbf{ 55} (1985), no.~1,.
 
+\bibitem{Menoret2011}
+\hrefCMSnoop {} {V.~M{\'{e}}noret, R.~Geiger, G.~Stern{ et~al.},
+  ``{Dual-wavelength laser source for onboard atom interferometry}'',} \textit{
+  Optics Letters} \textbf{ 36} (nov, 2011) 4128,
+  \href{http://dx.doi.org/10.1364/OL.36.004128}{\doi{10.1364/OL.36.004128}}.
+
+\bibitem{Dedman2001}
+\hrefCMSnoop {} {C.~J. Dedman, K.~G.~H. Baldwin, and M.~Colla, ``{Fast
+  switching of magnetic fields in a magneto-optic trap}'',} \textit{ Review of
+  Scientific Instruments} \textbf{ 72} (2001), no.~11, 4055--4058,
+  \href{http://dx.doi.org/10.1063/1.1408935}{\doi{10.1063/1.1408935}}.
+
+\bibitem{Meunier2015}
+\hrefCMSnoop {} {M.~Meunier, I.~Dutta, R.~Geiger{ et~al.}, ``{Stability
+  enhancement by joint phase measurements in a single cold atomic fountain}'',}
+  \href{http://dx.doi.org/10.1103/PhysRevA.90.063633}{\doi{10.1103/PhysRevA.90.063633}},
+  \href{http://www.arXiv.org/abs/1501.01943}{\texttt{ arXiv:1501.01943}}.
+
+\bibitem{Borde2002}
+\hrefCMSnoop {} {C.~J. Borde, ``{Atomic clocks and inertial sensors}'',}
+  \textit{ Metrologia} \textbf{ 39} (2002), no.~5, 435--463,
+  \href{http://dx.doi.org/10.1088/0026-1394/39/5/5}{\doi{10.1088/0026-1394/39/5/5}}.
+
 \bibitem{Miffre2006}
 \hrefCMSnoop {} {A.~Miffre, M.~Jacquey, M.~B{\"{u}}chner{ et~al.}, ``{Atom
   interferometry}'',}
   \href{http://dx.doi.org/10.1088/0031-8949/74/2/N01}{\doi{10.1088/0031-8949/74/2/N01}},
   \href{http://www.arXiv.org/abs/0605055}{\texttt{ arXiv:0605055}}.
+
+\bibitem{Muller2007}
+\hrefCMSnoop {} {T.~M{\"{u}}ller, T.~Wendrich, M.~Gilowski{ et~al.},
+  ``{Versatile compact atomic source for high-resolution dual atom
+  interferometry}'',} \textit{ Physical Review A} \textbf{ 76} (dec, 2007)
+  063611,
+  \href{http://dx.doi.org/10.1103/PhysRevA.76.063611}{\doi{10.1103/PhysRevA.76.063611}}.
+
+\bibitem{ESSEN1955}
+\hrefCMSnoop {} {L.~ESSEN and J.~V.~L. PARRY, ``{An Atomic Standard of
+  Frequency and Time Interval: A C{\ae}sium Resonator}'',} \textit{ Nature}
+  \textbf{ 176} (aug, 1955) 280--282,
+  \href{http://dx.doi.org/10.1038/176280a0}{\doi{10.1038/176280a0}}.
+
+\bibitem{Dick1990}
+\hrefCMSnoop {} {G.~J. Dick, J.~D. Prestage, C.~A. Greenhall{ et~al.}, ``{Local
+  oscillator induced degradation of medium-term stability in passive atomic
+  frequency standards}'',} in \textit{ The 22nd Annual Precise Time and Time
+  Interval (PTTI) Applications and Planning Meeting}, pp.~487--508.
+\newblock 1990.
+
+\bibitem{Leveque2014}
+\hrefCMSnoop {} {T.~L{\'{e}}v{\`{e}}que, L.~Antoni-Micollier, B.~Faure{
+  et~al.}, ``{A laser setup for rubidium cooling dedicated to space
+  applications}'',} \textit{ Applied Physics B} \textbf{ 116} (sep, 2014)
+  997--1004,
+  \href{http://dx.doi.org/10.1007/s00340-014-5788-z}{\doi{10.1007/s00340-014-5788-z}},
+  \href{http://www.arXiv.org/abs/1309.2075}{\texttt{ arXiv:1309.2075}}.
 
 \bibitem{Pappa2011}
 \hrefCMSnoop {} {M.~Pappa, P.~C. Condylis, G.~O. Konstantinidis{ et~al.},
@@ -607,15 +221,118 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
 \hrefCMSnoop {} {J.~Hogan, ``{Towards precision tests of general relativity
   using an atom interferometer}'',}.
 
+\bibitem{Storey1994}
+\href
+  {http://jp2.journaldephysique.org/articles/jp2/abs/1994/11/jp2v4p1999/jp2v4p1999.html}
+  {P.~Storey and C.~Cohen-Tannoudji, ``{The Feynman path integral approach to
+  atomic interferometry. A tutorial}'',} \textit{ Journal de Physique II}
+  (1994).
+
+\bibitem{Lawrence1998}
+\hrefCMSnoop {} {A.~Lawrence, ``{The Pendulous Accelerometer}'',} pp.~57--71.
+\newblock 1998.
+
+\bibitem{Kasevich1991a}
+\hrefCMSnoop {} {M.~Kasevich, D.~S. Weiss, E.~Riis{ et~al.}, ``{Atomic velocity
+  selection using stimulated Raman transitions}'',} \textit{ Physical Review
+  Letters} \textbf{ 66} (may, 1991) 2297--2300,
+  \href{http://dx.doi.org/10.1103/PhysRevLett.66.2297}{\doi{10.1103/PhysRevLett.66.2297}}.
+
+\bibitem{Macdonald1992}
+\hrefCMSnoop {} {J.~R. Macdonald and W.~J. Thompson, ``{Least‐squares fitting
+  when both variables contain errors: Pitfalls and possibilities}'',} \textit{
+  American Journal of Physics} \textbf{ 60} (jan, 1992) 66--73,
+  \href{http://dx.doi.org/10.1119/1.17046}{\doi{10.1119/1.17046}}.
+
+\bibitem{Drever1983}
+\hrefCMSnoop {} {R.~W.~P. Drever, J.~L. Hall, F.~V. Kowalski{ et~al.}, ``{Laser
+  phase and frequency stabilization using an optical resonator}'',} \textit{
+  Applied Physics B Photophysics and Laser Chemistry} \textbf{ 31} (jun, 1983)
+  97--105,
+  \href{http://dx.doi.org/10.1007/BF00702605}{\doi{10.1007/BF00702605}}.
+
 \bibitem{Kasevich1992a}
 \hrefCMSnoop {} {M.~Kasevich, ``{Atom Interferometry in an atomic fountain}'',}
   1992.
+
+\bibitem{Zhang2004}
+\hrefCMSnoop {} {R.~Zhang and F.~Shi, ``{A Novel Algorithm for Fiber-Optic
+  Alignment Automation}'',} \textit{ IEEE Transactions on Advanced Packaging}
+  \textbf{ 27} (feb, 2004) 173--178,
+  \href{http://dx.doi.org/10.1109/TADVP.2004.825434}{\doi{10.1109/TADVP.2004.825434}}.
+
+\bibitem{El-Sheimy2008}
+\hrefCMSnoop {} {N.~El-Sheimy, H.~Hou, and X.~Niu, ``{Analysis and Modeling of
+  Inertial Sensors Using Allan Variance}'',} \textit{ IEEE Transactions on
+  Instrumentation and Measurement} \textbf{ 57} (jan, 2008) 140--149,
+  \href{http://dx.doi.org/10.1109/TIM.2007.908635}{\doi{10.1109/TIM.2007.908635}}.
+
+\bibitem{Nyman2006a}
+\hrefCMSnoop {} {R.~Nyman, G.~Varoquaux, F.~Lienhart{ et~al.}, ``{I.C.E.: a
+  transportable atomic inertial sensor for test in microgravity}'',} \textit{
+  Applied Physics B} \textbf{ 84} (aug, 2006) 673--681,
+  \href{http://dx.doi.org/10.1007/s00340-006-2395-7}{\doi{10.1007/s00340-006-2395-7}}.
+
+\bibitem{Kim2017}
+\hrefCMSnoop {} {T.~H. Kim, S.~H. Yim, K.~M. Shim{ et~al.}, ``{Spatial-contrast
+  analysis in a cold-atom Sagnac interferometer with a single large Raman
+  beam}'',} \textit{ Physical Review A} \textbf{ 95} (2017), no.~3, 1--6,
+  \href{http://dx.doi.org/10.1103/PhysRevA.95.033632}{\doi{10.1103/PhysRevA.95.033632}}.
+
+\bibitem{VanderStraten1993}
+\hrefCMSnoop {} {P.~van~der Straten, S.-Q. Shang, B.~Sheehy{ et~al.}, ``{Laser
+  cooling at low intensity in a strong magnetic field}'',} \textit{ Phys. Rev.
+  A} \textbf{ 47} (1993), no.~5, 4160--4175,
+  \href{http://dx.doi.org/10.1103/PhysRevA.47.4160}{\doi{10.1103/PhysRevA.47.4160}}.
+
+\bibitem{Dieckmann1998}
+\hrefCMSnoop {} {K.~Dieckmann, R.~J.~C. Spreeuw, M.~Weidem{\"{u}}ller{ et~al.},
+  ``{Two-dimensional magneto-optical trap as a source of slow atoms}'',}
+  \textit{ Physical Review A} \textbf{ 58} (nov, 1998) 3891--3895,
+  \href{http://dx.doi.org/10.1103/PhysRevA.58.3891}{\doi{10.1103/PhysRevA.58.3891}}.
+
+\bibitem{Dimopoulos2008}
+\hrefCMSnoop {} {S.~Dimopoulos, P.~Graham, J.~Hogan{ et~al.}, ``{Atomic
+  gravitational wave interferometric sensor}'',} \textit{ Physical Review D}
+  \textbf{ 78} (dec, 2008) 122002,
+  \href{http://dx.doi.org/10.1103/PhysRevD.78.122002}{\doi{10.1103/PhysRevD.78.122002}}.
+
+\bibitem{Durfee2006}
+\hrefCMSnoop {} {D.~S. Durfee, Y.~K. Shaham, and M.~A. Kasevich, ``{Long-Term
+  Stability of an Area-Reversible Atom-Interferometer Sagnac Gyroscope}'',}
+  \textit{ Physical Review Letters} \textbf{ 97} (dec, 2006) 240801,
+  \href{http://dx.doi.org/10.1103/PhysRevLett.97.240801}{\doi{10.1103/PhysRevLett.97.240801}}.
+
+\bibitem{Dick1987}
+\href
+  {http://oai.dtic.mil/oai/oai?verb=getRecord{\&}metadataPrefix=html{\&}identifier=ADA502386}
+  {G.~Dick, ``{Local oscillator induced instabilities in trapped ion frequency
+  standards}'',}.
+
+\bibitem{Walhout1992}
+\hrefCMSnoop {} {M.~Walhout, J.~Dalibard, S.~L. Rolston{ et~al.},
+  ``{$\sigma${\_}+–$\sigma${\_}− Optical molasses in a longitudinal
+  magnetic field}'',} \textit{ Journal of the Optical Society of America B}
+  \textbf{ 9} (nov, 1992) 1997,
+  \href{http://dx.doi.org/10.1364/JOSAB.9.001997}{\doi{10.1364/JOSAB.9.001997}}.
+
+\bibitem{Wu1996}
+\hrefCMSnoop {} {Y.~Wu, ``{Effective Raman theory for a three-level atom in the
+  $\Lambda$ configuration}'',} \textit{ Physical Review A - Atomic, Molecular,
+  and Optical Physics} \textbf{ 54} (1996), no.~2, 1586--1592,
+  \href{http://dx.doi.org/10.1103/PhysRevA.54.1586}{\doi{10.1103/PhysRevA.54.1586}}.
 
 \bibitem{Masry1991}
 \hrefCMSnoop {} {E.~Masry, ``{Flicker noise and the estimation of the Allan
   variance}'',} \textit{ IEEE Transactions on Information Theory} \textbf{ 37}
   (jul, 1991) 1173--1177,
   \href{http://dx.doi.org/10.1109/18.86968}{\doi{10.1109/18.86968}}.
+
+\bibitem{Keshet2012}
+\hrefCMSnoop {} {A.~Keshet and W.~Ketterle, ``{A Distributed GUI-based Computer
+  Control System for Atomic Physics Experiments}'',}
+  \href{http://dx.doi.org/10.1063/1.4773536}{\doi{10.1063/1.4773536}},
+  \href{http://www.arXiv.org/abs/1208.2607}{\texttt{ arXiv:1208.2607}}.
 
 \bibitem{Schoser2002}
 \hrefCMSnoop {} {J.~Schoser, A.~Bat{\"{a}}r, R.~L{\"{o}}w{ et~al.}, ``{Intense
@@ -624,6 +341,89 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
   \href{http://dx.doi.org/10.1103/PhysRevA.66.023410}{\doi{10.1103/PhysRevA.66.023410}},
   \href{http://www.arXiv.org/abs/0201034}{\texttt{ arXiv:0201034}}.
 
+\bibitem{Steane1992}
+\hrefCMSnoop {} {A.~M.~A. Steane, M.~Chowdhury, and C.~J. Foot, ``{Radiation
+  force in the magneto-optical trap}'',} \textit{ Journal of the Optical
+  Society of America B} \textbf{ 9} (dec, 1992) 2142,
+  \href{http://dx.doi.org/10.1364/JOSAB.9.002142}{\doi{10.1364/JOSAB.9.002142}}.
+
+\bibitem{Canuel2007}
+\hrefCMSnoop {} {B.~Canuel, ``{{\'{E}}tude d'un gyrom{\`{e}}tre {\`{a}} atomes
+  froids}''}.
+\newblock PhD thesis, Universit{\'{e}} Paris Sud - Paris XI, 2007.
+\newblock \href{http://dx.doi.org/tel-00193288}{\doi{tel-00193288}}.
+
+\bibitem{Ohshima1995}
+\hrefCMSnoop {} {S.-i. Ohshima, T.~Kurosu, T.~Ikegami{ et~al.}, ``{Cesium
+  Atomic Fountain with Two-Dimensional Moving Molasses}'',} \textit{ Japanese
+  Journal of Applied Physics} \textbf{ 34} (sep, 1995) L1170--L1173,
+  \href{http://dx.doi.org/10.1143/JJAP.34.L1170}{\doi{10.1143/JJAP.34.L1170}}.
+
+\bibitem{Clauser1988}
+\href {http://www.sciencedirect.com/science/article/pii/0378436388901763}
+  {J.~Clauser, ``{Ultra-High Sensitvity Accelerometers And Gyroscopes Using
+  Neutral Atom Matter-Wave Interferometry}'',} \textit{ Physica B+ C} \textbf{
+  151} (1988) 262--272.
+
+\bibitem{Foote1992}
+\hrefCMSnoop {} {S.~Foote and D.~Grindeland, ``{Model QA3000 Q-Flex
+  accelerometer high performance test results}'',} \textit{ IEEE Aerospace and
+  Electronic Systems Magazine} \textbf{ 7} (jun, 1992) 59--67,
+  \href{http://dx.doi.org/10.1109/62.145120}{\doi{10.1109/62.145120}}.
+
+\bibitem{Han2012}
+\href {http://arxiv.org/abs/1209.6569} {R.~Han, H.~K. Ng, and B.-G. Englert,
+  ``{Raman transitions without adiabatic elimination: A simple and accurate
+  treatment}'',} \textit{ Journal of Modern Optics} \textbf{ 60} (sep, 2012)
+  17, \href{http://www.arXiv.org/abs/1209.6569}{\texttt{ arXiv:1209.6569}}.
+
+\bibitem{Molmer1990}
+\hrefCMSnoop {} {K.~Molmer, ``{Atomic momentum diffusion in a
+  $\backslash$sigma{\^{}}+-$\backslash$sigma{\^{}}- laser configuration:
+  influence of an internal sublevel structure}'',} \textit{ Journal of Physics
+  B: Atomic, Molecular and Optical Physics} \textbf{ 23} (1990), no.~22,
+  4101--4110,
+  \href{http://dx.doi.org/10.1088/0953-4075/23/22/012}{\doi{10.1088/0953-4075/23/22/012}}.
+
+\bibitem{Lautier2014}
+\hrefCMSnoop {} {J.~Lautier, L.~Volodimer, T.~Hardin{ et~al.}, ``{Hybridizing
+  matter-wave and classical accelerometers}'',} \textit{ Applied Physics
+  Letters} \textbf{ 105} (oct, 2014) 144102,
+  \href{http://dx.doi.org/10.1063/1.4897358}{\doi{10.1063/1.4897358}}.
+
+\bibitem{Berkeland2002}
+\hrefCMSnoop {} {D.~J. Berkeland and M.~G. Boshier, ``{Destabilization of dark
+  states and optical spectroscopy in Zeeman-degenerate atomic systems}'',}
+  \textit{ Physical Review A} \textbf{ 65} (feb, 2002) 033413,
+  \href{http://dx.doi.org/10.1103/PhysRevA.65.033413}{\doi{10.1103/PhysRevA.65.033413}}.
+
+\bibitem{Allan1966}
+\hrefCMSnoop {} {D.~Allan, ``{Statistics of atomic frequency standards}'',}
+  \textit{ Proceedings of the IEEE} \textbf{ 54} (1966), no.~2, 221--230,
+  \href{http://dx.doi.org/10.1109/PROC.1966.4634}{\doi{10.1109/PROC.1966.4634}}.
+
+\bibitem{Roos2003}
+\hrefCMSnoop {} {C.~Roos, P.~Cren, J.~Dalibard{ et~al.}, ``{A Source of Cold
+  Atoms for a Continuously Loaded Magnetic Guide}'',} \textit{ Physica Scripta}
+  \textbf{ T105} (2003), no.~1, 19,
+  \href{http://dx.doi.org/10.1238/Physica.Topical.105a00019}{\doi{10.1238/Physica.Topical.105a00019}}.
+
+\bibitem{Sugarbaker2013}
+\href {http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.111.113002}
+  {A.~Sugarbaker and S.~Dickerson, ``{Enhanced atom interferometer readout
+  through the application of phase shear}'',} \textit{ Physical review
+  {\ldots}} \textbf{ 94305} (2013)
+  \href{http://www.arXiv.org/abs/arXiv:1305.3298v1}{\texttt{
+  arXiv:arXiv:1305.3298v1}}.
+
+\bibitem{Gauguet2008}
+\hrefCMSnoop {} {A.~Gauguet, T.~E. Mehlst{\"{a}}ubler, T.~L{\'{e}}v{\`{e}}que{
+  et~al.}, ``{Off-resonant Raman transition impact in an atom
+  interferometer}'',} \textit{ Physical Review A} \textbf{ 78} (oct, 2008)
+  043615,
+  \href{http://dx.doi.org/10.1103/PhysRevA.78.043615}{\doi{10.1103/PhysRevA.78.043615}},
+  \href{http://www.arXiv.org/abs/0809.0149}{\texttt{ arXiv:0809.0149}}.
+
 \bibitem{Lan2012}
 \hrefCMSnoop {} {S.~Y. Lan, P.~C. Kuan, B.~Estey{ et~al.}, ``{Influence of the
   coriolis force in atom interferometry}'',} \textit{ Physical Review Letters}
@@ -631,11 +431,44 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
   \href{http://dx.doi.org/10.1103/PhysRevLett.108.090402}{\doi{10.1103/PhysRevLett.108.090402}},
   \href{http://www.arXiv.org/abs/1110.6910}{\texttt{ arXiv:1110.6910}}.
 
+\bibitem{Chang2002}
+\hrefCMSnoop {} {S.~Chang, T.~Y. Kwon, H.~S. Lee{ et~al.}, ``{Laser sub-Doppler
+  cooling of atoms in an arbitrarily directed magnetic field}'',} \textit{
+  Physical Review A - Atomic, Molecular, and Optical Physics} \textbf{ 66}
+  (2002), no.~4, 23,
+  \href{http://dx.doi.org/10.1103/PhysRevA.66.043404}{\doi{10.1103/PhysRevA.66.043404}}.
+
 \bibitem{Tackmann2012}
 \hrefCMSnoop {} {G.~Tackmann, P.~Berg, C.~Schubert{ et~al.}, ``{Self-alignment
   of a compact large-area atomic Sagnac interferometer}'',} \textit{ New
   Journal of Physics} \textbf{ 14} (jan, 2012) 015002,
   \href{http://dx.doi.org/10.1088/1367-2630/14/1/015002}{\doi{10.1088/1367-2630/14/1/015002}}.
+
+\bibitem{Grynberg2011}
+\hrefCMSnoop {} {G.~Grynberg, A.~Aspect, and C.~Fabre, ``{Introduction to
+  Quantum Optics: From the Semi-Classical Approach to Quantized Light}'',}
+  \textit{ Contemporary Physics} (nov, 2011) 45--106,
+  \href{http://dx.doi.org/10.1080/00107514.2011.604134}{\doi{10.1080/00107514.2011.604134}}.
+
+\bibitem{Cheiney2018}
+\hrefCMSnoop {} {P.~Cheiney, L.~Fouch{\'{e}}, S.~Templier{ et~al.},
+  ``{Navigation-Compatible Hybrid Quantum Accelerometer Using a Kalman
+  Filter}'',} \textit{ Physical Review Applied} \textbf{ 10} (sep, 2018)
+  034030,
+  \href{http://dx.doi.org/10.1103/PhysRevApplied.10.034030}{\doi{10.1103/PhysRevApplied.10.034030}}.
+
+\bibitem{Vigue2006}
+\hrefCMSnoop {} {M.~J. Vigu{\'{e}}, A.~Miffre, M.~B{\"{u}}chner{ et~al.},
+  ``{Phase noise due to vibrations in Mach-Zehnder atom interferometers}'',}
+  \textit{ EPL (Europhysics Letters)} \textbf{ 75} (2006), no.~5, 688,
+  \href{http://dx.doi.org/10.1209/epl/i2006-10177-6}{\doi{10.1209/epl/i2006-10177-6}},
+  \href{http://www.arXiv.org/abs/0604028}{\texttt{ arXiv:0604028}}.
+
+\bibitem{Nelder1965}
+\hrefCMSnoop {} {J.~A. Nelder and R.~Mead, ``{A Simplex Method for Function
+  Minimization}'',} \textit{ The Computer Journal} \textbf{ 7} (jan, 1965)
+  308--313,
+  \href{http://dx.doi.org/10.1093/comjnl/7.4.308}{\doi{10.1093/comjnl/7.4.308}}.
 
 \bibitem{Hogan}
 \href {http://arxiv.org/abs/0806.3261} {J.~Hogan, D.~Johnson, and M.~Kasevich,
@@ -643,5 +476,172 @@ R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
   arXiv:0806.3261} (2008) 1--38,
   \href{http://www.arXiv.org/abs/arXiv:0806.3261v1}{\texttt{
   arXiv:arXiv:0806.3261v1}}.
+
+\bibitem{Levine}
+\hrefCMSnoop {} {J.~Levine and T.~Parker, ``{The algorithm used to realize
+  UTC(NIST)}'',} in \textit{ Proceedings of the 2002 IEEE International
+  Frequency Control Symposium and PDA Exhibition (Cat. No.02CH37234)},
+  pp.~537--542.
+\newblock IEEE.
+\newblock
+  \href{http://dx.doi.org/10.1109/FREQ.2002.1075941}{\doi{10.1109/FREQ.2002.1075941}}.
+
+\bibitem{Supplee1994}
+\hrefCMSnoop {} {J.~M. Supplee, E.~A. Whittaker, and W.~Lenth, ``{Theoretical
+  description of frequency modulation and wavelength modulation
+  spectroscopy}'',} \textit{ Applied Optics} \textbf{ 33} (sep, 1994) 6294,
+  \href{http://dx.doi.org/10.1364/AO.33.006294}{\doi{10.1364/AO.33.006294}}.
+
+\bibitem{Rocco2014}
+\hrefCMSnoop {} {E.~Rocco, R.~N. Palmer, T.~Valenzuela{ et~al.},
+  ``{Fluorescence detection at the atom shot noise limit for atom
+  interferometry}'',} \textit{ New Journal of Physics} \textbf{ 16} (sep, 2014)
+  093046,
+  \href{http://dx.doi.org/10.1088/1367-2630/16/9/093046}{\doi{10.1088/1367-2630/16/9/093046}}.
+
+\bibitem{Barrett2016}
+\hrefCMSnoop {} {B.~Barrett, L.~Antoni-Micollier, L.~Chichet{ et~al.}, ``{Dual
+  matter-wave inertial sensors in weightlessness}'',} \textit{ Nature
+  Communications} \textbf{ 7} (2016)
+  \href{http://dx.doi.org/10.1038/ncomms13786}{\doi{10.1038/ncomms13786}},
+  \href{http://www.arXiv.org/abs/1609.03598}{\texttt{ arXiv:1609.03598}}.
+
+\bibitem{Merlet2009}
+\hrefCMSnoop {} {S.~Merlet, J.~{Le Gou{\"{e}}t}, Q.~Bodart{ et~al.},
+  ``{Operating an atom interferometer beyond its linear range}'',} \textit{
+  Metrologia} \textbf{ 46} (feb, 2009) 87--94,
+  \href{http://dx.doi.org/10.1088/0026-1394/46/1/011}{\doi{10.1088/0026-1394/46/1/011}}.
+
+\bibitem{Barrett2013}
+\hrefCMSnoop {} {B.~Barrett, P.~a. Gominet, E.~Cantin{ et~al.}, ``{Mobile and
+  remote inertial sensing with atom interferometers}'',} \textit{ Proceedings
+  of the International School of Physics "Enrico Fermi", Vol 188} (2013)
+  \href{http://dx.doi.org/10.3254/978-1-61499-448-0-493}{\doi{10.3254/978-1-61499-448-0-493}},
+  \href{http://www.arXiv.org/abs/1311.7033}{\texttt{ arXiv:1311.7033}}.
+
+\bibitem{Faruqi2000}
+\hrefCMSnoop {} {F.~A. Faruqi and K.~J. Turner, ``{Extended Kalman filter
+  synthesis for integrated global positioning/inertial navigation systems}'',}
+  \textit{ Applied Mathematics and Computation} \textbf{ 115} (oct, 2000)
+  213--227,
+  \href{http://dx.doi.org/10.1016/S0096-3003(98)10068-1}{\doi{10.1016/S0096-3003(98)10068-1}}.
+
+\bibitem{Schuler1923}
+\hrefCMSnoop {} {M.~Schuler, ``{Die St{\"{o}}rung von Pendel und
+  Kreiselapparaten durch die Beschleunigung des Fahrzeuges}'',} \textit{
+  Physikalische Zeitschrift} \textbf{ 24} (1923), no.~16,.
+
+\bibitem{Brink1968}
+\hrefCMSnoop {} {D.~M. Brink and G.~R. Satchler, ``{Matrix Elements of Tensor
+  Operators}'',} in \textit{ Angular Momentum}, pp.~56--60.
+\newblock 1968.
+
+\bibitem{Bollinger1996}
+\hrefCMSnoop {} {J.~J.~. Bollinger, W.~M. Itano, D.~J. Wineland{ et~al.},
+  ``{Optimal frequency measurements with maximally correlated states}'',}
+  \textit{ Physical Review A} \textbf{ 54} (dec, 1996) R4649--R4652,
+  \href{http://dx.doi.org/10.1103/PhysRevA.54.R4649}{\doi{10.1103/PhysRevA.54.R4649}}.
+
+\bibitem{Marino2008}
+\hrefCMSnoop {} {A.~M. Marino and C.~R. Stroud, ``{Phase-locked laser system
+  for use in atomic coherence experiments.}'',} \textit{ The Review of
+  scientific instruments} \textbf{ 79} (jan, 2008) 013104,
+  \href{http://dx.doi.org/10.1063/1.2823330}{\doi{10.1063/1.2823330}}.
+
+\bibitem{muquansWebPage}
+\href {https://www.muquans.com/images/stories/muquans{\_}laser{\_}systems.pdf}
+  {``{$\mu$Quans Laser System Specifications}''.}
+
+\bibitem{Kasevich1992}
+\href {http://link.springer.com/article/10.1007/BF00325375} {M.~Kasevich and
+  S.~Chu, ``{Measurement of the Gravitational Acceleration of an Atom with a
+  Light-Pulse Atom Interferometer}'',} \textit{ Applied Physics B} \textbf{
+  332} (1992) 321--332.
+
+\bibitem{Welch1967}
+\hrefCMSnoop {} {P.~Welch, ``{The use of fast Fourier transform for the
+  estimation of power spectra: A method based on time averaging over short,
+  modified periodograms}'',} \textit{ IEEE Transactions on Audio and
+  Electroacoustics} \textbf{ 15} (jun, 1967) 70--73,
+  \href{http://dx.doi.org/10.1109/TAU.1967.1161901}{\doi{10.1109/TAU.1967.1161901}}.
+
+\bibitem{JEKELI2005}
+\hrefCMSnoop {} {C.~JEKELI, ``{Navigation Error Analysis of Atom Interferometer
+  Inertial Sensor}'',} \textit{ Navigation} \textbf{ 52} (mar, 2005) 1--14,
+  \href{http://dx.doi.org/10.1002/j.2161-4296.2005.tb01726.x}{\doi{10.1002/j.2161-4296.2005.tb01726.x}}.
+
+\bibitem{Wen2016}
+\hrefCMSnoop {} {K.~Wen, C.~K. Seow, and S.~Y. Tan, ``{Inertial navigation
+  system positioning error analysis and Cram{\'{e}}r-Rao lower bound}'',} in
+  \textit{ 2016 IEEE/ION Position, Location and Navigation Symposium (PLANS)},
+  pp.~213--218.
+\newblock IEEE, apr, 2016.
+\newblock
+  \href{http://dx.doi.org/10.1109/PLANS.2016.7479704}{\doi{10.1109/PLANS.2016.7479704}}.
+
+\bibitem{Fang2016}
+\hrefCMSnoop {} {B.~Fang, I.~Dutta, P.~Gillot{ et~al.}, ``{Metrology with Atom
+  Interferometry: Inertial Sensors from Laboratory to Field Applications}'',}
+  \textit{ Journal of Physics: Conference Series} \textbf{ 723} (2016), no.~1,
+  \href{http://dx.doi.org/10.1088/1742-6596/723/1/012049}{\doi{10.1088/1742-6596/723/1/012049}},
+  \href{http://www.arXiv.org/abs/1601.06082}{\texttt{ arXiv:1601.06082}}.
+
+\bibitem{Kasevich1991}
+\hrefCMSnoop {} {M.~Kasevich and S.~Chu, ``{Atomic Interferometry Using
+  Stimulated Raman Transistions}'',} \textit{ Physical Review Letters} \textbf{
+  67} (mar, 1991) 181--184,
+  \href{http://dx.doi.org/10.1097/01.NUMA.0000442649.24195.3c}{\doi{10.1097/01.NUMA.0000442649.24195.3c}}.
+
+\bibitem{Dutta2016}
+\hrefCMSnoop {} {I.~Dutta, D.~Savoie, B.~Fang{ et~al.}, ``{Continuous Cold-Atom
+  Inertial Sensor with 1 nrad/sec Rotation Stability}'',} \textit{ Physical
+  Review Letters} \textbf{ 116} (may, 2016) 183003,
+  \href{http://dx.doi.org/10.1103/PhysRevLett.116.183003}{\doi{10.1103/PhysRevLett.116.183003}}.
+
+\bibitem{Zhou2012}
+\hrefCMSnoop {} {M.-K. Zhou, Z.-K. Hu, X.-C. Duan{ et~al.}, ``{Performance of a
+  cold-atom gravimeter with an active vibration isolator}'',} \textit{ Physical
+  Review A} \textbf{ 86} (oct, 2012) 043630,
+  \href{http://dx.doi.org/10.1103/PhysRevA.86.043630}{\doi{10.1103/PhysRevA.86.043630}}.
+
+\bibitem{Howard2002}
+R.~M. Howard, ``{Principles of Random Signal Analysis and L ow Noise Design}''.
+\newblock 2002.
+
+\bibitem{Dubetsky2006}
+\hrefCMSnoop {} {B.~Dubetsky and M.~Kasevich, ``{Atom interferometer as a
+  selective sensor of rotation or gravity}'',} \textit{ Physical Review A}
+  \textbf{ 74} (aug, 2006) 023615,
+  \href{http://dx.doi.org/10.1103/PhysRevA.74.023615}{\doi{10.1103/PhysRevA.74.023615}}.
+
+\bibitem{Ramsey1950}
+\hrefCMSnoop {} {N.~F. Ramsey, ``{A Molecular Beam Resonance Method with
+  Separated Oscillating Fields}'',} \textit{ Physical Review} \textbf{ 78}
+  (jun, 1950) 695--699,
+  \href{http://dx.doi.org/10.1103/PhysRev.78.695}{\doi{10.1103/PhysRev.78.695}}.
+
+\bibitem{Biedermann2017}
+\hrefCMSnoop {} {G.~W. Biedermann, H.~J. McGuinness, A.~V. Rakholia{ et~al.},
+  ``{Atom Interferometry in a Warm Vapor}'',} \textit{ Physical Review Letters}
+  \textbf{ 118} (apr, 2017) 163601,
+  \href{http://dx.doi.org/10.1103/PhysRevLett.118.163601}{\doi{10.1103/PhysRevLett.118.163601}}.
+
+\bibitem{Bongs2006}
+\hrefCMSnoop {} {K.~Bongs, R.~Launay, and M.~Kasevich, ``{High-order inertial
+  phase shifts for time-domain atom interferometers}'',} \textit{ Applied
+  Physics B} \textbf{ 84} (aug, 2006) 599--602,
+  \href{http://dx.doi.org/10.1007/s00340-006-2397-5}{\doi{10.1007/s00340-006-2397-5}}.
+
+\bibitem{Steck2001}
+\href {http://www.steck.us/alkalidata/rubidium87numbers.pdf} {D.~Steck,
+  ``{Rubidium 87 D Line Data}'',}.
+
+\bibitem{Gillot2014}
+\hrefCMSnoop {} {P.~Gillot, O.~Francis, A.~Landragin{ et~al.}, ``{Stability
+  comparison of two absolute gravimeters: Optical versus atomic
+  interferometers}'',} \textit{ Metrologia} \textbf{ 51} (2014), no.~5,
+  L15--L17,
+  \href{http://dx.doi.org/10.1088/0026-1394/51/5/L15}{\doi{10.1088/0026-1394/51/5/L15}},
+  \href{http://www.arXiv.org/abs/1406.5134}{\texttt{ arXiv:1406.5134}}.
 
 \end{thebibliography}\endgroup

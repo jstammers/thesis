@@ -18,13 +18,15 @@
 \usepackage{mathabx}
 \usepackage{anyfontsize}
 \usepackage{rotating}
+\usepackage{circuitikz}
+\usepackage{hyperref}
 \setmainmatterspacing{double}
 %%% Useful Commands %%%
 
 %\DeclareBibliographyCategory{cited}
 %\AtEveryCitekey{\addtocategory{cited}{\thefield{entrykey}}}
-\immediate\write18{perl texcount.pl \jobname.tex -1 -sum=1 -merge -out=\jobname.sum}
-\newcommand\wordcount{\input{\jobname.sum}}
+%\immediate\write18{perl texcount.pl \jobname.tex -1 -sum=1 -merge -out=\jobname.sum}
+%\newcommand\wordcount{\input{\jobname.sum}}
 %\addbibresource{Thesis.bib}
 \graphicspath{{Figures/Chapter1/}{Figures/Chapter2/}{Figures/Chapter3/}{Figures/Chapter4/}{Figures/}{Figures/Chapter5/}{Figures/Chapter6/}}
 
@@ -46,10 +48,9 @@
 %chktex-file 1
 %disable warning about group pages
 \pdfsuppresswarningpagegroup=1
-\raggedbottom
+%\raggedbottom
 \title{An Atom Interferometer for Measuring Horizontal Accelerations}
 \author{Jimmy Stammers}
-
 %% Doc-specific PDF metadata
 \makeatletter%
 \@ifpackageloaded{hyperref}{%
@@ -59,6 +60,6 @@ Accelerations},
 pdfsubject = {Jimmy Stammers’ PhD thesis},
 pdfkeywords = {atom interferometry, navigation, physics, Rubidium},
 pdfauthor = {\textcopyright\ Jimmy Stammers},
-colorlinks=false,
+colorlinks=true,
 linkcolor=black
 }}{}

@@ -24,8 +24,7 @@ A cornerstone of quantum mechanics is the wave-like evolution of
 quantum states as described by the Schr\"odinger equation. As a
 consequence of this, it is possible to create superpositions of states
 that evolve coherently. Furthermore, these states can interfere with
-each other if their wavefunctions overlap. The interference pattern,
-which depends on the difference in phase between the two paths.
+each other if their wavefunctions overlap. The interference pattern depends on the difference in phase between the two paths.
 \par\noindent
 In this section, the theory of matter-wave interference using pulses
 of laser light is presented. It begins in~\SectionRef{subsec:theory_mz} with a description of the
@@ -120,7 +119,7 @@ acceleration, the Lagrangian is given by
   \label{eq:lagrange_acc}
   L = \frac{1}{2}m\dot{x}^2 + m a x
 \end{equation}
-so that it's position and velocity are given by
+so that its position and velocity are given by
 \begin{subequations}
 \begin{align}
   x(t) &= x_a + v_a (t-t_a) + \frac{1}{2} a (t-t_a)^2 \\
@@ -149,7 +148,7 @@ co-ordinates, the difference in the action along the upper and lower paths is
 \end{align}
 The second expression is obtained using $x_b - x_b' = x_c - x_c'
 = \frac{1}{2}a T^2$ and $x_d-x_d' = 2 a T^2$, where the primes
-indicate positions in the absence of acceleration. The last factor on
+indicate positions in the absence of acceleration. The last factor in
 the numerator of~\EquationRef{eq:prop_action} is zero because the
 paths enclose a parallelogram for which $x_c' - x_a' = x_d'-x_b'$. It follows
 from~\EquationRef{eq:prop_phase} that there is no difference in the
@@ -285,7 +284,7 @@ following parameters
 \begin{subequations}
   \begin{align}
     \omega_\textnormal{eff} &= \omega^l_1 - \omega^l_2 \\
-    \phi_\textnormal{eff} &= \phi_1 -\phi_2 \\
+    \phi_\textnormal{eff} &= \phi_1 -\phi_2 \label{eq:raman_phase_eff}\\
     \keff &= \textbf{k}_1 - \textbf{k}_2 \\
           &\approx 2\textbf{k}_1\;
     \text{(because the beams will be counter-propagating)} \nonumber 
@@ -297,7 +296,8 @@ The resonance condition for the Raman transition is given by
 \textbf{v} + \frac{\hbar |\keff|^2}{2m}\right]
   \label{eq:raman_detuning}
 \end{equation}
-Here, the second term in the square brackets is the Doppler shift and
+Here, the second term in the square brackets is the Doppler shift for
+an atom with velocity $\textbf{v}$ and
 the third is the recoil shift.
 \begin{figure}[htpb]
   \centering
@@ -347,7 +347,9 @@ effective Rabi frequency $\Omega_\textnormal{eff}$ are given by
 \end{align}
 \end{subequations}
 where the contribution of $\delta$ to the one-photon detuning of the
-\trans{2}{i} transition has been neglected compared with $\Delta$.
+\trans{2}{i} transition has been neglected compared with $\Delta$. The
+phase of the Rabi frequency is determined by $\phi_\textnormal{eff}$,
+which was previously defined in \EquationRef{eq:raman_phase_eff}.
 Under an appropriate choice of intensities and two-photon detuning, it
 is possible to cancel the differential ac Stark shift
 $\Omega_1^\textnormal{ac} -\Omega_2^\textnormal{ac}$ (see
@@ -403,7 +405,8 @@ is given by
   \sin^2\left(\frac{\Omega' t}{2}\right)
   \label{eq:trans_prob}
 \end{equation}
-\subsection{Application to a Sequence of Raman Pulses}
+\subsection{Application to a Sequence of Raman
+Pulses}\label{subsec:pulse_prop}
 Now, this propagator can be used to determine the state of the atom
 after a sequence of Raman pulses. The propagator was derived using an
 initial state at $t=0$. This can be generalised to an arbitrary time
@@ -453,20 +456,6 @@ detuning with the initial state $\ket{\psi_0} =
 \end{align}
 where $\Phi$ is related to the acceleration of the atom
 in~\EquationRef{eq:phase_interferometer}.
-%In order to observe interference between two atomic states, it is
-%essential that they remain coherent over the required timescale. The
-%most suitable choice of states for this are the $\ket{F=1,m_F=0}$ and
-%$\ket{F=2,m_F=0}$ hyperfine ground states. Neither of these states
-%will spontaneously decay and their energy has only a second-order
-%dependence on magnetic fields. However, the transition frequency
-%$\omega_\text{hfs} \approx 2\pi \times$ \sivalue{6.835}{\GHz} is
-%stimulated using microwave radiation, so each photon imparts little
-%momentum to the atom. Since the sensitivity of an atom interferometer to
-%inertial forces is proportional to the momentum transferred, this can
-%be increased by stimulating Raman transitions using light at optical
-%frequencies. In this case, an atom will absorb a photon from one light
-%field and emit into the other. If the two fields are
-%counter-propagating, this has the effect 
 \subsection{Extending to a Real Atomic System}
 
 In a real atomic system, there are many intermediate states which
@@ -679,10 +668,13 @@ to $(\omega_1 + \omega_2)$ have been neglected as they are
 off-resonant. A similar argument follows in the case of two left-handed
 circular polarised fields $\textbf{E} =
 \textbf{E}_0\left(\mathcal{E}_+ e^{-i \omega t} - \mathcal{E}_-
-e^{i \omega t}\right)$. Conversely, the transition is not driven if one beam
-is left-handed and the other is right-handed, since the near-resonant product of dipole operators
-results in components of the form $d^{(1)}_+ d^{(2)}_+$, which
-change the magnetic quantum number by $\pm2$.
+e^{i \omega t}\right)$. If one beam
+is left-handed and the other is right-handed, the near-resonant product of dipole operators
+results in components of the form $d^{(1)}_+ d^{(2)}_+$. This
+changes the magnetic quantum number by $\pm2$, which is suppressed for
+an $\ket{F} \rightarrow \ket{F+1}$ transition. This can be driven at
+resonance, but the transition amplitude rapidly decays as the detuning
+increases.
 \subsection{The Double Interferometer}\label{sec:theory_double_int}
 The two frequencies for driving the Raman transition are sent into the
 experiment along the fast and slow axis of a \ac{pm} fibre. 

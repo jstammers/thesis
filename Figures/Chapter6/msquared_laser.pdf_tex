@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{223.20719098bp}%
+    \setlength{\unitlength}{243.66359058bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,42 +50,50 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,1.45976367)%
+  \begin{picture}(1,1.33721147)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0.5995697,0.2401078){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.0577206\unitlength}\centering \end{minipage}}}%
-    \put(0.28565573,1.1139007){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.34321089\unitlength}\centering \end{minipage}}}%
-    \put(0.18725263,1.60351618){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.36001142\unitlength}\centering \end{minipage}}}%
-    \put(0.5995697,0.2401078){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.0577206\unitlength}\centering \end{minipage}}}%
-    \put(0.1291547,0.24010774){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.05772066\unitlength}\centering \end{minipage}}}%
-    \put(-0.10422832,1.62380474){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{1.17193752\unitlength}\centering \end{minipage}}}%
+    \put(0.54923376,0.21994992){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.05287476\unitlength}\centering \end{minipage}}}%
+    \put(0.26167395,1.02038489){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.31439715\unitlength}\centering \end{minipage}}}%
+    \put(0.17153213,1.46889546){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.32978722\unitlength}\centering \end{minipage}}}%
+    \put(0.54923376,0.21994992){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.05287476\unitlength}\centering \end{minipage}}}%
+    \put(0.11831171,0.21994987){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.05287481\unitlength}\centering \end{minipage}}}%
+    \put(-0.09547799,1.48748073){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{1.07354932\unitlength}\centering \end{minipage}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{msquared_laser.pdf}}%
-    \put(0.24815379,0.51029359){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}Power\end{tabular}}}}%
+    \put(0.22732042,0.46745268){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}Power\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{msquared_laser.pdf}}%
-    \put(0.50720672,0.51700133){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Phase\end{tabular}}}}%
+    \put(0.46462496,0.47359729){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Phase\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{msquared_laser.pdf}}%
-    \put(0.14978139,1.10923539){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Power\end{tabular}}}}%
-    \put(0.15008848,1.17548593){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Frequency\end{tabular}}}}%
+    \put(0.13720672,1.01611125){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Power\end{tabular}}}}%
+    \put(0.13748803,1.07679982){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Frequency\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{msquared_laser.pdf}}%
-    \put(0.46734766,0.66972092){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}SolsTiS\end{tabular}}}}%
+    \put(0.42811221,0.61349554){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}SolsTiS\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{msquared_laser.pdf}}%
-    \put(0.46738467,0.89690194){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}SolsTiS\end{tabular}}}}%
+    \put(0.42814612,0.82160392){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}SolsTiS\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{msquared_laser.pdf}}%
-    \put(0.70894238,1.38489946){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\sivalue{1.13}{\giga\hertz}\end{tabular}}}}%
+    \put(0.64942422,1.26863237){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\sivalue{1.13}{\giga\hertz}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{msquared_laser.pdf}}%
-    \put(0.68088631,0.55044964){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\div 2$\end{tabular}}}}%
+    \put(0.62372356,0.50423749){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\div 2$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{msquared_laser.pdf}}%
-    \put(0.4937375,0.39515509){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\sivalue{3.4}{\giga\hertz}\end{tabular}}}}%
+    \put(0.45228653,0.36198045){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\sivalue{3.4}{\giga\hertz}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=9]{msquared_laser.pdf}}%
-    \put(0.41297215,0.30564154){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Phase\end{tabular}}}}%
-    \put(0.23314721,0.26101952){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\sivalue{80}{\mega\hertz}\end{tabular}}}}%
-    \put(0.41422697,0.25871111){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}AOM 1\end{tabular}}}}%
-    \put(0.41425643,0.20880913){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}AOM 2\end{tabular}}}}%
+    \put(0.37830171,0.27998188){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Phase\end{tabular}}}}%
+    \put(0.2135737,0.23910603){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\sivalue{80}{\mega\hertz}\end{tabular}}}}%
+    \put(0.37945118,0.23699142){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}AOM 1\end{tabular}}}}%
+    \put(0.37947818,0.19127889){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}AOM 2\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=10]{msquared_laser.pdf}}%
-    \put(0.51326421,1.44826344){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Master Frequency Lock\end{tabular}}}}%
-    \put(0.9204381,0.00465952){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}To Experiment\end{tabular}}}}%
-    \put(0.38494822,0.97500445){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.16487201\unitlength}\centering Master\end{minipage}}}%
-    \put(0.46734766,0.72403225){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Slave\end{tabular}}}}%
-    \put(0.23314722,0.20803984){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\sivalue{80}{\mega\hertz}\end{tabular}}}}%
+    \put(0.47017391,1.32667673){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Master Frequency Lock\end{tabular}}}}%
+    \put(0.84316414,0.00426834){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}To Experiment\end{tabular}}}}%
+    \put(0.35263048,0.89314946){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.15103044\unitlength}\centering Master\end{minipage}}}%
+    \put(0.42811221,0.66324724){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Slave\end{tabular}}}}%
+    \put(0.2135737,0.19057418){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\sivalue{80}{\mega\hertz}\end{tabular}}}}%
+    \put(0.4717495,1.10620639){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}Rb cell\end{tabular}}}}%
+    \put(0.33588548,1.18045229){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}photodiode\end{tabular}}}}%
+    \put(0.93760809,0.68625531){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\ac{hwp}$\end{tabular}}}}%
+    \put(0.93145125,0.6385844){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\ac{pbs}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{msquared_laser.pdf}}%
+    \put(0.69772227,1.12227959){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\ac{eom}$\end{tabular}}}}%
+    \put(0.73061661,0.79894396){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}glass\\wedge\end{tabular}}}}%
+    \put(0.93760809,0.29842576){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\ac{aom}$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

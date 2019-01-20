@@ -159,35 +159,23 @@ up to \sivalue{76}{\milli\second} after being released from the trap.
 \begin{figure}[!htbp]
   \centering
   \includegraphics[width=0.8\textwidth]{molasses_launch}
-  \caption[Atom cloud position after launching in a moving molasses]{A series of images showing the trajectory of the atom cloud after being cooled in a moving molasses. The first image was taken \sivalue{7}{\milli\second} after initiating the molasses and a subsequent one every \sivalue{5}{\milli\second}. Each image represents a region of interest of dimensions 1150 \(\times\) 1650 pixels that covers the spatial extent of the atom cloud during the launch.}
-  \label{fig:molasses_launch}
+  \caption[Atom cloud position after launching in a moving molasses]{A
+  series of images showing the trajectory of the atom cloud after
+being cooled in a moving molasses. The first image was taken
+\sivalue{7}{\milli\second} after initiating the molasses and a
+subsequent one every \sivalue{5}{\milli\second}. Each image represents
+a region of interest of dimensions \sivalue{16.3}{\mm} \(\times\)
+\sivalue{23.4}{\mm} that covers the spatial extent of the atom cloud during the launch.}
+ \label{fig:molasses_launch}
 \end{figure}
 \subsubsection{Measuring the Temperature}
 In thermal equilibrium, the velocity distribution of the atoms is
 described by a Maxwell-Boltzmann distribution. The velocity
 component along one direction has the distribution
-%\begin{equation}
-%    f(v_x,v_y,v_z) = \left(\frac{m}{2\pi k_B }\right)^{3/2}e^{-\frac{m (v`_x^2+v`_y^2+v`_z^2)}{2 k_B T}}
-%    \label{eq:mb3D}
-%\end{equation}
-%where \(v`_i = v_i - \langle v_i \rangle\) is the difference from the
-%average velocity. Along a single axis, the velocity distribution is
-%obtained by integrating over the other velocity components. For the
-%sake of notation, the following discussion uses \(x\) and \(v_x\) as
-%labels for position and velocity, but these are interchangeable with
-%the equivalent components along the other axes.
-%As~\EquationRef{eq:mb3D} is a product of velocity distributions along
-%each axis, the velocity distribution along one axis is 
 \begin{equation}
   f(v_x) = \left(\frac{m}{2\pi k_B T}\right)^{1/2}e^{-\frac{m (v_x-\langle v_x \rangle) ^2}{2 k_B T}}
   \label{eq:mb1D}
 \end{equation}
-%Suppose that there are initially \(n_0 (x) \mathrm{d}x\) atoms within
-%the region \((x, x+\mathrm{d}x)\), where \(n_0(x) = n(x, t=t_0)\) is
-%the initial atomic density along one axis. During ballistic expansion,
-%the atoms redistribute themselves according to their velocity. After a
-%time \(t\) of free expansion, the position of an atom initially at
-%\(x\) is \(x + v_x t\). 
 Assuming that the number density is initially a Gaussian, with a peak
 number density \(n_0(x_0)\) at the centre-of-mass,
 and a mean square radius projected along $x$ of $\sigma_0^2$, the
@@ -209,7 +197,14 @@ Gaussian, with a mean-square radius (projected along $x$) given by
 profile projected along each axis seen by the camera,
 as described in~\SectionRef{sec:imaging}. The width along each
 axis is estimated using a non-linear least squares fit
-to~\EquationRef{eq:density_time}.
+to~\EquationRef{eq:density_time}. Along the vertical axis, it can be
+seen that the fit is poor on the left-hand side of the distribution.
+This can be explained by the irregular shape of the cloud. Close
+inspection of the images in~\FigureRef{fig:molasses_launch} shows a
+comet-like tail distribution of atoms. This is likely caused by an
+imbalance in the intensity, and hence scattering rate, from each
+\ac{mot} beam. In spite of this imbalance, the molasses was still able
+to cool the atoms to a sufficiently cold temperature.
 \FigureRef{fig:molasses_temperature} shows the measured cloud width
 over a range of expansion times. The
 initial measurement was made \sivalue{7}{\milli\second} after the end
@@ -223,8 +218,10 @@ camera as \(T_x = \sivalue{6.38 \pm 0.11}{\micro\kelvin}\) and \(T_y =
 \begin{figure}[htpb]
   \centering
   \includegraphics[width=0.8\linewidth]{molasses_fit_examp.pdf}
-  \caption[Integrated pixel counts during ballistic expansion.]{Integrated pixel count for a single image during ballistic
-    expansion. The dashed lines indicate non-linear least squares fits
+  \caption[Integrated pixel counts during ballistic
+  expansion.]{Integrated pixel count for a single image after
+    \sivalue{7}{\ms} of ballistic expansion. The blue curve shows the profile along the horizontal axis
+while the profile along the vertical axis is shown by the green curve. The dashed lines indicate non-linear least squares fits
   to a Gaussian function.}
   \label{fig:molasses_fit_examp}
 \end{figure}
@@ -239,19 +236,23 @@ camera as \(T_x = \sivalue{6.38 \pm 0.11}{\micro\kelvin}\) and \(T_y =
     images give the mean-square radii $\sigma(t)^2$ in the horizontal
     (blue) and vertical (orange) directions. 
     The gradient of these curves gives temperatures \(T_x = \sivalue{6.38 \pm0.11}{\micro\kelvin}\) and \(T_y =
-  \sivalue{6.38\pm0.09}{\micro\kelvin}\).}
+  \sivalue{6.38\pm0.09}{\micro\kelvin}\). The error bars are dominated
+by the systematic contribution from the uncertainty in the
+magnification of the camera optics as opposed to the statistical
+uncertainty in the estimated width.}
   \label{fig:molasses_temperature}
 \end{figure}
 
 \subsubsection{Measuring the Launch Trajectory}
 The same method used to measure the temperature of the cloud can also
-be used to measure the position of the centre-of-mass. In this case,
-the quantity of interest is \(\langle x(t)\rangle\). Since the cloud
+be used to measure the position of the centre-of-mass \(\langle
+x(t)\rangle\). Since the cloud
 is in free-fall, the trajectory for the centre-of-mass is then given
-by the well-known equation-of-motion for a particle moving under
+by the equation-of-motion for a particle moving under
 constant acceleration
 \begin{equation}
-  \langle x(t) \rangle = \langle x(0) \rangle + v_x t + \frac{1}{2} a_x t^2
+  \langle x(t) \rangle = \langle x(0) \rangle + v_x t + \frac{1}{2}
+  a_x t^2,
   \label{eq:position_free}
 \end{equation}
 where \(v_i\) is the initial velocity along the given axis and \(a_i\)
@@ -323,8 +324,9 @@ After the atoms have been cooled in an optical molasses, the
 population will mostly be distributed across the \(\ket{F=2,m_F}\)
 sublevels,
 along with a small fraction distributed across the \(\ket{F=1,m_F}\)
-sublevels. The Raman transition only couples the \(\ket{1,0}\) and
-\(\ket{2,0}\) states, so atoms in the other hyperfine ground states
+sublevels. With a sufficiently large magnetic field to lift the Zeeman
+degeneracy and under an appropriate choice of light polarisation, the Raman transition only couples the \(\ket{1,0}\) and
+\(\ket{2,0}\) states. Atoms in the other hyperfine ground states
 cannot participate in the interferometer. In fact, since the
 individual Zeeman sub-levels are not resolved during detection, these
 background atoms result in a loss of fringe visibility.  
@@ -366,9 +368,14 @@ for steps 1 and 2 are addressed.
 A timing diagram of the state preparation sequence is shown
 in~\FigureRef{fig:state_selection_timing}, which indicates the
 duration for which each optical or microwave pulse is applied, as well
-as the direction of the applied magnetic field. The field is switched
+as the direction of the applied magnetic field. The field is rotated
 slowly over \sivalue{2}{\milli\second} (which is omitted from the
-diagram) to preserve the spin state of each atom. 
+diagram) to preserve the spin state of each atom. The spin state
+precesses at the Larmor frequency, which is
+\sivalue{1.4}{\MHz\per\gauss}.
+With an applied magnetic field on the order of \sivalue{1}{\gauss}, the
+spin precession period is around \sivalue{0.7}{\us}, so the
+orientation of the magnetic field evolves at a much slower rate.
 \begin{figure}[!htbp]
     \centering
     %\def\svgwidth{0.8\textwidth}
@@ -415,7 +422,10 @@ pumped into \(\ket{F=1}\) in less than \sivalue{5}{\micro\second}.
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.7\textwidth]{step1_pumping}
-    \caption[Ground state distribution during \trans{2}{2} pumping]{Population across the two hyperfine ground states after \trans{2}{2} pumping under various magnetic field strengths. The $\smalltriangledown$ ($\circ$) markers indicate the population in $\ket{F=2}$ ($\ket{F=1})$. The red, blue and green series correspond to field strengths of \sivalue{-0.16}{\gauss}, \sivalue{1.67}{\gauss}, and \sivalue{3}{\gauss}, respectively.}
+    \caption[Ground state distribution during \trans{2}{2}
+    pumping]{Population across the two hyperfine ground states after
+    \trans{2}{2} pumping under various magnetic field strengths. The $\circ$
+  ($\smalltriangledown$) markers indicate the population in $\ket{F=2}$ ($\ket{F=1})$. The red, blue and green series correspond to field strengths of \sivalue{-0.16}{\gauss}, \sivalue{1.67}{\gauss}, and \sivalue{3}{\gauss}, respectively.}
     \label{fig:step1_pumping}
 \end{figure}
 \subsubsection{Driving the \trans{1}{0} transition}
@@ -441,10 +451,12 @@ the $m_F=-1$ population is suppressed. From~\FigureRef{fig:step2_mf1}, the first
 Zeeman shift (\sivalue{1.4}{\MHz\per\gauss}) of the $m_F = -1$ state is \sivalue{-4.435}{\MHz}, which gives a
 field strength of \sivalue{3.17}{\gauss}. This is in close agreement
 with the value measured from the second-order shift of the 0
-\(\rightarrow\) 0 clock transition. The second-order shift of
-\sivalue{575.15}{\hertz\per\gauss\squared} and the measured shift of
-\sivalue{5.6}{\kilo\hertz} correspond to a field strength of
-\sivalue{3.12}{\gauss}. 
+\(\rightarrow\) 0 clock transition. Fitting the central peak
+of the blue curve in~\FigureRef{fig:step2_mf0} to a
+Lorentzian gives a shift from the hyperfine splitting frequency of \sivalue{5.6}{\kilo\hertz}.
+The second order Zeeman shift is
+\sivalue{575.15}{\hertz\per\gauss\squared}, so the corresponding field
+strength is \sivalue{3.12}{\gauss}. 
 \begin{figure}[!htbp]
     \centering
     \def\svgwidth{\columnwidth}
@@ -471,8 +483,10 @@ polarised light, a $\pi$-component of this magnitude can be caused by
 a mis-alignment of the magnetic field from the $\vec{z}$ axis of
 $2.4^\circ$. This is reasonable given that the coils were fixed around
 the vacuum chamber without accurately aligning to
-the vertical axis of the chamber.
-
+the vertical axis of the chamber\footnote{The alignment of the
+  magnetic field has been subsequently improved and has indeed
+  resulted in a reduction in the residual $m_F = \pm 1$ population to
+less than 1\%}.
 The effect of these background atoms on the measured
 interferometer signal is discussed later,
 in~\SectionRef{subsec:phase_measurement}.
@@ -482,9 +496,8 @@ in~\SectionRef{subsec:phase_measurement}.
     \caption[\(\ket{1,m_F}\) populations for increasing \trans{1}{0}
     pumping time.]{Population in each Zeeman sub-level as the
     \trans{1}{0} pumping time is increased. The \(m_F = 0, -1, +1\)
-  populations are shown in blue, orange and green, respectively. blue
-points: with F-1. orange points: without pumping. After \sivalue{30}{\micro\second}, approximately 5\% of the population remains in the \(m_F = \pm 1\) sub-levels.}
-    \label{fig:step2_pumping}
+  populations are shown in blue, orange and green, respectively. After \sivalue{30}{\micro\second}, approximately 5\% of the population remains in the \(m_F = \pm 1\) sub-levels.}
+  \label{fig:step2_pumping}
 \end{figure}
 \subsection{The Microwave Transitions}\label{subsec:microwaves}
 \subsubsection{Microwave Generation}

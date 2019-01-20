@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: jstammersThesis.aux
+A level-1 auxiliary file: frontmatter.aux
+A level-1 auxiliary file: introduction.aux
+A level-1 auxiliary file: theory.aux
+A level-1 auxiliary file: compcontrol.aux
+A level-1 auxiliary file: mots.aux
+A level-1 auxiliary file: atompreparation.aux
+A level-1 auxiliary file: ramanoptics.aux
+A level-1 auxiliary file: interferometry.aux
+A level-1 auxiliary file: conclusion.aux
+A level-1 auxiliary file: backmatter.aux
+The style file: lucas_unsrt.bst
+Database file #1: Thesis.bib
+Warning--empty year in Levine
+Warning--empty author in accelStandard
+Warning--empty publisher in RBerman1997
+Warning--empty publisher in Brink1968
+Warning--empty booktitle in Lawrence1998
+Warning--empty publisher in Lawrence1998
+Warning--empty publisher in Howard2002
+You've used 104 entries,
+            2517 wiz_defined-function locations,
+            1486 strings with 31511 characters,
+and the built_in function-call counts, 35914 in all, are:
+= -- 3584
+> -- 1469
+< -- 0
++ -- 524
+- -- 420
+* -- 3013
+:= -- 4838
+add.period$ -- 118
+call.type$ -- 104
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 111
+duplicate$ -- 2021
+empty$ -- 3425
+format.name$ -- 246
+if$ -- 9044
+int.to.chr$ -- 0
+int.to.str$ -- 104
+missing$ -- 287
+newline$ -- 332
+num.names$ -- 102
+pop$ -- 630
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1249
+stack$ -- 0
+substring$ -- 1838
+swap$ -- 851
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 7
+while$ -- 281
+width$ -- 107
+write$ -- 1208
+(There were 7 warnings)

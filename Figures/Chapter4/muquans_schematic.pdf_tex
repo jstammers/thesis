@@ -75,5 +75,10 @@
     \put(0.11019206,0.2906944){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Slave2\end{tabular}}}}%
     \put(0.77877884,0.76276762){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}          MOT\\Cooling + Repump\end{tabular}}}}%
     \put(0.93148776,0.26851781){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Raman\end{tabular}}}}%
+    \put(0.62393179,0.92656954){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Rb Cell\end{tabular}}}}%
+    \put(0.39734547,0.76040152){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\ac{eom}\end{tabular}}}}%
+    \put(0.69374982,0.76093152){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\ac{aom}\end{tabular}}}}%
+    \put(0.63747051,1.00803048){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\ac{qwp}\end{tabular}}}}%
+    \put(0.61041199,1.07183097){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}photodiode\end{tabular}}}}%
   \end{picture}%
 \endgroup%

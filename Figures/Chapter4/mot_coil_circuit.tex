@@ -1,0 +1,9 @@
+\begin{circuitikz}
+  \draw
+  (0, 0) node[op amp] (opamp) {}
+  (opamp.-) node[anchor=east]{$V_{in}$}
+  (opamp.out) to [short,-] ++(0,-0.5) coordinate (ind1) %node[]{$R_L$}
+  to [cute inductor, label=$R_L$] ++(0,-0.5) node(break){} 
+  (break) to [R, l_=$R_c$] ++(0,-2.5) coordinate (R)
+  (R) to node[ground]{} ++(0,-0)
+\end{circuitikz}

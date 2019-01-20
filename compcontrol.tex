@@ -132,13 +132,19 @@ Serial communication is used to control devices which require more complex
 control than is possible using analogue or digital voltages. This increase in
 complexity comes at the cost of slower response times, because it takes
 longer to communicate an array of bytes than to change the voltage
-across an output terminal. Using the NI-VISA driver, the output of serial
+across an output terminal. For this reason, serial communication is
+mostly used to control devices where the execution time does not need
+to be precise. Using the NI-VISA driver, the output of serial
 data can only be timed using a software clock on a computer, which is more
 prone to jitter than a hardware clock. One way to improve the synchronisation
 between serial data and hardware timed outputs is to use extra hardware to
 trigger the transmission of serial data. If the trigger is timed using the
 same clock as other outputs and the transmission delay is accounted for, then
-serial data can be output more synchronously. The scheme for timing serial
+serial data can be output more synchronously. In this experiment, the
+devices controlled using serial communication are triggered to execute
+the commands using another hardware trigger. It is this trigger which
+enables the precise timing of the device, not the one which triggers
+the transmission of the serial data. The scheme for timing serial
 messages is shown in \FigureRef{fig:serial_timing}. Serial messages are
 stored as strings on the computer and a counter channel is configured so that
 every time it detects a rising edge, the computer outputs the next message.
@@ -193,6 +199,12 @@ contains the following properties:
 \end{itemize}
 where each channel is represented by its own property and associated
 with an identifying name.
+\begin{figure}[!htbp]
+    \centering
+    \resizebox{0.7\textwidth}{!}{\includegraphics{motmaster_sequence.png}}
+    \caption[MOTMaster user interface]{A sequence as represented in the MOTMaster user interface. Each step defines a duration and properties for each output channel. The sequence can either be run repeatedly, or configured to iterate through values of a chosen parameter.}
+    \label{fig:motmaster_sequence}
+\end{figure}
 \par\noindent
 A sequence step is useful to represent a single action, so that each
 stage of the experiment, for example the initial \ac{mot} loading phase, is
@@ -243,12 +255,6 @@ counter channel are configured, similarly to the rest of the \ac{daq}
 hardware. The sequence is started by sending a software trigger to one output
 card, which is configured to export its start trigger to the other cards.
 This ensures that start of the output of each card is synchronised. 
-\begin{figure}[!htbp]
-    \centering
-    \resizebox{0.7\textwidth}{!}{\includegraphics{motmaster_sequence.png}}
-    \caption[MOTMaster user interface]{A sequence as represented in the MOTMaster user interface. Each step defines a duration and properties for each output channel. The sequence can either be run repeatedly, or configured to iterate through values of a chosen parameter.}
-    \label{fig:motmaster_sequence}
-\end{figure}
 \par\noindent
 After the sequence has finished, any acquired data from the analogue input channels is
 streamed to the computer. The data per channel are segmented into arrays that

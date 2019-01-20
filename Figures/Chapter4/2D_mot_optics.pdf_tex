@@ -50,17 +50,23 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.39649638)%
+  \begin{picture}(1,0.45132476)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{2D_mot_optics.pdf}}%
-    \put(-0.00241766,0.28941438){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}mot\end{tabular}}}}%
-    \put(0.41936674,0.27515609){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\frac{\lambda}{4}$\end{tabular}}}}%
+    \put(-0.00241766,0.34424275){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}mot\end{tabular}}}}%
+    \put(0.41936674,0.32998447){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\frac{\lambda}{4}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{2D_mot_optics.pdf}}%
-    \put(0.18395585,0.37627125){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\frac{\lambda}{2}$\end{tabular}}}}%
+    \put(0.17720978,0.43109963){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\frac{\lambda}{2}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{2D_mot_optics.pdf}}%
-    \put(0.48028788,0.35981861){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}push\end{tabular}}}}%
-    \put(0.49059631,0.29153045){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}mot\end{tabular}}}}%
+    \put(0.48028788,0.41464699){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}push\end{tabular}}}}%
+    \put(0.49059631,0.34635883){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}mot\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{2D_mot_optics.pdf}}%
+    \put(0.11833855,0.20822334){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}$\ac{pbs}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{2D_mot_optics.pdf}}%
+    \put(0.36227252,0.00093549){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25000012}\smash{\begin{tabular}[t]{c}retro-reflecting mirror\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{2D_mot_optics.pdf}}%
+    \put(0.10165378,0.41490906){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}lens\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{2D_mot_optics.pdf}}%
   \end{picture}%
 \endgroup%

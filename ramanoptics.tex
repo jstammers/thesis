@@ -50,8 +50,12 @@ The effects of a gradient of intensity on the fringe contrast can be shown by
 considering an ensemble of atoms with a Gaussian
 distribution of position. Neglecting the effect of the ensemble's velocity distribution on
 the Raman detuning, the Rabi frequency \(\Omega\)
-varies only as a function of the radial displacement $\rho$ from the optic axis. The
-fringe contrast is then a convolution of the contrast for a
+varies only as a function of the radial displacement $\rho$ from the
+optic axis. Recalling~\SectionRef{subsec:pulse_prop}, the state of the
+atom (see~\EquationRef{eq:general_state}) depends on the Rabi frequency
+$\Omega$, detuning $\delta$, duration $\tau$ and phase $\phi$ of each
+pulse. The
+fringe contrast over the ensemble is then a convolution of the contrast for a
 single atom with the atomic density distribution
 \begin{equation}
 	\mathcal{C} = \int_0^\infty
@@ -81,7 +85,13 @@ peak value.
 \FigureRef{fig:raman_fringecontrast} shows the fringe contrast as a function as beam waist for an atom cloud of
 rms radius \(\sigma_c = \sivalue{5}{\milli\metre}\) and a time between
 interferometer pulses of \(T = \sivalue{25}{\milli\second}\) for three
-cases. The blue curve shows the contrast when the atom cloud is initially at the
+cases. The state of each atom is calculated using the intensity
+distribution, atomic trajectory and spatial distribution to determine
+the Rabi frequency for each atom during each pulse. The contrast for
+each atom is then determined from the difference in population for
+interferometer phases of $\Phi = 0$ and $\Phi = \pi/2$ so that the
+fringe contrast over the ensemble can be calculated
+using~\EquationRef{eq:cloud_contrast}. The blue curve shows the contrast when the atom cloud is initially at the
 centre of the laser and falls from rest under gravity so that centre-of-mass coordinates are
 \(\left(0, -\frac{1}{2}g T^2, -2 g T^2\right)\) respectively. The
 orange curve includes the vertical velocity of
@@ -146,65 +156,60 @@ $ \sivalue{5}{\km} means that when collimated, the two beams have an
 almost identical radius of curvature. In this case, the effective field will have a planar wavefront.
 However, if the beams are not collimated they will have different
 radii of curvature and their superposition will therefore
-have a parabolic wavefront. Each Raman pulse will impress a different
+have a parabolic wavefront, as illustrated
+in~\FigureRef{fig:retro_divergence}. Each Raman pulse will impress a different
 phase to an atom falling under gravity, leading to a component of the
-interferometer phase that gives a false acceleration. 
+interferometer phase that gives a false acceleration. The effects of
+this can be shown from a simulation of the Raman wavefront. This is
+calculated by tracing the rays that correspond to each Raman beam.
+Rays corresponding to the reflected beam are propagated further making
+the assumption that the mirror is perpendicular to the optic axis.
+Based on the experimental apparatus, the first set of rays propagates \sivalue{43}{\milli\metre} and the second propagates \sivalue{129}{\milli\metre}. 
+The wavefront for each beam is calculated by taking the slope of each
+ray and subtracting from the slope of the central ray. 
 \FigureRef{fig:collimation_wavefront} shows the effects of poor
-collimation on the Raman phase shift for several divergence
-angles. \FigureRef{fig:collimation_error} shows the corresponding interferometer phase for an
+collimation on the Raman phase for several divergence
+angles. When the Raman beams are diverging, their different radii of
+curvature results in a parabolic wavefront, as illustrated
+in~\FigureRef{fig:retro_divergence}.  
+\FigureRef{fig:collimation_error} shows the corresponding interferometer phase for an
 atom falling from rest under gravity with a pulse separation of $T=$
 \sivalue{25}{\ms}. A divergence angle of
-\sivalue{1}{\milli\radian} results in an interferometer phase
-contribution of \sivalue{8e-7}{\radian}.  
-Provided that the beams are reasonably
-well-collimated, this effect can be largely neglected as it is
+\sivalue{350}{\micro\radian} results in an interferometer phase
+contribution of \sivalue{10}{\milli\radian}. It should also be noted
+that since the atoms are launched vertically, they do not travel as
+far and the interferometer phase error will be
+smaller than indicated here. Provided that the beams are
+well-collimated, this effect can be neglected as it is
 unlikely to be a dominant source of error. 
-%\begin{figure}[!htbp]
-%	\centering
-%	\def\svgwidth{\columnwidth}
-%	\subfloat[][]{\includegraphics[width=0.4\textwidth]{wavefront_transverse.pdf}\label{fig:raman_wave_transverse}}
-%	\subfloat[][]{\includegraphics[width=0.4\textwidth]{wavefront_longitudinal.pdf}\label{fig:raman_wave_longitudinal}}
-%	\caption[Simulated wavefront distortion for longitudinal and transverse fibre
-%		misalignment]{Simulated wavefront distortion for longitudinal and transverse
-%		fibre misalignment. Rays from a point source with a divergence angle
-%		corresponding to a \ac{na} of 0.12 are propagated through the Raman optical
-%		system. Rays corresponding to the reflected beam are propagated further with
-%		the assumption that the mirror is perpendicular to the optic axis. The first
-%		set of rays propagates \sivalue{43}{\milli\metre} and the second propagates
-%		\sivalue{129}{\milli\metre}. The wavefront for each beam is calculated by
-%		taking the slope of each ray and subtracting from the slope of the central
-%		ray. The wavefront of the effective field that drives the Raman transition
-%		is the difference of these two wavefronts. (a) shows the distortion of the
-%		wavefront for a transverse misalignment of the fibre for a displacement of
-%		\sivalue{0}{\milli\metre} (blue), \sivalue{0.5}{\milli\metre} (orange)
-%		\sivalue{1}{\milli\metre} (green) and \sivalue{1.5}{\milli\metre}
-%		(red) from
-%		the front focal point. (b) shows the wavefront for longitudinal
-%		displacements of \sivalue{0}{\milli\metre} (blue),
-%		\sivalue{0.3}{\milli\metre} (orange)
-%		\sivalue{0.6}{\milli\metre} (green) and \sivalue{1}{\milli\metre}
-%		(red).}\label{fig:fig_label}
-%\end{figure}
 \begin{figure}[!htbp]
 	\centering
 	\def\svgwidth{\columnwidth}
-	\subfloat[][]{\includegraphics[width=0.4\textwidth]{wavefront_longitudinal.pdf}\label{fig:collimation_wavefront}}
-	\subfloat[][]{\includegraphics[width=0.4\textwidth]{collimation_phase_error.pdf}\label{fig:collimation_error}}
+  \subfloat[][]{\scalebox{0.3}{\input{retro_divergence.pdf_tex}\label{fig:retro_divergence}}}
+	\subfloat[][]{\includegraphics[width=0.4\textwidth]{wavefront_longitudinal.pdf}\label{fig:collimation_wavefront}}\\
+  \subfloat[][]{\includegraphics[width=0.4\textwidth]{collimation_phase_error.pdf}\label{fig:collimation_error}}
 	\caption[Wavefront distortion and interferometer phase error for
   diverging Raman beams.]{Wavefront distortion and interferometer phase error for
-  diverging Raman beams. The wavefront is calculated by propagating
-  the two Raman beams. Rays corresponding to the reflected beam are propagated further with the assumption that the mirror is perpendicular to the optic axis. The first
-		set of rays propagates \sivalue{43}{\milli\metre} and the second propagates
-		\sivalue{129}{\milli\metre}. The wavefront for each beam is calculated by
-		taking the slope of each ray and subtracting from the slope of the central
-		ray. The wavefront of the effective field that drives the Raman transition
-    is the difference of these two wavefronts. \textbf{(a)} shows the distortion of the
-		wavefront for divergence angles of
+    diverging Raman beams. \textbf{(a)} illustrates the case of
+    diverging Raman beams, where the forward-propagating (shown in
+    red) has a smaller radius of curvature than the
+    backwards-propagating beam (shown in blue). Here, the phase
+    difference varies radially, leading to a parabolic Raman wavefront
+    (shown as a dashed black line). \textbf{(b)} shows the difference in the
+  Raman phase $\phi$ between the optic axis and a radial displacement $r$ for
+  beam divergence angles of
 		\sivalue{20}{\micro\radian} (blue), \sivalue{400}{\micro\radian} (orange)
 		\sivalue{800}{\micro\radian} (green) and
-    \sivalue{1.2}{\milli\radian} (red). \text{(b)} shows the resultant
-    interferometer phase error as a function of divergence angle for an atom falling under gravity
-    starting at rest on the optic axis.  
+    \sivalue{1.2}{\milli\radian} (red). The black points indicate the
+    phase shift of each interferometer pulse for an atom falling under
+    gravity and a pulse separation time of \sivalue{25}{\ms}.
+    \textbf{(c)} shows the resultant
+    interferometer phase error $\epsilon_\Phi$ as a function of
+    divergence angle $\theta$ for an atom falling under gravity
+    starting at rest on the optic axis. When falling under gravity, a divergence angle of less than
+    \sivalue{350}{\micro\radian} results in a phase error of less
+    than \sivalue{10}{\milli\radian} which is the value that
+    corresponds to the uncertainty due to sources of phase noise. 
 		}\label{fig:collimation_error_plots}
 \end{figure}
 \par\noindent
@@ -239,13 +244,13 @@ in~\FigureRef{fig:imperfect_retro}. In this case the phase difference
 between the incoming and reflected beams is independent of transverse
 position and there is no systematic offset in the interferometer
 phase. However, the wavevectors of the
-two beams are no longer colinear. The Raman wavevector along the optic axis
+two beams are no longer collinear. The Raman wavevector along the optic axis
 ($\hat{\textbf{x}}$)
 is now $\keff' =
-(k_1-k_2)\cos(\theta)\hat{\textbf{x}} \approx  \keff (1-\theta^2)$. This leads to a
-calibration error by a factor of $(1-\theta^2)$. For an
+(k_1-k_2)\cos(\theta)\hat{\textbf{x}} \approx  \keff (1-\frac{1}{2}\theta^2)$. This leads to a
+calibration error by a factor of $(1-\frac{1}{2}\theta^2)$. For an
 acceleration of \sivalue{0.3}{\g}, a tilt
-of $\theta = $ \sivalue{0.18}{\milli\radian} gives an interferometer
+of $\theta = $ \sivalue{0.26}{\milli\radian} gives an interferometer
 phase error of \sivalue{1}{\milli\radian}. \SectionRef{sec:in_situ} describes a method
 used to ensure good alignment of the mirror, which
 renders this error negligible.
@@ -258,7 +263,7 @@ renders this error negligible.
   Here, the mirror is perpendicular to the optic axis so that the
 Raman phase has a planar wavefront (indicated by the dotted line) that
 travels along that axis. The tilt of the two beams means that their
-wavevectors are not colinear and the Raman wavevector is $\keff' =
+wavevectors are not collinear and the Raman wavevector is $\keff' =
 \textbf{k}_1 - \textbf{k}_2 \simeq
 (k_1+k_2)\cos(\theta)\hat{\textbf{x}}$, where $\hat{\textbf{x}}$ is
 the optic axis.}
@@ -349,6 +354,7 @@ introduced by passing light through a vacuum window.
 		vacuum chamber.}
 	\label{fig:raman_optics}
 \end{figure}
+\noindent
 \FigureRef{fig:raman_collimator} presents a diagram of the components used to
 send Raman light into the chamber and produce a collimated beam in the centre of
 the chamber. The light is coupled into the chamber using a UHV compatible
@@ -394,7 +400,6 @@ irregular intensity profile in the collimated beam. This inhomogeneity
 was subsequently found to significantly dephase the atoms during a
 Raman transition, which is discussed
 in~\SectionRef{subsec:int_pulses}.
-\subsection{Alignment and Collimation}
 %As one of the main motivations for mounting the Raman optics inside the vacuum
 %chamber was to reduce the effects of wavefront distortions, it is worth
 %highlighting how inaccurate alignment of the optics can lead to aberrations. As
@@ -475,7 +480,7 @@ angle of \sivalue{0.4\pm0.03}{\milli\radian}.}
     beam. The polarisation then ensures that the Raman transition is
     driven by counter-propagating beams - either $\sigma^+ - \sigma^+$
     or $\sigma^- - \sigma^-$. This retro-reflection part of the
-    optical
+    optical train
     is the most crucial for avoiding transverse spatial variation in
     the Raman phase.\par\noindent
 		The mirror is also manufactured by Light Machinery, and the \ac{qwp} is made
@@ -535,8 +540,8 @@ continuously monitor the alignment of the mirror.
 %incoming light. A drift of the polarisation from its output rendered
 %this continuous monitoring impractical. 
 \par\noindent 
-Out sponsors, the dstl, want the accelerometer to have an automated
-start-up procedure, so an automatic routine was devised to do align
+Our sponsors, the dstl, want the accelerometer to have an automated
+start-up procedure, so an automatic routine was devised to align
 the retro-reflector. This was carried out using
 a pair of bipolar stepper motors to adjust each thumbscrew. The revolution of these motors was controlled using
 an Arduino microcontroller, which communicated with the computer using a serial

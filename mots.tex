@@ -14,7 +14,8 @@ The vacuum chamber, along with the components mounted to it, make up the
 majority of the hardware used in the preliminary trapping and cooling
 stages of
 the experiment. \FigureRef{fig:mot_system} shows a diagram of the
-vacuum chamber and the main \ac{mot} components. The chamber is made of 316L stainless
+vacuum chamber and the main \ac{mot} components. In this diagram,
+gravity is acting towards the bottom of the page. The chamber is made of 316L stainless
 steel, which has a low magnetic permeability to reduce stray magnetic
 fields on the atoms. It contains 16 DN40
 ConFlat ports arranged
@@ -54,7 +55,8 @@ absorbed by the \ac{neg}, in particular Rubidium, are pumped by the
 		slow and cool atoms.  A spherical quadrupole
 		field traps atoms at the centre of the chamber. Not shown are additional bias
 		coils along each \ac{mot} beam axis to null stray fields at the centre
-		of the chamber.}
+		of the chamber. Gravity acts towards the bottom of the page, along
+  the central axis of the 3D \ac{mot} quadrupole coils.}
 	\label{fig:mot_system}
 \end{figure}
 \subsection{The 2D MOT system}\label{sec:2d_mot}
@@ -97,27 +99,35 @@ capture velocity of the 3D \ac{mot}, this configuration, referred to as a 2D\(+\
 	\centering
 	\def\svgwidth{0.5\textwidth}
 	\input{Figures/Chapter4/2D_mot.pdf_tex}
-	\caption[Schematic for the 2D \ac{mot}]{Schematic diagram for the 2D \ac{mot}. \ac{rb87} atoms are trapped and cooled along the 2 axes orthogonal to the long axis of the source cell. The black arrows indicate the direction of the current through each coil. Each circularly polarised beam drives \(\sigma^-\) transitions for an atom moving in the opposite direction. A linearly polarised push beam propagates along the longitudinal axis and is partially reflected by the silicon wafer at the opposite end. This provides a small amount of axial cooling and the imbalance of radiation pressure pushes atoms out of the cell. The pinhole at the other end prevents atoms with a high transverse velocity from leaving the cell.}
+	\caption[Schematic for the 2D \ac{mot}]{Schematic diagram for the 2D
+  \ac{mot}. \ac{rb87} atoms are trapped and cooled along the 2 axes
+orthogonal to the long axis of the source cell. The black arrows
+indicate the direction of the current through each coil. The
+handedness of each circularly polarised beam is indicated and are such
+that each beam drives \(\sigma^-\) transitions for an atom moving in the opposite direction. A linearly polarised push beam propagates along the longitudinal axis and is partially reflected by the silicon wafer at the opposite end. This provides a small amount of axial cooling and the imbalance of radiation pressure pushes atoms out of the cell. The pinhole at the other end prevents atoms with a high transverse velocity from leaving the cell.}
 	\label{fig:2D_mot_diagram}
 \end{figure}
 \FigureRef{fig:2D_mot_optics} shows a schematic of the optical
 components used to generate the light for the 2D \ac{mot}. The cooling
 light enters from a single
 fibre, which is collimated to a beam waist of
-\sivalue{9.5}{\milli\metre} using two aspheric lenses. This is
-linearly polarised and divided
-into two beams of equal power using a \ac{hwp}, one for each cooling
+\sivalue{9.5}{\milli\metre} using two aspheric lenses. A \ac{hwp}
+divides the 
+linearly polarised light
+into two beams of equal power, one for each cooling
 axis. Each beam passes
 through a beam-splitter and a prism mirror, to increase the volume
 covered by
 the 2D \ac{mot} beams. A \ac{qwp} circularly polarises the beam before
 it enters the ar-coated glass cell. On the opposite side of the cell, a
-\(\sivalue{25}{\milli\metre} \times \sivalue{35}{\milli\metre}\) mirror retro-reflects the beam. This is coated with a layer of quartz to form a \ac{qwp}, so that the
+\(\sivalue{25}{\milli\metre} \times \sivalue{35}{\milli\metre}\)
+mirror retro-reflects the beam. A \ac{qwp} is bonded onto the surface
+of the mirror and is aligned so that the
 reflected beam has the same helicity as the incoming.
 \par\noindent 
 The push beam enters from a second fibre input. A fixed focus collimator collimates
 the beam to a waist of \sivalue{1.5}{\milli\metre}. This is mounted onto a
-\sivalue{1}{\inch} kinematic mount to align the push beam to the \sivalue{0.7}{\milli\metre} pinhole at the other end of the cell. The push beam is linearly polarised by a \ac{pbs} to reduce the effect of
+\sivalue{25}{\mm} kinematic mount to align the push beam to the \sivalue{0.7}{\milli\metre} pinhole at the other end of the cell. The push beam is linearly polarised by a \ac{pbs} to reduce the effect of
 polarisation drift on the axial cooling of the 2D \ac{mot}. 
 \par\noindent
 The cell,
@@ -139,7 +149,7 @@ to trigger an electro-chemical reduction reaction, so that pure rubidium sublima
 equal portions using a \ac{hwp} and \ac{pbs}. Along each axis, the
 beam passes through a \ac{pbs} and a prism mirror to increase its
 spatial extent. The beam is circularly polarised before entering the
-cell and retro-reflected by a mirror coated with a \ac{qwp}. The push
+cell and retro-reflected by a \ac{qwp} bonded on top of a mirror. The push
 beam is collimated from another fibre input and linearly polarised
 before entering the cell along the longitudinal axis.}
 	\label{fig:2D_mot_optics}
@@ -186,9 +196,8 @@ field per unit current of
 		coil of \sivalue{7.78}{\ampere\per\square\milli\metre}. The magnitude of
 		the magnetic field (in units of \sivalue{}{\gauss}) and its direction in
 		the axial and radial planes of symmetry are shown in \textbf{(a)} and
-		\textbf{(b)}, respectively. \textbf{(c)} shows the field gradient
-		components \(\partial_x B_x\) (blue), \(\partial_y B_y\) (orange) and
-		\(\partial_z B_z\) (green) along their corresponding axes.}
+		\textbf{(c)}, respectively. \textbf{(b)} shows the field gradient
+		components \(\partial_x B_x\) along the $x$ axis. }
 	\label{fig:2d_mot_field_gradient}
 \end{figure}
 \subsection{The 3D MOT system}\label{sec:3d_mot}
@@ -251,14 +260,19 @@ the temperature of the exterior of the chamber.}
 	\def\svgwidth{\columnwidth}
   \subfloat[][]{\includegraphics[width=0.45\textwidth]{mot_field_3D.pdf}\label{fig:coil_a}}
   \subfloat[][]{\includegraphics[width=0.45\textwidth]{mot_field_together_3D.pdf}\label{fig:coil_b}}
-	\caption[Measured magnetic field and field gradient for the 3D \ac{mot}
-		coils]{Measured magnetic field and field gradient for the 3D \ac{mot}
+	\caption[Measured magnetic field for the 3D \ac{mot}
+  coils]{Measured magnetic field for the 3D \ac{mot}
 		coils. \textbf{(a)} red and blue circles show the axial magnetic
     field component of both coils as
-		measured using a Hall probe.\textbf{(b)} red circles show the
-    field close to the centre when the coils are operating together. The dashed lines indicate the axial field as
-		calculated from the Biot-Savart law.}
-    \label{fig:mot_coil_plots_subfig}	
+		measured using a Hall probe, where the origin corresponds to the
+    outermost coil loop. \textbf{(b)} red circles show the
+    field close to the centre when the coils are operating together.
+    In this case, the origin corresponds to the mid-point between the
+    two coils, which is the centre of the trap. The dashed lines indicate the axial field as
+		calculated from the Biot-Savart law. Close to the centre of the
+  coils, the magnetic field is approximately linear, indicating a
+constant magnetic field gradient.}
+  \label{fig:mot_coil_plots_subfig}	
 \end{figure}
 
 %\begin{figure}[!htbp]
@@ -370,7 +384,12 @@ quantum efficiency of the CCD and \(\alpha\) is a scaling factor that relates
 the incident light energy to pixel counts. By varying the
 exposure time used to image a collimated beam with a total power of
 \sivalue{0.17}{\micro\watt}, the total number of counts recorded by the camera
-as a function of exposure time is plotted in~\FigureRef{fig:camera_counts}. This
+as a function of exposure time is plotted
+in~\FigureRef{fig:camera_counts}. Each data point is obtained by
+subtracting a background measurement for the same exposure time. Below
+\sivalue{50}{\us}, the signal-to-noise ratio is
+too low to detect the incident light as indicated by the fact that
+zero counts are observed for a non-zero duration. This
 gives a count scaling factor of \(\alpha\) =
 \pow{2.2}{5}\,counts\,\sivalue{}{\per\micro\second\per\micro\watt}.
 With this calibration, the number of atoms in the \ac{mot} can be
@@ -381,10 +400,14 @@ in~\SectionRef{subsec:loading_rate}.
 	\includegraphics[width=0.5\textwidth]{cam_per_exposure}
 	\caption[Integrated pixel counts as a function of CCD exposure
 		time.]{Integrated pixel counts as a function of CCD exposure time for an
-		incident optical power of \sivalue{0.17}{\micro\watt}. The dashed line
+		incident optical power of \sivalue{0.17}{\micro\watt} after
+    subtracting a background measurement. The dashed line
 		indicates a linear regression which gives a scaling factor of \(\alpha\)
 		=
-		\pow{2.2}{5}\,counts\,\sivalue{}{\per\micro\second\per\micro\watt}.}
+		\pow{2.2}{5}\,counts\,\sivalue{}{\per\micro\second\per\micro\watt}.
+  Zero counts are detected for a non-zero duration because the
+incident light level is equal to the background light level for
+exposure times below \sivalue{50}{\us}.}
 	\label{fig:camera_counts}
 \end{figure}
 
@@ -416,7 +439,7 @@ an \ac{edfa}. The frequency is doubled to around \sivalue{780}{\nano\metre} usin
   \resizebox{1\textwidth}{!}{\input{muquans_schematic.pdf_tex}}
 	\caption[\Muquans\ Laser System Diagram]{Schematic of the \Muquans\
   laser system. Each output laser is derived from
-a\sivalue{1560}{\nano\metre} \acs{ecdl} (shown in green) which is
+a \sivalue{1560}{\nano\metre} \acs{ecdl} (shown in green) which is
 amplified using an \acs{edfa} and then frequency-doubled to
 \sivalue{780}{\nano\metre} using a \acs{ppln} crystal. A master laser
 is locked to the 3,4 crossover in \ac{rb85} and the output lasers are
@@ -479,7 +502,10 @@ $8 f_0$.
   for the \Muquans cooling laser, plotted as a difference from the
 reference frequency. The beat frequency between the master and slave
 lasers is compared to a reference frequency generated by a \ac{dds}
-(see text). A servo loop feeds-back onto the frequency of the slave laser to keep this difference close to zero.}\label{fig:slave_offset}
+(see text). Between
+$\pm$\sivalue{3}{\MHz}, the error signal is proportional to the
+frequency difference and is used by a servo-loop to keep the
+difference close to zero.}\label{fig:slave_offset}
 \end{figure}
 \par\noindent 
 An \ac{eom} modulates the phase of the cooling laser to
@@ -550,9 +576,8 @@ fibres used to control the frequency and power in each \ac{mot} beam.
 The electrical circuits used to control the strength of each bias
 field, as well as switching off the quadrupole coils, are described
 in~\SectionRef{subsec:coil_control} 
-\subsection{Optical Fibre
-Network}\label{subsec:optical_fibre} A network of fibre-based
-beam-splitters and \acp{aom} distributes the light from the \Muquans
+\subsection{Optical Fibre Network}\label{subsec:optical_fibre} 
+A network of fibre-based beam-splitters and \acp{aom} distributes the light from the \Muquans
 fibre to each of the beams for the 2D and 3D \acp{mot}. This provides
 independent control of the power and frequency of the light at each
 output of the fibre network. A diagram of this setup is shown
@@ -576,7 +601,6 @@ along the \(\vec{z}\) axis have separate \acp{aom}. This is done so
 that during the experiment, a single beam along the \(\vec{z}\) axis
 can used to blow away background atoms (see
 \SectionRef{subsec:blow_away} for more details).
-
 \begin{figure}[!htbp] 
   \centering 
   \fontsize{18pt}{18pt}
@@ -588,9 +612,9 @@ repump light from the \Muquans laser is aligned to the fibre network
 using a \ac{pbs} and \ac{hwp}. Apart from the outputs for the
 \(\vec{x}\) and \(\vec{y}\) 3D \ac{mot} beams, which have a single
 \ac{aom} per axis, the power and frequency at each output can be
-controlled independently. The percentages shown are the relative power
-at each output, accounting for insertion loss and driving each
-\ac{aom} with the optimum RF power.} 
+controlled independently. The percentages shown are the fractions of
+the input power
+at each output, when driving each \ac{aom} with the optimum RF power.} 
 \label{fig:fibre_network}
 \end{figure} 
 \subsection{Magnetic Field Control}\label{subsec:coil_control} 
@@ -605,7 +629,10 @@ field - 3 for the 3D \ac{mot} and 2 for the 2D \ac{mot}.
 %same. \par\noindent
 The current through each set of
 bias coils is
-controlled using a voltage-controlled current source. The control
+controlled using a voltage-controlled current source.
+\FigureRef{fig:mot_coil_circuit} shows a diagram of the circuit used
+to control the current through the bias coils and 3D \ac{mot}
+quadrupole coils. The control
 voltage is an input at the non-inverting terminal of an OPA549 op-amp.
 The coils are placed in series with a sense resistor of resistance
 \(R_s\) at the output. The circuit is configured so that the voltage
@@ -614,6 +641,14 @@ feed-back loop to keep the output current constant if the load
 resistance changes. The bias coils can be supplied with up to
 \sivalue{2}{\ampere} using a control voltage of \sivalue{10}{\volt}. This same circuit is used to control the 3D \ac{mot}
 coils.
+\begin{figure}
+  \scalebox{0.4}{\input{mot_coil_circuit.pdf_tex}}
+  \caption[Circuit diagram for 3D \ac{mot} quadrupole coils and bias
+  field coils.]{Circuit diagram for 3D \ac{mot} quadrupole coils and bias
+  field coils. The current through the coils (shown as an inductor) is
+controlled using an input voltage $V_{in}$ and a sense resistor $R_c$.}
+  \label{fig:mot_coil_circuit}
+\end{figure}
 \par \noindent
 During the experiment, the 3D \ac{mot} coils need to be
 switched off rapidly, to allow for effective sub-Doppler cooling of
@@ -627,13 +662,23 @@ is \(\tau = \) \sivalue{2.5}{\milli\second}. Under the maximum
 available backward bias of \sivalue{-24}{\volt}, the field can be
 completely switched off in \sivalue{800}{\micro\second}. \par\noindent
 The quadrupole coils for the 2D \ac{mot} are switched off in much the
-same way. An IGBT cuts the flow of current when the gate voltage drops
+same way. \FigureRef{fig:igbt_circuit} shows a diagram of the circuit
+used. An IGBT cuts the flow of current when the gate voltage drops
 below a threshold value. To prevent damage to the transistor, a diode
 and \sivalue{10}{\ohm} power resistor are placed in parallel with the
 coils. This allows the current generated by the back-EMF to dissipate
 without damaging the IGBT. These field from these coils can be
 switched off in less than \sivalue{1}{\milli\second}.
-
+\begin{figure}
+  \centering
+  \includegraphics[height=0.15\textheight]{igbt_circuit.pdf}
+  \caption[IGBT circuit for the 2D \ac{mot} quadrupole coils]{IGBT
+  circuit for the 2D \ac{mot} quadrupole coils. The circuit is broken
+to switch the coils off, which generates a back-EMF. This flows
+through the diode and resistor in parallel with the coils, preventing
+damage to the IGBT. }
+  \label{fig:igbt_circuit}
+\end{figure}
 \section{Characterising the MOTs}\label{sec:mot_characterisation}
 This section discusses the performance of the 2D and 3D \acp{mots} for trapping
 and cooling \ac{rb87}. The main goal of this stage of the experiment is to
@@ -736,10 +781,11 @@ which has a steady-state atom number given by
 \end{equation}
 Under a small atomic flux, both the loading rate and steady-state atom number
 increase as the flux of atoms from the 2D \ac{mot} increases. Once this flux is
-great enough, the loss due to background atom collisions is small compared to
-the loss due to rubidium collisions and the number of atoms in the
+great enough, the loss due to untrapped rubidium collisions becomes
+non-negligible and the number of atoms in the
 \ac{mot} becomes independent of
-\(\phi_\text{rb}\). \par\noindent The flux of atoms from the 2D \ac{mot} depends on the 2D
+\(\phi_\text{rb}\). At very high pressures, this collision rate is
+great enough to cause a roll-off in the number of trapped atoms. \par\noindent The flux of atoms from the 2D \ac{mot} depends on the 2D
 \ac{mot} loading rate, which in turn depends on the capture volume and the partial pressure of rubidium inside the source cell. The number of atoms in the 3D \ac{mot} was measured over time for a range of dispenser currents. At low partial pressures,
 the loading rate increases due to the increase in the flux from the 2D \ac{mot}.
 As the pressure increases, the increasing flux gives a larger steady-state
